@@ -1,0 +1,22 @@
+@mixin pageitems($pageitems) {
+
+
+
+	$pageitemsLength: length($pageitems);
+	$per_i: (100 / $pageitemsLength);
+
+	@for $i from 1 through length($pageitems) {
+		$c: nth($pageitems, $i);
+
+		&.#{$c} {
+			left: ($i - 1) * $per_i * 1%;
+			width: $per_i * 1%;
+		}
+
+	}
+
+
+
+}
+
+

@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport"
+	      content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>title</title>
+
+	<script src="js/modernizr.custom.13938-min.js"></script>
+	<script src="js/jquery.2.0.js"></script>
+	<!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+	<script src="js/jquery.onepage-scroll.js"></script>
+	<script src="js/jquery.scrollScript.js"></script>
+
+
+	<link rel="stylesheet" href="css/common.css" type="text/css"/>
+
+	<link rel="stylesheet" href="onepage-scroll.css" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css?ver1" type="text/css"/>
+
+	<script>
+
+	</script>
+
+</head>
+<body>
+<div class="wrapper" style="position: fixed">
+
+	<!--<nav class="header">-->
+	<!--<ul class="header_nav fixed">-->
+	<!--<li class="header_nav_item"><a class="header_nav_item_link" href="#1">Компания</a></li>-->
+	<!--<li class="header_nav_item"><a class="header_nav_item_link" href="#2">Каталог</a></li>-->
+	<!--<li class="header_nav_item"><a class="header_nav_item_link" href="#3">Партнеры</a></li>-->
+	<!--<li class="header_nav_item"><a class="header_nav_item_link" href="#4">Новости</a></li>-->
+	<!--<li class="header_nav_item"><a class="header_nav_item_link" href="#5">Контакты</a></li>-->
+	<!--</ul>-->
+	<!--</nav>-->
+	<div class="main">
+		<section class="page page1">
+			1
+		</section>
+		<section class="page page2">
+
+
+			<figure class="page_item first totop">
+				<figcaption class="page_item_caption">1</figcaption>
+			</figure>
+			<figure class="page_item second toright">
+				<figcaption class="page_item_caption">2</figcaption>
+			</figure>
+			<figure class="page_item third toleft">
+				<figcaption class="page_item_caption">3</figcaption>
+			</figure>
+
+			<figure class="page_item fourth tobottom">
+				<figcaption class="page_item_caption">3</figcaption>
+			</figure>
+
+			<figure class="page_item fivth tofront">
+				<figcaption class="page_item_caption">
+					<div class="image">
+						<img src="img/test1.png" alt=""/>
+
+					</div>
+					<div class="image2">
+						<img src="img/test2.png" alt=""/>
+					</div>
+
+				</figcaption>
+			</figure>
+		</section>
+		<section class="page page3">
+			3
+		</section>
+		<section class="page page4">
+			4
+		</section>
+		<section class="page page5">
+			5
+		</section>
+		<section class="page page6">
+			6
+		</section>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+		$(document).ready(function () {
+			$(".main").onepage_scroll({
+				sectionContainer: "section",
+				responsiveFallback: 1000,
+				updateURL: true,
+				quietPeriod: 100,
+				loop: false
+			})
+
+			var script = [
+				{
+					on: function(){
+					 	console.log(1 + 'on')
+					},
+					off: function(){
+						console.log(1 + 'on')
+
+					},
+					trigger: 500
+
+				},
+				{
+					on: function(){
+
+						console.log(2 + 'on')
+					},
+					off: function(){
+
+						console.log(2 + 'off')
+					},
+					trigger: 1000
+
+				},
+				{
+					on: function(){
+						console.log(3 + 'on')
+					},
+					off: function(){
+						console.log(3 + 'off')
+					},
+					trigger: 1500
+
+				},
+				{
+					on: function(){
+						console.log(4 + 'on')
+					},
+					off: function(){
+						console.log(4 + 'off')
+					},
+					trigger: 2000
+
+				}
+			]
+
+			var a = new scrollScript(script);
+		});
+</script>
+
+</body>
+</html>
+
+
