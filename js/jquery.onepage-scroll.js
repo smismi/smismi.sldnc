@@ -19,7 +19,7 @@
 	var defaults = {
 		sectionContainer: "section",
 		easing: "ease-in",
-		animationTime: 1200,
+		animationTime: 600,
 		pagination: true,
 		updateURL: false,
 		keyboard: true,
@@ -91,7 +91,6 @@
 			lastAnimation = 0,
 			quietPeriod = settings.quietPeriod,
 			paginationList = "";
-
 
 
 
@@ -238,10 +237,12 @@
 			next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']");
 			if (next.length > 0) {
 
+//				todo - allow customize
 
+				var offset = (page_index == total) ? 1000 * (page_index - 1) + 1000 : 1000 * (page_index - 1);
 				$('html,body').animate({
-					scrollTop: 1000 * (page_index - 1)
-				}, 1000);
+					scrollTop: offset
+				}, settings.animationTime);
 			}
 
 
@@ -279,7 +280,7 @@
 		}
 
 
-		function init_scroll(event, delta) {
+        function init_scroll(event, delta) {
 			var deltaOfInterest = delta,
 				timeNow = new Date().getTime();
 			// Cancel scroll if currently animating or within quiet period

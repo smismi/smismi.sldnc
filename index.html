@@ -11,17 +11,12 @@
 	<script src="js/jquery.2.0.js"></script>
 	<!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
 	<script src="js/jquery.onepage-scroll.js"></script>
-	<script src="js/jquery.scrollScript.js"></script>
-
-
+	<!--<script src="js/jquery.scrollScript.js"></script>-->
 	<link rel="stylesheet" href="css/common.css" type="text/css"/>
 
 	<link rel="stylesheet" href="onepage-scroll.css" type="text/css"/>
 	<link rel="stylesheet" href="css/style.css?ver1" type="text/css"/>
 
-	<script>
-
-	</script>
 
 </head>
 <body>
@@ -93,58 +88,13 @@
 				sectionContainer: "section",
 				responsiveFallback: 1000,
 				updateURL: true,
-				quietPeriod: 100,
+				quietPeriod: 0,
 				loop: false
 			})
 
-			var script = [
-				{
-					on: function(){
-					 	console.log(1 + 'on')
-					},
-					off: function(){
-						console.log(1 + 'off')
 
-					},
-					trigger: 500
-
-				},
-				{
-					on: function(){
-
-						console.log(2 + 'on')
-					},
-					off: function(){
-
-						console.log(2 + 'off')
-					},
-					trigger: 1000
-
-				},
-				{
-					on: function(){
-						console.log(3 + 'on')
-					},
-					off: function(){
-						console.log(3 + 'off')
-					},
-					trigger: 1500
-
-				},
-				{
-					on: function(){
-						console.log(4 + 'on')
-					},
-					off: function(){
-						console.log(4 + 'off')
-					},
-					trigger: 2000
-
-				}
-			]
-
-			var a = new scrollScript(script);
 		});
+
 </script>
 
 </body>
