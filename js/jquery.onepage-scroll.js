@@ -80,9 +80,10 @@
 	};
 
 
-	$.fn.onepage_scroll = function (options) {
+	onepageScroll = function (options) {
 		var settings = $.extend({}, defaults, options),
-			el = $(this),
+			main = ".main",
+			el = $(main),
 			sections = $(settings.sectionContainer),
 			total = sections.length,
 			status = "off",
@@ -90,6 +91,9 @@
 			lastAnimation = 0,
 			quietPeriod = settings.quietPeriod,
 			paginationList = "";
+
+
+
 
 //		$.fn.transformPage = function (settings, pos, index) {
 //			if (typeof settings.beforeMove == 'function') settings.beforeMove(index);
@@ -108,7 +112,9 @@
 //			});
 //		}
 
-		$.fn.transformPage = function(settings, pos, index) {
+
+
+		this.transformPage = $.fn.transformPage = function(settings, pos, index) {
 			if(document.all && !window.atob) {
 				$(this).animate({
 					top: pos + '%'
@@ -131,9 +137,10 @@
 					if (typeof settings.afterMove == 'function') settings.afterMove(index);
 				});
 			}
+			el.scrollBody(index);
 		};
 
-		$.fn.moveDown = function () {
+		this.moveDown = $.fn.moveDown = function () {
 			var el = $(this)
 			index = $(settings.sectionContainer + ".active").data("index");
 			current = $(settings.sectionContainer + "[data-index='" + index + "']");
@@ -166,9 +173,11 @@
 			}
 
 			el.transformPage(settings, pos, next.data("index"));
+
+
 		}
 
-		$.fn.moveUp = function () {
+		this.moveUp = $.fn.moveUp = function () {
 			var el = $(this)
 			index = $(settings.sectionContainer + ".active").data("index");
 			current = $(settings.sectionContainer + "[data-index='" + index + "']");
@@ -202,7 +211,7 @@
 			el.transformPage(settings, pos, next.data("index"));
 		}
 
-		$.fn.moveTo = function (page_index) {
+		this.moveTo = $.fn.moveTo = function (page_index) {
 			current = $(settings.sectionContainer + ".active")
 			next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']");
 			if (next.length > 0) {
@@ -223,6 +232,23 @@
 				el.transformPage(settings, pos, page_index);
 			}
 		}
+
+		this.scrollBody = $.fn.scrollBody = function (page_index) {
+			current = $(settings.sectionContainer + ".active")
+			next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']");
+			if (next.length > 0) {
+
+
+				$('html,body').animate({
+					scrollTop: 1000 * (page_index - 1)
+				}, 1000);
+			}
+
+
+		}
+
+
+
 
 		function responsive() {
 			if ($(window).width() < settings.responsiveFallback) {
@@ -363,7 +389,7 @@
 
 			});
 		}
-		return false;
+		return this;
 	}
 
 

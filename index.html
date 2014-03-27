@@ -88,7 +88,8 @@
 
 <script type="text/javascript">
 		$(document).ready(function () {
-			$(".main").onepage_scroll({
+			onepage = new onepageScroll({
+				main: '.main',
 				sectionContainer: "section",
 				responsiveFallback: 1000,
 				updateURL: true,
@@ -102,7 +103,7 @@
 					 	console.log(1 + 'on')
 					},
 					off: function(){
-						console.log(1 + 'on')
+						console.log(1 + 'off')
 
 					},
 					trigger: 500
