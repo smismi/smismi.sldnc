@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport"
+		  content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>title</title>
+
+
+
+
+	<script type="text/javascript" src="js/_dependent/greensock/TweenMax.min.js"></script>
+
+
+	<!--<script type="text/javascript" src="js/_dependent/jquery-1.11.0.min.js"></script>-->
+	<!--<script type="text/javascript" src="js/_examples/general.js"></script>-->
+	<!--<script type="text/javascript" src="js/_examples/highlight.pack.js"></script>-->
+	<!--<script type="text/javascript" src="js/_examples/modernizr.custom.min.js"></script>-->
+
+	<script type="text/javascript" src="js/modernizr.custom.13938-min.js"></script>
+	<script type="text/javascript" src="js/jquery.2.0.js"></script>
+
+
+	<script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
+
+
+
+
+	<link rel="stylesheet" href="css/common.css" type="text/css"/>
+
+
+
+
+
+
+</head>
+<body>
+<div class="wrapper">
+	<nav class="header">
+		<ul class="header_nav fixed">
+			<li class="header_nav_item"><a class="header_nav_item_link" href="#1">Компания</a></li>
+			<li class="header_nav_item"><a class="header_nav_item_link" href="#2">Каталог</a></li>
+			<li class="header_nav_item"><a class="header_nav_item_link" href="#3">Партнеры</a></li>
+			<li class="header_nav_item"><a class="header_nav_item_link" href="#4">Новости</a></li>
+			<li class="header_nav_item"><a class="header_nav_item_link" href="#5">Контакты</a></li>
+		</ul>
+	</nav>
+
+
+	<nav class="pager fixed">
+		<ul class="pager_nav">
+			<li class="pager_nav_item"><a class="pager_nav_item_link" href="#1">1</a></li>
+			<li class="pager_nav_item"><a class="pager_nav_item_link" href="#2">2</a></li>
+			<li class="pager_nav_item"><a class="pager_nav_item_link" href="#3">3</a></li>
+			<li class="pager_nav_item"><a class="pager_nav_item_link" href="#4">4</a></li>
+			<li class="pager_nav_item"><a class="pager_nav_item_link" href="#5">5</a></li>
+		</ul>
+	</nav>
+	<section id="1" class="page page1">
+		1
+	</section>
+	<div id="trigger2" class="spacer s1"></div>
+	<section id="2" class="page page2">
+		2
+	</section>
+	<section id="3" class="page page3">
+		3
+	</section>
+	<section id="4" class="page page4">
+		4
+	</section>
+	<section id="5" class="page page5">
+		5
+	</section>
+	<section id="6" class="page page6">
+		6
+	</section>
+</div>
+
+
+<script type="text/javascript">
+
+	$(document).ready(function($) {
+
+		var controller = new ScrollMagic();
+
+
+		var tween = TweenMax.to("#2", 0.5, {scale: 2.0});
+
+		// build scene
+		var scene = new ScrollScene({triggerElement: "#trigger2", duration: 300})
+				.setTween(tween)
+				.addTo(controller);
+
+		// show indicators (requires debug extension)
+		scene.addIndicators();
+	});
+
+</script>
+
+</body>
+</html>
+
+

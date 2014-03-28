@@ -20,32 +20,34 @@ body, .wrapper, html {
 .page {
 	position: relative;
 
+
 	&.page1 {
-		background: #235678;
+		background: url(../img/bg02.png);
+
 		height: 100%;
 	}
 	&.page2 {
-		background: #278856;
+		background: url(../img/bg02.png);
 		height: 100%;
 
 	}
 	&.page3 {
-		background: #678277;
+		background: url(../img/bg02.png);
 		height: 100%;
 	}
 
 	&.page4 {
-		background: #578235;
+		background: url(../img/bg02.png);
 		height: 100%;
 	}
 
 	&.page5 {
-		background: #337825;
+		background: url(../img/bg02.png);
 		height: 100%;
 	}
 
 	&.page6 {
-		background: #833725;
+		background: url(../img/bg02.png);
 		height: 100%;
 	}
 }
@@ -54,8 +56,5 @@ body, .wrapper, html {
 
 .fixed {
 	position: fixed;
-	top: 0;
-	width: 100%;
-	background: #fff;
 	z-index: 12;
 }

@@ -20,34 +20,31 @@ body, .wrapper, html {
   position: relative;
 }
 .page.page1 {
-  background: #235678;
+  background: url(../img/bg02.png);
   height: 100%;
 }
 .page.page2 {
-  background: #278856;
+  background: url(../img/bg02.png);
   height: 100%;
 }
 .page.page3 {
-  background: #678277;
+  background: url(../img/bg02.png);
   height: 100%;
 }
 .page.page4 {
-  background: #578235;
+  background: url(../img/bg02.png);
   height: 100%;
 }
 .page.page5 {
-  background: #337825;
+  background: url(../img/bg02.png);
   height: 100%;
 }
 .page.page6 {
-  background: #833725;
+  background: url(../img/bg02.png);
   height: 100%;
 }
 
 .fixed {
   position: fixed;
-  top: 0;
-  width: 100%;
-  background: #fff;
   z-index: 12;
 }
