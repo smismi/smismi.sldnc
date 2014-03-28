@@ -112,6 +112,7 @@ Greensock License info at http://www.greensock.com/licensing/
 			_viewPortSize = _options.vertical ? _options.container.height() : _options.container.width();
 			// set event handlers
 			_options.container.on("scroll resize", onChange);
+			console.log(1)
 			try {
 				TweenLite.ticker.addEventListener("tick", onTick); // prefer TweenMax Ticker, but don't rely on it for basic functionality
 				_tickerUsed = true;

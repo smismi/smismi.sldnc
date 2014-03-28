@@ -74,29 +74,28 @@ body, .wrapper, html {
 
 .page {
   position: relative;
+  height: 1000px !important;
 }
 .page.page1 {
   background: url(../img/bg02.png);
+  background: #e45278;
   height: 100%;
 }
 .page.page2 {
   background: url(../img/bg02.png);
+  background: #52e478;
   height: 100%;
 }
 .page.page3 {
-  background: url(../img/bg02.png);
   height: 100%;
 }
 .page.page4 {
-  background: url(../img/bg02.png);
   height: 100%;
 }
 .page.page5 {
-  background: url(../img/bg02.png);
   height: 100%;
 }
 .page.page6 {
-  background: url(../img/bg02.png);
   height: 100%;
 }
 
