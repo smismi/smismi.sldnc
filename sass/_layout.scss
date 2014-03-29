@@ -1,0 +1,82 @@
+body, html {
+	margin: 0;
+}
+
+body, .wrapper, html {
+	display: block;
+	position: static;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	min-width: 1000px;
+}
+
+
+.header {
+	width: 100%;
+}
+.main {
+	height: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	font-family: 'oksana_text_narrowbold', sans-serif;
+
+}
+
+.page {
+	position: relative;
+
+
+	&.page1 {
+		background: url(../img/bg02.png);
+		//background: #e45278;
+		height: 100%;
+	}
+	&.page2 {
+		background: url(../img/bg02.png);
+		//background: #52e478;
+		height: 100%;
+	}
+
+
+
+
+	&.page4 {
+		background: url(../img/bg02.png);
+		height: 100%;
+	}
+
+	&.page5 {
+		background: url(../img/bg02.png);
+		height: 100%;
+	}
+
+	&.page6 {
+		background: url(../img/bg02.png);
+		height: 100%;
+	}
+
+
+
+	&:after {
+		content: ' ';
+		width: auto;
+		height: 3px;
+		position: absolute;
+		border-top: 4px solid #03f;
+		bottom: 0;
+		left:0;
+		right: 0;
+		background: #f00;
+	    @include single-box-shadow(#000000, 0px, -3px, 12px, 3px)
+	}
+
+
+}
+
+@import "pages/page3";
+
+.fixed {
+	position: fixed;
+	z-index: 12;
+}

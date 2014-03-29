@@ -4,77 +4,97 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport"
-	      content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<title>title</title>
+		  content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>Сладуницв - title - main</title>
 
-	<script src="js/modernizr.custom.13938-min.js"></script>
-	<script src="js/jquery.2.0.js"></script>
-	<!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
-	<script src="js/jquery.onepage-scroll.js"></script>
-	<!--<script src="js/jquery.scrollScript.js"></script>-->
+
+
+	<!--<script type="text/javascript" src="js/jquery.2.0.js"></script>-->
+	<script type="text/javascript" src="js/_dependent/jquery-1.11.0.min.js"></script>
+
+	<script type="text/javascript" src="js/modernizr.custom.13938-min.js"></script>
+
+
+	<!--<script type="text/javascript" src="js/jquery.scrollto.js"></script>-->
+ 	<!--<script type="text/javascript" src="js/jquery.mousewheel.js"></script>-->
+
+
+	<script type="text/javascript" src="js/jquery.mouseParallax.js"></script>
+
+
+
+	<script type="text/javascript" src="js/_dependent/greensock/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
+
+
+
+
+	<link rel="stylesheet" href="css/fontface.css" type="text/css"/>
 	<link rel="stylesheet" href="css/common.css" type="text/css"/>
 
-	<link rel="stylesheet" href="onepage-scroll.css" type="text/css"/>
-	<link rel="stylesheet" href="css/style.css?ver1" type="text/css"/>
 
 
 </head>
 <body>
-<div class="wrapper" style="position: fixed">
 
-	<!--<nav class="header">-->
-	<!--<ul class="header_nav fixed">-->
-	<!--<li class="header_nav_item"><a class="header_nav_item_link" href="#1">Компания</a></li>-->
-	<!--<li class="header_nav_item"><a class="header_nav_item_link" href="#2">Каталог</a></li>-->
-	<!--<li class="header_nav_item"><a class="header_nav_item_link" href="#3">Партнеры</a></li>-->
-	<!--<li class="header_nav_item"><a class="header_nav_item_link" href="#4">Новости</a></li>-->
-	<!--<li class="header_nav_item"><a class="header_nav_item_link" href="#5">Контакты</a></li>-->
-	<!--</ul>-->
-	<!--</nav>-->
-	<div class="main">
-		<section class="page page1">
-			1
+
+
+<div class="main">
+	<nav class="header fixed">
+		<ul class="header_nav" id="header">
+			<li class="header_nav_item"><a class="header_nav_item_link" href="#1">Компания</a></li>
+			<li class="header_nav_item"><a class="header_nav_item_link" href="#2">Каталог</a></li>
+			<li class="header_nav_item"><a class="header_nav_item_link" href="#3">Партнеры</a></li>
+			<li class="header_nav_item"><a class="header_nav_item_link" href="#4">Новости</a></li>
+			<li class="header_nav_item"><a class="header_nav_item_link" href="#5">Контакты</a></li>
+		</ul>
+	</nav>
+	<nav class="pager fixed">
+		<ul class="pager_nav" id="nav">
+			<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-1">1</a></li>
+			<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-2">2</a></li>
+			<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-3">3</a></li>
+			<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-4">4</a></li>
+			<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-5">5</a></li>
+		</ul>
+	</nav>
+	<div class="wrapper">
+
+		<section id="section-1" class="page page1">
+			<div>
+				1
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+				<object data="img/svg/logo.svg" type="image/svg+xml" >
+					<img src="logo.jpg" />
+				</object>
+
+
+			</div>
 		</section>
-		<section class="page page2">
-
-
-			<figure class="page_item first totop">
-				<figcaption class="page_item_caption">1</figcaption>
-			</figure>
-			<figure class="page_item second toright">
-				<figcaption class="page_item_caption">2</figcaption>
-			</figure>
-			<figure class="page_item third toleft">
-				<figcaption class="page_item_caption">3</figcaption>
-			</figure>
-
-			<figure class="page_item fourth tobottom">
-				<figcaption class="page_item_caption">3</figcaption>
-			</figure>
-
-			<figure class="page_item fivth tofront">
-				<figcaption class="page_item_caption">
-					<div class="image">
-						<img src="img/test1.png" alt=""/>
-
-					</div>
-					<div class="image2">
-						<img src="img/test2.png" alt=""/>
-					</div>
-
-				</figcaption>
-			</figure>
+		<section id="section-2" class="page page2">
+			2
 		</section>
-		<section class="page page3">
-			3
+		<section id="section-3" class="page page3">
+			<div class="bg-section-1" data-speed="1"></div>
+			<div class="bg-section-2" data-speed="2"></div>
+			<div class="bg-section-3" data-speed="3"></div>
 		</section>
-		<section class="page page4">
+		<section id="section-4" class="page page4">
 			4
 		</section>
-		<section class="page page5">
+		<section id="section-5" class="page page5">
 			5
 		</section>
-		<section class="page page6">
+		<section id="section-6" class="page page6">
 			6
 		</section>
 	</div>
@@ -82,18 +102,57 @@
 
 
 <script type="text/javascript">
-		$(document).ready(function () {
-			onepage = new onepageScroll({
-				main: '.main',
-				sectionContainer: "section",
-				responsiveFallback: 1000,
-				updateURL: true,
-				quietPeriod: 0,
-				loop: false
-			})
 
+	$(document).ready(function($) {
+
+
+
+
+
+
+		$("#section-3").mouseParallax();
+
+		return;
+		var controller = new ScrollMagic({
+//			container: "#wrapper"
 
 		});
+
+
+// build scene
+		var scene2 = new ScrollScene({
+			triggerElement: "#section-2",
+			duration: 300,
+			triggerHook: "onEnter",
+//			reverse: false
+		}).setTween(
+						TweenMax.to("#header", 0.5, {scale: 2.0})
+				)
+				.addTo(controller);
+		var scene3 = new ScrollScene({
+			triggerElement: "#section-3",
+			duration: 300,
+			triggerHook: "onEnter",
+//			reverse: false
+		}).setTween(
+						TweenMax.to("#header", 0.5, {scale: 3.0})
+				)
+				.addTo(controller);
+
+
+
+
+
+
+
+
+
+		// show indicators (requires debug extension)
+		scene.addIndicators();
+		scene3.addIndicators();
+
+//		$('#nav').onePageNav();
+	});
 
 </script>
 

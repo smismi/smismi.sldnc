@@ -1,0 +1,53 @@
+.page3 {
+
+	background:url(../img/bg/bg3.jpg);
+	background-position: 50% 50%;
+
+	height: 100%;
+	overflow: hidden;
+
+
+	.bg-section-1, .bg-section-2, .bg-section-3 {
+		position: absolute;
+		top: -50%;
+		left: -50%;
+	}
+
+	.bg-section-1 {
+		width: 200%;
+		height: 200%;
+
+		background:url(../img/bg/bgl1.png);
+		background-position: 50% 50%;
+
+
+
+		//background:url(../img/bg/bgl1.png), url(../img/bg/bgl2.png), url(../img/bg/bgl3.png), url(../img/bg/bgl4.png),  url(../img/bg/bg3.jpg);
+		//background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+	}
+	.bg-section-2 {
+		width: 200%;
+		height: 200%;
+
+		background:url(../img/bg/bgl2.png);
+		background-position: 0 -25%;
+
+
+
+		//background:url(../img/bg/bgl1.png), url(../img/bg/bgl2.png), url(../img/bg/bgl3.png), url(../img/bg/bgl4.png),  url(../img/bg/bg3.jpg);
+		//background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+	}
+	.bg-section-3 {
+		width: 200%;
+		height: 200%;
+
+		background:url(../img/bg/bgl3.png);
+		background-position: 50% 50%;
+
+
+
+		//background:url(../img/bg/bgl1.png), url(../img/bg/bgl2.png), url(../img/bg/bgl3.png), url(../img/bg/bgl4.png),  url(../img/bg/bg3.jpg);
+		//background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+	}
+
+}
