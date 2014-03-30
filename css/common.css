@@ -73,33 +73,56 @@ body, .wrapper, html {
 
 .main {
   height: 100%;
+}
+
+/*
+	Containers
+*/
+#content-wrapper {
+  height: 100%;
   max-width: 1920px;
   margin: 0 auto;
   font-family: 'oksana_text_narrowbold', sans-serif;
 }
 
+.scrollContainer {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.scrollContainer {
+  height: 100%;
+  margin: auto;
+}
+
+#example-wrapper .scrollContent {
+  height: 100%;
+}
+
+#example-wrapper.scrollContainer .scrollContent {
+  width: 100%;
+  height: auto;
+}
+
 .page {
   position: relative;
+  height: 2000px;
 }
 .page.page1 {
   background: url(../img/bg02.png);
-  height: 100%;
 }
 .page.page2 {
   background: url(../img/bg02.png);
-  height: 100%;
 }
 .page.page4 {
   background: url(../img/bg02.png);
-  height: 100%;
 }
 .page.page5 {
   background: url(../img/bg02.png);
-  height: 100%;
 }
 .page.page6 {
   background: url(../img/bg02.png);
-  height: 100%;
 }
 .page:after {
   content: ' ';

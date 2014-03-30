@@ -15,27 +15,57 @@ body, .wrapper, html {
 .header {
 	width: 100%;
 }
+
+
+
 .main {
+	height: 100%;
+
+
+}
+
+
+
+/*
+	Containers
+*/
+#content-wrapper {
 	height: 100%;
 	max-width: 1920px;
 	margin: 0 auto;
 	font-family: 'oksana_text_narrowbold', sans-serif;
+}
+.scrollContainer {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%
+}
+.scrollContainer {
+	height: 100%;
+	margin: auto;
+}
+#example-wrapper .scrollContent {
+	height: 100%;
+}
 
+#example-wrapper.scrollContainer .scrollContent {
+	width: 100%;
+	height: auto;
 }
 
 .page {
 	position: relative;
-
+	height: 2000px;
 
 	&.page1 {
 		background: url(../img/bg02.png);
 		//background: #e45278;
-		height: 100%;
+		//height: 100%;
 	}
 	&.page2 {
 		background: url(../img/bg02.png);
 		//background: #52e478;
-		height: 100%;
+		//height: 100%;
 	}
 
 
@@ -43,17 +73,17 @@ body, .wrapper, html {
 
 	&.page4 {
 		background: url(../img/bg02.png);
-		height: 100%;
+		//height: 100%;
 	}
 
 	&.page5 {
 		background: url(../img/bg02.png);
-		height: 100%;
+		//height: 100%;
 	}
 
 	&.page6 {
 		background: url(../img/bg02.png);
-		height: 100%;
+		//height: 100%;
 	}
 
 

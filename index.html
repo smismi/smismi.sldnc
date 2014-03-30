@@ -30,8 +30,11 @@
 
 
 
+
 	<link rel="stylesheet" href="css/fontface.css" type="text/css"/>
 	<link rel="stylesheet" href="css/common.css" type="text/css"/>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 
 
 
@@ -40,63 +43,68 @@
 
 
 
-<div class="main">
-	<nav class="header fixed">
-		<ul class="header_nav" id="header">
-			<li class="header_nav_item"><a class="header_nav_item_link" href="#1">Компания</a></li>
-			<li class="header_nav_item"><a class="header_nav_item_link" href="#2">Каталог</a></li>
-			<li class="header_nav_item"><a class="header_nav_item_link" href="#3">Партнеры</a></li>
-			<li class="header_nav_item"><a class="header_nav_item_link" href="#4">Новости</a></li>
-			<li class="header_nav_item"><a class="header_nav_item_link" href="#5">Контакты</a></li>
-		</ul>
-	</nav>
-	<nav class="pager fixed">
-		<ul class="pager_nav" id="nav">
-			<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-1">1</a></li>
-			<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-2">2</a></li>
-			<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-3">3</a></li>
-			<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-4">4</a></li>
-			<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-5">5</a></li>
-		</ul>
-	</nav>
-	<div class="wrapper">
+<nav class="header fixed">
+	<ul class="header_nav" id="header">
+		<li class="header_nav_item"><a class="header_nav_item_link" href="#1">Компания</a></li>
+		<li class="header_nav_item"><a class="header_nav_item_link" href="#2">Каталог</a></li>
+		<li class="header_nav_item"><a class="header_nav_item_link" href="#3">Партнеры</a></li>
+		<li class="header_nav_item"><a class="header_nav_item_link" href="#4">Новости</a></li>
+		<li class="header_nav_item"><a class="header_nav_item_link" href="#5">Контакты</a></li>
+	</ul>
+</nav>
+<nav class="pager fixed">
+	<ul class="pager_nav" id="nav">
+		<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-1">1</a></li>
+		<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-2">2</a></li>
+		<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-3">3</a></li>
+		<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-4">4</a></li>
+		<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-5">5</a></li>
+	</ul>
+</nav>
 
-		<section id="section-1" class="page page1">
-			<div>
-				1
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<div id="content-wrapper">
+	<div id="example-wrapper" class="scrollContainer">
+		<div class="scrollContent" style="position: relative;">
 
-				<object data="img/svg/logo.svg" type="image/svg+xml" >
-					<img src="logo.jpg" />
-				</object>
+			<section id="section-1" class="page page1">
+				<div>
+					1
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+
+					<object data="img/svg/logo.svg" type="image/svg+xml">
+						<img src="logo.jpg"/>
+					</object>
+				</div>
+			</section>
+			<section id="section-2" class="page page2">
+				2
+			</section>
+			<section id="section-3" class="page page3">
+				<div class="bg-section-1" data-speed="1"></div>
+				<div class="bg-section-2" data-speed="2"></div>
+				<div class="bg-section-3" data-speed="3"></div>
+			</section>
+			<section id="section-4" class="page page4">
+				4
+			</section>
+			<section id="section-5" class="page page5">
+				5
+			</section>
+			<section id="section-6" class="page page6">
+				6
+			</section>
+
+			<script type="text/javascript" src="js/iscroll/iscroll.js"></script>
 
 
-			</div>
-		</section>
-		<section id="section-2" class="page page2">
-			2
-		</section>
-		<section id="section-3" class="page page3">
-			<div class="bg-section-1" data-speed="1"></div>
-			<div class="bg-section-2" data-speed="2"></div>
-			<div class="bg-section-3" data-speed="3"></div>
-		</section>
-		<section id="section-4" class="page page4">
-			4
-		</section>
-		<section id="section-5" class="page page5">
-			5
-		</section>
-		<section id="section-6" class="page page6">
-			6
-		</section>
+		</div>
 	</div>
 </div>
 
@@ -107,51 +115,41 @@
 
 
 
+		var myScroll = new IScroll(
+				'#example-wrapper',
+				{
+					scrollX: false,
+					scrollY: true,
+					scrollbars: true,
+					useTransform: true,
+					useTransition: true,
+					probeType: 3
+				});
 
 
-
-		$("#section-3").mouseParallax();
-
-//		return;
-		var controller = new ScrollMagic({
-//			container: "#wrapper"
-
-		});
-
-
-// build scene
-		var scene2 = new ScrollScene({
-			triggerElement: "#section-2",
-			duration: 300,
-			triggerHook: "onEnter",
-//			reverse: false
-		}).setTween(
-						TweenMax.to("#header", 0.5, {scale: 2.0})
-				)
-				.addTo(controller);
-		var scene3 = new ScrollScene({
-			triggerElement: "#section-3",
-			duration: 300,
-			triggerHook: "onEnter",
-//			reverse: false
-		}).setTween(
-						TweenMax.to("#header", 0.5, {scale: 3.0})
-				)
-				.addTo(controller);
+//		// init controller
+//		var controller = new ScrollMagic({container: "#example-wrapper"});
+//
+//		// init tween
+//		var tween = TweenMax.to(0.5, {scale: 2.0});
+//
+//		// init scene
+//		var scene = new ScrollScene({triggerElement: "#section-3", duration: 500, offset: 75})
+//				.setTween(tween)
+//				.addTo(controller);
+//
+//
+//
+//		controller.scrollPos(function () {
+//			return -myScroll.y;
+//		});
+//
+//		// thanks to iScroll 5 we now have a real onScroll event (with some performance drawbacks)
+//		myScroll.on("scroll", function () {
+//			controller.update();
+//		});
 
 
-
-
-
-
-
-
-
-		// show indicators (requires debug extension)
-		scene.addIndicators();
-		scene3.addIndicators();
-
-//		$('#nav').onePageNav();
 	});
 
 </script>
