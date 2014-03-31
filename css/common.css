@@ -54,11 +54,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/*
+	General styles
+*/
 body, html {
   margin: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body, .wrapper, html {
+body, html, .wrapper {
   display: block;
   position: static;
   padding: 0;
@@ -71,18 +75,35 @@ body, .wrapper, html {
   width: 100%;
 }
 
-.main {
-  height: 100%;
+.touchonly {
+  display: none;
+}
+
+html.touch .touchonly {
+  display: block;
+}
+
+.noselect * {
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+}
+
+.doselect * {
+  user-select: auto;
+  -webkit-user-select: auto;
+  -khtml-user-select: auto;
+  -moz-user-select: auto;
+  -o-user-select: auto;
 }
 
 /*
 	Containers
 */
-#content-wrapper {
+#content-wrapper, #wrapper {
   height: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-  font-family: 'oksana_text_narrowbold', sans-serif;
 }
 
 .scrollContainer {
@@ -96,33 +117,39 @@ body, .wrapper, html {
   margin: auto;
 }
 
-#example-wrapper .scrollContent {
+#wrapper .scrollContent {
   height: 100%;
 }
 
-#example-wrapper.scrollContainer .scrollContent {
+#wrapper.scrollContainer .scrollContent {
   width: 100%;
   height: auto;
 }
 
+section.page {
+  min-height: 100%;
+  position: relative;
+}
+
 .page {
   position: relative;
-  height: 100vh;
+  height: 100%;
+  background-position: 50% 50%;
 }
 .page.page1 {
-  background: url(../img/bg02.png);
+  background-image: url(../img/bg02.png);
 }
 .page.page2 {
-  background: url(../img/bg02.png);
+  background-image: url(../img/bg02.png);
 }
 .page.page4 {
-  background: url(../img/bg02.png);
+  background-image: url(../img/bg02.png);
 }
 .page.page5 {
-  background: url(../img/bg02.png);
+  background-image: url(../img/bg02.png);
 }
 .page.page6 {
-  background: url(../img/bg02.png);
+  background-image: url(../img/bg02.png);
 }
 .page:after {
   content: ' ';
@@ -140,15 +167,14 @@ body, .wrapper, html {
 }
 
 .page3 {
-  background: url(../img/bg/bg3.jpg);
-  background-position: 50% 50%;
+  background-image: url(../img/bg/bg3.jpg);
   height: 100%;
   overflow: hidden;
 }
 .page3 .bg-section-1, .page3 .bg-section-2, .page3 .bg-section-3 {
   position: absolute;
-  top: -50%;
-  left: -50%;
+  top: 0%;
+  left: 0%;
 }
 .page3 .bg-section-1 {
   width: 200%;
@@ -182,48 +208,47 @@ body, .wrapper, html {
   position: relative;
 }
 
-.page2 .page_item {
+.page3 .wrapper {
   position: absolute;
   top: 0;
   bottom: 0;
   overflow: hidden;
 }
-.page2 .page_item.first {
+.page3 .page_item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.page3 .page_item.first {
   left: 0%;
-  width: 20%;
+  width: 25%;
 }
-.page2 .page_item.second {
-  left: 20%;
-  width: 20%;
+.page3 .page_item.second {
+  left: 25%;
+  width: 25%;
 }
-.page2 .page_item.third {
-  left: 40%;
-  width: 20%;
+.page3 .page_item.third {
+  left: 50%;
+  width: 25%;
 }
-.page2 .page_item.fourth {
-  left: 60%;
-  width: 20%;
+.page3 .page_item.fourth {
+  left: 75%;
+  width: 25%;
 }
-.page2 .page_item.fivth {
-  left: 80%;
-  width: 20%;
+.page3 .page_item.first figcaption {
+  background-image: url(../img/bg/section-3-col-1.png);
 }
-.page2 .page_item.first figcaption {
-  background: #337825;
+.page3 .page_item.second figcaption {
+  background-image: url(../img/bg/section-3-col-2.png);
 }
-.page2 .page_item.second figcaption {
-  background: #f3faff;
+.page3 .page_item.third figcaption {
+  background-image: url(../img/bg/section-3-col-3.png);
 }
-.page2 .page_item.third figcaption {
-  background: #ffaf3f;
+.page3 .page_item.fourth figcaption {
+  background-image: url(../img/bg/section-3-col-2.png);
 }
-.page2 .page_item.fourth figcaption {
-  background: #fa3fff;
-}
-.page2 .page_item.fivth figcaption {
-  background: #3faf2a;
-}
-.page2 .page_item figcaption {
+.page3 .page_item figcaption {
   position: absolute;
   width: 100%;
   top: 0;
@@ -235,38 +260,38 @@ body, .wrapper, html {
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-.page2 .page_item:hover figcaption {
+.page3 .page_item:hover figcaption {
   position: absolute;
 }
-.page2 .page_item.totop figcaption {
+.page3 .page_item.totop figcaption {
   top: 100%;
 }
-.page2 .page_item.totop:hover figcaption {
+.page3 .page_item.totop:hover figcaption {
   top: 0;
 }
-.page2 .page_item.toright figcaption {
+.page3 .page_item.toright figcaption {
   left: -100%;
   right: auto;
 }
-.page2 .page_item.toright:hover figcaption {
+.page3 .page_item.toright:hover figcaption {
   left: 0;
 }
-.page2 .page_item.toleft figcaption {
+.page3 .page_item.toleft figcaption {
   left: 100%;
   right: auto;
 }
-.page2 .page_item.toleft:hover figcaption {
+.page3 .page_item.toleft:hover figcaption {
   left: 0;
 }
-.page2 .page_item.tobottom figcaption {
+.page3 .page_item.tobottom figcaption {
   top: -100%;
   bottom: auto;
   height: 100%;
 }
-.page2 .page_item.tobottom:hover figcaption {
+.page3 .page_item.tobottom:hover figcaption {
   top: 0;
 }
-.page2 .page_item.tofront .image {
+.page3 .page_item.tofront .image {
   position: absolute;
   width: 100%;
   top: 50%;
@@ -278,17 +303,17 @@ body, .wrapper, html {
   -o-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
-.page2 .page_item.tofront .image img {
+.page3 .page_item.tofront .image img {
   width: 100%;
 }
-.page2 .page_item.tofront:hover .image {
+.page3 .page_item.tofront:hover .image {
   left: 50%;
   width: 0;
   height: 0;
   margin-top: 0;
   opacity: 0;
 }
-.page2 .page_item.tofront .image2 {
+.page3 .page_item.tofront .image2 {
   position: absolute;
   top: 50%;
   -webkit-transition: all 0.3s ease-out;
@@ -302,10 +327,10 @@ body, .wrapper, html {
   margin-top: 0;
   opacity: 0;
 }
-.page2 .page_item.tofront .image2 img {
+.page3 .page_item.tofront .image2 img {
   width: 100%;
 }
-.page2 .page_item.tofront:hover .image2 {
+.page3 .page_item.tofront:hover .image2 {
   width: 100%;
   left: 0;
   height: 200px;

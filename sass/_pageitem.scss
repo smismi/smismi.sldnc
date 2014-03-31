@@ -4,38 +4,44 @@
 
 }
 
-.page2 {
-
+.page3 {
+	.wrapper {
+		position: absolute;
+		top: 0;
+		bottom:0;
+		overflow: hidden;
+	}
 	.page_item {
 		position: absolute;
 		top: 0;
 		bottom:0;
 		overflow: hidden;
 
-		$list: "first", "second", "third", "fourth", "fivth";
+		$list: "first", "second", "third", "fourth";
 
 		@include pageitems($list);
 
 
 		&.first figcaption {
-			background: #337825;
+			background-image:url(../img/bg/section-3-col-1.png);
 		}
 		&.second figcaption{
-			background: #f3faff;
+			background-image:url(../img/bg/section-3-col-2.png);
 
 		}
 		&.third figcaption{
-			background: #ffaf3f;
+			background-image:url(../img/bg/section-3-col-3.png);
 
 		}
 		&.fourth figcaption{
-			background: #fa3fff;
+			background-image:url(../img/bg/section-3-col-2.png);
+
 
 		}
-		&.fivth figcaption{
-			background: #3faf2a;
-
-		}
+		//&.fivth figcaption{
+		//	background-image:url(../img/bg/section-3-col-1.png);
+		//
+		//}
 
 		figcaption {
 			position: absolute;
