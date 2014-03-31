@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport"
 		  content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<title>Сладуницв - title - main</title>
+	<title>Сладуницa - title - main</title>
 
 
 
@@ -115,31 +115,47 @@
 
 
 
-		var myScroll = new IScroll(
-				'#example-wrapper',
-				{
-					scrollX: false,
-					scrollY: true,
-					scrollbars: true,
-					useTransform: true,
-					useTransition: true,
-					probeType: 3
-				});
+//		var myScroll = new IScroll(
+//				'#example-wrapper',
+//				{
+//					scrollX: false,
+//					scrollY: true,
+//					scrollbars: true,
+//					useTransform: false,
+//					useTransition: false,
+//					probeType: 3,
+//					mouseWheel: true
+//				});
 
 
-//		// init controller
-//		var controller = new ScrollMagic({container: "#example-wrapper"});
-//
-//		// init tween
-//		var tween = TweenMax.to(0.5, {scale: 2.0});
-//
-//		// init scene
-//		var scene = new ScrollScene({triggerElement: "#section-3", duration: 500, offset: 75})
-//				.setTween(tween)
-//				.addTo(controller);
-//
-//
-//
+		// init controller
+		var controller = new ScrollMagic({container: "#example-wrapper"});
+
+		// init scene
+		var scene3 = new ScrollScene({
+			triggerElement: "#section-3",
+			duration: 300,
+			triggerHook: "onEnter"
+//			reverse: false
+		}).setTween(
+						TweenMax.to("#header", 0.5, {scale: 3.0})
+				)
+				.addTo(controller);
+
+
+
+
+
+
+
+
+
+		// show indicators (requires debug extension)
+
+		scene3.addIndicators();
+
+
+
 //		controller.scrollPos(function () {
 //			return -myScroll.y;
 //		});

@@ -107,7 +107,7 @@ body, .wrapper, html {
 
 .page {
   position: relative;
-  height: 2000px;
+  height: 100vh;
 }
 .page.page1 {
   background: url(../img/bg02.png);
