@@ -20,11 +20,13 @@
 	<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
 	<script type="text/javascript" src="js/_mobile/iscroll.js"></script>
 	<script type="text/javascript" src="js/jquery.scrollto.js"></script>
+	<script type="text/javascript" src="js/queryLoader.js"></script>
 
 
 
 	<link rel="stylesheet" href="css/fontface.css" type="text/css"/>
 	<link rel="stylesheet" href="css/common.css" type="text/css"/>
+	<link rel="stylesheet" href="css/queryLoader.css" type="text/css"/>
 </head>
 <body>
 <ul id="menu"></ul>
@@ -95,19 +97,14 @@
 
 				<div class="wrapper">
 
-					<figure class="page_item first totop">
-						<figcaption class="page_item_caption ">1</figcaption>
-					</figure>
-					<figure class="page_item second toright">
-						<figcaption class="page_item_caption">2</figcaption>
-					</figure>
-					<figure class="page_item third toleft">
-						<figcaption class="page_item_caption">3</figcaption>
-					</figure>
+					<div class="section-3-bg-4"></div>
+					<div class="section-3-bg-25">
+						<h1 style="font-size: 64px; text-align: center;">NENepiojwpeofgw[oem weg</h1>
+					</div>
+					<div class="section-3-bg-3"></div>
+					<div class="section-3-bg-2"></div>
+					<div class="section-3-bg-1"></div>
 
-					<figure class="page_item fourth tobottom">
-						<figcaption class="page_item_caption">3</figcaption>
-					</figure>
 
 				</div>
 				<!--<figure class="page_item fivth tofront">-->
@@ -131,30 +128,17 @@
 			<section id="section-4" class="page page4">
 				<div class="wrapper">
 					<div class="section-4-bg-4"></div>
-					<div class="section-4-bg-3"></div>
-					<div class="section-4-bg-2"></div>
 					<div class="section-4-bg-25">
 						<h1 style="font-size: 64px; text-align: center;">NENepiojwpeofgw[oem weg</h1>
 					</div>
-					<div class="section-4-bg-1" data-speed="1"></div>
+					<div class="section-4-bg-3"></div>
+					<div class="section-4-bg-2"></div>
+					<div class="section-4-bg-1"></div>
 				</div>
 			</section>
 			<section id="section-5" class="page page5">
 				<div class="wrapper">
 
-					<figure class="page_item first totop">
-						<figcaption class="page_item_caption ">1</figcaption>
-					</figure>
-					<figure class="page_item second toright">
-						<figcaption class="page_item_caption">2</figcaption>
-					</figure>
-					<figure class="page_item third toleft">
-						<figcaption class="page_item_caption">3</figcaption>
-					</figure>
-
-					<figure class="page_item fourth tobottom">
-						<figcaption class="page_item_caption">3</figcaption>
-					</figure>
 
 				</div>
 			</section>
@@ -222,8 +206,8 @@
 				// manual set hight (so height 100% is available within scroll container)
 				$(document).on("orientationchange", function () {
 					$("section")
-							.css("min-height", $(window).height())
-							.parent(".scrollmagic-pin-spacer").css("min-height", $(window).height());
+							.css("min-height", 1000)
+							.parent(".scrollmagic-pin-spacer").css("min-height", 1000);
 				});
 				$(document).trigger("orientationchange"); // trigger to init
 			});
@@ -244,11 +228,10 @@
 		}
 
 
-
-		// parallax1
+ 		// parallax1
 			new ScrollScene({
 				triggerElement: "section#section-1",
-				duration: $(window).height(),
+				duration: 1000,
 				offset: 0
 			})
 					.addTo(controller)
@@ -262,7 +245,7 @@
 		// parallax2
 			new ScrollScene({
 				triggerElement: "section#section-2",
-				duration: $(window).height(),
+				duration: 1000,
 				offset: 0
 			})
 					.addTo(controller)
@@ -275,7 +258,7 @@
 		// parallax3
 			new ScrollScene({
 				triggerElement: "section#section-3",
-				duration: $(window).height(),
+				duration: 1000,
 				offset: 0
 			})
 					.addTo(controller)
@@ -286,11 +269,26 @@
 //						TweenMax.to("#section-3", 1, {backgroundPosition: "50% -50%", ease: Linear.easeNone})
 
 					]));
+			new ScrollScene({
+				triggerElement: "section#section-3",
+				duration: 1000*2,
+				offset: 0
+			})
+					.addTo(controller)
+					.triggerHook("onEnter")
+					.setTween(new TimelineMax().add([
+						TweenMax.fromTo("#section-3 .section-3-bg-1", 1, {top: "0"}, {top: "0%", ease: Linear.easeNone}),
+						TweenMax.fromTo("#section-3 .section-3-bg-2", 1, {top: "0"}, {top: "20%", left: -22,  rotation: -13,  ease: Linear.easeNone}),
+						TweenMax.fromTo("#section-3 .section-3-bg-25", 1, {top: "0"}, {top: "40%", left: -22,  rotation: 13, ease: Linear.easeNone}),
+						TweenMax.fromTo("#section-3 .section-3-bg-3", 1, {top: "0"}, {top: "50%", ease: Linear.easeNone}),
+						TweenMax.fromTo("#section-3 .section-3-bg-4", 1, {top: "0"}, {top: "70%", ease: Linear.easeNone})
+
+					]));
 
 		// parallax4
 			new ScrollScene({
 				triggerElement: "section#section-4",
-				duration: $(window).height(),
+				duration: 1000,
 				offset: 0
 			})
 					.addTo(controller)
@@ -301,16 +299,16 @@
 					]));
 			new ScrollScene({
 				triggerElement: "section#section-4",
-				duration: $(window).height()*2,
+				duration: 1000*2,
 				offset: 0
 			})
 					.addTo(controller)
 					.triggerHook("onEnter")
 					.setTween(new TimelineMax().add([
 						TweenMax.fromTo("#section-4 .section-4-bg-1", 1, {top: "0"}, {top: "0%", ease: Linear.easeNone}),
-						TweenMax.fromTo("#section-4 .section-4-bg-2", 1, {top: "0"}, {top: "20%", ease: Linear.easeNone}),
-						TweenMax.fromTo("#section-4 .section-4-bg-25", 1, {top: "0"}, {top: "40%", ease: Linear.easeNone}),
-						TweenMax.fromTo("#section-4 .section-4-bg-3", 1, {top: "0"}, {top: "50%", left: -22,  rotation: -13, ease: Linear.easeNone}),
+						TweenMax.fromTo("#section-4 .section-4-bg-2", 1, {top: "0"}, {top: "20%", left: -22,  rotation: -13,  ease: Linear.easeNone}),
+						TweenMax.fromTo("#section-4 .section-4-bg-25", 1, {top: "0"}, {top: "40%", left: -22,  rotation: 13, ease: Linear.easeNone}),
+						TweenMax.fromTo("#section-4 .section-4-bg-3", 1, {top: "0"}, {top: "50%", ease: Linear.easeNone}),
 						TweenMax.fromTo("#section-4 .section-4-bg-4", 1, {top: "0"}, {top: "70%", ease: Linear.easeNone})
 
 					]));
@@ -318,7 +316,7 @@
 		// parallax5
 			new ScrollScene({
 				triggerElement: "section#section-5",
-				duration: $(window).height(),
+				duration: 1000,
 				offset: 0
 			})
 					.addTo(controller)
@@ -330,6 +328,9 @@
 					]));
 
 	});
+
+	QueryLoader.init();
+
 </script>
 </body>
 </html>

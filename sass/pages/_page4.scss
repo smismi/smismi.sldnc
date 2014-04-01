@@ -1,63 +1,64 @@
 .page4 {
+	.wrapper {
 
-	background:#ffd3ab url(../img/bg/bg4.jpg) no-repeat 50% 50%;
-	position: relative;
-	height: 100%;
-	overflow: hidden;
+		background:#ffd3ab url(../img/bg/bg4.jpg) no-repeat 50% 50%;
+		position: relative;
+		height: 100%;
+		overflow: hidden;
 
 
-	.section-4-bg-1 {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
- 		border:1px solid red;
+		.section-4-bg-1 {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			border:1px solid red;
 
-		background-image:url(../img/bg/bgl41.png);
-		background-position: 50% 50%;
+			background-image:url(../img/bg/bgl41.png);
+			background-position: 50% 50%;
+		}
+		.section-4-bg-2 {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			border:1px solid red;
+
+			background-image:url(../img/bg/bgl42.png);
+			background-position: 50% 50%;
+		}
+		.section-4-bg-25 {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			border:1px solid green;
+		}
+
+		.section-4-bg-3 {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			border:1px solid red;
+
+			background-image:url(../img/bg/bgl43.png);
+			background-position: 50% 0%;
+		}
+		.section-4-bg-4 {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			border:1px solid red;
+
+			background-image:url(../img/bg/bgl44.png);
+			background-position: 50% 50%;
+		}
 	}
-	.section-4-bg-2 {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
- 		border:1px solid red;
-
-		background-image:url(../img/bg/bgl42.png);
-		background-position: 50% 50%;
-	}
-	.section-4-bg-25 {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		border:1px solid green;
-	}
-
-	.section-4-bg-3 {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		border:1px solid red;
-
-		background-image:url(../img/bg/bgl43.png);
-		background-position: 50% 0%;
-	}
-	.section-4-bg-4 {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		border:1px solid red;
-
-		background-image:url(../img/bg/bgl44.png);
-		background-position: 50% 50%;
-	}
-
 }
