@@ -146,24 +146,6 @@ section.page {
   bottom: 0;
   overflow: hidden;
 }
-.page.page1 {
-  background: #e45278;
-}
-.page.page2 {
-  background: #335278;
-}
-.page.page3 {
-  background: #52e478;
-}
-.page.page4 {
-  background-image: url(../img/bg02.png);
-}
-.page.page5 {
-  background-image: url(../img/bg02.png);
-}
-.page.page6 {
-  background-image: url(../img/bg02.png);
-}
 .page:after {
   content: ' ';
   width: auto;
@@ -179,9 +161,112 @@ section.page {
   box-shadow: 0px -3px 12px 3px black;
 }
 
+.page1 {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.page1 .wrapper {
+  background: #ffd3ab url(../img/bg/01_sladunica.jpg) repeat 50% 50%;
+}
+
+.page2 {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.page2 .wrapper {
+  background: #ffd3ab url(../img/bg/01_sladunica_2.jpg) repeat 50% 50%;
+}
+
+.page3 {
+  background-image: url(../img/bg/bg3.jpg);
+  height: 100%;
+  overflow: hidden;
+}
+.page3 .bg-section-1, .page3 .bg-section-2, .page3 .bg-section-3 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.page3 .bg-section-1 {
+  width: 200%;
+  height: 200%;
+  background: url(../img/bg/bgl1.png);
+  background-position: 50% 50%;
+}
+.page3 .bg-section-2 {
+  width: 200%;
+  height: 200%;
+  background: url(../img/bg/bgl2.png);
+  background-position: 0 -25%;
+}
+.page3 .bg-section-3 {
+  width: 200%;
+  height: 200%;
+  background: url(../img/bg/bgl3.png);
+  background-position: 50% 50%;
+}
+
+.page4 {
+  background: #ffd3ab url(../img/bg/bg4.jpg) no-repeat 50% 50%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.page4 .section-4-bg-1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 1px solid red;
+  background-image: url(../img/bg/bgl41.png);
+  background-position: 50% 50%;
+}
+.page4 .section-4-bg-2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 1px solid red;
+  background-image: url(../img/bg/bgl42.png);
+  background-position: 50% 50%;
+}
+.page4 .section-4-bg-25 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 1px solid green;
+}
+.page4 .section-4-bg-3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 1px solid red;
+  background-image: url(../img/bg/bgl43.png);
+  background-position: 50% 0%;
+}
+.page4 .section-4-bg-4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 1px solid red;
+  background-image: url(../img/bg/bgl44.png);
+  background-position: 50% 50%;
+}
+
 .fixed {
   position: fixed;
   z-index: 12;
+  display: none;
 }
 
 .test {

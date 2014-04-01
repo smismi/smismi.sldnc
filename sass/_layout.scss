@@ -40,41 +40,6 @@ section.page {
 
 	}
 
-	&.page1 {
-		//background-image: url(../img/bg02.png);
-		background: #e45278;
-		//height: 100%;
-	}
-	&.page2 {
-		//background-image: url(../img/bg02.png);
-		background: #335278;
-		//height: 100%;
-	}
-
-	&.page3 {
-		//background: url(../img/bg02.png);
-		background: #52e478;
-		//height: 100%;
-	}
-
-
-
-
-	&.page4 {
-		background-image: url(../img/bg02.png);
-		//height: 100%;
-	}
-
-	&.page5 {
-		background-image: url(../img/bg02.png);
-		//height: 100%;
-	}
-
-	&.page6 {
-		background-image: url(../img/bg02.png);
-		//height: 100%;
-	}
-
 
 
 	&:after {
@@ -94,7 +59,18 @@ section.page {
 }
 
 
+
+
+@import "pages/page1";
+@import "pages/page2";
+@import "pages/page3";
+@import "pages/page4";
+//@import "pages/page5";
+//@import "pages/page6";
+
+
 .fixed {
 	position: fixed;
 	z-index: 12;
+	display: none;
 }

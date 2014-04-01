@@ -71,11 +71,11 @@
 								var diffX = $(_this).width() - $(this).width();
 								var diffY = $(_this).height() - $(this).height();
 
-								var myX = diffX * (mouseXPercent / 100 / ($(this).data('speed') || 1)); //) / 100) / 2;
+								var myX = diffX * (mouseXPercent / 300 / ($(this).data('speed') || 1)); //) / 100) / 2;
 
 
-								var myY = diffY * (mouseYPercent / 100 / ($(this).data('speed') || 1));
-								var myY = 0;
+								var myY = diffY * (mouseYPercent / 300 / ($(this).data('speed') || 1));
+//								var myY = 0;
 
 
 								var cssObj = {

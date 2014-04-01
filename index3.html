@@ -70,7 +70,114 @@
 					</figure>
 				</div>
 			</section>
+			<section id="section-2" class="page page2">
+				<div class="wrapper">
 
+					<figure class="page_item first totop">
+						<figcaption class="page_item_caption ">1</figcaption>
+					</figure>
+					<figure class="page_item second toright">
+						<figcaption class="page_item_caption">2</figcaption>
+					</figure>
+					<figure class="page_item third toleft">
+						<figcaption class="page_item_caption">3</figcaption>
+					</figure>
+
+					<figure class="page_item fourth tobottom">
+						<figcaption class="page_item_caption">3</figcaption>
+					</figure>
+
+				</div>
+			</section>
+			<section id="section-3" class="page page3">
+
+
+
+				<div class="wrapper">
+
+					<figure class="page_item first totop">
+						<figcaption class="page_item_caption ">1</figcaption>
+					</figure>
+					<figure class="page_item second toright">
+						<figcaption class="page_item_caption">2</figcaption>
+					</figure>
+					<figure class="page_item third toleft">
+						<figcaption class="page_item_caption">3</figcaption>
+					</figure>
+
+					<figure class="page_item fourth tobottom">
+						<figcaption class="page_item_caption">3</figcaption>
+					</figure>
+
+				</div>
+				<!--<figure class="page_item fivth tofront">-->
+					<!--<figcaption class="page_item_caption">-->
+						<!--<div class="image">-->
+							<!--<img src="img/test1.png" alt=""/>-->
+
+						<!--</div>-->
+						<!--<div class="image2">-->
+							<!--<img src="img/test2.png" alt=""/>-->
+						<!--</div>-->
+
+					<!--</figcaption>-->
+				<!--</figure>-->
+
+				<!--<div class="bg-section-1" data-speed="1"></div>-->
+				<!--<div class="bg-section-2" data-speed="2"></div>-->
+				<!--<div class="bg-section-3" data-speed="3"></div>-->
+
+			</section>
+			<section id="section-4" class="page page4">
+				<div class="wrapper">
+					<div class="section-4-bg-4"></div>
+					<div class="section-4-bg-3"></div>
+					<div class="section-4-bg-2"></div>
+					<div class="section-4-bg-25">
+						<h1 style="font-size: 64px; text-align: center;">NENepiojwpeofgw[oem weg</h1>
+					</div>
+					<div class="section-4-bg-1" data-speed="1"></div>
+				</div>
+			</section>
+			<section id="section-5" class="page page5">
+				<div class="wrapper">
+
+					<figure class="page_item first totop">
+						<figcaption class="page_item_caption ">1</figcaption>
+					</figure>
+					<figure class="page_item second toright">
+						<figcaption class="page_item_caption">2</figcaption>
+					</figure>
+					<figure class="page_item third toleft">
+						<figcaption class="page_item_caption">3</figcaption>
+					</figure>
+
+					<figure class="page_item fourth tobottom">
+						<figcaption class="page_item_caption">3</figcaption>
+					</figure>
+
+				</div>
+			</section>
+			<section id="section-6" class="page page6">
+				<div class="wrapper">
+
+					<figure class="page_item first totop">
+						<figcaption class="page_item_caption ">1</figcaption>
+					</figure>
+					<figure class="page_item second toright">
+						<figcaption class="page_item_caption">2</figcaption>
+					</figure>
+					<figure class="page_item third toleft">
+						<figcaption class="page_item_caption">3</figcaption>
+					</figure>
+
+					<figure class="page_item fourth tobottom">
+						<figcaption class="page_item_caption">3</figcaption>
+					</figure>
+
+				</div>
+
+			</section>
 		</div>
 	</div>
 </div>
@@ -82,7 +189,6 @@
 		if (Modernizr.touch) {
 			var myScroll;
 
-			alert(1)
 			$(document).ready(function () {
 				// wrap for iscroll
 				$("#content-wrapper")
@@ -190,8 +296,22 @@
 					.addTo(controller)
 					.triggerHook("onLeave")
 					.setTween(new TimelineMax().add([
-						TweenMax.fromTo("#section-4 .wrapper", 1, {top: "0"}, {top: "20%", ease: Linear.easeNone}),
+						TweenMax.fromTo("#section-4 .wrapper", 1, {top: "0"}, {top: "20%", ease: Linear.easeNone})
 
+					]));
+			new ScrollScene({
+				triggerElement: "section#section-4",
+				duration: $(window).height()*2,
+				offset: 0
+			})
+					.addTo(controller)
+					.triggerHook("onEnter")
+					.setTween(new TimelineMax().add([
+						TweenMax.fromTo("#section-4 .section-4-bg-1", 1, {top: "0"}, {top: "0%", ease: Linear.easeNone}),
+						TweenMax.fromTo("#section-4 .section-4-bg-2", 1, {top: "0"}, {top: "20%", ease: Linear.easeNone}),
+						TweenMax.fromTo("#section-4 .section-4-bg-25", 1, {top: "0"}, {top: "40%", ease: Linear.easeNone}),
+						TweenMax.fromTo("#section-4 .section-4-bg-3", 1, {top: "0"}, {top: "50%", left: -22,  rotation: -13, ease: Linear.easeNone}),
+						TweenMax.fromTo("#section-4 .section-4-bg-4", 1, {top: "0"}, {top: "70%", ease: Linear.easeNone})
 
 					]));
 
