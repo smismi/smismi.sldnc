@@ -145,13 +145,15 @@ section.page {
   top: 0;
   bottom: 0;
   overflow: hidden;
-  background-image: url(../img/bg02.png);
 }
 .page.page1 {
-  background-image: url(../img/bg02.png);
+  background: #e45278;
 }
 .page.page2 {
-  background-image: url(../img/bg02.png);
+  background: #335278;
+}
+.page.page3 {
+  background: #52e478;
 }
 .page.page4 {
   background-image: url(../img/bg02.png);
@@ -177,35 +179,6 @@ section.page {
   box-shadow: 0px -3px 12px 3px black;
 }
 
-.page3 {
-  background-image: url(../img/bg/bg3.jpg);
-  height: 100%;
-  overflow: hidden;
-}
-.page3 .bg-section-1, .page3 .bg-section-2, .page3 .bg-section-3 {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-}
-.page3 .bg-section-1 {
-  width: 200%;
-  height: 200%;
-  background: url(../img/bg/bgl1.png);
-  background-position: 50% 50%;
-}
-.page3 .bg-section-2 {
-  width: 200%;
-  height: 200%;
-  background: url(../img/bg/bgl2.png);
-  background-position: 0 -25%;
-}
-.page3 .bg-section-3 {
-  width: 200%;
-  height: 200%;
-  background: url(../img/bg/bgl3.png);
-  background-position: 50% 50%;
-}
-
 .fixed {
   position: fixed;
   z-index: 12;
@@ -218,129 +191,42 @@ section.page {
 .page {
   position: relative;
 }
-
-.page3 .page_item {
+.page .wrapper .page_item {
   position: absolute;
   top: 0;
   bottom: 0;
   overflow: hidden;
 }
-.page3 .page_item.first {
+.page .wrapper .page_item.first {
   left: 0%;
-  width: 25%;
+  width: 33.33333%;
 }
-.page3 .page_item.second {
-  left: 25%;
-  width: 25%;
+.page .wrapper .page_item.second {
+  left: 33.33333%;
+  width: 33.33333%;
 }
-.page3 .page_item.third {
-  left: 50%;
-  width: 25%;
+.page .wrapper .page_item.third {
+  left: 66.66667%;
+  width: 33.33333%;
 }
-.page3 .page_item.fourth {
-  left: 75%;
-  width: 25%;
-}
-.page3 .page_item.first figcaption {
+.page .wrapper .page_item.first figcaption {
   background-image: url(../img/bg/section-3-col-1.png);
 }
-.page3 .page_item.second figcaption {
+.page .wrapper .page_item.second figcaption {
   background-image: url(../img/bg/section-3-col-2.png);
 }
-.page3 .page_item.third figcaption {
+.page .wrapper .page_item.third figcaption {
   background-image: url(../img/bg/section-3-col-3.png);
 }
-.page3 .page_item.fourth figcaption {
+.page .wrapper .page_item.fourth figcaption {
   background-image: url(../img/bg/section-3-col-2.png);
 }
-.page3 .page_item figcaption {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.page3 .page_item:hover figcaption {
-  position: absolute;
-}
-.page3 .page_item.totop figcaption {
-  top: 100%;
-}
-.page3 .page_item.totop:hover figcaption {
-  top: 0;
-}
-.page3 .page_item.toright figcaption {
-  left: -100%;
-  right: auto;
-}
-.page3 .page_item.toright:hover figcaption {
-  left: 0;
-}
-.page3 .page_item.toleft figcaption {
-  left: 100%;
-  right: auto;
-}
-.page3 .page_item.toleft:hover figcaption {
-  left: 0;
-}
-.page3 .page_item.tobottom figcaption {
-  top: -100%;
-  bottom: auto;
-  height: 100%;
-}
-.page3 .page_item.tobottom:hover figcaption {
-  top: 0;
-}
-.page3 .page_item.tofront .image {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 0;
-  height: 200px;
-  margin-top: -100px;
-  -webkit-transition: all 0.1s ease-out;
-  -moz-transition: all 0.1s ease-out;
-  -o-transition: all 0.1s ease-out;
-  transition: all 0.1s ease-out;
-}
-.page3 .page_item.tofront .image img {
-  width: 100%;
-}
-.page3 .page_item.tofront:hover .image {
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-top: 0;
-  opacity: 0;
-}
-.page3 .page_item.tofront .image2 {
-  position: absolute;
-  top: 50%;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  z-index: 12;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-top: 0;
-  opacity: 0;
-}
-.page3 .page_item.tofront .image2 img {
-  width: 100%;
-}
-.page3 .page_item.tofront:hover .image2 {
-  width: 100%;
-  left: 0;
-  height: 200px;
-  margin-top: -100px;
-  opacity: 1;
+@media screen and (max-width: 500px) {
+  .page .wrapper .page_item {
+    position: static;
+    width: auto;
+    height: 33%;
+  }
 }
 
 .header_nav {

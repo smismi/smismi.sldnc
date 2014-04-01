@@ -36,24 +36,24 @@ section.page {
 		top: 0;
 		bottom:0;
 		overflow: hidden;
-		background-image: url(../img/bg02.png);
+		//background-image: url(../img/bg02.png);
 
 	}
 
 	&.page1 {
-		background-image: url(../img/bg02.png);
-		//background: #e45278;
+		//background-image: url(../img/bg02.png);
+		background: #e45278;
 		//height: 100%;
 	}
 	&.page2 {
-		background-image: url(../img/bg02.png);
-		//background: #52e478;
+		//background-image: url(../img/bg02.png);
+		background: #335278;
 		//height: 100%;
 	}
 
 	&.page3 {
 		//background: url(../img/bg02.png);
-		//background: #52e478;
+		background: #52e478;
 		//height: 100%;
 	}
 
@@ -93,7 +93,6 @@ section.page {
 
 }
 
-@import "pages/page3";
 
 .fixed {
 	position: fixed;
