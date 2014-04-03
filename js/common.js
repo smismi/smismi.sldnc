@@ -1,5 +1,14 @@
 //define namespace
-var S = {
+var SL = {
+
+
+	init: function() {
+		console.log("init");
+
+
+	}
+
+
 
 
 }

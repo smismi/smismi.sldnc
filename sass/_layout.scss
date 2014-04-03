@@ -2,7 +2,7 @@
 	Containers
 */
 #content-wrapper, #wrapper {
-	height: 100%;
+	height:100%;
 }
 
 .scrollContainer {
@@ -11,24 +11,71 @@
 	width: 100%
 }
 .scrollContainer {
-	height: 100%;
+	height:100%;
 	margin: auto;
 }
 #wrapper .scrollContent {
-	height: 100%;
+	height:100%;
 }
 #wrapper.scrollContainer .scrollContent {
 	width: 100%;
 	height: auto;
 }
 
+@-webkit-keyframes spin {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+	from { -moz-transform: rotate(0deg); }
+	to { -moz-transform: rotate(360deg); }
+}
+
+@-ms-keyframes spin {
+	from { -ms-transform: rotate(0deg); }
+	to { -ms-transform: rotate(360deg); }
+}
+
+//misc
+#preloader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -63px;
+	margin-top: -63px;
+	width: 126px;
+	height: 126px;
+
+}
+
+.rotation {
+	background: #ff0;
+
+		//-webkit-animation-name: spin;
+		//-webkit-animation-duration: 1000ms;
+		//-webkit-animation-iteration-count: infinite;
+		//-webkit-animation-timing-function: linear;
+		//-moz-animation-name: spin;
+		//-moz-animation-duration: 1000ms;
+		//-moz-animation-iteration-count: infinite;
+		//-moz-animation-timing-function: linear;
+		//-ms-animation-name: spin;
+		//-ms-animation-duration: 1000ms;
+		//-ms-animation-iteration-count: infinite;
+		//-ms-animation-timing-function: linear;
+}
+
+
 section.page {
-	min-height: 100%;
 	position: relative;
 }
 .page {
+
 	position: relative;
-	height: 100%;
+	height:100%;
+	overflow: hidden;
+
 	background-position: 50% 50%;
 
 	.wrapper {
@@ -41,19 +88,6 @@ section.page {
 	}
 
 
-
-	&:after {
-		content: ' ';
-		width: auto;
-		height: 3px;
-		position: absolute;
-		border-top: 4px solid #03f;
-		bottom: 0;
-		left:0;
-		right: 0;
-		background: #f00;
-	    @include single-box-shadow(#000000, 0px, -3px, 12px, 3px)
-	}
 
 
 }
@@ -72,5 +106,5 @@ section.page {
 .fixed {
 	position: fixed;
 	z-index: 12;
-	display: none;
+	//display: none;
 }

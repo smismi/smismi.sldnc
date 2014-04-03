@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=500" />
+	<meta name="viewport" content="initial-scale=.5,user-scalable=yes,maximum-scale=2,width=device-width"/>
 
 	<title>СЛДНЦ</title>
 
@@ -24,6 +24,12 @@
 
 
 
+	<script type="text/javascript" src="js/common.js"></script>
+
+
+
+
+
 	<link rel="stylesheet" href="css/fontface.css" type="text/css"/>
 	<link rel="stylesheet" href="css/common.css" type="text/css"/>
 	<link rel="stylesheet" href="css/queryLoader.css" type="text/css"/>
@@ -37,46 +43,70 @@
 	<div id="wrapper">
 		<nav class="header fixed">
 			<ul class="header_nav" id="header">
-				<li class="header_nav_item"><a class="header_nav_item_link" href="#1">Кaмпания</a></li>
+				<li class="header_nav_item"><a class="header_nav_item_link" href="#1">Компания</a></li>
 				<li class="header_nav_item"><a class="header_nav_item_link" href="#2">Каталог</a></li>
 				<li class="header_nav_item"><a class="header_nav_item_link" href="#3">Партнеры</a></li>
+				<li class="header_nav_item"><a class="header_nav_item_link" href="#3">
+					<object data="img/svg/logo.svg" type="image/svg+xml" class="svg_logo">
+						<!--<img src="logo.jpg"/>-->
+					</object></a></li>
 				<li class="header_nav_item"><a class="header_nav_item_link" href="#4">Новости</a></li>
 				<li class="header_nav_item"><a class="header_nav_item_link" href="#5">Контакты</a></li>
 			</ul>
 		</nav>
 		<nav class="pager fixed">
-			<ul class="pager_nav" id="nav">
-				<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-1">1</a></li>
-				<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-2">2</a></li>
-				<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-3">3</a></li>
-				<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-4">4</a></li>
-				<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-5">5</a></li>
-			</ul>
+
+			<div id="pager_nav" id="nav">
+				<ul class="inner_wrapper"> 
+					<li class="" data-scroll="first_slide">
+						<span>1</span>
+						<div>О компании</div>
+					</li>
+					<li data-scroll="second_slide" class="">
+						<span>2</span>
+						<div>География продаж</div>
+					</li>
+					<li data-scroll="third_slide" class="active">
+						<span>3</span>
+						<div>Производство</div>
+					</li>
+					<li data-scroll="fourth_slide" class="">
+						<span>4</span>
+						<div>Партнеры</div>
+					</li>
+					<li data-scroll="fifth_slide" class="">
+						<span>5</span>
+						<div>Вакансии</div>
+					</li>
+					<li data-scroll="sixth_slide" class="">
+						<span>6</span>
+						<div>Новости</div>
+					</li>
+
+				</ul>
+			</div>
 		</nav>
 
 
-		<div class="scrollContent">
+			<div class="scrollContent">
 			<section id="section-1" class="page page1">
 				<div class="wrapper">
-					<figure class="page_item first">
-						<img src="img/section-5-1base.png"/>
-						<figcaption class="page_item_caption ">1</figcaption>
-					</figure>
-					<figure class="page_item second">
-						<img src="img/section-5-1base.png"/>
-						<figcaption class="page_item_caption ">1</figcaption>
-					</figure>
-					<figure class="page_item third">
-						<img src="img/section-5-1base.png"/>
-						<figcaption class="page_item_caption ">1</figcaption>
-					</figure>
+					<div class="section-1-bg-1"></div>
+					<div class="section-1-bg-3"></div>
+					<div class="section-1-bg-2"></div>
+					<div class="section-1-bg-4"></div>
+					<div class="section-1-bg-25">
+						<object data="img/svg/section-1-bigtext.svg" type="image/svg+xml" class="svg_bigtext">
+							<!--<img src="logo.jpg"/>-->
+						</object>
+					</div>
 				</div>
 			</section>
 			<section id="section-2" class="page page2">
 				<div class="wrapper">
 
 					<figure class="page_item first totop">
-						<figcaption class="page_item_caption ">1</figcaption>
+						<figcaption class="page_item_caption">1</figcaption>
 					</figure>
 					<figure class="page_item second toright">
 						<figcaption class="page_item_caption">2</figcaption>
@@ -97,13 +127,13 @@
 
 				<div class="wrapper">
 
-					<div class="section-3-bg-4"></div>
-					<div class="section-3-bg-25">
-						<h1 style="font-size: 64px; text-align: center;">NENepiojwpeofgw[oem weg</h1>
-					</div>
-					<div class="section-3-bg-3"></div>
-					<div class="section-3-bg-2"></div>
-					<div class="section-3-bg-1"></div>
+					<!--<div class="section-3-bg-4"></div>-->
+					<!--<div class="section-3-bg-25">-->
+						<!--<h1 style="font-size: 64px; text-align: center;">NENepiojwpeofgw[oem weg</h1>-->
+					<!--</div>-->
+					<!--<div class="section-3-bg-3"></div>-->
+					<!--<div class="section-3-bg-2"></div>-->
+					<!--<div class="section-3-bg-1"></div>-->
 
 
 				</div>
@@ -127,13 +157,11 @@
 			</section>
 			<section id="section-4" class="page page4">
 				<div class="wrapper">
-					<div class="section-4-bg-4"></div>
-					<div class="section-4-bg-25">
-						<h1 style="font-size: 64px; text-align: center;">NENepiojwpeofgw[oem weg</h1>
-					</div>
-					<div class="section-4-bg-3"></div>
-					<div class="section-4-bg-2"></div>
-					<div class="section-4-bg-1"></div>
+ 					<div class="section-4-bg-3"></div>
+ 					<div class="section-4-bg-3"></div>
+ 					<div class="section-4-bg-3"></div>
+ 					<div class="section-4-bg-3"></div>
+ 					<div class="section-4-bg-3"></div>
 				</div>
 			</section>
 			<section id="section-5" class="page page5">
@@ -165,15 +193,18 @@
 		</div>
 	</div>
 </div>
-
+<div id="preloader"></div>
 <script>
 	$(document).ready(function($) {
 
 		var controller;
 		if (Modernizr.touch) {
+			return;
 			var myScroll;
 
 			$(document).ready(function () {
+
+
 				// wrap for iscroll
 				$("#content-wrapper")
 						.addClass("scrollContainer")
@@ -206,8 +237,8 @@
 				// manual set hight (so height 100% is available within scroll container)
 				$(document).on("orientationchange", function () {
 					$("section")
-							.css("min-height", 1000)
-							.parent(".scrollmagic-pin-spacer").css("min-height", 1000);
+							.css("min-height",window.screen.height)
+							.parent(".scrollmagic-pin-spacer").css("min-height", window.screen.height);
 				});
 				$(document).trigger("orientationchange"); // trigger to init
 			});
@@ -226,111 +257,129 @@
 				}
 			});
 		}
-
-
- 		// parallax1
+  		// parallax1
 			new ScrollScene({
-				triggerElement: "section#section-1",
+				triggerElement: "#section-1",
 				duration: 1000,
 				offset: 0
 			})
 					.addTo(controller)
 					.triggerHook("onLeave")
 					.setTween(new TimelineMax().add([
-						TweenMax.fromTo("#section-1 .wrapper", 1, {top: "0"}, {top: "20%", ease: Linear.easeNone}),
+						TweenMax.fromTo("#section-1 .wrapper", 1, {y:0}, {y:200}),
 
 
 					]));
 
-		// parallax2
-			new ScrollScene({
-				triggerElement: "section#section-2",
-				duration: 1000,
-				offset: 0
-			})
-					.addTo(controller)
-					.triggerHook("onLeave")
-					.setTween(new TimelineMax().add([
-						TweenMax.fromTo("#section-2 .wrapper", 1, {top: "0"}, {top: "20%", ease: Linear.easeNone}),
+			TweenMax.set("#section-1 .section-1-bg-2", {backgroundPosition: "-100% 100%", opacity: 0});
+			TweenMax.set("#section-1 .section-1-bg-4", {backgroundPosition: "200% 100%", opacity: 0});
+			TweenMax.set("#section-1 .section-1-bg-3", {scale: 0, opacity: 0});
+
+		// build tween
+		var tween1 = new TimelineMax()
+				.add(
+						TweenMax.to("#section-1 .section-1-bg-2", 1, {backgroundPosition: "0% 100%", opacity: 1,
+							onStart: function () {console.log("#section-1 .section-1-bg-2 -- start")},
+						})
+				);
+		var tween2 = new TimelineMax()
+				.add(
+						TweenMax.to("#section-1 .section-1-bg-4", 1, {backgroundPosition: "100% 100%", opacity: 1,
+							onStart: function () {console.log("#section-1 .section-1-bg-2 -- start")},
+						})
+				);
+		var tween3 = new TimelineMax()
+				.add(
+						TweenMax.to("#section-1 .section-1-bg-3", 1, {scale: 1, opacity: 1,
+							onStart: function () {console.log("#section-1 .section-1-bg-2 -- start")},
+						})
+				);
 
 
-					]));
-		// parallax3
-			new ScrollScene({
-				triggerElement: "section#section-3",
-				duration: 1000,
-				offset: 0
-			})
-					.addTo(controller)
-					.triggerHook("onLeave")
-					.setTween(new TimelineMax().add([
-//						TweenMax.fromTo("#section-3 .bg-section-1", 1, {top: "0"}, {top: "-40%", ease: Linear.easeNone}),
-						TweenMax.fromTo("#section-3 .wrapper", 1, {top: "0"}, {top: "20%", ease: Linear.easeNone}),
-//						TweenMax.to("#section-3", 1, {backgroundPosition: "50% -50%", ease: Linear.easeNone})
 
-					]));
-			new ScrollScene({
-				triggerElement: "section#section-3",
-				duration: 1000*2,
-				offset: 0
-			})
-					.addTo(controller)
-					.triggerHook("onEnter")
-					.setTween(new TimelineMax().add([
-						TweenMax.fromTo("#section-3 .section-3-bg-1", 1, {top: "0"}, {top: "0%", ease: Linear.easeNone}),
-						TweenMax.fromTo("#section-3 .section-3-bg-2", 1, {top: "0"}, {top: "20%", left: -22,  rotation: -13,  ease: Linear.easeNone}),
-						TweenMax.fromTo("#section-3 .section-3-bg-25", 1, {top: "0"}, {top: "40%", left: -22,  rotation: 13, ease: Linear.easeNone}),
-						TweenMax.fromTo("#section-3 .section-3-bg-3", 1, {top: "0"}, {top: "50%", ease: Linear.easeNone}),
-						TweenMax.fromTo("#section-3 .section-3-bg-4", 1, {top: "0"}, {top: "70%", ease: Linear.easeNone})
+////		parallax2
+//			new ScrollScene({
+//				triggerElement: "#section-2",
+//				duration: 1000,
+//				offset: 0
+//			})
+//					.addTo(controller)
+//					.triggerHook("onLeave")
+//					.setTween(new TimelineMax().add([
+//						TweenMax.fromTo("#section-2 .wrapper", 1, {y: 0}, {y: 200, ease: Linear.easeNone}),
+//
+//
+//					]));
+//		// parallax3
+//			new ScrollScene({
+//				triggerElement: "section#section-3",
+//				duration: 1000,
+//				offset: 0
+//			})
+//					.addTo(controller)
+//					.triggerHook("onLeave")
+//					.setTween(new TimelineMax().add([
+////						TweenMax.fromTo("#section-3 .bg-section-1", 1, {y: 0}, {top: "-40%", ease: Linear.easeNone}),
+//						TweenMax.fromTo("#section-3 .wrapper", 1, {y: 0}, {y: 200, ease: Linear.easeNone}),
+////						TweenMax.to("#section-3", 1, {backgroundPosition: "50% -50%", ease: Linear.easeNone})
+//
+//					]));
+//
+//
+//		// parallax4
+//			new ScrollScene({
+//				triggerElement: "section#section-4",
+//				duration: 1000,
+//				offset: 0
+//			})
+//					.addTo(controller)
+//					.triggerHook("onLeave")
+//					.setTween(new TimelineMax().add([
+//						TweenMax.fromTo("#section-4 .wrapper", 1, {y: 0}, {y: 200, ease: Linear.easeNone})
+//
+//					]));
+//			new ScrollScene({
+//				triggerElement: "section#section-4",
+//				duration: 1000*2,
+//				offset: 0
+//			})
+//					.addTo(controller)
+//					.triggerHook("onEnter")
+//					.setTween(new TimelineMax().add([
+//						TweenMax.fromTo("#section-4 .section-4-bg-3", 1, { backgroundPosition: "0 0", x: 0}, {backgroundPosition: "0 -260px" , x: 325, ease: Linear.easeNone})
+//
+////						TweenMax.fromTo("#section-4 .section-4-bg-3", 1, { backgroundPosition: "50% 50%"}, {backgroundPosition: "-40% 0",  ease: Linear.easeNone}),
+////						TweenMax.fromTo("#section-4 .section-4-bg-1", 1, {y: 0}, {x: 1122,  rotation: 113, ease: Linear.easeNone}),
+////						TweenMax.fromTo("#section-4 .section-4-bg-2", 1, {y: 0}, {y: 200	, left: -22,  rotation: -13,  ease: Linear.easeNone}),
+////						TweenMax.fromTo("#section-4 .section-4-bg-25", 1, {y: 0}, {y: 400, left: -22,  rotation: 13, ease: Linear.easeNone}),
+////						TweenMax.fromTo("#section-4 .section-4-bg-3", 1, {y: 0}, {y: 500, ease: Linear.easeNone}),
+////						TweenMax.fromTo("#section-4 .section-4-bg-4", 1, {y: 0}, {y: 700, ease: Linear.easeNone})
+//
+//					]));
+//
+//		// parallax5
+//			new ScrollScene({
+//				triggerElement: "section#section-5",
+//				duration: 1000,
+//				offset: 0
+//			})
+//					.addTo(controller)
+//					.triggerHook("onLeave")
+//					.setTween(new TimelineMax().add([
+//						TweenMax.fromTo("#section-5 .wrapper", 1, {y: 0}, {y: 200, ease: Linear.easeNone}),
+//
+//
+//					]));
 
-					]));
+		SL.init();
 
-		// parallax4
-			new ScrollScene({
-				triggerElement: "section#section-4",
-				duration: 1000,
-				offset: 0
-			})
-					.addTo(controller)
-					.triggerHook("onLeave")
-					.setTween(new TimelineMax().add([
-						TweenMax.fromTo("#section-4 .wrapper", 1, {top: "0"}, {top: "20%", ease: Linear.easeNone})
-
-					]));
-			new ScrollScene({
-				triggerElement: "section#section-4",
-				duration: 1000*2,
-				offset: 0
-			})
-					.addTo(controller)
-					.triggerHook("onEnter")
-					.setTween(new TimelineMax().add([
-						TweenMax.fromTo("#section-4 .section-4-bg-1", 1, {top: "0"}, {top: "0%", ease: Linear.easeNone}),
-						TweenMax.fromTo("#section-4 .section-4-bg-2", 1, {top: "0"}, {top: "20%", left: -22,  rotation: -13,  ease: Linear.easeNone}),
-						TweenMax.fromTo("#section-4 .section-4-bg-25", 1, {top: "0"}, {top: "40%", left: -22,  rotation: 13, ease: Linear.easeNone}),
-						TweenMax.fromTo("#section-4 .section-4-bg-3", 1, {top: "0"}, {top: "50%", ease: Linear.easeNone}),
-						TweenMax.fromTo("#section-4 .section-4-bg-4", 1, {top: "0"}, {top: "70%", ease: Linear.easeNone})
-
-					]));
-
-		// parallax5
-			new ScrollScene({
-				triggerElement: "section#section-5",
-				duration: 1000,
-				offset: 0
-			})
-					.addTo(controller)
-					.triggerHook("onLeave")
-					.setTween(new TimelineMax().add([
-						TweenMax.fromTo("#section-5 .wrapper", 1, {top: "0"}, {top: "20%", ease: Linear.easeNone}),
-
-
-					]));
 
 	});
 
-	QueryLoader.init();
+
+
 
 </script>
+
 </body>
 </html>

@@ -68,6 +68,7 @@ body, html, .wrapper {
   padding: 0;
   width: 100%;
   height: 100%;
+  font-family: oksana_text_narrowdemibold;
 }
 
 .header {
@@ -130,14 +131,58 @@ html.touch .touchonly {
   height: auto;
 }
 
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+#preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -63px;
+  margin-top: -63px;
+  width: 126px;
+  height: 126px;
+}
+
+.rotation {
+  background: #ff0;
+}
+
 section.page {
-  min-height: 100%;
   position: relative;
 }
 
 .page {
   position: relative;
   height: 100%;
+  overflow: hidden;
   background-position: 50% 50%;
 }
 .page .wrapper {
@@ -146,20 +191,6 @@ section.page {
   bottom: 0;
   overflow: hidden;
 }
-.page:after {
-  content: ' ';
-  width: auto;
-  height: 3px;
-  position: absolute;
-  border-top: 4px solid #03f;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #f00;
-  -webkit-box-shadow: 0px -3px 12px 3px black;
-  -moz-box-shadow: 0px -3px 12px 3px black;
-  box-shadow: 0px -3px 12px 3px black;
-}
 
 .page1 {
   position: relative;
@@ -167,7 +198,50 @@ section.page {
   overflow: hidden;
 }
 .page1 .wrapper {
-  background: #ffd3ab url(../img/bg/01_sladunica.jpg) repeat 50% 50%;
+  background: #ffd3ab url(../img/bg/bg1.jpg) repeat 50% 50%;
+}
+.page1 .wrapper .section-1-bg-1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 300px;
+  background: url(../img/bg/bgl11.png) repeat-x 50% 100%;
+}
+.page1 .wrapper .section-1-bg-2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url(../img/bg/bgl12.png) no-repeat 0% 100%;
+}
+.page1 .wrapper .section-1-bg-25 {
+  width: 490px;
+  height: 180px;
+  margin: -120px auto;
+  position: relative;
+  top: 50%;
+}
+.page1 .wrapper .section-1-bg-25 object {
+  width: 100%;
+  height: 100%;
+}
+.page1 .wrapper .section-1-bg-3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url(../img/bg/bgl13.png) no-repeat 50% 100%;
+}
+.page1 .wrapper .section-1-bg-4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url(../img/bg/bgl14.png) no-repeat 100% 100%;
 }
 
 .page2 {
@@ -176,7 +250,7 @@ section.page {
   overflow: hidden;
 }
 .page2 .wrapper {
-  background: #ffd3ab url(../img/bg/01_sladunica_2.jpg) repeat 50% 50%;
+  background: #ffd3ab url(../img/bg/bg2.jpg) repeat 50% 50%;
 }
 
 .page3 {
@@ -246,9 +320,10 @@ section.page {
   bottom: 0;
   right: 0;
   left: 0;
+  background-image: url(../img/bg/bgl44.png);
   border: 1px solid red;
-  background-image: url(../img/bg/bgl41.png);
   background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 .page4 .wrapper .section-4-bg-2 {
   position: absolute;
@@ -257,8 +332,9 @@ section.page {
   right: 0;
   left: 0;
   border: 1px solid red;
-  background-image: url(../img/bg/bgl42.png);
+  background-image: url(../img/bg/bgl44.png);
   background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 .page4 .wrapper .section-4-bg-25 {
   position: absolute;
@@ -275,18 +351,19 @@ section.page {
   right: 0;
   left: 0;
   border: 1px solid red;
-  background-image: url(../img/bg/bgl43.png);
+  background-image: url(../img/bg/bgl44.png);
   background-position: 50% 0%;
+  background-repeat: no-repeat;
 }
 .page4 .wrapper .section-4-bg-4 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
   border: 1px solid red;
   background-image: url(../img/bg/bgl44.png);
   background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 126px;
+  height: 126px;
+  border: 1px solid red;
+  background-image: url(../img/cup.png);
 }
 
 .page5 {
@@ -316,7 +393,6 @@ section.page {
 .fixed {
   position: fixed;
   z-index: 12;
-  display: none;
 }
 
 .test {
@@ -364,11 +440,29 @@ section.page {
   }
 }
 
+.header {
+  background: url("../img/main-menu-bg.png") repeat-x bottom center;
+  height: 62px;
+}
+
 .header_nav {
+  font-family: oksana_text_narrowdemibold;
+  height: 60px;
   width: 850px;
   margin: 0 auto;
   top: 0;
-  background: #fff;
+  list-style: none;
+}
+.header_nav li.header_nav_item {
+  display: inline-block;
+  background: transparent;
+}
+.header_nav li.header_nav_item a {
+  color: #fff;
+  text-decoration: none;
+}
+.header_nav .svg_logo {
+  vertical-align: middle;
 }
 
 .pager {
@@ -377,9 +471,45 @@ section.page {
   margin-top: -250px;
   width: 40px;
   height: 500px;
-  background: #f00;
 }
-.pager ul li {
-  width: 40px;
-  height: 100px;
+.pager .inner_wrapper {
+  position: relative;
+  width: 51px;
+  height: 306px;
+}
+.pager .inner_wrapper li {
+  height: 50px;
+  color: #fff;
+  width: 51px;
+  font: 16px/50px 'oksana_text_narrowdemibold', sans-serif;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  right: 12px;
+}
+.pager .inner_wrapper li span {
+  display: block;
+  width: 51px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.05);
+  border-top: 1px #c1c0c0 solid;
+  transition: background 0.1s ease;
+}
+.pager .inner_wrapper li > div {
+  position: absolute;
+  right: -300px;
+  top: 0;
+  white-space: nowrap;
+}
+.pager .inner_wrapper li:hover span {
+  display: block;
+  width: 51px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.05);
+  border-top: 1px #c1c0c0 solid;
+  transition: background 0.1s ease;
+}
+.pager .inner_wrapper li:hover > div {
+  position: absolute;
+  right: 51px;
 }

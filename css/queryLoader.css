@@ -4,6 +4,8 @@
 }
 
 .QLoader {
-	background-color: #CCCCCC;
-	height: 1px;
+	height: 126px;
+	width: 126px;
+	background: url("../img/cup.png") no-repeat 50% 50%;
+
 }

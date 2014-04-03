@@ -19,8 +19,12 @@ var QueryLoader = {
 	selectorPreload: "body",
 	ieLoadFixTime: 2000,
 	ieTimeout: "",
-		
-	init: function() {
+	callback: null,
+
+	init: function(callback) {
+
+		QueryLoader.callback = callback || null;
+
 		if (navigator.userAgent.match(/MSIE (\d+(?:\.\d+)+(?:b\d*)?)/) == "MSIE 6.0,6.0") {
 			//break if IE6			
 			return false;
@@ -110,38 +114,36 @@ var QueryLoader = {
 		}
 		var left = $(QueryLoader.selectorPreload).offset()['left'];
 		var top = $(QueryLoader.selectorPreload).offset()['top'];
-		
+
 		QueryLoader.overlay = $("<div></div>").appendTo($(QueryLoader.selectorPreload));
-		$(QueryLoader.overlay).addClass("QOverlay");
+		$(QueryLoader.overlay);
 		$(QueryLoader.overlay).css({
 			position: position,
-			top: top,
-			left: left,
-			width: width + "px",
-			height: height + "px"
+			top: "50%",
+			left: "50%",
+			marginTop: "-63px",
+			marginLeft: "-63px",
+			width: 126 + "px",
+			height: 126 + "px"
 		});
 		
 		QueryLoader.loadBar = $("<div></div>").appendTo($(QueryLoader.overlay));
 		$(QueryLoader.loadBar).addClass("QLoader");
 		
-		$(QueryLoader.loadBar).css({
-			position: "relative",
-			top: "50%",
-			width: "0%"
-		});
+
 	},
 	
 	animateLoader: function() {
 		var perc = (100 / QueryLoader.doneStatus) * QueryLoader.doneNow;
 		if (perc > 99) {
 			$(QueryLoader.loadBar).stop().animate({
-				width: perc + "%"
-			}, 500, "linear", function() { 
+				width: "auto"
+			}, 500, "linear", function() {
 				QueryLoader.doneLoad();
 			});
 		} else {
-			$(QueryLoader.loadBar).stop().animate({
-				width: perc + "%"
+			$(QueryLoader.loadBar).stop().addClass("rotation").css({
+				width: "auto"
 			}, 500, "linear", function() { });
 		}
 	},
@@ -149,21 +151,11 @@ var QueryLoader = {
 	doneLoad: function() {
 		//prevent IE from calling the fix
 		clearTimeout(QueryLoader.ieTimeout);
-		
-		//determine the height of the preloader for the effect
-		if (QueryLoader.selectorPreload == "body") {
-			var height = $(window).height();
-		} else {
-			var height = $(QueryLoader.selectorPreload).outerHeight();
-		}
-		
+
+
 		//The end animation, adjust to your likings
-		$(QueryLoader.loadBar).animate({
-			height: height + "px",
-			top: 0
-		}, 500, "linear", function() {
-			$(QueryLoader.overlay).fadeOut(800);
-			$(QueryLoader.preloader).remove();
-		});
+		if(QueryLoader.callback) {
+			QueryLoader.callback();
+		}
 	}
 }

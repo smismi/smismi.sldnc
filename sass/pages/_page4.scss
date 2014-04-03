@@ -13,10 +13,20 @@
 			bottom: 0;
 			right: 0;
 			left: 0;
-			border:1px solid red;
+			background-image:url(../img/bg/bgl44.png);
 
-			background-image:url(../img/bg/bgl41.png);
+
+			//
+			//width: 126px;
+			//height: 126px;
+			border:1px solid red;
+			//background-image:url(../img/cup.png);
 			background-position: 50% 50%;
+			background-repeat: no-repeat;
+
+			//background: none;
+
+
 		}
 		.section-4-bg-2 {
 			position: absolute;
@@ -26,8 +36,18 @@
 			left: 0;
 			border:1px solid red;
 
-			background-image:url(../img/bg/bgl42.png);
+			background-image:url(../img/bg/bgl44.png);
 			background-position: 50% 50%;
+			background-repeat: no-repeat;
+
+			//width: 126px;
+			//height: 126px;
+			//border:1px solid red;
+			//background-image:url(../img/cup.png);
+
+
+			//background: none;
+
 		}
 		.section-4-bg-25 {
 			position: absolute;
@@ -46,19 +66,40 @@
 			left: 0;
 			border:1px solid red;
 
-			background-image:url(../img/bg/bgl43.png);
+			background-image:url(../img/bg/bgl44.png);
 			background-position: 50% 0%;
+			background-repeat: no-repeat;
+
+			//background: none;
+
+			//width: 126px;
+			//height: 126px;
+			//border:1px solid red;
+			//background-image:url(../img/cup.png);
+
+
+
 		}
 		.section-4-bg-4 {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			left: 0;
+			//position: absolute;
+			//top: 0;
+			//bottom: 0;
+			//right: 0;
+			//left: 0;
 			border:1px solid red;
 
 			background-image:url(../img/bg/bgl44.png);
 			background-position: 50% 50%;
+			background-repeat: no-repeat;
+
+
+			width: 126px;
+			height: 126px;
+			border:1px solid red;
+			background-image:url(../img/cup.png);
+
+			//background: none;
+
 		}
 	}
 }

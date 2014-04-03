@@ -1,18 +1,30 @@
+.header {
+	background: url("../img/main-menu-bg.png") repeat-x bottom center;
+	height: 62px;
+}
+
 .header_nav {
+	font-family: oksana_text_narrowdemibold;
 
-
+	height: 60px;
 	width: 850px;
 	margin: 0 auto;
 	top: 0;
-	background: #fff;
-
-	ul {
 
 
-		li {
+	list-style: none;
 
+	li.header_nav_item {
+		display: inline-block;
+		background: transparent;
 
-
+		a {
+			color: #fff;
+			text-decoration: none;
 		}
+	}
+
+	.svg_logo {
+		vertical-align: middle;
 	}
 }

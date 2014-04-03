@@ -5,8 +5,60 @@
 	overflow: hidden;
 
 	.wrapper {
-		background:#ffd3ab url(../img/bg/01_sladunica.jpg) repeat 50% 50%;
+		background:#ffd3ab url(../img/bg/bg1.jpg) repeat 50% 50%;
 
+
+
+		.section-1-bg-1 {
+			position: absolute;
+ 			bottom: 0;
+			right: 0;
+			left: 0;
+			height: 300px;
+			background: url(../img/bg/bgl11.png) repeat-x 50% 100%;
+		}
+
+		.section-1-bg-2 {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+
+			background:url(../img/bg/bgl12.png)  no-repeat 0% 100%;
+		}
+
+		.section-1-bg-25 {
+			width: 490px;
+			height: 180px;
+			margin: -120px auto;
+			position: relative;
+			top: 50%;
+
+			object {
+				width: 100%;
+				height: 100%;
+
+			}
+		}
+		.section-1-bg-3 {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+
+			background:url(../img/bg/bgl13.png)  no-repeat 50% 100%;
+		}
+		.section-1-bg-4 {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+
+			background:url(../img/bg/bgl14.png)  no-repeat 100% 100%;
+		}
 	}
 
 
