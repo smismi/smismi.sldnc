@@ -1,0 +1,42 @@
+$icons: sprite-map("cup/*.png", $spacing: 0);
+$iconurl: sprite-url($icons);
+@mixin icons-file{
+	background-image: $iconurl;
+}
+
+@mixin icon($name:actual, $offsetx:0, $offsety:0, $include_url:true) {
+	@if $include_url == true {
+		@include icons-file;
+	}
+	background-position: sprite-position($icons, $name, $offsetx, $offsety);
+	background-repeat: no-repeat;
+
+}
+
+
+#cup {
+
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 630px;
+	height: 460px;
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url('../img/cup-s94b0c5e609.png');
+	background-position: 0 -11040px;
+	background-repeat: no-repeat;
+	margin: -230px 0 0 -315px;
+
+@for $i from 0 through 24 {
+
+		@if $i < 10 {
+			$i : "0" + $i
+		}
+		&.cup_#{$i} {
+			@include icon(cup_#{$i}, 0, 0, false)
+		}
+	}
+
+}
+

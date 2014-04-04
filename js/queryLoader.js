@@ -23,6 +23,10 @@ var QueryLoader = {
 
 	init: function(callback) {
 
+
+
+		console.log("QueryLoader ready")
+
 		QueryLoader.callback = callback || null;
 
 		if (navigator.userAgent.match(/MSIE (\d+(?:\.\d+)+(?:b\d*)?)/) == "MSIE 6.0,6.0") {
@@ -47,7 +51,7 @@ var QueryLoader = {
 	
 	ieLoadFix: function() {
 		var ie = navigator.userAgent.match(/MSIE (\d+(?:\.\d+)+(?:b\d*)?)/);
-		if (ie[0].match("MSIE")) {
+		if (ie && ie[0].match("MSIE")) {
 			while ((100 / QueryLoader.doneStatus) * QueryLoader.doneNow < 100) {
 				QueryLoader.imgCallback();
 			}
@@ -121,10 +125,10 @@ var QueryLoader = {
 			position: position,
 			top: "50%",
 			left: "50%",
-			marginTop: "-63px",
-			marginLeft: "-63px",
-			width: 126 + "px",
-			height: 126 + "px"
+			marginTop: "-72px",
+			marginLeft: "-72px",
+			width: 144 + "px",
+			height: 144 + "px"
 		});
 		
 		QueryLoader.loadBar = $("<div></div>").appendTo($(QueryLoader.overlay));
@@ -135,16 +139,19 @@ var QueryLoader = {
 	
 	animateLoader: function() {
 		var perc = (100 / QueryLoader.doneStatus) * QueryLoader.doneNow;
+
+		$(QueryLoader.loadBar).animateRotate("10000", 6000, "linear");
+
+//		$(QueryLoader.loadBar).html(perc)
 		if (perc > 99) {
-			$(QueryLoader.loadBar).stop().animate({
-				width: "auto"
-			}, 500, "linear", function() {
+
+
+				$(this).removeClass("rotation");
+
 				QueryLoader.doneLoad();
-			});
+
 		} else {
-			$(QueryLoader.loadBar).stop().addClass("rotation").css({
-				width: "auto"
-			}, 500, "linear", function() { });
+			$(QueryLoader.loadBar).addClass("rotation");
 		}
 	},
 	
@@ -154,8 +161,14 @@ var QueryLoader = {
 
 
 		//The end animation, adjust to your likings
-		if(QueryLoader.callback) {
-			QueryLoader.callback();
-		}
+
+		$(QueryLoader.loadBar).fadeOut(1000, function(){
+
+			if(QueryLoader.callback) {
+				QueryLoader.callback();
+			}
+
+		})
+
 	}
 }

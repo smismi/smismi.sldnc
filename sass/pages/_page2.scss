@@ -7,6 +7,27 @@
 	.wrapper {
 		background:#ffd3ab url(../img/bg/bg2.jpg) repeat 50% 50%;
 
+		.page_item {
+			display: block;
+			float: left;
+ 			height: 100%;
+
+			$list: "first", "second", "third";
+
+			@include pageitems($list);
+
+			&.first figcaption {
+				background: #ffabd3;
+			}
+			&.second figcaption{
+				background: #fafd3b;
+
+			}
+			&.third figcaption{
+				background: #fd3f3b;
+
+			}
+		}
 	}
 
 }

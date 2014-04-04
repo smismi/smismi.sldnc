@@ -20,7 +20,9 @@
 	<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
 	<script type="text/javascript" src="js/_mobile/iscroll.js"></script>
 	<script type="text/javascript" src="js/jquery.scrollto.js"></script>
+	<script type="text/javascript" src="js/jquery.rotation.js"></script>
 	<script type="text/javascript" src="js/queryLoader.js"></script>
+	<script type="text/javascript" src="js/jquery.mouseParallax.js"></script>
 
 
 
@@ -92,8 +94,10 @@
 			<section id="section-1" class="page page1">
 				<div class="wrapper">
 					<div class="section-1-bg-1"></div>
-					<div class="section-1-bg-3"></div>
+					<div class="section-1-bg-11"></div>
+					<div class="section-1-bg-12"></div>
 					<div class="section-1-bg-2"></div>
+					<div class="section-1-bg-3"></div>
 					<div class="section-1-bg-4"></div>
 					<div class="section-1-bg-25">
 						<object data="img/svg/section-1-bigtext.svg" type="image/svg+xml" class="svg_bigtext">
@@ -127,13 +131,13 @@
 
 				<div class="wrapper">
 
-					<!--<div class="section-3-bg-4"></div>-->
-					<!--<div class="section-3-bg-25">-->
-						<!--<h1 style="font-size: 64px; text-align: center;">NENepiojwpeofgw[oem weg</h1>-->
-					<!--</div>-->
-					<!--<div class="section-3-bg-3"></div>-->
-					<!--<div class="section-3-bg-2"></div>-->
+					<div class="section-3-bg-25">
+						<h1 style="font-size: 64px; text-align: center;">SOME TEXT</h1>
+					</div>
 					<!--<div class="section-3-bg-1"></div>-->
+					<!--<div class="section-3-bg-2"></div>-->
+					<!--<div class="section-3-bg-3"></div>-->
+					<!--<div class="section-3-bg-4"></div>-->
 
 
 				</div>
@@ -157,219 +161,40 @@
 			</section>
 			<section id="section-4" class="page page4">
 				<div class="wrapper">
+ 					<div class="section-4-bg-4"></div>
  					<div class="section-4-bg-3"></div>
- 					<div class="section-4-bg-3"></div>
- 					<div class="section-4-bg-3"></div>
- 					<div class="section-4-bg-3"></div>
- 					<div class="section-4-bg-3"></div>
+ 					<div class="section-4-bg-2"></div>
+ 					<div class="section-4-bg-1"></div>
 				</div>
 			</section>
 			<section id="section-5" class="page page5">
 				<div class="wrapper">
-
-
-				</div>
-			</section>
-			<section id="section-6" class="page page6">
-				<div class="wrapper">
-
-					<figure class="page_item first totop">
-						<figcaption class="page_item_caption ">1</figcaption>
+					<figure class="page_item first">
+						<figcaption class="page_item_caption" id="section-5-page-1">
+							<div data-speed="100">123</div>
+							<div data-speed="200">456</div>
+							<div data-speed="300">789</div>
+							<div data-speed="400">908</div>
+						</figcaption>
 					</figure>
-					<figure class="page_item second toright">
-						<figcaption class="page_item_caption">2</figcaption>
+					<figure class="page_item second">
+						<figcaption class="page_item_caption" id="section-5-page-2">
+							1
+						</figcaption>
 					</figure>
-					<figure class="page_item third toleft">
-						<figcaption class="page_item_caption">3</figcaption>
-					</figure>
-
-					<figure class="page_item fourth tobottom">
-						<figcaption class="page_item_caption">3</figcaption>
+					<figure class="page_item third">
+						<figcaption class="page_item_caption" id="section-5-page-3">
+							1
+						</figcaption>
 					</figure>
 
 				</div>
-
 			</section>
-		</div>
 	</div>
 </div>
-<div id="preloader"></div>
 <script>
 	$(document).ready(function($) {
 
-		var controller;
-		if (Modernizr.touch) {
-			return;
-			var myScroll;
-
-			$(document).ready(function () {
-
-
-				// wrap for iscroll
-				$("#content-wrapper")
-						.addClass("scrollContainer")
-						.wrapInner('<div class="scrollContent"></div>');
-
-				// add iScroll
-				myScroll = new IScroll('#content-wrapper', {scrollX: false, scrollY: true, scrollbars: false, useTransform: true, useTransition: true, probeType: 3});
-
-				// update container on scroll
-				myScroll.on("scroll", function () {
-					controller.update();
-				});
-
-				// overwrite scroll position calculation to use child's offset instead of parents scrollTop();
-				controller.scrollPos(function () {
-					return -myScroll.y;
-				});
-
-				// refresh height, so all is included.
-				setTimeout(function () {
-					myScroll.refresh();
-				}, 0);
-
-				$("#content-wrapper").on("touchend", "a", function (e) {
-					// a bit dirty workaround for links not working in iscroll for some reason...
-					e.preventDefault();
-					window.location.href = $(this).attr("href");
-				});
-
-				// manual set hight (so height 100% is available within scroll container)
-				$(document).on("orientationchange", function () {
-					$("section")
-							.css("min-height",window.screen.height)
-							.parent(".scrollmagic-pin-spacer").css("min-height", window.screen.height);
-				});
-				$(document).trigger("orientationchange"); // trigger to init
-			});
-			// init the controller
-			controller = new ScrollMagic({
-				container: "#content-wrapper",
-				globalSceneOptions: {
-					triggerHook: "onLeave"
-				}
-			});
-		} else {
-			// init the controller
-			controller = new ScrollMagic({
-				globalSceneOptions: {
-					triggerHook: "onLeave"
-				}
-			});
-		}
-  		// parallax1
-			new ScrollScene({
-				triggerElement: "#section-1",
-				duration: 1000,
-				offset: 0
-			})
-					.addTo(controller)
-					.triggerHook("onLeave")
-					.setTween(new TimelineMax().add([
-						TweenMax.fromTo("#section-1 .wrapper", 1, {y:0}, {y:200}),
-
-
-					]));
-
-			TweenMax.set("#section-1 .section-1-bg-2", {backgroundPosition: "-100% 100%", opacity: 0});
-			TweenMax.set("#section-1 .section-1-bg-4", {backgroundPosition: "200% 100%", opacity: 0});
-			TweenMax.set("#section-1 .section-1-bg-3", {scale: 0, opacity: 0});
-
-		// build tween
-		var tween1 = new TimelineMax()
-				.add(
-						TweenMax.to("#section-1 .section-1-bg-2", 1, {backgroundPosition: "0% 100%", opacity: 1,
-							onStart: function () {console.log("#section-1 .section-1-bg-2 -- start")},
-						})
-				);
-		var tween2 = new TimelineMax()
-				.add(
-						TweenMax.to("#section-1 .section-1-bg-4", 1, {backgroundPosition: "100% 100%", opacity: 1,
-							onStart: function () {console.log("#section-1 .section-1-bg-2 -- start")},
-						})
-				);
-		var tween3 = new TimelineMax()
-				.add(
-						TweenMax.to("#section-1 .section-1-bg-3", 1, {scale: 1, opacity: 1,
-							onStart: function () {console.log("#section-1 .section-1-bg-2 -- start")},
-						})
-				);
-
-
-
-////		parallax2
-//			new ScrollScene({
-//				triggerElement: "#section-2",
-//				duration: 1000,
-//				offset: 0
-//			})
-//					.addTo(controller)
-//					.triggerHook("onLeave")
-//					.setTween(new TimelineMax().add([
-//						TweenMax.fromTo("#section-2 .wrapper", 1, {y: 0}, {y: 200, ease: Linear.easeNone}),
-//
-//
-//					]));
-//		// parallax3
-//			new ScrollScene({
-//				triggerElement: "section#section-3",
-//				duration: 1000,
-//				offset: 0
-//			})
-//					.addTo(controller)
-//					.triggerHook("onLeave")
-//					.setTween(new TimelineMax().add([
-////						TweenMax.fromTo("#section-3 .bg-section-1", 1, {y: 0}, {top: "-40%", ease: Linear.easeNone}),
-//						TweenMax.fromTo("#section-3 .wrapper", 1, {y: 0}, {y: 200, ease: Linear.easeNone}),
-////						TweenMax.to("#section-3", 1, {backgroundPosition: "50% -50%", ease: Linear.easeNone})
-//
-//					]));
-//
-//
-//		// parallax4
-//			new ScrollScene({
-//				triggerElement: "section#section-4",
-//				duration: 1000,
-//				offset: 0
-//			})
-//					.addTo(controller)
-//					.triggerHook("onLeave")
-//					.setTween(new TimelineMax().add([
-//						TweenMax.fromTo("#section-4 .wrapper", 1, {y: 0}, {y: 200, ease: Linear.easeNone})
-//
-//					]));
-//			new ScrollScene({
-//				triggerElement: "section#section-4",
-//				duration: 1000*2,
-//				offset: 0
-//			})
-//					.addTo(controller)
-//					.triggerHook("onEnter")
-//					.setTween(new TimelineMax().add([
-//						TweenMax.fromTo("#section-4 .section-4-bg-3", 1, { backgroundPosition: "0 0", x: 0}, {backgroundPosition: "0 -260px" , x: 325, ease: Linear.easeNone})
-//
-////						TweenMax.fromTo("#section-4 .section-4-bg-3", 1, { backgroundPosition: "50% 50%"}, {backgroundPosition: "-40% 0",  ease: Linear.easeNone}),
-////						TweenMax.fromTo("#section-4 .section-4-bg-1", 1, {y: 0}, {x: 1122,  rotation: 113, ease: Linear.easeNone}),
-////						TweenMax.fromTo("#section-4 .section-4-bg-2", 1, {y: 0}, {y: 200	, left: -22,  rotation: -13,  ease: Linear.easeNone}),
-////						TweenMax.fromTo("#section-4 .section-4-bg-25", 1, {y: 0}, {y: 400, left: -22,  rotation: 13, ease: Linear.easeNone}),
-////						TweenMax.fromTo("#section-4 .section-4-bg-3", 1, {y: 0}, {y: 500, ease: Linear.easeNone}),
-////						TweenMax.fromTo("#section-4 .section-4-bg-4", 1, {y: 0}, {y: 700, ease: Linear.easeNone})
-//
-//					]));
-//
-//		// parallax5
-//			new ScrollScene({
-//				triggerElement: "section#section-5",
-//				duration: 1000,
-//				offset: 0
-//			})
-//					.addTo(controller)
-//					.triggerHook("onLeave")
-//					.setTween(new TimelineMax().add([
-//						TweenMax.fromTo("#section-5 .wrapper", 1, {y: 0}, {y: 200, ease: Linear.easeNone}),
-//
-//
-//					]));
 
 		SL.init();
 

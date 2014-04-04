@@ -9,6 +9,49 @@
 		position: relative;
 		height: 100%;
 		overflow: hidden;
+		text-align: center;
+
+
+		.page_item {
+			display: inline-block;
+			border: 1px solid red;
+			width: 340px;
+			height: 100%;
+			vertical-align: top;
+
+			$list: "first", "second", "third";
+
+			//@include pageitems($list);
+
+			figcaption {
+				width: 340px;
+				height: 340px;
+				position: relative;
+
+				div {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+
+				}
+			}
+
+			&.first figcaption {
+				background: #ffabd3;
+
+			}
+			&.second figcaption{
+				background: #fafd3b;
+
+			}
+			&.third figcaption{
+				background: #fd3f3b;
+
+			}
+		}
+
+
+
 	}
 
 

@@ -7,27 +7,16 @@
 		overflow: hidden;
 
 
+
 		.section-4-bg-1 {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			left: 0;
-			background-image:url(../img/bg/bgl44.png);
 
-
-			//
-			//width: 126px;
-			//height: 126px;
-			border:1px solid red;
-			//background-image:url(../img/cup.png);
-			background-position: 50% 50%;
+			background-image:url(../img/bg/bgl41.png);
+			background-position: 50% 100%;
 			background-repeat: no-repeat;
 
-			//background: none;
-
-
 		}
+
+
 		.section-4-bg-2 {
 			position: absolute;
 			top: 0;
@@ -36,17 +25,24 @@
 			left: 0;
 			border:1px solid red;
 
-			background-image:url(../img/bg/bgl44.png);
-			background-position: 50% 50%;
+			background-image:url(../img/bg/bgl42.png);
+			background-position: 50% 100%;
 			background-repeat: no-repeat;
 
-			//width: 126px;
-			//height: 126px;
-			//border:1px solid red;
-			//background-image:url(../img/cup.png);
 
 
-			//background: none;
+		}
+
+		.section-4-bg-3 {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background-image:url(../img/bg/bgl43.png);
+			background-position: 50% 100%;
+			background-repeat: no-repeat;
+
 
 		}
 		.section-4-bg-25 {
@@ -57,48 +53,15 @@
 			left: 0;
 			border:1px solid green;
 		}
-
-		.section-4-bg-3 {
+		.section-4-bg-4 {
 			position: absolute;
 			top: 0;
 			bottom: 0;
 			right: 0;
 			left: 0;
-			border:1px solid red;
-
 			background-image:url(../img/bg/bgl44.png);
-			background-position: 50% 0%;
+			background-position: 50% 100%;
 			background-repeat: no-repeat;
-
-			//background: none;
-
-			//width: 126px;
-			//height: 126px;
-			//border:1px solid red;
-			//background-image:url(../img/cup.png);
-
-
-
-		}
-		.section-4-bg-4 {
-			//position: absolute;
-			//top: 0;
-			//bottom: 0;
-			//right: 0;
-			//left: 0;
-			border:1px solid red;
-
-			background-image:url(../img/bg/bgl44.png);
-			background-position: 50% 50%;
-			background-repeat: no-repeat;
-
-
-			width: 126px;
-			height: 126px;
-			border:1px solid red;
-			background-image:url(../img/cup.png);
-
-			//background: none;
 
 		}
 	}
