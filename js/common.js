@@ -8,8 +8,8 @@ var SL = {
 
 //		SL.cropViewport();
 //		SL.preloadImage();
-//
-//
+
+
 //		SL.initScrollMagik();
 //
 //
@@ -18,7 +18,7 @@ var SL = {
 //		SL.initParallax3();
 //		SL.initParallax4();
 //		SL.initParallax5();
-		SL.initInterActive5();
+//		SL.initInterActive5();
 
 
 

@@ -263,6 +263,10 @@ section.page {
   background: url(../img/bg/bgl14.png) no-repeat 100% 100%;
 }
 
+.page1, .page3, .page4, .page5 {
+  display: none;
+}
+
 .page2 {
   position: relative;
   height: 100%;
@@ -288,13 +292,13 @@ section.page {
   left: 66.66667%;
   width: 33.33333%;
 }
-.page2 .wrapper .page_item.first figcaption {
+.page2 .wrapper .page_item.first {
   background: #ffabd3;
 }
-.page2 .wrapper .page_item.second figcaption {
+.page2 .wrapper .page_item.second {
   background: #fafd3b;
 }
-.page2 .wrapper .page_item.third figcaption {
+.page2 .wrapper .page_item.third {
   background: #fd3f3b;
 }
 

@@ -1,4 +1,11 @@
+
+.page1,.page3,.page4,.page5 {
+	display: none;
+}
+
 .page2 {
+
+
 
 	position: relative;
 	height: 100%;
@@ -16,15 +23,26 @@
 
 			@include pageitems($list);
 
-			&.first figcaption {
+			&.first {
 				background: #ffabd3;
 			}
-			&.second figcaption{
+			&.second {
 				background: #fafd3b;
 
 			}
-			&.third figcaption{
+			&.third {
 				background: #fd3f3b;
+
+			}
+			&.first figcaption {
+				//background: #ffabd3;
+			}
+			&.second figcaption{
+				//background: #fafd3b;
+
+			}
+			&.third figcaption{
+				//background: #fd3f3b;
 
 			}
 		}
