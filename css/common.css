@@ -355,6 +355,10 @@ section.page {
   background-repeat: no-repeat;
 }
 
+.page1, .page2, .page3, .page4 {
+  display: none;
+}
+
 .page5 {
   position: relative;
   height: 100%;
@@ -375,23 +379,105 @@ section.page {
   vertical-align: top;
 }
 .page5 .wrapper .page_item figcaption {
+  top: 50%;
+  margin-top: -170px;
   width: 340px;
   height: 340px;
   position: relative;
+  text-align: center;
+  line-height: 340px;
+  font-size: 0;
 }
-.page5 .wrapper .page_item figcaption div {
+.page5 .wrapper .page_item figcaption abbr, .page5 .wrapper .page_item figcaption em, .page5 .wrapper .page_item figcaption i {
+  display: block;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
-.page5 .wrapper .page_item.first figcaption {
-  background: #ffabd3;
+.page5 .wrapper .page_item figcaption em, .page5 .wrapper .page_item figcaption i {
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
-.page5 .wrapper .page_item.second figcaption {
-  background: #fafd3b;
+.page5 .wrapper .page_item figcaption .description {
+  line-height: 1.4;
+  font-size: 23px;
+  color: #f50;
+  mmargin-top: 120px;
 }
-.page5 .wrapper .page_item.third figcaption {
-  background: #fd3f3b;
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.03);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.03);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulsate {
+  0% {
+    -moz-transform: scale(1);
+  }
+
+  50% {
+    -moz-transform: scale(1.03);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+
+@-ms-keyframes pulsate {
+  0% {
+    -ms-transform: scale(1);
+  }
+
+  50% {
+    -ms-transform: scale(1.03);
+  }
+
+  100% {
+    -ms-transform: scale(1);
+  }
+}
+
+@-o-keyframes pulsate {
+  0% {
+    -o-transform: scale(1);
+  }
+
+  50% {
+    -o-transform: scale(1.03);
+  }
+
+  100% {
+    -o-transform: scale(1);
+  }
 }
 
 .page6 {
