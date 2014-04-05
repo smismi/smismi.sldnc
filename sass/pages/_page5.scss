@@ -1,6 +1,12 @@
+//@import "../animation/hesitate";
+@import "../animation/hesitate2";
+
+
 .page1,.page2,.page3,.page4 {
 	display: none;
 }
+
+
 .page5 {
 
 	position: relative;
@@ -37,6 +43,8 @@
 				font-size: 0;
 
 
+
+
 				abbr, em, i {
 					display: block;
 					position: absolute;
@@ -45,50 +53,127 @@
 					right:0;
 					bottom:0;
 
-				}
-				em, i {
 
-					-webkit-transition: .3s;
-					-moz-transition: .3s;
-					-ms-transition: .3s;
-					-o-transition: .3s;
-					transition: .3s;
+
+				}
+
+				.icon {
+					@include transition( transform .4s ease-out);
+					&.icon1 {
+						width: 180px;
+					}
+					&.icon2 {
+						width: 180px;
+					}
+					&.icon3 {
+						width: 90px;
+					}
+ 				}
+				em {
+					opacity: 0;
+					top: -12px;
+					@include transition( top 0.3s ease-out, opacity .2s ease-in );
 
 				}
 				i {
-
-
-
-
-				}
-
-
-
-				abbr {
-
-					em {
-
-
-					}
-					i {
-
-
-					}
-
-
+					@include transition( transform .7s ease-out);
+					@include transform(scale(0));
 
 				}
-				//
-				//&:hover {
-				//	em, i {
-				//
-				//		@include transform(scale(1));
-				//
-				//	}
-				//}
-
 
 				.description {
+					opacity: 0;  //TODO refactor
+				}
+
+
+
+				&.hovered {
+
+
+					abbr {
+
+
+
+
+						.icon {
+							@include transform(scale(1.6));
+
+
+						}
+
+
+						em{
+
+							opacity: 1;
+							top: 0;
+
+						}
+
+						i{
+
+							@include transform(scale(1));
+
+
+
+
+							img{
+
+
+							}
+
+							&:first-child img {
+								-webkit-animation: 5600ms animationFrames infinite alternate ease-in-out;
+								-moz-animation: 5600ms animationFrames infinite alternate ease-in-out;
+								-ms-animation: 5600ms animationFrames infinite alternate ease-in-out;
+								-o-animation: 5600ms animationFrames infinite alternate ease-in-out;
+								animation: 5600ms animationFrames infinite alternate ease-in-out;
+
+							}
+							&:nth-child(2) img {
+								-webkit-animation: 3600ms animationFrames infinite alternate ease-in-out;
+								-moz-animation: 3600ms animationFrames infinite alternate ease-in-out;
+								-ms-animation: 3600ms animationFrames infinite alternate ease-in-out;
+								-o-animation: 3600ms animationFrames infinite alternate ease-in-out;
+								animation: 3600ms animationFrames infinite alternate ease-in-out;
+							}
+							&:nth-child(3) img {
+								-webkit-animation: 4600ms animationFrames infinite alternate ease-in-out;
+								-moz-animation: 4600ms animationFrames infinite alternate ease-in-out;
+								-ms-animation: 4600ms animationFrames infinite alternate ease-in-out;
+								-o-animation: 4600ms animationFrames infinite alternate ease-in-out;
+								animation: 4600ms animationFrames infinite alternate ease-in-out;
+							}
+
+						}
+
+
+
+						//em {
+						//
+						//	@include transform(scale(1));
+						//
+ 						//		//animation: animationFrames ease-out infinite 3s;
+ 						//		//-webkit-animation: animationFrames ease-out infinite 3s;
+ 						//		//-moz-animation: animationFrames ease-out infinite 3s;
+ 						//		//-o-animation: animationFrames ease-out infinite 3s;
+ 						//		//-ms-animation: animationFrames ease-out infinite 3s;
+						//
+						//	opacity: 0;
+						//
+						//}
+
+
+					}
+
+
+
+
+				}
+
+
+
+
+					.description {
 					line-height: 1.4;
 					font-size: 23px;
 					color: #f50;
@@ -98,15 +183,15 @@
 			}
 
 			&.first figcaption {
-				//background: #ffabd3;
+			//	background: #ffabd3;
 
 			}
 			&.second figcaption{
-				//background: #fafd3b;
+			//	background: #fafd3b;
 
 			}
 			&.third figcaption{
-				//background: #fd3f3b;
+			//	background: #fd3f3b;
 
 			}
 		}
@@ -120,28 +205,54 @@
 }
 
 
-@keyframes pulsate {
-	0% { transform: scale(1); }
-	50% { transform: scale(1.03); }
-	100% { transform: scale(1); }
-}
-@-webkit-keyframes pulsate {
-	0% { -webkit-transform: scale(1); }
-	50% { -webkit-transform: scale(1.03); }
-	100% { -webkit-transform: scale(1); }
-}
-@-moz-keyframes pulsate {
-	0% { -moz-transform: scale(1); }
-	50% { -moz-transform: scale(1.03); }
-	100% { -moz-transform: scale(1); }
-}
-@-ms-keyframes pulsate {
-	0% { -ms-transform: scale(1); }
-	50% { -ms-transform: scale(1.03); }
-	100% { -ms-transform: scale(1); }
-}
-@-o-keyframes pulsate {
-	0% { -o-transform: scale(1); }
-	50% { -o-transform: scale(1.03); }
-	100% { -o-transform: scale(1); }
-}
+//@keyframes pulsate {
+//	0% { transform: scale(1); }
+//	50% { transform: scale(1.03); }
+//	100% { transform: scale(1); }
+//}
+//@-webkit-keyframes pulsate {
+//	0% { -webkit-transform: scale(1); }
+//	50% { -webkit-transform: scale(1.03); }
+//	100% { -webkit-transform: scale(1); }
+//}
+//@-moz-keyframes pulsate {
+//	0% { -moz-transform: scale(1); }
+//	50% { -moz-transform: scale(1.03); }
+//	100% { -moz-transform: scale(1); }
+//}
+//@-ms-keyframes pulsate {
+//	0% { -ms-transform: scale(1); }
+//	50% { -ms-transform: scale(1.03); }
+//	100% { -ms-transform: scale(1); }
+//}
+//@-o-keyframes pulsate {
+//	0% { -o-transform: scale(1); }
+//	50% { -o-transform: scale(1.03); }
+//	100% { -o-transform: scale(1); }
+//}
+//
+//@keyframes hesitate {
+//	0% { transform: scale(1); }
+//	50% { transform: scale(1.03); }
+//	100% { transform: scale(1); }
+//}
+//@-webkit-keyframes pulsate {
+//	0% { -webkit-transform: scale(1); }
+//	50% { -webkit-transform: scale(1.03); }
+//	100% { -webkit-transform: scale(1); }
+//}
+//@-moz-keyframes pulsate {
+//	0% { -moz-transform: scale(1); }
+//	50% { -moz-transform: scale(1.03); }
+//	100% { -moz-transform: scale(1); }
+//}
+//@-ms-keyframes pulsate {
+//	0% { -ms-transform: scale(1); }
+//	50% { -ms-transform: scale(1.03); }
+//	100% { -ms-transform: scale(1); }
+//}
+//@-o-keyframes pulsate {
+//	0% { -o-transform: scale(1); }
+//	50% { -o-transform: scale(1.03); }
+//	100% { -o-transform: scale(1); }
+//}

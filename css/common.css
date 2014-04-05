@@ -355,6 +355,196 @@ section.page {
   background-repeat: no-repeat;
 }
 
+@keyframes animationFrames {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  20% {
+    left: 8px;
+    top: -1px;
+    transform: rotate(3deg);
+  }
+
+  40% {
+    left: -15px;
+    top: -1px;
+    transform: rotate(-3deg);
+  }
+
+  60% {
+    left: 10px;
+    transform: rotate(2deg);
+  }
+
+  80% {
+    left: -6px;
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    left: 3px;
+    top: 2px;
+    opacity: 1;
+    transform: rotate(2deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-moz-keyframes animationFrames {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -moz-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  20% {
+    left: 8px;
+    top: -1px;
+    -moz-transform: rotate(3deg);
+  }
+
+  40% {
+    left: -15px;
+    top: -1px;
+    -moz-transform: rotate(-3deg);
+  }
+
+  60% {
+    left: 10px;
+    -moz-transform: rotate(2deg);
+  }
+
+  80% {
+    left: -6px;
+    -moz-transform: rotate(-1deg);
+  }
+
+  100% {
+    left: 3px;
+    top: 2px;
+    opacity: 1;
+    -moz-transform: rotate(2deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  20% {
+    left: 8px;
+    top: -1px;
+    -webkit-transform: rotate(3deg);
+  }
+
+  40% {
+    left: -15px;
+    top: -1px;
+    -webkit-transform: rotate(-3deg);
+  }
+
+  60% {
+    left: 10px;
+    -webkit-transform: rotate(2deg);
+  }
+
+  80% {
+    left: -6px;
+    -webkit-transform: rotate(-1deg);
+  }
+
+  100% {
+    left: 3px;
+    top: 2px;
+    opacity: 1;
+    -webkit-transform: rotate(2deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -o-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  20% {
+    left: 8px;
+    top: -1px;
+    -o-transform: rotate(3deg);
+  }
+
+  40% {
+    left: -15px;
+    top: -1px;
+    -o-transform: rotate(-3deg);
+  }
+
+  60% {
+    left: 10px;
+    -o-transform: rotate(2deg);
+  }
+
+  80% {
+    left: -6px;
+    -o-transform: rotate(-1deg);
+  }
+
+  100% {
+    left: 3px;
+    top: 2px;
+    opacity: 1;
+    -o-transform: rotate(2deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -ms-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  20% {
+    left: 8px;
+    top: -1px;
+    -ms-transform: rotate(3deg);
+  }
+
+  40% {
+    left: -15px;
+    top: -1px;
+    -ms-transform: rotate(-3deg);
+  }
+
+  60% {
+    left: 10px;
+    -ms-transform: rotate(2deg);
+  }
+
+  80% {
+    left: -6px;
+    -ms-transform: rotate(-1deg);
+  }
+
+  100% {
+    left: 3px;
+    top: 2px;
+    opacity: 1;
+    -ms-transform: rotate(2deg) scaleX(1) scaleY(1);
+  }
+}
+
 .page1, .page2, .page3, .page4 {
   display: none;
 }
@@ -396,88 +586,87 @@ section.page {
   right: 0;
   bottom: 0;
 }
-.page5 .wrapper .page_item figcaption em, .page5 .wrapper .page_item figcaption i {
-  -webkit-transition: .3s;
-  -moz-transition: .3s;
-  -ms-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+.page5 .wrapper .page_item figcaption .icon {
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -moz-transition: -moz-transform 0.4s ease-out;
+  -o-transition: -o-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+}
+.page5 .wrapper .page_item figcaption .icon.icon1 {
+  width: 180px;
+}
+.page5 .wrapper .page_item figcaption .icon.icon2 {
+  width: 180px;
+}
+.page5 .wrapper .page_item figcaption .icon.icon3 {
+  width: 90px;
+}
+.page5 .wrapper .page_item figcaption em {
+  opacity: 0;
+  top: -12px;
+  -webkit-transition: top 0.3s ease-out, opacity 0.2s ease-in;
+  -moz-transition: top 0.3s ease-out, opacity 0.2s ease-in;
+  -o-transition: top 0.3s ease-out, opacity 0.2s ease-in;
+  transition: top 0.3s ease-out, opacity 0.2s ease-in;
+}
+.page5 .wrapper .page_item figcaption i {
+  -webkit-transition: -webkit-transform 0.7s ease-out;
+  -moz-transition: -moz-transform 0.7s ease-out;
+  -o-transition: -o-transform 0.7s ease-out;
+  transition: transform 0.7s ease-out;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+.page5 .wrapper .page_item figcaption .description {
+  opacity: 0;
+}
+.page5 .wrapper .page_item figcaption.hovered abbr .icon {
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  transform: scale(1.6);
+}
+.page5 .wrapper .page_item figcaption.hovered abbr em {
+  opacity: 1;
+  top: 0;
+}
+.page5 .wrapper .page_item figcaption.hovered abbr i {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.page5 .wrapper .page_item figcaption.hovered abbr i:first-child img {
+  -webkit-animation: 5600ms animationFrames infinite alternate ease-in-out;
+  -moz-animation: 5600ms animationFrames infinite alternate ease-in-out;
+  -ms-animation: 5600ms animationFrames infinite alternate ease-in-out;
+  -o-animation: 5600ms animationFrames infinite alternate ease-in-out;
+  animation: 5600ms animationFrames infinite alternate ease-in-out;
+}
+.page5 .wrapper .page_item figcaption.hovered abbr i:nth-child(2) img {
+  -webkit-animation: 3600ms animationFrames infinite alternate ease-in-out;
+  -moz-animation: 3600ms animationFrames infinite alternate ease-in-out;
+  -ms-animation: 3600ms animationFrames infinite alternate ease-in-out;
+  -o-animation: 3600ms animationFrames infinite alternate ease-in-out;
+  animation: 3600ms animationFrames infinite alternate ease-in-out;
+}
+.page5 .wrapper .page_item figcaption.hovered abbr i:nth-child(3) img {
+  -webkit-animation: 4600ms animationFrames infinite alternate ease-in-out;
+  -moz-animation: 4600ms animationFrames infinite alternate ease-in-out;
+  -ms-animation: 4600ms animationFrames infinite alternate ease-in-out;
+  -o-animation: 4600ms animationFrames infinite alternate ease-in-out;
+  animation: 4600ms animationFrames infinite alternate ease-in-out;
 }
 .page5 .wrapper .page_item figcaption .description {
   line-height: 1.4;
   font-size: 23px;
   color: #f50;
   mmargin-top: 120px;
-}
-
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.03);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@-webkit-keyframes pulsate {
-  0% {
-    -webkit-transform: scale(1);
-  }
-
-  50% {
-    -webkit-transform: scale(1.03);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-  }
-}
-
-@-moz-keyframes pulsate {
-  0% {
-    -moz-transform: scale(1);
-  }
-
-  50% {
-    -moz-transform: scale(1.03);
-  }
-
-  100% {
-    -moz-transform: scale(1);
-  }
-}
-
-@-ms-keyframes pulsate {
-  0% {
-    -ms-transform: scale(1);
-  }
-
-  50% {
-    -ms-transform: scale(1.03);
-  }
-
-  100% {
-    -ms-transform: scale(1);
-  }
-}
-
-@-o-keyframes pulsate {
-  0% {
-    -o-transform: scale(1);
-  }
-
-  50% {
-    -o-transform: scale(1.03);
-  }
-
-  100% {
-    -o-transform: scale(1);
-  }
 }
 
 .page6 {
