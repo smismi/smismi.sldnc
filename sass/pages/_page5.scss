@@ -32,8 +32,12 @@
 
 		.headermark {
 			margin: 12px auto;
-			display: block;
-			width: 180px
+			color: #e60e64;
+			font-size: 40px;
+
+			&:before {
+				content: "\e604";
+			}
 		}
 
 
@@ -76,21 +80,51 @@
 				}
 
 				.icon {
-					@include transition( transform .4s ease-out);
+					@include transition( all .4s ease-out);
+					position: relative;
+					z-index: 3;
+					margin-top: 0;
+					text-align: center;
+					line-height: 0;
+
 					&.icon1 {
-						width: 180px;
+						color: #c7eafc;
+						font-size: 100px;
+
+						&:before {
+							content: "\e603";
+						}
+
 					}
+
 					&.icon2 {
-						width: 180px;
+						color: #85c98b;
+						font-size: 110px;
+
+						&:before {
+							content: "\e602";
+						}
+
 					}
+
 					&.icon3 {
-						width: 90px;
+						color: #fece7b;
+						font-size: 120px;
+
+						&:before {
+							content: "\e601";
+						}
+
 					}
+
+
+
  				}
 				em {
 					opacity: 0;
-					top: -12px;
+					top: -42px;
 					@include transition( top 0.3s ease-out, opacity .2s ease-in );
+ 					z-index: 3;
 
 				}
 				i {
@@ -116,16 +150,15 @@
 
 
 						.icon {
-							@include transform(scale(1.6));
-
-
+							font-size: 140px;
+							color: #ff0
 						}
 
 
 						em{
 
 							opacity: 1;
-							top: 0;
+							top: -12px;
 
 						}
 
