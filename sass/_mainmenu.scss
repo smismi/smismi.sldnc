@@ -21,10 +21,52 @@
 		a {
 			color: #fff;
 			text-decoration: none;
+
+			&.logo {
+				font-size: 34px;
+				color: #f00;
+
+				&:before {
+					content: "\e608";
+				}
+			}
 		}
+
+
+
 	}
 
 	.svg_logo {
 		vertical-align: middle;
 	}
 }
+
+
+//
+//
+//.icon-section-5-icon3:before {
+//	content: "\e601";
+//}
+//.icon-section-5-icon2:before {
+//	content: "\e602";
+//}
+//.icon-section-5-icon1:before {
+//	content: "\e603";
+//}
+//.icon-section-5-headermark:before {
+//	content: "\e604";
+//}
+//.icon-section-2-icon3:before {
+//	content: "\e605";
+//}
+//.icon-sldnc:before {
+//	content: "\e600";
+//}
+//.icon-section-2-icon1:before {
+//	content: "\e606";
+//}
+//.icon-logo:before {
+//	content: "\e607";
+//}
+//
+

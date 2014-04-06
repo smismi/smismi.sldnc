@@ -1,4 +1,19 @@
 /* Font-face */
+
+
+/* MY CUSTOM ICON */
+@font-face {
+	font-family: 'sldnc-icons';
+	src:url('../fonts/sldnc-icons.eot?wet58l');
+	src:url('../fonts/sldnc-icons.eot?#iefixwet58l') format('embedded-opentype'),
+	url('../fonts/sldnc-icons.woff?wet58l') format('woff'),
+	url('../fonts/sldnc-icons.ttf?wet58l') format('truetype'),
+	url('../fonts/sldnc-icons.svg?wet58l#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 /* PF Agora Sans Pro */
 @font-face {
 	font-family: 'pf_agora_sans_probold';

@@ -8,17 +8,17 @@ var SL = {
 
 //		SL.cropViewport();
 //		SL.preloadImage();
-
-
-//		SL.initScrollMagik();
+//
+//
+		SL.initScrollMagik();
 //
 //
 //		SL.initParallax1();
 //		SL.initParallax2();
 //		SL.initParallax3();
-//		SL.initParallax4();
-//		SL.initParallax5();
-//		SL.initInterActive5();
+		SL.initParallax4();
+		SL.initParallax5();
+		SL.initInterActive5();
 
 
 
@@ -274,6 +274,13 @@ var SL = {
 
 
 	},
+	initInterActive2: function() {
+
+
+
+
+
+	},
 	initInterActive5: function() {
 		// interactive5
 		console.log("?. interactive5   ---    init")
@@ -312,18 +319,6 @@ var SL = {
 
 
 
-//
-//		$("#section-5-page-1 img").animate({opacity:1,  top: 0}, 300, 'linear');
-//
-//			$("#section-5-page-2 img").animate({opacity:1,  top: 0}, 300, 'linear');
-//
-//
-//			$("#section-5-page-3 img").animate({opacity:1,  top: 0}, 300, 'linear');
-//
-//			$(".page_item_caption .description").animate({opacity:1}, 300, 'linear', bindMouse );
-
-
-
 		function bindMouse() {
 
 			console.log("?. bindMouse   ---    init   --- for");
@@ -354,23 +349,39 @@ var SL = {
 		}
 
 
-		function runHesitate() {
 
-			console.log("all runHesitate");
+	},
 
-			return;
 
+
+
+
+
+
+
+
+//	otheruglystuff for internal use
+	func: {
+
+		 whichTransitionEvent : function(){
+			var t;
+			var el = document.createElement('fakeelement');
+			var transitions = {
+				'transition':'transitionend',
+				'OTransition':'oTransitionEnd',
+				'MozTransition':'transitionend',
+				'WebkitTransition':'webkitTransitionEnd'
+			}
+
+			for(t in transitions){
+				if( el.style[t] !== undefined ){
+					return transitions[t];
+				}
+			}
 		}
 
 
-//		$("#section-5-page-1").mouseParallax();
-//		$("#section-5-page-2").mouseParallax();
-//		$("#section-5-page-3").mouseParallax();
-
-
-
-	}
-
+}
 
 
 

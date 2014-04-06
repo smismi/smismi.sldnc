@@ -80,12 +80,16 @@ section.page {
 	background-position: 50% 50%;
 
 	.wrapper {
+
+		// TODO: 1 ex
 		position: absolute;
 		top: 0;
 		bottom:0;
 		overflow: hidden;
-		//background-image: url(../img/bg02.png);
+		background-image: url(../img/bg02.png);
 
+		// TODO: 2 ex
+		height: 100%;
 	}
 
 

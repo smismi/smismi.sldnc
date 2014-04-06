@@ -14,12 +14,16 @@ body, html, .wrapper {
 	padding: 0;
 	width: 100%;
 	height: 100%;
-	font-family: oksana_text_narrowdemibold;
+	font-family: 'oksana_text_narrowdemibold';
 }
 
 
 .header {
 	width: 100%;
+
+
+
+
 }
 
 .touchonly {
@@ -49,5 +53,22 @@ html.touch .touchonly {
 	body, html, .wrapper {
 		min-width: auto;
 	}
+
+}
+
+.fonted {
+	font-family: 'sldnc-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	font-size: 34px;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
 
 }

@@ -1,7 +1,7 @@
 
-.page1,.page3,.page4,.page5 {
-	display: none;
-}
+//.page1,.page3,.page4 {
+//	display: none;
+//}
 
 .page2 {
 
@@ -13,38 +13,238 @@
 
 	.wrapper {
 		background:#ffd3ab url(../img/bg/bg2.jpg) repeat 50% 50%;
+		text-align: center;
 
-		.page_item {
-			display: block;
-			float: left;
+ 		.page_item {
+			display: inline-block;
  			height: 100%;
+			max-width: 400px;
+ 			line-height: 0;
+			position: relative;
+			overflow: hidden;
+			width: 33.3333%;
 
-			$list: "first", "second", "third";
-
-			@include pageitems($list);
-
-			&.first {
-				background: #ffabd3;
-			}
-			&.second {
-				background: #fafd3b;
-
-			}
-			&.third {
-				background: #fd3f3b;
-
-			}
 			&.first figcaption {
-				//background: #ffabd3;
+				background: url(../img/bg/bgl21.jpg) repeat 50% 50%;
 			}
 			&.second figcaption{
-				//background: #fafd3b;
+				background: url(../img/bg/bgl22.jpg) repeat 50% 50%;
 
 			}
 			&.third figcaption{
-				//background: #fd3f3b;
+				background: url(../img/bg/bgl23.jpg) repeat 50% 50%;
 
 			}
+
+
+			figcaption {
+				position: absolute;
+				width: 100%;
+				top:0;
+				left:0;
+				right: 0;
+				bottom: 0;
+				@include transition( all 0.5s ease-out);
+
+
+			}
+
+			&:hover {
+				figcaption {
+					position: absolute;
+				}
+
+			}
+
+			&.totop {
+				figcaption {
+					top:100%;
+
+				}
+
+				&:hover {
+					figcaption {
+						top: 0;
+					}
+
+				}
+			}
+
+			&.toright {
+				figcaption {
+					left: -100%;
+					right: auto;
+
+				}
+
+				&:hover {
+					figcaption {
+						left: 0;
+					}
+
+				}
+			}
+			&.toleft {
+				figcaption {
+					left: 100%;
+					right: auto;
+
+				}
+
+				&:hover {
+					figcaption {
+						left: 0;
+					}
+
+				}
+			}
+			&.tobottom {
+				figcaption {
+					top: -100%;
+					bottom: auto;
+					height: 100%;
+
+				}
+
+				&:hover {
+					figcaption {
+						top: 0;
+					}
+
+				}
+			}
+
+
+			&.tofront {
+				.image {
+					position: absolute;
+					width: 100%;
+					top: 50%;
+					left: 0;
+					height: 200px;
+					margin-top: -100px;
+
+					@include transition( all 0.1s ease-out);
+
+					img {
+						width: 100%;
+					}
+				}
+
+
+				&:hover {
+					.image {
+						left: 50%;
+						width: 0;
+						height: 0;
+						margin-top: 0;
+						opacity: 0;
+					}
+				}
+
+				.image2 {
+					position: absolute;
+					top: 50%;
+
+					@include transition( all 0.3s ease-out);
+					//@include transition-delay(2s);
+
+					z-index: 12;
+					left: 50%;
+					width: 0;
+					height: 0;
+					margin-top: 0;
+					opacity: 0;
+
+					img {
+						width: 100%;
+					}
+
+				}
+
+
+				&:hover {
+					.image2 {
+						width: 100%;
+						left: 0;
+						height: 200px;
+						margin-top: -100px;
+						opacity: 1;
+
+					}
+				}
+
+
+
+
+			}
+
+
+			.icon {
+
+				width: 100%;
+				display: block;
+ 				position: absolute;
+				top: 50%;
+
+
+
+
+				@include transition( all .3s ease-out);
+
+				margin-top: 0;
+				text-align: center;
+				line-height: 0;
+				color: #f00;
+
+
+				&.icon1 {
+
+					font-size: 60px;
+
+					&:before {
+						content: "\e607";
+					}
+
+				}
+
+				&.icon2 {
+
+					font-size: 170px;
+
+					&:before {
+						content: "\e606";
+					}
+
+				}
+
+				&.icon3 {
+
+					font-size: 120px;
+
+
+					&:before {
+						content: "\e605";
+					}
+
+				}
+
+
+			}
+
+
+			&:hover {
+
+				.icon {
+					color: #fff;
+					@include transform(scale(1.3));
+
+				}
+
+			}
+
+
+
 		}
 	}
 
