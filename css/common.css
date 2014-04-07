@@ -517,6 +517,11 @@ section.page {
   overflow: hidden;
 }
 .page4 .wrapper .section-4-bg-1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background-image: url(../img/bg/bgl41.png);
   background-position: 50% 100%;
   background-repeat: no-repeat;
@@ -958,6 +963,11 @@ section.page {
   margin-left: -62px;
   width: 144px;
   height: 144px;
+}
+
+.page1,
+.page2 {
+  display: none;
 }
 
 .test {

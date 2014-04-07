@@ -6,27 +6,22 @@ var SL = {
 		console.log("1. init");
 
 
-		SL.cropViewport();
-		SL.preloadImage();
-
+//		SL.cropViewport();
+//		SL.preloadImage();
+//
 
 		SL.initScrollMagik();
 
 
-		SL.initParallax1();
-
-
-		SL.initParallax2();
-
-
-		SL.initParallax3();
-
-
+//		SL.initParallax1();
+//		SL.initParallax2();
+//		SL.initParallax3();
 		SL.initParallax4();
+//		SL.initParallax5();
 
 
-		SL.initParallax5();
 		SL.initInterActive5();
+
 
 
 
@@ -203,18 +198,18 @@ var SL = {
 
 
 		// parallax3
-		new ScrollScene({
-			triggerElement: "#section-3",
-			duration: 1000,
-			offset: 0
-		})
-			.addTo(SL.controller)
-			.triggerHook("onLeave")
-			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-3 .wrapper", 1, {y:0}, {y:200}),
-
-
-			]));
+//		new ScrollScene({
+//			triggerElement: "#section-3",
+//			duration: 1000,
+//			offset: 0
+//		})
+//			.addTo(SL.controller)
+//			.triggerHook("onLeave")
+//			.setTween(new TimelineMax().add([
+//				TweenMax.fromTo("#section-3 .wrapper", 1, {y:0}, {y:200}),
+//
+//
+//			]));
 
 
 		new ScrollScene({
@@ -225,11 +220,11 @@ var SL = {
 			.addTo(SL.controller)
 			.triggerHook("onEnter")
 			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-3 .section-3-bg-1", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 132%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-3 .section-3-bg-2", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 180%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-3 .section-3-bg-25", 1, { y: 0}, {y: -100, ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-3 .section-3-bg-3", 1, { backgroundPosition: "0% 100%"}, {backgroundPosition: "0% 182%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-3 .section-3-bg-4", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 229%", ease: Linear.easeNone})
+//				TweenMax.fromTo("#section-3 .section-3-bg-1", 1, { backgroundPosition: "50% 100%"}, {backgroundPosition: "50% 60%", ease: Linear.easeNone}),
+//				TweenMax.fromTo("#section-3 .section-3-bg-2", 1, { backgroundPosition: "50% 200%"}, {backgroundPosition: "50% 0%", ease: Linear.easeNone}),
+//				TweenMax.fromTo("#section-3 .section-3-bg-25", 1, { y: 0}, {y: -100, ease: Linear.easeNone}),
+//				TweenMax.fromTo("#section-3 .section-3-bg-3", 1, { backgroundPosition: "50% 0%"}, {backgroundPosition: "50% 180%", ease: Linear.easeNone}),
+//				TweenMax.fromTo("#section-3 .section-3-bg-4", 1, { backgroundPosition: "50% 0%"}, {backgroundPosition: "50% 229%", ease: Linear.easeNone})
 
 			]));
 
@@ -239,18 +234,18 @@ var SL = {
 
 
 		// parallax4
-		new ScrollScene({
-			triggerElement: "#section-4",
-			duration: 1000,
-			offset: 0
-		})
-			.addTo(SL.controller)
-			.triggerHook("onLeave")
-			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-4 .wrapper", 1, {y: 0}, {y: 200}),
-
-
-			]));
+//		new ScrollScene({
+//			triggerElement: "#section-4",
+//			duration: 1000,
+//			offset: 0
+//		})
+//			.addTo(SL.controller)
+//			.triggerHook("onLeave")
+//			.setTween(new TimelineMax().add([
+//				TweenMax.fromTo("#section-4 .wrapper", 1, {y: 0}, {y: 200}),
+//
+//
+//			]));
 
 
 
@@ -263,10 +258,12 @@ var SL = {
 			.addTo(SL.controller)
 			.triggerHook("onEnter")
 			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-4 .section-4-bg-1", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 132%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-4 .section-4-bg-2", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 180%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-4 .section-4-bg-3", 1, { backgroundPosition: "0% 100%"}, {backgroundPosition: "0% 182%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-4 .section-4-bg-4", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 229%", ease: Linear.easeNone})
+
+
+				TweenMax.fromTo("#section-4 .section-4-bg-1", 1, { backgroundPosition: "50% -150%"}, {backgroundPosition: "50% 180%", ease: Linear.easeNone}),
+				TweenMax.fromTo("#section-4 .section-4-bg-2", 1, { backgroundPosition: "50% 200%"}, {backgroundPosition: "50% 10-%", ease: Linear.easeNone}),
+				TweenMax.fromTo("#section-4 .section-4-bg-3", 1, { backgroundPosition: "50% 0%"}, {backgroundPosition: "50% 200%", ease: Linear.easeNone}),
+				TweenMax.fromTo("#section-4 .section-4-bg-4", 1, { backgroundPosition: "50% 0%"}, {backgroundPosition: "50% 229%", ease: Linear.easeNone})
 
 			]));
 	},
@@ -275,18 +272,18 @@ var SL = {
 		console.log("?. initParallax5   ---    init");
 
 
-		new ScrollScene({
-			triggerElement: "#section-5",
-			duration: 1000,
-			offset: 0
-		})
-			.addTo(SL.controller)
-			.triggerHook("onLeave")
-			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-5 .wrapper", 1, {y:0}, {y:200}),
-
-
-			]));
+//		new ScrollScene({
+//			triggerElement: "#section-5",
+//			duration: 1000,
+//			offset: 0
+//		})
+//			.addTo(SL.controller)
+//			.triggerHook("onLeave")
+//			.setTween(new TimelineMax().add([
+//				TweenMax.fromTo("#section-5 .wrapper", 1, {y:0}, {y:200}),
+//
+//
+//			]));
 
 
 	},
