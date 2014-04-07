@@ -462,7 +462,7 @@ section.page {
   right: 0;
   left: 0;
   background-image: url(../img/bg/bgl31.png);
-  background-position: 50% 50%;
+  background-position: 30% 50%;
   background-repeat: no-repeat;
 }
 .page3 .section-3-bg-2 {
@@ -963,11 +963,6 @@ section.page {
   margin-left: -62px;
   width: 144px;
   height: 144px;
-}
-
-.page1,
-.page2 {
-  display: none;
 }
 
 .test {
