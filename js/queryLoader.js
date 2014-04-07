@@ -121,15 +121,7 @@ var QueryLoader = {
 
 		QueryLoader.overlay = $("<div></div>").appendTo($(QueryLoader.selectorPreload));
 		$(QueryLoader.overlay);
-		$(QueryLoader.overlay).css({
-			position: position,
-			top: "50%",
-			left: "50%",
-			marginTop: "-72px",
-			marginLeft: "-72px",
-			width: 144 + "px",
-			height: 144 + "px"
-		});
+		$(QueryLoader.overlay).addClass("cup-spinner");
 		
 		QueryLoader.loadBar = $("<div></div>").appendTo($(QueryLoader.overlay));
 		$(QueryLoader.loadBar).addClass("QLoader");
@@ -162,13 +154,16 @@ var QueryLoader = {
 
 		//The end animation, adjust to your likings
 
-		$(QueryLoader.loadBar).fadeOut(1000, function(){
+		console.log("DONE");
+
+		$(QueryLoader.loadBar).hide();
+//		$(QueryLoader.loadBar).fadeOut(1000, function(){
 
 			if(QueryLoader.callback) {
 				QueryLoader.callback();
 			}
 
-		})
+//		})
 
 	}
 }

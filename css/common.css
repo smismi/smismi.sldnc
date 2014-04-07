@@ -123,7 +123,6 @@ html.touch .touchonly {
 */
 #content-wrapper, #wrapper {
   height: 100%;
-  min-height: 800px;
 }
 
 .scrollContainer {
@@ -261,8 +260,19 @@ section.page {
   content: "\e600";
 }
 .page1 .wrapper .section-1-bg-25 h3 {
+  font-size: 38px;
+}
+.page1 .wrapper .section-1-bg-25 h3.font1 {
+  font-family: oksana_text_narrowbold;
+}
+.page1 .wrapper .section-1-bg-25 h3.font2 {
+  font-family: oksana_text_narrowbold_italic;
+}
+.page1 .wrapper .section-1-bg-25 h3.font3 {
   font-family: oksana_text_narrowdemibold;
-  font-size: 17px;
+}
+.page1 .wrapper .section-1-bg-25 h3.font4 {
+  font-family: oksana_text_narrowthin_italic;
 }
 .page1 .wrapper .section-1-bg-3 {
   position: absolute;
@@ -410,7 +420,7 @@ section.page {
   margin-top: 0;
   text-align: center;
   line-height: 0;
-  color: #f00;
+  color: #e60e64;
 }
 .page2 .wrapper .page_item .icon.icon1 {
   font-size: 60px;
@@ -940,6 +950,16 @@ section.page {
   z-index: 12;
 }
 
+.cup-spinner {
+  position: fixed;
+  bottom: 304px;
+  left: 50%;
+  margin-top: -72px;
+  margin-left: -62px;
+  width: 144px;
+  height: 144px;
+}
+
 .test {
   color: #235678;
 }
@@ -950,7 +970,7 @@ section.page {
 }
 
 .header_nav {
-  font-family: oksana_text_narrowdemibold;
+  font-family: oksana_text_narrowbold_italic;
   height: 60px;
   width: 850px;
   margin: 0 auto;

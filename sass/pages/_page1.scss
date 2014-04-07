@@ -62,8 +62,24 @@
 			}
 
 			h3 {
-				font-family: oksana_text_narrowdemibold;
-				font-size: 17px;
+ 				font-size: 38px;
+
+				&.font1 {
+					font-family: oksana_text_narrowbold;
+
+				}
+				&.font2 {
+					font-family: oksana_text_narrowbold_italic;
+
+				}
+				&.font3 {
+					font-family: oksana_text_narrowdemibold;
+
+				}
+				&.font4 {
+					font-family: oksana_text_narrowthin_italic;
+
+				}
 			}
 		}
 		.section-1-bg-3 {

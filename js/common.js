@@ -6,13 +6,9 @@ var SL = {
 		console.log("1. init");
 
 
-//		SL.cropViewport();
-//		SL.preloadImage();
-//
-//
+		SL.cropViewport();
+		SL.preloadImage();
 		SL.initScrollMagik();
-//
-//
 		SL.initParallax1();
 		SL.initParallax2();
 		SL.initParallax3();
@@ -33,8 +29,6 @@ var SL = {
 
 
 		SL.QueryLoader = QueryLoader;
-
-//		QueryLoader.init(function(){ SL.runScene1() });
 		SL.QueryLoader.init(function(){ SL.runCupAnimation() });
 
 
@@ -43,14 +37,15 @@ var SL = {
 		SL.cup = $("<div id='cup'></div>").appendTo($("body"));
 
 
-		var i = 0; // Declare a global variable to hold the current iteration value.
+		var i = 0; // current iteration value.
+
 		function changeClass(){
 
 				if (i == 25) {
 
 					clearInterval(timerId);
 					SL.cup.fadeOut(1000, function(){
-						$(this).remove();
+//						$(this).remove();
 					})
 					SL.unCropViewport();
 
@@ -79,11 +74,11 @@ var SL = {
 
 
 
-		$("#content-wrapper").css({opacity: 0});
-//		$("body").css({overflow: "hidden"});
-
+		$("#content-wrapper").css({opacity: 0, overflow: "hidden"});
 		$(".header").css({top: -300, opacity: 0});
 		$(".pager").css({right: -300, opacity: 0});
+
+
 
 
 
@@ -93,15 +88,13 @@ var SL = {
 	unCropViewport: function() {
 
 
-		$("#content-wrapper").animate({opacity: 1}, 1000, function() {
+		$("#content-wrapper").animate({opacity: 1, overflow: "auto"}, 1000, function() {
 
 			SL.runScene1();
 
 
-//			$("body").css({overflow: "auto"});
-
-			$(".header").animate({top: 0, opacity: 1}, 1200);
-			$(".pager").animate({right: 0, opacity: 1}, 1200);
+			$(".header").animate({top: 0, opacity: 1}, 600);
+			$(".pager").animate({right: 0, opacity: 1}, 600);
 
 			console.log("5. unCropViewport   ---    done");
 
@@ -212,21 +205,21 @@ var SL = {
 			]));
 
 
-		new ScrollScene({
-			triggerElement: "#section-3",
-			duration: 1000*2,
-			offset: 0
-		})
-			.addTo(SL.controller)
-			.triggerHook("onEnter")
-			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-3 .section-3-bg-1", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 132%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-3 .section-3-bg-2", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 180%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-3 .section-3-bg-25", 1, { y: 0}, {y: -100, ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-3 .section-3-bg-3", 1, { backgroundPosition: "0% 100%"}, {backgroundPosition: "0% 182%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-3 .section-3-bg-4", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 229%", ease: Linear.easeNone})
-
-			]));
+//		new ScrollScene({
+//			triggerElement: "#section-3",
+//			duration: 1000*2,
+//			offset: 0
+//		})
+//			.addTo(SL.controller)
+//			.triggerHook("onEnter")
+//			.setTween(new TimelineMax().add([
+//				TweenMax.fromTo("#section-3 .section-3-bg-1", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 132%", ease: Linear.easeNone}),
+//				TweenMax.fromTo("#section-3 .section-3-bg-2", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 180%", ease: Linear.easeNone}),
+//				TweenMax.fromTo("#section-3 .section-3-bg-25", 1, { y: 0}, {y: -100, ease: Linear.easeNone}),
+//				TweenMax.fromTo("#section-3 .section-3-bg-3", 1, { backgroundPosition: "0% 100%"}, {backgroundPosition: "0% 182%", ease: Linear.easeNone}),
+//				TweenMax.fromTo("#section-3 .section-3-bg-4", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 229%", ease: Linear.easeNone})
+//
+//			]));
 
 	},
 	initParallax4: function() {
@@ -250,27 +243,20 @@ var SL = {
 
 
 
-		new ScrollScene({
-			triggerElement: "#section-4",
-			duration: 1000*2,
-			offset: 0
-		})
-			.addTo(SL.controller)
-			.triggerHook("onEnter")
-			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-4 .section-4-bg-1", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 132%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-4 .section-4-bg-2", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 180%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-4 .section-4-bg-3", 1, { backgroundPosition: "0% 100%"}, {backgroundPosition: "0% 182%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-4 .section-4-bg-4", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 229%", ease: Linear.easeNone})
-
-//						TweenMax.fromTo("#section-4 .section-4-bg-3", 1, { backgroundPosition: "50% 50%"}, {backgroundPosition: "-40% 0",  ease: Linear.easeNone}),
-//						TweenMax.fromTo("#section-4 .section-4-bg-1", 1, {y: 0}, {x: 1122,  rotation: 113, ease: Linear.easeNone}),
-//						TweenMax.fromTo("#section-4 .section-4-bg-2", 1, {y: 0}, {y: 200	, left: -22,  rotation: -13,  ease: Linear.easeNone}),
-//						TweenMax.fromTo("#section-4 .section-4-bg-25", 1, {y: 0}, {y: 400, left: -22,  rotation: 13, ease: Linear.easeNone}),
-//						TweenMax.fromTo("#section-4 .section-4-bg-3", 1, {y: 0}, {y: 500, ease: Linear.easeNone}),
-//						TweenMax.fromTo("#section-4 .section-4-bg-4", 1, {y: 0}, {y: 700, ease: Linear.easeNone})
-
-			]));
+//		new ScrollScene({
+//			triggerElement: "#section-4",
+//			duration: 1000*2,
+//			offset: 0
+//		})
+//			.addTo(SL.controller)
+//			.triggerHook("onEnter")
+//			.setTween(new TimelineMax().add([
+//				TweenMax.fromTo("#section-4 .section-4-bg-1", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 132%", ease: Linear.easeNone}),
+//				TweenMax.fromTo("#section-4 .section-4-bg-2", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 180%", ease: Linear.easeNone}),
+//				TweenMax.fromTo("#section-4 .section-4-bg-3", 1, { backgroundPosition: "0% 100%"}, {backgroundPosition: "0% 182%", ease: Linear.easeNone}),
+//				TweenMax.fromTo("#section-4 .section-4-bg-4", 1, { backgroundPosition: "0% 0%"}, {backgroundPosition: "0% 229%", ease: Linear.easeNone})
+//
+//			]));
 	},
 	initParallax5: function() {
 		// parallax5

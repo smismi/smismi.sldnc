@@ -3,7 +3,7 @@
 */
 #content-wrapper, #wrapper {
 	height:100%;
-	min-height: 800px;
+	//min-height: 400px;
 }
 
 .scrollContainer {
@@ -112,4 +112,17 @@ section.page {
 	position: fixed;
 	z-index: 12;
 	//display: none;
+}
+
+.cup-spinner {
+
+
+	position: fixed;
+	bottom: 304px;
+	left: 50%;
+	margin-top: -72px;
+	margin-left: -62px;
+	width: 144px;
+	height: 144px;
+
 }
