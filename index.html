@@ -1,147 +1,287 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="ru">
+
+
 <head>
-
 	<meta charset="utf-8">
-	<meta name="viewport"
-		  content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<title>Сладуницa - title - main</title>
 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="initial-scale=.5,user-scalable=yes,maximum-scale=2,width=device-width"/>
 
-
-	<!--<script type="text/javascript" src="js/jquery.2.0.js"></script>-->
-	<script type="text/javascript" src="js/_dependent/jquery-1.11.0.min.js"></script>
+	<title>СЛДНЦ</title>
 
 	<script type="text/javascript" src="js/modernizr.custom.13938-min.js"></script>
 
 
-	<!--<script type="text/javascript" src="js/jquery.scrollto.js"></script>-->
-	<!--<script type="text/javascript" src="js/jquery.mousewheel.js"></script>-->
 
-
+	<script type="text/javascript" src="js/_dependent/greensock/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/_dependent/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
+	<script type="text/javascript" src="js/_mobile/iscroll.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollto.js"></script>
+	<script type="text/javascript" src="js/jquery.rotation.js"></script>
+	<script type="text/javascript" src="js/queryLoader.js"></script>
 	<script type="text/javascript" src="js/jquery.mouseParallax.js"></script>
 
 
 
-	<script type="text/javascript" src="js/_dependent/greensock/TweenMax.min.js"></script>
-	<script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
-	<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
 
-	<script type="text/javascript" src="js/_mobile/iscroll.js"></script>
 
 
 
 
 	<link rel="stylesheet" href="css/fontface.css" type="text/css"/>
 	<link rel="stylesheet" href="css/common.css" type="text/css"/>
-	<!--<link rel="stylesheet" href="css/normalize.css" type="text/css">-->
-
-
-
+	<link rel="stylesheet" href="css/queryLoader.css" type="text/css"/>
 </head>
 <body>
+
+
 <div id="content-wrapper">
-	<div id="example-wrapper" class="scrollContainer">
-		<div class="scrollContent" style="position: relative;">
+	<div id="wrapper">
+		<nav class="header fixed">
+			<ul class="header_nav" id="header">
+				<li class="header_nav_item"><a class="header_nav_item_link" href="#1">Компания</a></li>
+				<li class="header_nav_item"><a class="header_nav_item_link" href="#2">Каталог</a></li>
+				<li class="header_nav_item"><a class="header_nav_item_link" href="#3">Партнеры</a></li>
+				<li class="header_nav_item"><a class="header_nav_item_link fonted logo" href="#3"></a>
+				</li>
+				<li class="header_nav_item"><a class="header_nav_item_link" href="#4">Новости</a></li>
+				<li class="header_nav_item"><a class="header_nav_item_link" href="#5">Контакты</a></li>
+			</ul>
+		</nav>
+		<nav class="pager fixed">
 
+			<div id="pager_nav" id="nav">
+				<ul class="inner_wrapper">
+					<li class="" data-scroll="first_slide">
+						<span>1</span>
+						<div>О компании</div>
+					</li>
+					<li data-scroll="second_slide" class="">
+						<span>2</span>
+						<div>География продаж</div>
+					</li>
+					<li data-scroll="third_slide" class="active">
+						<span>3</span>
+						<div>Производство</div>
+					</li>
+					<li data-scroll="fourth_slide" class="">
+						<span>4</span>
+						<div>Партнеры</div>
+					</li>
+					<li data-scroll="fifth_slide" class="">
+						<span>5</span>
+						<div>Вакансии</div>
+					</li>
+					<li data-scroll="sixth_slide" class="">
+						<span>6</span>
+						<div>Новости</div>
+					</li>
 
-
-			<nav class="header fixed">
-				<ul class="header_nav" id="header">
-					<li class="header_nav_item"><a class="header_nav_item_link" href="#1">Компания</a></li>
-					<li class="header_nav_item"><a class="header_nav_item_link" href="#2">Каталог</a></li>
-					<li class="header_nav_item"><a class="header_nav_item_link" href="#3">Партнеры</a></li>
-					<li class="header_nav_item"><a class="header_nav_item_link" href="#4">Новости</a></li>
-					<li class="header_nav_item"><a class="header_nav_item_link" href="#5">Контакты</a></li>
 				</ul>
-			</nav>
-			<nav class="pager fixed">
-				<ul class="pager_nav" id="nav">
-					<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-1">1</a></li>
-					<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-2">2</a></li>
-					<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-3">3</a></li>
-					<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-4">4</a></li>
-					<li class="pager_nav_item"><a class="pager_nav_item_link" href="#section-5">5</a></li>
-				</ul>
-			</nav>
+			</div>
+		</nav>
 
 
+			<div class="scrollContent">
 			<section id="section-1" class="page page1">
-				<div>
-					1
-					<br/>
-					<br/>
-					<br/>
-					<br/>
-					<br/>
-					<br/>
-					<br/>
-					<br/>
+				<div class="wrapper">
+					<div class="section-1-bg-1"></div>
+					<div class="section-1-bg-11"></div>
+					<div class="section-1-bg-12"></div>
+					<div class="section-1-bg-2"></div>
+					<div class="section-1-bg-3"></div>
+					<div class="section-1-bg-4"></div>
+					<div class="section-1-bg-25 fonted">
 
-					<object data="img/svg/logo.svg" type="image/svg+xml">
-						<img src="logo.jpg"/>
-					</object>
+						<h3 class="font1">кондитерская фабрика</h3>
+						<h3 class="font2">кондитерская фабрика</h3>
+						<h3 class="font3">кондитерская фабрика</h3>
+						<h3 class="font4">кондитерская фабрика</h3>
+					</div>
 				</div>
 			</section>
 			<section id="section-2" class="page page2">
-				2
+				<div class="wrapper">
+
+					<figure class="page_item first toright">
+						<figcaption class="page_item_caption">
+
+
+
+						</figcaption>
+
+						<div class="icon fonted icon1"></div>
+ 					</figure><!--
+
+					--><figure class="page_item second toleft">
+						<figcaption class="page_item_caption">
+
+
+
+						</figcaption>
+						<div class="icon fonted icon2"></div>
+
+					</figure><!--
+
+					--><figure class="page_item third totop">
+						<figcaption class="page_item_caption">
+
+
+
+						</figcaption>
+						<div class="icon fonted icon3"></div>
+				</figure>
+
+
+				</div>
 			</section>
 			<section id="section-3" class="page page3">
-				<div class="bg-section-1" data-speed="1"></div>
-				<div class="bg-section-2" data-speed="2"></div>
-				<div class="bg-section-3" data-speed="3"></div>
+
+
+
+				<div class="wrapper">
+
+					<div class="section-3-bg-1"></div>
+					<div class="section-3-bg-2"></div>
+					<div class="section-3-bg-3"></div>
+					<div class="section-3-bg-25">
+						<h1>Фабрика
+							конфет&nbsp;и&nbsp;шоколада</h1>
+						<h2>
+							Стремясь к совершенству, мы находим идеальные сочетания
+							компонентов, открываем новые вкусы, достоинства
+							своего творения.</h2>
+					</div>
+					<div class="section-3-bg-4"></div>
+
+
+				</div>
+
 			</section>
 			<section id="section-4" class="page page4">
-				4
+				<div class="wrapper">
+ 					<div class="section-4-bg-4"></div>
+ 					<div class="section-4-bg-3"></div>
+					<div class="section-4-bg-25">
+						<h1>Фабрика	сладостей</h1>
+						<h2>
+							Стремясь к совершенству, мы находим идеальные сочетания
+							компонентов, открываем новые вкусы, достоинства
+							своего творения.</h2>
+					</div>
+ 					<div class="section-4-bg-2"></div>
+ 					<div class="section-4-bg-1"></div>
+				</div>
 			</section>
 			<section id="section-5" class="page page5">
-				5
+				<div class="wrapper">
+
+					<h1 class="section-5-header">Фабрика новационных конфет</h1>
+ 					<h2 class="fonted icon headermark"></h2>
+
+
+					<figure class="page_item first">
+						<figcaption class="page_item_caption" id="section-5-page-1">
+
+
+
+							<abbr>
+								<i><img src="img/section-5-1-glow1.png"></i>
+								<i><img src="img/section-5-1-glow2.png"></i>
+								<i><img src="img/section-5-1-glow3.png"></i>
+								<span class="fonted icon icon1"></span>
+ 								<em><img src="img/section-5-1-candy.png"></em>
+							</abbr>
+
+
+
+
+							<div class="description">
+								<h2>Air</h2>
+								<h3>Воздушные конфетки из йогурта, нежность которым
+									придает современная аэро-технология.</h3>
+							</div>
+
+
+
+						</figcaption>
+					</figure><!--
+
+					--><figure class="page_item second">
+						<figcaption class="page_item_caption" id="section-5-page-2">
+
+
+
+
+
+							<abbr>
+								<i><img src="img/section-5-2-glow1.png"></i>
+								<i><img src="img/section-5-2-glow2.png"></i>
+								<i><img src="img/section-5-2-glow3.png"></i>
+								<span class="fonted icon icon2"></span>
+								<em><img src="img/section-5-2-candy.png"></em>
+							</abbr>
+
+
+
+							<div class="description">
+								<h2>Vita</h2>
+								<h3>Легкие изящные конфетки, наполненные
+									экстрактами и соками фруктов и ягод.
+									Уникальный витаминный
+									коктейль для ценителей натуральных продуктов.</h3>
+							</div>
+
+						</figcaption>
+					</figure><!--
+
+					--><figure class="page_item third">
+						<figcaption class="page_item_caption" id="section-5-page-3">
+
+
+
+							<abbr>
+								<i><img src="img/section-5-3-glow1.png"></i>
+								<i><img src="img/section-5-3-glow2.png"></i>
+								<i><img src="img/section-5-3-glow3.png"></i>
+								<span class="fonted icon icon3"></span>
+								<em><img src="img/section-5-3-candy.png"></em>
+							</abbr>
+
+
+
+
+
+							<div class="description">
+								<h2>Multi-Milk</h2>
+								<h3>Мульти-молочные конфетки, которые на треть
+									состоят из натурального молока.</h3>
+							</div>
+
+						</figcaption>
+					</figure>
+
+				</div>
 			</section>
-			<section id="section-6" class="page page6">
-				6
-			</section>
-		</div>
 	</div>
 </div>
 <script>
 	$(document).ready(function($) {
 
-		// init controller
-		var controller = new ScrollMagic({container: "#example-wrapper"});
 
-		// init tween
-		var tween = TweenMax.to("#mobileadvanced", 1, {backgroundColor: "black", scale: 0.4, borderRadius: 75});
+		SL.init();
 
-		// init scene
-		var scene = new ScrollScene({triggerElement: "#trigger", duration: 500, offset: 75})
-				.setTween(tween)
-				.setPin("#mobileadvanced")
-				.addTo(controller);
-
-		// make sure we only do this on mobile:
-		if (Modernizr.touch) {
-			// using iScroll but deactivating -webkit-transform because pin wouldn't work because of a webkit bug: https://code.google.com/p/chromium/issues/detail?id=20574
-			// if you dont use pinning, keep "useTransform" set to true, as it is far better in terms of performance.
-			var myScroll = new IScroll('#example-wrapper', {scrollX: false, scrollY: true, scrollbars: true, useTransform: false, useTransition: false, probeType: 3});
-
-			// overwrite scroll position calculation to use child's offset instead of container's scrollTop();
-			controller.scrollPos(function () {
-				return -myScroll.y;
-			});
-
-			// thanks to iScroll 5 we now have a real onScroll event (with some performance drawbacks)
-			myScroll.on("scroll", function () {
-				controller.update();
-			});
-
-			// add indicators to scrollcontent so they will be moved with it.
-			scene.addIndicators({parent: ".scrollContent"});
-		} else {
-			// show indicators (requires debug extension)
-			scene.addIndicators();
-		}
 
 	});
+
+
+
+
 </script>
+
 </body>
 </html>
