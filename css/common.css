@@ -239,19 +239,11 @@ section.page {
   height: 251px;
   background: url(../img/bg/bgl112.png) repeat-x 0 0;
 }
-.page1 .wrapper .section-1-bg-2 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  opacity: 0;
-  background: url(../img/bg/bgl12.png) no-repeat 0% 100%;
-}
 .page1 .wrapper .section-1-bg-25 {
   margin: -120px auto;
   position: relative;
   top: 50%;
+  opacity: 0;
   color: #70002e;
   font-size: 100px;
   text-align: center;
@@ -274,20 +266,30 @@ section.page {
 .page1 .wrapper .section-1-bg-25 h3.font4 {
   font-family: oksana_text_narrowthin_italic;
 }
-.page1 .wrapper .section-1-bg-3 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: url(../img/bg/bgl13.png) no-repeat 50% 100%;
-}
 .page1 .wrapper .section-1-bg-4 {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+  display: none;
+  background: url(../img/bg/bgl13.png) no-repeat 50% 100%;
+}
+.page1 .wrapper .section-1-bg-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 367px;
+  height: 181px;
+  opacity: 0;
+  background: url(../img/bg/bgl12.png) no-repeat 0% 100%;
+}
+.page1 .wrapper .section-1-bg-3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 409px;
+  height: 285px;
   opacity: 0;
   background: url(../img/bg/bgl14.png) no-repeat 100% 100%;
 }
@@ -963,6 +965,13 @@ section.page {
   margin-left: -62px;
   width: 144px;
   height: 144px;
+}
+
+.page2,
+.page3,
+.page4,
+.page5 {
+  display: none;
 }
 
 .test {

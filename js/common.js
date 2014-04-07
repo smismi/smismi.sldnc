@@ -6,8 +6,8 @@ var SL = {
 		console.log("1. init");
 
 
-//		SL.cropViewport();
-//		SL.preloadImage();
+		SL.cropViewport();
+		SL.preloadImage();
 //
 
 		SL.initScrollMagik();
@@ -15,8 +15,8 @@ var SL = {
 
 //		SL.initParallax1();
 //		SL.initParallax2();
-		SL.initParallax3();
-		SL.initParallax4();
+//		SL.initParallax3();
+//		SL.initParallax4();
 //		SL.initParallax5();
 
 
@@ -48,13 +48,20 @@ var SL = {
 
 		function changeClass(){
 
+
+				if (i == 5) {
+					SL.unCropViewport();
+				}
+
 				if (i == 25) {
 
 					clearInterval(timerId);
+
+					$(".section-1-bg-4").show();
 					SL.cup.fadeOut(1000, function(){
-//						$(this).remove();
+						$(this).remove();
 					})
-					SL.unCropViewport();
+
 
 
 
@@ -119,26 +126,33 @@ var SL = {
 
 
 
-		TweenMax.set("#section-1 .section-1-bg-2", {x: "-100%", opacity: 0});
-		TweenMax.set("#section-1 .section-1-bg-4", {x: "200%", opacity: 0});
+//		TweenMax.set("#section-1 .section-1-bg-2", {x: "-100%", opacity: 0});
+//		TweenMax.set("#section-1 .section-1-bg-4", {x: "200%", opacity: 0});
 
 
 //		TweenMax.set("#section-1 .section-1-bg-3", {scale: 0, opacity: 0});
 
 		// build tween
-		var tween1 = new TimelineMax()
-			.add(
-				TweenMax.to("#section-1 .section-1-bg-2", 1, {x: 0, opacity: 1,
-					onStart: function () {console.log("#section-1 .section-1-bg-2 -- start")},
-				})
-			);
-		var tween2 = new TimelineMax()
-			.add(
-				TweenMax.to("#section-1 .section-1-bg-4", 1, {x: "100%", opacity: 1,
-					onStart: function () {console.log("#section-1 .section-1-bg-2 -- start")},
-				})
-			);
+//		var tween1 = new TimelineMax()
+//			.add(
+//				TweenMax.to("#section-1 .section-1-bg-2", 1, {x: 0, opacity: 1,
+//					onStart: function () {console.log("#section-1 .section-1-bg-2 -- start")},
+//				})
+//			);
+//		var tween2 = new TimelineMax()
+//			.add(
+//				TweenMax.to("#section-1 .section-1-bg-4", 1, {x: "100%", opacity: 1,
+//					onStart: function () {console.log("#section-1 .section-1-bg-2 -- start")},
+//				})
+//			);
 
+
+		$(".section-1-bg-2").animate({left: "10%", opacity: 1}, 300, "easeOutCirc");
+		$(".section-1-bg-3").animate({right: "10%", opacity: 1}, 300, "easeOutCirc", function(){
+
+				$(".section-1-bg-25").animate({opacity:1}, 700, "easeOutCirc");
+
+		});
 
 //		var tween3 = new TimelineMax()
 //			.add(

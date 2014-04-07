@@ -37,21 +37,12 @@
 			background: url(../img/bg/bgl112.png) repeat-x 0 0;
 		}
 
-		.section-1-bg-2 {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			left: 0;
-			opacity: 0;
-			background:url(../img/bg/bgl12.png)  no-repeat 0% 100%;
-		}
 
 		.section-1-bg-25 {
 			margin: -120px auto;
 			position: relative;
 			top: 50%;
-
+			opacity: 0;
 
 			color: #70002e;
 			font-size: 100px;
@@ -82,21 +73,34 @@
 				}
 			}
 		}
-		.section-1-bg-3 {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			left: 0;
-
-			background:url(../img/bg/bgl13.png)  no-repeat 50% 100%;
-		}
 		.section-1-bg-4 {
 			position: absolute;
 			top: 0;
 			bottom: 0;
 			right: 0;
 			left: 0;
+			display: none;
+
+			background:url(../img/bg/bgl13.png)  no-repeat 50% 100%;
+		}
+
+
+		//sliding images
+		.section-1-bg-2 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 367px;
+			height: 181px;
+			opacity: 0;
+			background:url(../img/bg/bgl12.png)  no-repeat 0% 100%;
+		}
+		.section-1-bg-3 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 409px;
+			height: 285px;
 			opacity: 0;
 			background:url(../img/bg/bgl14.png)  no-repeat 100% 100%;
 		}
