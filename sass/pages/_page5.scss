@@ -23,7 +23,7 @@
 
 		.section-5-header {
 			text-align: center;
- 			color: #fff;
+ 			color: $white;
 			font-size: 70px;
 			width:70%;
 			margin: 10% auto 30px auto;
@@ -32,7 +32,7 @@
 
 		.headermark {
 			margin: 12px auto;
-			color: #e60e64;
+			color: $cherry;
 			font-size: 40px;
 
 			&:before {
@@ -244,7 +244,7 @@
 
 					}
 					h3 {
-						color: #fff;
+						color: $white;
 						font-size: 13px;
 						height: 0;
 
@@ -261,7 +261,7 @@
 
 					}
 					h3 {
-						color: #fff;
+						color: $white;
 						font-size: 13px;
 						height: 0;
 
@@ -278,7 +278,7 @@
 
 					}
 					h3 {
-						color: #fff;
+						color: $white;
 						font-size: 13px;
 						height: 0;
 					}

@@ -19,12 +19,12 @@
 		background: transparent;
 
 		a {
-			color: #fff;
+			color: $white;
 			text-decoration: none;
 
 			&.logo {
 				font-size: 34px;
-				color: #f00;
+				color: $cherry;
 
 				&:before {
 					content: "\e608";

@@ -325,7 +325,7 @@ section.page {
   margin-top: 50%;
   text-align: center;
   line-height: 0;
-  color: #e60e64;
+  color: #e70c66;
 }
 .page2 .wrapper .page_item .icon.icon1 {
   font-size: 60px;
@@ -706,14 +706,14 @@ section.page {
 }
 .page5 .wrapper .section-5-header {
   text-align: center;
-  color: #fff;
+  color: white;
   font-size: 70px;
   width: 70%;
   margin: 10% auto 30px auto;
 }
 .page5 .wrapper .headermark {
   margin: 12px auto;
-  color: #e60e64;
+  color: #e70c66;
   font-size: 40px;
 }
 .page5 .wrapper .headermark:before {
@@ -846,7 +846,7 @@ section.page {
   font-size: 45px;
 }
 .page5 .wrapper .page_item.first figcaption .description h3 {
-  color: #fff;
+  color: white;
   font-size: 13px;
   height: 0;
 }
@@ -855,7 +855,7 @@ section.page {
   font-size: 45px;
 }
 .page5 .wrapper .page_item.second figcaption .description h3 {
-  color: #fff;
+  color: white;
   font-size: 13px;
   height: 0;
 }
@@ -864,7 +864,7 @@ section.page {
   font-size: 45px;
 }
 .page5 .wrapper .page_item.third figcaption .description h3 {
-  color: #fff;
+  color: white;
   font-size: 13px;
   height: 0;
 }
@@ -908,12 +908,12 @@ section.page {
   background: transparent;
 }
 .header_nav li.header_nav_item a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 .header_nav li.header_nav_item a.logo {
   font-size: 34px;
-  color: #f00;
+  color: #e70c66;
 }
 .header_nav li.header_nav_item a.logo:before {
   content: "\e608";
@@ -936,7 +936,7 @@ section.page {
 }
 .pager .inner_wrapper li {
   height: 50px;
-  color: #fff;
+  color: white;
   width: 51px;
   font: 16px/50px 'oksana_text_narrowdemibold', sans-serif;
   text-align: center;
