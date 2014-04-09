@@ -13,20 +13,20 @@ var SL = {
 
 
 
-		SL.cropViewport();
-		SL.preloadImage();
-
+//		SL.cropViewport();
+//		SL.preloadImage();
+//
 		SL.initScrollMagik();
 
 
-		SL.initParallax1();
-		SL.initParallax2();
-		SL.initParallax3();
-		SL.initParallax4();
-		SL.initParallax5();
-
-
-		SL.initInterActive5();
+//		SL.initParallax1();
+//		SL.initParallax2();
+//		SL.initParallax3();
+//		SL.initParallax4();
+//		SL.initParallax5();
+//
+//
+//		SL.initInterActive5();
 
 
 
