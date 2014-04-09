@@ -195,7 +195,7 @@ section.page {
 }
 .page1 .wrapper .section-1-bg-11 {
   position: absolute;
-  bottom: 0;
+  bottom: 125px;
   right: 0;
   width: 436px;
   height: 486px;
@@ -203,7 +203,7 @@ section.page {
 }
 .page1 .wrapper .section-1-bg-12 {
   position: absolute;
-  bottom: 0;
+  bottom: 65px;
   left: 0;
   width: 620px;
   height: 251px;
@@ -247,7 +247,7 @@ section.page {
 }
 .page1 .wrapper .section-1-bg-2 {
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
   left: 0;
   width: 367px;
   height: 181px;
@@ -256,12 +256,18 @@ section.page {
 }
 .page1 .wrapper .section-1-bg-3 {
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
   right: 0;
   width: 409px;
   height: 285px;
   opacity: 0;
   background: url(../img/bg/bgl14.png) no-repeat 100% 100%;
+}
+
+#scroll_me {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
 }
 
 .page2 {
@@ -1092,7 +1098,7 @@ section.page {
 
 #cup {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 50%;
   width: 630px;
   height: 460px;

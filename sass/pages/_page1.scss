@@ -21,7 +21,7 @@
 
 		.section-1-bg-11 {
 			position: absolute;
- 			bottom: 0;
+ 			bottom: 125px;
 			right: 0;
 			width: 436px;
 			height: 486px;
@@ -30,7 +30,7 @@
 
 		.section-1-bg-12 {
 			position: absolute;
-			bottom: 0;
+			bottom: 65px;
 			left: 0;
 			width: 620px;
 			height: 251px;
@@ -88,7 +88,7 @@
 		//sliding images
 		.section-1-bg-2 {
 			position: absolute;
-			bottom: 0;
+			bottom: 15px;
 			left: 0;
 			width: 367px;
 			height: 181px;
@@ -97,7 +97,7 @@
 		}
 		.section-1-bg-3 {
 			position: absolute;
-			bottom: 0;
+			bottom: 15px;
 			right: 0;
 			width: 409px;
 			height: 285px;
@@ -107,4 +107,12 @@
 	}
 
 
+
+
+}
+
+#scroll_me {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
 }
