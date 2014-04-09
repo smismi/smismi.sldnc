@@ -138,10 +138,9 @@ section.page {
 		padding: 0 12px;
 		position: absolute;
 		left: -23px;
-		top: 0;
 		bottom: 0;
-		background-image: url('../img/ico-s60202083d7.png');
-		@include icon(catalog-flag-l, 0,-21, false);
+		top: 0;
+		@include icon(catalog-flag-l, 0,-21, true);
 
 
 	}
@@ -152,8 +151,7 @@ section.page {
 		right: -24px;
 		top: 0;
 		bottom: 0;
-		background-image: url('../img/ico-s60202083d7.png');
-		@include icon(catalog-flag-r, 0,-21, false);
+		@include icon(catalog-flag-r, 0,-21, true);
 
 
 	}

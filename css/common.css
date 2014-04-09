@@ -1022,9 +1022,9 @@ section.page {
   padding: 0 12px;
   position: absolute;
   left: -23px;
-  top: 0;
   bottom: 0;
-  background-image: url("../img/ico-s60202083d7.png");
+  top: 0;
+  background-image: url('../img/ico-s60202083d7.png');
   background-position: 0 -110px;
   background-repeat: no-repeat;
 }
@@ -1035,7 +1035,7 @@ section.page {
   right: -24px;
   top: 0;
   bottom: 0;
-  background-image: url("../img/ico-s60202083d7.png");
+  background-image: url('../img/ico-s60202083d7.png');
   background-position: 0 -194px;
   background-repeat: no-repeat;
 }
