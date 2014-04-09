@@ -37,22 +37,7 @@
 
 
 		}
-		.section-4-bg-25 {
-			position: absolute;
-			top: 50%;
-			margin-top: -150px;
-			text-align: center;
-			padding: 0 15%;
-			font-family: oksana_text_narrowbold;
-			h1 {
-				font-size:95px;
-			}
 
-			h2 {
-				font-size:35px;
-			}
-
-		}
 		.section-4-bg-3 {
 			position: absolute;
 			top: 0;
@@ -75,6 +60,13 @@
 			background-position: 50% 100%;
 			background-repeat: no-repeat;
 
+		}
+
+		.headermark {
+			font-size: 37px;
+			&:before {
+				content: "\e609";
+			}
 		}
 	}
 }

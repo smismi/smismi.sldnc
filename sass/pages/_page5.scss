@@ -31,10 +31,7 @@
 		}
 
 		.headermark {
-			margin: 12px auto;
-			color: $cherry;
-			font-size: 40px;
-
+			font-size: 27px;
 			&:before {
 				content: "\e604";
 			}
@@ -88,7 +85,7 @@
 					line-height: 0;
 
 					&.icon1 {
-						color: #c7eafc;
+						color: $aircolor;
 						font-size: 100px;
 
 						&:before {

@@ -1,4 +1,19 @@
-$icons: sprite-map("cup/*.png", $spacing: 0);
+$cup: sprite-map("cup/*.png", $spacing: 0);
+$cupurl: sprite-url($cup);
+@mixin cup-file{
+	background-image: $cupurl;
+}
+
+@mixin cup($name:actual, $offsetx:0, $offsety:0, $include_url:true) {
+	@if $include_url == true {
+		@include cup-file;
+	}
+	background-position: sprite-position($cup, $name, $offsetx, $offsety);
+	background-repeat: no-repeat;
+
+}
+
+$icons: sprite-map("ico/*.png", $spacing: 0);
 $iconurl: sprite-url($icons);
 @mixin icons-file{
 	background-image: $iconurl;
@@ -12,7 +27,6 @@ $iconurl: sprite-url($icons);
 	background-repeat: no-repeat;
 
 }
-
 
 #cup {
 
@@ -34,7 +48,7 @@ $iconurl: sprite-url($icons);
 			$i : "0" + $i
 		}
 		&.cup_#{$i} {
-			@include icon(cup_#{$i}, 0, 0, false)
+			@include cup(cup_#{$i}, 0, 0, false)
 		}
 	}
 

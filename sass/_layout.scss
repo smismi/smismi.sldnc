@@ -101,6 +101,66 @@ section.page {
 
 
 
+.section-big-title {
+	position: relative;
+	top: 50%;
+	margin: -100px auto 0 auto;
+	text-align: center;
+	padding: 0 20%;
+	font-family: oksana_text_narrowbold;
+	h1 {
+		position: relative;
+		font-size:74px;
+	}
+
+	h2 {
+		position: relative;
+		font-family: oksana_text_narrowdemibold;
+		font-size:16px;
+	}
+	h3 {
+		position: relative;
+		padding: 42px 0;
+		z-index: 10;
+	}
+
+}
+
+.catalog_flag {
+	padding: 9px 12px;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	background: $cherry;
+
+	&:before {
+		content: "";
+		padding: 0 12px;
+		position: absolute;
+		left: -23px;
+		top: 0;
+		bottom: 0;
+		background-image: url('../img/ico-s60202083d7.png');
+		@include icon(catalog-flag-l, 0,-21, false);
+
+
+	}
+	&:after {
+		content: "";
+		padding: 0 12px;
+		position: absolute;
+		right: -24px;
+		top: 0;
+		bottom: 0;
+		background-image: url('../img/ico-s60202083d7.png');
+		@include icon(catalog-flag-r, 0,-21, false);
+
+
+	}
+}
+
+
+
 //.page1,
 //.page2,
 //.page3,
