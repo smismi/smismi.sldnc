@@ -529,7 +529,6 @@ section.page {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url(../img/bg/bgl31.png);
   background-position: 30% 50%;
   background-repeat: no-repeat;
 }
@@ -539,7 +538,6 @@ section.page {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url(../img/bg/bgl32.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -549,7 +547,6 @@ section.page {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url(../img/bg/bgl33.png);
   background-position: 50% 0%;
   background-repeat: no-repeat;
 }
@@ -559,7 +556,6 @@ section.page {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url(../img/bg/bgl34.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -582,7 +578,6 @@ section.page {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url(../img/bg/bgl41.png);
   background-position: 50% 100%;
   background-repeat: no-repeat;
 }
@@ -592,7 +587,6 @@ section.page {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url(../img/bg/bgl42.png);
   background-position: 50% 100%;
   background-repeat: no-repeat;
 }
@@ -602,7 +596,6 @@ section.page {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url(../img/bg/bgl43.png);
   background-position: 50% 100%;
   background-repeat: no-repeat;
 }
@@ -612,7 +605,6 @@ section.page {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url(../img/bg/bgl44.png);
   background-position: 50% 100%;
   background-repeat: no-repeat;
 }
@@ -890,7 +882,7 @@ section.page {
 }
 .page5 .wrapper .page_item figcaption .icon.icon3 {
   color: #fece7b;
-  font-size: 120px;
+  font-size: 130px;
 }
 .page5 .wrapper .page_item figcaption .icon.icon3:before {
   content: "\e601";
@@ -1095,9 +1087,9 @@ section.page {
 .pager {
   right: 0;
   top: 50%;
-  margin-top: -250px;
+  margin-top: -125px;
   width: 40px;
-  height: 500px;
+  height: 250px;
 }
 .pager .inner_wrapper {
   position: relative;
@@ -1113,31 +1105,35 @@ section.page {
   cursor: pointer;
   position: relative;
   right: 12px;
+  margin-bottom: 1px;
 }
 .pager .inner_wrapper li span {
   display: block;
   width: 51px;
   height: 50px;
   background: rgba(0, 0, 0, 0.05);
-  border-top: 1px #c1c0c0 solid;
   transition: background 0.1s ease;
 }
 .pager .inner_wrapper li > div {
   position: absolute;
   right: -300px;
   top: 0;
+  bottom: 0;
+  padding: 0 12px;
   white-space: nowrap;
+  background: rgba(0, 0, 0, 0.05);
+  color: white;
+  transition: all 0.1s ease;
 }
-.pager .inner_wrapper li:hover span {
+.pager .inner_wrapper li:hover span, .pager .inner_wrapper li.active span {
   display: block;
   width: 51px;
   height: 50px;
-  background: rgba(0, 0, 0, 0.05);
-  border-top: 1px #c1c0c0 solid;
+  background: #e70c66;
   transition: background 0.1s ease;
 }
 .pager .inner_wrapper li:hover > div {
-  position: absolute;
+  background: #e70c66;
   right: 51px;
 }
 
