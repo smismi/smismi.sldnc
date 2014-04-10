@@ -292,11 +292,8 @@ var SL = {
 			offset: 0
 		})
 			.addTo(SL.controller)
-			.triggerHook(0)
-			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-1 .wrapper", 1, {y:0}, {y:200}),
-			]))
-			.on("start", function (event) {
+			.triggerHook(.5)
+			.on("enter", function (event) {
 				SL.setPager(1);
 			})
  		;
@@ -309,14 +306,14 @@ var SL = {
 		new ScrollScene({
 			triggerElement: "#section-2",
 			duration: $(window).height(),
-			offset: 0
+			offset: -200
 		})
 			.addTo(SL.controller)
-			.triggerHook(0)
+			.triggerHook(0.5)
 			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-2 .wrapper", 1, {y:0}, {y:200}),
+				TweenMax.fromTo("#section-1 .wrapper", 1, {y:0}, {y:200}),
 			]))
-			.on("start", function (event) {
+			.on("enter", function (event) {
 				SL.setPager(2);
 			})
  		;
@@ -332,11 +329,11 @@ var SL = {
 			offset: 0
 		})
 			.addTo(SL.controller)
-			.triggerHook(0)
+			.triggerHook(0.5)
 			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-3 .wrapper", 1, {y:0}, {y:200}),
+				TweenMax.fromTo("#section-2 .wrapper", 1, {y:0}, {y:200}),
 			]))
-			.on("start", function (event) {
+			.on("enter", function (event) {
 				SL.setPager(3);
 			})
  		;
@@ -350,14 +347,14 @@ var SL = {
 		new ScrollScene({
 			triggerElement: "#section-4",
 			duration: $(window).height(),
-			offset: 0
+			offset: -200
 		})
 			.addTo(SL.controller)
-			.triggerHook(0)
+			.triggerHook(0.5)
 			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-4 .wrapper", 1, {y:0}, {y:200}),
+				TweenMax.fromTo("#section-3 .wrapper", 1, {y:0}, {y:200}),
 			]))
-			.on("start", function (event) {
+			.on("enter", function (event) {
 				SL.setPager(4);
 			})
  		;
@@ -371,11 +368,14 @@ var SL = {
 		new ScrollScene({
 			triggerElement: "#section-5",
 			duration: $(window).height(),
-			offset: 0
+			offset: -200
 		})
 			.addTo(SL.controller)
-			.triggerHook(0)
-			.on("start", function (event) {
+			.triggerHook(0.5)
+			.setTween(new TimelineMax().add([
+				TweenMax.fromTo("#section-4 .wrapper", 1, {y:0}, {y:200}),
+			]))
+			.on("enter", function (event) {
 				SL.setPager(5);
 			})
  		;
