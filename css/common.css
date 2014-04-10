@@ -853,6 +853,7 @@ section.page {
   text-align: center;
   line-height: 340px;
   font-size: 0;
+  cursor: pointer;
 }
 .page5 .wrapper .page_item figcaption em, .page5 .wrapper .page_item figcaption i {
   display: block;
@@ -917,12 +918,21 @@ section.page {
 .page5 .wrapper .page_item figcaption .description {
   opacity: 0;
   position: absolute;
-  font-family: oksana_text_narrowlight;
   bottom: 50px;
+}
+.page5 .wrapper .page_item figcaption .description h2 {
+  color: #c7eafc;
+  font-size: 45px;
+  font-family: oksana_text_narrowdemibold;
+}
+.page5 .wrapper .page_item figcaption .description h3 {
+  color: white;
+  font-size: 13px;
+  height: 0;
+  font-family: oksana_text_narrowlight;
 }
 .page5 .wrapper .page_item figcaption.hovered abbr .icon {
   font-size: 140px;
-  color: yellow;
 }
 .page5 .wrapper .page_item figcaption.hovered abbr em {
   opacity: 1;
@@ -963,30 +973,12 @@ section.page {
 }
 .page5 .wrapper .page_item.first figcaption .description h2 {
   color: #c7eafc;
-  font-size: 45px;
-}
-.page5 .wrapper .page_item.first figcaption .description h3 {
-  color: white;
-  font-size: 13px;
-  height: 0;
 }
 .page5 .wrapper .page_item.second figcaption .description h2 {
   color: #85c98b;
-  font-size: 45px;
-}
-.page5 .wrapper .page_item.second figcaption .description h3 {
-  color: white;
-  font-size: 13px;
-  height: 0;
 }
 .page5 .wrapper .page_item.third figcaption .description h2 {
   color: #fece7b;
-  font-size: 45px;
-}
-.page5 .wrapper .page_item.third figcaption .description h3 {
-  color: white;
-  font-size: 13px;
-  height: 0;
 }
 
 .page6 {
@@ -1057,6 +1049,10 @@ section.page {
   background-image: url('../img/ico-s60202083d7.png');
   background-position: 0 -194px;
   background-repeat: no-repeat;
+}
+
+.etc {
+  display: none;
 }
 
 .test {

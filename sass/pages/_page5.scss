@@ -56,7 +56,7 @@
 				text-align: center;
 				line-height: 340px;
 				font-size: 0;
-
+				cursor: pointer;
 
 
 
@@ -133,8 +133,19 @@
 				.description {
 					opacity: 0;
 					position: absolute;
-					font-family: oksana_text_narrowlight;
 					bottom: 50px;
+
+					h2 {
+						color: #c7eafc;
+						font-size: 45px;
+						font-family: oksana_text_narrowdemibold;
+					}
+					h3 {
+						color: $white;
+						font-size: 13px;
+						height: 0;
+						font-family: oksana_text_narrowlight;
+					}
 				}
 
 
@@ -149,7 +160,6 @@
 
 						.icon {
 							font-size: 140px;
-							color: #ff0
 						}
 
 
@@ -237,15 +247,7 @@
 
 				.description {
 					h2 {
-						color: #c7eafc;
-						font-size: 45px;
-
-					}
-					h3 {
-						color: $white;
-						font-size: 13px;
-						height: 0;
-
+						color: $aircolor;
 					}
 				}
 
@@ -254,15 +256,7 @@
 
 				.description {
 					h2 {
-						color: #85c98b;
-						font-size: 45px;
-
-					}
-					h3 {
-						color: $white;
-						font-size: 13px;
-						height: 0;
-
+						color: $vitacolor;
 					}
 				}
 
@@ -271,15 +265,8 @@
 
 				.description {
 					h2 {
-						color: #fece7b;
-						font-size: 45px;
-
-					}
-					h3 {
-						color: $white;
-						font-size: 13px;
-						height: 0;
-					}
+						color: $milkcolor;
+				 	}
 				}
 
 			}
