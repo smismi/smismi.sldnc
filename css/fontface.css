@@ -17,35 +17,137 @@
   font-style: normal;
 }
 
+
+
 /* Oksana Text Narrow */
 @font-face {
-  font-family: 'oksana_text_narrowbold';
-  src: url("../fonts/oksanatextnarrow-bold-webfont.eot");
-  src: url("../fonts/oksanatextnarrow-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/oksanatextnarrow-bold-webfont.woff") format("woff"), url("../fonts/oksanatextnarrow-bold-webfont.ttf") format("truetype"), url("../fonts/oksanatextnarrow-bold-webfont.svg#oksana_text_narrowbold") format("svg");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'oksana_text_narrowbold';
+	src: url("../fonts/oksanatextnarrow-bold-webfont.eot");
+	src: url("../fonts/oksanatextnarrow-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/oksanatextnarrow-bold-webfont.woff") format("woff"), url("../fonts/oksanatextnarrow-bold-webfont.ttf") format("truetype"), url("../fonts/oksanatextnarrow-bold-webfont.svg#oksana_text_narrowbold") format("svg");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'oksana_text_narrowbold_italic';
-  src: url("../fonts/oksanatextnarrow-bolditalic-webfont.eot");
-  src: url("../fonts/oksanatextnarrow-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/oksanatextnarrow-bolditalic-webfont.woff") format("woff"), url("../fonts/oksanatextnarrow-bolditalic-webfont.ttf") format("truetype"), url("../fonts/oksanatextnarrow-bolditalic-webfont.svg#oksana_text_narrowbold_italic") format("svg");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'oksana_text_narrowbold_italic';
+	src: url('../fonts/oksanatextnarrow-bolditalic-webfont.eot');
+	src: url('../fonts/oksanatextnarrow-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/oksanatextnarrow-bolditalic-webfont.woff') format('woff'),
+	url('../fonts/oksanatextnarrow-bolditalic-webfont.ttf') format('truetype'),
+	url('../fonts/oksanatextnarrow-bolditalic-webfont.svg#oksana_text_narrowbold_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
 }
+
+
+
+@font-face {
+	font-family: 'oksana_text_narrowthin';
+	src: url('../fonts/oksanatextnarrowthin-webfont.eot');
+	src: url('../fonts/oksanatextnarrowthin-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/oksanatextnarrowthin-webfont.woff') format('woff'),
+	url('../fonts/oksanatextnarrowthin-webfont.ttf') format('truetype'),
+	url('../fonts/oksanatextnarrowthin-webfont.svg#oksana_text_narrowthin') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'oksana_text_narrowthin_italic';
+	src: url('../fonts/oksanatextnarrowthin-italic-webfont.eot');
+	src: url('../fonts/oksanatextnarrowthin-italic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/oksanatextnarrowthin-italic-webfont.woff') format('woff'),
+	url('../fonts/oksanatextnarrowthin-italic-webfont.ttf') format('truetype'),
+	url('../fonts/oksanatextnarrowthin-italic-webfont.svg#oksana_text_narrowthin_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'oksana_text_narrowlight';
+	src: url('../fonts/oksanatextnarrowlight-webfont.eot');
+	src: url('../fonts/oksanatextnarrowlight-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/oksanatextnarrowlight-webfont.woff') format('woff'),
+	url('../fonts/oksanatextnarrowlight-webfont.ttf') format('truetype'),
+	url('../fonts/oksanatextnarrowlight-webfont.svg#oksana_text_narrowlight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+@font-face {
+	font-family: 'oksana_text_narrowbold';
+	src: url('../fonts/oksanatextnarrow-bold-webfont.eot');
+	src: url('../fonts/oksanatextnarrow-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/oksanatextnarrow-bold-webfont.woff') format('woff'),
+	url('../fonts/oksanatextnarrow-bold-webfont.ttf') format('truetype'),
+	url('../fonts/oksanatextnarrow-bold-webfont.svg#oksana_text_narrowbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'oksana_text_narrowLtIt';
+	src: url('../fonts/oksanatextnarrowlight-italic-webfont.eot');
+	src: url('../fonts/oksanatextnarrowlight-italic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/oksanatextnarrowlight-italic-webfont.woff') format('woff'),
+	url('../fonts/oksanatextnarrowlight-italic-webfont.ttf') format('truetype'),
+	url('../fonts/oksanatextnarrowlight-italic-webfont.svg#oksana_text_narrowLtIt') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'oksana_text_narrowheavy';
+	src: url('../fonts/oksanatextnarrowheavy-webfont.eot');
+	src: url('../fonts/oksanatextnarrowheavy-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/oksanatextnarrowheavy-webfont.woff') format('woff'),
+	url('../fonts/oksanatextnarrowheavy-webfont.ttf') format('truetype'),
+	url('../fonts/oksanatextnarrowheavy-webfont.svg#oksana_text_narrowheavy') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'oksana_text_narrowHvIt';
+	src: url('../fonts/oksanatextnarrowheavy-italic-webfont.eot');
+	src: url('../fonts/oksanatextnarrowheavy-italic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/oksanatextnarrowheavy-italic-webfont.woff') format('woff'),
+	url('../fonts/oksanatextnarrowheavy-italic-webfont.ttf') format('truetype'),
+	url('../fonts/oksanatextnarrowheavy-italic-webfont.svg#oksana_text_narrowHvIt') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
 
 @font-face {
   font-family: 'oksana_text_narrowdemibold';
   src: url("../fonts/oksanatextnarrowdemibold-webfont.eot");
   src: url("../fonts/oksanatextnarrowdemibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/oksanatextnarrowdemibold-webfont.woff") format("woff"), url("../fonts/oksanatextnarrowdemibold-webfont.ttf") format("truetype"), url("../fonts/oksanatextnarrowdemibold-webfont.svg#oksana_text_narrowdemibold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'oksana_text_narrowthin_italic';
-  src: url("../fonts/oksanatextnarrowthin-italic-webfont.eot");
-  src: url("../fonts/oksanatextnarrowthin-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/oksanatextnarrowthin-italic-webfont.woff") format("woff"), url("../fonts/oksanatextnarrowthin-italic-webfont.ttf") format("truetype"), url("../fonts/oksanatextnarrowthin-italic-webfont.svg#oksana_text_narrowthin_italic") format("svg");
   font-weight: normal;
   font-style: normal;
 }

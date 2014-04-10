@@ -72,7 +72,7 @@ body, html, .wrapper {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: 'oksana_text_narrowdemibold';
+  font-family: oksana_text_narrowbold;
 }
 
 .header {
@@ -354,10 +354,28 @@ section.page {
   font-family: oksana_text_narrowbold_italic;
 }
 .page1 .wrapper .section-1-bg-25 h3.font3 {
-  font-family: oksana_text_narrowdemibold;
+  font-family: oksana_text_narrowthin;
 }
 .page1 .wrapper .section-1-bg-25 h3.font4 {
   font-family: oksana_text_narrowthin_italic;
+}
+.page1 .wrapper .section-1-bg-25 h3.font5 {
+  font-family: oksana_text_narrowlight;
+}
+.page1 .wrapper .section-1-bg-25 h3.font6 {
+  font-family: oksana_text_narrowbold;
+}
+.page1 .wrapper .section-1-bg-25 h3.font7 {
+  font-family: oksana_text_narrowLtIt;
+}
+.page1 .wrapper .section-1-bg-25 h3.font8 {
+  font-family: oksana_text_narrowheavy;
+}
+.page1 .wrapper .section-1-bg-25 h3.font9 {
+  font-family: oksana_text_narrowHvIt;
+}
+.page1 .wrapper .section-1-bg-25 h3.font10 {
+  font-family: oksana_text_narrowdemibold;
 }
 .page1 .wrapper .section-1-bg-4 {
   position: absolute;
@@ -899,6 +917,7 @@ section.page {
 .page5 .wrapper .page_item figcaption .description {
   opacity: 0;
   position: absolute;
+  font-family: oksana_text_narrowlight;
   bottom: 50px;
 }
 .page5 .wrapper .page_item figcaption.hovered abbr .icon {
@@ -1051,6 +1070,7 @@ section.page {
 
 .header_nav {
   font-family: oksana_text_narrowbold_italic;
+  font-style: normal;
   height: 60px;
   width: 850px;
   margin: 0 auto;
