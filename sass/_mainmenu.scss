@@ -7,20 +7,31 @@
 	font-family: oksana_text_narrowbold_italic;
 	font-style: normal;
 	height: 60px;
-	width: 850px;
+	width: 900px;
 	margin: 0 auto;
 	top: 0;
 
-
 	list-style: none;
 
+
 	li.header_nav_item {
-		display: inline-block;
-		background: transparent;
+
+		font-family: 'oksana_text_narrowLtIt', sans-serif;
+		text-decoration: none;
+ 		color: #fff;
+		@include transition( color .5s ease-out);
+		display: block;
+		float: left;
+		margin-top: 21px;
+		margin-left: 30px;
+		font-size: 0;
+		line-height: 0;
 
 		a {
 			color: $white;
 			text-decoration: none;
+			font-size: 15px;
+			line-height: 15px;
 
 			&.logo {
 				font-size: 34px;
@@ -30,9 +41,49 @@
 					content: "\e608";
 				}
 			}
+
 		}
 
 
+		&:after {
+			content: " ";
+			width: 37px;
+			border-right: 1px solid $cherry;
+			height: 9px;
+			display: block;
+			float: right;
+			margin-top: 4px;
+
+		}
+		&:last-child, &.fb, &.tw {
+			&:after {
+				border-right: none;
+				width: 0;
+			}
+		}
+
+		&.fb, &.tw {
+			margin-right: 0px;
+			margin-left: 30px;
+			em {
+				display: inline-block;
+				width: 32px;
+				height: 32px;
+				margin-top: -8px;
+			}
+		}
+		&.fb {
+			em {
+				@include icon(ico-fb, 0, 0, true)
+			}
+		}
+		&.tw {
+			margin-right: 0px;
+			margin-left: 18px;
+			em {
+				@include icon(ico-tw, 0, 0, true)
+			}
+		}
 
 	}
 
