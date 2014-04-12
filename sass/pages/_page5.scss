@@ -28,6 +28,13 @@
 			width:70%;
 			margin: 10% auto 30px auto;
 
+
+			@include screen(320px, 1000px) {
+
+				font-size:40px;
+
+			}
+
 		}
 
 		.headermark {
@@ -43,6 +50,7 @@
 			width: 340px;
 			height: 50%;
 			vertical-align: top;
+
 
 
 			//@include pageitems($list);
@@ -238,6 +246,31 @@
 					line-height: 1.4;
 					font-size: 23px;
 					color: #f50;
+				}
+
+
+
+
+			}
+
+			@include screen(320px, 1000px) {
+
+				display:block;
+				width: auto;
+				height: auto;
+
+				figcaption {
+					top:auto;
+					margin-top: 0;
+					width: auto;
+					line-height: 180px;
+					height: auto;
+				}
+
+				.description {
+
+					display:none;
+
 				}
 
 			}

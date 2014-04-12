@@ -10,7 +10,6 @@
 	width: 900px;
 	margin: 0 auto;
 	top: 0;
-
 	list-style: none;
 
 
@@ -121,3 +120,56 @@
 //}
 //
 
+
+@include screen(320px, 1000px) {
+	.header_nav {
+		height: 60px;
+		width: auto;
+
+		li.header_nav_item {
+
+			text-align: center;
+			display: none;
+			margin-left: 50%;
+
+			a {
+
+				margin-left: 0;
+
+
+				&.logo {
+					width: auto;
+					display: block;
+
+				}
+
+
+			}
+			&:after {
+				 display: none;
+			}
+
+			&.item_fluid, &.item_logo {
+				display: block;
+
+			}
+			&.item_logo {
+				width: auto;
+			}
+			&.fb, &.tw {
+				position: absolute ;
+
+			}
+			&.fb {
+				right: 10px;
+			}
+			&.tw {
+				right: 50px;
+			}
+		}
+
+
+
+	}
+
+}

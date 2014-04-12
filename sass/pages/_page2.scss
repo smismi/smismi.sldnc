@@ -58,6 +58,8 @@
 
 			}
 
+
+
 			//&.totop {
 			//	figcaption {
 			//		top:100%;
@@ -273,6 +275,54 @@
 
 
 
+			@include screen(320px, 1000px) {
+				height: 33%;
+				width: auto;
+				display: block;
+				top: auto;
+				left: auto;
+				right: auto;
+				bottom: auto;
+				max-width: none;
+
+				figcaption {
+					position: relative;
+					width: auto;
+					height: auto;
+				}
+
+				.icon {
+					margin-top: 20%;
+
+					&.icon1 {
+
+						font-size: 60px;
+						line-height: 60px;
+					}
+
+					&.icon2 {
+
+						font-size: 130px;
+						line-height: 130px;
+
+					}
+
+					&.icon3 {
+
+						font-size: 120px;
+						line-height: 120px;
+
+					}
+				}
+
+				h2 {
+					padding: 20px 100px;
+
+					&:before, &:after {
+						display: none;
+					}
+				}
+			}
 
 
 
