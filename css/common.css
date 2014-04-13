@@ -451,6 +451,11 @@ section.page {
   position: absolute;
   display: block;
 }
+.page2 .wrapper .page_item .page_item_ic {
+  position: relative;
+  top: 50%;
+  margin-top: -160px;
+}
 .page2 .wrapper .page_item .icon {
   width: 100%;
   display: block;
@@ -459,7 +464,6 @@ section.page {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  margin-top: 50%;
   text-align: center;
   line-height: 0;
   color: #e70c66;
@@ -518,7 +522,7 @@ section.page {
 }
 @media screen and (min-width: 320px) and (max-width: 1000px) {
   .page2 .wrapper .page_item {
-    height: 33%;
+    height: 33.33%;
     width: auto;
     display: block;
     top: auto;

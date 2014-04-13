@@ -22,6 +22,8 @@ var SL = {
 
 		SL.initPager();
 
+
+
 		SL.initScrollMagik();
 
 
@@ -56,6 +58,7 @@ var SL = {
 
 		$(window).load(function() {
 			contentWrapper.animate({'opacity': 1}, 800);
+
 		});
 
 
@@ -189,7 +192,7 @@ var SL = {
 
 
 
-//		$("#content-wrapper").css({opacity: 0, overflow: "hidden"});
+		$("#content-wrapper").css({opacity: 0, overflow: "hidden"});
 		$(".header").css({top: -300, opacity: 0});
 		$(".pager").css({right: -300, opacity: 0});
 
@@ -210,7 +213,7 @@ var SL = {
 			$(this).remove()
 		});
 
-//		$("#content-wrapper").animate({opacity: 1, overflow: "auto"}, 1000, function() {
+		$("#content-wrapper").animate({opacity: 1, overflow: "auto"}, 1000, function() {
 
 
 			$(".header").animate({top: 0, opacity: 1}, 600);
@@ -218,7 +221,7 @@ var SL = {
 
 			console.log("5. unCropViewport   ---    done");
 
-//		})
+		})
 
 
 
@@ -232,40 +235,17 @@ var SL = {
 
 
 
-//		TweenMax.set("#section-1 .section-1-bg-2", {x: "-100%", opacity: 0});
-//		TweenMax.set("#section-1 .section-1-bg-4", {x: "200%", opacity: 0});
-
-
-//		TweenMax.set("#section-1 .section-1-bg-3", {scale: 0, opacity: 0});
-
-		// build tween
-//		var tween1 = new TimelineMax()
-//			.add(
-//				TweenMax.to("#section-1 .section-1-bg-2", 1, {x: 0, opacity: 1,
-//					onStart: function () {console.log("#section-1 .section-1-bg-2 -- start")},
-//				})
-//			);
-//		var tween2 = new TimelineMax()
-//			.add(
-//				TweenMax.to("#section-1 .section-1-bg-4", 1, {x: "100%", opacity: 1,
-//					onStart: function () {console.log("#section-1 .section-1-bg-2 -- start")},
-//				})
-//			);
-
 
 		$(".section-1-bg-2").animate({left: "10%", opacity: 1}, 300, "easeOutCirc");
 		$(".section-1-bg-3").animate({right: "10%", opacity: 1}, 300, "easeOutCirc", function(){
 
-				$(".section-1-bg-25").animate({opacity:1}, 700, "easeOutCirc");
+			$(".section-1-bg-25").animate({opacity:1}, 700, "easeOutCirc");
+			$(window).scrollTop(0);
+
 
 		});
 
-//		var tween3 = new TimelineMax()
-//			.add(
-//				TweenMax.to("#section-1 .section-1-bg-3", 1, {scale: 1, opacity: 1,
-//					onStart: function () {console.log("#section-1 .section-1-bg-2 -- start")},
-//				})
-//			);
+
 
 
 	},
@@ -289,14 +269,14 @@ var SL = {
 		new ScrollScene({
 			triggerElement: "#section-1",
 			duration: 1000,
-			offset: 0
+			offset: -200
 		})
 			.addTo(SL.controller)
-			.triggerHook(.5)
+			.triggerHook(0.5)
 			.on("enter", function (event) {
 				SL.setPager(1);
 			})
- 		;
+		;
 
 	},
 	initParallax2: function() {
@@ -423,9 +403,11 @@ var SL = {
 	setPager: function(index) {
 
 		var _i = index - 1;
+		$(SL.pager).attr("class", "").addClass("active_" + index);
 		$("ul li", SL.pager).removeClass("active");
 		$("ul li:eq(" + _i + ")", SL.pager).addClass("active");
 
+		console.log("active_" + index);
 
 
 	},
