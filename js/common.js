@@ -192,7 +192,7 @@ var SL = {
 
 
 
-		$("#content-wrapper").css({opacity: 0, overflow: "hidden"});
+//		$("#content-wrapper").css({opacity: 0, overflow: "hidden"});
 		$(".header").css({top: -300, opacity: 0});
 		$(".pager").css({right: -300, opacity: 0});
 
@@ -213,7 +213,7 @@ var SL = {
 			$(this).remove()
 		});
 
-		$("#content-wrapper").animate({opacity: 1, overflow: "auto"}, 1000, function() {
+//		$("#content-wrapper").animate({opacity: 1, overflow: "auto"}, 1000, function() {
 
 
 			$(".header").animate({top: 0, opacity: 1}, 600);
@@ -221,7 +221,7 @@ var SL = {
 
 			console.log("5. unCropViewport   ---    done");
 
-		})
+//		})
 
 
 
