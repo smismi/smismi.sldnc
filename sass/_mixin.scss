@@ -20,3 +20,28 @@
 }
 
 
+@mixin layer($section, $layer, $index, $width, $height, $offset-x, $offset-y) {
+
+	$url:"../img/bg/bgl#{$section}#{$layer}#{$index}.png";
+
+	.section-#{$section}-item-#{$layer}-#{$index} {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+
+		width: $width;
+		height: $height;
+		//background: #f00;
+		background-image:url($url);
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		margin: $offset-x 0 0 $offset-y ;
+	}
+
+}
+
+
+
+
+

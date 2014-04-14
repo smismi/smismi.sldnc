@@ -299,7 +299,7 @@ var SL = {
  		;
 
 	},
-	initParallax3: function() {
+	initParallax3_old: function() {
 		console.log("?. initParallax3   ---    init");
 
 		// parallax3
@@ -331,6 +331,56 @@ var SL = {
 //				TweenMax.fromTo("#section-3 .section-3-bg-25", 1, { y: 0}, {y: -100, ease: Linear.easeNone}),
 				TweenMax.fromTo("#section-3 .section-3-bg-3", 1, { backgroundPosition: "50% 0%"}, {backgroundPosition: "50% 180%", ease: Linear.easeNone}),
 				TweenMax.fromTo("#section-3 .section-3-bg-4", 1, { backgroundPosition: "50% -100%"}, {backgroundPosition: "50% 159%", ease: Linear.easeNone})
+
+			]));
+
+	},
+	initParallax3: function() {
+		console.log("?. initParallax3   ---    init");
+
+		// parallax3
+//		new ScrollScene({
+//			triggerElement: "#section-3",
+//			duration: $(window).height(),
+//			offset: 0
+//		})
+//			.addTo(SL.controller)
+//			.triggerHook(0.5)
+//			.setTween(new TimelineMax().add([
+//				TweenMax.fromTo("#section-2 .wrapper", 1, {y:0}, {y:200}),
+//			]))
+//			.on("enter", function (event) {
+//				SL.setPager(3);
+//			})
+// 		;
+
+		new ScrollScene({
+			triggerElement: "#section-3",
+			duration: 1000*2,
+			offset: 0
+		})
+			.addTo(SL.controller)
+			.triggerHook("onEnter")
+			.setTween(new TimelineMax().add([
+//				TweenMax.fromTo("#section-3 .section-3-bg-1", 1, { backgroundPosition: "30% 0%"}, {backgroundPosition: "30% 100%", ease: Linear.easeNone}),
+//				TweenMax.fromTo("#section-3 .section-3-bg-2", 1, { backgroundPosition: "50% 30%"}, {backgroundPosition: "50% 160%", ease: Linear.easeNone}),
+//				TweenMax.fromTo("#section-3 .section-3-bg-25", 1, { y: 0}, {y: -100, ease: Linear.easeNone}),
+//				TweenMax.fromTo("#section-3 .section-3-bg-3", 1, { backgroundPosition: "50% 0%"}, {backgroundPosition: "50% 180%", ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-4", 1, {top: "100%", ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-4-1", 1, {rotation:  145, scale: 1.4, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-4-2", 1, {rotation:  45, scale: 1.4, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-4-3", 1, {rotation:  -45, scale: 5, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-4-4", 1, {rotation:  -15, scale: 1.4, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-4-5", 1, {rotation:  -55, scale: 5, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-4-6", 1, {rotation:  -145, scale: 1.4, ease: Linear.easeNone}),
+
+				TweenMax.to("#section-3 .section-3-item-3", 1, {left: "20%", ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-3-1", 1, {rotation:  145, scale: 1.4, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-3-2", 1, {rotation:  45, scale: 1.4, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-3-3", 1, {rotation:  -45, scale: 5, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-3-4", 1, {rotation:  -15, scale: 1.4, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-3-5", 1, {rotation:  -55, scale: 5, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-3-6", 1, {rotation:  -145, scale: 1.4, ease: Linear.easeNone}),
 
 			]));
 
