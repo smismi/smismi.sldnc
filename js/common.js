@@ -17,8 +17,8 @@ var SL = {
 
 
 
-		SL.cropViewport();
-		SL.preloadImage();
+//		SL.cropViewport();
+//		SL.preloadImage();
 
 		SL.initPager();
 
@@ -367,20 +367,25 @@ var SL = {
 //				TweenMax.fromTo("#section-3 .section-3-bg-25", 1, { y: 0}, {y: -100, ease: Linear.easeNone}),
 //				TweenMax.fromTo("#section-3 .section-3-bg-3", 1, { backgroundPosition: "50% 0%"}, {backgroundPosition: "50% 180%", ease: Linear.easeNone}),
 				TweenMax.to("#section-3 .section-3-item-4", 1, {top: "100%", ease: Linear.easeNone}),
-				TweenMax.to("#section-3 .section-3-item-4-1", 1, {rotation:  145, scale: 1.4, ease: Linear.easeNone}),
-				TweenMax.to("#section-3 .section-3-item-4-2", 1, {rotation:  45, scale: 1.4, ease: Linear.easeNone}),
-				TweenMax.to("#section-3 .section-3-item-4-3", 1, {rotation:  -45, scale: 5, ease: Linear.easeNone}),
-				TweenMax.to("#section-3 .section-3-item-4-4", 1, {rotation:  -15, scale: 1.4, ease: Linear.easeNone}),
-				TweenMax.to("#section-3 .section-3-item-4-5", 1, {rotation:  -55, scale: 5, ease: Linear.easeNone}),
-				TweenMax.to("#section-3 .section-3-item-4-6", 1, {rotation:  -145, scale: 1.4, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-4-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-4-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-4-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-4-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-4-5", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-4-6", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 
 				TweenMax.to("#section-3 .section-3-item-3", 1, {left: "20%", ease: Linear.easeNone}),
-				TweenMax.to("#section-3 .section-3-item-3-1", 1, {rotation:  145, scale: 1.4, ease: Linear.easeNone}),
-				TweenMax.to("#section-3 .section-3-item-3-2", 1, {rotation:  45, scale: 1.4, ease: Linear.easeNone}),
-				TweenMax.to("#section-3 .section-3-item-3-3", 1, {rotation:  -45, scale: 5, ease: Linear.easeNone}),
-				TweenMax.to("#section-3 .section-3-item-3-4", 1, {rotation:  -15, scale: 1.4, ease: Linear.easeNone}),
-				TweenMax.to("#section-3 .section-3-item-3-5", 1, {rotation:  -55, scale: 5, ease: Linear.easeNone}),
-				TweenMax.to("#section-3 .section-3-item-3-6", 1, {rotation:  -145, scale: 1.4, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-3-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-3-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-3-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-3-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-3-5", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-3-6", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+
+				TweenMax.to("#section-3 .section-3-item-1", 1, {left: "120%", ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-1-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-1-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-3 .section-3-item-1-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 
 			]));
 
@@ -414,11 +419,30 @@ var SL = {
 			.setTween(new TimelineMax().add([
 
 
-				TweenMax.fromTo("#section-4 .section-4-bg-1", 1, { backgroundPosition: "50% -150%"}, {backgroundPosition: "50% 180%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-4 .section-4-bg-2", 1, { backgroundPosition: "50% 200%"}, {backgroundPosition: "50% 0%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-4 .section-4-bg-3", 1, { backgroundPosition: "50% 0%"}, {backgroundPosition: "50% 200%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-4 .section-4-bg-4", 1, { backgroundPosition: "50% 0%"}, {backgroundPosition: "50% 229%", ease: Linear.easeNone})
+				TweenMax.to("#section-4 .section-4-item-4", 1, {top: "100%", ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-5", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-6", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-7", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 
+				TweenMax.to("#section-4 .section-4-item-3", 1, {left: "20%", ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-5", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-6", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-7", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-8", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-9", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+
+				TweenMax.to("#section-4 .section-4-item-1", 1, {left: "120%", ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-1-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-1-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-1-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 			]));
 
 	},

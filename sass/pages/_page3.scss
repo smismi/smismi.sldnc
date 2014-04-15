@@ -64,84 +64,34 @@
 		}
 
 
+
+
+
+		//	layer4
+
+
 		.section-3-item-4 {
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			//	top: 0;
-			//	bottom: 0;
-			//	right: 0;
-			//	left: 0;
-		}
-		.section-3-item-4-1 {
-			width: 403px;
-			height: 547px;
-			//background: #f00;
-			background-image:url(../img/bg/bgl341.png);
-			background-position: 0 0;
-			background-repeat: no-repeat;
-			margin: -300px 0 0 -400px ;
-		}
-		.section-3-item-4-2 {
-			width: 242px;
-			height: 232px;
-			background: #0f5;
-			background: url(../img/bg/bgl342.png) no-repeat 0 0;
-
-			margin: -300px -400px 0 0;
-
-		}
-		.section-3-item-4-3 {
-			width: 485px;
-			height: 251px;
-			background: #3f5;
-			background: url("../img/bg/bgl343.png") no-repeat 0 0;
-			margin: -240px  0 0 127px;
-
-
-		}
-		.section-3-item-4-4 {
-			width: 377px;
-			height: 302px;
-			background: #0a5;
-			background: url("../img/bg/bgl344.png") no-repeat 0 0;
-
-			margin: -20px 100px 0 0;
-
-		}
-		.section-3-item-4-5 {
-			width: 740px;
-			height: 324px;
-			background: #0aa;
-			background: url("../img/bg/bgl345.png") no-repeat 0 0;
-			margin: -200px 400px 0 0;
-
-
-		}
-		.section-3-item-4-6 {
-			width: 242px;
-			height: 199px;
-			background: #0aa;
-			background: url("../img/bg/bgl346.png") no-repeat 0 0;
-
-			margin: -120px -50px 0 0;
-
 		}
 
+		@include layer(3, 4, 1, 403px, 547px, -100px, 300px);
+		@include layer(3, 4, 2, 242px, 232px, 100px, 300px);
+		@include layer(3, 4, 3, 485px, 251px, 50px, -230px);
+		@include layer(3, 4, 4, 377px, 302px, -100px, 30px);
+		@include layer(3, 4, 5, 740px, 324px,  50px , 100px);
+		@include layer(3, 4, 6, 242px, 199px, -120px, -50px);
 
 
 
-	//	layer3
+		//	layer3
 
 
 		.section-3-item-3 {
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			//	top: 0;
-			//	bottom: 0;
-			//	right: 0;
-			//	left: 0;
 		}
 
 		@include layer(3, 3, 1, 361px, 256px, -100px, 300px);
@@ -152,6 +102,19 @@
 		@include layer(3, 3, 6, 545px, 345px, -300px, -300px);
 		@include layer(3, 3, 7, 155px, 203px, -300px, -200px);
 		@include layer(3, 3, 8, 144px, 173px, -300px, -400px);
+
+	//	layer1
+
+
+		.section-3-item-1 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+
+		@include layer(3, 1, 1, 162px, 205px, -100px, 300px);
+		@include layer(3, 1, 2, 87px, 87px, -30px, 200px);
+		@include layer(3, 1, 3, 212px, 126px, -300px, 100px);
 
 
 	}
