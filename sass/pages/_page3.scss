@@ -76,12 +76,12 @@
 			left: 50%;
 		}
 
-		@include layer(3, 4, 1, 403px, 547px, -100px, 300px);
-		@include layer(3, 4, 2, 242px, 232px, 100px, 300px);
-		@include layer(3, 4, 3, 485px, 251px, 50px, -230px);
-		@include layer(3, 4, 4, 377px, 302px, -100px, 30px);
-		@include layer(3, 4, 5, 740px, 324px,  50px , 100px);
-		@include layer(3, 4, 6, 242px, 199px, -120px, -50px);
+		@include layer(3, 4, 1, 403px, 547px, -1038px, 193px);
+		@include layer(3, 4, 2, 242px, 232px, -570px, 85px);
+		@include layer(3, 4, 3, 485px, 251px, -430px, 377px);
+		@include layer(3, 4, 4, 377px, 302px, 370px, 389px);
+		@include layer(3, 4, 5, 740px, 324px,  -76px , -338px);
+		@include layer(3, 4, 6, 242px, 199px, -446px, -589px);
 
 
 
@@ -94,14 +94,14 @@
 			left: 50%;
 		}
 
-		@include layer(3, 3, 1, 361px, 256px, -100px, 300px);
-		@include layer(3, 3, 2, 185px, 133px, -400px, 200px);
-		@include layer(3, 3, 3, 198px, 178px, -300px, 100px);
-		@include layer(3, 3, 4, 206px, 167px, -300px, 0px);
-		@include layer(3, 3, 5, 99px, 104px, -300px, -100px);
-		@include layer(3, 3, 6, 545px, 345px, -300px, -300px);
-		@include layer(3, 3, 7, 155px, 203px, -300px, -200px);
-		@include layer(3, 3, 8, 144px, 173px, -300px, -400px);
+		@include layer(3, 3, 1, 361px, 256px, -966px, -533px);
+		@include layer(3, 3, 2, 185px, 133px, -590px, -284px);
+		@include layer(3, 3, 3, 198px, 178px, -353px, -297px);
+		@include layer(3, 3, 4, 206px, 167px, 102px, -336px);
+		@include layer(3, 3, 5, 99px, 104px, 741px, -308px);
+		@include layer(3, 3, 6, 545px, 345px, 200px, -15px);
+		@include layer(3, 3, 7, 155px, 203px, -373px, 137px);
+		@include layer(3, 3, 8, 144px, 173px, -659px, 369px);
 
 	//	layer1
 
@@ -112,9 +112,9 @@
 			left: 50%;
 		}
 
-		@include layer(3, 1, 1, 162px, 205px, -100px, 300px);
-		@include layer(3, 1, 2, 87px, 87px, -30px, 200px);
-		@include layer(3, 1, 3, 212px, 126px, -300px, 100px);
+		@include layer(3, 1, 1, 162px, 205px, -677px, -144px);
+		@include layer(3, 1, 2, 87px, 87px, -438px, -43px);
+		@include layer(3, 1, 3, 212px, 126px, 0px, 277px);
 
 
 	}
