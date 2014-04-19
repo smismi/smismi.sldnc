@@ -333,11 +333,11 @@ section.page {
   background: url(../img/bg/bgl112.png) repeat-x 0 0;
 }
 .page1 .wrapper .section-1-bg-25 {
-  margin: -120px auto;
+  margin: -180px auto;
   position: relative;
   top: 50%;
   opacity: 0;
-  color: #70002e;
+  color: #840036;
   font-size: 100px;
   text-align: center;
 }
@@ -345,7 +345,12 @@ section.page {
   content: "\e600";
 }
 .page1 .wrapper .section-1-bg-25 h3 {
+  color: #e70c66;
+  position: relative;
   font-size: 38px;
+  padding-top: 25px;
+  margin-top: 25px;
+  text-transform: capitalize;
 }
 .page1 .wrapper .section-1-bg-25 h3.font1 {
   font-family: oksana_text_narrowbold;
@@ -376,6 +381,17 @@ section.page {
 }
 .page1 .wrapper .section-1-bg-25 h3.font10 {
   font-family: oksana_text_narrowdemibold;
+}
+.page1 .wrapper .section-1-bg-25 h3:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 57px;
+  height: 0px;
+  top: 0;
+  left: 50%;
+  margin-left: -28px;
+  border-top: 1px solid #e70c66;
 }
 .page1 .wrapper .section-1-bg-4 {
   position: absolute;
@@ -1496,12 +1512,12 @@ section.page {
   padding: 0 20%;
   font-family: oksana_text_narrowbold;
   max-width: 720px;
+  color: #442111;
 }
 .section-big-title h1 {
   position: relative;
   font-size: 74px;
   line-height: 1.1;
-  color: #442111;
 }
 .section-big-title h2 {
   position: relative;
@@ -1570,7 +1586,7 @@ section.page {
 }
 
 .header_nav {
-  font-family: oksana_text_narrowlight, sans-serif;
+  font-family: oksana_text_narrowdemibold;
   font-style: normal;
   height: 60px;
   width: 900px;

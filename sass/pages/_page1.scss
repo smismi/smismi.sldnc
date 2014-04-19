@@ -39,12 +39,12 @@
 
 
 		.section-1-bg-25 {
-			margin: -120px auto;
+			margin: -180px auto;
 			position: relative;
 			top: 50%;
 			opacity: 0;
 
-			color: #70002e;
+			color: $carmine;
 			font-size: 100px;
 			text-align: center;
 
@@ -53,7 +53,12 @@
 			}
 
 			h3 {
- 				font-size: 38px;
+				color: $cherry;
+				position: relative;
+				font-size: 38px;
+				padding-top: 25px;
+				margin-top: 25px;
+				text-transform: capitalize;
 
 				&.font1 {
 					font-family: oksana_text_narrowbold;
@@ -84,6 +89,18 @@
 				}
 				&.font10 {
 					font-family: oksana_text_narrowdemibold;
+				}
+				
+				&:before {
+					content: '';
+					position: absolute;
+					display: block;
+					width: 57px;
+					height: 0px;
+					top: 0;
+					left: 50%;
+					margin-left: -28px;
+					border-top: 1px solid $cherry;
 				}
 			}
 		}
