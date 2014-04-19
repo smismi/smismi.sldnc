@@ -427,7 +427,7 @@ var SL = {
 
 		new ScrollScene({
 			triggerElement: "#section-4",
-			duration: 1000*2,
+			duration: $(window).height()*2,
 			offset: 0
 		})
 			.addTo(SL.controller)
