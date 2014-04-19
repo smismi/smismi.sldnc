@@ -250,7 +250,7 @@ var SL = {
 
 		SL.initScrollMagik();
 
-
+		SL.initPager();
 
 
 		SL.initParallax1();
@@ -260,7 +260,7 @@ var SL = {
 		SL.initParallax5();
 
 
-		SL.initInterActive5();
+//		SL.initInterActive5();
 
 
 	},
@@ -386,7 +386,7 @@ var SL = {
 //				TweenMax.to("#section-3 .section-3-item-4-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-3 .section-3-item-4-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-3 .section-3-item-4-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-				TweenMax.to("#section-3 .section-3-item-4-5", 1, {rotation:  55,  scale:.4, ease: Linear.easeNone}),
+//				TweenMax.to("#section-3 .section-3-item-4-5", 1, {rotation:  55,  scale:.4, ease: Linear.easeNone}),
 //				TweenMax.to("#section-3 .section-3-item-4-6", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 
 				TweenMax.fromTo("#section-3 .section-3-item-3", 1, {top: "75%"}, {top: "10%", ease: Linear.easeNone}),
@@ -395,11 +395,11 @@ var SL = {
 //				TweenMax.to("#section-3 .section-3-item-3-3", 1, {rotation:  90,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-3 .section-3-item-3-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-3 .section-3-item-3-5", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-				TweenMax.to("#section-3 .section-3-item-3-6", 1, {rotation:  -34,  scale: 1, ease: Linear.easeNone}),
+//				TweenMax.to("#section-3 .section-3-item-3-6", 1, {rotation:  -34,  scale: 1, ease: Linear.easeNone}),
 
 
 				TweenMax.fromTo("#section-3 .section-3-item-1", 1, {top: "55%"}, {top: "35%", ease: Linear.easeNone}),
-				TweenMax.to("#section-3 .section-3-item-1-1", 1, {rotation:  60,  scale: 1, ease: Linear.easeNone}),
+//				TweenMax.to("#section-3 .section-3-item-1-1", 1, {rotation:  60,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-3 .section-3-item-1-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-3 .section-3-item-1-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 
@@ -413,7 +413,7 @@ var SL = {
 		new ScrollScene({
 			triggerElement: "#section-4",
 			duration: $(window).height(),
-			offset: -200
+			offset: 0
 		})
 			.addTo(SL.controller)
 			.triggerHook(0.5)
@@ -422,6 +422,7 @@ var SL = {
 			]))
 			.on("enter", function (event) {
 				SL.setPager(4);
+				SL.destrotInterActive5();
 			})
  		;
 
@@ -438,10 +439,10 @@ var SL = {
 				TweenMax.fromTo("#section-4 .section-4-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
 
 //				TweenMax.to("#section-4 .section-4-item-4-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-				TweenMax.to("#section-4 .section-4-item-4-2", 1, {rotation:  90,  scale: 1, ease: Linear.easeNone}),
+//				TweenMax.to("#section-4 .section-4-item-4-2", 1, {rotation:  90,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-4-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-4-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-				TweenMax.to("#section-4 .section-4-item-4-5", 1, {rotation:  55,  scale: .6, ease: Linear.easeNone}),
+//				TweenMax.to("#section-4 .section-4-item-4-5", 1, {rotation:  55,  scale: .6, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-4-6", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-4-7", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 
@@ -449,10 +450,10 @@ var SL = {
 
 //				TweenMax.to("#section-4 .section-4-item-3-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-3-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-				TweenMax.to("#section-4 .section-4-item-3-3", 1, {rotation:  55,  scale: 1, ease: Linear.easeNone}),
+//				TweenMax.to("#section-4 .section-4-item-3-3", 1, {rotation:  55,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-3-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-3-5", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-				TweenMax.to("#section-4 .section-4-item-3-6", 1, {rotation:  -90,  scale: 1, ease: Linear.easeNone}),
+//				TweenMax.to("#section-4 .section-4-item-3-6", 1, {rotation:  -90,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-3-7", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-3-8", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-3-9", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
@@ -460,7 +461,7 @@ var SL = {
 				TweenMax.fromTo("#section-4 .section-4-item-1", 1, {top: "55%"}, {top: "35%", ease: Linear.easeNone}),
 
 //				TweenMax.to("#section-4 .section-4-item-1-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-				TweenMax.to("#section-4 .section-4-item-1-2", 1, {rotation:  89,  scale: 1, ease: Linear.easeNone}),
+//				TweenMax.to("#section-4 .section-4-item-1-2", 1, {rotation:  89,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-1-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 			]));
 
@@ -476,12 +477,13 @@ var SL = {
 			offset: -200
 		})
 			.addTo(SL.controller)
-			.triggerHook(0.5)
+			.triggerHook(0)
 			.setTween(new TimelineMax().add([
 				TweenMax.fromTo("#section-4 .wrapper", 1, {y:0}, {y:200}),
 			]))
 			.on("enter", function (event) {
 				SL.setPager(5);
+				SL.initInterActive5();
 			})
  		;
 
@@ -518,18 +520,22 @@ var SL = {
 
 
 	},
+	destrotInterActive5 : function() {
+
+		$(".page_item_caption abbr").css({opacity:0, top: -46});
+		$(".page_item_caption .description").css({opacity:0, });
+//		$(".page_item_caption i, .page_item_caption em, .page_item_caption .description").css({opacity:0});
+
+	},
 	initInterActive5: function() {
 		// interactive5
 		console.log("?. interactive5   ---    init")
+//		$(".page_item_caption i, .page_item_caption em, .page_item_caption .description").css({opacity:1});
 
 
-		$(".page_item_caption abbr").css({opacity:0, top: -46});
-//		$(".page_item_caption i, .page_item_caption em, .page_item_caption .description").css({opacity:0});
-
-
-		runFirstPage();
-
-
+		setTimeout(runFirstPage, 1000);
+//
+//
 		function runFirstPage() {
 			$("#section-5-page-1 abbr").animate({opacity:1,  top: 0}, 300, function() {
 				runSecondPage();

@@ -1352,6 +1352,10 @@ section.page {
   right: 0;
   bottom: 0;
 }
+.page5 .wrapper .page_item figcaption abbr {
+  opacity: 0;
+  top: -46px;
+}
 .page5 .wrapper .page_item figcaption .icon {
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
