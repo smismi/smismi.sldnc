@@ -491,7 +491,7 @@ section.page {
   color: #840036;
   font-size: 27px;
   text-align: center;
-  padding: 140px 100px;
+  padding: 140px 40px;
 }
 .page2 .wrapper .page_item h2:before {
   content: '';
@@ -1570,7 +1570,7 @@ section.page {
 }
 
 .header_nav {
-  font-family: oksana_text_narrowbold_italic;
+  font-family: oksana_text_narrowlight, sans-serif;
   font-style: normal;
   height: 60px;
   width: 900px;
@@ -1579,7 +1579,6 @@ section.page {
   list-style: none;
 }
 .header_nav li.header_nav_item {
-  font-family: 'oksana_text_narrowLtIt', sans-serif;
   text-decoration: none;
   color: #fff;
   -webkit-transition: color 0.5s ease-out;
@@ -1747,13 +1746,17 @@ section.page {
 
 .cup-spinner {
   position: fixed;
-  bottom: 304px;
+  top: 50%;
   left: 50%;
-  margin-top: -72px;
-  margin-left: -62px;
-  width: 144px;
-  height: 144px;
-  background: url(../img/cup.png) no-repeat 0 0;
+  margin-top: -27px;
+  margin-left: -27px;
+  width: 54px;
+  height: 54px;
+}
+.cup-spinner:before {
+  content: "\e60b";
+  color: #e70c66;
+  font-size: 54px;
 }
 .cup-spinner.spining {
   -webkit-animation-name: spin;

@@ -9,13 +9,18 @@
 }
 .cup-spinner {
 	position: fixed;
-	bottom: 304px;
+	top: 50%;
 	left: 50%;
-	margin-top: -72px;
-	margin-left: -62px;
-	width: 144px;
-	height: 144px;
-	background: url(../img/cup.png) no-repeat 0 0;
+	margin-top: -27px;
+	margin-left: -27px;
+	width: 54px;
+	height: 54px;
+	&:before {
+		content: "\e60b";
+		color: $cherry;
+		font-size: 54px;
+	}
+	//background: url(../img/cup.png) no-repeat 0 0;
 
 
 

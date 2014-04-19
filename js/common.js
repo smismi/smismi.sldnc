@@ -3,6 +3,11 @@ var SL = {
 
 	controller: null,
 	pager: null,
+	globals: {
+		cupDelay: 1000
+
+
+	},
 	init: function() {
 		console.log("1. init");
 
@@ -17,26 +22,10 @@ var SL = {
 
 
 
-//		SL.cropViewport();
-//		SL.preloadImage();
+		SL.cropViewport()
+			.test()
+			.preloadImage(SL.unCropViewport);
 
-		SL.initPager();
-
-
-
-		SL.initScrollMagik();
-
-
-
-
-		SL.initParallax1();
-		SL.initParallax2();
-		SL.initParallax3();
-		SL.initParallax4();
-		SL.initParallax5();
-
-
-		SL.initInterActive5();
 
 
 
@@ -49,8 +38,15 @@ var SL = {
 
 
 	},
-	preloadImage: function() {
-		console.log("3. preloadImage   ---    start");
+
+	cropViewport: function(callback) {
+
+		console.log("2. cropViewport   ---    init");
+
+
+
+		$(".header").css({top: -300, opacity: 0});
+		$(".pager").css({right: -300, opacity: 0});
 
 
 		var contentWrapper =  $('#content-wrapper');
@@ -64,30 +60,48 @@ var SL = {
 
 		SL.overlay = $("<div id='overlay'></div>").appendTo('body');
 
-		SL.pagePreloader = $("<div class='cup-spinner'></div>").appendTo(SL.overlay);
+		SL.pagePreloader = $("<div class='cup-spinner fonted'></div>").appendTo(SL.overlay);
 
+
+        if(true) {
+	        return this;
+        }
+
+	},
+	test: function() {
+		console.log('test');
+
+
+		return this;
+	},
+	preloadImage: function(callback) {
+		console.log("3. preloadImage   ---    start");
 
 
 		var imagesLoaded = 0;
+
+
 		$(document).on('imgloaded', function(ev, imIndex, imgCounter) {
 			imagesLoaded += 1;
-			var preloadDelta = imgCounter + 1;
+ 			var preloadDelta = imgCounter + 1;
 			percents = imagesLoaded * 100 / imgCounter;
 			SL.pagePreloader
 				.addClass("spining");
 
-//			console.log(percents, imagesLoaded);
+			console.log(percents, imagesLoaded);
 
 
 			if (imgCounter == imagesLoaded) {
 
 
 				$(window).load(function() {
-					console.log("4. preloadImage   ---    start");
+					console.log("4. preloadImage   ---    done");
 					$(document).off('imgloaded');
 
 
-					SL.runCupAnimation();
+					if(callback) setTimeout(callback, SL.globals.cupDelay)
+
+
 				})
 
 			}
@@ -137,10 +151,11 @@ var SL = {
 				}
 			);
 		};
+
+		$(window).scrollTop(0);
+
 	},
 	runCupAnimation: function() {
-
-
 
 
 		SL.cup = $("<div id='cup'></div>").addClass("cup_00").appendTo($("body"));
@@ -152,7 +167,7 @@ var SL = {
 
 
 				if (i == 5) {
-					SL.unCropViewport();
+//					SL.unCropViewport();
 
 				}
 
@@ -185,33 +200,25 @@ var SL = {
 		}
 		var timerId = setInterval(changeClass, 30);
 
-	},
-	cropViewport: function() {
-
-		console.log("2. cropViewport   ---    init");
-
-
-
-//		$("#content-wrapper").css({opacity: 0, overflow: "hidden"});
-		$(".header").css({top: -300, opacity: 0});
-		$(".pager").css({right: -300, opacity: 0});
-
-
-
-
 
 
 
 	},
 	unCropViewport: function() {
 
+		console.log("5. unCropViewport   ---    satart");
 
-		SL.pagePreloader.hide().remove();
+		$(window).scrollTop(0);
 
 
- 		SL.overlay.animate({opacity: 0}, 900, function(){
-			$(this).remove()
-		});
+ 		SL.overlay.animate({opacity: 0}, 200, function(){
+		    SL.pagePreloader.fadeOut(100, function(){
+			    $(this).remove();
+		    }).remove();
+		    SL.runCupAnimation();
+			$(this).remove();
+
+	    });
 
 //		$("#content-wrapper").animate({opacity: 1, overflow: "auto"}, 1000, function() {
 
@@ -222,9 +229,6 @@ var SL = {
 			console.log("5. unCropViewport   ---    done");
 
 //		})
-
-
-
 
 
 	},
@@ -240,12 +244,23 @@ var SL = {
 		$(".section-1-bg-3").animate({right: "10%", opacity: 1}, 300, "easeOutCirc", function(){
 
 			$(".section-1-bg-25").animate({opacity:1}, 700, "easeOutCirc");
-			$(window).scrollTop(0);
 
 
 		});
 
+		SL.initScrollMagik();
 
+
+
+
+		SL.initParallax1();
+		SL.initParallax2();
+		SL.initParallax3();
+		SL.initParallax4();
+		SL.initParallax5();
+
+
+		SL.initInterActive5();
 
 
 	},

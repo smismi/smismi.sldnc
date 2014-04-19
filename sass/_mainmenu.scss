@@ -4,20 +4,17 @@
 }
 
 .header_nav {
-	font-family: oksana_text_narrowbold_italic;
+	font-family: oksana_text_narrowlight, sans-serif;
 	font-style: normal;
 	height: 60px;
 	width: 900px;
 	margin: 0 auto;
 	top: 0;
 	list-style: none;
-	//-webkit-font-smoothing: antialiased;
-
 
 	li.header_nav_item {
 
-		font-family: 'oksana_text_narrowLtIt', sans-serif;
-		text-decoration: none;
+ 		text-decoration: none;
  		color: #fff;
 		@include transition( color .5s ease-out);
 		display: block;
