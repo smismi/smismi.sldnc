@@ -132,15 +132,14 @@ section.page {
 		z-index: 10;
 	}
 
-
-	@include screen(320px, 1000px) {
-		top: 50%;
-		margin: -200px auto 0 auto;
-		h1 {
-			font-size:40px;
-		}
-
-	}
+	//@include screen(320px, 1000px) {
+	//	top: 50%;
+	//	margin: -200px auto 0 auto;
+	//	h1 {
+	//		font-size:40px;
+	//	}
+	//
+	//}
 
 
 }

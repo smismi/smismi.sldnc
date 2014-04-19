@@ -1,0 +1,269 @@
+
+@include max-screen(1000px) {
+	.page5 {
+
+		.wrapper {
+
+
+
+			.section-5-header {
+				text-align: center;
+				color: $white;
+				font-size: 70px;
+				width:70%;
+				margin: 10% auto 30px auto;
+
+
+			}
+
+			.headermark {
+				font-size: 27px;
+				&:before {
+					content: "\e604";
+				}
+			}
+
+
+			.page_item {
+				display: block;
+				width: auto;
+				height: 20%;
+				vertical-align: top;
+
+
+				//@include pageitems($list);
+
+				figcaption {
+					width: auto;
+					position: relative;
+					text-align: center;
+					font-size: 0;
+					cursor: pointer;
+					top: auto;
+					margin-top: 0;
+					height: auto;
+					line-height: 150px;
+
+
+
+					em, i {
+						display: block;
+						position: absolute;
+						top:0;
+						left:0;
+						right:0;
+						bottom:0;
+
+
+
+					}
+
+					abbr {
+						opacity: 0;
+						top: -46px;
+
+					}
+
+					.icon {
+						@include transition( all .4s ease-out);
+						position: relative;
+						z-index: 3;
+						margin-top: 0;
+						text-align: center;
+						line-height: 0;
+
+						&.icon1 {
+							color: $aircolor;
+							font-size: 50px;
+
+							&:before {
+								content: "\e603";
+							}
+
+						}
+
+						&.icon2 {
+							color: #85c98b;
+							font-size: 55px;
+
+							&:before {
+								content: "\e602";
+							}
+
+						}
+
+						&.icon3 {
+							color: #fece7b;
+							font-size: 65px;
+
+							&:before {
+								content: "\e601";
+							}
+
+						}
+
+
+
+					}
+					em {
+						opacity: 0;
+						top: -42px;
+						@include transition( top 0.3s ease-out, opacity .2s ease-in );
+						z-index: 3;
+						width: 40px;
+
+					}
+					i {
+						@include transition( transform .7s ease-out);
+						@include transform(scale(0));
+
+					}
+
+					.description {
+						opacity: 0;
+						position: static;
+						bottom: auto;
+
+						h2 {
+							color: #c7eafc;
+							font-size: 24px;
+							font-family: oksana_text_narrowdemibold;
+						}
+						h3 {
+							display: none;
+						}
+					}
+
+
+
+					&.hovered {
+
+
+						abbr {
+
+
+
+
+							.icon {
+								font-size: 70px;
+							}
+
+
+							em{
+
+								opacity: 1;
+								top: -12px;
+
+							}
+
+							i{
+
+								@include transform(scale(1));
+
+
+
+
+								img{
+
+
+								}
+
+								&:first-child img {
+									-webkit-animation: 5600ms animationFrames infinite alternate ease-in-out;
+									-moz-animation: 5600ms animationFrames infinite alternate ease-in-out;
+									-ms-animation: 5600ms animationFrames infinite alternate ease-in-out;
+									-o-animation: 5600ms animationFrames infinite alternate ease-in-out;
+									animation: 5600ms animationFrames infinite alternate ease-in-out;
+
+								}
+								&:nth-child(2) img {
+									-webkit-animation: 3600ms animationFrames infinite alternate ease-in-out;
+									-moz-animation: 3600ms animationFrames infinite alternate ease-in-out;
+									-ms-animation: 3600ms animationFrames infinite alternate ease-in-out;
+									-o-animation: 3600ms animationFrames infinite alternate ease-in-out;
+									animation: 3600ms animationFrames infinite alternate ease-in-out;
+								}
+								&:nth-child(3) img {
+									-webkit-animation: 4600ms animationFrames infinite alternate ease-in-out;
+									-moz-animation: 4600ms animationFrames infinite alternate ease-in-out;
+									-ms-animation: 4600ms animationFrames infinite alternate ease-in-out;
+									-o-animation: 4600ms animationFrames infinite alternate ease-in-out;
+									animation: 4600ms animationFrames infinite alternate ease-in-out;
+								}
+
+							}
+
+
+
+							//em {
+							//
+							//	@include transform(scale(1));
+							//
+							//		//animation: animationFrames ease-out infinite 3s;
+							//		//-webkit-animation: animationFrames ease-out infinite 3s;
+							//		//-moz-animation: animationFrames ease-out infinite 3s;
+							//		//-o-animation: animationFrames ease-out infinite 3s;
+							//		//-ms-animation: animationFrames ease-out infinite 3s;
+							//
+							//	opacity: 0;
+							//
+							//}
+
+
+						}
+
+
+
+
+					}
+
+
+
+
+					.description {
+						line-height: 1.4;
+						font-size: 23px;
+						color: #f50;
+					}
+
+
+
+
+				}
+
+
+
+				&.first figcaption {
+					//	background: #ffabd3;
+
+					.description {
+						h2 {
+							color: $aircolor;
+						}
+					}
+
+				}
+				&.second figcaption{
+
+					.description {
+						h2 {
+							color: $vitacolor;
+						}
+					}
+
+				}
+				&.third figcaption{
+
+					.description {
+						h2 {
+							color: $milkcolor;
+						}
+					}
+
+				}
+			}
+
+		}
+
+	}
+}

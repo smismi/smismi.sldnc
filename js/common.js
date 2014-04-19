@@ -24,7 +24,7 @@ var SL = {
 
 		SL.cropViewport()
 			.test()
-			.preloadImage(SL.unCropViewport);
+			SL.unCropViewport();
 
 
 

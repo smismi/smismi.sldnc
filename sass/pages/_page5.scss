@@ -29,12 +29,6 @@
 			margin: 10% auto 30px auto;
 
 
-			@include screen(320px, 1000px) {
-
-				font-size:40px;
-
-			}
-
 		}
 
 		.headermark {
@@ -255,27 +249,7 @@
 
 			}
 
-			@include screen(320px, 1000px) {
 
-				display:block;
-				width: auto;
-				height: auto;
-
-				figcaption {
-					top:auto;
-					margin-top: 0;
-					width: auto;
-					line-height: 180px;
-					height: auto;
-				}
-
-				.description {
-
-					display:none;
-
-				}
-
-			}
 
 			&.first figcaption {
 			//	background: #ffabd3;

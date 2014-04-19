@@ -51,13 +51,7 @@ html.touch .touchonly {
 }
 
 
-@include iphone5()  {
 
-	body, html, .wrapper {
-		min-width: auto;
-	}
-
-}
 
 .fonted {
 	font-family: 'sldnc-icons';
