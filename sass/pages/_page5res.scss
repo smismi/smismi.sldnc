@@ -1,106 +1,140 @@
-@include max-screen(1000px) {
+
+@include max-screen(1200px) {
+
+
 	.page5 {
+
 
 		.wrapper {
 
 
 
+
+			.page_item {
+				width: 320px;
+			}
+
+
+
+		}
+
+
+	}
+
+}
+
+
+
+@include max-screen(1000px) {
+
+
+	.page5 {
+
+		//position: relative;
+		//height: 100%;
+		//overflow: hidden;
+
+		.wrapper {
+			//background:#ffd3ab url(../img/bg/bg5.jpg) repeat 50% 50%;
+			//position: relative;
+			//height: 100%;
+			//overflow: hidden;
+			//text-align: center;
+
+
 			.section-5-header {
-				text-align: center;
-				color: $white;
-				font-size: 70px;
-				width:70%;
-				margin: 10% auto 30px auto;
+				//text-align: center;
+				//color: $white;
+				//font-size: 70px;
+				//width:70%;
+				//margin: 10% auto 30px auto;
 
 
 			}
 
 			.headermark {
-				font-size: 27px;
+				//font-size: 27px;
 				&:before {
-					content: "\e604";
+					//content: "\e604";
 				}
 			}
 
 
 			.page_item {
 				display: block;
-				width: auto;
 				height: 20%;
-				vertical-align: top;
-				border:	1px solid red;
+				max-width: auto;
+				position: relative;
+				overflow: hidden;
+				width: auto;
 
 
-
-				//@include pageitems($list);
 
 				figcaption {
-					width: auto;
-					position: relative;
-					text-align: center;
-					font-size: 0;
-					cursor: pointer;
-					top: auto;
+					top:0;
 					margin-top: 0;
-					height: auto;
-					line-height: 150px;
-
-					border:	1px solid green;
+					width: auto;
+					height: 100%;
+					//position: relative;
+					//text-align: center;
+					line-height: 200px;
+					//font-size: 0;
+					//cursor: pointer;
 
 
 
 					em, i {
-						display: block;
-						position: absolute;
-						top:0;
-						left:0;
-						right:0;
-						bottom:0;
+						//display: block;
+						//position: absolute;
+						//top:0;
+						//left:0;
+						//right:0;
+						//bottom:0;
 
 
 
 					}
 
 					abbr {
-						opacity: 0;
-						top: -46px;
+						//opacity: 0;
+						//top: -46px;
 
 					}
 
 					.icon {
-						@include transition( all .4s ease-out);
-						position: relative;
-						z-index: 3;
-						margin-top: 0;
-						text-align: center;
-						line-height: 0;
+						//@include transition( all .4s ease-out);
+						//position: relative;
+						//z-index: 3;
+						//margin-top: 0;
+						//text-align: center;
+						line-height: 150px;
 
 						&.icon1 {
-							color: $aircolor;
+							//color: $aircolor;
 							font-size: 50px;
 
 							&:before {
-								content: "\e603";
+								//content: "\e603";
 							}
 
 						}
 
 						&.icon2 {
-							color: #85c98b;
+							//color: #85c98b;
 							font-size: 55px;
 
 							&:before {
-								content: "\e602";
+								//content: "\e602";
 							}
 
 						}
 
 						&.icon3 {
-							color: #fece7b;
+							//color: #fece7b;
 							font-size: 65px;
 
 							&:before {
-								content: "\e601";
+								//content: "\e601";
 							}
 
 						}
@@ -109,37 +143,42 @@
 
 					}
 					em {
-						opacity: 0;
-						top: -42px;
-						@include transition( top 0.3s ease-out, opacity .2s ease-in );
-						z-index: 3;
-						width: 40px;
+						//opacity: 0;
+						//top: -42px;
+						//@include transition( top 0.3s ease-out, opacity .2s ease-in );
+						//z-index: 3;
+						@include transform(scale(.7));
+
 
 					}
 					i {
-						@include transition( transform .7s ease-out);
-						@include transform(scale(0));
+						//@include transition( transform .7s ease-out);
+						//@include transform(scale(0));
 
 					}
 
 					.description {
-						opacity: 0;
-						position: static;
-						bottom: auto;
+						bottom: 0px;
+						left: 0;
+						right: 0;
 
 						h2 {
-							color: #c7eafc;
-							font-size: 24px;
-							font-family: oksana_text_narrowdemibold;
+							//color: #c7eafc;
+							font-size: 35px;
+							//font-family: oksana_text_narrowdemibold;
 						}
 						h3 {
 							display: none;
+							//color: $white;
+							//font-size: 13px;
+							//height: 0;
+							//font-family: oksana_text_narrowlight;
 						}
 					}
 
 
 
-					&.hovered {
+					&:hover {
 
 
 						abbr {
@@ -148,20 +187,20 @@
 
 
 							.icon {
-								font-size: 70px;
+								font-size: 90px;
 							}
 
 
 							em{
 
-								opacity: 1;
-								top: -12px;
+								//opacity: 1;
+								//top: -12px;
 
 							}
 
 							i{
 
-								@include transform(scale(1));
+								@include transform(scale(.7));
 
 
 
@@ -172,45 +211,31 @@
 								}
 
 								&:first-child img {
-									-webkit-animation: 5600ms animationFrames infinite alternate ease-in-out;
-									-moz-animation: 5600ms animationFrames infinite alternate ease-in-out;
-									-ms-animation: 5600ms animationFrames infinite alternate ease-in-out;
-									-o-animation: 5600ms animationFrames infinite alternate ease-in-out;
-									animation: 5600ms animationFrames infinite alternate ease-in-out;
+									//-webkit-animation: 5600ms animationFrames infinite alternate ease-in-out;
+									//-moz-animation: 5600ms animationFrames infinite alternate ease-in-out;
+									//-ms-animation: 5600ms animationFrames infinite alternate ease-in-out;
+									//-o-animation: 5600ms animationFrames infinite alternate ease-in-out;
+									//animation: 5600ms animationFrames infinite alternate ease-in-out;
 
 								}
 								&:nth-child(2) img {
-									-webkit-animation: 3600ms animationFrames infinite alternate ease-in-out;
-									-moz-animation: 3600ms animationFrames infinite alternate ease-in-out;
-									-ms-animation: 3600ms animationFrames infinite alternate ease-in-out;
-									-o-animation: 3600ms animationFrames infinite alternate ease-in-out;
-									animation: 3600ms animationFrames infinite alternate ease-in-out;
+									//-webkit-animation: 3600ms animationFrames infinite alternate ease-in-out;
+									//-moz-animation: 3600ms animationFrames infinite alternate ease-in-out;
+									//-ms-animation: 3600ms animationFrames infinite alternate ease-in-out;
+									//-o-animation: 3600ms animationFrames infinite alternate ease-in-out;
+									//animation: 3600ms animationFrames infinite alternate ease-in-out;
 								}
 								&:nth-child(3) img {
-									-webkit-animation: 4600ms animationFrames infinite alternate ease-in-out;
-									-moz-animation: 4600ms animationFrames infinite alternate ease-in-out;
-									-ms-animation: 4600ms animationFrames infinite alternate ease-in-out;
-									-o-animation: 4600ms animationFrames infinite alternate ease-in-out;
-									animation: 4600ms animationFrames infinite alternate ease-in-out;
+									//-webkit-animation: 4600ms animationFrames infinite alternate ease-in-out;
+									//-moz-animation: 4600ms animationFrames infinite alternate ease-in-out;
+									//-ms-animation: 4600ms animationFrames infinite alternate ease-in-out;
+									//-o-animation: 4600ms animationFrames infinite alternate ease-in-out;
+									//animation: 4600ms animationFrames infinite alternate ease-in-out;
 								}
 
 							}
 
 
-
-							em {
-
-								@include transform(scale(1));
-
-									//animation: animationFrames ease-out infinite 3s;
-									//-webkit-animation: animationFrames ease-out infinite 3s;
-									//-moz-animation: animationFrames ease-out infinite 3s;
-									//-o-animation: animationFrames ease-out infinite 3s;
-									//-ms-animation: animationFrames ease-out infinite 3s;
-
-								opacity: 0;
-
-							}
 
 
 						}
@@ -224,9 +249,9 @@
 
 
 					.description {
-						line-height: 1.4;
-						font-size: 23px;
-						color: #f50;
+						//line-height: 1.4;
+						//font-size: 23px;
+						//color: #f50;
 					}
 
 
@@ -237,11 +262,10 @@
 
 
 				&.first figcaption {
-					//	background: #ffabd3;
 
 					.description {
 						h2 {
-							color: $aircolor;
+							//color: $aircolor;
 						}
 					}
 
@@ -250,7 +274,7 @@
 
 					.description {
 						h2 {
-							color: $vitacolor;
+							//color: $vitacolor;
 						}
 					}
 
@@ -259,14 +283,20 @@
 
 					.description {
 						h2 {
-							color: $milkcolor;
+							//color: $milkcolor;
 						}
 					}
 
 				}
 			}
 
+			.catalog_enter5 {
+				margin-top: 30px;
+			}
+
+
 		}
 
 	}
+
 }

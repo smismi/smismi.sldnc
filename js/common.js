@@ -24,7 +24,8 @@ var SL = {
 
 		SL.cropViewport()
 			.test()
-			SL.unCropViewport();
+//			SL.unCropViewport();
+		.preloadImage(SL.unCropViewport);
 
 
 
@@ -555,41 +556,11 @@ var SL = {
 		}
 
 		function runItAll() {
-			$(".page_item_caption .description").animate({opacity:1}, 300, function() {
-				bindMouse();
-			});
+			$(".page_item_caption .description").animate({opacity:1}, 300);
 		}
 
 
 
-		function bindMouse() {
-
-			console.log("?. bindMouse   ---    init   --- for");
-
-
-			$(".page_item_caption").on("mouseenter mouseover", function(){
-
-
-
-
-
-
-				$(this).addClass("hovered");
-				var _this = this;
-
-
-
-			});
-			$(".page_item_caption").on("mouseleave", function(){
-
-				$(this).removeClass("hovered").removeClass("effect1").removeClass("effect2").removeClass("effect3");
-
-
-			});
-
-
-
-		}
 
 
 
