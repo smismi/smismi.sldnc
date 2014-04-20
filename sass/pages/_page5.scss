@@ -38,10 +38,10 @@
 			}
 		}
 
-
+		$figurewidth: 340px;
 		.page_item {
 			display: inline-block;
-			width: 340px;
+			width: $figurewidth;
 			height: 50%;
 			vertical-align: top;
 
@@ -51,7 +51,7 @@
 			figcaption {
 				top:50%;
 				margin-top: -170px;
-				width: 340px;
+				width: $figurewidth;
 				height: 340px;
 				position: relative;
 				text-align: center;
@@ -121,13 +121,15 @@
 				em {
 					opacity: 0;
 					top: -42px;
-					@include transition( top 0.3s ease-out, opacity .2s ease-in );
+					@include transition( top 0.3s ease-out, opacity .2s  cubic-bezier(0.440, 0.250, 0.525, 1));
  					z-index: 3;
 
 				}
 				i {
-					@include transition( transform .7s ease-out);
+					@include transition( transform .7s cubic-bezier(0.000, 0.900, 0.375, 1));
 					@include transform(scale(0));
+
+
 
 				}
 
@@ -167,7 +169,7 @@
 						em{
 
 							opacity: 1;
-							top: -12px;
+							top: -22px;
 
 						}
 
@@ -177,8 +179,8 @@
 
 
 
-
 							img{
+								margin-left: -20px;
 
 
 							}
@@ -199,11 +201,46 @@
 								animation: 3600ms animationFrames infinite alternate ease-in-out;
 							}
 							&:nth-child(3) img {
+								-webkit-animation: 4000ms animationFrames infinite alternate ease-in-out;
+								-moz-animation: 4000ms animationFrames infinite alternate ease-in-out;
+								-ms-animation: 4000ms animationFrames infinite alternate ease-in-out;
+								-o-animation: 4000ms animationFrames infinite alternate ease-in-out;
+								animation: 4000ms animationFrames infinite alternate ease-in-out;
+							}
+							&:nth-child(4) img {
+								-webkit-animation: 2600ms animationFrames infinite alternate ease-in-out;
+								-moz-animation: 2600ms animationFrames infinite alternate ease-in-out;
+								-ms-animation: 2600ms animationFrames infinite alternate ease-in-out;
+								-o-animation: 2600ms animationFrames infinite alternate ease-in-out;
+								animation: 2600ms animationFrames infinite alternate ease-in-out;
+							}
+							&:nth-child(5) img {
+								-webkit-animation: 3000ms animationFrames infinite alternate ease-in-out;
+								-moz-animation: 3000ms animationFrames infinite alternate ease-in-out;
+								-ms-animation: 3000ms animationFrames infinite alternate ease-in-out;
+								-o-animation: 3000ms animationFrames infinite alternate ease-in-out;
+								animation: 3000ms animationFrames infinite alternate ease-in-out;
+							}
+							&:nth-child(6) img {
 								-webkit-animation: 4600ms animationFrames infinite alternate ease-in-out;
 								-moz-animation: 4600ms animationFrames infinite alternate ease-in-out;
 								-ms-animation: 4600ms animationFrames infinite alternate ease-in-out;
 								-o-animation: 4600ms animationFrames infinite alternate ease-in-out;
 								animation: 4600ms animationFrames infinite alternate ease-in-out;
+							}
+							&:nth-child(7) img {
+								-webkit-animation: 2700ms animationFrames infinite alternate ease-in-out;
+								-moz-animation: 2700ms animationFrames infinite alternate ease-in-out;
+								-ms-animation: 2700ms animationFrames infinite alternate ease-in-out;
+								-o-animation: 2700ms animationFrames infinite alternate ease-in-out;
+								animation: 2700ms animationFrames infinite alternate ease-in-out;
+							}
+							&:nth-child(8) img {
+								-webkit-animation: 4300ms animationFrames infinite alternate ease-in-out;
+								-moz-animation: 4300ms animationFrames infinite alternate ease-in-out;
+								-ms-animation: 4300ms animationFrames infinite alternate ease-in-out;
+								-o-animation: 4300ms animationFrames infinite alternate ease-in-out;
+								animation: 4300ms animationFrames infinite alternate ease-in-out;
 							}
 
 						}
@@ -236,9 +273,10 @@
 
 
 					.description {
-					line-height: 1.4;
-					font-size: 23px;
-					color: #f50;
+						line-height: 1.9;
+						font-size: 23px;
+						color: #f50;
+						padding: 20px;
 				}
 
 

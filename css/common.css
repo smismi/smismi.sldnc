@@ -1076,13 +1076,13 @@ section.page {
   20% {
     left: 8px;
     top: -1px;
-    transform: rotate(3deg);
+    transform: rotate(2deg);
   }
 
   40% {
     left: -15px;
     top: -1px;
-    transform: rotate(-3deg);
+    transform: rotate(-2deg);
   }
 
   60% {
@@ -1114,13 +1114,13 @@ section.page {
   20% {
     left: 8px;
     top: -1px;
-    -moz-transform: rotate(3deg);
+    -moz-transform: rotate(2deg);
   }
 
   40% {
     left: -15px;
     top: -1px;
-    -moz-transform: rotate(-3deg);
+    -moz-transform: rotate(-2deg);
   }
 
   60% {
@@ -1152,13 +1152,13 @@ section.page {
   20% {
     left: 8px;
     top: -1px;
-    -webkit-transform: rotate(3deg);
+    -webkit-transform: rotate(2deg);
   }
 
   40% {
     left: -15px;
     top: -1px;
-    -webkit-transform: rotate(-3deg);
+    -webkit-transform: rotate(-2deg);
   }
 
   60% {
@@ -1190,13 +1190,13 @@ section.page {
   20% {
     left: 8px;
     top: -1px;
-    -o-transform: rotate(3deg);
+    -o-transform: rotate(2deg);
   }
 
   40% {
     left: -15px;
     top: -1px;
-    -o-transform: rotate(-3deg);
+    -o-transform: rotate(-2deg);
   }
 
   60% {
@@ -1228,13 +1228,13 @@ section.page {
   20% {
     left: 8px;
     top: -1px;
-    -ms-transform: rotate(3deg);
+    -ms-transform: rotate(2deg);
   }
 
   40% {
     left: -15px;
     top: -1px;
-    -ms-transform: rotate(-3deg);
+    -ms-transform: rotate(-2deg);
   }
 
   60% {
@@ -1344,17 +1344,17 @@ section.page {
 .page5 .wrapper .page_item figcaption em {
   opacity: 0;
   top: -42px;
-  -webkit-transition: top 0.3s ease-out, opacity 0.2s ease-in;
-  -moz-transition: top 0.3s ease-out, opacity 0.2s ease-in;
-  -o-transition: top 0.3s ease-out, opacity 0.2s ease-in;
-  transition: top 0.3s ease-out, opacity 0.2s ease-in;
+  -webkit-transition: top 0.3s ease-out, opacity 0.2s cubic-bezier(0.44, 0.25, 0.525, 1);
+  -moz-transition: top 0.3s ease-out, opacity 0.2s cubic-bezier(0.44, 0.25, 0.525, 1);
+  -o-transition: top 0.3s ease-out, opacity 0.2s cubic-bezier(0.44, 0.25, 0.525, 1);
+  transition: top 0.3s ease-out, opacity 0.2s cubic-bezier(0.44, 0.25, 0.525, 1);
   z-index: 3;
 }
 .page5 .wrapper .page_item figcaption i {
-  -webkit-transition: -webkit-transform 0.7s ease-out;
-  -moz-transition: -moz-transform 0.7s ease-out;
-  -o-transition: -o-transform 0.7s ease-out;
-  transition: transform 0.7s ease-out;
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0, 0.9, 0.375, 1);
+  -moz-transition: -moz-transform 0.7s cubic-bezier(0, 0.9, 0.375, 1);
+  -o-transition: -o-transform 0.7s cubic-bezier(0, 0.9, 0.375, 1);
+  transition: transform 0.7s cubic-bezier(0, 0.9, 0.375, 1);
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
@@ -1382,7 +1382,7 @@ section.page {
 }
 .page5 .wrapper .page_item figcaption:hover abbr em {
   opacity: 1;
-  top: -12px;
+  top: -22px;
 }
 .page5 .wrapper .page_item figcaption:hover abbr i {
   -webkit-transform: scale(1);
@@ -1390,6 +1390,9 @@ section.page {
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
+}
+.page5 .wrapper .page_item figcaption:hover abbr i img {
+  margin-left: -20px;
 }
 .page5 .wrapper .page_item figcaption:hover abbr i:first-child img {
   -webkit-animation: 5600ms animationFrames infinite alternate ease-in-out;
@@ -1406,16 +1409,52 @@ section.page {
   animation: 3600ms animationFrames infinite alternate ease-in-out;
 }
 .page5 .wrapper .page_item figcaption:hover abbr i:nth-child(3) img {
+  -webkit-animation: 4000ms animationFrames infinite alternate ease-in-out;
+  -moz-animation: 4000ms animationFrames infinite alternate ease-in-out;
+  -ms-animation: 4000ms animationFrames infinite alternate ease-in-out;
+  -o-animation: 4000ms animationFrames infinite alternate ease-in-out;
+  animation: 4000ms animationFrames infinite alternate ease-in-out;
+}
+.page5 .wrapper .page_item figcaption:hover abbr i:nth-child(4) img {
+  -webkit-animation: 2600ms animationFrames infinite alternate ease-in-out;
+  -moz-animation: 2600ms animationFrames infinite alternate ease-in-out;
+  -ms-animation: 2600ms animationFrames infinite alternate ease-in-out;
+  -o-animation: 2600ms animationFrames infinite alternate ease-in-out;
+  animation: 2600ms animationFrames infinite alternate ease-in-out;
+}
+.page5 .wrapper .page_item figcaption:hover abbr i:nth-child(5) img {
+  -webkit-animation: 3000ms animationFrames infinite alternate ease-in-out;
+  -moz-animation: 3000ms animationFrames infinite alternate ease-in-out;
+  -ms-animation: 3000ms animationFrames infinite alternate ease-in-out;
+  -o-animation: 3000ms animationFrames infinite alternate ease-in-out;
+  animation: 3000ms animationFrames infinite alternate ease-in-out;
+}
+.page5 .wrapper .page_item figcaption:hover abbr i:nth-child(6) img {
   -webkit-animation: 4600ms animationFrames infinite alternate ease-in-out;
   -moz-animation: 4600ms animationFrames infinite alternate ease-in-out;
   -ms-animation: 4600ms animationFrames infinite alternate ease-in-out;
   -o-animation: 4600ms animationFrames infinite alternate ease-in-out;
   animation: 4600ms animationFrames infinite alternate ease-in-out;
 }
+.page5 .wrapper .page_item figcaption:hover abbr i:nth-child(7) img {
+  -webkit-animation: 2700ms animationFrames infinite alternate ease-in-out;
+  -moz-animation: 2700ms animationFrames infinite alternate ease-in-out;
+  -ms-animation: 2700ms animationFrames infinite alternate ease-in-out;
+  -o-animation: 2700ms animationFrames infinite alternate ease-in-out;
+  animation: 2700ms animationFrames infinite alternate ease-in-out;
+}
+.page5 .wrapper .page_item figcaption:hover abbr i:nth-child(8) img {
+  -webkit-animation: 4300ms animationFrames infinite alternate ease-in-out;
+  -moz-animation: 4300ms animationFrames infinite alternate ease-in-out;
+  -ms-animation: 4300ms animationFrames infinite alternate ease-in-out;
+  -o-animation: 4300ms animationFrames infinite alternate ease-in-out;
+  animation: 4300ms animationFrames infinite alternate ease-in-out;
+}
 .page5 .wrapper .page_item figcaption .description {
-  line-height: 1.4;
+  line-height: 1.9;
   font-size: 23px;
   color: #f50;
+  padding: 20px;
 }
 .page5 .wrapper .page_item.first figcaption .description h2 {
   color: #c7eafc;
@@ -1813,9 +1852,28 @@ section.page {
     margin-top: -15px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .page5 .wrapper .page_item {
     width: 320px;
+  }
+  .page5 .wrapper .page_item figcaption {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page5 .wrapper .page_item {
+    width: 390px;
+  }
+  .page5 .wrapper .page_item figcaption {
+    width: 390px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .page5 .wrapper .page_item {
+    width: 440px;
+  }
+  .page5 .wrapper .page_item figcaption {
+    width: 440px;
   }
 }
 @media screen and (max-width: 1000px) {

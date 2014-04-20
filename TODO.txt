@@ -1,11 +1,5 @@
-1. средняя некорректна по наведению  - 0%
-2. веоднее меню - done
-3. првое  меню - done
 4. ipad vertic layout - 30%
-5. pager scrollto page  - done
 6. font safari - 0
-7. rotate candies - 0
-8. performance - 0
 9. pixeldroch - 0
 
 

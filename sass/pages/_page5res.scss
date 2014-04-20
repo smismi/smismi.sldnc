@@ -1,26 +1,51 @@
 
-@include max-screen(1200px) {
-
-
+@include min-screen(1000px) {
 	.page5 {
-
-
 		.wrapper {
 
-
-
+			$figurewidth: 320px;
 
 			.page_item {
-				width: 320px;
+				width: $figurewidth;
+				figcaption {
+					width: $figurewidth;
+				}
 			}
-
-
-
 		}
-
-
 	}
+}
 
+@include min-screen(1200px) {
+	.page5 {
+		.wrapper {
+
+			$figurewidth: 390px;
+
+			.page_item {
+				width: $figurewidth;
+				figcaption {
+					width: $figurewidth;
+				}
+			}
+		}
+	}
+}
+
+@include min-screen(1400px) {
+	.page5 {
+		.wrapper {
+
+			$figurewidth: 440px;
+
+			.page_item {
+				width: $figurewidth;
+
+				figcaption {
+					width: $figurewidth;
+				}
+			}
+		}
+	}
 }
 
 
