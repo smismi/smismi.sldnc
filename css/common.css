@@ -501,6 +501,7 @@ section.page {
   position: relative;
   color: #840036;
   font-size: 27px;
+  line-height: 28px;
   text-align: center;
   padding: 140px 40px;
 }
@@ -1781,6 +1782,37 @@ section.page {
   }
 }
 @media screen and (max-width: 1000px) {
+  .page2 .wrapper .page_item {
+    display: block;
+    height: 33.333%;
+    max-width: auto;
+    position: relative;
+    overflow: hidden;
+    width: auto;
+  }
+  .page2 .wrapper .page_item .icon.icon1 {
+    font-size: 50px;
+  }
+  .page2 .wrapper .page_item .icon.icon1:before {
+    content: "\e607";
+  }
+  .page2 .wrapper .page_item .icon.icon2 {
+    font-size: 110px;
+  }
+  .page2 .wrapper .page_item .icon.icon3 {
+    font-size: 100px;
+  }
+  .page2 .wrapper .page_item h2 {
+    font-size: 19px;
+    padding: 110px 40px;
+  }
+  .page2 .wrapper .page_item h2:before {
+    width: 31px;
+    height: 4.5em;
+    margin-top: -15px;
+  }
+}
+@media screen and (max-width: 1000px) {
   .page5 .wrapper .section-5-header {
     text-align: center;
     color: white;
@@ -1799,6 +1831,7 @@ section.page {
     width: auto;
     height: 20%;
     vertical-align: top;
+    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: auto;
@@ -1810,6 +1843,7 @@ section.page {
     margin-top: 0;
     height: auto;
     line-height: 150px;
+    border: 1px solid green;
   }
   .page5 .wrapper .page_item figcaption em, .page5 .wrapper .page_item figcaption i {
     display: block;
@@ -1923,6 +1957,14 @@ section.page {
     -ms-animation: 4600ms animationFrames infinite alternate ease-in-out;
     -o-animation: 4600ms animationFrames infinite alternate ease-in-out;
     animation: 4600ms animationFrames infinite alternate ease-in-out;
+  }
+  .page5 .wrapper .page_item figcaption.hovered abbr em {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
   }
   .page5 .wrapper .page_item figcaption .description {
     line-height: 1.4;
