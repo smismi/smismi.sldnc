@@ -277,9 +277,14 @@ var SL = {
 				triggerHook: "onLeave"
 			}
 		})
+
+
 	},
 	initParallax1: function() {
 		console.log("?. initParallax1   ---    init");
+
+
+
 
 		// parallax1
 		new ScrollScene({
@@ -566,14 +571,6 @@ var SL = {
 
 	},
 
-
-
-
-
-
-
-
-
 //	otheruglystuff for internal use
 	func: {
 
@@ -593,11 +590,7 @@ var SL = {
 				}
 			}
 		}
-
-
-}
-
-
+	}
 
 }
 
