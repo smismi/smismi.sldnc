@@ -328,7 +328,7 @@ section.page {
   background: url(../img/bg/bgl112.png) repeat-x 0 0;
 }
 .page1 .wrapper .section-1-bg-25 {
-  margin: -180px auto;
+  margin: -240px auto;
   position: relative;
   top: 50%;
   opacity: 0;
@@ -456,11 +456,15 @@ section.page {
   left: 0;
   right: 0;
   bottom: 0;
-  display: none;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .page2 .wrapper .page_item:hover figcaption {
   position: absolute;
-  display: block;
+  opacity: 1;
 }
 .page2 .wrapper .page_item .page_item_ic {
   position: relative;
@@ -1771,6 +1775,11 @@ section.page {
 }
 
 @media screen and (max-width: 1000px) {
+  .header_nav {
+    position: relative;
+  }
+}
+@media screen and (max-width: 500px) {
   h1 {
     font-size: 40px !important;
   }
@@ -1786,7 +1795,6 @@ section.page {
     position: absolute;
     background: #000;
     padding: 12px;
-    color: #f00;
     top: 0;
     margin: 0;
   }
@@ -1813,7 +1821,14 @@ section.page {
     margin-top: 100px !important;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+  #section-1 .wrapper {
+    width: 1200px;
+    margin-left: -600px;
+    left: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
   .page1 .wrapper .section-1-bg-25 {
     font-size: 42px;
   }

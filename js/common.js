@@ -242,7 +242,7 @@ var SL = {
 
 
 		$(".section-1-bg-2").animate({left: "10%", opacity: 1}, 300, "easeOutCirc");
-		$(".section-1-bg-3").animate({right: "10%", opacity: 1}, 300, "easeOutCirc", function(){
+		$(".section-1-bg-3").animate({right: "10%", opacity: 1, marginRight: "-150px"}, 300, "easeOutCirc", function(){
 
 			$(".section-1-bg-25").animate({opacity:1}, 700, "easeOutCirc");
 
@@ -318,42 +318,6 @@ var SL = {
 				SL.setPager(2);
 			})
  		;
-
-	},
-	initParallax3_old: function() {
-		console.log("?. initParallax3   ---    init");
-
-		// parallax3
-		new ScrollScene({
-			triggerElement: "#section-3",
-			duration: $(window).height(),
-			offset: 0
-		})
-			.addTo(SL.controller)
-			.triggerHook(0.5)
-			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-2 .wrapper", 1, {y:0}, {y:200}),
-			]))
-			.on("enter", function (event) {
-				SL.setPager(3);
-			})
- 		;
-
-		new ScrollScene({
-			triggerElement: "#section-3",
-			duration: 1000*2,
-			offset: 0
-		})
-			.addTo(SL.controller)
-			.triggerHook("onEnter")
-			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-3 .section-3-bg-1", 1, { backgroundPosition: "30% 0%"}, {backgroundPosition: "30% 100%", ease: Linear.easeNone}),
-//				TweenMax.fromTo("#section-3 .section-3-bg-2", 1, { backgroundPosition: "50% 30%"}, {backgroundPosition: "50% 160%", ease: Linear.easeNone}),
-//				TweenMax.fromTo("#section-3 .section-3-bg-25", 1, { y: 0}, {y: -100, ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-3 .section-3-bg-3", 1, { backgroundPosition: "50% 0%"}, {backgroundPosition: "50% 180%", ease: Linear.easeNone}),
-				TweenMax.fromTo("#section-3 .section-3-bg-4", 1, { backgroundPosition: "50% -100%"}, {backgroundPosition: "50% 159%", ease: Linear.easeNone})
-
-			]));
 
 	},
 	initParallax3: function() {
