@@ -508,6 +508,8 @@ var SL = {
 //				$("#test").animate({"right": 500});
 			}
 
+			return false;
+
 
 		});
 //		$(".item_link", SL.mainmenu).on({'mouseenter': function () {
