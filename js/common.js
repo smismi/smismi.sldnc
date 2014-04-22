@@ -495,19 +495,18 @@ var SL = {
 
 		$(".item_menu", SL.mainmenu).on('click', function(){
 
-//			if ($(this).hasClass("menu_visible")) {
-//
-//
-//				$(this).removeClass("menu_visible");
-//				$(".item_link", SL.mainmenu).hide();
-//
-//			} else {
-//
-//				$(this).addClass("menu_visible");
-//				$(".item_link", SL.mainmenu).show();
-//
-//
-//			}
+			if ($(this).hasClass("menu_visible")) {
+
+				$(this).removeClass("menu_visible");
+
+
+//				$("#test").animate({"right": 0});
+			} else {
+
+				$(this).addClass("menu_visible");
+
+//				$("#test").animate({"right": 500});
+			}
 
 
 		});
