@@ -15,6 +15,7 @@ var SL = {
 
 //		cache blocks
 		SL.pager = $("#pager_nav");
+		SL.mainmenu = $("#header");
 
 
 
@@ -30,7 +31,7 @@ var SL = {
 
 
 
-
+		SL.initHeaderMenu();
 
 
 
@@ -487,6 +488,46 @@ var SL = {
 
 
 		})
+
+
+	},
+	initHeaderMenu: function() {
+
+		$(".item_menu", SL.mainmenu).on('click', function(){
+
+//			if ($(this).hasClass("menu_visible")) {
+//
+//
+//				$(this).removeClass("menu_visible");
+//				$(".item_link", SL.mainmenu).hide();
+//
+//			} else {
+//
+//				$(this).addClass("menu_visible");
+//				$(".item_link", SL.mainmenu).show();
+//
+//
+//			}
+
+
+		});
+//		$(".item_link", SL.mainmenu).on({'mouseenter': function () {
+//
+//
+//				var _sub =  $("a", this).data("target");
+//
+//				$(".subnav-" + _sub).show();
+//
+//
+//			}, 'mouseleave': function () {
+//
+//
+//				var _sub =  $("a", this).data("target");
+//
+//				$(".subnav-" + _sub).hide();
+//
+//			}}
+//		);
 
 
 	},

@@ -145,32 +145,59 @@ section.page {
 }
 
 .catalog_flag {
-	padding: 9px 12px;
+	padding: 12px 12px;
 	color: #fff;
 	text-decoration: none;
 	position: relative;
 	background: $cherry;
+	display: block;
+	margin: 0 auto;
+	width: 200px;
 
+
+	span {
+		position: relative;
+		z-index: 12;
+	}
 	&:before {
-		content: "";
+		content: " ";
 		padding: 0 12px;
 		position: absolute;
 		left: -23px;
 		bottom: 0;
 		top: 0;
+		width: 89px;
 		@include icon(catalog-flag-l, 0,-21, true);
+		@include transition( all .2s ease-out);
 
 
 	}
 	&:after {
-		content: "";
+		content: " ";
 		padding: 0 12px;
 		position: absolute;
 		right: -23px;
 		top: 0;
+		width: 89px;
 		bottom: 0;
-		@include icon(catalog-flag-r, 0,-21, true);
+		@include icon(catalog-flag-r, 100%,-21, true);
+		@include transition( all .2s ease-out);
 
+
+	}
+
+	&:hover {
+
+
+		&:before {
+			left: -32px;
+
+
+		}
+		&:after {
+			right: -32px;
+
+		}
 
 	}
 }

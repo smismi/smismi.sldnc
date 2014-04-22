@@ -4,7 +4,7 @@
 	//height: 62px;
 
 
-	&:after {
+	&:before {
 		content: " ";
 		position: absolute;
 		left: 0;
@@ -12,7 +12,6 @@
 		bottom: -10px;
 		height: 15px;
 		background: url("../img/main-menu-bg.png") repeat-x bottom center;
-		z-index: 234;
 
 	}
 }
@@ -27,17 +26,20 @@
 	list-style: none;
 
 	li.header_nav_item {
-
  		text-decoration: none;
 		@include transition( color .5s ease-out);
 		display: block;
 		float: left;
-		margin-top: 21px;
+		padding-top: 15px;
 		margin-left: 30px;
-		margin-bottom: 10px;
+		padding-bottom: 15px;
 		font-size: 0;
+		margin-bottom: -10px;
 		line-height: 0;
 		z-index: 13;
+
+
+
 
 
 		a {
@@ -54,11 +56,19 @@
 					content: "\e608";
 				}
 			}
+			&.item_menu {
+				font-size: 24px;
+				color: #fff;
+
+				&:before {
+					content: "\e60c";
+				}
+			}
 
 		}
 
 
-		&:after {
+		&:before {
 			content: " ";
 			width: 37px;
 			border-right: 1px solid $cherry;
@@ -68,8 +78,8 @@
 			margin-top: 4px;
 
 		}
-		&:last-child, &.fb, &.tw {
-			&:after {
+		&:first-child, &.fb, &.tw {
+			&:before {
 				border-right: none;
 				width: 0;
 			}
@@ -104,14 +114,39 @@
 
 
 		.header_nav-subnav {
-			display: none;
-			position: absolute;
-			top: 60px;
+			&:before {
+				content: " ";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0px;
+				height: 15px;
+				background: url("../img/main-menu-bg.png") repeat-x bottom center;
+
+			}
+
+ 			position: absolute;
+			top: 42px;
 			left: 0;
 			right:0;
+			height:0;
 			background: #7c0034;
 			z-index: 12;
+			overflow: hidden;
+			@include transition( all .5s ease-out);
 
+			li {
+				margin-top: 30px;
+				padding-bottom: 40px;
+			}
+
+
+		}
+
+		&:hover {
+			.header_nav-subnav {
+				height:300px;
+			}
 		}
 
 
