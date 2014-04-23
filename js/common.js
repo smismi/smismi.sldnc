@@ -24,6 +24,7 @@ var SL = {
 
 
 
+		SL.runScrollAnimation();
 		SL.cropViewport()
 			.test()
 //			SL.unCropViewport();
@@ -197,6 +198,37 @@ var SL = {
 				SL.cup.addClass("cup_" + _i);
 
 				i++;
+
+
+
+		}
+		var timerId = setInterval(changeClass, 30);
+
+
+
+
+	},
+	runScrollAnimation: function() {
+		return;
+
+		SL.scroll = $("#scroll_me").addClass("scroll_00");
+
+
+		var i = 0; // current iteration value.
+
+		function changeClass(){
+
+
+			if (i > 20) {
+
+				 i = 0;
+			}
+
+			var _i = (i<10)?"0"+i:i;
+
+			SL.scroll.removeClass().addClass("scroll_" + _i);
+
+			i++;
 
 
 

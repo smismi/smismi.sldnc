@@ -13,21 +13,6 @@ $cupurl: sprite-url($cup);
 
 }
 
-$icons: sprite-map("ico/*.png", $spacing: 0);
-$iconurl: sprite-url($icons);
-@mixin icons-file{
-	background-image: $iconurl;
-}
-
-@mixin icon($name:actual, $offsetx:0, $offsety:0, $include_url:true) {
-	@if $include_url == true {
-		@include icons-file;
-	}
-	background-position: sprite-position($icons, $name, $offsetx, $offsety);
-	background-repeat: no-repeat;
-
-}
-
 #cup {
 
 	position: absolute;
@@ -42,7 +27,7 @@ $iconurl: sprite-url($icons);
 	background-repeat: no-repeat;
 	margin: -230px 0 0 -315px;
 
-@for $i from 0 through 24 {
+	@for $i from 0 through 24 {
 
 		@if $i < 10 {
 			$i : "0" + $i
@@ -51,6 +36,60 @@ $iconurl: sprite-url($icons);
 			@include cup(cup_#{$i}, 0, 0, false)
 		}
 	}
+
+}
+
+
+$scroll: sprite-map("scroll/*.png", $spacing: 0);
+$scrollurl: sprite-url($scroll);
+@mixin scroll-file{
+	background-image: $scrollurl;
+}
+
+@mixin scroll($name:actual, $offsetx:0, $offsety:0, $include_url:true) {
+	@if $include_url == true {
+		@include scroll-file;
+	}
+	background-position: sprite-position($scroll, $name, $offsetx, $offsety);
+	background-repeat: no-repeat;
+
+}
+
+#scroll_me {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	height: 60px;
+	width: 26px;
+	vertical-align: middle;
+	display: inline-block;
+
+	@for $i from 0 through 20 {
+
+		@if $i < 10 {
+			$i : "0" + $i
+		}
+		&.scroll_#{$i} {
+			@include scroll(scroll#{$i}, 0, 0, true)
+		}
+	}
+
+}
+
+
+
+$icons: sprite-map("ico/*.png", $spacing: 0);
+$iconurl: sprite-url($icons);
+@mixin icons-file{
+	background-image: $iconurl;
+}
+
+@mixin icon($name:actual, $offsetx:0, $offsety:0, $include_url:true) {
+	@if $include_url == true {
+		@include icons-file;
+	}
+	background-position: sprite-position($icons, $name, $offsetx, $offsety);
+	background-repeat: no-repeat;
 
 }
 
