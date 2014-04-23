@@ -16,6 +16,7 @@ var SL = {
 //		cache blocks
 		SL.pager = $("#pager_nav");
 		SL.mainmenu = $("#header");
+		SL.mobilemenu = $("#mobilemenu");
 
 
 
@@ -23,10 +24,10 @@ var SL = {
 
 
 
-		SL.cropViewport()
-			.test()
+//		SL.cropViewport()
+//			.test()
 //			SL.unCropViewport();
-		.preloadImage(SL.unCropViewport);
+//		.preloadImage(SL.unCropViewport);
 
 
 
@@ -495,22 +496,44 @@ var SL = {
 
 		$(".item_menu", SL.mainmenu).on('click', function(){
 
-			if ($(this).hasClass("menu_visible")) {
+			if (SL.mainmenu.hasClass("menu_visible")) {
 
-				$(this).removeClass("menu_visible");
+				SL.mainmenu.removeClass("menu_visible");
 
+				$("#mobilemenu").animate({"left": "-100%"}, 100);
 
-//				$("#test").animate({"right": 0});
+//				todo скрывать подменю при звкрытии
 			} else {
 
-				$(this).addClass("menu_visible");
+				SL.mainmenu.addClass("menu_visible");
 
-//				$("#test").animate({"right": 500});
+				$("#mobilemenu").animate({"left": "0%"}, 100);
 			}
 
 			return false;
 
 
+		});
+		$(".item_link", SL.mobilemenu).on('click', function(){
+
+
+			var _sub =  $(this).data("target");
+
+			if ($(this).hasClass("submenu_visible")) {
+
+				$(this).removeClass("submenu_visible");
+
+				$(".subnav-" + _sub, SL.mobilemenu).slideUp();
+
+			} else {
+
+
+				$(this).addClass("submenu_visible");
+
+				$(".subnav-" + _sub, SL.mobilemenu).slideDown();
+
+			}
+			return false;
 		});
 //		$(".item_link", SL.mainmenu).on({'mouseenter': function () {
 //

@@ -15,7 +15,18 @@
 
 	}
 }
+#header {
 
+}
+#mobilemenu {
+	display: none;
+	top: 60px;
+	position: absolute;
+	background: #f00;
+	left: -100%;
+	padding: 0;
+
+}
 .header_nav {
 	font-family: oksana_text_narrowdemibold;
 	font-style: normal;
@@ -64,11 +75,16 @@
 			margin-left: 30px;
 			margin-right: 30px;
 		}
+		&:nth-child(7) {
+			margin-left: 0;
+			margin-right: 0;
+		}
 
 		a {
 			color: $white;
 			text-decoration: none;
 			font: 16px/1em oksana_text_narrowdemibold, sans-serif;
+			@include transition( all .2s ease-out);
 
 			&.logo {
 				font-size: 38px;
@@ -139,8 +155,8 @@
 			&:before {
 				content: " ";
 				position: absolute;
-				left: 0;
 				right: 0;
+				left: 0;
 				top: 0px;
 				height: 15px;
 				background: url("../img/main-menu-bg.png") repeat-x bottom center;
@@ -177,6 +193,65 @@
 	.svg_logo {
 		vertical-align: middle;
 	}
+
+
+
+	.header_nav_item_m {
+
+		background: $cherry;
+		margin: 0;
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid #d785a6;
+
+		&:hover {
+			background: $carmine;
+
+		}
+
+		&.menu_visible {
+			display: block;
+		}
+
+
+		&.item_menu {
+			right: auto;
+			left: 0;
+			padding: 0 6px;
+			background: $cherry;
+			a {
+				line-height: 60px;
+			}
+		}
+
+		&.item_link {
+			a {
+				padding: 30px 0;
+				display: block;
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+
+		.header_nav-subnav {
+			display: none;
+			position: relative;
+			top: 0;
+			left: none;
+			right: none;
+			background: $carmine;
+			&:before {
+				display: none;
+
+			}
+		}
+	}
+
+
+
+
+
+
 
 
 }
