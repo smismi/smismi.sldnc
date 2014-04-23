@@ -7,7 +7,7 @@ body, html {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	//-webkit-font-smoothing: antialiased;
 	//-webkit-font-smoothing: none;
-
+	-webkit-font-smoothing: antialiased;
 }
 
 body, html, .wrapper {
@@ -54,7 +54,7 @@ html.touch .touchonly {
 
 
 .fonted {
-	font-family: 'sldnc-icons';
+	font-family: 'sldnc-icons' !important;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
