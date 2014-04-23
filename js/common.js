@@ -24,10 +24,10 @@ var SL = {
 
 
 
-//		SL.cropViewport()
-//			.test()
+		SL.cropViewport()
+			.test()
 //			SL.unCropViewport();
-//		.preloadImage(SL.unCropViewport);
+		.preloadImage(SL.unCropViewport);
 
 
 

@@ -1589,7 +1589,7 @@ section.page {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -10px;
+  bottom: -15px;
   height: 15px;
   background: url("../img/main-menu-bg.png") repeat-x bottom center;
 }
@@ -1598,7 +1598,6 @@ section.page {
   display: none;
   top: 60px;
   position: absolute;
-  background: #f00;
   left: -100%;
   padding: 0;
 }
@@ -1620,10 +1619,11 @@ section.page {
   display: block;
   float: left;
   font-size: 0;
-  margin-bottom: 7px;
-  margin-top: 21px;
+  padding-bottom: 17px;
+  padding-top: 21px;
   line-height: 0;
   z-index: 13;
+  margin-bottom: -10px;
 }
 .header_nav li.header_nav_item:nth-child(3) {
   margin-left: 30px;
