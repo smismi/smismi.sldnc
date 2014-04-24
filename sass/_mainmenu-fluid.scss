@@ -1,6 +1,39 @@
+@include max-screen(895px)
+{
+	.header_nav {
+		width: 100%;
+
+		li.header_nav_item {
+
+
+			width: 14.15%;
+			a.header_nav_item_link {
+				display: block;
+				text-align: center;
+				padding: 16px 0;
+				&.logo {
+					display: block;
+					text-align: center;
+					padding: 5px 0;
+					font-size: 38px;
+					color: $cherry;
+
+					&:before {
+						content: "\e608";
+					}
+				}
+
+			}
+
+		}
+	}
+}
+
+
+
 @for $i from 0 through 10 {
 
-	$_w: 895 - $i * 100;
+	$_w: $menu_max_w - $i * 100;
 	$_fs: 16 - $i*2;
 	$_fs_logo: 36 - $i*3;
 	$_p_t: $menu_item_p_t - $i*3px;

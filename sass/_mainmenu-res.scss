@@ -1,119 +1,31 @@
-//
-//@include max-screen(900px) {
-//	.header_nav {
-//		width: 800px;
-//
-//
-//		li.header_nav_item {
-//			//background: #0046D5;
-//
-//			margin-top: 17px;
-//			margin-bottom: 2px;
-//
-//			&:before {
-//
-//				width: 20px;
-//
-//			}
-//
-//			a {
-//				//font: 16px/1em oksana_text_narrowdemibold, sans-serif;
-//				&.logo {
-//					font-size: 36px;
-//				}
-//			}
-//
-//
-//
-//
-//			&:nth-child(3) {
-//				margin-left: 20px;
-//			}
-//
-//
-//			&:nth-child(4) {
-//				margin-left: 20px;
-//				margin-right: 20px;
-//
-//				&:before {
-//					display: none;
-//				}
-//			}
-//
-//			&:nth-child(5) {
-//				padding: 0 25px;
-//				margin-top: 5px;
-//
-//				&:before {
-//					display: none;
-//				}
-//			}
-//			&:nth-child(6) {
-//				margin-left: 20px;
-//				margin-right: 20px;
-//			}
-//			&:nth-child(7) {
-//				//margin-left: 5px;
-//				//margin-right: -5px;
-//			}
-//
-//			.header_nav-subnav {
-//				top: 40px;
-//			}
-//		}
-//	}
-//}
+@include iphone3()  {
 
-@include max-screen(895px)
-{
-	.header_nav {
-		width: 100%;
+	@include mobilestyle();
 
-		li.header_nav_item {
-//			@include transition(all .5s ease-out);
-
-
-			width: 14.15%;
-			a.header_nav_item_link {
-//				padding: 16px 34px;
-//				color: $white;
-				display: block;
-				text-align: center;
-				padding: 16px 0;
-//				text-decoration: none;
-//				font: 16px/1em oksana_text_narrowdemibold, sans-serif;
-//				@include transition(all .5s ease-out);
-//
-				&.logo {
-					display: block;
-					text-align: center;
-					padding: 5px 0;
-					font-size: 38px;
-					color: $cherry;
-
-					&:before {
-						content: "\e608";
-					}
-				}
-//				&.item_menu {
-//					font-size: 24px;
-//					color: #fff;
-//
-//					&:before {
-//						content: "\e60c";
-//					}
-//				}
-//
-			}
-//			&.item_link_soc {
-//
-//				a {
-//					padding: 0;
-//				}
-//			}
-		}
-	}
 }
+@include iphone4()  {
+
+	@include mobilestyle();
+
+}
+
+
+@include iphone5()  {
+
+	@include mobilestyle();
+
+}
+
+
+
+@include  max-screen(400px)  {
+
+	@include mobilestyle();
+
+}
+
+
+
 @include max-screen(2px)
 {
 
@@ -168,7 +80,7 @@
 
 				padding: 0;
 				position: absolute;
- 				top: 0;
+				top: 0;
 				right: 0;
 				width: 50px;
 				display: block;
@@ -197,7 +109,7 @@
 
 
 			&.item_menu {
- 				right: auto;
+				right: auto;
 				left: 0;
 				padding: 0 6px;
 				background: $cherry;
