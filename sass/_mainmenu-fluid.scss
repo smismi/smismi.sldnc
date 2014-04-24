@@ -13,6 +13,10 @@
 
 
 		.header_nav {
+
+			overflow: hidden;
+			border-bottom: $i*3 + px solid red;
+
 //			width: $_w - 100 + px;
 //			@include transform(scale($_scale));
 
