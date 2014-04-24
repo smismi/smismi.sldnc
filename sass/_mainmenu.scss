@@ -36,7 +36,7 @@
 	list-style: none;
 
 	li.header_nav_item {
-		@include transition( color .5s ease-out);
+		@include transition( all .5s ease-out);
  		text-decoration: none;
 		display: block;
 		float: left;
@@ -83,7 +83,7 @@
 			color: $white;
 			text-decoration: none;
 			font: 16px/1em oksana_text_narrowdemibold, sans-serif;
-			@include transition( all .2s ease-out);
+			@include transition( all .5s ease-out);
 
 			&.logo {
 				font-size: 38px;

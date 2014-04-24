@@ -64,6 +64,12 @@
 //	}
 //}
 
+@include max-screen(1000px)
+{
+	.header_nav {
+		width: 100%;
+	}
+}
 @include max-screen(400px)
 {
 
