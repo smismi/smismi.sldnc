@@ -1,62 +1,58 @@
 @for $i from 0 through 10 {
 
-	$_w: (10 - $i) * 100;
-//    .cup_#{$i} {
-//		color:#fe4509
-//	}
+	$_w: 895 - $i * 100;
 	$_fs: 16 - $i*2;
-	$_fs_logo: 36 - $i*2;
-	$_scale: 1 - 0.1 * $i*2;
-
+	$_fs_logo: 36 - $i*3;
+	$_p: 16 - $i*2px;
+	$_p_logo: 5 - $i;
+	$_b_b: -15 + $i*2;
+	$_b_h: 15 - $i*2;
 
 	@include max-screen(#{$_w}px) {
+
+		.header {
+
+
+			&:before {
+
+				bottom: $_b_b + px;
+				height: $_b_h +px;
+
+			}
+		}
 
 
 		.header_nav {
 
-			overflow: hidden;
-			border-bottom: $i*3 + px solid red;
-
-//			width: $_w - 100 + px;
-//			@include transform(scale($_scale));
 
 					li.header_nav_item {
 
-						padding-bottom: 17 - $i*3 + px;
-						padding-top: 21 - $i*3 + px;
+//						padding-bottom: 17 - $i*3 + px;
+//						padding-top: 21 - $i*3 + px;
 
-						&:before {
-
-							width: 20 - $i*2 + px;
-
-						}
 
 						a {
-
+							padding-top: $_p;
+							padding-bottom: $_p;
 							font-size: $_fs + px;
 
 							&.logo {
+								padding-top: $_p_logo + px;
+								padding-bottom: $_p_logo + px;
 								font-size: $_fs_logo + px;
 							}
 						}
 
-						&:nth-child(3) {
-							margin-left: 20 - $i*2 + px;
-						}
+						.header_nav-subnav {
 
-						&:nth-child(4) {
-							margin-left: 20 - $i*2 + px;
-							margin-right: 20 - $i*2 + px;
+							top: $_fs * 3 + px;
 
-						}
+							li {
+								margin-top: 30 - $i*5 + px;
+								padding-bottom: 40 - $i*5 + px;
+							}
 
-						&:nth-child(5) {
-							padding: 0 50 - $i*3 + px;
 
-						}
-						&:nth-child(6) {
-							margin-left: 20 - $i*2 + px;
-							margin-right: 20 - $i*2 + px;
 						}
 					}
 				}

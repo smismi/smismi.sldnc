@@ -1727,10 +1727,6 @@ section.page {
   display: block;
   text-decoration: none;
   font: 16px/1em oksana_text_narrowdemibold, sans-serif;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
 }
 .header_nav li.header_nav_item a.logo {
   padding: 5px 38px;
@@ -2086,6 +2082,270 @@ section.page {
   }
   .header_nav li.header_nav_item .header_nav-subnav:before {
     display: none;
+  }
+}
+@media screen and (max-width: 895px) {
+  .header:before {
+    bottom: -15px;
+    height: 15px;
+  }
+
+  .header_nav li.header_nav_item a {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 16px;
+  }
+  .header_nav li.header_nav_item a.logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 36px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav {
+    top: 48px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav li {
+    margin-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 795px) {
+  .header:before {
+    bottom: -13px;
+    height: 13px;
+  }
+
+  .header_nav li.header_nav_item a {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 14px;
+  }
+  .header_nav li.header_nav_item a.logo {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 33px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav {
+    top: 42px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav li {
+    margin-top: 25px;
+    padding-bottom: 35px;
+  }
+}
+@media screen and (max-width: 695px) {
+  .header:before {
+    bottom: -11px;
+    height: 11px;
+  }
+
+  .header_nav li.header_nav_item a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 12px;
+  }
+  .header_nav li.header_nav_item a.logo {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 30px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav {
+    top: 36px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav li {
+    margin-top: 20px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 595px) {
+  .header:before {
+    bottom: -9px;
+    height: 9px;
+  }
+
+  .header_nav li.header_nav_item a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 10px;
+  }
+  .header_nav li.header_nav_item a.logo {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 27px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav {
+    top: 30px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav li {
+    margin-top: 15px;
+    padding-bottom: 25px;
+  }
+}
+@media screen and (max-width: 495px) {
+  .header:before {
+    bottom: -7px;
+    height: 7px;
+  }
+
+  .header_nav li.header_nav_item a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 8px;
+  }
+  .header_nav li.header_nav_item a.logo {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 24px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav {
+    top: 24px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav li {
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 395px) {
+  .header:before {
+    bottom: -5px;
+    height: 5px;
+  }
+
+  .header_nav li.header_nav_item a {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 6px;
+  }
+  .header_nav li.header_nav_item a.logo {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 21px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav {
+    top: 18px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav li {
+    margin-top: 5px;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (max-width: 295px) {
+  .header:before {
+    bottom: -3px;
+    height: 3px;
+  }
+
+  .header_nav li.header_nav_item a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 4px;
+  }
+  .header_nav li.header_nav_item a.logo {
+    padding-top: -1px;
+    padding-bottom: -1px;
+    font-size: 18px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav {
+    top: 12px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav li {
+    margin-top: 0px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 195px) {
+  .header:before {
+    bottom: -1px;
+    height: 1px;
+  }
+
+  .header_nav li.header_nav_item a {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 2px;
+  }
+  .header_nav li.header_nav_item a.logo {
+    padding-top: -2px;
+    padding-bottom: -2px;
+    font-size: 15px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav {
+    top: 6px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav li {
+    margin-top: -5px;
+    padding-bottom: 5px;
+  }
+}
+@media screen and (max-width: 95px) {
+  .header:before {
+    bottom: 1px;
+    height: -1px;
+  }
+
+  .header_nav li.header_nav_item a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 0px;
+  }
+  .header_nav li.header_nav_item a.logo {
+    padding-top: -3px;
+    padding-bottom: -3px;
+    font-size: 12px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav {
+    top: 0px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav li {
+    margin-top: -10px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: -5px) {
+  .header:before {
+    bottom: 3px;
+    height: -3px;
+  }
+
+  .header_nav li.header_nav_item a {
+    padding-top: -2px;
+    padding-bottom: -2px;
+    font-size: -2px;
+  }
+  .header_nav li.header_nav_item a.logo {
+    padding-top: -4px;
+    padding-bottom: -4px;
+    font-size: 9px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav {
+    top: -6px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav li {
+    margin-top: -15px;
+    padding-bottom: -5px;
+  }
+}
+@media screen and (max-width: -105px) {
+  .header:before {
+    bottom: 5px;
+    height: -5px;
+  }
+
+  .header_nav li.header_nav_item a {
+    padding-top: -4px;
+    padding-bottom: -4px;
+    font-size: -4px;
+  }
+  .header_nav li.header_nav_item a.logo {
+    padding-top: -5px;
+    padding-bottom: -5px;
+    font-size: 6px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav {
+    top: -12px;
+  }
+  .header_nav li.header_nav_item .header_nav-subnav li {
+    margin-top: -20px;
+    padding-bottom: -10px;
   }
 }
 @media screen and (max-width: 1200px) {
