@@ -24,11 +24,11 @@ var SL = {
 
 
 
-		SL.runScrollAnimation();
-		SL.cropViewport()
-			.test()
+//		SL.runScrollAnimation();
+//		SL.cropViewport()
+//			.test()
 //			SL.unCropViewport();
-		.preloadImage(SL.unCropViewport);
+//		.preloadImage(SL.unCropViewport);
 
 
 
