@@ -52,7 +52,7 @@
 			text-decoration: none;
 			font: 16px/1em oksana_text_narrowdemibold, sans-serif;
 			position: relative;
-//			@include transition( all .5s ease-out);
+			@include transition( color .5s ease-out);
 
 
 			&.logo {
