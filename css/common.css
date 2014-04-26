@@ -539,7 +539,7 @@ section.page {
 }
 
 .page3 .wrapper {
-  background: #73362d url(../img/bg/bg3.jpg) no-repeat 50% 50%;
+  background: #73362d url(../img/bg/bg3merged.jpg) no-repeat 50% 50%;
   position: relative;
   height: 100%;
   overflow: hidden;
@@ -794,7 +794,7 @@ section.page {
 }
 
 .page4 .wrapper {
-  background: #ffd3ab url(../img/bg/bg4.jpg) no-repeat 50% 50%;
+  background: #ffd3ab url(../img/bg/bg4merged.jpg) no-repeat 50% 50%;
   position: relative;
   height: 100%;
   overflow: hidden;
