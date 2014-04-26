@@ -225,7 +225,6 @@
 
 
 
-
 				.subnav_block_list {
 
 					margin-bottom: 40px;
@@ -293,7 +292,7 @@
 		margin: 0;
 		width: 100%;
 		text-align: center;
-		border-bottom: 1px solid #d785a6;
+		border-bottom: 1px solid #f387b2;
 
 		&:hover {
 			background: $carmine;
@@ -335,6 +334,41 @@
 				display: none;
 
 			}
+
+		}
+
+		&.subnav_list {
+
+				border: 0;
+		}
+
+		&.menu_visible {
+			.subnav-catalog {
+				border-bottom: 1px solid #f387b2;
+			}
+		}
+
+
+	}
+
+	.subnav_list {
+		.subnav_item {
+			padding: 30px 40px;
+			text-align: left;
+			background: $carmine;
+			border-bottom: 1px solid #610029;
+
+
+			&:hover {
+				background: $cherry;
+
+			}
+
+			a {
+				font: 16px/1em oksana_text_narrowbold, sans-serif;
+				text-decoration: none;
+				color: #fff;
+			}
 		}
 	}
 
@@ -344,12 +378,6 @@
 
 
 
-
 }
 
 
-
-@include screen(320px, 1000px) {
-
-
-}

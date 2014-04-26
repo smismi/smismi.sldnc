@@ -1879,7 +1879,7 @@ section.page {
   margin: 0;
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid #d785a6;
+  border-bottom: 1px solid #f387b2;
 }
 .header_nav .header_nav_item_m:hover {
   background: #870037;
@@ -1912,6 +1912,26 @@ section.page {
 }
 .header_nav .header_nav_item_m .header_nav-subnav:before {
   display: none;
+}
+.header_nav .header_nav_item_m.subnav_list {
+  border: 0;
+}
+.header_nav .header_nav_item_m.menu_visible .subnav-catalog {
+  border-bottom: 1px solid #f387b2;
+}
+.header_nav .subnav_list .subnav_item {
+  padding: 30px 40px;
+  text-align: left;
+  background: #870037;
+  border-bottom: 1px solid #610029;
+}
+.header_nav .subnav_list .subnav_item:hover {
+  background: #e70c66;
+}
+.header_nav .subnav_list .subnav_item a {
+  font: 16px/1em oksana_text_narrowbold, sans-serif;
+  text-decoration: none;
+  color: #fff;
 }
 
 .pager {
