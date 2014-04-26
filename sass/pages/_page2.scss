@@ -117,8 +117,8 @@
 			}
 
 			h2 {
-				position: relative;
 				color:$carmine;
+				position: relative;
 				font-size: 27px;
 				line-height: 28px;
 				text-align: center;
@@ -126,7 +126,7 @@
 				//@include transition( color 0.1s ease-out);
 
 				&:before {
-					content: '';
+					content: ' ';
 					border-top: 1px solid $cherry;
 					border-bottom: 1px solid $cherry;
 					display: block;
