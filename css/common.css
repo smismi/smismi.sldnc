@@ -242,7 +242,6 @@ html.touch .touchonly {
 */
 #content-wrapper, #wrapper {
   height: 100%;
-  min-width: 700px;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
