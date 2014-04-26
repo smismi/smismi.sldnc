@@ -23,8 +23,9 @@ var SL = {
 
 
 
+		if(!Modernizr.touch) {
 
-
+		}
 //		SL.runScrollAnimation();
 		SL.cropViewport()
 			.test()
@@ -350,112 +351,180 @@ var SL = {
 
 	},
 	initParallax2: function() {
+
+
 		console.log("?. initParallax2   ---    init");
 
 		// parallax2
-		new ScrollScene({
-			triggerElement: "#section-2",
-			duration: $(window).height(),
-			offset: -200
-		})
-			.addTo(SL.controller)
-			.triggerHook(0.5)
-			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-1 .wrapper", 1, {y:0}, {y:200}),
-			]))
-			.on("enter", function (event) {
-				SL.setPager(2);
+
+		if(Modernizr.touch) {
+
+			new ScrollScene({
+				triggerElement: "#section-2",
+				duration: $(window).height(),
+				offset: -200
 			})
- 		;
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(2);
+				})
+			;
+
+		} else {
+
+			new ScrollScene({
+				triggerElement: "#section-2",
+				duration: $(window).height(),
+				offset: -200
+			})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.setTween(new TimelineMax().add([
+					TweenMax.fromTo("#section-1 .wrapper", 1, {y:0}, {y:200}),
+				]))
+				.on("enter", function (event) {
+					SL.setPager(2);
+				})
+			;
+
+		};
+
+
+
 
 	},
 	initParallax3: function() {
 		console.log("?. initParallax3   ---    init");
 
 //		parallax3
-		new ScrollScene({
-			triggerElement: "#section-3",
-			duration: $(window).height(),
-			offset: 0
-		})
-			.addTo(SL.controller)
-			.triggerHook(0.5)
-			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-2 .wrapper", 1, {y:0}, {y:200}),
-			]))
-			.on("enter", function (event) {
-				SL.setPager(3);
+
+		if(Modernizr.touch) {
+
+
+			new ScrollScene({
+				triggerElement: "#section-3",
+				duration: $(window).height(),
+				offset: 0
 			})
-		;
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(3);
+				})
+			;
 
-		new ScrollScene({
-			triggerElement: "#section-3",
-			duration: $(window).height()*2,
-			offset: 0
-		})
-			.addTo(SL.controller)
-			.triggerHook("onEnter")
-			.setTween(new TimelineMax().add([
-
-		        TweenMax.fromTo("#section-3 .section-3-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
+		} else {
 
 
+			new ScrollScene({
+				triggerElement: "#section-3",
+				duration: $(window).height(),
+				offset: 0
+			})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.setTween(new TimelineMax().add([
+					TweenMax.fromTo("#section-2 .wrapper", 1, {y:0}, {y:200}),
+				]))
+				.on("enter", function (event) {
+					SL.setPager(3);
+				})
+			;
 
-//				TweenMax.to("#section-3 .section-3-item-4-1", 1, {rotation:  45,  scale: 1.5, ease: Linear.easeNone}),
-//				TweenMax.to("#section-3 .section-3-item-4-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-3 .section-3-item-4-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-3 .section-3-item-4-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-3 .section-3-item-4-5", 1, {rotation:  55,  scale:.4, ease: Linear.easeNone}),
-//				TweenMax.to("#section-3 .section-3-item-4-6", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+			new ScrollScene({
+				triggerElement: "#section-3",
+				duration: $(window).height()*2,
+				offset: 0
+			})
+				.addTo(SL.controller)
+				.triggerHook("onEnter")
+				.setTween(new TimelineMax().add([
 
-				TweenMax.fromTo("#section-3 .section-3-item-3", 1, {top: "75%"}, {top: "10%", ease: Linear.easeNone}),
-//				TweenMax.to("#section-3 .section-3-item-3-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-3 .section-3-item-3-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-3 .section-3-item-3-3", 1, {rotation:  90,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-3 .section-3-item-3-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-3 .section-3-item-3-5", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-3 .section-3-item-3-6", 1, {rotation:  -34,  scale: 1, ease: Linear.easeNone}),
+			        TweenMax.fromTo("#section-3 .section-3-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
 
 
-				TweenMax.fromTo("#section-3 .section-3-item-1", 1, {top: "55%"}, {top: "35%", ease: Linear.easeNone}),
-//				TweenMax.to("#section-3 .section-3-item-1-1", 1, {rotation:  60,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-3 .section-3-item-1-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-3 .section-3-item-1-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 
-			]));
+	//				TweenMax.to("#section-3 .section-3-item-4-1", 1, {rotation:  45,  scale: 1.5, ease: Linear.easeNone}),
+	//				TweenMax.to("#section-3 .section-3-item-4-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+	//				TweenMax.to("#section-3 .section-3-item-4-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+	//				TweenMax.to("#section-3 .section-3-item-4-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+	//				TweenMax.to("#section-3 .section-3-item-4-5", 1, {rotation:  55,  scale:.4, ease: Linear.easeNone}),
+	//				TweenMax.to("#section-3 .section-3-item-4-6", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+
+					TweenMax.fromTo("#section-3 .section-3-item-3", 1, {top: "75%"}, {top: "10%", ease: Linear.easeNone}),
+	//				TweenMax.to("#section-3 .section-3-item-3-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+	//				TweenMax.to("#section-3 .section-3-item-3-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+	//				TweenMax.to("#section-3 .section-3-item-3-3", 1, {rotation:  90,  scale: 1, ease: Linear.easeNone}),
+	//				TweenMax.to("#section-3 .section-3-item-3-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+	//				TweenMax.to("#section-3 .section-3-item-3-5", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+	//				TweenMax.to("#section-3 .section-3-item-3-6", 1, {rotation:  -34,  scale: 1, ease: Linear.easeNone}),
+
+
+					TweenMax.fromTo("#section-3 .section-3-item-1", 1, {top: "55%"}, {top: "35%", ease: Linear.easeNone}),
+	//				TweenMax.to("#section-3 .section-3-item-1-1", 1, {rotation:  60,  scale: 1, ease: Linear.easeNone}),
+	//				TweenMax.to("#section-3 .section-3-item-1-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+	//				TweenMax.to("#section-3 .section-3-item-1-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+
+				]));
+
+		}
 
 	},
 	initParallax4: function() {
 		console.log("?. initParallax4   ---    init");
 
 		// parallax4
-		new ScrollScene({
-			triggerElement: "#section-4",
-			duration: $(window).height(),
-			offset: 0
-		})
-			.addTo(SL.controller)
-			.triggerHook(0.5)
-			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-3 .wrapper", 1, {y:0}, {y:200}),
-			]))
-			.on("enter", function (event) {
-				SL.setPager(4);
-				SL.destrotInterActive5();
+
+
+
+		if(Modernizr.touch) {
+
+
+
+			new ScrollScene({
+				triggerElement: "#section-4",
+				duration: $(window).height(),
+				offset: 0
 			})
- 		;
-
-		new ScrollScene({
-			triggerElement: "#section-4",
-			duration: $(window).height()*2,
-			offset: 0
-		})
-			.addTo(SL.controller)
-			.triggerHook("onEnter")
-			.setTween(new TimelineMax().add([
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(4);
+					SL.destrotInterActive5();
+				})
+			;
 
 
-				TweenMax.fromTo("#section-4 .section-4-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
+		} else {
+
+			new ScrollScene({
+				triggerElement: "#section-4",
+				duration: $(window).height(),
+				offset: 0
+			})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.setTween(new TimelineMax().add([
+					TweenMax.fromTo("#section-3 .wrapper", 1, {y:0}, {y:200}),
+				]))
+				.on("enter", function (event) {
+					SL.setPager(4);
+					SL.destrotInterActive5();
+				})
+			;
+
+			new ScrollScene({
+				triggerElement: "#section-4",
+				duration: $(window).height()*2,
+				offset: 0
+			})
+				.addTo(SL.controller)
+				.triggerHook("onEnter")
+				.setTween(new TimelineMax().add([
+
+
+					TweenMax.fromTo("#section-4 .section-4-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
 
 //				TweenMax.to("#section-4 .section-4-item-4-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-4-2", 1, {rotation:  90,  scale: 1, ease: Linear.easeNone}),
@@ -465,7 +534,7 @@ var SL = {
 //				TweenMax.to("#section-4 .section-4-item-4-6", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-4-7", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 
-				TweenMax.fromTo("#section-4 .section-4-item-3", 1, {top: "75%"}, {top: "10%", ease: Linear.easeNone}),
+					TweenMax.fromTo("#section-4 .section-4-item-3", 1, {top: "75%"}, {top: "10%", ease: Linear.easeNone}),
 
 //				TweenMax.to("#section-4 .section-4-item-3-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-3-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
@@ -477,39 +546,56 @@ var SL = {
 //				TweenMax.to("#section-4 .section-4-item-3-8", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-3-9", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 
-				TweenMax.fromTo("#section-4 .section-4-item-1", 1, {top: "55%"}, {top: "35%", ease: Linear.easeNone}),
+					TweenMax.fromTo("#section-4 .section-4-item-1", 1, {top: "55%"}, {top: "35%", ease: Linear.easeNone}),
 
 //				TweenMax.to("#section-4 .section-4-item-1-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-1-2", 1, {rotation:  89,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-1-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-			]));
+				]));
+
+		}
+
 
 	},
 	initParallax5: function() {
 		// parallax5
 		console.log("?. initParallax5   ---    init");
 
-		// parallax3
-		new ScrollScene({
-			triggerElement: "#section-5",
-			duration: $(window).height(),
-			offset: -200
-		})
-			.addTo(SL.controller)
-			.triggerHook(0)
-			.setTween(new TimelineMax().add([
-				TweenMax.fromTo("#section-4 .wrapper", 1, {y:0}, {y:200}),
-			]))
-			.on("enter", function (event) {
-				SL.setPager(5);
-				SL.initInterActive5();
+		// parallax5
+
+		if(Modernizr.touch) {
+
+			new ScrollScene({
+				triggerElement: "#section-5",
+				duration: $(window).height(),
+				offset: -200
 			})
- 		;
+				.addTo(SL.controller)
+				.triggerHook(0)
+				.on("enter", function (event) {
+					SL.setPager(5);
+					SL.initInterActive5();
+				})
+			;
 
-	},
-	initInterActive2: function() {
+		} else {
 
-
+			new ScrollScene({
+				triggerElement: "#section-5",
+				duration: $(window).height(),
+				offset: -200
+			})
+				.addTo(SL.controller)
+				.triggerHook(0)
+				.setTween(new TimelineMax().add([
+					TweenMax.fromTo("#section-4 .wrapper", 1, {y:0}, {y:200}),
+				]))
+				.on("enter", function (event) {
+					SL.setPager(5);
+					SL.initInterActive5();
+				})
+			;
+		}
 
 
 
