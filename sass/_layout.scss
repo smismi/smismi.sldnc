@@ -147,14 +147,16 @@ section.page {
 }
 
 .catalog_flag {
-	padding: 12px 12px;
+
+	padding: 7px 7px;
 	color: #fff;
 	text-decoration: none;
 	position: relative;
 	background: $cherry;
 	display: block;
 	margin: 0 auto;
-	width: 200px;
+	width: 145px;
+
 
 
 	span {
@@ -169,7 +171,7 @@ section.page {
 		bottom: 0;
 		top: 0;
 		width: 89px;
-		@include icon(catalog-flag-l, 0,-21, true);
+		@include icon(catalog-flag-l, 0,-26, true);
 		@include transition( all .2s ease-out);
 
 
@@ -182,7 +184,7 @@ section.page {
 		top: 0;
 		width: 89px;
 		bottom: 0;
-		@include icon(catalog-flag-r, 100%,-21, true);
+		@include icon(catalog-flag-r, 100%,-26, true);
 		@include transition( all .2s ease-out);
 
 
