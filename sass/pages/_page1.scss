@@ -21,33 +21,33 @@
 
 		.section-1-bg-11 {
 			position: absolute;
- 			bottom: 125px;
-			right: 10%;
+ 			bottom: 185px;
+			right: 20%;
 			width: 552px;
 			height: 485px;
-			margin-right: -180px;
+			margin-right: -380px;
 			background: url(../img/bg/bgl111.png) repeat-x 0 0;
 		}
 
 		.section-1-bg-12 {
 			position: absolute;
 			bottom: 65px;
-			left: 10%;
+			left: 25%;
 			width: 776px;
 			height: 256px;
-			margin-left: -450px;
+			margin-left: -685px;
 			background: url(../img/bg/bgl112.png) repeat-x 0 0;
 		}
 
 
 		.section-1-bg-25 {
-			margin: -240px auto;
+			margin: -210px auto;
 			position: relative;
 			top: 50%;
 			opacity: 0;
 
-			color: $carmine;
-			font-size: 100px;
+			color: $logo;
+			font-size: 78px;
 			text-align: center;
 
 			&:before {
@@ -57,7 +57,7 @@
 			h3 {
 				color: $cherry;
 				position: relative;
-				font-size: 38px;
+				font-size: 27px;
 				padding-top: 25px;
 				margin-top: 25px;
 				text-transform: capitalize;
@@ -135,6 +135,7 @@
 			width: 409px;
 			height: 285px;
 			opacity: 0;
+			margin-right: -160px;
 			background:url(../img/bg/bgl14.png)  no-repeat 100% 100%;
 		}
 	}

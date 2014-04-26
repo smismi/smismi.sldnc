@@ -116,15 +116,49 @@
 
 							top: $_fs * 3 + px;
 
-							li {
-								margin-top: 30 - $i*5 + px;
-								padding-bottom: 40 - $i*5 + px;
-							}
 
+							li.header_nav-subnav_block {
+
+								h1 {
+									padding-top: $_p_t;
+									padding-bottom: $_p_b;
+									font-size: $_fs + px;
+									margin: $_p_t/2  $_p_b * 2;
+								}
+
+
+
+
+								.subnav_block_list {
+
+									margin-bottom: $_fs + px;
+									li.subnav_block-item {
+
+
+
+
+
+										a {
+											display: block;
+											padding: $_p_t/2  $_p_b * 2 ;
+											font-size: $_fs + px;
+
+											color:#fff;
+											text-decoration: none;
+
+											&:hover {
+												background: $carmine;
+											}
+										}
+
+									}
+
+								}
 
 						}
 					}
 				}
+			}
 
 
 

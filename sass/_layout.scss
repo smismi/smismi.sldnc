@@ -4,6 +4,8 @@
 #content-wrapper, #wrapper {
 	height:100%;
 	//min-height: 400px;
+	@include transition( all 1s ease-out);
+
 }
 
 .scrollContainer {

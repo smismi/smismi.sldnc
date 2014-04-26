@@ -17,6 +17,7 @@ var SL = {
 		SL.pager = $("#pager_nav");
 		SL.mainmenu = $("#header");
 		SL.mobilemenu = $("#mobilemenu");
+		SL.contentWrapper = $('#content-wrapper');
 
 
 
@@ -25,10 +26,10 @@ var SL = {
 
 
 //		SL.runScrollAnimation();
-		SL.cropViewport()
-			.test()
+//		SL.cropViewport()
+//			.test()
 //			SL.unCropViewport();
-		.preloadImage(SL.unCropViewport);
+//		.preloadImage(SL.unCropViewport);
 
 
 
@@ -53,13 +54,13 @@ var SL = {
 		$(".pager").css({right: -300, opacity: 0});
 
 
-		var contentWrapper =  $('#content-wrapper');
-		contentWrapper.css('opacity', 0);
+		SL.contentWrapper =  $('#content-wrapper');
+//		SL.contentWrapper.css('opacity', 0);
 
-		$(window).load(function() {
-			contentWrapper.animate({'opacity': 1}, 800);
-
-		});
+//		$(window).load(function() {
+////			SL.contentWrapper.animate({'opacity': 1}, 800);
+//
+//		});
 
 
 		SL.overlay = $("<div id='overlay'></div>").appendTo('body');
@@ -170,8 +171,12 @@ var SL = {
 		function changeClass(){
 
 
-				if (i == 5) {
+				if (i == 13) {
 //					SL.unCropViewport();
+
+					SL.contentWrapper.removeClass('erighwqeig');
+
+
 
 				}
 
@@ -258,9 +263,6 @@ var SL = {
 //		$("#content-wrapper").animate({opacity: 1, overflow: "auto"}, 1000, function() {
 
 
-			$(".header").animate({top: 0, opacity: 1}, 600);
-			$(".pager").animate({right: 0, opacity: 1}, 600);
-
 			console.log("5. unCropViewport   ---    done");
 
 //		})
@@ -270,29 +272,42 @@ var SL = {
 
 	runScene1: function() {
 
-		console.log("6. runScene1   ---    run");
+
+		$(".header").animate({top: 0, opacity: 1}, 600);
+		$(".pager").animate({right: 0, opacity: 1}, 600 , function(){
+
+
+
+			console.log("6. runScene1   ---    run");
 
 
 
 
-		$(".section-1-bg-2").animate({left: "10%", opacity: 1}, 300, "easeOutCirc");
-		$(".section-1-bg-3").animate({right: "10%", opacity: 1, marginRight: "-150px"}, 300, "easeOutCirc", function(){
+			$(".section-1-bg-2").animate({left: "10%", opacity: 1}, 300, "easeOutCirc");
+			$(".section-1-bg-3").animate({right: "10%", opacity: 1, marginRight: "-150px"}, 300, "easeOutCirc", function(){
 
-			$(".section-1-bg-25").animate({opacity:1}, 700, "easeOutCirc");
+				$(".section-1-bg-25").animate({opacity:1}, 700, "easeOutCirc");
+
+
+			});
+
+			SL.initScrollMagik();
+
+			SL.initPager();
+
+
+			SL.initParallax1();
+			SL.initParallax2();
+			SL.initParallax3();
+			SL.initParallax4();
+			SL.initParallax5();
+
 
 
 		});
 
-		SL.initScrollMagik();
-
-		SL.initPager();
 
 
-		SL.initParallax1();
-		SL.initParallax2();
-		SL.initParallax3();
-		SL.initParallax4();
-		SL.initParallax5();
 
 
 //		SL.initInterActive5();
