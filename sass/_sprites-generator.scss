@@ -16,7 +16,7 @@ $cupurl: sprite-url($cup);
 #cup {
 
 	position: absolute;
-	bottom: 30px;
+	bottom: 10px;
 	left: 50%;
 	width: 630px;
 	height: 460px;
@@ -25,7 +25,7 @@ $cupurl: sprite-url($cup);
 	background-image: url('../img/cup-s94b0c5e609.png');
 	background-position: 0 -11040px;
 	background-repeat: no-repeat;
-	margin: -230px 0 0 -315px;
+	margin-left: -305px;
 
 	@for $i from 0 through 24 {
 
@@ -54,27 +54,27 @@ $scrollurl: sprite-url($scroll);
 	background-repeat: no-repeat;
 
 }
-
-#scroll_me {
-	position: absolute;
-	bottom: 20px;
-	left: 50%;
-	height: 60px;
-	width: 26px;
-	vertical-align: middle;
-	display: inline-block;
-
-	@for $i from 0 through 20 {
-
-		@if $i < 10 {
-			$i : "0" + $i
-		}
-		&.scroll_#{$i} {
-			@include scroll(scroll#{$i}, 0, 0, true)
-		}
-	}
-
-}
+//
+//#scroll_me {
+//	position: absolute;
+//	bottom: 20px;
+//	left: 50%;
+//	height: 60px;
+//	width: 26px;
+//	vertical-align: middle;
+//	display: inline-block;
+//
+//	@for $i from 0 through 20 {
+//
+//		@if $i < 10 {
+//			$i : "0" + $i
+//		}
+//		&.scroll_#{$i} {
+//			@include scroll(scroll#{$i}, 0, 0, true)
+//		}
+//	}
+//
+//}
 
 
 

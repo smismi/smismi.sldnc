@@ -131,7 +131,6 @@ section.page {
 	h3 {
 		position: relative;
 		padding: 42px 0;
-		z-index: 10;
 	}
 
 	//@include screen(320px, 1000px) {
@@ -161,7 +160,6 @@ section.page {
 
 	span {
 		position: relative;
-		z-index: 12;
 	}
 	&:before {
 		content: " ";
@@ -182,7 +180,7 @@ section.page {
 		position: absolute;
 		right: -23px;
 		top: 0;
-		width: 89px;
+		width: 13px;
 		bottom: 0;
 		@include icon(catalog-flag-r, 100%,-26, true);
 		@include transition( all .2s ease-out);

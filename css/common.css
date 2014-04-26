@@ -125,7 +125,7 @@ html.touch .touchonly {
 
 #cup {
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   left: 50%;
   width: 630px;
   height: 460px;
@@ -134,7 +134,7 @@ html.touch .touchonly {
   background-image: url("../img/cup-s94b0c5e609.png");
   background-position: 0 -11040px;
   background-repeat: no-repeat;
-  margin: -230px 0 0 -315px;
+  margin-left: -305px;
 }
 #cup.cup_00 {
   background-position: 0 -11040px;
@@ -234,121 +234,6 @@ html.touch .touchonly {
 }
 #cup.cup_24 {
   background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-#scroll_me {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  height: 60px;
-  width: 26px;
-  vertical-align: middle;
-  display: inline-block;
-}
-#scroll_me.scroll_00 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_01 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -60px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_02 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -120px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_03 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -180px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_04 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -240px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_05 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -300px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_06 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -360px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_07 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -420px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_08 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -480px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_09 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -540px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_10 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -600px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_11 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -660px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_12 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -720px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_13 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -780px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_14 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -840px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_15 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -900px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_16 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -960px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_17 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -1020px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_18 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -1080px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_19 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -1140px;
-  background-repeat: no-repeat;
-}
-#scroll_me.scroll_20 {
-  background-image: url('../img/scroll-sa34175a144.png');
-  background-position: 0 -1200px;
   background-repeat: no-repeat;
 }
 
@@ -529,6 +414,13 @@ section.page {
   opacity: 0;
   margin-right: -160px;
   background: url(../img/bg/bgl14.png) no-repeat 100% 100%;
+}
+
+#scroll_me {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -21px;
 }
 
 .page2 {
@@ -1627,7 +1519,6 @@ section.page {
 .section-big-title h3 {
   position: relative;
   padding: 42px 0;
-  z-index: 10;
 }
 
 .catalog_flag {
@@ -1642,7 +1533,6 @@ section.page {
 }
 .catalog_flag span {
   position: relative;
-  z-index: 12;
 }
 .catalog_flag:before {
   content: " ";
@@ -1666,7 +1556,7 @@ section.page {
   position: absolute;
   right: -23px;
   top: 0;
-  width: 89px;
+  width: 13px;
   bottom: 0;
   background-image: url('../img/ico-sc43433c27a.png');
   background-position: 100% -26px;
