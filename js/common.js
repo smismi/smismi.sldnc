@@ -583,20 +583,27 @@ var SL = {
 			new ScrollScene({
 				triggerElement: "#section-5",
 				duration: $(window).height(),
+				offset: 0
+			})
+				.addTo(SL.controller)
+				.triggerHook(.5)
+				.setTween(new TimelineMax().add([
+					TweenMax.fromTo("#section-4 .wrapper", 1, {y:0}, {y:200}),
+				]))
+			;
+			new ScrollScene({
+				triggerElement: "#section-5",
+				duration: $(window).height(),
 				offset: -200
 			})
 				.addTo(SL.controller)
 				.triggerHook(0)
-				.setTween(new TimelineMax().add([
-					TweenMax.fromTo("#section-4 .wrapper", 1, {y:0}, {y:200}),
-				]))
 				.on("enter", function (event) {
 					SL.setPager(5);
 					SL.initInterActive5();
 				})
 			;
 		}
-
 
 
 	},
@@ -616,7 +623,7 @@ var SL = {
 		$("li", SL.pager).on("click", function(){
 
 			var _target = $(this).data("target");
-			$("body").scrollTo( "#section-" + _target , 400 , function(){
+			$("body").scrollTo( "#section-" + _target , 600 , function(){
 				SL.setPager(_target);
 			});
 

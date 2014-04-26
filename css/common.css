@@ -242,6 +242,7 @@ html.touch .touchonly {
 */
 #content-wrapper, #wrapper {
   height: 100%;
+  min-width: 700px;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
@@ -276,10 +277,6 @@ html.touch .touchonly {
   margin-top: -72px;
   width: 144px;
   height: 144px;
-}
-
-.rotation {
-  background: #ff0;
 }
 
 section.page {
@@ -1277,7 +1274,8 @@ section.page {
 .page5 .wrapper .section-5-header {
   text-align: center;
   color: white;
-  font-size: 73px;
+  font-size: 70px;
+  line-height: 65px;
   width: 70%;
   margin: 0 auto 12px auto;
   letter-spacing: 1px;
@@ -1371,7 +1369,7 @@ section.page {
 }
 .page5 .wrapper .page_item figcaption .description {
   opacity: 0;
-  margin-top: -110px;
+  margin-top: -134px;
 }
 .page5 .wrapper .page_item figcaption .description h2 {
   color: #c7eafc;
@@ -1400,6 +1398,11 @@ section.page {
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
 }
 .page5 .wrapper .page_item figcaption:hover abbr i img {
   margin-left: -20px;
@@ -2051,6 +2054,9 @@ section.page {
   }
   .page5 .wrapper .page_item figcaption .icon.icon3 {
     font-size: 147px;
+  }
+  .page5 .wrapper .page_item figcaption .description {
+    margin-top: -74px;
   }
   .page5 .wrapper .page_item figcaption .description h2 {
     font-size: 35px;

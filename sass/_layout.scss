@@ -4,6 +4,7 @@
 #content-wrapper, #wrapper {
 	height:100%;
 	//min-height: 400px;
+	min-width: 700px;
 	@include transition( all 1s ease-out);
 
 }
@@ -37,23 +38,6 @@
 
 }
 
-.rotation {
-	background: #ff0;
-
-		//-webkit-animation-name: spin;
-		//-webkit-animation-duration: 1000ms;
-		//-webkit-animation-iteration-count: infinite;
-		//-webkit-animation-timing-function: linear;
-		//-moz-animation-name: spin;
-		//-moz-animation-duration: 1000ms;
-		//-moz-animation-iteration-count: infinite;
-		//-moz-animation-timing-function: linear;
-		//-ms-animation-name: spin;
-		//-ms-animation-duration: 1000ms;
-		//-ms-animation-iteration-count: infinite;
-		//-ms-animation-timing-function: linear;
-}
-
 
 section.page {
 	position: relative;
@@ -63,7 +47,6 @@ section.page {
 	position: relative;
 	height:100%;
 	overflow: hidden;
-
 	background-position: 50% 50%;
 
 	.wrapper {
