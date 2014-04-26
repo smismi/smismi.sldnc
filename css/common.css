@@ -3329,37 +3329,6 @@ section.page {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 1000px) {
-  .page2 .wrapper .page_item {
-    display: block;
-    height: 33.333%;
-    max-width: none;
-    position: relative;
-    overflow: hidden;
-    width: auto;
-  }
-  .page2 .wrapper .page_item .icon.icon1 {
-    font-size: 50px;
-  }
-  .page2 .wrapper .page_item .icon.icon1:before {
-    content: "\e607";
-  }
-  .page2 .wrapper .page_item .icon.icon2 {
-    font-size: 110px;
-  }
-  .page2 .wrapper .page_item .icon.icon3 {
-    font-size: 100px;
-  }
-  .page2 .wrapper .page_item h2 {
-    font-size: 19px;
-    padding: 110px 40px;
-  }
-  .page2 .wrapper .page_item h2:before {
-    width: 31px;
-    height: 4.5em;
-    margin-top: -15px;
-  }
-}
 @media screen and (min-width: 1000px) {
   .page5 .wrapper .page_item {
     width: 320px;
@@ -3384,7 +3353,7 @@ section.page {
     width: 440px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1025px) {
   .page5 .wrapper .section-5-header {
     font-size: 43px;
   }
