@@ -24,14 +24,14 @@ var SL = {
 
 
 
-		if(!Modernizr.touch) {
+//		if(!Modernizr.touch) {
 			SL.cropViewport()
 				.test()
 //			SL.unCropViewport();
 				.preloadImage(SL.unCropViewport);
-		} else {
-			SL.unCropViewport();
-		}
+//		} else {
+//			SL.unCropViewport();
+//		}
 
 
 
@@ -214,14 +214,14 @@ var SL = {
 
 				var _i = (i<10)?"0"+i:i;
 
-				SL.cup.addClass("cup_" + _i);
+				SL.cup.removeClass().addClass("cup_" + _i);
 
 				i++;
 
 
 
 		}
-		var timerId = setInterval(changeClass, 30);
+		var timerId = setInterval(changeClass, 1000);
 
 
 

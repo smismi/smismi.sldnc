@@ -2657,6 +2657,12 @@ section.page {
     transform: scale(0.4);
   }
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (min--moz-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (min-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (min-resolution: 192dpi), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (min-resolution: 2dppx) {
+  /* Retina-specific stuff here */
+  #cup {
+    background-size: cover;
+  }
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) {
   #content-wrapper {
     height: auto;
@@ -2891,6 +2897,12 @@ section.page {
     -ms-transform: scale(0.4);
     -o-transform: scale(0.4);
     transform: scale(0.4);
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (min--moz-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (min-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (min-resolution: 192dpi), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (min-resolution: 2dppx) {
+  /* Retina-specific stuff here */
+  #cup {
+    background-size: cover;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) {
@@ -3129,6 +3141,12 @@ section.page {
     transform: scale(0.4);
   }
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (min--moz-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (min-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (min-resolution: 192dpi), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (min-resolution: 2dppx) {
+  /* Retina-specific stuff here */
+  #cup {
+    background-size: cover;
+  }
+}
 @media screen and (max-width: 750px) {
   #content-wrapper {
     height: auto;
@@ -3363,6 +3381,12 @@ section.page {
     -ms-transform: scale(0.4);
     -o-transform: scale(0.4);
     transform: scale(0.4);
+  }
+}
+@media only screen and (max-width: 750px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 750px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 750px) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (max-width: 750px) and (min-device-pixel-ratio: 2), only screen and (max-width: 750px) and (min-resolution: 192dpi), only screen and (max-width: 750px) and (min-resolution: 2dppx) {
+  /* Retina-specific stuff here */
+  #cup {
+    background-size: cover;
   }
 }
 @media screen and (max-width: 2px) {
