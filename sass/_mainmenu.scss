@@ -50,7 +50,7 @@
 			text-decoration: none;
 			font: 16px/1em oksana_text_narrowdemibold, sans-serif;
 			position: relative;
-			@include transition( color .5s ease-out);
+			@include transition( color .2s ease-out);
 
 
 			&.logo {
@@ -199,7 +199,7 @@
 			color: #fff;
 			z-index: 12;
 			overflow: hidden;
-			@include transition( all .5s ease-out);
+			//@include transition( all .5s ease-out);
 
 
 

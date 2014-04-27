@@ -1646,10 +1646,10 @@ section.page {
   text-decoration: none;
   font: 16px/1em oksana_text_narrowdemibold, sans-serif;
   position: relative;
-  -webkit-transition: color 0.5s ease-out;
-  -moz-transition: color 0.5s ease-out;
-  -o-transition: color 0.5s ease-out;
-  transition: color 0.5s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 .header_nav li.header_nav_item a.header_nav_item_link.logo {
   padding: 8px 38px 2px 38px;
@@ -1730,10 +1730,6 @@ section.page {
   color: #fff;
   z-index: 12;
   overflow: hidden;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
 }
 .header_nav li.header_nav_item .header_nav-subnav:before {
   content: " ";

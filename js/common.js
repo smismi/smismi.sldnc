@@ -173,7 +173,7 @@ var SL = {
 		function changeClass(){
 
 
-				if (i == 13) {
+				if (i == 1) {
 //					SL.unCropViewport();
 
 
@@ -292,7 +292,7 @@ var SL = {
 			$(".section-1-bg-2").animate({left: "10%", opacity: 1}, 800, "easeOutCirc");
 			$(".section-1-bg-3").animate({right: "10%", opacity: 1, marginRight: "-150px"}, 800, "easeOutCirc", function(){
 
-//				$(".section-1-bg-25").animate({opacity:1}, 1000);
+				$(".section-1-bg-25").animate({opacity:1}, 1000);
 
 
 				$(".header").animate({top: 0, opacity: 1}, 600);
