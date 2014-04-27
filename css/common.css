@@ -125,16 +125,16 @@ html.touch .touchonly {
 
 #cup {
   position: absolute;
-  bottom: 10px;
+  bottom: 14px;
   left: 50%;
   width: 630px;
-  height: 460px;
+  height: 480px;
   display: inline-block;
   vertical-align: middle;
-  background-image: url("../img/cup2-s8eacc9951c.png");
+  background-image: url("../img/cup2-s8eacc9951c_opt.png");
   background-position: 0 -11040px;
   background-repeat: no-repeat;
-  margin-left: -324px;
+  margin-left: -321px;
 }
 #cup.cup_00 {
   background-position: 0 -14500px;
@@ -434,9 +434,9 @@ section.page {
 
 #scroll_me {
   position: absolute;
-  bottom: 20px;
+  bottom: 12px;
   left: 50%;
-  margin-left: -21px;
+  margin-left: -9px;
 }
 
 .page2 {
@@ -1856,7 +1856,6 @@ section.page {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAP9JREFUeNqcks0KAVEYhg9jQ0qUha07GKVRIku5Dws34CcWsqEZe3egZGdFWUruxMIdSI736FWfYcbPV09nzjvfeeZ0zkS01krWMdVUvsqCA59L4KRCKqrCKwc2IE82zP4SZsAS2CKzmWV+FcbBCpQ57xLFbMWel4oFfGQHCkLmivcTSk1PEVwDd4gLSWDYC9mIMk1cZoo9pjfxVghZGsMaOIymYEjRozSzKecO16SfhJAlMcxBhbnZSdsnk9K2OIYK1ybvQsgsjAtQZ4PHc9Mhf4Bmj8d5nQ7LXMoW1PhiDPofZFLaARfQAw3jMsIqOIMZGHwpk9IBL6ZlXDcBBgDLsjuQz4X4OQAAAABJRU5ErkJggg==");
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: transparent;
   cursor: pointer;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;

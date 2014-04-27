@@ -16,16 +16,16 @@ $cupurl: sprite-url($cup);
 #cup {
 
 	position: absolute;
-	bottom: 10px;
+	bottom: 14px;
 	left: 50%;
 	width: 630px;
-	height: 460px;
+	height: 480px;
 	display: inline-block;
 	vertical-align: middle;
-	background-image: url('../img/cup2-s8eacc9951c.png');
+	background-image: url('../img/cup2-s8eacc9951c_opt.png');
 	background-position: 0 -11040px;
 	background-repeat: no-repeat;
-	margin-left: -324px;
+	margin-left: -321px;
 
 	@for $i from 0 through 29 {
 
