@@ -25,13 +25,14 @@ var SL = {
 
 
 		if(!Modernizr.touch) {
-
-		}
-//		SL.runScrollAnimation();
-		SL.cropViewport()
-			.test()
+			SL.cropViewport()
+				.test()
 //			SL.unCropViewport();
-		.preloadImage(SL.unCropViewport);
+				.preloadImage(SL.unCropViewport);
+		} else {
+			SL.unCropViewport();
+		}
+
 
 
 
@@ -403,6 +404,7 @@ var SL = {
 
 
 
+
 	},
 	initParallax3: function() {
 		console.log("?. initParallax3   ---    init");
@@ -650,6 +652,18 @@ var SL = {
 
 		})
 
+		$(".page_item", "#section-2").on("click", function(){
+
+			var _target = $(this).data("target");
+			$("body").scrollTo( "#section-" + _target , 600 , function(){
+				SL.setPager(_target);
+			});
+
+
+		})
+
+
+
 
 	},
 	initScrollTop: function() {
@@ -740,7 +754,7 @@ var SL = {
 //		$(".page_item_caption i, .page_item_caption em, .page_item_caption .description").css({opacity:1});
 
 
-		setTimeout(runFirstPage, 1000);
+		setTimeout(runFirstPage, 300);
 //
 //
 		function runFirstPage() {
@@ -752,12 +766,13 @@ var SL = {
 		function runSecondPage() {
 			$("#section-5-page-2 abbr").animate({opacity:1,  top: 0}, 300, function() {
 				runThirdPage();
+				runItAll();
 			});
 		}
 
 		function runThirdPage() {
 			$("#section-5-page-3 abbr").animate({opacity:1,  top: 0}, 300, function() {
-				runItAll();
+
 			});
 		}
 

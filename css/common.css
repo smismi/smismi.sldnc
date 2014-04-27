@@ -3553,7 +3553,7 @@ section.page {
     transform: scale(0.4);
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 750px) {
   .section-big-title {
     margin: -200px auto 0 auto;
   }
