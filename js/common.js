@@ -221,7 +221,7 @@ var SL = {
 
 
 		}
-		var timerId = setInterval(changeClass, 1000);
+		var timerId = setInterval(changeClass, 30);
 
 
 
