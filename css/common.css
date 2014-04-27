@@ -1644,7 +1644,7 @@ section.page {
   color: #fff;
 }
 .header_nav li.header_nav_item a.header_nav_item_link.item_menu:before {
-  content: "\e60c";
+  content: "\e666";
 }
 .header_nav li.header_nav_item a.header_nav_item_link:after {
   content: " ";
@@ -1736,15 +1736,16 @@ section.page {
   height: 100%;
 }
 .header_nav li.header_nav_item .header_nav-subnav li.header_nav-subnav_block h1 {
-  margin: 35px;
+  margin: 45px 0 25px 35px;
   font-family: oksana_text_narrowbold;
 }
 .header_nav li.header_nav_item .header_nav-subnav li.header_nav-subnav_block .subnav_block_list {
   margin-bottom: 40px;
+  font: italic 15px/1em oksana_text_narrowdemibold, sans-serif;
 }
 .header_nav li.header_nav_item .header_nav-subnav li.header_nav-subnav_block .subnav_block_list li.subnav_block-item a {
   display: block;
-  padding: 8px 35px;
+  padding: 5px 35px;
   color: #fff;
   text-decoration: none;
 }
