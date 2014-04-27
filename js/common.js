@@ -24,20 +24,20 @@ var SL = {
 
 
 
-//		if(!Modernizr.touch) {
-			SL.cropViewport()
-				.test()
+
+		SL.cropViewport()
+			.test()
 //			SL.unCropViewport();
-				.preloadImage(SL.unCropViewport);
-//		} else {
-//			SL.unCropViewport();
-//		}
+			.preloadImage(SL.unCropViewport);
 
 
 
 
 
 		SL.initHeaderMenu();
+
+
+
 
 
 
@@ -106,8 +106,7 @@ var SL = {
 					console.log("4. preloadImage   ---    done");
 					$(document).off('imgloaded');
 
-
-					if(callback) setTimeout(callback, SL.globals.cupDelay)
+					if(callback) callback()
 
 
 				})
@@ -165,6 +164,12 @@ var SL = {
 	},
 	runCupAnimation: function() {
 
+		$("<img/>")
+			.load(function() { console.log("image loaded correctly"); })
+			.error(function() { console.log("error loading image"); })
+			.attr("src", $("#strangeways").attr("src"))
+		;
+
 
 		SL.cup = $("<div id='cup'></div>").addClass("cup_00").appendTo($("#section-1 .wrapper"));
 
@@ -197,11 +202,6 @@ var SL = {
 
 					clearInterval(timerId);
 
-					$(".section-1-bg-4").show();
-// 					SL.cup.fadeOut(1000, function(){
-
-					SL.cup.remove();
-//					})
 
 
 
@@ -221,7 +221,7 @@ var SL = {
 
 
 		}
-		var timerId = setInterval(changeClass, 30);
+		var timerId = setInterval(changeClass, 25);
 
 
 
@@ -283,6 +283,10 @@ var SL = {
 
 	runScene1: function() {
 
+
+		$(".section-1-bg-4").show();
+
+		SL.cup.remove();
 
 
 			console.log("6. runScene1   ---    run");
