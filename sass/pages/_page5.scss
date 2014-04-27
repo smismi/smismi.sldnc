@@ -25,13 +25,13 @@
 		vertical-align: middle;
 
 		.section-5-header {
-			text-align: center;
-			color: white;
-			font-size: 70px;
-			line-height: 65px;
-			width: 70%;
-			margin: 0 auto 12px auto;
-			letter-spacing: 1px;
+			//text-align: center;
+			//color: white;
+			//font-size: 70px;
+			//line-height: 65px;
+			//width: 70%;
+			//margin: 0 auto 12px auto;
+			//letter-spacing: 1px;
 
 			@if $dev_mode {
 				border: 2px dotted purple;
@@ -134,7 +134,7 @@
 
 					&.icon3 {
 						color: #fece7b;
-						font-size: 177px;
+						font-size: 167px;
 
 						&:before {
 							content: "\e601";
@@ -192,7 +192,7 @@
 
 
 							&.icon3 {
-								font-size: 203px;
+								font-size: 183px;
 
 							}
 						}

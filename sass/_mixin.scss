@@ -1,3 +1,4 @@
+@import "pages/commonres-mobile";
 @import "pages/page2res-mobile";
 @import "pages/page5res-mobile";
 
@@ -56,8 +57,18 @@
 
 
 
+
+	//slide2
+
+	@include commonres-mobile;
+
+
+
+
+
+
 	.section-big-title {
-		margin: -200px auto 0 auto;
+		margin: -170px auto 0 auto;
 
 		h1 {
 			font-size:45px;
@@ -77,6 +88,8 @@
 	}
 	#mobilemenu {
 		display: block;
+		max-height: 700px;
+		overflow: auto;
 		@include transition( all .5s ease-out);
 		li.header_nav_item {
 			display: block;

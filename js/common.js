@@ -166,7 +166,7 @@ var SL = {
 	runCupAnimation: function() {
 
 
-		SL.cup = $("<div id='cup'></div>").addClass("cup_00").appendTo($("body"));
+		SL.cup = $("<div id='cup'></div>").addClass("cup_00").appendTo($("#section-1 .wrapper"));
 
 
 		var i = 0; // current iteration value.

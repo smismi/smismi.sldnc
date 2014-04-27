@@ -1,0 +1,43 @@
+@mixin commonres-mobile() {
+
+	//all
+
+	#content-wrapper {
+
+		@if $dev_mode {
+			border: 3px solid blue;
+		}
+
+		height: auto;
+
+
+
+		#wrapper {
+			@if $dev_mode {
+				border: 3px solid yellow;
+			}
+
+			height: auto;
+
+		}
+	}
+
+
+	.page {
+
+		@if $dev_mode {
+			border: 3px solid red;
+		}
+
+		height: auto;
+
+		.wrapper {
+			position: relative;
+			height: 680px;
+			width: 100%;
+		}
+	}
+
+
+
+}

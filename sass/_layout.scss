@@ -88,9 +88,9 @@ section.page {
 .section-big-title {
 	position: relative;
 	top: 50%;
-	margin: -100px auto 0 auto;
+	margin: -140px auto 0 auto;
 	text-align: center;
-	padding: 0 20%;
+	padding: 0 0;
 	font-family: oksana_text_narrowbold;
 	max-width: 720px;
 	color: $brown;
@@ -123,6 +123,12 @@ section.page {
 	//	}
 	//
 	//}
+
+	&.section-5-header {
+		position: static;
+		margin-top: 0;
+		color: #fff;
+	}
 
 
 }

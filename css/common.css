@@ -1290,15 +1290,6 @@ section.page {
   position: static;
   vertical-align: middle;
 }
-.page5 .wrapper .section-5-header {
-  text-align: center;
-  color: white;
-  font-size: 70px;
-  line-height: 65px;
-  width: 70%;
-  margin: 0 auto 12px auto;
-  letter-spacing: 1px;
-}
 .page5 .wrapper .headermark {
   font-size: 27px;
 }
@@ -1361,7 +1352,7 @@ section.page {
 }
 .page5 .wrapper .page_item figcaption .icon.icon3 {
   color: #fece7b;
-  font-size: 177px;
+  font-size: 167px;
 }
 .page5 .wrapper .page_item figcaption .icon.icon3:before {
   content: "\e601";
@@ -1405,7 +1396,7 @@ section.page {
   font-size: 140px;
 }
 .page5 .wrapper .page_item figcaption:hover abbr .icon.icon3 {
-  font-size: 203px;
+  font-size: 183px;
 }
 .page5 .wrapper .page_item figcaption:hover abbr em {
   opacity: 1;
@@ -1518,9 +1509,9 @@ section.page {
 .section-big-title {
   position: relative;
   top: 50%;
-  margin: -100px auto 0 auto;
+  margin: -140px auto 0 auto;
   text-align: center;
-  padding: 0 20%;
+  padding: 0 0;
   font-family: oksana_text_narrowbold;
   max-width: 720px;
   color: #442111;
@@ -1541,6 +1532,11 @@ section.page {
 .section-big-title h3 {
   position: relative;
   padding: 42px 0;
+}
+.section-big-title.section-5-header {
+  position: static;
+  margin-top: 0;
+  color: #fff;
 }
 
 .catalog_flag {
@@ -2057,7 +2053,7 @@ section.page {
     font-size: 80px;
   }
   .page5 .wrapper .page_item figcaption .icon.icon3 {
-    font-size: 147px;
+    font-size: 127px;
   }
   .page5 .wrapper .page_item figcaption .description h2 {
     font-size: 35px;
@@ -2092,7 +2088,7 @@ section.page {
     font-size: 80px;
   }
   .page5 .wrapper .page_item figcaption .icon.icon3 {
-    font-size: 147px;
+    font-size: 127px;
   }
   .page5 .wrapper .page_item figcaption .description {
     margin-top: -74px;
@@ -2426,8 +2422,24 @@ section.page {
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) {
+  #content-wrapper {
+    height: auto;
+  }
+  #content-wrapper #wrapper {
+    height: auto;
+  }
+
+  .page {
+    height: auto;
+  }
+  .page .wrapper {
+    position: relative;
+    height: 680px;
+    width: 100%;
+  }
+
   .section-big-title {
-    margin: -200px auto 0 auto;
+    margin: -170px auto 0 auto;
   }
   .section-big-title h1 {
     font-size: 45px;
@@ -2439,6 +2451,8 @@ section.page {
 
   #mobilemenu {
     display: block;
+    max-height: 700px;
+    overflow: auto;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
@@ -2583,12 +2597,12 @@ section.page {
   .page5 {
     background: #ff9;
   }
-  .page5 .wrapper .section-5-header {
-    font-size: 33px;
-    width: 100%;
+  .page5 .wrapper {
+    padding: 100px 0;
   }
   .page5 .wrapper .page_item {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     width: 240px;
     vertical-align: top;
   }
@@ -2644,8 +2658,24 @@ section.page {
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) {
+  #content-wrapper {
+    height: auto;
+  }
+  #content-wrapper #wrapper {
+    height: auto;
+  }
+
+  .page {
+    height: auto;
+  }
+  .page .wrapper {
+    position: relative;
+    height: 680px;
+    width: 100%;
+  }
+
   .section-big-title {
-    margin: -200px auto 0 auto;
+    margin: -170px auto 0 auto;
   }
   .section-big-title h1 {
     font-size: 45px;
@@ -2657,6 +2687,8 @@ section.page {
 
   #mobilemenu {
     display: block;
+    max-height: 700px;
+    overflow: auto;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
@@ -2801,12 +2833,12 @@ section.page {
   .page5 {
     background: #ff9;
   }
-  .page5 .wrapper .section-5-header {
-    font-size: 33px;
-    width: 100%;
+  .page5 .wrapper {
+    padding: 100px 0;
   }
   .page5 .wrapper .page_item {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     width: 240px;
     vertical-align: top;
   }
@@ -2862,8 +2894,24 @@ section.page {
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) {
+  #content-wrapper {
+    height: auto;
+  }
+  #content-wrapper #wrapper {
+    height: auto;
+  }
+
+  .page {
+    height: auto;
+  }
+  .page .wrapper {
+    position: relative;
+    height: 680px;
+    width: 100%;
+  }
+
   .section-big-title {
-    margin: -200px auto 0 auto;
+    margin: -170px auto 0 auto;
   }
   .section-big-title h1 {
     font-size: 45px;
@@ -2875,6 +2923,8 @@ section.page {
 
   #mobilemenu {
     display: block;
+    max-height: 700px;
+    overflow: auto;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
@@ -3019,12 +3069,12 @@ section.page {
   .page5 {
     background: #ff9;
   }
-  .page5 .wrapper .section-5-header {
-    font-size: 33px;
-    width: 100%;
+  .page5 .wrapper {
+    padding: 100px 0;
   }
   .page5 .wrapper .page_item {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     width: 240px;
     vertical-align: top;
   }
@@ -3080,8 +3130,24 @@ section.page {
   }
 }
 @media screen and (max-width: 750px) {
+  #content-wrapper {
+    height: auto;
+  }
+  #content-wrapper #wrapper {
+    height: auto;
+  }
+
+  .page {
+    height: auto;
+  }
+  .page .wrapper {
+    position: relative;
+    height: 680px;
+    width: 100%;
+  }
+
   .section-big-title {
-    margin: -200px auto 0 auto;
+    margin: -170px auto 0 auto;
   }
   .section-big-title h1 {
     font-size: 45px;
@@ -3093,6 +3159,8 @@ section.page {
 
   #mobilemenu {
     display: block;
+    max-height: 700px;
+    overflow: auto;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
@@ -3237,12 +3305,12 @@ section.page {
   .page5 {
     background: #ff9;
   }
-  .page5 .wrapper .section-5-header {
-    font-size: 33px;
-    width: 100%;
+  .page5 .wrapper {
+    padding: 100px 0;
   }
   .page5 .wrapper .page_item {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     width: 240px;
     vertical-align: top;
   }

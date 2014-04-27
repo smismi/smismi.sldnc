@@ -17,11 +17,13 @@
 			//position: static;
 			//vertical-align: middle;
 
+			padding: 100px 0;
+
 			.section-5-header {
 				//text-align: center;
 				//color: white;
-				font-size: 33px;
-				width: 100%;
+				//font-size: 33px;
+				//width: 100%;
 				//margin: 0 auto 12px auto;
 				//letter-spacing: 1px;
 				//border: 2px dotted purple;
@@ -43,7 +45,8 @@
 			}
 
 			.page_item {
-				display: inline-block;
+				display: block;
+				margin: 0 auto;
 				width: $figurewidth;
 				vertical-align: top;
 
