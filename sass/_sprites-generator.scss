@@ -1,4 +1,4 @@
-$cup: sprite-map("cup/*.png", $spacing: 0);
+$cup: sprite-map("cup2/*.png", $spacing: 0);
 $cupurl: sprite-url($cup);
 @mixin cup-file{
 	background-image: $cupurl;
@@ -22,12 +22,12 @@ $cupurl: sprite-url($cup);
 	height: 460px;
 	display: inline-block;
 	vertical-align: middle;
-	background-image: url('../img/cup-s94b0c5e609.png');
+	background-image: url('../img/cup2-s8eacc9951c.png');
 	background-position: 0 -11040px;
 	background-repeat: no-repeat;
-	margin-left: -305px;
+	margin-left: -324px;
 
-	@for $i from 0 through 24 {
+	@for $i from 0 through 29 {
 
 		@if $i < 10 {
 			$i : "0" + $i

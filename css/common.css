@@ -131,109 +131,129 @@ html.touch .touchonly {
   height: 460px;
   display: inline-block;
   vertical-align: middle;
-  background-image: url("../img/cup-s94b0c5e609.png");
+  background-image: url("../img/cup2-s8eacc9951c.png");
   background-position: 0 -11040px;
   background-repeat: no-repeat;
-  margin-left: -305px;
+  margin-left: -324px;
 }
 #cup.cup_00 {
-  background-position: 0 -11040px;
+  background-position: 0 -14500px;
   background-repeat: no-repeat;
 }
 #cup.cup_01 {
-  background-position: 0 -10580px;
+  background-position: 0 -14000px;
   background-repeat: no-repeat;
 }
 #cup.cup_02 {
-  background-position: 0 -10120px;
+  background-position: 0 -13500px;
   background-repeat: no-repeat;
 }
 #cup.cup_03 {
-  background-position: 0 -9660px;
+  background-position: 0 -13000px;
   background-repeat: no-repeat;
 }
 #cup.cup_04 {
-  background-position: 0 -9200px;
+  background-position: 0 -12500px;
   background-repeat: no-repeat;
 }
 #cup.cup_05 {
-  background-position: 0 -8740px;
+  background-position: 0 -12000px;
   background-repeat: no-repeat;
 }
 #cup.cup_06 {
-  background-position: 0 -8280px;
+  background-position: 0 -11500px;
   background-repeat: no-repeat;
 }
 #cup.cup_07 {
-  background-position: 0 -7820px;
+  background-position: 0 -11000px;
   background-repeat: no-repeat;
 }
 #cup.cup_08 {
-  background-position: 0 -7360px;
+  background-position: 0 -10500px;
   background-repeat: no-repeat;
 }
 #cup.cup_09 {
-  background-position: 0 -6900px;
+  background-position: 0 -10000px;
   background-repeat: no-repeat;
 }
 #cup.cup_10 {
-  background-position: 0 -6440px;
+  background-position: 0 -9500px;
   background-repeat: no-repeat;
 }
 #cup.cup_11 {
-  background-position: 0 -5980px;
+  background-position: 0 -5000px;
   background-repeat: no-repeat;
 }
 #cup.cup_12 {
-  background-position: 0 -4600px;
+  background-position: 0 -3500px;
   background-repeat: no-repeat;
 }
 #cup.cup_13 {
-  background-position: 0 -3680px;
+  background-position: 0 -2000px;
   background-repeat: no-repeat;
 }
 #cup.cup_14 {
-  background-position: 0 -3220px;
+  background-position: 0 -1000px;
   background-repeat: no-repeat;
 }
 #cup.cup_15 {
-  background-position: 0 -4140px;
+  background-position: 0 -1500px;
   background-repeat: no-repeat;
 }
 #cup.cup_16 {
-  background-position: 0 -5520px;
+  background-position: 0 0;
   background-repeat: no-repeat;
 }
 #cup.cup_17 {
-  background-position: 0 -5060px;
+  background-position: 0 -500px;
   background-repeat: no-repeat;
 }
 #cup.cup_18 {
-  background-position: 0 -1840px;
+  background-position: 0 -2500px;
   background-repeat: no-repeat;
 }
 #cup.cup_19 {
-  background-position: 0 -2300px;
+  background-position: 0 -3000px;
   background-repeat: no-repeat;
 }
 #cup.cup_20 {
-  background-position: 0 -2760px;
+  background-position: 0 -4000px;
   background-repeat: no-repeat;
 }
 #cup.cup_21 {
-  background-position: 0 -1380px;
+  background-position: 0 -4500px;
   background-repeat: no-repeat;
 }
 #cup.cup_22 {
-  background-position: 0 -920px;
+  background-position: 0 -5500px;
   background-repeat: no-repeat;
 }
 #cup.cup_23 {
-  background-position: 0 -460px;
+  background-position: 0 -6000px;
   background-repeat: no-repeat;
 }
 #cup.cup_24 {
-  background-position: 0 0;
+  background-position: 0 -6500px;
+  background-repeat: no-repeat;
+}
+#cup.cup_25 {
+  background-position: 0 -7000px;
+  background-repeat: no-repeat;
+}
+#cup.cup_26 {
+  background-position: 0 -7500px;
+  background-repeat: no-repeat;
+}
+#cup.cup_27 {
+  background-position: 0 -8000px;
+  background-repeat: no-repeat;
+}
+#cup.cup_28 {
+  background-position: 0 -8500px;
+  background-repeat: no-repeat;
+}
+#cup.cup_29 {
+  background-position: 0 -9000px;
   background-repeat: no-repeat;
 }
 

@@ -192,14 +192,14 @@ var SL = {
 
 				}
 
-				if (i == 25) {
+				if (i == 30) {
 
 					clearInterval(timerId);
 
 					$(".section-1-bg-4").show();
-					SL.cup.fadeOut(1000, function(){
-						$(this).remove();
-					})
+//					SL.cup.fadeOut(1000, function(){
+//						$(this).remove();
+//					})
 
 
 
