@@ -67,7 +67,7 @@
 				color: #fff;
 
 				&:before {
-					content: "\e666";
+					content: "\e60c";
 				}
 			}
 
@@ -178,6 +178,7 @@
 
 
 		.header_nav-subnav {
+
 			&:before {
 				content: " ";
 				position: absolute;
@@ -328,6 +329,7 @@
 
 		.header_nav-subnav {
 			display: none;
+			border-bottom: 1px solid #f387b2;
 			position: relative;
 			top: 0;
 			left: none;
@@ -355,8 +357,9 @@
 	}
 
 	.subnav_list {
+
 		.subnav_item {
-			padding: 30px 40px;
+
 			text-align: left;
 			background: $carmine;
 			border-bottom: 1px solid #610029;
@@ -368,6 +371,9 @@
 			}
 
 			a {
+
+				display: block;
+				padding: 30px 40px;
 				font: 16px/1em oksana_text_narrowbold, sans-serif;
 				text-decoration: none;
 				color: #fff;

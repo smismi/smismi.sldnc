@@ -1644,7 +1644,7 @@ section.page {
   color: #fff;
 }
 .header_nav li.header_nav_item a.header_nav_item_link.item_menu:before {
-  content: "\e666";
+  content: "\e60c";
 }
 .header_nav li.header_nav_item a.header_nav_item_link:after {
   content: " ";
@@ -1794,6 +1794,7 @@ section.page {
 }
 .header_nav .header_nav_item_m .header_nav-subnav {
   display: none;
+  border-bottom: 1px solid #f387b2;
   position: relative;
   top: 0;
   left: none;
@@ -1810,7 +1811,6 @@ section.page {
   border-bottom: 1px solid #f387b2;
 }
 .header_nav .subnav_list .subnav_item {
-  padding: 30px 40px;
   text-align: left;
   background: #870037;
   border-bottom: 1px solid #610029;
@@ -1819,6 +1819,8 @@ section.page {
   background: #e70c66;
 }
 .header_nav .subnav_list .subnav_item a {
+  display: block;
+  padding: 30px 40px;
   font: 16px/1em oksana_text_narrowbold, sans-serif;
   text-decoration: none;
   color: #fff;
