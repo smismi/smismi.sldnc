@@ -73,6 +73,11 @@
 							padding-bottom: $_p_b;
 							font-size: $_fs + px;
 
+							&:after {
+								top: 26 - $i * 3.5 + px;
+								height: 22%;
+							}
+
 							&.logo {
 								padding-top: $_p_logo + px;
 								padding-bottom: $_p_logo + px;

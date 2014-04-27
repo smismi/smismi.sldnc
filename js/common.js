@@ -18,6 +18,7 @@ var SL = {
 		SL.mainmenu = $("#header");
 		SL.mobilemenu = $("#mobilemenu");
 		SL.contentWrapper = $('#content-wrapper');
+		SL.scrollTop = $('#back_to_top');
 
 
 
@@ -175,7 +176,17 @@ var SL = {
 				if (i == 13) {
 //					SL.unCropViewport();
 
-					SL.contentWrapper.removeClass('erighwqeig');
+
+
+
+					SL.overlay.animate({opacity: 0}, 200, function(){
+						SL.pagePreloader.fadeOut(100, function(){
+							$(this).remove();
+						}).remove();
+						$(this).remove();
+
+					});
+
 
 
 
@@ -247,19 +258,16 @@ var SL = {
 	},
 	unCropViewport: function() {
 
+
+
+
 		console.log("5. unCropViewport   ---    satart");
 
 		$(window).scrollTop(0);
 
 
- 		SL.overlay.animate({opacity: 0}, 200, function(){
-		    SL.pagePreloader.fadeOut(100, function(){
-			    $(this).remove();
-		    }).remove();
-		    SL.runCupAnimation();
-			$(this).remove();
+		SL.runCupAnimation();
 
-	    });
 
 //		$("#content-wrapper").animate({opacity: 1, overflow: "auto"}, 1000, function() {
 
@@ -274,20 +282,20 @@ var SL = {
 	runScene1: function() {
 
 
-		$(".header").animate({top: 0, opacity: 1}, 600);
-		$(".pager").animate({right: 0, opacity: 1}, 600 , function(){
-
-
 
 			console.log("6. runScene1   ---    run");
 
 
 
 
-			$(".section-1-bg-2").animate({left: "10%", opacity: 1}, 300, "easeOutCirc");
-			$(".section-1-bg-3").animate({right: "10%", opacity: 1, marginRight: "-150px"}, 300, "easeOutCirc", function(){
+			$(".section-1-bg-2").animate({left: "10%", opacity: 1}, 1300, "easeOutCirc");
+			$(".section-1-bg-3").animate({right: "10%", opacity: 1, marginRight: "-150px"}, 1300, "easeOutCirc", function(){
 
-				$(".section-1-bg-25").animate({opacity:1}, 700, "easeOutCirc");
+				$(".section-1-bg-25").animate({opacity:1}, 1500);
+
+
+				$(".header").animate({top: 0, opacity: 1}, 600);
+				$(".pager").animate({right: 0, opacity: 1}, 600 , function(){
 
 
 			});
@@ -295,6 +303,7 @@ var SL = {
 			SL.initScrollMagik();
 
 			SL.initPager();
+			SL.initScrollTop();
 
 
 			SL.initParallax1();
@@ -617,6 +626,13 @@ var SL = {
 		console.log("active_" + index);
 
 
+		if (index === 1) {
+			SL.scrollTop.css({bottom: -60});
+		} else {
+			SL.scrollTop.css({bottom: 0});
+		}
+
+
 	},
 	initPager: function() {
 
@@ -630,6 +646,18 @@ var SL = {
 
 		})
 
+
+	},
+	initScrollTop: function() {
+
+		SL.scrollTop.on("click", function(){
+
+			$("body").scrollTo( "#section-1" , 600 , function(){
+				SL.setPager(1);
+			});
+
+
+		})
 
 	},
 	initHeaderMenu: function() {

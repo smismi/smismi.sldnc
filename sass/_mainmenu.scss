@@ -54,7 +54,7 @@
 
 
 			&.logo {
-				padding: 5px 38px;
+				padding: 8px 38px 2px 38px;
 				font-size: 38px;
 				color: $cherry;
 
@@ -76,7 +76,7 @@
 				display: block;
 				position: absolute;
 				right: 0;
-				top: 57%;
+				top: 26px;
 				height: 22%;
 				border-right: 1px solid $cherry;
 			}
@@ -374,9 +374,25 @@
 
 
 
+}
 
 
 
+
+
+
+#back_to_top{
+	position: fixed;
+	right: 0; bottom: -60px;
+	width: 53px;
+	height: 51px;
+	background-color: rgba(0,0,0,0.05);
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAP9JREFUeNqcks0KAVEYhg9jQ0qUha07GKVRIku5Dws34CcWsqEZe3egZGdFWUruxMIdSI736FWfYcbPV09nzjvfeeZ0zkS01krWMdVUvsqCA59L4KRCKqrCKwc2IE82zP4SZsAS2CKzmWV+FcbBCpQ57xLFbMWel4oFfGQHCkLmivcTSk1PEVwDd4gLSWDYC9mIMk1cZoo9pjfxVghZGsMaOIymYEjRozSzKecO16SfhJAlMcxBhbnZSdsnk9K2OIYK1ybvQsgsjAtQZ4PHc9Mhf4Bmj8d5nQ7LXMoW1PhiDPofZFLaARfQAw3jMsIqOIMZGHwpk9IBL6ZlXDcBBgDLsjuQz4X4OQAAAABJRU5ErkJggg==');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	cursor: pointer;
+	@include transition( all .4s ease-out);
 
 }
 
