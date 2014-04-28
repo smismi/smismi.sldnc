@@ -127,11 +127,11 @@ html.touch .touchonly {
   position: absolute;
   bottom: 14px;
   left: 50%;
-  width: 630px;
   height: 480px;
+  width: 630px;
   display: inline-block;
   vertical-align: middle;
-  background-image: url("../img/cup2-s8eacc9951c_opt.png");
+  background-image: url("../img/cup2-s4ffb9dcb7c_opt.png");
   background-position: 0 -11040px;
   background-repeat: no-repeat;
   margin-left: -321px;
@@ -181,51 +181,51 @@ html.touch .touchonly {
   background-repeat: no-repeat;
 }
 #cup.cup_11 {
-  background-position: 0 -5000px;
+  background-position: 0 -9000px;
   background-repeat: no-repeat;
 }
 #cup.cup_12 {
-  background-position: 0 -3500px;
+  background-position: 0 -8000px;
   background-repeat: no-repeat;
 }
 #cup.cup_13 {
-  background-position: 0 -2000px;
-  background-repeat: no-repeat;
-}
-#cup.cup_14 {
-  background-position: 0 -1000px;
-  background-repeat: no-repeat;
-}
-#cup.cup_15 {
   background-position: 0 -1500px;
   background-repeat: no-repeat;
 }
-#cup.cup_16 {
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-#cup.cup_17 {
+#cup.cup_14 {
   background-position: 0 -500px;
   background-repeat: no-repeat;
 }
+#cup.cup_15 {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+#cup.cup_16 {
+  background-position: 0 -1000px;
+  background-repeat: no-repeat;
+}
+#cup.cup_17 {
+  background-position: 0 -2000px;
+  background-repeat: no-repeat;
+}
 #cup.cup_18 {
-  background-position: 0 -2500px;
+  background-position: 0 -5500px;
   background-repeat: no-repeat;
 }
 #cup.cup_19 {
-  background-position: 0 -3000px;
+  background-position: 0 -6500px;
   background-repeat: no-repeat;
 }
 #cup.cup_20 {
-  background-position: 0 -4000px;
+  background-position: 0 -7000px;
   background-repeat: no-repeat;
 }
 #cup.cup_21 {
-  background-position: 0 -4500px;
+  background-position: 0 -8500px;
   background-repeat: no-repeat;
 }
 #cup.cup_22 {
-  background-position: 0 -5500px;
+  background-position: 0 -7500px;
   background-repeat: no-repeat;
 }
 #cup.cup_23 {
@@ -233,27 +233,27 @@ html.touch .touchonly {
   background-repeat: no-repeat;
 }
 #cup.cup_24 {
-  background-position: 0 -6500px;
+  background-position: 0 -3000px;
   background-repeat: no-repeat;
 }
 #cup.cup_25 {
-  background-position: 0 -7000px;
+  background-position: 0 -4500px;
   background-repeat: no-repeat;
 }
 #cup.cup_26 {
-  background-position: 0 -7500px;
+  background-position: 0 -3500px;
   background-repeat: no-repeat;
 }
 #cup.cup_27 {
-  background-position: 0 -8000px;
+  background-position: 0 -5000px;
   background-repeat: no-repeat;
 }
 #cup.cup_28 {
-  background-position: 0 -8500px;
+  background-position: 0 -4000px;
   background-repeat: no-repeat;
 }
 #cup.cup_29 {
-  background-position: 0 -9000px;
+  background-position: 0 -2500px;
   background-repeat: no-repeat;
 }
 
@@ -473,7 +473,6 @@ section.page {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
