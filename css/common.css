@@ -2438,6 +2438,10 @@ section.page {
     width: 100%;
   }
 
+  .pager {
+    display: none;
+  }
+
   .section-big-title {
     margin: -170px auto 0 auto;
   }
@@ -2678,6 +2682,10 @@ section.page {
     position: relative;
     height: 680px;
     width: 100%;
+  }
+
+  .pager {
+    display: none;
   }
 
   .section-big-title {
@@ -2922,6 +2930,10 @@ section.page {
     width: 100%;
   }
 
+  .pager {
+    display: none;
+  }
+
   .section-big-title {
     margin: -170px auto 0 auto;
   }
@@ -3162,6 +3174,10 @@ section.page {
     position: relative;
     height: 680px;
     width: 100%;
+  }
+
+  .pager {
+    display: none;
   }
 
   .section-big-title {
