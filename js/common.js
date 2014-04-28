@@ -106,7 +106,7 @@ var SL = {
 					console.log("4. preloadImage   ---    done");
 					$(document).off('imgloaded');
 
-					if(callback) callback()
+					if(callback) setTimeout(callback, SL.globals.cupDelay)
 
 
 				})
@@ -345,6 +345,29 @@ var SL = {
 
 
 	},
+	initParallax1bg: function() {
+
+		new ScrollScene({
+			triggerElement: "#section-2",
+			duration: $(window).height(),
+			offset: 0
+		})
+			.addTo(SL.controller)
+			.triggerHook(1)
+			.setTween(new TimelineMax().add([
+				TweenMax.fromTo("#section-1 .wrapper", 1, {y:0}, {y:200}),
+				TweenMax.fromTo("#section-1 .section-1-bg-25", 1, {y:0}, {y:150}),
+//				TweenMax.fromTo("#section-1 .section-1-bg-11", 1, {y:0}, {y:60}),
+//				TweenMax.fromTo("#section-1 .section-1-bg-12", 1, {y:0}, {y:60}),
+//				TweenMax.fromTo("#section-1 .section-1-bg-13", 1, {y:0}, {y:20}),
+//				TweenMax.fromTo("#section-1 .section-1-bg-14", 1, {y:0}, {y:20}),
+			]))
+		;
+
+
+	},
+
+
 	initParallax1: function() {
 		console.log("?. initParallax1   ---    init");
 
