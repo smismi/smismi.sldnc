@@ -125,7 +125,7 @@ html.touch .touchonly {
 
 #cup {
   position: absolute;
-  bottom: 14px;
+  bottom: 15px;
   left: 50%;
   height: 480px;
   width: 630px;
@@ -134,7 +134,7 @@ html.touch .touchonly {
   background-image: url("../img/cup2-s4ffb9dcb7c_opt.png");
   background-position: 0 -11040px;
   background-repeat: no-repeat;
-  margin-left: -321px;
+  margin-left: -322px;
 }
 #cup.cup_00 {
   background-position: 0 -14500px;

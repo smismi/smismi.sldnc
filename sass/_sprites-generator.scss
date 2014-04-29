@@ -15,7 +15,7 @@ $cupurl: sprite-url($cup);
 
 #cup {
 	position: absolute;
-	bottom: 14px;
+	bottom: 15px;
 	left: 50%;
 	height: 480px;
 	width: 630px;
@@ -24,7 +24,7 @@ $cupurl: sprite-url($cup);
 	background-image: url('../img/cup2-s4ffb9dcb7c_opt.png');
 	background-position: 0 -11040px;
 	background-repeat: no-repeat;
-	margin-left: -321px;
+	margin-left: -322px;
 
 	@for $i from 0 through 29 {
 
