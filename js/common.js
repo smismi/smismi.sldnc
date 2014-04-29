@@ -337,11 +337,7 @@ var SL = {
 		console.log("?. initScrollMagik   ---    init");
 
 
-		SL.controller = new ScrollMagic({
-			globalSceneOptions: {
-				triggerHook: "onLeave"
-			}
-		})
+		SL.controller = new ScrollMagic()
 
 
 	},
@@ -397,34 +393,41 @@ var SL = {
 
 		if(Modernizr.touch) {
 
-			new ScrollScene({
-				triggerElement: "#section-2",
-				duration: $(window).height(),
-				offset: -200
-			})
-				.addTo(SL.controller)
-				.triggerHook(0.5)
-				.on("enter", function (event) {
-					SL.setPager(2);
-				})
-			;
+
 
 		} else {
 
-			new ScrollScene({
-				triggerElement: "#section-2",
-				duration: $(window).height(),
-				offset: -200
-			})
-				.addTo(SL.controller)
-				.triggerHook(0.5)
-				.setTween(new TimelineMax().add([
-					TweenMax.fromTo("#section-1 .wrapper", 1, {y:0}, {y:200}),
-				]))
-				.on("enter", function (event) {
-					SL.setPager(2);
+
+
+
+
+
+			var tween = new TimelineMax ()
+				.add([
+					TweenMax.fromTo("#section-2 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
+					TweenMax.fromTo("#section-2 .page_item_ic",1, {y: -100}, {y: 100, ease: Linear.easeNone})
+				]);
+
+			new ScrollScene({triggerElement: "#section-2", duration: $(window).height() * 2})
+				.setTween(tween)
+				.triggerHook(1)
+				.addTo(SL.controller).on("enter", function (event) {
+					console.log("2st enter")
 				})
-			;
+				.on("leave", function (event) {
+					console.log("2st leave")
+				});
+
+
+
+
+			new ScrollScene({triggerElement: "#section-2", duration: 0})
+				.triggerHook(.5)
+				.addTo(SL.controller).on("enter", function (event) {
+					SL.setPager(2);
+				});
+
+
 
 		};
 
@@ -441,35 +444,30 @@ var SL = {
 		if(Modernizr.touch) {
 
 
-			new ScrollScene({
-				triggerElement: "#section-3",
-				duration: $(window).height(),
-				offset: 0
-			})
-				.addTo(SL.controller)
-				.triggerHook(0.5)
-				.on("enter", function (event) {
-					SL.setPager(3);
-				})
-			;
 
 		} else {
 
 
-			new ScrollScene({
-				triggerElement: "#section-3",
-				duration: $(window).height(),
-				offset: 0
-			})
-				.addTo(SL.controller)
-				.triggerHook(0.5)
-				.setTween(new TimelineMax().add([
-					TweenMax.fromTo("#section-2 .wrapper", 1, {y:0}, {y:200}),
-				]))
-				.on("enter", function (event) {
-					SL.setPager(3);
+
+
+
+
+			var tween2 = new TimelineMax ()
+				.add([
+					TweenMax.fromTo("#section-3 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
+					TweenMax.fromTo("#section-3 .section-big-title",1, {y: -100}, {y: 100, ease: Linear.easeNone})
+				]);
+
+			new ScrollScene({triggerElement: "#section-3", duration: $(window).height() * 2})
+				.setTween(tween2)
+				.triggerHook(1)
+				.addTo(SL.controller).on("enter", function (event) {
+					console.log("3st enter")
 				})
-			;
+				.on("leave", function (event) {
+					console.log("3st leave")
+				});
+
 
 			new ScrollScene({
 				triggerElement: "#section-3",
@@ -521,37 +519,24 @@ var SL = {
 
 
 
-			new ScrollScene({
-				triggerElement: "#section-4",
-				duration: $(window).height(),
-				offset: 0
-			})
-				.addTo(SL.controller)
-				.triggerHook(0.5)
-				.on("enter", function (event) {
-					SL.setPager(4);
-					SL.destrotInterActive5();
-				})
-			;
-
-
 		} else {
 
-			new ScrollScene({
-				triggerElement: "#section-4",
-				duration: $(window).height(),
-				offset: 0
-			})
-				.addTo(SL.controller)
-				.triggerHook(0.5)
-				.setTween(new TimelineMax().add([
-					TweenMax.fromTo("#section-3 .wrapper", 1, {y:0}, {y:200}),
-				]))
-				.on("enter", function (event) {
-					SL.setPager(4);
-					SL.destrotInterActive5();
+			var tween3 = new TimelineMax ()
+				.add([
+					TweenMax.fromTo("#section-4 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
+					TweenMax.fromTo("#section-4 .section-big-title",1, {y: -100}, {y: 100, ease: Linear.easeNone})
+				]);
+
+			new ScrollScene({triggerElement: "#section-4", duration: $(window).height() * 2})
+				.setTween(tween3)
+				.triggerHook(1)
+				.addTo(SL.controller).on("enter", function (event) {
+					console.log("4st enter")
 				})
-			;
+				.on("leave", function (event) {
+					console.log("4st leave")
+				});
+
 
 			new ScrollScene({
 				triggerElement: "#section-4",
@@ -607,44 +592,30 @@ var SL = {
 
 		if(Modernizr.touch) {
 
-			new ScrollScene({
-				triggerElement: "#section-5",
-				duration: $(window).height(),
-				offset: -200
-			})
-				.addTo(SL.controller)
-				.triggerHook(0)
-				.on("enter", function (event) {
-					SL.setPager(5);
-					SL.initInterActive5();
-				})
-			;
+
 
 		} else {
 
-			new ScrollScene({
-				triggerElement: "#section-5",
-				duration: $(window).height(),
-				offset: 0
-			})
-				.addTo(SL.controller)
-				.triggerHook(.5)
-				.setTween(new TimelineMax().add([
-					TweenMax.fromTo("#section-4 .wrapper", 1, {y:0}, {y:200}),
-				]))
-			;
-			new ScrollScene({
-				triggerElement: "#section-5",
-				duration: $(window).height(),
-				offset: -200
-			})
-				.addTo(SL.controller)
-				.triggerHook(0)
-				.on("enter", function (event) {
-					SL.setPager(5);
-					SL.initInterActive5();
+
+
+			var tween = new TimelineMax ()
+				.add([
+					TweenMax.fromTo("#section-5 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
+					TweenMax.fromTo("#section-5 .section-big-title",1, {marginTop: -100}, {marginTop: 100, ease: Linear.easeNone})
+				]);
+
+			new ScrollScene({triggerElement: "#section-5", duration: $(window).height() * 2})
+				.setTween(tween)
+				.triggerHook(1)
+				.addTo(SL.controller).on("enter", function (event) {
+					console.log("5st enter")
 				})
-			;
+				.on("leave", function (event) {
+					console.log("5st leave")
+				});
+
+
+
 		}
 
 
