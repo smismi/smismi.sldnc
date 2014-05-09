@@ -648,17 +648,47 @@ var SL = {
 
 			if (SL.header.hasClass("menu_visible")) {
 
-				SL.header.removeClass("menu_visible");
-
-				SL.mobilemenu.animate({"left": "-100%"}, 100);
 
 
-//				todo скрывать подменю при звкрытии
+
+				if ($(".item_link", SL.mobilemenu).hasClass("submenu_visible")) {
+
+					var _sub =  $(".item_link.submenu_visible", SL.mobilemenu).data("target");
+
+
+					$(".item_link", SL.mobilemenu).removeClass("submenu_visible");
+
+					$(".subnav-" + _sub, SL.mobilemenu).slideUp(function(){
+
+						SL.header.removeClass("menu_visible");
+
+						SL.mobilemenu.animate({"left": "-100%"}, 50);
+
+					});
+
+				} else {
+
+
+					SL.header.removeClass("menu_visible");
+
+					SL.mobilemenu.animate({"left": "-100%"}, 50);
+
+				}
+
+				SL.preventScroll.off();
+
+
 			} else {
 
 				SL.header.addClass("menu_visible");
 
-				SL.mobilemenu.animate({"left": "0%"}, 100);
+				SL.mobilemenu.animate({"left": "0%"}, 50);
+
+
+
+
+
+				SL.preventScroll.on();
 
 			}
 
@@ -688,6 +718,28 @@ var SL = {
 			return false;
 		});
 
+	},
+	preventScroll: {
+		on: function () {
+
+
+
+			$(window).on("mousewheel", function(e){
+
+//				e.preventDefault()
+//				return false
+			})
+
+
+
+
+
+
+		},
+		off: function () {
+
+
+		}
 	},
 	destrotInterActive5 : function() {
 

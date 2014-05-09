@@ -88,7 +88,6 @@
 	}
 	#mobilemenu {
 		display: block;
-		max-height: 700px;
 		overflow: auto;
 		@include transition( all .5s ease-out);
 		li.header_nav_item {
