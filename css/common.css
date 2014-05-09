@@ -1746,6 +1746,10 @@ section.page {
   width: 25%;
   display: table-cell;
   height: 100%;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .header_nav li.header_nav_item .header_nav-subnav li.header_nav-subnav_block h1 {
   margin: 45px 0 25px 35px;
@@ -1766,7 +1770,7 @@ section.page {
   text-decoration: none;
 }
 .header_nav li.header_nav_item .header_nav-subnav li.header_nav-subnav_block .subnav_block_list li.subnav_block-item a:hover {
-  background: #870037;
+  background: #7c0034;
 }
 .header_nav li.header_nav_item .header_nav-subnav li.header_nav-subnav_block:hover {
   background: #e70c66;
