@@ -16,6 +16,7 @@ var SL = {
 //		cache blocks
 		SL.pager = $("#pager_nav");
 		SL.mainmenu = $("#header");
+		SL.header = $(".header");
 		SL.mobilemenu = $("#mobilemenu");
 		SL.contentWrapper = $('#content-wrapper');
 		SL.scrollTop = $('#back_to_top');
@@ -33,10 +34,15 @@ var SL = {
 
 		console.log("2. cropViewport   ---    init");
 
+		if (!SL.func.isPh()) {
+
+			$(".header").css({top: -300, opacity: 0});
+			$(".pager").css({right: -300, opacity: 0});
+
+		}
 
 
-		$(".header").css({top: -300, opacity: 0});
-		$(".pager").css({right: -300, opacity: 0});
+
 
 
 		SL.contentWrapper =  $('#content-wrapper');
@@ -139,6 +145,25 @@ var SL = {
 	},
 	runCupAnimation: function() {
 
+
+		if (SL.func.isPh()) {
+
+
+			SL.overlay.animate({opacity: 0}, 200, function(){
+				SL.pagePreloader.fadeOut(100, function(){
+					$(this).remove();
+				}).remove();
+				$(this).remove();
+
+			});
+			SL.initInterActive5();
+
+			return;
+
+
+		}
+
+
 		$("<img/>")
 			.load(function() { console.log("image loaded correctly"); })
 			.error(function() { console.log("error loading image"); })
@@ -204,6 +229,15 @@ var SL = {
 	},
 
 	runScene1: function() {
+
+
+		if(SL.func.isPh())  {
+
+
+
+
+			return;
+		}
 
 
 		$(".section-1-bg-4").show();
@@ -606,20 +640,26 @@ var SL = {
 	},
 	initHeaderMenu: function() {
 
+
+//		SL.mobilemenu.css({height: $(window).height() - 60, overflow: "auto", backgroundColor: "#f00"});
+
+
 		$(".item_menu", SL.mainmenu).on('click', function(){
 
-			if (SL.mainmenu.hasClass("menu_visible")) {
+			if (SL.header.hasClass("menu_visible")) {
 
-				SL.mainmenu.removeClass("menu_visible");
+				SL.header.removeClass("menu_visible");
 
-				$("#mobilemenu").animate({"left": "-100%"}, 100);
+				SL.mobilemenu.animate({"left": "-100%"}, 100);
+
 
 //				todo скрывать подменю при звкрытии
 			} else {
 
-				SL.mainmenu.addClass("menu_visible");
+				SL.header.addClass("menu_visible");
 
-				$("#mobilemenu").animate({"left": "0%"}, 100);
+				SL.mobilemenu.animate({"left": "0%"}, 100);
+
 			}
 
 			return false;
@@ -710,7 +750,17 @@ var SL = {
 					return transitions[t];
 				}
 			}
+		},
+
+		isPh : function() {
+
+			if ($(window).width() < 750) return true;
+
+			return false;
+
 		}
+
+
 	}
 
 }

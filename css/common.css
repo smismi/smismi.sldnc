@@ -1290,6 +1290,9 @@ section.page {
   position: static;
   vertical-align: middle;
 }
+.page5 .wrapper .section-5-header {
+  border: 2px dotted purple;
+}
 .page5 .wrapper .headermark {
   font-size: 27px;
 }
@@ -1299,11 +1302,13 @@ section.page {
 .page5 .wrapper .figure_wrapper {
   position: relative;
   margin: 0 0 40px 0;
+  border: 2px dotted purple;
 }
 .page5 .wrapper .page_item {
   display: inline-block;
   width: 340px;
   vertical-align: top;
+  border: 1px solid red;
 }
 .page5 .wrapper .page_item figcaption {
   width: 340px;
@@ -1312,6 +1317,7 @@ section.page {
   line-height: 320px;
   font-size: 0;
   cursor: pointer;
+  border: 1px solid yellow;
 }
 .page5 .wrapper .page_item figcaption em, .page5 .wrapper .page_item figcaption i {
   display: block;
@@ -1923,6 +1929,7 @@ section.page {
   left: 0;
   right: 0;
   background: #fff;
+  z-index: 99;
 }
 
 .cup-spinner {
@@ -2045,6 +2052,7 @@ section.page {
     display: inline-block;
     width: 290px;
     vertical-align: top;
+    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 290px;
@@ -2080,6 +2088,7 @@ section.page {
     display: inline-block;
     width: 240px;
     vertical-align: top;
+    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -2427,13 +2436,16 @@ section.page {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) {
   #content-wrapper {
+    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
+    border: 3px solid yellow;
     height: auto;
   }
 
   .page {
+    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -2613,6 +2625,7 @@ section.page {
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
+    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -2637,6 +2650,9 @@ section.page {
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
+  }
+  .page5 .wrapper .page_item figcaption:hover abbr {
+    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
@@ -2673,13 +2689,16 @@ section.page {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) {
   #content-wrapper {
+    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
+    border: 3px solid yellow;
     height: auto;
   }
 
   .page {
+    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -2859,6 +2878,7 @@ section.page {
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
+    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -2883,6 +2903,9 @@ section.page {
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
+  }
+  .page5 .wrapper .page_item figcaption:hover abbr {
+    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
@@ -2919,13 +2942,16 @@ section.page {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) {
   #content-wrapper {
+    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
+    border: 3px solid yellow;
     height: auto;
   }
 
   .page {
+    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -3105,6 +3131,7 @@ section.page {
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
+    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -3129,6 +3156,9 @@ section.page {
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
+  }
+  .page5 .wrapper .page_item figcaption:hover abbr {
+    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
@@ -3165,13 +3195,16 @@ section.page {
 }
 @media screen and (max-width: 750px) {
   #content-wrapper {
+    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
+    border: 3px solid yellow;
     height: auto;
   }
 
   .page {
+    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -3351,6 +3384,7 @@ section.page {
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
+    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -3375,6 +3409,9 @@ section.page {
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
+  }
+  .page5 .wrapper .page_item figcaption:hover abbr {
+    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
