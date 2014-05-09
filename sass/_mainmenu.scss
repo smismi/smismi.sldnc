@@ -21,8 +21,10 @@
 #mobilemenu {
 	display: none;
 	top: $mobilemenu_h + px;
-	position: absolute;
+	position: fixed;
 	left: -100%;
+	bottom: 0;
+	background: #f50;
 	padding: 0;
 
 }
@@ -250,9 +252,9 @@
 							text-decoration: none;
 							//@include transition( all .2s ease-out);
 
-							&:hover {
-								background: #7c0034;
-							}
+							//&:hover {
+							//	background: #7c0034;
+							//}
 						}
 
 					}
@@ -264,9 +266,9 @@
 
 
 
-				&:hover {
-					background: $cherry;
-				}
+				//&:hover {
+				//	background: $cherry;
+				//}
 
 			}
 
@@ -303,10 +305,10 @@
 		text-align: center;
 		border-bottom: 1px solid #f387b2;
 
-		&:hover {
-			background: $carmine;
-
-		}
+		//&:hover {
+		//	background: $carmine;
+		//
+		//}
 
 		&.menu_visible {
 			display: block;
@@ -370,10 +372,10 @@
 			border-bottom: 1px solid #610029;
 
 
-			&:hover {
-				background: $cherry;
-
-			}
+			//&:hover {
+			//	background: $cherry;
+			//
+			//}
 
 			a {
 
