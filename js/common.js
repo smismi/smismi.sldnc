@@ -391,10 +391,15 @@ var SL = {
 
 
 
-
-			new ScrollScene({triggerElement: "#section-1", duration: 0, offset: 0})
-				.triggerHook(.5)
-				.addTo(SL.controller).on("enter", function (event) {
+			// parallax1
+			new ScrollScene({
+					triggerElement: "#section-1",
+					duration: 1000,
+					offset: -200
+				})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
 					SL.setPager(1);
 				});
 
@@ -449,6 +454,19 @@ var SL = {
 
 
 
+			new ScrollScene({
+					triggerElement: "#section-2",
+					duration: 1000,
+					offset: -200
+				})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(2);
+				});
+
+
+
 		};
 
 
@@ -493,7 +511,7 @@ var SL = {
 					TweenMax.fromTo("#section-3 .section-3-item-3", 1, {top: "75%"}, {top: "10%", ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-3-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-3-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-					//				TweenMax.to("#section-3 .section-3-item-3-3", 1, {rotation:  90,  scale: 1, ease: Linear.easeNone}),
+									TweenMax.to("#section-3 .section-3-item-3-3", 1, {rotation:  90,  scale: 1, ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-3-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-3-5", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-3-6", 1, {rotation:  -34,  scale: 1, ease: Linear.easeNone}),
@@ -515,6 +533,19 @@ var SL = {
 			new ScrollScene({triggerElement: "#section-3", duration: 0})
 				.triggerHook(.5)
 				.addTo(SL.controller).on("enter", function (event) {
+					SL.setPager(3);
+				});
+
+
+
+			new ScrollScene({
+				triggerElement: "#section-3",
+				duration: 1000,
+				offset: -200
+			})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
 					SL.setPager(3);
 				});
 
@@ -582,6 +613,18 @@ var SL = {
 				.addTo(SL.controller).on("enter", function (event) {
 					SL.setPager(4);
 					SL.destrotInterActive5();
+				});
+
+
+			new ScrollScene({
+				triggerElement: "#section-4",
+				duration: 1000,
+				offset: -200
+			})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(4);
 				});
 
 		}
