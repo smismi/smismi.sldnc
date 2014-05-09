@@ -20,30 +20,12 @@ var SL = {
 		SL.contentWrapper = $('#content-wrapper');
 		SL.scrollTop = $('#back_to_top');
 
-
-
-
-
-
 		SL.cropViewport()
 			.test()
 //			SL.unCropViewport();
 			.preloadImage(SL.unCropViewport);
 
-
-
-
-
 		SL.initHeaderMenu();
-
-
-
-
-
-
-
-
-
 
 	},
 
@@ -58,13 +40,6 @@ var SL = {
 
 
 		SL.contentWrapper =  $('#content-wrapper');
-//		SL.contentWrapper.css('opacity', 0);
-
-//		$(window).load(function() {
-////			SL.contentWrapper.animate({'opacity': 1}, 800);
-//
-//		});
-
 
 		SL.overlay = $("<div id='overlay'></div>").appendTo('body');
 
@@ -180,10 +155,6 @@ var SL = {
 
 
 				if (i == 1) {
-//					SL.unCropViewport();
-
-
-
 
 					SL.overlay.animate({opacity: 0}, 200, function(){
 						SL.pagePreloader.fadeOut(100, function(){
@@ -193,17 +164,11 @@ var SL = {
 
 					});
 
-
-
-
 				}
 
 				if (i == 30) {
 
 					clearInterval(timerId);
-
-
-
 
 					console.log("4. preloadImage   ---    done");
 
@@ -227,56 +192,13 @@ var SL = {
 
 
 	},
-	runScrollAnimation: function() {
-		return;
-
-		SL.scroll = $("#scroll_me").addClass("scroll_00");
-
-
-		var i = 0; // current iteration value.
-
-		function changeClass(){
-
-
-			if (i > 20) {
-
-				 i = 0;
-			}
-
-			var _i = (i<10)?"0"+i:i;
-
-			SL.scroll.removeClass().addClass("scroll_" + _i);
-
-			i++;
-
-
-
-		}
-		var timerId = setInterval(changeClass, 30);
-
-
-
-
-	},
 	unCropViewport: function() {
 
-
-
-
-		console.log("5. unCropViewport   ---    satart");
+		console.log("5. unCropViewport   ---    start");
 
 		$(window).scrollTop(0);
 
-
 		SL.runCupAnimation();
-
-
-//		$("#content-wrapper").animate({opacity: 1, overflow: "auto"}, 1000, function() {
-
-
-			console.log("5. unCropViewport   ---    done");
-
-//		})
 
 
 	},
@@ -292,13 +214,10 @@ var SL = {
 			console.log("6. runScene1   ---    run");
 
 
-
-
 			$(".section-1-bg-2").animate({left: "10%", opacity: 1}, 800, "easeOutCirc");
 			$(".section-1-bg-3").animate({right: "10%", opacity: 1, marginRight: "-150px"}, 800, "easeOutCirc", function(){
 
 				$(".section-1-bg-25").animate({opacity:1}, 1000);
-
 
 				$(".header").animate({top: 0, opacity: 1}, 600);
 				$(".pager").animate({right: 0, opacity: 1}, 600 , function(){
@@ -318,18 +237,7 @@ var SL = {
 
 			});
 
-
-
-
-
 		});
-
-
-
-
-
-//		SL.initInterActive5();
-
 
 	},
 
@@ -354,19 +262,6 @@ var SL = {
 
 
 		} else {
-
-
-
-
-
-
-//			$("#section-1 .section-1-bg-11").hide();
-//			$("#section-1 .section-1-bg-12").hide();
-//			$("#section-1 .section-1-bg-25").hide();
-//			$("#section-1 .section-1-bg-2").hide();
-//			$("#section-1 .section-1-bg-3").hide();
-//			$("#section-1 .section-1-bg-4").hide();
-
 
 			var tween = new TimelineMax ()
 				.add([
@@ -394,7 +289,7 @@ var SL = {
 			// parallax1
 			new ScrollScene({
 					triggerElement: "#section-1",
-					duration: 1000,
+					duration: $(window).height(),
 					offset: -200
 				})
 				.addTo(SL.controller)
@@ -410,11 +305,6 @@ var SL = {
 
 	},
 	initParallax2: function() {
-
-
-		console.log("?. initParallax2   ---    init");
-
-		// parallax2
 
 		if(Modernizr.touch) {
 
@@ -456,7 +346,7 @@ var SL = {
 
 			new ScrollScene({
 					triggerElement: "#section-2",
-					duration: 1000,
+					duration: $(window).height(),
 					offset: -200
 				})
 				.addTo(SL.controller)
@@ -475,12 +365,6 @@ var SL = {
 
 	},
 	initParallax3: function() {
-		console.log("?. initParallax3   ---    init");
-
-
-
-
-//		parallax3
 
 		if(Modernizr.touch) {
 
@@ -540,7 +424,7 @@ var SL = {
 
 			new ScrollScene({
 				triggerElement: "#section-3",
-				duration: 1000,
+				duration: $(window).height(),
 				offset: -200
 			})
 				.addTo(SL.controller)
@@ -554,11 +438,6 @@ var SL = {
 
 	},
 	initParallax4: function() {
-		console.log("?. initParallax4   ---    init");
-
-		// parallax4
-
-
 
 		if(Modernizr.touch) {
 
@@ -618,7 +497,7 @@ var SL = {
 
 			new ScrollScene({
 				triggerElement: "#section-4",
-				duration: 1000,
+				duration: $(window).height(),
 				offset: -200
 			})
 				.addTo(SL.controller)
@@ -768,24 +647,6 @@ var SL = {
 			}
 			return false;
 		});
-//		$(".item_link", SL.mainmenu).on({'mouseenter': function () {
-//
-//
-//				var _sub =  $("a", this).data("target");
-//
-//				$(".subnav-" + _sub).show();
-//
-//
-//			}, 'mouseleave': function () {
-//
-//
-//				var _sub =  $("a", this).data("target");
-//
-//				$(".subnav-" + _sub).hide();
-//
-//			}}
-//		);
-
 
 	},
 	destrotInterActive5 : function() {
@@ -797,13 +658,10 @@ var SL = {
 	},
 	initInterActive5: function() {
 		// interactive5
-		console.log("?. interactive5   ---    init")
-//		$(".page_item_caption i, .page_item_caption em, .page_item_caption .description").css({opacity:1});
-
 
 		setTimeout(runFirstPage, 300);
-//
-//
+
+
 		function runFirstPage() {
 			$("#section-5-page-1 abbr").animate({opacity:1,  top: 0}, 300, function() {
 				runSecondPage();
