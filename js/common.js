@@ -774,22 +774,12 @@ var SL = {
 	preventScroll: {
 		on: function () {
 
-
-
-			$(window).on("mousewheel", function(e){
-
-//				e.preventDefault()
-//				return false
-			})
-
-
-
-
-
+			$("html, body").css({overflow: "hidden"});
 
 		},
 		off: function () {
 
+			$("html, body").css({overflow: "auto"});
 
 		}
 	},
