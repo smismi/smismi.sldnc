@@ -162,6 +162,8 @@ var SL = {
 
 			SL.initInterActive5();
 
+			$(".wrapper", "#section-1").css("height", $(window).height());
+
 			return;
 
 

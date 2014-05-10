@@ -2475,8 +2475,15 @@ section.page {
     opacity: 1;
   }
 
+  .page1 .wrapper .section-1-bg-12 {
+    bottom: 35px;
+    margin-left: -429px;
+    background-size: 610px;
+    width: 610px;
+  }
   .page1 .wrapper .section-1-bg-4 {
     display: block;
+    background-size: 410px;
   }
   .page1 .wrapper .section-1-bg-2 {
     opacity: 1;
@@ -2485,10 +2492,11 @@ section.page {
   .page1 .wrapper .section-1-bg-3 {
     right: 10%;
     opacity: 1;
-    margin-right: -150px;
+    margin-right: -50px;
   }
   .page1 .wrapper .section-1-bg-25 {
     opacity: 1;
+    margin-top: -140px;
   }
 
   .pager {
@@ -2499,7 +2507,10 @@ section.page {
     margin: -170px auto 0 auto;
   }
   .section-big-title h1 {
-    font-size: 45px;
+    font-size: 36px;
+  }
+  .section-big-title h2 {
+    padding: 0 50px;
   }
 
   .header:before {
@@ -2792,8 +2803,15 @@ section.page {
     opacity: 1;
   }
 
+  .page1 .wrapper .section-1-bg-12 {
+    bottom: 35px;
+    margin-left: -429px;
+    background-size: 610px;
+    width: 610px;
+  }
   .page1 .wrapper .section-1-bg-4 {
     display: block;
+    background-size: 410px;
   }
   .page1 .wrapper .section-1-bg-2 {
     opacity: 1;
@@ -2802,10 +2820,11 @@ section.page {
   .page1 .wrapper .section-1-bg-3 {
     right: 10%;
     opacity: 1;
-    margin-right: -150px;
+    margin-right: -50px;
   }
   .page1 .wrapper .section-1-bg-25 {
     opacity: 1;
+    margin-top: -140px;
   }
 
   .pager {
@@ -2816,7 +2835,10 @@ section.page {
     margin: -170px auto 0 auto;
   }
   .section-big-title h1 {
-    font-size: 45px;
+    font-size: 36px;
+  }
+  .section-big-title h2 {
+    padding: 0 50px;
   }
 
   .header:before {
@@ -3109,8 +3131,15 @@ section.page {
     opacity: 1;
   }
 
+  .page1 .wrapper .section-1-bg-12 {
+    bottom: 35px;
+    margin-left: -429px;
+    background-size: 610px;
+    width: 610px;
+  }
   .page1 .wrapper .section-1-bg-4 {
     display: block;
+    background-size: 410px;
   }
   .page1 .wrapper .section-1-bg-2 {
     opacity: 1;
@@ -3119,10 +3148,11 @@ section.page {
   .page1 .wrapper .section-1-bg-3 {
     right: 10%;
     opacity: 1;
-    margin-right: -150px;
+    margin-right: -50px;
   }
   .page1 .wrapper .section-1-bg-25 {
     opacity: 1;
+    margin-top: -140px;
   }
 
   .pager {
@@ -3133,7 +3163,10 @@ section.page {
     margin: -170px auto 0 auto;
   }
   .section-big-title h1 {
-    font-size: 45px;
+    font-size: 36px;
+  }
+  .section-big-title h2 {
+    padding: 0 50px;
   }
 
   .header:before {
@@ -3426,8 +3459,15 @@ section.page {
     opacity: 1;
   }
 
+  .page1 .wrapper .section-1-bg-12 {
+    bottom: 35px;
+    margin-left: -429px;
+    background-size: 610px;
+    width: 610px;
+  }
   .page1 .wrapper .section-1-bg-4 {
     display: block;
+    background-size: 410px;
   }
   .page1 .wrapper .section-1-bg-2 {
     opacity: 1;
@@ -3436,10 +3476,11 @@ section.page {
   .page1 .wrapper .section-1-bg-3 {
     right: 10%;
     opacity: 1;
-    margin-right: -150px;
+    margin-right: -50px;
   }
   .page1 .wrapper .section-1-bg-25 {
     opacity: 1;
+    margin-top: -140px;
   }
 
   .pager {
@@ -3450,7 +3491,10 @@ section.page {
     margin: -170px auto 0 auto;
   }
   .section-big-title h1 {
-    font-size: 45px;
+    font-size: 36px;
+  }
+  .section-big-title h2 {
+    padding: 0 50px;
   }
 
   .header:before {
@@ -3700,97 +3744,5 @@ section.page {
   /* Retina-specific stuff here */
   #cup {
     background-size: cover;
-  }
-}
-@media screen and (max-width: 2px) {
-  .header:before {
-    display: none;
-  }
-
-  #mobilemenu {
-    display: block;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-  }
-  #mobilemenu li.header_nav_item {
-    display: block;
-  }
-
-  .header_nav {
-    padding-top: 60px;
-    position: relative;
-    background: transparent;
-    width: 100%;
-  }
-  .header_nav li.header_nav_item {
-    display: none;
-    background: #e70c66;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid #d785a6;
-  }
-  .header_nav li.header_nav_item:hover {
-    background: #870037;
-  }
-  .header_nav li.header_nav_item.menu_visible {
-    display: block;
-  }
-  .header_nav li.header_nav_item:before {
-    display: none;
-  }
-  .header_nav li.header_nav_item.fb, .header_nav li.header_nav_item.tw, .header_nav li.header_nav_item.item_menu, .header_nav li.header_nav_item.item_logo {
-    padding: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    display: block;
-    border: 0;
-    background: transparent;
-  }
-  .header_nav li.header_nav_item.fb em, .header_nav li.header_nav_item.tw em, .header_nav li.header_nav_item.item_menu em, .header_nav li.header_nav_item.item_logo em {
-    margin-top: 12px;
-  }
-  .header_nav li.header_nav_item.item_logo {
-    left: 50%;
-    width: 50px;
-    margin-left: -25px;
-  }
-  .header_nav li.header_nav_item.fb {
-    right: 55px;
-  }
-  .header_nav li.header_nav_item.item_menu {
-    right: auto;
-    left: 0;
-    padding: 0 6px;
-    background: #e70c66;
-  }
-  .header_nav li.header_nav_item.item_menu a {
-    line-height: 60px;
-  }
-  .header_nav li.header_nav_item.close_menu {
-    left: auto;
-    right: 0;
-    padding: 0 6px;
-    background: #e70c66;
-  }
-  .header_nav li.header_nav_item.close_menu a {
-    line-height: 60px;
-  }
-  .header_nav li.header_nav_item.item_link a {
-    padding: 30px 0;
-    display: block;
-  }
-  .header_nav li.header_nav_item .header_nav-subnav {
-    position: relative;
-    top: 0;
-    left: none;
-    right: none;
-  }
-  .header_nav li.header_nav_item .header_nav-subnav:before {
-    display: none;
   }
 }
