@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 body, html {
   margin: 0;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1615,7 +1615,7 @@ section.page {
   display: none;
   top: 60px;
   position: fixed;
-  left: -100%;
+  right: -100%;
   bottom: 0;
   background: #e70c66;
   padding: 0;
@@ -1757,10 +1757,10 @@ section.page {
   width: 25%;
   display: table-cell;
   height: 100%;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 .header_nav li.header_nav_item .header_nav-subnav li.header_nav-subnav_block h1 {
   margin: 45px 0 25px 35px;
@@ -1779,6 +1779,12 @@ section.page {
   padding: 5px 35px;
   color: #fff;
   text-decoration: none;
+}
+.header_nav li.header_nav_item .header_nav-subnav li.header_nav-subnav_block .subnav_block_list li.subnav_block-item a:hover {
+  background: #7c0034;
+}
+.header_nav li.header_nav_item .header_nav-subnav li.header_nav-subnav_block:hover {
+  background: #e70c66;
 }
 .header_nav li.header_nav_item:hover .header_nav-subnav {
   max-height: 1300px;
@@ -1810,7 +1816,7 @@ section.page {
 }
 .header_nav .header_nav_item_m.close_menu {
   left: auto;
-  right: 0;
+  right: -70px;
   padding: 0 6px;
   background: #e70c66;
 }
@@ -2520,10 +2526,10 @@ section.page {
   #mobilemenu {
     display: block;
     overflow: auto;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
   #mobilemenu li.header_nav_item {
     display: block;
@@ -2558,6 +2564,10 @@ section.page {
     display: block;
     border: 0;
     background: transparent;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
   .header_nav li.header_nav_item.item_menu em, .header_nav li.header_nav_item.close_menu em, .header_nav li.header_nav_item.item_logo em, .header_nav li.header_nav_item.item_soc em {
     margin-top: 12px;
@@ -2582,9 +2592,8 @@ section.page {
     padding: 0;
   }
   .header_nav li.header_nav_item.close_menu {
-    display: none;
     left: auto;
-    right: 0;
+    right: -70px;
     padding: 0 6px;
     background: #e70c66;
   }
@@ -2625,10 +2634,10 @@ section.page {
   }
 
   .header.menu_visible .header_nav li.header_nav_item.item_menu {
-    display: none;
+    left: -70px;
   }
   .header.menu_visible .header_nav li.header_nav_item.close_menu {
-    display: block;
+    right: 0px;
   }
   .header.menu_visible .header_nav li.header_nav_item.item_soc {
     display: none;
@@ -2692,7 +2701,8 @@ section.page {
   }
 
   .page5 {
-    background: #ff9;
+    height: auto;
+    overflow: auto;
   }
   .page5 .wrapper {
     padding: 100px 0;
@@ -2848,10 +2858,10 @@ section.page {
   #mobilemenu {
     display: block;
     overflow: auto;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
   #mobilemenu li.header_nav_item {
     display: block;
@@ -2886,6 +2896,10 @@ section.page {
     display: block;
     border: 0;
     background: transparent;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
   .header_nav li.header_nav_item.item_menu em, .header_nav li.header_nav_item.close_menu em, .header_nav li.header_nav_item.item_logo em, .header_nav li.header_nav_item.item_soc em {
     margin-top: 12px;
@@ -2910,9 +2924,8 @@ section.page {
     padding: 0;
   }
   .header_nav li.header_nav_item.close_menu {
-    display: none;
     left: auto;
-    right: 0;
+    right: -70px;
     padding: 0 6px;
     background: #e70c66;
   }
@@ -2953,10 +2966,10 @@ section.page {
   }
 
   .header.menu_visible .header_nav li.header_nav_item.item_menu {
-    display: none;
+    left: -70px;
   }
   .header.menu_visible .header_nav li.header_nav_item.close_menu {
-    display: block;
+    right: 0px;
   }
   .header.menu_visible .header_nav li.header_nav_item.item_soc {
     display: none;
@@ -3020,7 +3033,8 @@ section.page {
   }
 
   .page5 {
-    background: #ff9;
+    height: auto;
+    overflow: auto;
   }
   .page5 .wrapper {
     padding: 100px 0;
@@ -3176,10 +3190,10 @@ section.page {
   #mobilemenu {
     display: block;
     overflow: auto;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
   #mobilemenu li.header_nav_item {
     display: block;
@@ -3214,6 +3228,10 @@ section.page {
     display: block;
     border: 0;
     background: transparent;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
   .header_nav li.header_nav_item.item_menu em, .header_nav li.header_nav_item.close_menu em, .header_nav li.header_nav_item.item_logo em, .header_nav li.header_nav_item.item_soc em {
     margin-top: 12px;
@@ -3238,9 +3256,8 @@ section.page {
     padding: 0;
   }
   .header_nav li.header_nav_item.close_menu {
-    display: none;
     left: auto;
-    right: 0;
+    right: -70px;
     padding: 0 6px;
     background: #e70c66;
   }
@@ -3281,10 +3298,10 @@ section.page {
   }
 
   .header.menu_visible .header_nav li.header_nav_item.item_menu {
-    display: none;
+    left: -70px;
   }
   .header.menu_visible .header_nav li.header_nav_item.close_menu {
-    display: block;
+    right: 0px;
   }
   .header.menu_visible .header_nav li.header_nav_item.item_soc {
     display: none;
@@ -3348,7 +3365,8 @@ section.page {
   }
 
   .page5 {
-    background: #ff9;
+    height: auto;
+    overflow: auto;
   }
   .page5 .wrapper {
     padding: 100px 0;
@@ -3504,10 +3522,10 @@ section.page {
   #mobilemenu {
     display: block;
     overflow: auto;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
   #mobilemenu li.header_nav_item {
     display: block;
@@ -3542,6 +3560,10 @@ section.page {
     display: block;
     border: 0;
     background: transparent;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
   .header_nav li.header_nav_item.item_menu em, .header_nav li.header_nav_item.close_menu em, .header_nav li.header_nav_item.item_logo em, .header_nav li.header_nav_item.item_soc em {
     margin-top: 12px;
@@ -3566,9 +3588,8 @@ section.page {
     padding: 0;
   }
   .header_nav li.header_nav_item.close_menu {
-    display: none;
     left: auto;
-    right: 0;
+    right: -70px;
     padding: 0 6px;
     background: #e70c66;
   }
@@ -3609,10 +3630,10 @@ section.page {
   }
 
   .header.menu_visible .header_nav li.header_nav_item.item_menu {
-    display: none;
+    left: -70px;
   }
   .header.menu_visible .header_nav li.header_nav_item.close_menu {
-    display: block;
+    right: 0px;
   }
   .header.menu_visible .header_nav li.header_nav_item.item_soc {
     display: none;
@@ -3676,7 +3697,8 @@ section.page {
   }
 
   .page5 {
-    background: #ff9;
+    height: auto;
+    overflow: auto;
   }
   .page5 .wrapper {
     padding: 100px 0;

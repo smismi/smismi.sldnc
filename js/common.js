@@ -300,6 +300,22 @@ var SL = {
 
 
 
+
+			// parallax1
+			new ScrollScene({
+				triggerElement: "#section-1",
+				duration: $(window).height(),
+				offset: -200
+			})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(1);
+				});
+
+
+
+
 		} else {
 
 			var tween = new TimelineMax ()
@@ -345,7 +361,30 @@ var SL = {
 	},
 	initParallax2: function() {
 
-		if(Modernizr.touch) {
+		if(Modernizr.touch && !SL.func.isPh()) {
+
+
+
+
+
+			new ScrollScene({triggerElement: "#section-2", duration: 0})
+				.triggerHook(.5)
+				.addTo(SL.controller).on("enter", function (event) {
+					SL.setPager(2);
+				});
+
+
+
+			new ScrollScene({
+				triggerElement: "#section-2",
+				duration: $(window).height(),
+				offset: -200
+			})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(2);
+				});
 
 
 
@@ -405,8 +444,26 @@ var SL = {
 	},
 	initParallax3: function() {
 
-		if(Modernizr.touch) {
+		if(Modernizr.touch && !SL.func.isPh()) {
 
+			new ScrollScene({triggerElement: "#section-3", duration: 0})
+				.triggerHook(.5)
+				.addTo(SL.controller).on("enter", function (event) {
+					SL.setPager(3);
+				});
+
+
+
+			new ScrollScene({
+				triggerElement: "#section-3",
+				duration: $(window).height(),
+				offset: -200
+			})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(3);
+				});
 
 
 		} else {
@@ -478,9 +535,26 @@ var SL = {
 	},
 	initParallax4: function() {
 
-		if(Modernizr.touch) {
+		if(Modernizr.touch && !SL.func.isPh()) {
+
+			new ScrollScene({triggerElement: "#section-4", duration: 0})
+				.triggerHook(.5)
+				.addTo(SL.controller).on("enter", function (event) {
+					SL.setPager(4);
+					SL.destrotInterActive5();
+				});
 
 
+			new ScrollScene({
+				triggerElement: "#section-4",
+				duration: $(window).height(),
+				offset: -200
+			})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(4);
+				});
 
 		} else {
 
@@ -555,8 +629,16 @@ var SL = {
 
 		// parallax5
 
-		if(Modernizr.touch) {
+		if(Modernizr.touch && !SL.func.isPh()) {
 
+
+
+			new ScrollScene({triggerElement: "#section-5", duration: 0})
+				.triggerHook(.5)
+				.addTo(SL.controller).on("enter", function (event) {
+					SL.setPager(5);
+					SL.initInterActive5();
+				});
 
 
 		} else {
@@ -667,7 +749,7 @@ var SL = {
 
 						SL.header.removeClass("menu_visible");
 
-						SL.mobilemenu.animate({"left": "-100%"}, 50);
+						SL.mobilemenu.css({"right": "-100%"});
 
 					});
 
@@ -676,7 +758,7 @@ var SL = {
 
 					SL.header.removeClass("menu_visible");
 
-					SL.mobilemenu.animate({"left": "-100%"}, 50);
+					SL.mobilemenu.css({"right": "-100%"});
 
 				}
 
@@ -687,7 +769,7 @@ var SL = {
 
 				SL.header.addClass("menu_visible");
 
-				SL.mobilemenu.animate({"left": "0%"}, 50);
+				SL.mobilemenu.css({"right": "0%"});
 
 
 
@@ -719,7 +801,7 @@ var SL = {
 
 						SL.header.removeClass("menu_visible");
 
-						SL.mobilemenu.animate({"left": "-100%"}, 50);
+						SL.mobilemenu.css({"left": "-100%"});
 
 					});
 
@@ -728,7 +810,7 @@ var SL = {
 
 					SL.header.removeClass("menu_visible");
 
-					SL.mobilemenu.animate({"left": "-100%"}, 50);
+					SL.mobilemenu.css({"right": "-100%"});
 
 				}
 
@@ -739,7 +821,7 @@ var SL = {
 
 				SL.header.addClass("menu_visible");
 
-				SL.mobilemenu.animate({"left": "0%"}, 50);
+				SL.mobilemenu.css({"right": "0%"});
 
 
 
