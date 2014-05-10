@@ -156,6 +156,10 @@ var SL = {
 				$(this).remove();
 
 			});
+
+			SL.initPager();
+			SL.initScrollTop();
+
 			SL.initInterActive5();
 
 			return;
@@ -232,7 +236,6 @@ var SL = {
 
 
 		if(SL.func.isPh())  {
-
 
 
 

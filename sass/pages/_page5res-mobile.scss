@@ -184,20 +184,23 @@
 								}
 
 								&.icon3 {
-									font-size: 97px;
+									font-size: 87px;
 								}
 							}
 
 
 							i{
+								display: none;
 
-								@include transform(scale(.6));
+								@include transform(scale(1));
 
 							}
 
 
 							em {
-								@include transform(scale(.4));
+								display: none;
+
+								@include transform(scale(1));
 
 							}
 
