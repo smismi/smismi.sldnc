@@ -117,6 +117,15 @@
 					line-height: 60px;
 				}
 			}
+			&.close_menu {
+				left: auto;
+				right: 0;
+				padding: 0 6px;
+				background: $cherry;
+				a {
+					line-height: 60px;
+				}
+			}
 
 			&.item_link {
 				a {

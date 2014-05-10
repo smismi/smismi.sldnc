@@ -644,6 +644,58 @@ var SL = {
 //		SL.mobilemenu.css({height: $(window).height() - 60, overflow: "auto", backgroundColor: "#f00"});
 
 
+		$(".close_menu", SL.mainmenu).on('click', function(){
+
+			if (SL.header.hasClass("menu_visible")) {
+
+
+
+
+				if ($(".item_link", SL.mobilemenu).hasClass("submenu_visible")) {
+
+					var _sub =  $(".item_link.submenu_visible", SL.mobilemenu).data("target");
+
+
+					$(".item_link", SL.mobilemenu).removeClass("submenu_visible");
+
+					$(".subnav-" + _sub, SL.mobilemenu).slideUp(function(){
+
+						SL.header.removeClass("menu_visible");
+
+						SL.mobilemenu.animate({"left": "-100%"}, 50);
+
+					});
+
+				} else {
+
+
+					SL.header.removeClass("menu_visible");
+
+					SL.mobilemenu.animate({"left": "-100%"}, 50);
+
+				}
+
+				SL.preventScroll.off();
+
+
+			} else {
+
+				SL.header.addClass("menu_visible");
+
+				SL.mobilemenu.animate({"left": "0%"}, 50);
+
+
+
+
+
+				SL.preventScroll.on();
+
+			}
+
+			return false;
+
+
+		});
 		$(".item_menu", SL.mainmenu).on('click', function(){
 
 			if (SL.header.hasClass("menu_visible")) {

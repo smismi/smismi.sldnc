@@ -116,15 +116,12 @@
 
 			}
 
-			&.menu_visible {
-				display: block;
-			}
 			&:before {
 
 				display: none;
 
 			}
-			&.item_menu, &.item_logo, &.item_soc {
+			&.item_menu, &.close_menu, &.item_logo, &.item_soc {
 
 				padding: 0;
 				position: absolute;
@@ -156,6 +153,17 @@
 			&.item_menu {
 				right: auto;
 				left: 0;
+				padding: 0 6px;
+				background: $cherry;
+				a {
+					line-height: $mobilemenu_h + px;
+					padding: 0;
+				}
+			}
+			&.close_menu {
+				display: none;
+				left: auto;
+				right: 0;
 				padding: 0 6px;
 				background: $cherry;
 				a {
@@ -209,6 +217,35 @@
 
 		}
 
+
+	}
+
+	.header {
+
+		&.menu_visible {
+
+
+			.header_nav {
+
+				li.header_nav_item {
+
+					&.item_menu {
+						display: none;
+
+					}
+					&.close_menu {
+						display: block;
+					}
+
+				}
+				li.header_nav_item {
+					&.item_soc {
+						display: none;
+
+					}
+				}
+			}
+		}
 
 	}
 

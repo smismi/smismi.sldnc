@@ -61,7 +61,7 @@
 				color: $cherry;
 
 				&:before {
-					content: "\e608";
+					content: "\e50d";
 				}
 			}
 			&.item_menu {
@@ -69,7 +69,16 @@
 				color: #fff;
 
 				&:before {
-					content: "\e60c";
+					content: "\e501";
+				}
+			}
+
+			&.close_menu {
+				font-size: 24px;
+				color: #fff;
+
+				&:before {
+					content: "\e500";
 				}
 			}
 
@@ -172,6 +181,9 @@
 //		}
 
 		&.item_menu {
+			display: none;
+		}
+		&.close_menu {
 			display: none;
 		}
 		&.item_soc {
@@ -325,6 +337,16 @@
 			}
 		}
 
+		&.close_menu {
+			left: auto;
+			right: 0;
+			padding: 0 6px;
+			background: $cherry;
+			a {
+				line-height: 60px;
+			}
+		}
+
 		&.item_link {
 			a {
 				padding: 30px 0;
@@ -391,6 +413,7 @@
 
 
 }
+
 
 
 
