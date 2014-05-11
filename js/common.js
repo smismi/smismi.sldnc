@@ -9,7 +9,6 @@ var SL = {
 
 	},
 	init: function() {
-		console.log("1. init");
 
 
 
@@ -22,8 +21,6 @@ var SL = {
 		SL.scrollTop = $('#back_to_top');
 
 		SL.cropViewport()
-			.test()
-//			SL.unCropViewport();
 			.preloadImage(SL.unCropViewport);
 
 		SL.initHeaderMenu();
@@ -32,7 +29,6 @@ var SL = {
 
 	cropViewport: function(callback) {
 
-		console.log("2. cropViewport   ---    init");
 
 		if (!SL.func.isPh()) {
 
@@ -60,13 +56,11 @@ var SL = {
 
 	},
 	test: function() {
-		console.log('test');
 
 
 		return this;
 	},
 	preloadImage: function(callback) {
-		console.log("3. preloadImage   ---    start");
 
 
 		var imagesLoaded = 0;
@@ -79,14 +73,12 @@ var SL = {
 			SL.pagePreloader
 				.addClass("spining");
 
-			console.log(percents, imagesLoaded);
 
 
 			if (imgCounter == imagesLoaded) {
 
 
 				$(window).load(function() {
-					console.log("4. preloadImage   ---    done");
 					$(document).off('imgloaded');
 
 					if(callback) setTimeout(callback, SL.globals.cupDelay)
@@ -172,12 +164,6 @@ var SL = {
 		}
 
 
-		$("<img/>")
-			.load(function() { console.log("image loaded correctly"); })
-			.error(function() { console.log("error loading image"); })
-			.attr("src", $("#strangeways").attr("src"))
-		;
-
 
 		SL.cup = $("<div id='cup'></div>").addClass("cup_00").appendTo($("#section-1 .wrapper"));
 
@@ -203,7 +189,6 @@ var SL = {
 
 					clearInterval(timerId);
 
-					console.log("4. preloadImage   ---    done");
 
 					SL.runScene1();
 
@@ -227,7 +212,6 @@ var SL = {
 	},
 	unCropViewport: function() {
 
-		console.log("5. unCropViewport   ---    start");
 
 		$(window).scrollTop(0);
 
@@ -257,7 +241,6 @@ var SL = {
 		SL.cup.remove();
 
 
-			console.log("6. runScene1   ---    run");
 
 
 			$(".section-1-bg-2").animate({left: "10%", opacity: 1}, 800, "easeOutCirc");
@@ -291,7 +274,6 @@ var SL = {
 	initScrollMagik: function() {
 
 
-		console.log("?. initScrollMagik   ---    init");
 
 
 		SL.controller = new ScrollMagic()
@@ -301,7 +283,6 @@ var SL = {
 
 
 	initParallax1: function() {
-		console.log("?. initParallax1   ---    init");
 
 
 		if(Modernizr.touch) {
@@ -341,10 +322,10 @@ var SL = {
 				.setTween(tween)
 				.triggerHook(1)
 				.addTo(SL.controller).on("enter", function (event) {
-					console.log("1st enter")
+//					console.log("1st enter")
 				})
 				.on("leave", function (event) {
-					console.log("1st leave")
+//					console.log("1st leave")
 				});
 
 
@@ -413,10 +394,10 @@ var SL = {
 				.setTween(tween)
 				.triggerHook(1)
 				.addTo(SL.controller).on("enter", function (event) {
-					console.log("2st enter")
+//					console.log("2st enter")
 				})
 				.on("leave", function (event) {
-					console.log("2st leave")
+//					console.log("2st leave")
 				});
 
 
@@ -635,14 +616,8 @@ var SL = {
 	},
 	initParallax5: function() {
 		// parallax5
-		console.log("?. initParallax5   ---    init");
-
-		// parallax5
 		SL.destrotInterActive5();
 
-
-
-//		$(".section-5-header, #section-5 .headermark, .catalog_enter5").css({opacity:0});
 
 
 		if(Modernizr.touch && !SL.func.isPh()) {
@@ -687,7 +662,6 @@ var SL = {
 	},
 
 	destrotInterActive5 : function() {
-		console.log("destrotInterActive5")
 		$(".page_item_caption", "#section-5").css({opacity:0, marginTop: -70});
 		$(".page_item_caption .description").css({opacity:0 });
 		$(".section-5-header, #section-5 .headermark, .catalog_enter5").css({opacity:0});
@@ -695,7 +669,6 @@ var SL = {
 	},
 	initInterActive5: function() {
 		// interactive5
-		console.log("initInterActive5")
 
 		setTimeout(runFirstPage, 300);
 
@@ -737,8 +710,6 @@ var SL = {
 		$(SL.pager).attr("class", "").addClass("active_" + index);
 		$("ul li", SL.pager).removeClass("active");
 		$("ul li:eq(" + _i + ")", SL.pager).addClass("active");
-
-		console.log("active_" + index);
 
 
 		if (index === 1) {
