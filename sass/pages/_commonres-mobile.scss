@@ -79,17 +79,19 @@
 
 		.wrapper {
 
+			background: #ffd3ab url(../img/bg/bg1merged.jpg) repeat 50% 88%;
+
 
 			.section-1-bg-12 {
-				bottom: 35px;
-				margin-left: -429px;
-				background-size:610px;
-				width: 610px;
+				bottom: -35px;
+				margin-left: -262px;
+				background-size: 450px;
+				width: 450px;
 
 			}
 			.section-1-bg-4 {
 				display: block;
-				background-size:410px;
+				background-size:380px;
 
 			}
 
@@ -99,9 +101,11 @@
 			}
 
 			.section-1-bg-3 {
-				right: 10%;
+				right: 0;
 				opacity: 1;
-				margin-right: -50px;
+				background-size: 292px;
+				margin-right: 185px;
+				bottom: 35px;
 			}
 			.section-1-bg-25 {
 				opacity: 1;
