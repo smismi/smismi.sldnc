@@ -75,7 +75,7 @@
 
 			figcaption {
 				//top:50%;
-				//margin-top: -170px;
+				margin-top: -70px;
 				width: $figurewidth;
  				position: relative;
 				text-align: center;
@@ -100,15 +100,15 @@
 				}
 
 				abbr {
-					opacity: 0;
-					top: -46px;
+					//opacity: 0;
+					//top: 0;
 				}
 
 				.icon {
 					@include transition( all .4s ease-out);
 					position: relative;
 					z-index: 3;
-					margin-top: 0;
+					margin-top: -46px;
 					text-align: center;
 					line-height: 0;
 
@@ -147,7 +147,7 @@
  				}
 				em {
 					opacity: 0;
-					top: -42px;
+					top: -62px;
 					@include transition( top 0.3s ease-out, opacity .2s  cubic-bezier(0.440, 0.250, 0.525, 1));
  					z-index: 3;
 
@@ -161,7 +161,7 @@
 				}
 
 				.description {
-					opacity: 0;
+					//opacity: 0;
 					margin-top: -134px;
 
 					h2 {

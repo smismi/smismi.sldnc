@@ -1306,6 +1306,7 @@ section.page {
   vertical-align: top;
 }
 .page5 .wrapper .page_item figcaption {
+  margin-top: -70px;
   width: 340px;
   position: relative;
   text-align: center;
@@ -1321,10 +1322,6 @@ section.page {
   right: 0;
   bottom: 0;
 }
-.page5 .wrapper .page_item figcaption abbr {
-  opacity: 0;
-  top: -46px;
-}
 .page5 .wrapper .page_item figcaption .icon {
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
@@ -1332,7 +1329,7 @@ section.page {
   transition: all 0.4s ease-out;
   position: relative;
   z-index: 3;
-  margin-top: 0;
+  margin-top: -46px;
   text-align: center;
   line-height: 0;
 }
@@ -1359,7 +1356,7 @@ section.page {
 }
 .page5 .wrapper .page_item figcaption em {
   opacity: 0;
-  top: -42px;
+  top: -62px;
   -webkit-transition: top 0.3s ease-out, opacity 0.2s cubic-bezier(0.44, 0.25, 0.525, 1);
   -moz-transition: top 0.3s ease-out, opacity 0.2s cubic-bezier(0.44, 0.25, 0.525, 1);
   -o-transition: top 0.3s ease-out, opacity 0.2s cubic-bezier(0.44, 0.25, 0.525, 1);
@@ -1378,7 +1375,6 @@ section.page {
   transform: scale(0);
 }
 .page5 .wrapper .page_item figcaption .description {
-  opacity: 0;
   margin-top: -134px;
 }
 .page5 .wrapper .page_item figcaption .description h2 {
