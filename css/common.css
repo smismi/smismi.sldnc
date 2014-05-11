@@ -2606,6 +2606,7 @@ section.page {
   #mobilemenu {
     display: block;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
     -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
@@ -2968,6 +2969,7 @@ section.page {
   #mobilemenu {
     display: block;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
     -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
@@ -3330,6 +3332,7 @@ section.page {
   #mobilemenu {
     display: block;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
     -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
@@ -3692,6 +3695,7 @@ section.page {
   #mobilemenu {
     display: block;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
     -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;

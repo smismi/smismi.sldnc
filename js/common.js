@@ -688,7 +688,7 @@ var SL = {
 
 	destrotInterActive5 : function() {
 		console.log("destrotInterActive5")
-		$(".page_item_caption").css({opacity:0, marginTop: -70});
+		$(".page_item_caption", "#section-5").css({opacity:0, marginTop: -70});
 		$(".page_item_caption .description").css({opacity:0 });
 		$(".section-5-header, #section-5 .headermark, .catalog_enter5").css({opacity:0});
 
@@ -754,19 +754,29 @@ var SL = {
 		$("li", SL.pager).on("click", function(){
 
 			var _target = $(this).data("target");
-			$("body").scrollTo( "#section-" + _target , 600 , function(){
+
+
+			$('html, body').animate({
+				scrollTop: $("#section-" + _target).offset().top
+			}, 1000, function(){
 				SL.setPager(_target);
 			});
-
 
 		})
 
 		$(".page_item", "#section-2").on("click", function(){
 
 			var _target = $(this).data("target");
-			$("body").scrollTo( "#section-" + _target , 600 , function(){
+//			$("body").scrollTo( "#section-" + _target , 1220 , function(){
+//
+//			});
+
+			$('html, body').animate({
+				scrollTop: $("#section-" + _target).offset().top
+			}, 1000, function(){
 				SL.setPager(_target);
 			});
+			return false;
 
 
 		})
@@ -793,7 +803,7 @@ var SL = {
 //		SL.mobilemenu.css({height: $(window).height() - 60, overflow: "auto", backgroundColor: "#f00"});
 
 
-		$(".close_menu", SL.mainmenu).on('click', function(){
+		$(".close_menu", SL.mainmenu).on('touchstart click', function(){
 
 			if (SL.header.hasClass("menu_visible")) {
 
@@ -845,7 +855,7 @@ var SL = {
 
 
 		});
-		$(".item_menu", SL.mainmenu).on('click', function(){
+		$(".item_menu", SL.mainmenu).on('touchstart click', function(){
 
 			if (SL.header.hasClass("menu_visible")) {
 
@@ -897,7 +907,7 @@ var SL = {
 
 
 		});
-		$(".item_link", SL.mobilemenu).on('click', function(){
+		$(".item_link", SL.mobilemenu).on('touchstart click', function(){
 
 
 			var _sub =  $(this).data("target");
@@ -923,12 +933,12 @@ var SL = {
 	preventScroll: {
 		on: function () {
 
-			$("html, body").css({overflow: "hidden"});
+			$("body").css({overflow: "hidden"});
 
 		},
 		off: function () {
 
-			$("html, body").css({overflow: "auto"});
+			$("body").css({overflow: "auto"});
 
 		},
 		prevent: function () {

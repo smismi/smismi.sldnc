@@ -92,6 +92,7 @@
 	#mobilemenu {
 		display: block;
 		overflow: auto;
+		-webkit-overflow-scrolling: touch;
 		@include transition( all .4s ease-out);
 		li.header_nav_item {
 			display: block;

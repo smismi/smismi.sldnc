@@ -19,7 +19,7 @@
 
 
 0.
-1. не плавно скролится на ioone
+						1. не плавно скролится на ioone
 2. 3 iconki - mgnovenno
 						3. nispadaushit listiki
 
