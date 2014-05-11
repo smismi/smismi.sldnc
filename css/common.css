@@ -1611,7 +1611,7 @@ section.page {
 }
 
 .catalog_flag {
-  padding: 7px 7px;
+  padding: 6px 7px 8px;
   color: #fff;
   text-decoration: none;
   position: relative;
@@ -1623,6 +1623,8 @@ section.page {
 }
 .catalog_flag span {
   position: relative;
+  height: 16px;
+  display: block;
 }
 .catalog_flag:before {
   content: " ";
@@ -1663,6 +1665,11 @@ section.page {
   right: -32px;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .catalog_flag {
+    padding: 7px 7px;
+  }
+}
 .etc {
   display: none;
 }

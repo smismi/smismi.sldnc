@@ -135,7 +135,7 @@ section.page {
 
 .catalog_flag {
 
-	padding: 7px 7px;
+	padding: 6px 7px 8px;
 	color: #fff;
 	text-decoration: none;
 	position: relative;
@@ -146,8 +146,13 @@ section.page {
 	line-height: 1;
 
 
+
 	span {
 		position: relative;
+		//line-height: 0;
+		height: 16px;
+		display: block;
+
 	}
 	&:before {
 		content: " ";
@@ -191,6 +196,13 @@ section.page {
 
 	}
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.catalog_flag {
+		padding: 7px 7px;
+	}
+}
+
 
 
 
