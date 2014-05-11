@@ -191,6 +191,7 @@
 
 
 		.header_nav-subnav {
+			@include transition( all .3s ease-out);
 
 			&:before {
 				content: " ";

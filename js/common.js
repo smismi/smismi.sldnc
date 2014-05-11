@@ -51,6 +51,8 @@ var SL = {
 
 		SL.pagePreloader = $("<div class='cup-spinner fonted'></div>").appendTo(SL.overlay);
 
+//		SL.preventScroll.prevent();
+
 
         if(true) {
 	        return this;
@@ -229,7 +231,12 @@ var SL = {
 
 		$(window).scrollTop(0);
 
+
+
+
 		SL.runCupAnimation();
+
+
 
 
 	},
@@ -266,6 +273,7 @@ var SL = {
 
 					SL.initPager();
 					SL.initScrollTop();
+//					SL.preventScroll.unprevent();
 
 
 					SL.initParallax1();
@@ -476,29 +484,30 @@ var SL = {
 			var tween = new TimelineMax ()
 				.add([
 					TweenMax.fromTo("#section-3 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
-					TweenMax.fromTo("#section-3 .section-big-title",1, {y: -100}, {y: 100, ease: Linear.easeNone}),
+					TweenMax.fromTo("#section-3 .section-big-title",1, {y: -150}, {y: 50, ease: Linear.easeNone}),
 					TweenMax.fromTo("#section-3 .section-3-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
 
 
 
-					//				TweenMax.to("#section-3 .section-3-item-4-1", 1, {rotation:  45,  scale: 1.5, ease: Linear.easeNone}),
+									TweenMax.to("#section-3 .section-3-item-4-1", 1, {rotation:  45,  scale: 1.5, ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-4-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-4-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-4-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-					//				TweenMax.to("#section-3 .section-3-item-4-5", 1, {rotation:  55,  scale:.4, ease: Linear.easeNone}),
+									TweenMax.to("#section-3 .section-3-item-4-5", 1, {rotation:  55,  scale:.4, ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-4-6", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 
 					TweenMax.fromTo("#section-3 .section-3-item-3", 1, {top: "75%"}, {top: "10%", ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-3-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-					//				TweenMax.to("#section-3 .section-3-item-3-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+//									TweenMax.to("#section-3 .section-3-item-3-2", 1, {rotation:  -35,  scale: 1, ease: Linear.easeNone}),
 									TweenMax.to("#section-3 .section-3-item-3-3", 1, {rotation:  90,  scale: 1, ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-3-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-3-5", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-					//				TweenMax.to("#section-3 .section-3-item-3-6", 1, {rotation:  -34,  scale: 1, ease: Linear.easeNone}),
+									TweenMax.to("#section-3 .section-3-item-3-6", 1, {rotation:  24,  scale: 1, ease: Linear.easeNone}),
+									TweenMax.to("#section-3 .section-3-item-3-7", 1, {rotation:  -44,  scale: 1, ease: Linear.easeNone}),
 
 
 					TweenMax.fromTo("#section-3 .section-3-item-1", 1, {top: "55%"}, {top: "35%", ease: Linear.easeNone}),
-					//				TweenMax.to("#section-3 .section-3-item-1-1", 1, {rotation:  60,  scale: 1, ease: Linear.easeNone}),
+//									TweenMax.to("#section-3 .section-3-item-1-1", 1, {rotation:  60,  scale: 1, ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-1-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-1-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 					]);
@@ -568,10 +577,10 @@ var SL = {
 					TweenMax.fromTo("#section-4 .section-4-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
 
 //				TweenMax.to("#section-4 .section-4-item-4-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-4 .section-4-item-4-2", 1, {rotation:  90,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-4 .section-4-item-4-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-2", 1, {rotation:  90,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-3", 1, {rotation:  80,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-4-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-4 .section-4-item-4-5", 1, {rotation:  55,  scale: .6, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-5", 1, {rotation:  55,  scale: .6, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-4-6", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-4-7", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 
@@ -579,10 +588,10 @@ var SL = {
 
 //				TweenMax.to("#section-4 .section-4-item-3-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-3-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-4 .section-4-item-3-3", 1, {rotation:  55,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-3", 1, {rotation:  55,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-3-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-3-5", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-4 .section-4-item-3-6", 1, {rotation:  -90,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-6", 1, {rotation:  -90,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-3-7", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-3-8", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //				TweenMax.to("#section-4 .section-4-item-3-9", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
@@ -628,6 +637,10 @@ var SL = {
 		console.log("?. initParallax5   ---    init");
 
 		// parallax5
+
+
+		$(".section-5-header, #section-5 .headermark, .catalog_enter5").css({opacity:0});
+
 
 		if(Modernizr.touch && !SL.func.isPh()) {
 
@@ -868,13 +881,28 @@ var SL = {
 
 			$("html, body").css({overflow: "auto"});
 
+		},
+		prevent: function () {
+
+			$(window).on("mousewheel", function(e){
+
+				e.preventDefault();
+				e.stopPropagation();
+
+			})
+
+		},
+		unprevent: function () {
+
+			$(window).off("mousewheel");
+
 		}
 	},
 	destrotInterActive5 : function() {
 
 		$(".page_item_caption abbr").css({opacity:0, top: -46});
-		$(".page_item_caption .description").css({opacity:0, });
-//		$(".page_item_caption i, .page_item_caption em, .page_item_caption .description").css({opacity:0});
+		$(".page_item_caption .description").css({opacity:0 });
+		$(".section-5-header, #section-5 .headermark, .catalog_enter5").css({opacity:0});
 
 	},
 	initInterActive5: function() {
@@ -897,13 +925,16 @@ var SL = {
 		}
 
 		function runThirdPage() {
-			$("#section-5-page-3 abbr").animate({opacity:1,  top: 0}, 300, function() {
+			$("#section-5-page-3 abbr").animate({opacity:1,  top: 0}, 1300, function() {
 
 			});
 		}
 
 		function runItAll() {
-			$(".page_item_caption .description").animate({opacity:1}, 300);
+			$(".page_item_caption .description").animate({opacity:1}, 1300);
+
+			$(".section-5-header, #section-5 .headermark, .catalog_enter5").animate({opacity:1}, 1300);
+
 		}
 
 

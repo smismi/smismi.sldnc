@@ -1,16 +1,99 @@
-.page6 {
-
+/* FOOTER PAGE:begin */
+#footer_page{
 	position: relative;
-	height: 100%;
-	overflow: hidden;
+	background: #f6f6f6;
+	height: 69px;
+	margin: 0 auto;
+	max-width: 1200px;
+	min-width: 750px;
 
-	.wrapper {
-		background:#ffd3ab url(../img/bg/bg5.jpg) repeat 50% 50%;
-		position: relative;
-		height: 100%;
-		overflow: hidden;
+
+	.columns .col_3{
+		color: #787875;
+		font: 13px/69px 'oksana_text_narrowdemibold', sans-serif;
+		margin: 0;
+		padding: 0;
+		float: left;
+		width: 33.3%;
+
+
+		&:nth-child(1){
+			text-align: left;
+			width: 45%;
+		}
+		&:nth-child(1) span{
+			margin-left: 24px;
+		}
+		&:nth-child(2){
+			color: #787875;
+			font: 13px/69px 'oksana_text_narrowdemibold', sans-serif;
+			text-align: left;
+			height: 69px;
+			overflow: hidden;
+			width: 30%;
+
+			div{
+				padding: 10px 0 0 0;
+				position: relative;
+				overflow: hidden;
+			}
+
+			a{
+				border: 1px #a29e9e solid;
+				border-radius: 12px;
+				margin: 0 18px 0 0;
+				width: 24px; height: 24px;
+				display: inline-block;
+
+				&:nth-child(1){
+					background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA8CAYAAABxVAqfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKZJREFUeNpi/P//P8NAACaGAQKjFo9aPGrxgFvMAcQTgPg1EINKoK+kGsBCpsX5UAwCz+jpY00ofQKI5YBYmt5xfBOI/w6pxMVIRu2ETcNDIFagdeK6CI1XQSB+D8SPyEpgIB+TgRf8h4AFZOofLblGLR5c+Xg0qEctHrV41OJRi0ctHrV4tLc42lsc7S2O9hZHe4ujFo/2FkeDetTiUYsHu8UAAQYAySzjF9IWKMAAAAAASUVORK5CYII=) center 0 no-repeat;
+					transition: background 0.5s ease;
+				}
+
+				&:nth-child(1):hover{
+					background: #a8a5a5 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA8CAYAAABxVAqfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKZJREFUeNpi/P//P8NAACaGAQKjFo9aPGrxgFvMAcQTgPg1EINKoK+kGsBCpsX5UAwCz+jpY00ofQKI5YBYmt5xfBOI/w6pxMVIRu2ETcNDIFagdeK6CI1XQSB+D8SPyEpgIB+TgRf8h4AFZOofLblGLR5c+Xg0qEctHrV41OJRi0ctHrV4tLc42lsc7S2O9hZHe4ujFo/2FkeDetTiUYsHu8UAAQYAySzjF9IWKMAAAAAASUVORK5CYII=) center -24px no-repeat;
+				}
+
+				&:nth-child(2){
+					background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA8CAYAAABxVAqfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKZJREFUeNpi/P//P8NAACaGAQKjFo9aPGrxgFvMAcQTgPg1EINKoK+kGsBCpsX5UAwCz+jpY00ofQKI5YBYmt5xfBOI/w6pxMVIRu2ETcNDIFagdeK6CI1XQSB+D8SPyEpgIB+TgRf8h4AFZOofLblGLR5c+Xg0qEctHrV41OJRi0ctHrV4tLc42lsc7S2O9hZHe4ujFo/2FkeDetTiUYsHu8UAAQYAySzjF9IWKMAAAAAASUVORK5CYII=) center 0 no-repeat;
+					transition: background 0.5s ease;
+				}
+
+				&:nth-child(2):hover{
+					background: #a8a5a5 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA8CAYAAABxVAqfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKZJREFUeNpi/P//P8NAACaGAQKjFo9aPGrxgFvMAcQTgPg1EINKoK+kGsBCpsX5UAwCz+jpY00ofQKI5YBYmt5xfBOI/w6pxMVIRu2ETcNDIFagdeK6CI1XQSB+D8SPyEpgIB+TgRf8h4AFZOofLblGLR5c+Xg0qEctHrV41OJRi0ctHrV4tLc42lsc7S2O9hZHe4ujFo/2FkeDetTiUYsHu8UAAQYAySzjF9IWKMAAAAAASUVORK5CYII=) center -24px no-repeat;
+				}
+
+				&:nth-child(3){
+					background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA8CAYAAABxVAqfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKZJREFUeNpi/P//P8NAACaGAQKjFo9aPGrxgFvMAcQTgPg1EINKoK+kGsBCpsX5UAwCz+jpY00ofQKI5YBYmt5xfBOI/w6pxMVIRu2ETcNDIFagdeK6CI1XQSB+D8SPyEpgIB+TgRf8h4AFZOofLblGLR5c+Xg0qEctHrV41OJRi0ctHrV4tLc42lsc7S2O9hZHe4ujFo/2FkeDetTiUYsHu8UAAQYAySzjF9IWKMAAAAAASUVORK5CYII=) center 0 no-repeat;
+					transition: background 0.5s ease;
+				}
+
+				&:nth-child(3):hover{
+					background: #a8a5a5  url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA8CAYAAABxVAqfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKZJREFUeNpi/P//P8NAACaGAQKjFo9aPGrxgFvMAcQTgPg1EINKoK+kGsBCpsX5UAwCz+jpY00ofQKI5YBYmt5xfBOI/w6pxMVIRu2ETcNDIFagdeK6CI1XQSB+D8SPyEpgIB+TgRf8h4AFZOofLblGLR5c+Xg0qEctHrV41OJRi0ctHrV4tLc42lsc7S2O9hZHe4ujFo/2FkeDetTiUYsHu8UAAQYAySzjF9IWKMAAAAAASUVORK5CYII=) center -24px no-repeat;
+				}
+
+				&:nth-child(3):last-child{
+					margin-right: 0;
+				}
+			}
+		}
+
+		&:nth-child(3){
+			text-align: right;
+			width: 25%;
+		}
+
+		&:nth-child(3) a{
+			color: #787875;
+			margin-right: 24px;
+			text-decoration: none;
+		}
+
+		&:nth-child(3) a b{
+			font: 14px/69px 'pf_agora_sans_probold', sans-serif;
+			text-decoration: none;
+			color: #787875;
+		}
 	}
-
-
 
 }
