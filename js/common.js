@@ -911,6 +911,53 @@ var SL = {
 			return false;
 		});
 
+//
+//
+//		$(".header_nav_item").on({"mouseenter click": function(e){
+//
+//
+//				if ($(e.target).hasClass("header_nav_item_link") ) {
+//
+//
+//					var _sub =  $(this).data("target");
+//
+//					if (!_sub) return;
+//
+//					if ($(this).hasClass("submenu_visible")) {
+//
+//						$(this).removeClass("submenu_visible");
+//
+//						$(".subnav-" + _sub).css({"max-height": 0});
+//
+//
+//					} else {
+//
+//
+//						$(this).addClass("submenu_visible");
+//
+//						$(".subnav-" + _sub).css({"max-height": 1200});
+//
+//					}
+//					return false;
+//
+//
+//				}
+//
+//
+//
+//			},"mouseleave": function(){
+//				var _sub =  $(this).data("target");
+//				if (!_sub) return;
+//
+//				$(this).removeClass("submenu_visible");
+//
+//				$(".subnav-" + _sub).css({"max-height": 0});
+//
+//			}
+//		})
+//
+
+
 	},
 	preventScroll: {
 		on: function () {

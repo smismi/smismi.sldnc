@@ -6,7 +6,7 @@
 		position: absolute;
 		left: 0;
 		right: 0;
-		bottom: -15px;
+		bottom: -12px;
 		height: 15px;
 		background: url("../img/main-menu-bg.png") repeat-x bottom center;
 
@@ -254,18 +254,18 @@
 
 
 		}
-
-		&:hover {
-			.header_nav-subnav {
-				max-height:1300px;
-
-			}
-
-			a {
-				color: $cherry
-			}
-
-		}
+		//
+		//&:hover {
+		//	.header_nav-subnav {
+		//		max-height:1300px;
+		//
+		//	}
+		//
+		//	a {
+		//		color: $cherry
+		//	}
+		//
+		//}
 
 
 

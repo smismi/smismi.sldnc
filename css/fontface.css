@@ -8,6 +8,12 @@
   font-style: normal;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: 'sldnc-icons';
+    src: url("../fonts/sldnc-icons.svg#sldnc-icons") format("svg");
+}
+}
 /* Oksana Text Narrow */
 @font-face {
   font-family: 'oksana_text_narrowbold';
