@@ -3,10 +3,15 @@
 	position: relative;
 	background: #f6f6f6;
 	height: 49px;
-	margin: 0 auto;
-	max-width: 1200px;
 	min-width: 750px;
+	margin-top: -49px;
 
+
+
+	.columns {
+		margin: 0 auto;
+		max-width: 1200px;
+	}
 
 	.columns .col_3{
 		color: #787875;
