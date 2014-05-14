@@ -4,7 +4,8 @@ var SL = {
 	controller: null,
 	pager: null,
 	globals: {
-		cupDelay: 1000
+		cupDelay: 1000,
+		lite: false
 
 
 	},
@@ -261,9 +262,9 @@ var SL = {
 
 					SL.initParallax1();
 					SL.initParallax2();
-					SL.initParallax3();
-					SL.initParallax4();
-					SL.initParallax5();
+//					SL.initParallax3();
+//					SL.initParallax4();
+//					SL.initParallax5();
 
 			});
 
@@ -307,15 +308,18 @@ var SL = {
 
 		} else {
 
+
+			if (SL.globals.lite) return;
+
 			var tween = new TimelineMax ()
 				.add([
-					TweenMax.fromTo("#section-1 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
-					TweenMax.fromTo("#section-1 .section-1-bg-11",1, {y: 40}, {y: -40, ease: Linear.easeNone}),
-					TweenMax.fromTo("#section-1 .section-1-bg-12",1, {y: 60}, {y: -60, ease: Linear.easeNone}),
-					TweenMax.fromTo("#section-1 .section-1-bg-25",1, {y: -100}, {y: 100, ease: Linear.easeNone}),
-					TweenMax.fromTo("#section-1 .section-1-bg-2",1, {y: 140}, {y: -140, ease: Linear.easeNone}),
-					TweenMax.fromTo("#section-1 .section-1-bg-3",1, {y: 140}, {y: -140, ease: Linear.easeNone}),
-					TweenMax.fromTo("#section-1 .section-1-bg-4",1, {y: 100}, {y: -100, ease: Linear.easeNone})
+					TweenMax.fromTo("#section-1 .wrapper",1, {y: -500}, {y: 500, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-1 .section-1-bg-11",1, {y: 40}, {y: -40, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-1 .section-1-bg-12",1, {y: 60}, {y: -60, ease: Linear.easeNone}),
+					TweenMax.fromTo("#section-1 .section-1-bg-25",1, {y: -130}, {y: 130, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-1 .section-1-bg-2",1, {y: 140}, {y: -140, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-1 .section-1-bg-3",1, {y: 140}, {y: -140, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-1 .section-1-bg-4",1, {y: 100}, {y: -100, ease: Linear.easeNone})
 				]);
 
 			new ScrollScene({triggerElement: "#section-1", duration: $(window).height() * 2})
@@ -380,6 +384,7 @@ var SL = {
 		} else {
 
 
+			if (SL.globals.lite) return;
 
 
 
@@ -458,6 +463,7 @@ var SL = {
 		} else {
 
 
+			if (SL.globals.lite) return;
 
 
 
@@ -548,6 +554,10 @@ var SL = {
 
 		} else {
 
+
+			if (SL.globals.lite) return;
+
+
 			var tween = new TimelineMax ()
 				.add([
 					TweenMax.fromTo("#section-4 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
@@ -634,6 +644,7 @@ var SL = {
 
 		} else {
 
+			if (SL.globals.lite) return;
 
 
 			var tween = new TimelineMax ()

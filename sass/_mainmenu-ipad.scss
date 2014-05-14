@@ -1,0 +1,13 @@
+@mixin mainmenu-ipad() {
+
+
+	.header {
+
+		&:before {
+			bottom: -13px;
+		}
+
+	}
+
+}
+

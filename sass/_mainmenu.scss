@@ -1,8 +1,5 @@
 .header {
-	//background: url("../img/main-menu-bg.png") repeat-x bottom center;
 	background: $carmine;
-	//height: 62px;
-
 
 	&:before {
 		content: " ";
@@ -149,35 +146,6 @@
 			}
 		}
 
-
-//		&:first-child, &.fb, &.tw {
-//			&:before {
-//				border-right: none;
-//				width: 0;
-//			}
-//		}
-//
-//		&.fb, &.tw {
-//			margin-right: 0px;
-//			margin-left: 30px;
-//			em {
-//				display: inline-block;
-//				width: 32px;
-//				height: 32px;
-//				margin-top: -8px;
-//			}
-//		}
-//		&.fb {
-//			em {
-//				@include icon(ico-fb, 0, 0, true)
-//			}
-//		}
-//		&.tw {
-//
-//			em {
-//				@include icon(ico-tw, 0, 0, true)
-//			}
-//		}
 
 		&.item_menu {
 			display: none;
