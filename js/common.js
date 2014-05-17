@@ -647,16 +647,16 @@ var SL = {
 			if (SL.globals.lite) return;
 
 
-			var tween = new TimelineMax ()
-				.add([
-					TweenMax.fromTo("#section-5 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
-					TweenMax.fromTo("#section-5 .section-big-title",1, {marginTop: -100}, {marginTop: 100, ease: Linear.easeNone})
-				]);
-
-			new ScrollScene({triggerElement: "#section-5", duration: $(window).height() * 2})
-				.setTween(tween)
-				.triggerHook(1)
-				.addTo(SL.controller);
+//			var tween = new TimelineMax ()
+//				.add([
+//					TweenMax.fromTo("#section-5 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-5 .section-big-title",1, {marginTop: -100}, {marginTop: 100, ease: Linear.easeNone})
+//				]);
+//
+//			new ScrollScene({triggerElement: "#section-5", duration: $(window).height() * 2})
+//				.setTween(tween)
+//				.triggerHook(1)
+//				.addTo(SL.controller);
 
 			new ScrollScene({triggerElement: "#section-5", duration: 0})
 				.triggerHook(.5)

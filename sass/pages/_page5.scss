@@ -7,6 +7,7 @@
 }
 
 
+
 .page5 {
 
 	position: static !important;
@@ -75,7 +76,7 @@
 
 			figcaption {
 				//top:50%;
-				margin-top: -70px;
+				//margin-top: -70px;
 				width: $figurewidth;
  				position: relative;
 				text-align: center;
@@ -108,9 +109,13 @@
 					@include transition( all .4s ease-out);
 					position: relative;
 					z-index: 3;
-					margin-top: -46px;
-					text-align: center;
+ 					text-align: center;
+					@if $dev_mode {
+						border: 1px solid red;
+					}
 					line-height: 0;
+					display: block;
+					padding: 120px 0;
 
 					&.icon1 {
 						color: $aircolor;
@@ -162,7 +167,7 @@
 
 				.description {
 					//opacity: 0;
-					margin-top: -134px;
+					margin-top: 0;
 
 					h2 {
 						color: #c7eafc;
@@ -356,3 +361,4 @@
 	}
 
 }
+
