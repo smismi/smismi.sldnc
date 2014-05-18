@@ -1,0 +1,55 @@
+/* FOOTER PAGE:begin */
+#footer_page{
+	margin-top: 0px;
+}
+.catalog {
+
+
+	.wrapper {
+
+ 		padding-top: 60px;
+
+		background:#ffd3ab url(../img/catalog/catalog-page1.jpg) repeat 50% 100%;
+
+
+
+	}
+
+
+	.item_list {
+
+
+		max-width: 1202px;
+		margin: 0 auto;
+		text-align: center;
+
+
+		ul {
+			display: inline-block;
+			li {
+
+				//border-bottom: 1px solid red;
+				//border-right: 1px solid red;
+				border: 1px solid red;
+
+				width: 300px;
+				display: inline-block;
+				height: 292px;
+				vertical-align: bottom;
+
+				margin-left: -1px;
+				margin-top: -1px;
+
+				&.doubled {
+					width: 601px;
+
+				}
+			}
+
+		}
+	}
+
+
+
+}
+

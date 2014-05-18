@@ -67,14 +67,24 @@ section.page {
 }
 
 
+section.catalog {
+	position: relative;
+}
+.catalog {
+
+	.wrapper {
+
+		@if $dev_mode {
+			border: 2px dotted purple;
+		}
+
+	}
 
 
-@import "pages/page1";
-@import "pages/page2";
-@import "pages/page3";
-@import "pages/page4";
-@import "pages/page5";
-@import "pages/page6";
+
+
+}
+
 
 
 .fixed {

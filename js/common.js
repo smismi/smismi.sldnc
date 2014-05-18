@@ -9,24 +9,57 @@ var SL = {
 
 
 	},
-	init: function() {
+	init: {
 
+		main: function() {
+			SL.init.cache();
+
+
+			SL.cropViewport()
+				.preloadImage(SL.unCropViewport);
+
+			SL.initHeaderMenu();
+
+
+
+
+
+
+		},
+
+		catalog: function() {
+			SL.init.cache();
+
+
+
+			SL.initHeaderMenu();
+			SL.initPager();
+			SL.initScrollTop();
+
+
+
+
+
+
+
+		},
+
+
+		cache: function(){
 
 
 //		cache blocks
-		SL.pager = $("#pager_nav");
-		SL.mainmenu = $("#header");
-		SL.header = $(".header");
-		SL.mobilemenu = $("#mobilemenu");
-		SL.contentWrapper = $('#content-wrapper');
-		SL.scrollTop = $('#back_to_top');
+			SL.pager = $("#pager_nav");
+			SL.mainmenu = $("#header");
+			SL.header = $(".header");
+			SL.mobilemenu = $("#mobilemenu");
+			SL.contentWrapper = $('#content-wrapper');
+			SL.scrollTop = $('#back_to_top');
 
-		SL.cropViewport()
-			.preloadImage(SL.unCropViewport);
-
-		SL.initHeaderMenu();
+		}
 
 	},
+
 
 	cropViewport: function(callback) {
 
@@ -280,6 +313,11 @@ var SL = {
 		SL.controller = new ScrollMagic()
 
 
+
+
+
+
+
 	},
 
 
@@ -322,7 +360,7 @@ var SL = {
 //					TweenMax.fromTo("#section-1 .section-1-bg-4",1, {y: 100}, {y: -100, ease: Linear.easeNone})
 				]);
 
-			new ScrollScene({triggerElement: "#section-1", duration: $(window).height() * 2})
+			var scene = new ScrollScene({triggerElement: "#section-1", duration: $(window).height() * 2})
 				.setTween(tween)
 				.triggerHook(1)
 				.addTo(SL.controller).on("enter", function (event) {
@@ -349,6 +387,13 @@ var SL = {
 
 
 		};
+
+
+//		$(window).resize(function() {
+//
+//			SL.controller.updateScene(scene, true);
+//
+//		});
 
 
 	},
@@ -395,7 +440,7 @@ var SL = {
 					TweenMax.fromTo("#section-2 .page_item_ic",1, {y: -100}, {y: 100, ease: Linear.easeNone})
 				]);
 
-			new ScrollScene({triggerElement: "#section-2", duration: $(window).height() * 2})
+			var scene = new ScrollScene({triggerElement: "#section-2", duration: $(window).height() * 2})
 				.setTween(tween)
 				.triggerHook(1)
 				.addTo(SL.controller).on("enter", function (event) {
@@ -408,7 +453,7 @@ var SL = {
 
 
 
-			new ScrollScene({triggerElement: "#section-2", duration: 0})
+			var scene = new ScrollScene({triggerElement: "#section-2", duration: 0})
 				.triggerHook(.5)
 				.addTo(SL.controller).on("enter", function (event) {
 					SL.setPager(2);
@@ -416,7 +461,7 @@ var SL = {
 
 
 
-			new ScrollScene({
+			var scene = new ScrollScene({
 					triggerElement: "#section-2",
 					duration: $(window).height(),
 					offset: -200
@@ -427,6 +472,14 @@ var SL = {
 					SL.setPager(2);
 				});
 
+
+//			$(window).resize(function() {
+//
+//				SL.controller.updateScene(scene, true);
+//				SL.controller.updateScene(scene2, true);
+//				SL.controller.updateScene(scene3, true);
+//
+//			});
 
 
 		};
@@ -501,12 +554,12 @@ var SL = {
 
 
 
-			new ScrollScene({triggerElement: "#section-3", duration: $(window).height() * 2})
+			var scene = new ScrollScene({triggerElement: "#section-3", duration: $(window).height() * 2})
 				.setTween(tween)
 				.triggerHook(1)
 				.addTo(SL.controller);
 
-			new ScrollScene({triggerElement: "#section-3", duration: 0})
+			var scene2 = new ScrollScene({triggerElement: "#section-3", duration: 0})
 				.triggerHook(.5)
 				.addTo(SL.controller).on("enter", function (event) {
 					SL.setPager(3);
@@ -514,7 +567,7 @@ var SL = {
 
 
 
-			new ScrollScene({
+			var scene3 = new ScrollScene({
 				triggerElement: "#section-3",
 				duration: $(window).height(),
 				offset: -200
@@ -524,6 +577,17 @@ var SL = {
 				.on("enter", function (event) {
 					SL.setPager(3);
 				});
+
+
+
+
+//			$(window).resize(function() {
+//
+//				SL.controller.updateScene(scene, true);
+//				SL.controller.updateScene(scene2, true);
+//				SL.controller.updateScene(scene3, true);
+//
+//			});
 
 
 		}
@@ -595,12 +659,12 @@ var SL = {
 				]);
 
 
-			new ScrollScene({triggerElement: "#section-4", duration: $(window).height() * 2})
+			var scene = new ScrollScene({triggerElement: "#section-4", duration: $(window).height() * 2})
 				.setTween(tween)
 				.triggerHook(1)
 				.addTo(SL.controller);
 
-			new ScrollScene({triggerElement: "#section-4", duration: 0})
+			var scene2 = new ScrollScene({triggerElement: "#section-4", duration: 0})
 				.triggerHook(.5)
 				.addTo(SL.controller).on("enter", function (event) {
 					SL.setPager(4);
@@ -608,7 +672,7 @@ var SL = {
 				});
 
 
-			new ScrollScene({
+			var scene3 = new ScrollScene({
 				triggerElement: "#section-4",
 				duration: $(window).height(),
 				offset: -200
@@ -619,6 +683,17 @@ var SL = {
 					SL.setPager(4);
 //					SL.destrotInterActive5();
 				});
+
+
+
+//			$(window).resize(function() {
+//
+//				SL.controller.updateScene(scene, true);
+//				SL.controller.updateScene(scene2, true);
+//				SL.controller.updateScene(scene3, true);
+//
+//			});
+
 
 		}
 
