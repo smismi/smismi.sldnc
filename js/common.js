@@ -586,7 +586,7 @@ var SL = {
 //				SL.controller.updateScene(scene, true);
 //				SL.controller.updateScene(scene2, true);
 //				SL.controller.updateScene(scene3, true);
-//
+
 //			});
 
 
@@ -686,13 +686,13 @@ var SL = {
 
 
 
-//			$(window).resize(function() {
-//
-//				SL.controller.updateScene(scene, true);
-//				SL.controller.updateScene(scene2, true);
-//				SL.controller.updateScene(scene3, true);
-//
-//			});
+			$(window).resize(function() {
+
+				SL.controller.updateScene(scene, true);
+				SL.controller.updateScene(scene2, true);
+				SL.controller.updateScene(scene3, true);
+
+			});
 
 
 		}

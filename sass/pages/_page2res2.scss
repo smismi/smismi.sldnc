@@ -1,0 +1,190 @@
+@mixin page2($i, $headerfont, $headerfont2, $padd, $padd2, $candy1, $candy2, $candy3) {
+
+
+	.page2 {
+
+
+		//position: relative;
+		//height: 100%;
+		//overflow: hidden;
+
+		.wrapper {
+			//background:#ffd3ab url(../img/bg/bg2.jpg) repeat 50% 50%;
+			//text-align: center;
+
+			.page_item {
+				//display: inline-block;
+				//height: 100%;
+				//max-width: 400px;
+				//position: relative;
+				//overflow: hidden;
+				//width: 33.3333%;
+				//cursor: pointer;
+
+
+
+				//figcaption {
+				//	position: absolute;
+				//	width: 100%;
+				//	top:0;
+				//	left:0;
+				//	right: 0;
+				//	bottom: 0;
+				//	opacity: 0;
+				//	@include transition( all 0.2s ease-out);
+
+
+				//}
+
+				//&:hover {
+				//	figcaption {
+				//		position: absolute;
+				//		opacity: 1;
+				//	}
+				//}
+
+
+
+				.page_item_ic {
+
+					//position: relative;
+					//top: 50%;
+					margin-top: -100px;
+
+				}
+
+				.icon {
+
+					//width: 100%;
+					//display: block;
+					//position: relative;
+
+					//@include transition( all .3s ease-out);
+
+					//margin-top: 50%;
+					//text-align: center;
+					//line-height: 0;
+					//color: $cherry;
+
+
+					&.icon1 {
+
+						font-size: $candy1;
+
+						//&:before {
+						//	content: "\e50c";
+						//}
+
+					}
+
+					&.icon2 {
+
+						font-size: $candy2;
+
+						//&:before {
+						//	content: "\e50b";
+						//}
+
+					}
+
+					&.icon3 {
+
+						font-size: $candy3;
+
+
+						//&:before {
+						//	content: "\e50a";
+						//}
+
+					}
+
+
+				}
+
+				h2 {
+				//	color:$carmine;
+				//	position: relative;
+					font-size: $headerfont;  //27
+					line-height: $headerfont + $headerfont * 0.1;
+				//	text-align: center;
+					margin: $padd 40px $padd2 40px;
+				//	@include transition( color 0.1s ease-out);
+
+					//&:before {
+					//	content: ' ';
+					//	border-top: 3px solid $cherry;
+					//	border-bottom: 3px solid $cherry;
+					//	display: block;
+					//	position: absolute;
+					//	width: 38px;
+					//	height: 130px;
+					//	left: 50%;
+					//	margin-left: -19px;
+					//	margin-top: -38px;
+					//}
+
+				}
+
+				h3 {
+				//	padding: 0 56px;
+					font-size: $headerfont2;
+					line-height: $h3fontsize +  $h3fontsize*.1;
+
+					//	font-family: oksana_text_narrowdemibold;
+				//	-webkit-font-smoothing: antialiased;
+				//	color: $carmine;
+				}
+
+
+				//&:hover {
+
+					//.icon {
+					//	color: $white;
+					//	@include transform(scale(1.3));
+
+					//}
+					//h2 {
+					//	color: $white;
+					//	&:before {
+					//		content: '';
+					//		border-color: $white;
+					//	}
+					//}
+					//h3 {
+					//	color: $white;
+					//	@include single-text-shadow;
+					//}
+
+
+				//}
+
+
+
+
+
+
+
+			}
+		}
+	}
+}
+
+
+//
+//@include scrn(1200px, 2500px, null, null) {
+//	@include page2(45, 300px,        78px,        27px,         25px);
+//}
+//@include scrn(1000px, 1200px, null, null) {
+//	@include page2(25, 260px,        78px,        27px,         25px);
+//}
+@include scrn(750px, 1000px, null, null) {
+	@include page2(20,  20px, 		  13px,         110px,  	50px,  50px, 110px, 100px);
+}
+
+
+
+@include scrn(null, null, 0px, 600px) {
+	@include page2(20,  20px, 		  13px,         110px,  	50px,  50px, 110px, 100px);
+}
+
+

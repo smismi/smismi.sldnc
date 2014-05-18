@@ -3,7 +3,7 @@
 }
 
 //$dev_mode : true;
-$dev_mode : true;
+$dev_mode : false;
 
 
 $carmine : #870037;
@@ -23,3 +23,11 @@ $menu_item_p_t: 22;
 $menu_item_p_b: 8;
 
 $mobilemenu_h: 60;
+
+
+
+$default-text-shadow-color: rgba(black, .6);
+$default-text-shadow-blur: 5px;
+$default-text-shadow-v-offset: 0px;
+
+$h3fontsize : 16px;
