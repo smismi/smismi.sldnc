@@ -15,10 +15,30 @@ var SL = {
 			SL.init.cache();
 
 
-			SL.cropViewport()
-				.preloadImage(SL.unCropViewport);
+			$(".section-1-bg-2").animate({left: "10%", opacity: 1}, 800, "easeOutCirc");
+			$(".section-1-bg-3").animate({right: "10%", opacity: 1, marginRight: "-150px"}, 800, "easeOutCirc", function(){
 
-			SL.initHeaderMenu();
+					$(".section-1-bg-25").animate({opacity:1}, 1000);
+
+					$(".header").animate({top: 0, opacity: 1}, 600);
+					$(".pager").animate({right: 0, opacity: 1}, 600 , function(){
+
+
+						SL.initScrollMagik();
+
+						SL.initPager();
+//						SL.initScrollTop();
+//					SL.preventScroll.unprevent();
+
+
+						SL.initParallax1();
+						SL.initParallax2();
+						SL.initParallax3();
+						SL.initParallax4();
+						SL.initParallax5();
+
+					});
+				});
 
 
 
@@ -57,251 +77,6 @@ var SL = {
 			SL.scrollTop = $('#back_to_top');
 
 		}
-
-	},
-
-
-	cropViewport: function(callback) {
-
-
-		if (!SL.func.isPh()) {
-
-			$(".header").css({top: -300, opacity: 0});
-			$(".pager").css({right: -300, opacity: 0});
-
-		}
-
-
-
-
-
-		SL.contentWrapper =  $('#content-wrapper');
-
-		SL.overlay = $("<div id='overlay'></div>").appendTo('body');
-
-		SL.pagePreloader = $("<div class='cup-spinner fonted'></div>").appendTo(SL.overlay);
-
-//		SL.preventScroll.prevent();
-
-
-        if(true) {
-	        return this;
-        }
-
-	},
-	test: function() {
-
-
-		return this;
-	},
-	preloadImage: function(callback) {
-
-
-		var imagesLoaded = 0;
-
-
-		$(document).on('imgloaded', function(ev, imIndex, imgCounter) {
-			imagesLoaded += 1;
- 			var preloadDelta = imgCounter + 1;
-			percents = imagesLoaded * 100 / imgCounter;
-			SL.pagePreloader
-				.addClass("spining");
-
-
-
-			if (imgCounter == imagesLoaded) {
-
-
-				$(window).load(function() {
-					$(document).off('imgloaded');
-
-					if(callback) setTimeout(callback, SL.globals.cupDelay)
-
-
-				})
-
-			}
-
-		});
-
-		loadImages('*');
-
-
-
-		function loadImages(collection) {
-			'use strict';
-
-			var bgRe = /url\((?:\'|\")?([^'"]+)(?:\'|\")?\)/,
-				doc = $(document),
-				imagesAll = $.apply($, arguments)
-					.map(function() {
-						var src,
-							match;
-						if (this instanceof HTMLImageElement) {
-							src = this.src;
-						} else {
-							match = $(this).css('backgroundImage').match(bgRe);
-							if (!match) return null;
-							src = match[1];
-						};
-						return src;
-					}
-				).get(),
-				images = [],
-				len;
-			imagesAll.forEach(function(src) {
-					if (!src || (images.indexOf(src) > -1)) return;
-					images.push(src);
-				}
-			);
-			len = images.length;
-
-			images.forEach(function(src, idx) {
-					var img = new Image();
-					img.onload = function() {
-
-						doc.trigger('imgloaded', [idx, len]);
-						img.onload = null;
-					};
-					img.src = src;
-				}
-			);
-		};
-
-		$(window).scrollTop(0);
-
-	},
-	runCupAnimation: function() {
-
-
-		if (SL.func.isPh()) {
-
-
-			SL.overlay.animate({opacity: 0}, 200, function(){
-				SL.pagePreloader.fadeOut(100, function(){
-					$(this).remove();
-				}).remove();
-				$(this).remove();
-
-			});
-
-			SL.initPager();
-			SL.initScrollTop();
-
-			SL.initInterActive5();
-
-			$(".wrapper", "#section-1").css("height", $(window).height());
-
-			return;
-
-
-		}
-
-
-
-		SL.cup = $("<div id='cup'></div>").addClass("cup_00").appendTo($("#section-1 .wrapper"));
-
-
-		var i = 0; // current iteration value.
-
-		function changeClass(){
-
-
-				if (i == 1) {
-
-					SL.overlay.animate({opacity: 0}, 200, function(){
-						SL.pagePreloader.fadeOut(100, function(){
-							$(this).remove();
-						}).remove();
-						$(this).remove();
-
-					});
-
-				}
-
-				if (i == 30) {
-
-					clearInterval(timerId);
-
-
-					SL.runScene1();
-
-					return;
-				}
-
-				var _i = (i<10)?"0"+i:i;
-
-				SL.cup.removeClass().addClass("cup_" + _i);
-
-				i++;
-
-
-
-		}
-		var timerId = setInterval(changeClass, 25);
-
-
-
-
-	},
-	unCropViewport: function() {
-
-
-		$(window).scrollTop(0);
-
-
-
-
-		SL.runCupAnimation();
-
-
-
-
-	},
-
-	runScene1: function() {
-
-
-		if(SL.func.isPh())  {
-
-
-
-			return;
-		}
-
-
-		$(".section-1-bg-4").show();
-
-		SL.cup.remove();
-
-
-
-
-			$(".section-1-bg-2").animate({left: "10%", opacity: 1}, 800, "easeOutCirc");
-			$(".section-1-bg-3").animate({right: "10%", opacity: 1, marginRight: "-150px"}, 800, "easeOutCirc", function(){
-
-				$(".section-1-bg-25").animate({opacity:1}, 1000);
-
-				$(".header").animate({top: 0, opacity: 1}, 600);
-				$(".pager").animate({right: 0, opacity: 1}, 600 , function(){
-
-
-					SL.initScrollMagik();
-
-					SL.initPager();
-					SL.initScrollTop();
-//					SL.preventScroll.unprevent();
-
-
-					SL.initParallax1();
-					SL.initParallax2();
-					SL.initParallax3();
-					SL.initParallax4();
-					SL.initParallax5();
-
-			});
-
-		});
 
 	},
 
@@ -351,10 +126,10 @@ var SL = {
 
 			var tween = new TimelineMax ()
 				.add([
-					TweenMax.fromTo("#section-1 .wrapper",1, {y: -500}, {y: 500, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-1 .wrapper",1, {y: -500}, {y: 500, ease: Linear.easeNone}),
 //					TweenMax.fromTo("#section-1 .section-1-bg-11",1, {y: 40}, {y: -40, ease: Linear.easeNone}),
 //					TweenMax.fromTo("#section-1 .section-1-bg-12",1, {y: 60}, {y: -60, ease: Linear.easeNone}),
-					TweenMax.fromTo("#section-1 .section-1-bg-25",1, {y: -130}, {y: 130, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-1 .section-1-bg-25",1, {y: -130}, {y: 130, ease: Linear.easeNone}),
 //					TweenMax.fromTo("#section-1 .section-1-bg-2",1, {y: 140}, {y: -140, ease: Linear.easeNone}),
 //					TweenMax.fromTo("#section-1 .section-1-bg-3",1, {y: 140}, {y: -140, ease: Linear.easeNone}),
 //					TweenMax.fromTo("#section-1 .section-1-bg-4",1, {y: 100}, {y: -100, ease: Linear.easeNone})
@@ -397,6 +172,11 @@ var SL = {
 
 
 	},
+
+	getWH: function () {
+		console.log(1);
+		return $(window).height();
+	},
 	initParallax2: function() {
 
 		if(Modernizr.touch && !SL.func.isPh()) {
@@ -436,13 +216,11 @@ var SL = {
 
 			var tween = new TimelineMax ()
 				.add([
-
-
-
-					TweenMax.fromTo("#section-2 .page_item_ic",1, {y: -100}, {y: 100, ease: Linear.easeNone})
+//					TweenMax.fromTo("#section-2 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-2 .page_item_ic",1, {y: -100}, {y: 100, ease: Linear.easeNone})
 				]);
 
-			var scene = new ScrollScene({triggerElement: "#section-2", duration: $(window).height() * 2})
+			var scene = new ScrollScene({triggerElement: "#section-2", duration: SL.getWH() * 2})
 				.setTween(tween)
 				.triggerHook(1)
 				.addTo(SL.controller).on("enter", function (event) {
@@ -526,11 +304,8 @@ var SL = {
 			var tween = new TimelineMax ()
 				.add([
 //					TweenMax.fromTo("#section-3 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
-					TweenMax.fromTo("#section-3 .wrapper", 1, { backgroundPosition: "50% -500px"}, {backgroundPosition: "50% 500px", ease: Linear.easeNone}),
-
-					TweenMax.fromTo("#section-3 .section-big-title",1, {y: -240}, {y: 240, ease: Linear.easeNone}),
-
-					TweenMax.fromTo("#section-3 .section-3-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-3 .section-big-title",1, {y: -150}, {y: 50, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-3 .section-3-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
 
 
 
@@ -541,7 +316,7 @@ var SL = {
 									TweenMax.to("#section-3 .section-3-item-4-5", 1, {rotation:  55,  scale:.4, ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-4-6", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 
-					TweenMax.fromTo("#section-3 .section-3-item-3", 1, {top: "75%"}, {top: "10%", ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-3 .section-3-item-3", 1, {top: "75%"}, {top: "10%", ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-3-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 //									TweenMax.to("#section-3 .section-3-item-3-2", 1, {rotation:  -35,  scale: 1, ease: Linear.easeNone}),
 									TweenMax.to("#section-3 .section-3-item-3-3", 1, {rotation:  90,  scale: 1, ease: Linear.easeNone}),
@@ -551,7 +326,7 @@ var SL = {
 									TweenMax.to("#section-3 .section-3-item-3-7", 1, {rotation:  -44,  scale: 1, ease: Linear.easeNone}),
 
 
-					TweenMax.fromTo("#section-3 .section-3-item-1", 1, {top: "55%"}, {top: "35%", ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-3 .section-3-item-1", 1, {top: "55%"}, {top: "35%", ease: Linear.easeNone}),
 //									TweenMax.to("#section-3 .section-3-item-1-1", 1, {rotation:  60,  scale: 1, ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-1-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
 					//				TweenMax.to("#section-3 .section-3-item-1-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
@@ -631,38 +406,40 @@ var SL = {
 				.add([
 
 
-					TweenMax.fromTo("#section-4 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
-					TweenMax.fromTo("#section-4 .section-big-title",1, {y: -100}, {y: 100, ease: Linear.easeNone}),
-					TweenMax.fromTo("#section-4 .section-4-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
+					TweenMax.fromTo("#section-4 .wrapper", 1, { backgroundPosition: "50% -500px"}, {backgroundPosition: "50% 500px", ease: Linear.easeNone}),
+
+//					TweenMax.fromTo("#section-4 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-4 .section-big-title",1, {y: 0}, {y: 550, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-4 .section-4-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
 //					TweenMax.to("#section-4 div.wrapper", 1, {backgroundPosition: "0 130px", repeat: -1, delay: 1, repeatDelay: 2, ease: Linear.easeNone}),
 
-					TweenMax.fromTo("#section-4 .section-4-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-4  .section-4-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
 
-//				TweenMax.to("#section-4 .section-4-item-4-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-				TweenMax.to("#section-4 .section-4-item-4-2", 1, {rotation:  90,  scale: 1, ease: Linear.easeNone}),
-				TweenMax.to("#section-4 .section-4-item-4-3", 1, {rotation:  80,  scale: 1, ease: Linear.easeNone}),
-				TweenMax.to("#section-4 .section-4-item-4-4", 1, {rotation:  34,  scale: 1, ease: Linear.easeNone}),
-				TweenMax.to("#section-4 .section-4-item-4-5", 1, {rotation:  55,  scale: .6, ease: Linear.easeNone}),
-//				TweenMax.to("#section-4 .section-4-item-4-6", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-4 .section-4-item-4-7", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-1", 1, {rotation:  24, x:-400,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-2", 1, {rotation:  90, x:-400, scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-3", 1, {rotation:  80, x:-400, scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-4", 1, {rotation:  34, x:-400, scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-5", 1, {rotation:  55,x:-400,  scale: .6, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-6", 1, {rotation:  24,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-4-7", 1, {rotation:  299,x:-400,  scale: 1, ease: Linear.easeNone}),
 
-					TweenMax.fromTo("#section-4 .section-4-item-3", 1, {top: "75%"}, {top: "10%", ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-4 .section-4-item-3", 1, {top: "75%"}, {top: "10%", ease: Linear.easeNone}),
 
-				TweenMax.to("#section-4 .section-4-item-3-1", 1, {rotation:  90,  scale: 1, ease: Linear.easeNone}),
-				TweenMax.to("#section-4 .section-4-item-3-2", 1, {rotation:  -50,  scale: 1, ease: Linear.easeNone}),
-				TweenMax.to("#section-4 .section-4-item-3-3", 1, {rotation:  55,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-4 .section-4-item-3-4", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-4 .section-4-item-3-5", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-				TweenMax.to("#section-4 .section-4-item-3-6", 1, {rotation:  -90,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-4 .section-4-item-3-7", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-4 .section-4-item-3-8", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-4 .section-4-item-3-9", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-1", 1, {x:-400, rotation:  90,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-2", 1, {x:-400, rotation:  -50,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-3", 1, {x:-400, rotation:  55,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-4", 1, {x:-400, rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-5", 1, {x:-400, rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-6", 1, {x:-400, rotation:  -90,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-7", 1, {x:-400, rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-8", 1, {x:-400, rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-3-9", 1, {x:-400, rotation:  0,  scale: 1, ease: Linear.easeNone}),
 
-					TweenMax.fromTo("#section-4 .section-4-item-1", 1, {top: "55%"}, {top: "35%", ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-4 .section-4-item-1", 1, {top: "55%"}, {top: "35%", ease: Linear.easeNone}),
 
-//				TweenMax.to("#section-4 .section-4-item-1-1", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-4 .section-4-item-1-2", 1, {rotation:  89,  scale: 1, ease: Linear.easeNone}),
-//				TweenMax.to("#section-4 .section-4-item-1-3", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-1-1", 1, {x:-400,rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-1-2", 1, {x:-400,rotation:  89,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-4 .section-4-item-1-3", 1, {x:-400,rotation:  0,  scale: 1, ease: Linear.easeNone}),
 				]);
 
 
@@ -672,6 +449,56 @@ var SL = {
 				.addTo(SL.controller);
 
 			var scene2 = new ScrollScene({triggerElement: "#section-4", duration: 0})
+				.triggerHook(.5)
+				.addTo(SL.controller).on("enter", function (event) {
+					SL.setPager(4);
+//					SL.destrotInterActive5();
+				});
+
+
+			var tween2 = new TimelineMax ()
+				.add([
+//					TweenMax.fromTo("#section-4 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-4 .section-big-title",1, {y: -100}, {y: 100, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-4 .section-4-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
+//					TweenMax.to("#section-4 div.wrapper", 1, {backgroundPosition: "0 130px", repeat: -1, delay: 1, repeatDelay: 2, ease: Linear.easeNone}),
+
+//					TweenMax.fromTo("#section-4  .section-4-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
+
+				TweenMax.to("#section-42 .section-4-item-4-1", 1, {rotation:  24, x:-400,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-4-2", 1, {rotation:  90, x:-400, scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-4-3", 1, {rotation:  80, x:-400, scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-4-4", 1, {rotation:  34, x:-400, scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-4-5", 1, {rotation:  55,x:-400,  scale: .6, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-4-6", 1, {rotation:  24,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-4-7", 1, {rotation:  299,x:-400,  scale: 1, ease: Linear.easeNone}),
+
+//					TweenMax.fromTo("#section-4 .section-4-item-3", 1, {top: "75%"}, {top: "10%", ease: Linear.easeNone}),
+
+				TweenMax.to("#section-42 .section-4-item-3-1", 1, {x:-400, rotation:  90,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-3-2", 1, {x:-400, rotation:  -50,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-3-3", 1, {x:-400, rotation:  55,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-3-4", 1, {x:-400, rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-3-5", 1, {x:-400, rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-3-6", 1, {x:-400, rotation:  -90,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-3-7", 1, {x:-400, rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-3-8", 1, {x:-400, rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-3-9", 1, {x:-400, rotation:  0,  scale: 1, ease: Linear.easeNone}),
+
+//					TweenMax.fromTo("#section-4 .section-4-item-1", 1, {top: "55%"}, {top: "35%", ease: Linear.easeNone}),
+
+				TweenMax.to("#section-42 .section-4-item-1-1", 1, {x:-400,rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-1-2", 1, {x:-400,rotation:  89,  scale: 1, ease: Linear.easeNone}),
+				TweenMax.to("#section-42 .section-4-item-1-3", 1, {x:-400,rotation:  0,  scale: 1, ease: Linear.easeNone}),
+				]);
+
+
+			var scene2 = new ScrollScene({triggerElement: "#section-42", duration: $(window).height() * 2})
+				.setTween(tween2)
+				.triggerHook(1)
+				.addTo(SL.controller);
+
+			var scene22 = new ScrollScene({triggerElement: "#section-42", duration: 0})
 				.triggerHook(.5)
 				.addTo(SL.controller).on("enter", function (event) {
 					SL.setPager(4);
@@ -693,13 +520,13 @@ var SL = {
 
 
 
-			$(window).resize(function() {
-
-				SL.controller.updateScene(scene, true);
-				SL.controller.updateScene(scene2, true);
-				SL.controller.updateScene(scene3, true);
-
-			});
+//			$(window).resize(function() {
+//
+//				SL.controller.updateScene(scene, true);
+//				SL.controller.updateScene(scene2, true);
+//				SL.controller.updateScene(scene3, true);
+//
+//			});
 
 
 		}
@@ -851,225 +678,7 @@ var SL = {
 
 
 	},
-	initScrollTop: function() {
 
-		SL.scrollTop.on("click", function(){
-
-			$("body").scrollTo( "#section-1" , 600 , function(){
-				SL.setPager(1);
-			});
-
-
-		})
-
-	},
-	initHeaderMenu: function() {
-
-
-//		SL.mobilemenu.css({height: $(window).height() - 60, overflow: "auto", backgroundColor: "#f00"});
-
-
-		$(".close_menu", SL.mainmenu).on('touchstart click', function(){
-
-			if (SL.header.hasClass("menu_visible")) {
-
-
-
-
-				if ($(".item_link", SL.mobilemenu).hasClass("submenu_visible")) {
-
-					var _sub =  $(".item_link.submenu_visible", SL.mobilemenu).data("target");
-
-
-					$(".item_link", SL.mobilemenu).removeClass("submenu_visible");
-
-					$(".subnav-" + _sub, SL.mobilemenu).slideUp(function(){
-
-						SL.header.removeClass("menu_visible");
-
-						SL.mobilemenu.css({"right": "-100%"});
-
-					});
-
-				} else {
-
-
-					SL.header.removeClass("menu_visible");
-
-					SL.mobilemenu.css({"right": "-100%"});
-
-				}
-
-				SL.preventScroll.off();
-
-
-			} else {
-
-				SL.header.addClass("menu_visible");
-
-				SL.mobilemenu.css({"right": "0%"});
-
-
-
-
-
-				SL.preventScroll.on();
-
-			}
-
-			return false;
-
-
-		});
-		$(".item_menu", SL.mainmenu).on('touchstart click', function(){
-
-			if (SL.header.hasClass("menu_visible")) {
-
-
-
-
-				if ($(".item_link", SL.mobilemenu).hasClass("submenu_visible")) {
-
-					var _sub =  $(".item_link.submenu_visible", SL.mobilemenu).data("target");
-
-
-					$(".item_link", SL.mobilemenu).removeClass("submenu_visible");
-
-					$(".subnav-" + _sub, SL.mobilemenu).slideUp(function(){
-
-						SL.header.removeClass("menu_visible");
-
-						SL.mobilemenu.css({"left": "-100%"});
-
-					});
-
-				} else {
-
-
-					SL.header.removeClass("menu_visible");
-
-					SL.mobilemenu.css({"right": "-100%"});
-
-				}
-
-				SL.preventScroll.off();
-
-
-			} else {
-
-				SL.header.addClass("menu_visible");
-
-				SL.mobilemenu.css({"right": "0%"});
-
-
-
-
-
-				SL.preventScroll.on();
-
-			}
-
-			return false;
-
-
-		});
-		$(".item_link", SL.mobilemenu).on('touchstart click', function(){
-
-
-			var _sub =  $(this).data("target");
-
-			if ($(this).hasClass("submenu_visible")) {
-
-				$(this).removeClass("submenu_visible");
-
-				$(".subnav-" + _sub, SL.mobilemenu).slideUp();
-
-			} else {
-
-
-				$(this).addClass("submenu_visible");
-
-				$(".subnav-" + _sub, SL.mobilemenu).slideDown();
-
-			}
-			return false;
-		});
-
-
-
-		$(".header_nav_item").on({"mouseenter click": function(e){
-
-
-				if ($(e.target).hasClass("header_nav_item_link") ) {
-
-
-					var _sub =  $(this).data("target");
-
-					if (!_sub) return;
-
-					if ($(this).hasClass("submenu_visible")) {
-
-						$(this).removeClass("submenu_visible");
-
-						$(".subnav-" + _sub).css({"max-height": 0});
-
-
-					} else {
-
-
-						$(this).addClass("submenu_visible");
-
-						$(".subnav-" + _sub).css({"max-height": 1200});
-
-					}
-					return false;
-
-
-				}
-
-
-
-			},"mouseleave": function(){
-				var _sub =  $(this).data("target");
-				if (!_sub) return;
-
-				$(this).removeClass("submenu_visible");
-
-				$(".subnav-" + _sub).css({"max-height": 0});
-
-			}
-		})
-
-
-
-	},
-	preventScroll: {
-		on: function () {
-
-			$("body").css({overflow: "hidden"});
-
-		},
-		off: function () {
-
-			$("body").css({overflow: "auto"});
-
-		},
-		prevent: function () {
-
-			$(window).on("mousewheel", function(e){
-
-				e.preventDefault();
-				e.stopPropagation();
-
-			})
-
-		},
-		unprevent: function () {
-
-			$(window).off("mousewheel");
-
-		}
-	},
 
 
 //	otheruglystuff for internal use
