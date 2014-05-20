@@ -310,7 +310,7 @@ var SL = {
 
 
 
-		SL.controller = new ScrollMagic()
+		SL.controller = new ScrollMagic({container: "#content-wrapper"})
 
 
 
