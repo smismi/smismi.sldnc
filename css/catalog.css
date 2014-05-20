@@ -698,10 +698,6 @@ section.catalog {
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
 }
 
 .pager {

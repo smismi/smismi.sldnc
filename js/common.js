@@ -298,6 +298,7 @@ var SL = {
 					SL.initParallax3();
 					SL.initParallax4();
 					SL.initParallax5();
+					SL.initParallax6();
 
 			});
 
@@ -586,16 +587,6 @@ var SL = {
 
 
 
-
-//			$(window).resize(function() {
-//
-//				SL.controller.updateScene(scene, true);
-//				SL.controller.updateScene(scene2, true);
-//				SL.controller.updateScene(scene3, true);
-
-//			});
-
-
 		}
 
 	},
@@ -694,17 +685,25 @@ var SL = {
 
 
 
-			$(window).resize(function() {
 
-				SL.controller.updateScene(scene, true);
-				SL.controller.updateScene(scene2, true);
-				SL.controller.updateScene(scene3, true);
-
-			});
 
 
 		}
 
+
+	},
+	initParallax6: function() {
+		var tween = new TimelineMax ()
+			.add([
+
+				TweenMax.fromTo("#back_to_top",1, {y: 0}, {y: -50, ease: Linear.easeNone}),
+
+			]);
+
+		var scene = new ScrollScene({triggerElement: "#footer_page", duration: 50})
+			.setTween(tween)
+			.triggerHook(1)
+			.addTo(SL.controller);
 
 	},
 	initParallax5: function() {

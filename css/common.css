@@ -646,7 +646,7 @@ section.catalog {
   top: -50%;
 }
 .page2 .wrapper .page_item h3 {
-  padding: 0 35px;
+  padding: 0 55px;
   font-size: 16px;
   line-height: 20.8px;
   font-family: oksana_text_narrowdemibold;
@@ -1964,10 +1964,6 @@ section.catalog {
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
 }
 
 .pager {
