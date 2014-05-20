@@ -29,9 +29,9 @@ along with this program.  If not, see http://www.gnu.org/licenses/lgpl.html.
 				set_width:false, /*optional element width: boolean, pixels, percentage*/
 				set_height:false, /*optional element height: boolean, pixels, percentage*/
 				horizontalScroll:false, /*scroll horizontally: boolean*/
-				scrollInertia:400, /*scrolling inertia: integer (milliseconds)*/
+				scrollInertia:500, /*scrolling inertia: integer (milliseconds)*/
 				mouseWheel:true, /*mousewheel support: boolean*/
-				mouseWheelPixels:100, /*mousewheel pixels amount: integer, "auto"*/
+				mouseWheelPixels:120, /*mousewheel pixels amount: integer, "auto"*/
 				autoDraggerLength:true, /*auto-adjust scrollbar dragger length: boolean*/
 				autoHideScrollbar:false, /*auto-hide scrollbar when idle*/
 				alwaysShowScrollbar:false, /*always show scrollbar even when there's nothing to scroll (disables autoHideScrollbar): boolean*/
@@ -272,6 +272,8 @@ along with this program.  If not, see http://www.gnu.org/licenses/lgpl.html.
 				/*calculate and store scroll amount, add scrolling*/
 					scrollAmount=(mCSB_containerH-mCustomScrollBoxH)/(mCSB_draggerContainerH-mCSB_draggerH);
 				$this.data("scrollAmount",scrollAmount).mCustomScrollbar("scrolling",mCustomScrollBox,mCSB_container,mCSB_draggerContainer,mCSB_dragger,mCSB_buttonUp,mCSB_buttonDown,mCSB_buttonLeft,mCSB_buttonRight);
+
+
 				/*scroll*/
 				var mCSB_containerP=Math.abs(mCSB_container.position().top);
 				$this.mCustomScrollbar("scrollTo",mCSB_containerP,{scrollInertia:0,trigger:"internal"});
@@ -321,6 +323,7 @@ along with this program.  If not, see http://www.gnu.org/licenses/lgpl.html.
 		},
 		scrolling:function(mCustomScrollBox,mCSB_container,mCSB_draggerContainer,mCSB_dragger,mCSB_buttonUp,mCSB_buttonDown,mCSB_buttonLeft,mCSB_buttonRight){
 			var $this=$(this);
+
 			/*scrollbar drag scrolling*/
 			if(!$this.data("bindEvent_scrollbar_drag")){
 				var mCSB_draggerDragY,mCSB_draggerDragX,
@@ -638,6 +641,8 @@ along with this program.  If not, see http://www.gnu.org/licenses/lgpl.html.
 				mCSB_dragger=mCSB_draggerContainer.children(".mCSB_dragger"),
 				contentSpeed=draggerSpeed=options.scrollInertia,
 				scrollBeginning,scrollBeginningOffset,totalScroll,totalScrollOffset;
+
+
 			if(!mCSB_container.hasClass("mCS_no_scrollbar")){
 				$this.data({"mCS_trigger":options.trigger});
 				if($this.data("mCS_Init")){options.callbacks=false;}
@@ -838,6 +843,7 @@ along with this program.  If not, see http://www.gnu.org/licenses/lgpl.html.
 		},
 		/*js animation tween*/
 		mTweenAxis:function(el,prop,to,duration,easing,callbacks){
+
 			var callbacks=callbacks || {},
 				onStart=callbacks.onStart || function(){},onUpdate=callbacks.onUpdate || function(){},onComplete=callbacks.onComplete || function(){};
 			var startTime=_getTime(),_delay,progress=0,from=el.offsetTop,elStyle=el.style;
@@ -873,6 +879,7 @@ along with this program.  If not, see http://www.gnu.org/licenses/lgpl.html.
 				}else{
 					elStyle[prop]=to+"px";
 				}
+
 				onUpdate.call();
 			}
 			function _startTween(){
