@@ -29,9 +29,9 @@ along with this program.  If not, see http://www.gnu.org/licenses/lgpl.html.
 				set_width:false, /*optional element width: boolean, pixels, percentage*/
 				set_height:false, /*optional element height: boolean, pixels, percentage*/
 				horizontalScroll:false, /*scroll horizontally: boolean*/
-				scrollInertia:900, /*scrolling inertia: integer (milliseconds)*/
+				scrollInertia:400, /*scrolling inertia: integer (milliseconds)*/
 				mouseWheel:true, /*mousewheel support: boolean*/
-				mouseWheelPixels:200, /*mousewheel pixels amount: integer, "auto"*/
+				mouseWheelPixels:100, /*mousewheel pixels amount: integer, "auto"*/
 				autoDraggerLength:true, /*auto-adjust scrollbar dragger length: boolean*/
 				autoHideScrollbar:false, /*auto-hide scrollbar when idle*/
 				alwaysShowScrollbar:false, /*always show scrollbar even when there's nothing to scroll (disables autoHideScrollbar): boolean*/
