@@ -41,22 +41,11 @@
 
 	position: relative;
 	height:100%;
-	overflow: hidden;
 	background-position: 50% 50%;
 
-	.wrapper {
-
-		// TODO: 1 ex
-		position: absolute;
-		top: 0;
-		bottom:0;
-		overflow: hidden;
-
-
-		// TODO: 2 ex
-		height: 100%;
+	@if $dev_mode {
+		border: 3px dotted purple;
 	}
-
 
 
 

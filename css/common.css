@@ -302,19 +302,16 @@ html.touch .touchonly {
 .page {
   position: relative;
   height: 100%;
-  overflow: hidden;
   background-position: 50% 50%;
-}
-.page .wrapper {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  overflow: hidden;
-  height: 100%;
+  border: 3px dotted purple;
 }
 
 section.catalog {
   position: relative;
+}
+
+.catalog .wrapper {
+  border: 2px dotted purple;
 }
 
 .fixed {
@@ -423,29 +420,9 @@ section.catalog {
   position: relative;
   height: 100%;
   overflow: hidden;
-}
-.page1 .wrapper {
   background: #ffd3ab url(../img/bg/bg1merged.jpg) repeat 50% 100%;
 }
-.page1 .wrapper .section-1-bg-11 {
-  position: absolute;
-  bottom: 185px;
-  right: 20%;
-  width: 552px;
-  height: 485px;
-  margin-right: -380px;
-  background: url(../img/bg/bgl111.png) repeat-x 0 0;
-}
-.page1 .wrapper .section-1-bg-12 {
-  position: absolute;
-  bottom: 65px;
-  left: 25%;
-  width: 776px;
-  height: 256px;
-  margin-left: -685px;
-  background: url(../img/bg/bgl112.png) repeat-x 0 0;
-}
-.page1 .wrapper .section-1-bg-25 {
+.page1 .section-1-bg-25 {
   margin: -210px auto;
   position: relative;
   top: 50%;
@@ -454,10 +431,10 @@ section.catalog {
   font-size: 78px;
   text-align: center;
 }
-.page1 .wrapper .section-1-bg-25:before {
+.page1 .section-1-bg-25:before {
   content: "\e505";
 }
-.page1 .wrapper .section-1-bg-25 h3 {
+.page1 .section-1-bg-25 h3 {
   color: #e70c66;
   position: relative;
   font-size: 27px;
@@ -465,37 +442,10 @@ section.catalog {
   margin-top: 25px;
   text-transform: capitalize;
 }
-.page1 .wrapper .section-1-bg-25 h3.font1 {
-  font-family: oksana_text_narrowbold;
-}
-.page1 .wrapper .section-1-bg-25 h3.font2 {
-  font-family: oksana_text_narrowbold_italic;
-}
-.page1 .wrapper .section-1-bg-25 h3.font3 {
-  font-family: oksana_text_narrowthin;
-}
-.page1 .wrapper .section-1-bg-25 h3.font4 {
-  font-family: oksana_text_narrowthin_italic;
-}
-.page1 .wrapper .section-1-bg-25 h3.font5 {
-  font-family: oksana_text_narrowlight;
-}
-.page1 .wrapper .section-1-bg-25 h3.font6 {
-  font-family: oksana_text_narrowbold;
-}
-.page1 .wrapper .section-1-bg-25 h3.font7 {
-  font-family: oksana_text_narrowLtIt;
-}
-.page1 .wrapper .section-1-bg-25 h3.font8 {
-  font-family: oksana_text_narrowheavy;
-}
-.page1 .wrapper .section-1-bg-25 h3.font9 {
-  font-family: oksana_text_narrowHvIt;
-}
-.page1 .wrapper .section-1-bg-25 h3.font10 {
+.page1 .section-1-bg-25 h3.font10 {
   font-family: oksana_text_narrowdemibold;
 }
-.page1 .wrapper .section-1-bg-25 h3:before {
+.page1 .section-1-bg-25 h3:before {
   content: '';
   position: absolute;
   display: block;
@@ -505,34 +455,6 @@ section.catalog {
   left: 50%;
   margin-left: -28px;
   border-top: 1px solid #e70c66;
-}
-.page1 .wrapper .section-1-bg-4 {
-  position: absolute;
-  top: 0;
-  bottom: 40px;
-  right: 0;
-  left: 0;
-  display: none;
-  background: url(../img/cup2.png) no-repeat 50% 100%;
-}
-.page1 .wrapper .section-1-bg-2 {
-  position: absolute;
-  bottom: 15px;
-  left: 0;
-  width: 367px;
-  height: 181px;
-  opacity: 0;
-  background: url(../img/bg/bgl12.png) no-repeat 0% 100%;
-}
-.page1 .wrapper .section-1-bg-3 {
-  position: absolute;
-  bottom: 15px;
-  right: 0;
-  width: 409px;
-  height: 285px;
-  opacity: 0;
-  margin-right: -160px;
-  background: url(../img/bg/bgl14.png) no-repeat 100% 100%;
 }
 
 #scroll_me {
@@ -669,268 +591,194 @@ section.catalog {
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
 }
 
-.page3 .wrapper {
-  background: #73362d url(../img/bg/bg3merged.jpg) no-repeat 50% 50%;
+.page3 {
+  background: #ff6600;
   position: relative;
   height: 100%;
   overflow: hidden;
 }
-.page3 .wrapper .section-3-bg-1 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-image: url(../img/bg/bgl31.png);
-  background-position: 30% 50%;
-  background-repeat: no-repeat;
-}
-.page3 .wrapper .section-3-bg-2 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-image: url(../img/bg/bgl32.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-.page3 .wrapper .section-3-bg-3 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-image: url(../img/bg/bgl33.png);
-  background-position: 50% 0%;
-  background-repeat: no-repeat;
-}
-.page3 .wrapper .section-3-bg-4 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-image: url(../img/bg/bgl34.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-.page3 .wrapper .headermark {
+.page3 .headermark {
   font-size: 27px;
 }
-.page3 .wrapper .headermark:before {
+.page3 .headermark:before {
   content: "\e504";
 }
-.page3 .wrapper .section-3-item-4 {
+.page3 .section-3-item-4 {
   position: absolute;
   top: 50%;
   left: 50%;
 }
-.page3 .wrapper .section-3-item-4-1 {
+.page3 .section-3-item-4-1 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 403px;
   height: 547px;
-  background-image: url("../img/bg/bgl341.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 193px 0 0 -1038px;
 }
-.page3 .wrapper .section-3-item-4-2 {
+.page3 .section-3-item-4-2 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 242px;
   height: 232px;
-  background-image: url("../img/bg/bgl342.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 85px 0 0 -570px;
 }
-.page3 .wrapper .section-3-item-4-3 {
+.page3 .section-3-item-4-3 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 485px;
   height: 251px;
-  background-image: url("../img/bg/bgl343.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 377px 0 0 -430px;
 }
-.page3 .wrapper .section-3-item-4-4 {
+.page3 .section-3-item-4-4 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 377px;
   height: 302px;
-  background-image: url("../img/bg/bgl344.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 389px 0 0 370px;
 }
-.page3 .wrapper .section-3-item-4-5 {
+.page3 .section-3-item-4-5 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 740px;
   height: 324px;
-  background-image: url("../img/bg/bgl345.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -338px 0 0 -76px;
 }
-.page3 .wrapper .section-3-item-4-6 {
+.page3 .section-3-item-4-6 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 242px;
   height: 199px;
-  background-image: url("../img/bg/bgl346.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -589px 0 0 -446px;
 }
-.page3 .wrapper .section-3-item-3 {
+.page3 .section-3-item-3 {
   position: absolute;
   top: 50%;
   left: 50%;
 }
-.page3 .wrapper .section-3-item-3-1 {
+.page3 .section-3-item-3-1 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 361px;
   height: 256px;
-  background-image: url("../img/bg/bgl331.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -533px 0 0 -966px;
 }
-.page3 .wrapper .section-3-item-3-2 {
+.page3 .section-3-item-3-2 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 185px;
   height: 133px;
-  background-image: url("../img/bg/bgl332.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -284px 0 0 -590px;
 }
-.page3 .wrapper .section-3-item-3-3 {
+.page3 .section-3-item-3-3 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 198px;
   height: 178px;
-  background-image: url("../img/bg/bgl333.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -297px 0 0 -353px;
 }
-.page3 .wrapper .section-3-item-3-4 {
+.page3 .section-3-item-3-4 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 206px;
   height: 167px;
-  background-image: url("../img/bg/bgl334.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -336px 0 0 102px;
 }
-.page3 .wrapper .section-3-item-3-5 {
+.page3 .section-3-item-3-5 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 99px;
   height: 104px;
-  background-image: url("../img/bg/bgl335.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -308px 0 0 741px;
 }
-.page3 .wrapper .section-3-item-3-6 {
+.page3 .section-3-item-3-6 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 545px;
   height: 345px;
-  background-image: url("../img/bg/bgl336.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -15px 0 0 200px;
 }
-.page3 .wrapper .section-3-item-3-7 {
+.page3 .section-3-item-3-7 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 155px;
   height: 203px;
-  background-image: url("../img/bg/bgl337.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 137px 0 0 -373px;
 }
-.page3 .wrapper .section-3-item-3-8 {
+.page3 .section-3-item-3-8 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 144px;
   height: 173px;
-  background-image: url("../img/bg/bgl338.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 369px 0 0 -659px;
 }
-.page3 .wrapper .section-3-item-1 {
+.page3 .section-3-item-1 {
   position: absolute;
   top: 50%;
   left: 50%;
 }
-.page3 .wrapper .section-3-item-1-1 {
+.page3 .section-3-item-1-1 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 162px;
   height: 205px;
-  background-image: url("../img/bg/bgl311.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -144px 0 0 -677px;
 }
-.page3 .wrapper .section-3-item-1-2 {
+.page3 .section-3-item-1-2 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 87px;
   height: 87px;
-  background-image: url("../img/bg/bgl312.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -43px 0 0 -438px;
 }
-.page3 .wrapper .section-3-item-1-3 {
+.page3 .section-3-item-1-3 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 212px;
   height: 126px;
-  background-image: url("../img/bg/bgl313.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 277px 0 0 0px;
 }
 
-.page4 .wrapper {
-  background: #ffd3ab url(../img/bg/bg4merged.jpg) no-repeat 50% 50%;
+.page4 {
+  background: #66ff00;
   position: relative;
   height: 100%;
   overflow: hidden;
 }
-.page4 .wrapper .section-4-bg-1 {
+.page4 .section-4-bg-1 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -940,7 +788,7 @@ section.catalog {
   background-position: 50% 100%;
   background-repeat: no-repeat;
 }
-.page4 .wrapper .section-4-bg-2 {
+.page4 .section-4-bg-2 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -950,7 +798,7 @@ section.catalog {
   background-position: 50% 100%;
   background-repeat: no-repeat;
 }
-.page4 .wrapper .section-4-bg-3 {
+.page4 .section-4-bg-3 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -960,7 +808,7 @@ section.catalog {
   background-position: 50% 100%;
   background-repeat: no-repeat;
 }
-.page4 .wrapper .section-4-bg-4 {
+.page4 .section-4-bg-4 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -970,234 +818,196 @@ section.catalog {
   background-position: 50% 100%;
   background-repeat: no-repeat;
 }
-.page4 .wrapper .headermark {
+.page4 .headermark {
   font-size: 37px;
 }
-.page4 .wrapper .headermark:before {
+.page4 .headermark:before {
   content: "\e503";
 }
-.page4 .wrapper .section-4-item-1 {
+.page4 .section-4-item-1 {
   position: absolute;
   top: 50%;
   left: 50%;
 }
-.page4 .wrapper .section-4-item-1-1 {
+.page4 .section-4-item-1-1 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 85px;
   height: 56px;
-  background-image: url("../img/bg/bgl411.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 0px 0 0 -782px;
 }
-.page4 .wrapper .section-4-item-1-2 {
+.page4 .section-4-item-1-2 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 118px;
   height: 72px;
-  background-image: url("../img/bg/bgl412.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 20px 0 0 320px;
 }
-.page4 .wrapper .section-4-item-1-3 {
+.page4 .section-4-item-1-3 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 78px;
   height: 72px;
-  background-image: url("../img/bg/bgl413.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 370px 0 0 790px;
 }
-.page4 .wrapper .section-4-item-3 {
+.page4 .section-4-item-3 {
   position: absolute;
   top: 50%;
   left: 50%;
 }
-.page4 .wrapper .section-4-item-3-1 {
+.page4 .section-4-item-3-1 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 224px;
   height: 193px;
-  background-image: url("../img/bg/bgl431.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 94px 0 0 -554px;
 }
-.page4 .wrapper .section-4-item-3-2 {
+.page4 .section-4-item-3-2 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 88px;
   height: 100px;
-  background-image: url("../img/bg/bgl432.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -60px 0 0 -476px;
 }
-.page4 .wrapper .section-4-item-3-3 {
+.page4 .section-4-item-3-3 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 160px;
   height: 138px;
-  background-image: url("../img/bg/bgl433.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -330px 0 0 -212px;
 }
-.page4 .wrapper .section-4-item-3-4 {
+.page4 .section-4-item-3-4 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 90px;
   height: 95px;
-  background-image: url("../img/bg/bgl434.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -247px 0 0 255px;
 }
-.page4 .wrapper .section-4-item-3-5 {
+.page4 .section-4-item-3-5 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 167px;
   height: 162px;
-  background-image: url("../img/bg/bgl435.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -300px 0 0 414px;
 }
-.page4 .wrapper .section-4-item-3-6 {
+.page4 .section-4-item-3-6 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 139px;
   height: 114px;
-  background-image: url("../img/bg/bgl436.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -115px 0 0 440px;
 }
-.page4 .wrapper .section-4-item-3-7 {
+.page4 .section-4-item-3-7 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 87px;
   height: 92px;
-  background-image: url("../img/bg/bgl437.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -13px 0 0 576px;
 }
-.page4 .wrapper .section-4-item-3-8 {
+.page4 .section-4-item-3-8 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 84px;
   height: 106px;
-  background-image: url("../img/bg/bgl438.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 122px 0 0 200px;
 }
-.page4 .wrapper .section-4-item-3-9 {
+.page4 .section-4-item-3-9 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 71px;
   height: 84px;
-  background-image: url("../img/bg/bgl439.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 454px 0 0 -317px;
 }
-.page4 .wrapper .section-4-item-4 {
+.page4 .section-4-item-4 {
   position: absolute;
   top: 50%;
   left: 50%;
 }
-.page4 .wrapper .section-4-item-4-1 {
+.page4 .section-4-item-4-1 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 225px;
   height: 166px;
-  background-image: url("../img/bg/bgl441.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -447px 0 0 69px;
 }
-.page4 .wrapper .section-4-item-4-2 {
+.page4 .section-4-item-4-2 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 417px;
   height: 392px;
-  background-image: url("../img/bg/bgl442.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 58px 0 0 345px;
 }
-.page4 .wrapper .section-4-item-4-3 {
+.page4 .section-4-item-4-3 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 419px;
   height: 314px;
-  background-image: url("../img/bg/bgl443.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 319px 0 0 -866px;
 }
-.page4 .wrapper .section-4-item-4-4 {
+.page4 .section-4-item-4-4 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 300px;
   height: 253px;
-  background-image: url("../img/bg/bgl444.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -456px 0 0 -600px;
 }
-.page4 .wrapper .section-4-item-4-5 {
+.page4 .section-4-item-4-5 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 190px;
   height: 198px;
-  background-image: url("../img/bg/bgl445.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -460px 0 0 -1028px;
 }
-.page4 .wrapper .section-4-item-4-6 {
+.page4 .section-4-item-4-6 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 261px;
   height: 238px;
-  background-image: url("../img/bg/bgl446.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: 0px 0 0 -1057px;
 }
-.page4 .wrapper .section-4-item-4-7 {
+.page4 .section-4-item-4-7 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 254px;
   height: 203px;
-  background-image: url("../img/bg/bgl447.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: #f00;
   margin: -463px 0 0 785px;
 }
 
@@ -1405,6 +1215,9 @@ section.catalog {
   position: static;
   vertical-align: middle;
 }
+.page5 .wrapper .section-5-header {
+  border: 2px dotted purple;
+}
 .page5 .wrapper .headermark {
   font-size: 27px;
 }
@@ -1414,11 +1227,13 @@ section.catalog {
 .page5 .wrapper .figure_wrapper {
   position: relative;
   margin: 0 0 40px 0;
+  border: 2px dotted purple;
 }
 .page5 .wrapper .page_item {
   display: inline-block;
   width: 340px;
   vertical-align: top;
+  border: 1px solid red;
 }
 .page5 .wrapper .page_item figcaption {
   width: 340px;
@@ -1427,6 +1242,7 @@ section.catalog {
   line-height: 320px;
   font-size: 0;
   cursor: pointer;
+  border: 1px solid yellow;
 }
 .page5 .wrapper .page_item figcaption em, .page5 .wrapper .page_item figcaption i {
   display: block;
@@ -1444,6 +1260,7 @@ section.catalog {
   position: relative;
   z-index: 3;
   text-align: center;
+  border: 1px solid red;
   line-height: 0;
   display: block;
   padding: 120px 0;
@@ -2232,6 +2049,9 @@ section.catalog {
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1100px) {
+  .page5 .wrapper .section-5-header {
+    border: 45px dotted purple;
+  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 64px;
   }
@@ -2286,6 +2106,9 @@ section.catalog {
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
+  .page5 .wrapper .section-5-header {
+    border: 45px dotted purple;
+  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 54px;
   }
@@ -2340,6 +2163,9 @@ section.catalog {
   }
 }
 @media screen and (min-width: 750px) and (max-width: 800px) {
+  .page5 .wrapper .section-5-header {
+    border: 45px dotted purple;
+  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 54px;
   }
@@ -2394,6 +2220,9 @@ section.catalog {
   }
 }
 @media screen and (min-height: 0px) and (max-height: 650px) {
+  .page5 .wrapper .section-5-header {
+    border: 25px dotted purple;
+  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 44px;
   }
@@ -2444,6 +2273,9 @@ section.catalog {
   }
 }
 @media screen and (min-height: 650px) and (max-height: 750px) {
+  .page5 .wrapper .section-5-header {
+    border: 45px dotted purple;
+  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 54px;
   }
@@ -2494,6 +2326,9 @@ section.catalog {
   }
 }
 @media screen and (min-height: 750px) and (max-height: 850px) {
+  .page5 .wrapper .section-5-header {
+    border: 45px dotted purple;
+  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 64px;
   }
@@ -2860,9 +2695,11 @@ section.catalog {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) {
   #content-wrapper {
+    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
+    border: 3px solid yellow;
     height: auto;
   }
 
@@ -2876,6 +2713,7 @@ section.catalog {
   }
 
   .page {
+    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -3221,6 +3059,7 @@ section.catalog {
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
+    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -3245,6 +3084,9 @@ section.catalog {
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
+  }
+  .page5 .wrapper .page_item figcaption:hover abbr {
+    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
@@ -3283,9 +3125,11 @@ section.catalog {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) {
   #content-wrapper {
+    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
+    border: 3px solid yellow;
     height: auto;
   }
 
@@ -3299,6 +3143,7 @@ section.catalog {
   }
 
   .page {
+    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -3644,6 +3489,7 @@ section.catalog {
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
+    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -3668,6 +3514,9 @@ section.catalog {
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
+  }
+  .page5 .wrapper .page_item figcaption:hover abbr {
+    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
@@ -3706,9 +3555,11 @@ section.catalog {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) {
   #content-wrapper {
+    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
+    border: 3px solid yellow;
     height: auto;
   }
 
@@ -3722,6 +3573,7 @@ section.catalog {
   }
 
   .page {
+    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -4067,6 +3919,7 @@ section.catalog {
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
+    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -4091,6 +3944,9 @@ section.catalog {
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
+  }
+  .page5 .wrapper .page_item figcaption:hover abbr {
+    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
@@ -4129,9 +3985,11 @@ section.catalog {
 }
 @media screen and (max-width: 750px) {
   #content-wrapper {
+    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
+    border: 3px solid yellow;
     height: auto;
   }
 
@@ -4145,6 +4003,7 @@ section.catalog {
   }
 
   .page {
+    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -4490,6 +4349,7 @@ section.catalog {
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
+    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -4514,6 +4374,9 @@ section.catalog {
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
+  }
+  .page5 .wrapper .page_item figcaption:hover abbr {
+    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
