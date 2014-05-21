@@ -15,45 +15,15 @@ var SL = {
 			SL.init.cache();
 
 
-//			SL.cropViewport()
-//				.preloadImage(SL.unCropViewport);
+			SL.cropViewport()
+				.preloadImage(SL.unCropViewport);
 
 			SL.initHeaderMenu();
 
 
-			SL.initScrollMagik();
-
-			SL.initPager();
-			SL.initScrollTop();
 
 
-			$(".section-1-bg-4").show();
 
-			$(".section-1-bg-2").animate({left: "10%", opacity: 1}, 800, "easeOutCirc");
-			$(".section-1-bg-3").animate({right: "10%", opacity: 1, marginRight: "-150px"}, 800, "easeOutCirc", function(){
-
-				$(".section-1-bg-25").animate({opacity:1}, 1000);
-
-				$(".header").animate({top: 0, opacity: 1}, 600);
-				$(".pager").animate({right: 0, opacity: 1}, 600 , function(){
-
-
-//					SL.initScrollMagik();
-//
-//					SL.initPager();
-//					SL.initScrollTop();
-
-
-					SL.initParallax1();
-//					SL.initParallax2();
-					SL.initParallax3();
-					SL.initParallax4();
-//					SL.initParallax5();
-//					SL.initParallax6();
-
-				});
-
-			});
 
 		},
 
@@ -316,18 +286,19 @@ var SL = {
 				$(".pager").animate({right: 0, opacity: 1}, 600 , function(){
 
 
-//					SL.initScrollMagik();
-//
-//					SL.initPager();
-//					SL.initScrollTop();
+					SL.initScrollMagik();
+
+					SL.initPager();
+					SL.initScrollTop();
+//					SL.preventScroll.unprevent();
 
 
 					SL.initParallax1();
 					SL.initParallax2();
-//					SL.initParallax3();
+					SL.initParallax3();
 					SL.initParallax4();
 					SL.initParallax5();
-//					SL.initParallax6();
+					SL.initParallax6();
 
 			});
 
@@ -340,9 +311,9 @@ var SL = {
 
 
 
-		SL.controller = new ScrollMagic({container: "#content-wrapper"})
+//		SL.controller = new ScrollMagic({container: "#content-wrapper"})
 
-//		SL.controller = new ScrollMagic()
+		SL.controller = new ScrollMagic()
 
 
 
@@ -355,6 +326,31 @@ var SL = {
 	initParallax1: function() {
 
 
+		if(Modernizr.touch) {
+
+
+
+
+			// parallax1
+			new ScrollScene({
+				triggerElement: "#section-1",
+				duration: $(window).height(),
+				offset: -200
+			})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(1);
+				});
+
+
+
+
+		} else {
+
+
+			if (SL.globals.lite) return;
+
 			var tween = new TimelineMax ()
 				.add([
 					TweenMax.fromTo("#section-1 .wrapper",1, {y: -500}, {y: 500, ease: Linear.easeNone}),
@@ -366,14 +362,76 @@ var SL = {
 //					TweenMax.fromTo("#section-1 .section-1-bg-4",1, {y: 100}, {y: -100, ease: Linear.easeNone})
 				]);
 
-			var scene = new ScrollScene({triggerElement: "#section-1", duration: 1000})
+			var scene = new ScrollScene({triggerElement: "#section-1", duration: $(window).height() * 2})
 				.setTween(tween)
 				.triggerHook(1)
-				.addTo(SL.controller);
+				.addTo(SL.controller).on("enter", function (event) {
+//					console.log("1st enter")
+				})
+				.on("leave", function (event) {
+//					console.log("1st leave")
+				});
+
+
+
+			// parallax1
+			new ScrollScene({
+					triggerElement: "#section-1",
+					duration: $(window).height(),
+					offset: -200
+				})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(1);
+				});
+
+
+
+		};
+
+
+//		$(window).resize(function() {
+//
+//			SL.controller.updateScene(scene, true);
+//
+//		});
+
 
 	},
 	initParallax2: function() {
 
+		if(Modernizr.touch && !SL.func.isPh()) {
+
+
+
+
+
+			new ScrollScene({triggerElement: "#section-2", duration: 0})
+				.triggerHook(.5)
+				.addTo(SL.controller).on("enter", function (event) {
+					SL.setPager(2);
+				});
+
+
+
+			new ScrollScene({
+				triggerElement: "#section-2",
+				duration: $(window).height(),
+				offset: -200
+			})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(2);
+				});
+
+
+
+		} else {
+
+
+			if (SL.globals.lite) return;
 
 
 
@@ -389,13 +447,81 @@ var SL = {
 			var scene = new ScrollScene({triggerElement: "#section-2", duration: $(window).height() * 2})
 				.setTween(tween)
 				.triggerHook(1)
-				.addTo(SL.controller);
+				.addTo(SL.controller).on("enter", function (event) {
+//					console.log("2st enter")
+				})
+				.on("leave", function (event) {
+//					console.log("2st leave")
+				});
+
+
+
+
+			var scene = new ScrollScene({triggerElement: "#section-2", duration: 0})
+				.triggerHook(.5)
+				.addTo(SL.controller).on("enter", function (event) {
+					SL.setPager(2);
+				});
+
+
+
+			var scene = new ScrollScene({
+					triggerElement: "#section-2",
+					duration: $(window).height(),
+					offset: -200
+				})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(2);
+				});
+
+
+//			$(window).resize(function() {
+//
+//				SL.controller.updateScene(scene, true);
+//				SL.controller.updateScene(scene2, true);
+//				SL.controller.updateScene(scene3, true);
+//
+//			});
+
+
+		};
+
 
 
 
 
 	},
 	initParallax3: function() {
+
+		if(Modernizr.touch && !SL.func.isPh()) {
+
+			new ScrollScene({triggerElement: "#section-3", duration: 0})
+				.triggerHook(.5)
+				.addTo(SL.controller).on("enter", function (event) {
+					SL.setPager(3);
+				});
+
+
+
+			new ScrollScene({
+				triggerElement: "#section-3",
+				duration: $(window).height(),
+				offset: -200
+			})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(3);
+				});
+
+
+		} else {
+
+
+			if (SL.globals.lite) return;
+
 
 
 
@@ -404,7 +530,7 @@ var SL = {
 //					TweenMax.fromTo("#section-3 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
 					TweenMax.fromTo("#section-3 .wrapper", 1, { backgroundPosition: "50% -500px"}, {backgroundPosition: "50% 500px", ease: Linear.easeNone}),
 
-//					TweenMax.fromTo("#section-3 .section-big-title",1, {y: -240}, {y: 240, ease: Linear.easeNone}),
+					TweenMax.fromTo("#section-3 .section-big-title",1, {y: -240}, {y: 240, ease: Linear.easeNone}),
 
 					TweenMax.fromTo("#section-3 .section-3-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
 
@@ -440,18 +566,65 @@ var SL = {
 				.triggerHook(1)
 				.addTo(SL.controller);
 
+			var scene2 = new ScrollScene({triggerElement: "#section-3", duration: 0})
+				.triggerHook(.5)
+				.addTo(SL.controller).on("enter", function (event) {
+					SL.setPager(3);
+				});
+
+
+
+			var scene3 = new ScrollScene({
+				triggerElement: "#section-3",
+				duration: $(window).height(),
+				offset: -200
+			})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(3);
+				});
+
+
+
+		}
 
 	},
 	initParallax4: function() {
 
+		if(Modernizr.touch && !SL.func.isPh()) {
+
+			new ScrollScene({triggerElement: "#section-4", duration: 0})
+				.triggerHook(.5)
+				.addTo(SL.controller).on("enter", function (event) {
+					SL.setPager(4);
+//					SL.destrotInterActive5();
+				});
+
+
+			new ScrollScene({
+				triggerElement: "#section-4",
+				duration: $(window).height(),
+				offset: -200
+			})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(4);
+				});
+
+		} else {
+
+
+			if (SL.globals.lite) return;
 
 
 			var tween = new TimelineMax ()
 				.add([
 
 
-//					TweenMax.fromTo("#section-4 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
-//					TweenMax.fromTo("#section-4 .section-big-title",1, {y: -100}, {y: 100, ease: Linear.easeNone}),
+					TweenMax.fromTo("#section-4 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
+					TweenMax.fromTo("#section-4 .section-big-title",1, {y: -100}, {y: 100, ease: Linear.easeNone}),
 					TweenMax.fromTo("#section-4 .section-4-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
 //					TweenMax.to("#section-4 div.wrapper", 1, {backgroundPosition: "0 130px", repeat: -1, delay: 1, repeatDelay: 2, ease: Linear.easeNone}),
 
@@ -489,6 +662,34 @@ var SL = {
 				.setTween(tween)
 				.triggerHook(1)
 				.addTo(SL.controller);
+
+			var scene2 = new ScrollScene({triggerElement: "#section-4", duration: 0})
+				.triggerHook(.5)
+				.addTo(SL.controller).on("enter", function (event) {
+					SL.setPager(4);
+//					SL.destrotInterActive5();
+				});
+
+
+			var scene3 = new ScrollScene({
+				triggerElement: "#section-4",
+				duration: $(window).height(),
+				offset: -200
+			})
+				.addTo(SL.controller)
+				.triggerHook(0.5)
+				.on("enter", function (event) {
+					SL.setPager(4);
+//					SL.destrotInterActive5();
+				});
+
+
+
+
+
+
+		}
+
 
 	},
 	initParallax6: function() {
@@ -568,27 +769,27 @@ var SL = {
 
 
 		function runFirstPage() {
-			$("#section-5-page-1").animate({opacity:1,  marginTop: 0}, 300, function() {
+			$("#section-5-page-1").animate({opacity:1,  marginTop: 0}, 200, function() {
 				runSecondPage();
 			});
 		}
 
 		function runSecondPage() {
-			$("#section-5-page-2").animate({opacity:1,  marginTop: 0}, 300, function() {
+			$("#section-5-page-2").animate({opacity:1,  marginTop: 0}, 200, function() {
 				runThirdPage();
 			});
 		}
 
 		function runThirdPage() {
-			$("#section-5-page-3").animate({opacity:1,  marginTop: 0}, 300, function() {
+			$("#section-5-page-3").animate({opacity:1,  marginTop: 0}, 200, function() {
 				runItAll();
 			});
 		}
 
 		function runItAll() {
-			$(".page_item_caption .description").animate({opacity:1}, 1300);
+			$(".page_item_caption .description").animate({opacity:1}, 1100);
 
-			$(".section-5-header, #section-5 .headermark, .catalog_enter5").animate({opacity:1}, 1300);
+			$(".section-5-header, #section-5 .headermark, .catalog_enter5").animate({opacity:1}, 1100);
 
 		}
 
@@ -620,9 +821,12 @@ var SL = {
 
 			var _target = $(this).data("target");
 
-			$("#content-wrapper").mCustomScrollbar("scrollTo","section-" + _target);
 
+			$('html, body').animate({
+				scrollTop: $("#section-" + _target).offset().top
+			}, 1000, function(){
 				SL.setPager(_target);
+			});
 
 		})
 
@@ -633,12 +837,11 @@ var SL = {
 //
 //			});
 
-
-			$("#content-wrapper").mCustomScrollbar("scrollTo","section-" + _target);
-
-			SL.setPager(_target);
-
-
+			$('html, body').animate({
+				scrollTop: $("#section-" + _target).offset().top
+			}, 1000, function(){
+				SL.setPager(_target);
+			});
 			return false;
 
 
@@ -652,12 +855,9 @@ var SL = {
 
 		SL.scrollTop.on("click", function(){
 
-
-
-			$("#content-wrapper").mCustomScrollbar("scrollTo","section-1");
-//			$("body").scrollTo( "#section-1" , 600 , function(){
-//				SL.setPager(1);
-//			});
+			$("body").scrollTo( "#section-1" , 600 , function(){
+				SL.setPager(1);
+			});
 
 
 		})
