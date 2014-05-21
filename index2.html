@@ -34,12 +34,16 @@
 	<link rel="stylesheet" href="css/queryLoader.css" type="text/css"/>
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css"/>
 	<style>
+
 		#content-wrapper {
 			width: 100%;
 			height: 100%;
 			overflow: auto;
 			background: #333;
 		}
+        .page {
+            height: 1000px;
+        }
 	</style>
 </head>
 <body>
@@ -476,7 +480,7 @@
 	$(document).ready(function ($) {
 
 
-		SL.init.main();
+//		SL.init.main();
 
 
 	});
@@ -484,9 +488,9 @@
 		$("#content-wrapper").mCustomScrollbar({
 			callbacks:{
 //                        onScrollStart:function(){ OnScrollStart(); },
-				whileScrolling:function(){
-					OnScroll();
-				}
+//				whileScrolling:function(){
+//					OnScroll();
+//				}
 //                        onTotalScroll:function(){ OnTotalScroll(); },
 //                        onTotalScrollBack:function(){ OnTotalScrollBack(); },
 //                        onTotalScrollOffset:40,
@@ -496,7 +500,7 @@
 		});
 
 		function OnScroll(){
-			SL.controller.update();
+//			SL.controller.update();
 		}
 	});
 

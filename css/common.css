@@ -299,10 +299,6 @@ html.touch .touchonly {
   height: 144px;
 }
 
-section.page {
-  position: relative;
-}
-
 .page {
   position: relative;
   height: 100%;
@@ -3181,7 +3177,7 @@ section.catalog {
     font-size: 55px;
   }
   .page2 .wrapper .page_item h2 {
-    padding: 40px 40px;
+    margin: 40px 40px;
   }
   .page2 .wrapper .page_item h2:before {
     content: ' ';
@@ -3194,6 +3190,9 @@ section.catalog {
     left: 50%;
     margin-left: -19px;
     margin-top: -58px;
+  }
+  .page2 .wrapper .page_item h3 {
+    display: none;
   }
   .page2 .wrapper .page_item:hover .icon {
     color: #e70c66;
@@ -3601,7 +3600,7 @@ section.catalog {
     font-size: 55px;
   }
   .page2 .wrapper .page_item h2 {
-    padding: 40px 40px;
+    margin: 40px 40px;
   }
   .page2 .wrapper .page_item h2:before {
     content: ' ';
@@ -3614,6 +3613,9 @@ section.catalog {
     left: 50%;
     margin-left: -19px;
     margin-top: -58px;
+  }
+  .page2 .wrapper .page_item h3 {
+    display: none;
   }
   .page2 .wrapper .page_item:hover .icon {
     color: #e70c66;
@@ -4021,7 +4023,7 @@ section.catalog {
     font-size: 55px;
   }
   .page2 .wrapper .page_item h2 {
-    padding: 40px 40px;
+    margin: 40px 40px;
   }
   .page2 .wrapper .page_item h2:before {
     content: ' ';
@@ -4034,6 +4036,9 @@ section.catalog {
     left: 50%;
     margin-left: -19px;
     margin-top: -58px;
+  }
+  .page2 .wrapper .page_item h3 {
+    display: none;
   }
   .page2 .wrapper .page_item:hover .icon {
     color: #e70c66;
@@ -4441,7 +4446,7 @@ section.catalog {
     font-size: 55px;
   }
   .page2 .wrapper .page_item h2 {
-    padding: 40px 40px;
+    margin: 40px 40px;
   }
   .page2 .wrapper .page_item h2:before {
     content: ' ';
@@ -4454,6 +4459,9 @@ section.catalog {
     left: 50%;
     margin-left: -19px;
     margin-top: -58px;
+  }
+  .page2 .wrapper .page_item h3 {
+    display: none;
   }
   .page2 .wrapper .page_item:hover .icon {
     color: #e70c66;

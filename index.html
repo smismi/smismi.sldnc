@@ -17,24 +17,36 @@
 	<script type="text/javascript" src="js/_dependent/greensock/TweenMax.min.js"></script>
 	<script type="text/javascript" src="js/_dependent/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
-	<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
-	<script type="text/javascript" src="js/_mobile/iscroll.js"></script>
-	<script type="text/javascript" src="js/jquery.scrollto.js"></script>
+	<!--<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>-->
+	<!--<script type="text/javascript" src="js/_mobile/iscroll.js"></script>-->
+	<!--<script type="text/javascript" src="js/jquery.scrollto.js"></script>-->
 	<script type="text/javascript" src="js/jquery.rotation.js"></script>
 	<script type="text/javascript" src="js/queryLoader.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
 
 	<script type="text/javascript" src="js/common.js"></script>
 
 
-
-
-
 	<link rel="stylesheet" href="css/fontface.css" type="text/css"/>
 	<link rel="stylesheet" href="css/common.css" type="text/css"/>
 	<link rel="stylesheet" href="css/queryLoader.css" type="text/css"/>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css"/>
+
+    <style>
+
+        #content-wrapper {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background: #333;
+        }
+        .page {
+            height: 1000px;
+        }
+    </style>
 </head>
 <body>
 <img src="img/cup2-s4ffb9dcb7c_opt.png" id="strangeways" alt="" style="top: -10000px; position: absolute; width: 12px; height: 12px;"/>
@@ -494,6 +506,32 @@
 
 
 	});
+
+    $(window).load(function(){
+        $("#content-wrapper").mCustomScrollbar({
+            mouseWheel: {
+                normalizeDelta:true,
+                scrollAmount: 1200,
+
+            },
+            callbacks:{
+//                        onScrollStart:function(){ OnScrollStart(); },
+				whileScrolling:function(){
+					OnScroll();
+				}
+//                        onTotalScroll:function(){ OnTotalScroll(); },
+//                        onTotalScrollBack:function(){ OnTotalScrollBack(); },
+//                        onTotalScrollOffset:40,
+//                        onTotalScrollBackOffset:20,
+//                        whileScrolling:function(){ WhileScrolling(); }
+            }
+        });
+
+        function OnScroll(){
+//			SL.controller.update();
+        }
+    });
+
 
 
 
