@@ -16,6 +16,11 @@ var SL = {
 
 
 
+
+			SL.cropViewport()
+				.preloadImage(SL.unCropViewport);
+
+
 			SL.initScrollMagik();
 
 
@@ -95,6 +100,8 @@ var SL = {
 	preloadImage: function(callback) {
 
 
+
+
 		var imagesLoaded = 0;
 
 
@@ -108,6 +115,7 @@ var SL = {
 
 
 			if (imgCounter == imagesLoaded) {
+
 
 
 				$(window).load(function() {
@@ -292,7 +300,6 @@ var SL = {
 
 
 
-					console.log(1);
 
 
 //					SL.initParallax1();
@@ -338,28 +345,44 @@ var SL = {
 	prepareParallax: function() {
 
 
+		var tween = new TimelineMax ()
+			.add([
+//				TweenMax.fromTo("#section-1",1, {y: -500}, {y: 500, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-1 .section-1-bg-11",1, {y: 40}, {y: -40, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-1 .section-1-bg-12",1, {y: 60}, {y: -60, ease: Linear.easeNone}),
+				TweenMax.fromTo("#section-1 .section-1-bg-25",1, {y: -130}, {y: 130, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-1 .section-1-bg-2",1, {y: 140}, {y: -140, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-1 .section-1-bg-3",1, {y: 140}, {y: -140, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-1 .section-1-bg-4",1, {y: 100}, {y: -100, ease: Linear.easeNone})
+			]);
 
-		var scene1 = new ScrollScene({
-			triggerElement: "#section-1",
-			duration: 1000,
-			offset: -10
-		}).addTo(SL.controller)
-			.triggerHook(0)
-			.on("enter", function (event) {
-
-
-
-
-				$("#section-1").css("border", "13px solid grey");
-
-			}).on("leave", function (event) {
-
-
-
-
-				$("#section-1").css("border", "0");
-
+		var scene = new ScrollScene({triggerElement: "#section-1", duration: $(window).height() * 2})
+			.setTween(tween)
+			.triggerHook(1)
+			.addTo(SL.controller).on("enter", function (event) {
+//					console.log("1st enter")
+			})
+			.on("leave", function (event) {
+//					console.log("1st leave")
 			});
+
+
+
+		// parallax1
+		new ScrollScene({
+			triggerElement: "#section-1",
+			duration: $(window).height(),
+			offset: -200
+		})
+			.addTo(SL.controller)
+			.triggerHook(0.5)
+			.on("enter", function (event) {
+				SL.setPager(1);
+			});
+
+
+
+
 		var scene2 = new ScrollScene({
 			triggerElement: "#section-2",
 			duration: 1000 * 2
@@ -432,7 +455,7 @@ var SL = {
 			.on("enter", function (event) {
 
 
-				sr32526 = new ScrollScene({triggerElement: "#section-3", duration: 1000 * 2})
+				new ScrollScene({triggerElement: "#section-3", duration: 1000 * 2})
 					.setTween(tween3)
 					.triggerHook(1)
 					.addTo(SL.controller);
@@ -442,10 +465,6 @@ var SL = {
 
 			}).on("leave", function (event) {
 
-//				wwfwfasf = sr32526.destroy();
-//
-//				debugger;
-//
 				$("#section-3").css("border", "0");
 
 			});
