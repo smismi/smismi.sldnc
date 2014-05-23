@@ -5,7 +5,7 @@ var SL = {
 	pager: null,
 	globals: {
 		cupDelay: 1000,
-		lite: true
+		lite: false
 
 
 	},
@@ -196,7 +196,7 @@ var SL = {
 
 			SL.initInterActive5();
 
-			$(".wrapper", "#section-1").css("height", $(window).height());
+//			$(".wrapper", "#section-1").css("height", $(window).height());
 
 			return;
 
@@ -205,7 +205,7 @@ var SL = {
 
 
 
-		SL.cup = $("<div id='cup'></div>").addClass("cup_00").appendTo($("#section-1 .wrapper"));
+		SL.cup = $("<div id='cup'></div>").addClass("cup_00").appendTo($("#section-1"));
 
 
 		var i = 0; // current iteration value.
@@ -347,6 +347,8 @@ var SL = {
 
 		var tween = new TimelineMax ()
 			.add([
+				TweenMax.fromTo("#section-1", 1, { backgroundPosition: "50% -500px"}, {backgroundPosition: "50% 500px", ease: Linear.easeNone}),
+
 //				TweenMax.fromTo("#section-1",1, {y: -500}, {y: 500, ease: Linear.easeNone}),
 //					TweenMax.fromTo("#section-1 .section-1-bg-11",1, {y: 40}, {y: -40, ease: Linear.easeNone}),
 //					TweenMax.fromTo("#section-1 .section-1-bg-12",1, {y: 60}, {y: -60, ease: Linear.easeNone}),
@@ -382,11 +384,17 @@ var SL = {
 
 
 
+		var tween2 = new TimelineMax ()
+			.add([
+				TweenMax.fromTo("#section-2", 1, { backgroundPosition: "50% -500px"}, {backgroundPosition: "50% 500px", ease: Linear.easeNone}),
+
+			]);
 
 		var scene2 = new ScrollScene({
 			triggerElement: "#section-2",
 			duration: 1000 * 2
-		})
+		}).setTween(tween)
+
 			.addTo(SL.controller)
 			.triggerHook(1)
 			.on("enter", function (event) {
@@ -419,6 +427,7 @@ var SL = {
  				TweenMax.fromTo("#section-3 .section-3-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
 
 
+				TweenMax.fromTo("#section-3", 1, { backgroundPosition: "50% -500px"}, {backgroundPosition: "50% 500px", ease: Linear.easeNone}),
 
 				TweenMax.to("#section-3 .section-3-item-4-1", 1, {rotation:  45,  scale: 1.5, ease: Linear.easeNone}),
 				//				TweenMax.to("#section-3 .section-3-item-4-2", 1, {rotation:  0,  scale: 1, ease: Linear.easeNone}),
@@ -473,6 +482,7 @@ var SL = {
 		var tween4 = new TimelineMax ()
 			.add([
 
+				TweenMax.fromTo("#section-4", 1, { backgroundPosition: "50% -500px"}, {backgroundPosition: "50% 500px", ease: Linear.easeNone}),
 
 //				TweenMax.fromTo("#section-4 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
 //				TweenMax.fromTo("#section-4 .section-big-title",1, {y: -100}, {y: 100, ease: Linear.easeNone}),
