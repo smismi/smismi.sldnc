@@ -406,14 +406,14 @@ var SL = {
 
 
 
-				$("#section-2").css("border", "13px solid green");
+//				$("#section-2").css("border", "13px solid green");
 
 			}).on("leave", function (event) {
 
 
 
 
-				$("#section-2").css("border", "0");
+//				$("#section-2").css("border", "0");
 
 			});
 
@@ -469,12 +469,12 @@ var SL = {
 					.triggerHook(1)
 					.addTo(SL.controller);
 
-
-				$("#section-3").css("border", "13px solid yellow");
+//
+//				$("#section-3").css("border", "13px solid yellow");
 
 			}).on("leave", function (event) {
 
-				$("#section-3").css("border", "0");
+//				$("#section-3").css("border", "0");
 
 			});
 
@@ -537,7 +537,7 @@ var SL = {
 
 
 
-				$("#section-4").css("border", "13px solid #214ffe");
+//				$("#section-4").css("border", "13px solid #214ffe");
 
 			}).on("leave", function (event) {
 
@@ -561,14 +561,14 @@ var SL = {
 
 
 
-				$("#section-5").css("border", "13px solid #235267");
+//				$("#section-5").css("border", "13px solid #235267");
 
 			}).on("leave", function (event) {
 
 
 
 
-				$("#section-5").css("border", "0");
+//				$("#section-5").css("border", "0");
 
 			});
 

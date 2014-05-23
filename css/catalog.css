@@ -303,15 +303,10 @@ html.touch .touchonly {
   position: relative;
   height: 100%;
   background-position: 50% 50%;
-  border: 3px dotted purple;
 }
 
 section.catalog {
   position: relative;
-}
-
-.catalog .wrapper {
-  border: 2px dotted purple;
 }
 
 .fixed {
@@ -996,9 +991,6 @@ section.catalog {
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1100px) {
-  .page5 .wrapper .section-5-header {
-    border: 45px dotted purple;
-  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 64px;
   }
@@ -1053,9 +1045,6 @@ section.catalog {
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  .page5 .wrapper .section-5-header {
-    border: 45px dotted purple;
-  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 54px;
   }
@@ -1110,9 +1099,6 @@ section.catalog {
   }
 }
 @media screen and (min-width: 750px) and (max-width: 800px) {
-  .page5 .wrapper .section-5-header {
-    border: 45px dotted purple;
-  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 54px;
   }
@@ -1167,9 +1153,6 @@ section.catalog {
   }
 }
 @media screen and (min-height: 0px) and (max-height: 650px) {
-  .page5 .wrapper .section-5-header {
-    border: 25px dotted purple;
-  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 44px;
   }
@@ -1220,9 +1203,6 @@ section.catalog {
   }
 }
 @media screen and (min-height: 650px) and (max-height: 750px) {
-  .page5 .wrapper .section-5-header {
-    border: 45px dotted purple;
-  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 54px;
   }
@@ -1273,9 +1253,6 @@ section.catalog {
   }
 }
 @media screen and (min-height: 750px) and (max-height: 850px) {
-  .page5 .wrapper .section-5-header {
-    border: 45px dotted purple;
-  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 64px;
   }
@@ -1642,11 +1619,9 @@ section.catalog {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) {
   #content-wrapper {
-    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
-    border: 3px solid yellow;
     height: auto;
   }
 
@@ -1660,7 +1635,6 @@ section.catalog {
   }
 
   .page {
-    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -2006,7 +1980,6 @@ section.catalog {
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
-    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -2031,9 +2004,6 @@ section.catalog {
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr {
-    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
@@ -2072,11 +2042,9 @@ section.catalog {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) {
   #content-wrapper {
-    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
-    border: 3px solid yellow;
     height: auto;
   }
 
@@ -2090,7 +2058,6 @@ section.catalog {
   }
 
   .page {
-    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -2436,7 +2403,6 @@ section.catalog {
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
-    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -2461,9 +2427,6 @@ section.catalog {
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr {
-    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
@@ -2502,11 +2465,9 @@ section.catalog {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) {
   #content-wrapper {
-    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
-    border: 3px solid yellow;
     height: auto;
   }
 
@@ -2520,7 +2481,6 @@ section.catalog {
   }
 
   .page {
-    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -2866,7 +2826,6 @@ section.catalog {
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
-    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -2891,9 +2850,6 @@ section.catalog {
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr {
-    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
@@ -2932,11 +2888,9 @@ section.catalog {
 }
 @media screen and (max-width: 750px) {
   #content-wrapper {
-    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
-    border: 3px solid yellow;
     height: auto;
   }
 
@@ -2950,7 +2904,6 @@ section.catalog {
   }
 
   .page {
-    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -3296,7 +3249,6 @@ section.catalog {
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
-    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -3321,9 +3273,6 @@ section.catalog {
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr {
-    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
