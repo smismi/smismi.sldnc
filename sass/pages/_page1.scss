@@ -11,12 +11,11 @@
 
 	.section-1-bg-11 {
 		position: absolute;
-		bottom: 185px;
 		right: 20%;
+		bottom: 185px;
 		width: 552px;
 		height: 485px;
 		margin-right: -380px;
-		background: url(../img/bg/bgl111.png) repeat-x 0 0;
 	}
 
 	.section-1-bg-12 {
@@ -26,7 +25,6 @@
 		width: 776px;
 		height: 256px;
 		margin-left: -685px;
-		background: url(../img/bg/bgl112.png) repeat-x 0 0;
 	}
 
 
@@ -34,11 +32,16 @@
 		margin: -210px auto;
 		position: relative;
 		top: 50%;
-		opacity: 0;
-
+		opacity: 1;
 		color: $logo;
 		font-size: 78px;
 		text-align: center;
+
+
+		&.a {
+
+		 opacity: 0;
+		}
 
 		&:before {
 			content: "\e505";
@@ -98,12 +101,15 @@
 	}
 	.section-1-bg-4 {
 		position: absolute;
-		top: 0;
-		bottom: 40px;
-		right: 0;
-		left: 0;
+		bottom: 41px;
+		left: 50%;
+		margin-left: -291px;
+		width: 581px;
+		height: 330px;
 
-		background:url(../img/cup2.png)  no-repeat 50% 100%;
+		&.a {
+			display: none;
+		}
 	}
 
 
@@ -111,21 +117,31 @@
 	.section-1-bg-2 {
 		position: absolute;
 		bottom: 15px;
-		left: 0;
+		left: 10%;
 		width: 367px;
 		height: 181px;
-		opacity: 0;
-		background:url(../img/bg/bgl12.png)  no-repeat 0% 100%;
+		opacity: 1;
+
+		&.a {
+			left: 0;
+			opacity: 0;
+		}
 	}
 	.section-1-bg-3 {
 		position: absolute;
 		bottom: 15px;
-		right: 0;
+		right: 10%;
 		width: 409px;
 		height: 285px;
-		opacity: 0;
-		margin-right: -160px;
-		background:url(../img/bg/bgl14.png)  no-repeat 100% 100%;
+		opacity: 1;
+		margin-right: -150px;
+
+		&.a {
+			opacity: 0;
+			right: 0;
+			margin-right: -160px;
+		}
+
 	}
 
 
