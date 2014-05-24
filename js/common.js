@@ -12,6 +12,8 @@ var SL = {
 	init: {
 
 		main: function() {
+
+			return;
 			SL.init.cache();
 
 
@@ -475,15 +477,6 @@ var SL = {
 				.on("enter", function (event) {
 					SL.setPager(2);
 				});
-
-
-//			$(window).resize(function() {
-//
-//				SL.controller.updateScene(scene, true);
-//				SL.controller.updateScene(scene2, true);
-//				SL.controller.updateScene(scene3, true);
-//
-//			});
 
 
 		};

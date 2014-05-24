@@ -44,6 +44,9 @@
 
 		width: $width;
 		height: $height;
+		//background: #f00;
+		background-position: 0 0;
+		background-repeat: no-repeat;
 		margin: $offset-y 0 0 $offset-x ;
 	}
 

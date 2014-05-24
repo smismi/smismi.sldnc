@@ -11,8 +11,9 @@
 	height: 100%;
 	overflow: hidden;
 
-	background:#ffd3ab url(../img/bg/bg2.jpg) repeat 50% 50%;
-	text-align: center;
+	.wrapper {
+		background:#ffd3ab url(../img/bg/bg2.jpg) repeat 50% 50%;
+		text-align: center;
 
  		.page_item {
 			display: inline-block;
@@ -140,7 +141,7 @@
 			}
 
 			h3 {
-				padding: 0 55px;
+				padding: 0 35px;
 				font-size: $h3fontsize;
 				line-height: $h3fontsize +  $h3fontsize*.3;
 				font-family: oksana_text_narrowdemibold;
@@ -177,6 +178,7 @@
 
 
 
+		}
 	}
 
 }

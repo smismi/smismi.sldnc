@@ -299,10 +299,22 @@ html.touch .touchonly {
   height: 144px;
 }
 
+section.page {
+  position: relative;
+}
+
 .page {
   position: relative;
   height: 100%;
+  overflow: hidden;
   background-position: 50% 50%;
+}
+.page .wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  height: 100%;
 }
 
 section.catalog {
