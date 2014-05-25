@@ -327,13 +327,13 @@ section.catalog {
 }
 
 .section-big-title {
-  position: relative;
+  position: absolute;
   top: 50%;
+  width: 100%;
   margin: -140px auto 0 auto;
   text-align: center;
   padding: 0 0;
   font-family: oksana_text_narrowbold;
-  max-width: 800px;
   color: #442111;
 }
 .section-big-title h1 {

@@ -425,6 +425,7 @@ var SL = {
 				.add([
 
 
+					TweenMax.fromTo("#section-2 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
 
 					TweenMax.fromTo("#section-2 .page_item_ic",1, {y: -100}, {y: 100, ease: Linear.easeNone})
 				]);
@@ -503,8 +504,8 @@ var SL = {
 
 			var tween = new TimelineMax ()
 				.add([
-//					TweenMax.fromTo("#section-3 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
-					TweenMax.fromTo("#section-3 .wrapper", 1, { backgroundPosition: "50% -500px"}, {backgroundPosition: "50% 500px", ease: Linear.easeNone}),
+					TweenMax.fromTo("#section-3 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-3", 1, { backgroundPosition: "50% -500px"}, {backgroundPosition: "50% 500px", ease: Linear.easeNone}),
 
 					TweenMax.fromTo("#section-3 .section-big-title",1, {y: -240}, {y: 240, ease: Linear.easeNone}),
 
@@ -602,7 +603,10 @@ var SL = {
 					TweenMax.fromTo("#section-4 .wrapper",1, {y: -200}, {y: 200, ease: Linear.easeNone}),
 					TweenMax.fromTo("#section-4 .section-big-title",1, {y: -100}, {y: 100, ease: Linear.easeNone}),
 					TweenMax.fromTo("#section-4 .section-4-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
-//					TweenMax.to("#section-4 div.wrapper", 1, {backgroundPosition: "0 130px", repeat: -1, delay: 1, repeatDelay: 2, ease: Linear.easeNone}),
+
+
+//					TweenMax.fromTo("#section-4", 1, { backgroundPosition: "50% -500px"}, {backgroundPosition: "50% 500px", ease: Linear.easeNone}),
+
 
 					TweenMax.fromTo("#section-4 .section-4-item-4", 1, {top: "160%"}, {top: "-60%", ease: Linear.easeNone}),
 

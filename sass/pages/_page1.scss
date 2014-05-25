@@ -4,7 +4,10 @@
 	height: 100%;
 	overflow: hidden;
 
-	background:#ffd3ab url(../img/bg/bg1merged.jpg) repeat 50% 100%;
+
+	.wrapper {
+		background:#ffd3ab url(../img/bg/bg1merged.jpg) repeat 50% 100%;
+	}
 
 
 
@@ -30,8 +33,9 @@
 
 	.section-1-bg-25 {
 		margin: -210px auto;
-		position: relative;
+		position: absolute;
 		top: 50%;
+		width: 100%;
 		opacity: 1;
 		color: $logo;
 		font-size: 78px;

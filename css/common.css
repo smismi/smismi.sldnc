@@ -327,13 +327,13 @@ section.catalog {
 }
 
 .section-big-title {
-  position: relative;
+  position: absolute;
   top: 50%;
+  width: 100%;
   margin: -140px auto 0 auto;
   text-align: center;
   padding: 0 0;
   font-family: oksana_text_narrowbold;
-  max-width: 800px;
   color: #442111;
 }
 .section-big-title h1 {
@@ -427,6 +427,8 @@ section.catalog {
   position: relative;
   height: 100%;
   overflow: hidden;
+}
+.page1 .wrapper {
   background: #ffd3ab url(../img/bg/bg1merged.jpg) repeat 50% 100%;
 }
 .page1 .section-1-bg-11 {
@@ -447,8 +449,9 @@ section.catalog {
 }
 .page1 .section-1-bg-25 {
   margin: -210px auto;
-  position: relative;
+  position: absolute;
   top: 50%;
+  width: 100%;
   opacity: 1;
   color: #70002e;
   font-size: 78px;
@@ -879,13 +882,13 @@ section.catalog {
   margin: 277px 0 0 0px;
 }
 
-.page4 .wrapper {
+.page4 {
   background: #ffd3ab url(../img/bg/bg4merged.jpg) no-repeat 50% 50%;
   position: relative;
   height: 100%;
   overflow: hidden;
 }
-.page4 .wrapper .section-4-bg-1 {
+.page4 .section-4-bg-1 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -895,7 +898,7 @@ section.catalog {
   background-position: 50% 100%;
   background-repeat: no-repeat;
 }
-.page4 .wrapper .section-4-bg-2 {
+.page4 .section-4-bg-2 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -905,7 +908,7 @@ section.catalog {
   background-position: 50% 100%;
   background-repeat: no-repeat;
 }
-.page4 .wrapper .section-4-bg-3 {
+.page4 .section-4-bg-3 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -915,7 +918,7 @@ section.catalog {
   background-position: 50% 100%;
   background-repeat: no-repeat;
 }
-.page4 .wrapper .section-4-bg-4 {
+.page4 .section-4-bg-4 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -925,18 +928,18 @@ section.catalog {
   background-position: 50% 100%;
   background-repeat: no-repeat;
 }
-.page4 .wrapper .headermark {
+.page4 .headermark {
   font-size: 37px;
 }
-.page4 .wrapper .headermark:before {
+.page4 .headermark:before {
   content: "\e503";
 }
-.page4 .wrapper .section-4-item-1 {
+.page4 .section-4-item-1 {
   position: absolute;
   top: 50%;
   left: 50%;
 }
-.page4 .wrapper .section-4-item-1-1 {
+.page4 .section-4-item-1-1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -946,7 +949,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: 0px 0 0 -782px;
 }
-.page4 .wrapper .section-4-item-1-2 {
+.page4 .section-4-item-1-2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -956,7 +959,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: 20px 0 0 320px;
 }
-.page4 .wrapper .section-4-item-1-3 {
+.page4 .section-4-item-1-3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -966,12 +969,12 @@ section.catalog {
   background-repeat: no-repeat;
   margin: 370px 0 0 790px;
 }
-.page4 .wrapper .section-4-item-3 {
+.page4 .section-4-item-3 {
   position: absolute;
   top: 50%;
   left: 50%;
 }
-.page4 .wrapper .section-4-item-3-1 {
+.page4 .section-4-item-3-1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -981,7 +984,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: 94px 0 0 -554px;
 }
-.page4 .wrapper .section-4-item-3-2 {
+.page4 .section-4-item-3-2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -991,7 +994,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: -60px 0 0 -476px;
 }
-.page4 .wrapper .section-4-item-3-3 {
+.page4 .section-4-item-3-3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1001,7 +1004,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: -330px 0 0 -212px;
 }
-.page4 .wrapper .section-4-item-3-4 {
+.page4 .section-4-item-3-4 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1011,7 +1014,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: -247px 0 0 255px;
 }
-.page4 .wrapper .section-4-item-3-5 {
+.page4 .section-4-item-3-5 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1021,7 +1024,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: -300px 0 0 414px;
 }
-.page4 .wrapper .section-4-item-3-6 {
+.page4 .section-4-item-3-6 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1031,7 +1034,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: -115px 0 0 440px;
 }
-.page4 .wrapper .section-4-item-3-7 {
+.page4 .section-4-item-3-7 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1041,7 +1044,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: -13px 0 0 576px;
 }
-.page4 .wrapper .section-4-item-3-8 {
+.page4 .section-4-item-3-8 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1051,7 +1054,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: 122px 0 0 200px;
 }
-.page4 .wrapper .section-4-item-3-9 {
+.page4 .section-4-item-3-9 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1061,12 +1064,12 @@ section.catalog {
   background-repeat: no-repeat;
   margin: 454px 0 0 -317px;
 }
-.page4 .wrapper .section-4-item-4 {
+.page4 .section-4-item-4 {
   position: absolute;
   top: 50%;
   left: 50%;
 }
-.page4 .wrapper .section-4-item-4-1 {
+.page4 .section-4-item-4-1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1076,7 +1079,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: -447px 0 0 69px;
 }
-.page4 .wrapper .section-4-item-4-2 {
+.page4 .section-4-item-4-2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1086,7 +1089,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: 58px 0 0 345px;
 }
-.page4 .wrapper .section-4-item-4-3 {
+.page4 .section-4-item-4-3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1096,7 +1099,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: 319px 0 0 -866px;
 }
-.page4 .wrapper .section-4-item-4-4 {
+.page4 .section-4-item-4-4 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1106,7 +1109,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: -456px 0 0 -600px;
 }
-.page4 .wrapper .section-4-item-4-5 {
+.page4 .section-4-item-4-5 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1116,7 +1119,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: -460px 0 0 -1028px;
 }
-.page4 .wrapper .section-4-item-4-6 {
+.page4 .section-4-item-4-6 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1126,7 +1129,7 @@ section.catalog {
   background-repeat: no-repeat;
   margin: 0px 0 0 -1057px;
 }
-.page4 .wrapper .section-4-item-4-7 {
+.page4 .section-4-item-4-7 {
   position: absolute;
   top: 50%;
   left: 50%;
