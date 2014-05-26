@@ -16,7 +16,7 @@
 	}
 
 
-	.item_list {
+	.item_list_wrapper {
 
 
 		max-width: 1202px;
@@ -24,10 +24,26 @@
 		text-align: center;
 
 
-		ul {
-			display: inline-block;
-			li {
 
+		.block_title {
+			font-size: 43px;
+
+		}
+
+		.block_description {
+			font-size: 23px;
+		}
+
+
+		.item_list {
+			display: inline-block;
+
+
+
+
+
+			.item_list_item {
+				position: relative;
 				//border-bottom: 1px solid red;
 				//border-right: 1px solid red;
 				border: 1px solid red;
@@ -42,6 +58,72 @@
 
 				&.doubled {
 					width: 601px;
+
+				}
+
+
+				.item_class {
+
+
+				}
+
+				.new_mark {
+
+					position: absolute;
+					background: #fece7b;
+					@include border-radius(39px);
+					width: 78px;
+					height: 78px;
+					//display: inline-block;
+					//padding: 12px;
+					line-height: 78px;
+					font-size: 14px;
+
+				}
+
+				.item_name {
+					background: rgba(246,246,246, .8);
+					position: absolute;
+					bottom: 0;
+					border: 1px solid red;
+					left: 0;
+					right: 0;
+					padding: 27px;
+					text-align: left;
+					transition: all 0.8s ease;
+
+					.item_class {
+						display: block;
+						color: rgba(228,14,99, .7);
+						//position: absolute;
+						//top: 26px;
+						//left: 26px;
+						transition: all 0.8s ease;
+
+					}
+				}
+
+				&:hover {
+
+
+					.item_name {
+
+						background: rgba(228,14,99, .7);
+						position: absolute;
+						bottom: 0;
+						border: 1px solid red;
+						left: 0;
+						right: 0;
+						padding: 27px;
+						text-align: left;
+						//font-size: 44px;
+						color: #fff;
+
+						.item_class {
+							color: #fff;
+						}
+					}
+
 
 				}
 			}

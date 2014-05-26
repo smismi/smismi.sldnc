@@ -848,15 +848,22 @@ section.catalog {
   padding-top: 60px;
   background: #ffd3ab url(../img/catalog/catalog-page1.jpg) repeat 50% 100%;
 }
-.catalog .item_list {
+.catalog .item_list_wrapper {
   max-width: 1202px;
   margin: 0 auto;
   text-align: center;
 }
-.catalog .item_list ul {
+.catalog .item_list_wrapper .block_title {
+  font-size: 43px;
+}
+.catalog .item_list_wrapper .block_description {
+  font-size: 23px;
+}
+.catalog .item_list_wrapper .item_list {
   display: inline-block;
 }
-.catalog .item_list ul li {
+.catalog .item_list_wrapper .item_list .item_list_item {
+  position: relative;
   border: 1px solid red;
   width: 300px;
   display: inline-block;
@@ -865,8 +872,51 @@ section.catalog {
   margin-left: -1px;
   margin-top: -1px;
 }
-.catalog .item_list ul li.doubled {
+.catalog .item_list_wrapper .item_list .item_list_item.doubled {
   width: 601px;
+}
+.catalog .item_list_wrapper .item_list .item_list_item .new_mark {
+  position: absolute;
+  background: #fece7b;
+  -webkit-border-radius: 39px;
+  -moz-border-radius: 39px;
+  -ms-border-radius: 39px;
+  -o-border-radius: 39px;
+  border-radius: 39px;
+  width: 78px;
+  height: 78px;
+  line-height: 78px;
+  font-size: 14px;
+}
+.catalog .item_list_wrapper .item_list .item_list_item .item_name {
+  background: rgba(246, 246, 246, 0.8);
+  position: absolute;
+  bottom: 0;
+  border: 1px solid red;
+  left: 0;
+  right: 0;
+  padding: 27px;
+  text-align: left;
+  transition: all 0.8s ease;
+}
+.catalog .item_list_wrapper .item_list .item_list_item .item_name .item_class {
+  display: block;
+  color: rgba(228, 14, 99, 0.7);
+  transition: all 0.8s ease;
+}
+.catalog .item_list_wrapper .item_list .item_list_item:hover .item_name {
+  background: rgba(228, 14, 99, 0.7);
+  position: absolute;
+  bottom: 0;
+  border: 1px solid red;
+  left: 0;
+  right: 0;
+  padding: 27px;
+  text-align: left;
+  color: #fff;
+}
+.catalog .item_list_wrapper .item_list .item_list_item:hover .item_name .item_class {
+  color: #fff;
 }
 
 @media screen and (max-width: 1200px) {

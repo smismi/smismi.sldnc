@@ -13,7 +13,7 @@ var SL = {
 
 		main: function() {
 
-			return;
+//			return;
 			SL.init.cache();
 
 
@@ -62,7 +62,11 @@ var SL = {
 
 	},
 
+	hide1pageBock: function() {
 
+		$(".section-1-bg-2, .section-1-bg-3, .section-1-bg-25, .section-1-bg-4").addClass('a');
+
+	},
 	cropViewport: function(callback) {
 
 
@@ -73,9 +77,7 @@ var SL = {
 
 		}
 
-
-
-
+		SL.hide1pageBock();
 
 		SL.contentWrapper =  $('#content-wrapper');
 
