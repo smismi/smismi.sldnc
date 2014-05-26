@@ -4,6 +4,10 @@
 	height: 100%;
 	overflow: hidden;
 
+	@if $dev_mode {
+		border: 2px dotted purple;
+	}
+
 
 	.wrapper {
 		background:#ffd3ab url(../img/bg/bg1merged.jpg) repeat 50% 100%;

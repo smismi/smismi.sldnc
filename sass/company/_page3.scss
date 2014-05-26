@@ -1,0 +1,325 @@
+
+/* third slide:begin */
+#viewtour .third_slide{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+html.ipad #viewtour .third_slide{
+	padding: 118px 0 55px;
+	background: url(../images/company/slide_1/nature-animals-forest.jpg) no-repeat center center fixed;
+	-ms-background-size: cover;
+	-opera-background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+/* video */
+#viewtour .third_slide video{
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+}
+
+html.ipad #viewtour .third_slide video{
+	display: none;
+}
+
+/* text wrapper */
+#viewtour .third_slide div{
+	position: relative;
+}
+
+/* title */
+#viewtour .third_slide h1{
+	font: 68px/0.94em 'oksana_text_narrowbold', sans-serif;
+	color: #fff;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAAdCAYAAADVe5xxAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABNRJREFUeNrsnGuIVVUUx/fVUSYtHc3XTGoPNTMLBBlHmbIRe1lpqVBqoBCNZSBqHwIJNZgPFkTkAwbyRZjWh8pszAc9fOJoCiKWlr20fEU0o86Uj9Tr789e4jCNOo73XgdZG37sc87e535Y98/ae6+99kkkk8ngpf4lkUj879mhVi/eQvUUfAEF8IE1bc47Pn847U25TnJ97lK/6/9DPWzvRro2sSLEu6nKYR/cBtWwAyTQB6AUJsJZXSPY6S5WF2tGxYpIs6iKYAR0Mc+6GJ6D56EdzNArJliJ+W3E2t7F6mLNtFh3UZ2C7vAXjIbvoAqaI8okff4xMb8gPcLjUAHfw0j6nHax1r80cRNcfUGEd1DlwAlYa8N/AvGdNDF2pk8e9XGeraF+10S7xt651Z55uYqS5SZomF4hGz6Db2ERlCHQu6i3w6NwD6zgWT71KhgKG2COTRFauhnds6a92PA9DKbCQIkSPjIv+ymMgsdgJayGIeZh25qIb4fxbkmfs2YsGoDXlIf8EO6FEngCWkC+rf415E+BX7W4gl4wE2ZpTusLLBdrxsRaQ7S9bHi/HxRL7WhNR+C0LcTegfmI9KxHA1ys102sNUSrRdc086YJmxJMQaC/X+l3/X/wOWumy78wOMQQ1tIQQ1U5bhYXa2Msig60gUK8qTYGtO26CY/bw03jYm00BUG+QfUgDECoVRY1eIlqOWyhvbNbycXaGIT6MNXrMBSBHqrVPDbE3IGt9Gvt1nKxXk+htjfv+TEcrqOL4q0LQ9xuXU//Zm41jwZkPBqA8HSz1W53g4Sr4L/yBPbBZltkbbH2uRIs3neURwPcs2a6vAK94Ws4iAifhNlcj4FvuJ6jZyHGWPuZhx2GyCe76RrgKDBcha1gb9RSmXtsXttUe1bs1onqtxB3pDZCf9gL+02YN8Mn8Booh1WZV5XWrmlDAULekSrPerh18Q3/P/o0oOFi1XCvGOp4W1y9GmKyigSrnawDsBOGh7i7VWgLsEm8Kw/7DHTlvtqnAT5nTZtYEVufELOrtsHT1nQG4VWYkJXj+hb3I2stxpRK2MW8q+a0Ky708f/B56zpKjoRcMaGfiWrzDbPKkFOCDFxpZjr/vbsTdDZLGVbrQsxt1U5AjqfVeTmdM+alsLcsLcN70oNLDEBdrN5qNIBdYRF6YMFJsoh8IOJuwz6hnhGq9SmAqIb8+pzbl0Xa6rFuoCqO8P3Q+Y1tajRgUBNDXqCFl7aGOhgr/wYYiaWvK2SsMvsRIHevYnqTxiHWJe5dV2sqRarAv86f7UM0ZXW1ccC/1m0n7jU79CniS2+FMbKRqz5bl0Xa6rFquG8GAbZ8K6Av85UfYU4Ky/3rp2IfRmeDfEbAzph0BzKEWu2W/fyxc9gNayUI8xFtoN1X4ix1nzu/wgxbKXvBbxni6hCm9O+bwtaTRFKeP9LE7ASt30L1j1rWjyrFkeKoY5AcP/V4T01D82j7Re7b0WVU1cCNm0S9ufwM571EbeuizXVYtXqf4MN/T9ZZEDfAdgDf4d4FFtJ2FX2ir7Mos8L6WyWdtL0BZci0AItF5bABMR60q3rYk2tweKmgIZ/haCUv6pY6p22+m9popR3rXn+RfNceeHqcPEjF/Koy/G4R9XB/4crl/MCDABNQ8IT6UO8AwAAAABJRU5ErkJggg==');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	padding: 0 0 56px;
+	margin: 0 0 12px;
+}
+
+/* text */
+#viewtour .third_slide p{
+	color: #fff;
+	font: 18px/1.70em 'oksana_text_narrowdemibold', sans-serif;
+	margin: 0;
+}
+
+/* visual tour button:begin */
+#viewtour .third_slide .visual_tour{
+	width: 212px; height: 52px;
+	background: #e60e64;
+	position: relative;
+	cursor: pointer;
+	margin: 0 auto;
+}
+/* text */
+#viewtour .third_slide .visual_tour span:nth-child(1){
+	display: block;
+	width: 212px;
+	height: 52px;
+	font: 16px/52px 'oksana_text_narrowdemibold', sans-serif;
+	color: #fff;
+	background: #e60e64;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	transition: all 0.5s ease;
+}
+#viewtour .third_slide .visual_tour:hover span:nth-child(1){
+	width: 159px;
+}
+html.ipad #viewtour .third_slide .visual_tour:hover span:nth-child(1){
+	width: 212px;
+}
+
+/* bg */
+#viewtour .third_slide .visual_tour span:nth-child(2){
+	display: block;
+	width: 52px;
+	height: 52px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	background-color: #fff;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAYCAYAAAAh8HdUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNqU1EsOgCAMBFCYA+ja++mpvJ+uPUH9JJBI+pl2ZUyeTIFaj2mV8tRy7bWQhfZwzpukUQZijMVAaP1EsMfLwF9PLMT4goHQvhRBWLk9CG+XLFhF4vOk49HXiFnljYwscFeygIk8oKIIhPNkTTOyoKMM+G5E+7GwIJyn9OR6dQswAB5OVX9Ha4cpAAAAAElFTkSuQmCC');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+/* visual tour button:end */
+
+/* stop video button:begin */
+#viewtour .third_slide .stop_button{
+	width: 172px; height: 36px;
+	position: absolute;
+	left: 2%; bottom: 2%;
+	cursor: pointer;
+}
+html.ipad #viewtour .third_slide .stop_button{
+	display: none;
+}
+
+/* text */
+#viewtour .third_slide .stop_button span{
+	display: block;
+	font: 16px/36px 'oksana_text_narrowdemibold', sans-serif;
+	color: #fff;
+	float: left;
+	position: absolute;
+}
+
+/* icon */
+#viewtour .third_slide .stop_button div{
+	float: right;
+	width: 36px; height: 36px;
+	overflow: hidden;
+	pointer-events: none;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpi/A8EDBDAyEAYgNUyMZABRjWNahpSmgACDABzUwUasC+fBwAAAABJRU5ErkJggg==');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: transparent;
+}
+
+#viewtour .third_slide .stop_button div span i{
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	position: absolute;
+}
+
+#viewtour .third_slide .stop_button div .top{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+}
+#viewtour .third_slide .stop_button div .top i{
+	left: -36px;
+	transition: left 0.2s ease;
+	transition-delay: 0.6s;
+}
+#viewtour .third_slide .stop_button:hover .top i{
+	left: 0;
+	transition: left 0.2s ease;
+	transition-delay: 0s;
+}
+
+#viewtour .third_slide .stop_button div .right{
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 1px;
+}
+#viewtour .third_slide .stop_button div .right i{
+	top: -36px;
+	transition: top 0.2s ease;
+	transition-delay: 0.4s;
+}
+#viewtour .third_slide .stop_button:hover div .right i{
+	top: 0;
+	transition: top 0.2s ease;
+	transition-delay: 0.2s;
+}
+
+#viewtour .third_slide .stop_button div .bottom{
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	height: 1px;
+}
+#viewtour .third_slide .stop_button div .bottom i{
+	right: -36px;
+	transition: right 0.2s ease;
+	transition-delay: 0.2s;
+}
+#viewtour .third_slide .stop_button:hover div .bottom i{
+	right: 0;
+	transition: right 0.2s ease;
+	transition-delay: 0.4s;
+}
+
+#viewtour .third_slide .stop_button div .left{
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 1px;
+}
+#viewtour .third_slide .stop_button div .left i{
+	bottom: -36px;
+	transition-delay: 0s;
+	transition: bottom 0.2s ease;
+}
+#viewtour .third_slide .stop_button:hover div .left i{
+	bottom: 0;
+	transition: bottom 0.2s ease;
+	transition-delay: 0.6s;
+}
+/* stop video button:end */
+
+/* play video button:begin */
+#viewtour .third_slide .play_button{
+	width: 195px; height: 36px;
+	position: absolute;
+	left: 2%; bottom: 2%;
+	cursor: pointer;
+	display: none;
+}
+html.ipad #viewtour .third_slide .play_button{
+	display: none;
+}
+
+/* text */
+#viewtour .third_slide .play_button span{
+	display: block;
+	font: 16px/36px 'oksana_text_narrowdemibold', sans-serif;
+	color: #fff;
+	float: left;
+	position: absolute;
+}
+
+/* icon */
+#viewtour .third_slide .play_button div{
+	float: right;
+	width: 36px; height: 36px;
+	overflow: hidden;
+	pointer-events: none;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAASCAYAAABit09LAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMlJREFUeNp80jELAWEYwPE7tzDcoEikZDTZZPEVTFLKpoxGm/Fmn8LmMxh9BRMlYaCUGyj0+r95riTP+9avbvj33PW85xtjPE6I2HOcFAJcMXGFHhNDrHDHwL7hn+TBxhvzOU1XaDWwlbjsCq02LohRcoVWV6YuUXGF1lDieTJZC9OIJD6j5svCtXNAEWttYgZTmXhEVQtHEs2Q1b6xL9Hie5+/UUd2eEJB22MLe7yQ124mhx2eqGt3nfwQN/Rcf0+AB8ZaZL0FGAAy9+vCaUxtIgAAAABJRU5ErkJggg==);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: transparent;
+}
+
+#viewtour .third_slide .play_button div span i{
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	position: absolute;
+}
+
+#viewtour .third_slide .play_button div .top{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+}
+#viewtour .third_slide .play_button div .top i{
+	left: -36px;
+	transition: left 0.2s ease;
+	transition-delay: 0.6s;
+}
+#viewtour .third_slide .play_button:hover .top i{
+	left: 0;
+	transition: left 0.2s ease;
+	transition-delay: 0s;
+}
+
+#viewtour .third_slide .play_button div .right{
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 1px;
+}
+#viewtour .third_slide .play_button div .right i{
+	top: -36px;
+	transition: top 0.2s ease;
+	transition-delay: 0.4s;
+}
+#viewtour .third_slide .play_button:hover div .right i{
+	top: 0;
+	transition: top 0.2s ease;
+	transition-delay: 0.2s;
+}
+
+#viewtour .third_slide .play_button div .bottom{
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	height: 1px;
+}
+#viewtour .third_slide .play_button div .bottom i{
+	right: -36px;
+	transition: right 0.2s ease;
+	transition-delay: 0.2s;
+}
+#viewtour .third_slide .play_button:hover div .bottom i{
+	right: 0;
+	transition: right 0.2s ease;
+	transition-delay: 0.4s;
+}
+
+#viewtour .third_slide .play_button div .left{
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 1px;
+}
+#viewtour .third_slide .play_button div .left i{
+	bottom: -36px;
+	transition-delay: 0s;
+	transition: bottom 0.2s ease;
+}
+#viewtour .third_slide .play_button:hover div .left i{
+	bottom: 0;
+	transition: bottom 0.2s ease;
+	transition-delay: 0.6s;
+}
+/* play video button:end */
+
+/* third slide:end */

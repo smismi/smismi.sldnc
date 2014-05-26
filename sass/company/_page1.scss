@@ -1,0 +1,77 @@
+/* first slide:begin */
+#company .first_slide {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+html.ipad #company .first_slide {
+	padding: 118px 0 55px;
+	background: url(../images/company/slide_1/nature-animals-forest.jpg) no-repeat center center fixed;
+	-ms-background-size: cover;
+	-opera-background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+/* video */
+#company .first_slide video {
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+}
+
+html.ipad #company .first_slide video {
+	display: none;
+}
+
+/* text wrapper */
+#company .first_slide div {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	margin-top: -175px;
+
+}
+
+/* title */
+#company .first_slide h1 {
+	font: 68px/0.94em 'oksana_text_narrowbold', sans-serif;
+	color: #fff;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALMAAAAbCAYAAAA3W75wAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABFRJREFUeNrsm3lIVFEUxt9kKuWSLVLaQgsttBhie4FBFi3aSjttlBVF9U/LP/VXtENKFFFKioRQEVFSURIRFe0SUobSRmZOJZkzbdoyfYf3DTwsWmYcn+U58OPOzL1vkPM+jt89747D4/EYGr6Fw+H44bMXkUsSMGSDUOAE02NdmS//9Dv1fvgeTTQFdR65oC/oDvqDmZqS+ommmoI6j+tgOwgCwZpjFfO/HB7YiixajmkYwn62CHMRGGqwtlpTVke2Tz2a/54ZwpQXG0ACxdsRfALvQbilcOQDEXhLcB/EgiKQAlF71DOrZ24IsRZsplBvgrZgACgFERR5a9Eq6AKiwC0gVXkC2K0pVJvRUEIEeYj57ATWgWHgGKuziDiPFTuX14SyUt+jqDW0MtsbsBhJGAaBMlAF5rObkcVqnQi2gs9gCqgAR8BUMBcUy/X4nvGaTa3Mdkci85gCStjFiAM9QSToxcr9BXwASbQad2lFRoGnYDo4o+nUymxntAPz6I3fgnTgps04AHaAQlbr4bQjIuAb9NpiPV5L5eZGUkPFbIvFkK7EGFbnnhyfgXHsWMwCIWAl6Ay2gDmgOZgEJoP2XC/rVmlW1WbYFctYWQvpkZ20EfLgpMYwnwDmsbtxGcSDU4bZknvEYrIXfATjKfI9mlYfxVzeIvUNq8j/GpUxVRmtAvTdYh0crLKZYCPFLa220SAG9AArQDKrc1tu/NI4l07b0Qc8DlQSGsN9bhrAG90YogNHFzdzYjXe016UcE5sxFjOS3Sjx+4NbrOrIeJ/Di4E6g9tDPdZbYZ/8cAwW27B3AgW0TNLr/kKhSzzbbgZHMyuRjU3fwmWDaTYjgxNqW4A7YqThvn4Wh5ZR9E6iDhL6acvgmhw3jB70ZWG+QBFuh79QAFIjXVljsD4DWONptT30LMZ/iTP4ZCOhmz8VtOPit1wQZTfftMFWc0qLf8Z12C9E58tEs8MO3BJM6s2w7aAGKWv7IYgpSqnYSxjNR4CsjH/yiLkNFZo2QzKpuwEPlvGbocIWsWsNqP+g33mYstHy8E+CnU9eAIWWtbHcwM4Axym5SgHSyH4hxhbaFZVzHbFSNGo5b1s+jYZ5mNs+a+3wDDPYngjmR56J8S73zDPcUgv2s35cE2pitmuaMkuhDekb+xgRXbz9XHL/C4RLIScQ3siG8FzIm7OuzWlKma7IgKCvGp5H8/NYFfDbMHJcc+JFm8tB/bvwG7EWa6Rjof3xFyYplTF3FBCrMM2wzzy+Q7MBmdrrZF2XKlF4Me4UTRYyTW0m2FLVKDKzoAgj1KYBRSwxLVfdD8qa30UrjZDxWx3nDbMX2If/Ytroi3dDTk2OhS8ZGckWFPqe+hDE3+SZz40WYyXQai2B3+3nueV8/lWOh7Sl5aDSVKpxXunxlRlODWzKmZbxEyRSt9Yfk0ibbpmFKpsAENqXfIVDDTMn1fJugquy/FaFb0fvsd3AQYAeeEqMfbakbgAAAAASUVORK5CYII=');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	padding: 0 0 56px;
+	margin: 0 0 12px;
+}
+
+/* text */
+#company .first_slide p {
+	color: #fff;
+	font: 18px/1.70em 'oksana_text_narrowdemibold', sans-serif;
+	margin: 0;
+}
+
+/* scroll icon */
+#company .first_slide span {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAYAAAALiLqjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAArVJREFUeNrsl02ITWEYx+/XMKyUacigRGjQTKg7KQssLLAwWZiUMg2KyGdZ2NhMmiY1jQ1KiJQNSmpYMCNqmpFkYYMpl0IX+ZoaH12/fz1Hb8fcc879WFy6T/16znnP+/6fc96v87zxWIi933N5GHcVOqf2tuWc8m24LphB+Y987VOxcNsF12Ehoh14iXVaeVuQuCweIYDedrYF+QZZaIYNiD8Ja5uIEgChl7iV8E63kI4iXhn2um5HKuDZhHJ00SOEuiDpE9+n8cDXBDWOMos2ww1YgNgW/Bj0wiZY35A9XfosQrje1sJk+AANsA7x52WZRQhp9qxWd8EotEQRr1plWDxg1rTCWpgL08G/qHI2o0bgLlxi4EcCAyBcizsGe6G2wJf9BWfhMIE+/RUA8Zm2oJqcRl9hCN7Ad5+gVra+dCnUOeUv9OUEefYnAOJTcIMw3ypp9zwKV6g4FrIIk9aV+vkssuJXsEzrx9sqTjri6s9WHn6MuAjVNTcJdAd/0cZOvXEKNsZ50GwrVPbUVunnInfeibj7ensratFWsdOps79YcfsadecBp6gjYXuMLAO3Sp33BBmwqStbpTGYZzdDPMyFDOZxuz1ifZ/PHsIckXJ21C8hL5eGQ3Z9zfo6n731dutEAV/vruSakLo/C/oflGIVFWA0z3Ws1J++Z9qTDjrX5Q1gU/jEPz0G1QDVAP9ZgMR4ASaVMUC9GyBj14vLGGCJ9xtWgAG7abQMo9QznTQa7faeApx3nnf7z2IFiqttt1N0LsEueZuLfitYAz3FBLE2PaYh65e2N8jt4GVyu6GPBk0FiKtun7WNmVa7P/lNW/LrJrKPYdiyBP9pUj/+abDclzBn7fQ5OF76Pgt3xpLZYkxfsR3xTNgBZAVuqzIzO4AkA84EOm0q8b2A8AN/hd8CDADkptPFI077cgAAAABJRU5ErkJggg==');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-color: transparent;
+	width: 24px;
+	height: 48px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* first slide:end */

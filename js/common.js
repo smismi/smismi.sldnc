@@ -46,6 +46,22 @@ var SL = {
 
 		},
 
+		company: function() {
+			SL.init.cache();
+
+
+
+			SL.initHeaderMenu();
+			SL.initPager();
+
+
+
+
+
+
+
+		},
+
 
 		cache: function(){
 

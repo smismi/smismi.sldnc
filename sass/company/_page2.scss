@@ -1,0 +1,401 @@
+/* second slide:begin */
+#geography {
+	height: auto;
+	min-height: 100%;
+}
+
+
+#geography .second_slide {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	background: #6a002e;
+}
+
+/* map:begin */
+#geography .second_slide .map {
+	background: url("http://sladunitsa.redis.tv/images/company/slide_2/map_bg.png") 0 0 no-repeat;
+	width: 1122px;
+	height: 686px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* one point:begin */
+#geography .second_slide .map > div {
+	position: absolute;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: 0 0;
+}
+
+#geography .second_slide .map > div.mini_bird {
+	width: 20px;
+	height: 16px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAeJJREFUeNqU1D1IW1EUwPHEmNbvNn7gBzqYIrVGqUSrUKg4iEMxSDq4GF0cujoJTi6WpmDr4GDopJMSpQqtFFqUUio4SMUQQbCkxQ9a4ldKiRa1xv/F88r1DYoXfgkv592Tc8+971kTiYTlmuMBThHBvjmYZLn+KMci9vAL/bD/j6oKNaWYwiCqkWSKKza8wxes4CHsRtxqWrIXI7BhFc/wFidwo1Xu+y0VLmFZT5BsWo4LPxBAA8bwAunwIY4YclCMKLoR1Jd8A1lS8hDmUCTX/sT5WEcfmnAHt5CBCWyj3liy+nDLRJW0FyE4tJ4FJGmVXD/BHt5L8u8YhdVI2CET/mIDUb3JSMcWXiEVj1GJCon34ycaVFL1QxcO0Y1ZxNGsJUzDS2ziEU7lDz7gJnxS0AIy1Tn8hz/4ik6E4UehtPkIB/KdIhujYnnIRKXc54BTVXAXEemjRRofw6TE2rGD16oC9GAaTjTiGz7BY/RQeS49bJRrr9xojHE56PoBd2FJToVT32WL7NC87N5TOUq3pdH3kKslykYd1hDWiriQUMlHUJY7gzYUSuMdMlFtwDBO8Bk15kfT/OipZrfAg1oU4Bi78oRk4RADeINt85vDesXrS52CMtxHCUL4eNmEMwEGAEsVjhmrEo/8AAAAAElFTkSuQmCC);
+}
+
+#geography .second_slide .map > div.bird {
+	width: 36px;
+	height: 29px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAdCAYAAADCdc79AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2NJREFUeNq0l11IVEEUx9dttS231LLIvsyssKCMQsgyopeKPiFKij6EiOihhyIk6yEihOqhotAILH3QKMoIysIHEyFFLbMkKkMIzEAxQjSzMuv2P3EuHIa5d/Yu7oEfe3fmzNz/7sw5cybGsizfKFsWKABdYDlYARrAazALnAVtjqNJ0Chz1HK3w27joyEoDtQ4iKkCAbfxMVFYMrIk8B70g14wFUwAGWDAbWC0BEVs0RAUB3LAKjCd3gF6QBOoBcOuox3WMg/0g3ZQAtYBv2HvLGTfby4buhfku+0jp8kfaSb7zBE0TvGl75fAiOL/B/SAT2BY6WsAU7wIquOBA2BQmawb7GU/mrRR9JGou2AriFdEU9tL4duq+IQlqJon2wNeKcIeg2bx/RnIUOahF84BQZESSsSYYq+C6pT2nbwEqt0CsYpvAfjF/UPgGLf7RZ6iZU0PR1AlD3ij6QuBMkXQBo1fLb/wI/vUiL7FYmyZ3OROgorZuc8lqg7yCy2OrCVK/3iQzM+zwUSl/4UQRXtrKbX7HbLBB/5MBDMdfG6A/ZQ5QAiUg4DonwzmcoZOYR9pzeJ5GWgBJ0npFlAIZgj1OUJ9riH/FArfPG7bpUkDv8F2Me6MZi/+9ImNR7niATgE1osJ7xgEjQVd7FuvBIVq1WJckUZwPnV0GsqF72CSQdQ5kYeCmpfZdlGMaRXtLSDT3tQVouOLw0RXDIJyhe98kMQRKo3yWAL7Z4r2m2qUyck2cyLL5ucm8cvXugg6IOZIE+nhGm+Jqxx1tn+FyEOpah6K5/BW19jHoWzvMTpsN2rEjBF75it/l/3qQSoDptIpU18WTtmak9+2v6AUrASJIAs8FP3nDUsb4grif0SBBU6CKOR/sONbcfbY7NYcsqq18QvdStsnwv+E6bQ/JZxLNc505tzT5Bf618r5H3MSQz/wvlJb+02CAnxi23bdoZCi42Ab56sdIMWwTKkiOCyuEELhFmhU33SIwfWaksLL7eM411SWqB4SvF6DpilJa4SXZI0mgnRQHjrNFaa0Ihbpi+QaFAQXwBEgD+A+8Bx0gG4wBGL5IE3nm2qaMlc7z/M0rCuCQTHVLbdFLvJiVF7sM10MI70oJoBNYDVYBOaBZL7ykA2CTvAONIIq/hc92z8BBgAgGaBXatMyBQAAAABJRU5ErkJggg==);
+}
+
+#geography .second_slide .map > div.flag {
+	width: 19px;
+	height: 22px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAWCAYAAAAinad/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPFJREFUeNpiZACC////OwCp/UCc+EQsZRdICIi/M2CCH7Kv5/5gwAFYsIhtA2J9XBoeiyZjE/4AxLksDJSDm0AcAXTxBSYKDVoExCYgg3B5kxjwBYgzgYYsIRRmhMB5IA4HGnQbXYJUb34F4hhsBpFjGDcQnwLGaCYQM1JqGMzAaUC8E2igDKWGwYArEF8BGhhPSQQgA34gXgA0MBBIp2EzDBa4oOz0E4h/AfE3IP4LxJ+hWe0jVM0nIP4HjRhXBlje/A8BCZQ4k4mBimDUsOFkGAswbU0A0rA8FgXkGwDpHYyMjDtINu0/dtBAjssAAgwA53pkorVQ2mUAAAAASUVORK5CYII=);
+}
+
+/* hover:begin */
+#geography .second_slide .map > div div {
+	text-align: center;
+	background: #fff;
+	padding: 20px 16px 22px;
+	position: relative;
+	display: none;
+}
+
+#geography .second_slide .map > div.mini_bird div {
+	position: absolute;
+	left: -122px;
+	bottom: 23px;
+}
+
+#geography .second_slide .map > div.bird div {
+	position: absolute;
+	left: -114px;
+	bottom: 37px;
+}
+
+#geography .second_slide .map > div.flag div {
+	position: absolute;
+	left: -122px;
+	bottom: 31px;
+}
+
+#geography .second_slide .map > div div span:nth-child(1) {
+	display: block;
+	font: 22px/1.14em 'oksana_text_narrowbold', sans-serif;
+	color: #860038;
+	margin-bottom: 7px;
+}
+
+#geography .second_slide .map > div div span:nth-child(2) {
+	display: block;
+	font: 12px/1.25em 'oksana_text_narrowdemibold', sans-serif;
+	color: #860038;
+	width: 230px;
+	margin: 0 auto;
+}
+
+#geography .second_slide .map > div div span:nth-child(3) {
+	position: absolute;
+	left: 50%;
+	bottom: -9px;
+	margin-left: -8px;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 9px solid white;
+}
+
+/* hover:end */
+/* one point:end */
+
+/* postition points:begin */
+#geography .second_slide .map > div:nth-child(1) {
+	left: 153px;
+	top: 140px;
+}
+
+#geography .second_slide .map > div:nth-child(2) {
+	left: 165px;
+	top: 213px;
+}
+
+#geography .second_slide .map > div:nth-child(3) {
+	left: 132px;
+	top: 221px;
+}
+
+#geography .second_slide .map > div:nth-child(4) {
+	left: 184px;
+	top: 226px;
+}
+
+#geography .second_slide .map > div:nth-child(5) {
+	left: 89px;
+	top: 238px;
+}
+
+#geography .second_slide .map > div:nth-child(6) {
+	left: 148px;
+	top: 234px;
+}
+
+#geography .second_slide .map > div:nth-child(7) {
+	left: 272px;
+	top: 243px;
+}
+
+#geography .second_slide .map > div:nth-child(8) {
+	left: 64px;
+	top: 262px;
+}
+
+#geography .second_slide .map > div:nth-child(9) {
+	left: 85px;
+	top: 265px;
+}
+
+#geography .second_slide .map > div:nth-child(10) {
+	left: 175px;
+	top: 259px;
+}
+
+#geography .second_slide .map > div:nth-child(11) {
+	left: 228px;
+	top: 267px;
+}
+
+#geography .second_slide .map > div:nth-child(12) {
+	left: 90px;
+	top: 280px;
+}
+
+#geography .second_slide .map > div:nth-child(13) {
+	left: 117px;
+	top: 282px;
+}
+
+#geography .second_slide .map > div:nth-child(14) {
+	left: 200px;
+	top: 277px;
+}
+
+#geography .second_slide .map > div:nth-child(15) {
+	left: 148px;
+	top: 299px;
+}
+
+#geography .second_slide .map > div:nth-child(16) {
+	left: 199px;
+	top: 299px;
+}
+
+#geography .second_slide .map > div:nth-child(17) {
+	left: 44px;
+	top: 318px;
+}
+
+#geography .second_slide .map > div:nth-child(18) {
+	left: 215px;
+	top: 320px;
+}
+
+#geography .second_slide .map > div:nth-child(19) {
+	left: 235px;
+	top: 312px;
+}
+
+#geography .second_slide .map > div:nth-child(20) {
+	left: 262px;
+	top: 313px;
+}
+
+#geography .second_slide .map > div:nth-child(21) {
+	left: 90px;
+	top: 337px;
+}
+
+#geography .second_slide .map > div:nth-child(22) {
+	left: 181px;
+	top: 333px;
+}
+
+#geography .second_slide .map > div:nth-child(23) {
+	left: 8px;
+	top: 336px;
+}
+
+#geography .second_slide .map > div:nth-child(24) {
+	left: 34px;
+	top: 363px;
+}
+
+#geography .second_slide .map > div:nth-child(25) {
+	left: 229px;
+	top: 350px;
+}
+
+#geography .second_slide .map > div:nth-child(26) {
+	left: 286px;
+	top: 344px;
+}
+
+#geography .second_slide .map > div:nth-child(27) {
+	left: 65px;
+	top: 374px;
+}
+
+#geography .second_slide .map > div:nth-child(28) {
+	left: 202px;
+	top: 384px;
+}
+
+#geography .second_slide .map > div:nth-child(29) {
+	left: 273px;
+	top: 373px;
+}
+
+#geography .second_slide .map > div:nth-child(30) {
+	left: 311px;
+	top: 387px;
+}
+
+#geography .second_slide .map > div:nth-child(31) {
+	left: 320px;
+	top: 369px;
+}
+
+#geography .second_slide .map > div:nth-child(32) {
+	left: 348px;
+	top: 366px;
+}
+
+#geography .second_slide .map > div:nth-child(33) {
+	left: 452px;
+	top: 451px;
+}
+
+#geography .second_slide .map > div:nth-child(34) {
+	left: 484px;
+	top: 448px;
+}
+
+#geography .second_slide .map > div:nth-child(35) {
+	left: 455px;
+	top: 476px;
+}
+
+#geography .second_slide .map > div:nth-child(36) {
+	left: 545px;
+	top: 449px;
+}
+
+#geography .second_slide .map > div:nth-child(37) {
+	left: 615px;
+	top: 453px;
+}
+
+#geography .second_slide .map > div:nth-child(38) {
+	left: 642px;
+	top: 512px;
+}
+
+#geography .second_slide .map > div:nth-child(39) {
+	left: 673px;
+	top: 519px;
+}
+
+#geography .second_slide .map > div:nth-child(40) {
+	left: 724px;
+	top: 515px;
+}
+
+#geography .second_slide .map > div:nth-child(41) {
+	left: 813px;
+	top: 337px;
+}
+
+#geography .second_slide .map > div:nth-child(42) {
+	left: 916px;
+	top: 292px;
+}
+
+#geography .second_slide .map > div:nth-child(43) {
+	left: 1091px;
+	top: 310px;
+}
+
+#geography .second_slide .map > div:nth-child(44) {
+	left: 875px;
+	top: 485px;
+}
+
+#geography .second_slide .map > div:nth-child(45) {
+	left: 870px;
+	top: 499px;
+}
+
+#geography .second_slide .map > div:nth-child(46) {
+	left: 952px;
+	top: 580px;
+}
+
+/* bird */
+#geography .second_slide .map > div:nth-child(47) {
+	left: 370px;
+	top: 398px;
+}
+
+/* flag */
+#geography .second_slide .map > div:nth-child(48) {
+	left: 31px;
+	top: 465px;
+}
+
+#geography .second_slide .map > div:nth-child(49) {
+	left: 279px;
+	top: 481px;
+}
+
+#geography .second_slide .map > div:nth-child(50) {
+	left: 316px;
+	top: 603px;
+}
+
+#geography .second_slide .map > div:nth-child(51) {
+	left: 260px;
+	top: 621px;
+}
+
+#geography .second_slide .map > div:nth-child(52) {
+	left: 637px;
+	top: 592px;
+}
+
+/* postition points:end */
+/* map:end */
+
+/* text wrapper */
+#geography .second_slide > div {
+	position: relative;
+	padding-top: 55px;
+}
+
+/* title */
+#geography .second_slide h1 {
+	font: 68px/0.94em 'oksana_text_narrowbold', sans-serif;
+	color: #fff;
+	background-image: url(data:image/png;base64,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);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	padding: 63px 0 56px;
+	margin: 0 0 11px;
+}
+
+/* text */
+#geography .second_slide p {
+	color: #fff;
+	font: 18px/1.70em 'oksana_text_narrowdemibold', sans-serif;
+	margin-bottom: 10px;
+}
+
+/* second slide:end */

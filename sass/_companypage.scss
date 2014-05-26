@@ -1,0 +1,25 @@
+@import "company/page1";
+@import "company/page2";
+@import "company/page3";
+@import "company/page4";
+@import "company/page5";
+@import "company/page6";
+@import "footer";
+
+/* FOOTER PAGE:begin */
+#footer_page{
+	margin-top: 0px;
+}
+
+.company_page {
+	height: 100%;
+
+	@if $dev_mode {
+		border: 2px dotted purple;
+	}
+}
+
+
+
+
+
