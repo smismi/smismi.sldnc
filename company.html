@@ -914,99 +914,27 @@
 				</div>
 
 
+				<div id="cwkevmp"  class="jcarousel">
 
 
-			</section>
-			<section id="viewtour" class="company_page">
+					<ul>
+						<li class="active"><img src="img/visualtour/01.jpg" alt=""/></li>
+						<li><img src="img/visualtour/02.jpg" alt=""/></li>
+						<li><img src="img/visualtour/03.jpg" alt=""/></li>
+						<li><img src="img/visualtour/04.jpg" alt=""/></li>
+						<li><img src="img/visualtour/05.jpg" alt=""/></li>
+						<li><img src="img/visualtour/06.jpg" alt=""/></li>
+						<li><img src="img/visualtour/07.jpg" alt=""/></li>
+						<li><img src="img/visualtour/08.jpg" alt=""/></li>
+					</ul>
 
-				<!-- third slide:begin -->
-				<div class="third_slide">
 
-					<!-- video:begin -->
-					<video autoplay loop>
-						<source src="http://sladunitsa.redis.tv/video/company_slide_1_example.webm" type="video/webm">
-						<source src="http://sladunitsa.redis.tv/video/company_slide_1_example.mp4" type="video/mp4">
-					</video>
-					<!-- video:end -->
+					<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+					<a href="#" class="jcarousel-control-next">&rsaquo;</a>
 
-					<!-- text wrapper -->
-					<div>
-
-						<!-- title -->
-						<h1>Добро пожаловать<br>к нам на производство!</h1>
-
-						<!-- text -->
-						<p>, странах ближнего<br> и дальнего зарубежья.</p>
-
-					</div>
-
-					<!-- visual tour button-->
-					<div class="visual_tour">
-						<!-- text -->
-						<span>Визуальный тур</span>
-						<!-- bg -->
-						<span></span>
-					</div>
-
-					<!-- stop button:begin -->
-					<div class="stop_button controls_video">
-
-						<!-- text -->
-						<span>Остановить видео</span>
-
-						<!-- icon spinner square:begin -->
-						<div>
-                        <span class="top">
-                            <i></i>
-                        </span>
-                        <span class="right">
-                            <i></i>
-                        </span>
-                        <span class="bottom">
-                            <i></i>
-                        </span>
-                        <span class="left">
-                            <i></i>
-                        </span>
-						</div>
-						<!-- icon spinner square:end -->
-
-					</div>
-					<!-- stop button:end -->
-
-					<!-- play button:begin -->
-					<div class="play_button controls_video">
-
-						<!-- text -->
-						<span>Воспроизвести видео</span>
-
-						<!-- icon spinner square:begin -->
-						<div>
-                        <span class="top">
-                            <i></i>
-                        </span>
-                        <span class="right">
-                            <i></i>
-                        </span>
-                        <span class="bottom">
-                            <i></i>
-                        </span>
-                        <span class="left">
-                            <i></i>
-                        </span>
-						</div>
-						<!-- icon spinner square:end -->
-
-					</div>
-					<!-- play button:end -->
+					<p class="jcarousel-pagination">
 
 				</div>
-				<!-- third slide:end -->
-
-
-
-
-
 
 			</section>
 			<section id="partners" class="company_page">
@@ -1449,11 +1377,11 @@
 				SL.init.company();
 
 
-				$('#vacancy_carousel').jcarousel({
+				$('#cwkevmp').jcarousel({
 					// Configuration goes here
 				});
 
-				$('.jcarousel-control-prev')
+				$('#cwkevmp .jcarousel-control-prev')
 						.on('jcarouselcontrol:active', function() {
 							$(this).removeClass('inactive');
 						})
@@ -1464,7 +1392,7 @@
 							target: '-=1'
 						});
 
-				$('.jcarousel-control-next')
+				$('#cwkevmp .jcarousel-control-next')
 						.on('jcarouselcontrol:active', function() {
 							$(this).removeClass('inactive');
 						})
@@ -1475,7 +1403,45 @@
 							target: '+=1'
 						});
 
-				$('.jcarousel-pagination')
+				$('#cwkevmp .jcarousel-pagination')
+						.on('jcarouselpagination:active', 'a', function() {
+							$(this).addClass('active');
+						})
+						.on('jcarouselpagination:inactive', 'a', function() {
+							$(this).removeClass('active');
+						})
+						.jcarouselPagination();
+
+
+
+
+				$('#vacancy_carousel').jcarousel({
+					// Configuration goes here
+				});
+
+				$('#vacancy_carousel .jcarousel-control-prev')
+						.on('jcarouselcontrol:active', function() {
+							$(this).removeClass('inactive');
+						})
+						.on('jcarouselcontrol:inactive', function() {
+							$(this).addClass('inactive');
+						})
+						.jcarouselControl({
+							target: '-=1'
+						});
+
+				$('#vacancy_carousel .jcarousel-control-next')
+						.on('jcarouselcontrol:active', function() {
+							$(this).removeClass('inactive');
+						})
+						.on('jcarouselcontrol:inactive', function() {
+							$(this).addClass('inactive');
+						})
+						.jcarouselControl({
+							target: '+=1'
+						});
+
+				$('#vacancy_carousel .jcarousel-pagination')
 						.on('jcarouselpagination:active', 'a', function() {
 							$(this).addClass('active');
 						})

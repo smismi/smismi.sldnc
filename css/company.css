@@ -1704,6 +1704,14 @@ html.ipad #viewtour .third_slide .play_button {
   transition-delay: 0.6s;
 }
 
+#cwkevmp {
+  border: 13px solid red;
+  width: 1000px;
+}
+#cwkevmp ul li {
+  width: 1000px;
+}
+
 /* play video button:end */
 /* third slide:end */
 /* fourth slide:begin */
