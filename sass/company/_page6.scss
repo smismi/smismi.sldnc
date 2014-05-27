@@ -1,7 +1,6 @@
 /* sixth slide:begin */
 #news {
 	height: auto;
-	min-height: 100%;
 }
 #news .sixth_slide {
 	width: 100%;
@@ -26,6 +25,7 @@
 	background-repeat: no-repeat;
 	background-color: transparent;
 	padding: 0 0 56px;
+	margin: .67em 0;
 }
 
 /* all news button:begin */
@@ -85,17 +85,17 @@
 }
 
 #news .sixth_slide .columns > div a.first {
-	background: url(../images/company/slide_6/1.jpg) 0 0 no-repeat;
+	background: url(../img/news/1.jpg) 0 0 no-repeat;
 	height: 426px;
 }
 
 #news .sixth_slide .columns > div a.second {
-	background: url(../images/company/slide_6/2.jpg) 0 0 no-repeat;
+	background: url(../img/news/2.jpg) 0 0 no-repeat;
 	height: 213px;
 }
 
 #news .sixth_slide .columns > div a.third {
-	background: url(../images/company/slide_6/3.jpg) right 0 no-repeat;
+	background: url(../img/news/3.jpg) right 0 no-repeat;
 	height: 213px;
 }
 

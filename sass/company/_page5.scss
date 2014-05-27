@@ -216,12 +216,14 @@
 /* one vacancy:begin */
 #vacancy .fifth_slide .one_vacancy {
 	display: block;
-	border-left: 1px #f5e0cd solid;
-	border-top: 1px #f5e0cd solid;
-	border-bottom: 1px #f5e0cd solid;
 	position: relative;
 	text-align: left;
 	padding: 48px 57px;
+	float: left;
+	border: 1px #f5e0cd solid;
+	width: 184px;
+	height: 214px;
+	margin: -1px 0 0 -1px;
 }
 
 #vacancy .fifth_slide .one_vacancy:first-child,

@@ -31,5 +31,5 @@ have a fixed width and height (but it's not required).
 .jcarousel li {
 	/* Required only for block elements like <li>'s */
 	float: left;
-	width: 1000px;
+	border: 2px solid red;
 }
