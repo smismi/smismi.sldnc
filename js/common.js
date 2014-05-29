@@ -50,9 +50,11 @@ var SL = {
 			SL.init.cache();
 
 
+			SL.initScrollMagik();
 
 			SL.initHeaderMenu();
 			SL.initPager();
+			SL.initCatalogPager();
 
 
 
@@ -858,6 +860,131 @@ var SL = {
 
 		})
 
+
+
+
+	},
+	initCatalogPager: function() {
+
+
+		// parallax1
+		new ScrollScene({
+			triggerElement: "#section-1",
+			duration: $(window).height(),
+			offset: -200
+		})
+			.addTo(SL.controller)
+			.triggerHook(0.5)
+			.on("enter", function (event) {
+				SL.setPager(1);
+			});
+
+
+
+
+		new ScrollScene({triggerElement: "#section-2", duration: 0})
+			.triggerHook(.5)
+			.addTo(SL.controller).on("enter", function (event) {
+				SL.setPager(2);
+			});
+
+
+
+		new ScrollScene({
+			triggerElement: "#section-2",
+			duration: $(window).height(),
+			offset: -200
+		})
+			.addTo(SL.controller)
+			.triggerHook(0.5)
+			.on("enter", function (event) {
+				SL.setPager(2);
+			});
+
+
+
+
+		new ScrollScene({triggerElement: "#section-3", duration: 0})
+			.triggerHook(.5)
+			.addTo(SL.controller).on("enter", function (event) {
+				SL.setPager(3);
+			});
+
+
+
+		new ScrollScene({
+			triggerElement: "#section-3",
+			duration: $(window).height(),
+			offset: -200
+		})
+			.addTo(SL.controller)
+			.triggerHook(0.5)
+			.on("enter", function (event) {
+				SL.setPager(3);
+			});
+
+
+
+		new ScrollScene({triggerElement: "#section-4", duration: 0})
+			.triggerHook(.5)
+			.addTo(SL.controller).on("enter", function (event) {
+				SL.setPager(4);
+			});
+
+
+
+		new ScrollScene({
+			triggerElement: "#section-4",
+			duration: $(window).height(),
+			offset: -200
+		})
+			.addTo(SL.controller)
+			.triggerHook(0.5)
+			.on("enter", function (event) {
+				SL.setPager(4);
+			});
+
+
+
+		new ScrollScene({triggerElement: "#section-5", duration: 0})
+			.triggerHook(.5)
+			.addTo(SL.controller).on("enter", function (event) {
+				SL.setPager(5);
+			});
+
+
+
+		new ScrollScene({
+			triggerElement: "#section-5",
+			duration: $(window).height(),
+			offset: -200
+		})
+			.addTo(SL.controller)
+			.triggerHook(0.5)
+			.on("enter", function (event) {
+				SL.setPager(5);
+			});
+
+
+
+		new ScrollScene({triggerElement: "#section-6", duration: 0})
+			.triggerHook(.5)
+			.addTo(SL.controller).on("enter", function (event) {
+				SL.setPager(6);
+			});
+
+
+
+		new ScrollScene({
+			triggerElement: "#section-6",
+			duration: $(window).height(),
+			offset: -200
+		})
+			.addTo(SL.controller)
+			.triggerHook(0.5)
+			.on("enter", function (event) {
+				SL.setPager(6);
+			});
 
 
 
