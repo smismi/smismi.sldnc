@@ -148,27 +148,32 @@
 					<li class="active" data-target="1">
 						<span>1</span>
 
-						<div>Сладуница</div>
+						<div>О компании</div>
 					</li>
 					<li data-target="2">
 						<span>2</span>
 
-						<div>Фабрики Сладуницы</div>
+						<div>География продаж</div>
 					</li>
 					<li data-target="3">
 						<span>3</span>
 
-						<div>Фабрика конфет и шоколада</div>
+						<div>Производство</div>
 					</li>
 					<li data-target="4">
 						<span>4</span>
 
-						<div>Фабрика сладостей</div>
+						<div>Наши партнеры</div>
 					</li>
 					<li data-target="5">
 						<span>5</span>
 
-						<div>Фабрика новационных конфет</div>
+						<div>Вакансии</div>
+					</li>
+					<li data-target="6">
+						<span>6</span>
+
+						<div>Новости компании</div>
 					</li>
 
 				</ul>
@@ -180,7 +185,7 @@
 
 
 		<div class="scrollContent">
-			<section id="company" class="company_page">
+			<section id="section-1" class="company_page">
 
 
 
@@ -213,7 +218,7 @@
 
 
 			</section>
-			<section id="geography" class="company_page">
+			<section id="section-2" class="company_page">
 
 
 				<!-- second slide:begin -->
@@ -1019,6 +1024,93 @@
 
 				</div>
 
+			</section>
+			<section id="section-3" class="company_page">
+
+				<!-- third slide:begin -->
+				<div class="third_slide">
+
+					<!-- video:begin -->
+					<video autoplay loop>
+						<source src="http://sladunitsa.redis.tv/video/company_slide_1_example.webm" type="video/webm">
+						<source src="http://sladunitsa.redis.tv/video/company_slide_1_example.mp4" type="video/mp4">
+					</video>
+					<!-- video:end -->
+
+					<!-- text wrapper -->
+					<div>
+
+						<!-- title -->
+						<h1>Добро пожаловать<br>к нам на производство!</h1>
+
+						<!-- text -->
+						<p>, странах ближнего<br> и дальнего зарубежья.</p>
+
+					</div>
+
+					<!-- visual tour button-->
+					<div class="visual_tour">
+						<!-- text -->
+						<span>Визуальный тур</span>
+						<!-- bg -->
+						<span></span>
+					</div>
+
+					<!-- stop button:begin -->
+					<div class="stop_button controls_video">
+
+						<!-- text -->
+						<span>Остановить видео</span>
+
+						<!-- icon spinner square:begin -->
+						<div>
+                        <span class="top">
+                            <i></i>
+                        </span>
+                        <span class="right">
+                            <i></i>
+                        </span>
+                        <span class="bottom">
+                            <i></i>
+                        </span>
+                        <span class="left">
+                            <i></i>
+                        </span>
+						</div>
+						<!-- icon spinner square:end -->
+
+					</div>
+					<!-- stop button:end -->
+
+					<!-- play button:begin -->
+					<div class="play_button controls_video">
+
+						<!-- text -->
+						<span>Воспроизвести видео</span>
+
+						<!-- icon spinner square:begin -->
+						<div>
+                        <span class="top">
+                            <i></i>
+                        </span>
+                        <span class="right">
+                            <i></i>
+                        </span>
+                        <span class="bottom">
+                            <i></i>
+                        </span>
+                        <span class="left">
+                            <i></i>
+                        </span>
+						</div>
+						<!-- icon spinner square:end -->
+
+					</div>
+					<!-- play button:end -->
+
+				</div>
+				<!-- third slide:end -->
+
 
 				<div id="cwkevmp"  class="jcarousel">
 
@@ -1042,8 +1134,12 @@
 
 				</div>
 
+
+
+
+
 			</section>
-			<section id="partners" class="company_page">
+			<section id="section-4" class="company_page">
 
 				<div class="fourth_slide">
 
@@ -1325,7 +1421,7 @@
 
 
 			</section>
-			<section id="vacancy" class="company_page">
+			<section id="section-5" class="company_page">
 
 
 				<!-- fifth slide:begin -->
@@ -1511,7 +1607,7 @@
 
 
 			</section>
-			<section id="news" class="company_page">
+			<section id="section-6" class="company_page">
 
 
 
@@ -1645,6 +1741,8 @@
 			</footer>
 
 		</div>
+	</div>
+</div>
 		<script>
 
 
@@ -1736,7 +1834,7 @@
 			// second slide (hover on point):begin
 			(function($){
 
-				$("#geography .second_slide .map > div").on({
+				$("#section-2 .second_slide .map > div").on({
 					mouseenter: function () {
 
 						$(this).find('div').stop(true,false).fadeIn(500);

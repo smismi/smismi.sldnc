@@ -1,9 +1,9 @@
 /* fifth slide:begin */
-#vacancy {
+#section-5 {
 	height: auto;
 	min-height: 100%;
 }
-#vacancy .fifth_slide{
+#section-5 .fifth_slide{
 	width: 100%;
 	height: 100%;
 	text-align: center;
@@ -12,13 +12,13 @@
 }
 
 /* text wrapper */
-#vacancy .fifth_slide > div:first-child{
+#section-5 .fifth_slide > div:first-child{
 	position: relative;
 	padding: 75px 0 11px;
 }
 
 /* title */
-#vacancy .fifth_slide h1{
+#section-5 .fifth_slide h1{
 	font: 68px/0.94em 'oksana_text_narrowbold', sans-serif;
 	color: #442111;
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAAmCAYAAACGVAp5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDozNUYxODI3QkE2NkNFMzExODdBNkI5OTE5MDg0OEE0MyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCRUVFRjU0Qjk0QUMxMUUzOTdCQjlFRDZCQ0NEN0E2QyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCRUVFRjU0QTk0QUMxMUUzOTdCQjlFRDZCQ0NEN0E2QyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjRCRjRERENBQUI5N0UzMTFCNDE0QjUwMTdBRjY3MDE4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjM1RjE4MjdCQTY2Q0UzMTE4N0E2Qjk5MTkwODQ4QTQzIi8+IDwvcmRmOkRlc2NyaXB0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);
@@ -28,7 +28,7 @@
 	padding: 0 0 56px;
 }
 
-#vacancy .fifth_slide  .headermark {
+#section-5 .fifth_slide  .headermark {
 	&:before {
 		content: "\e503";
 	}
@@ -36,46 +36,46 @@
 
 
 /* jobs in the directions:begin */
-#vacancy .fifth_slide .jobs_in_directions{
+#section-5 .fifth_slide .jobs_in_directions{
 	height: 165px;
 	background: #fff;
 	position: relative;
 }
 
 /* title */
-#vacancy .fifth_slide .jobs_in_directions > div:first-child{
+#section-5 .fifth_slide .jobs_in_directions > div:first-child{
 	color: #e60e64;
 	font: 22px 'oksana_text_narrowdemibold', sans-serif;
 	padding: 30px 0 35px;
 }
 
 /* list */
-#vacancy .fifth_slide .jobs_in_directions > div:last-child{
+#section-5 .fifth_slide .jobs_in_directions > div:last-child{
 	width: 1103px;
 	margin: 0 auto;
 }
-#vacancy .fifth_slide .jobs_in_directions ul{
+#section-5 .fifth_slide .jobs_in_directions ul{
 	list-style: none;
 	margin: 0; padding: 0;
 }
 
-#vacancy .fifth_slide .jobs_in_directions ul li{
+#section-5 .fifth_slide .jobs_in_directions ul li{
 	font: 15px 'oksana_text_narrowbold', sans-serif;
 	color: #442111;
 	margin: 0; padding: 0;
 	cursor: pointer;
 }
 
-#vacancy .fifth_slide .jobs_in_directions ul li span:first-child{
+#section-5 .fifth_slide .jobs_in_directions ul li span:first-child{
 	display: inline-block;
 	margin-right: 12px;
 }
 
-#vacancy .fifth_slide .jobs_in_directions ul li.active span:first-child{
+#section-5 .fifth_slide .jobs_in_directions ul li.active span:first-child{
 	color: #e60e64;
 }
 
-#vacancy .fifth_slide .jobs_in_directions ul li span:last-child{
+#section-5 .fifth_slide .jobs_in_directions ul li span:last-child{
 	font-size: 15px;
 	line-height: 27px;
 	color: #e60e64;
@@ -85,15 +85,15 @@
 	width: 27px; height: 27px;
 	transition: background 0.3s ease, color 0.5s ease;
 }
-#vacancy .fifth_slide .jobs_in_directions ul li:hover span:last-child,
-#vacancy .fifth_slide .jobs_in_directions ul li.active span:last-child{
+#section-5 .fifth_slide .jobs_in_directions ul li:hover span:last-child,
+#section-5 .fifth_slide .jobs_in_directions ul li.active span:last-child{
 	background: #e60e64;
 	color: #fff;
 }
 
 /* bxslider styles:begin */
 /* reset and layout */
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper {
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper {
 	position: relative;
 	margin: 0;
 	padding: 0;
@@ -107,22 +107,22 @@
 	*zoom: 1;
 }
 
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper img {
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper img {
 	max-width: 100%;
 	display: block;
 }
 
 /* theme */
 
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-viewport {
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-viewport {
 	left: -5px;
 	box-shadow: none;
 	border: none;
 	background: transparent;
 }
 
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-pager,
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-controls-auto {
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-pager,
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-controls-auto {
 	position: absolute;
 	bottom: -30px;
 	width: 100%;
@@ -130,7 +130,7 @@
 
 /* loader */
 
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-loading {
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-loading {
 	min-height: 50px;
 	background: url(../images/bxslider/bx_loader.gif) center center no-repeat #fff;
 	height: 100%;
@@ -143,7 +143,7 @@
 
 /* pager */
 
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-pager {
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-pager {
 	text-align: center;
 	font-size: .85em;
 	font-family: Arial;
@@ -152,14 +152,14 @@
 	padding-top: 20px;
 }
 
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-pager .bx-pager-item,
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-pager .bx-pager-item,
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
 	display: inline-block;
 	*zoom: 1;
 	*display: inline;
 }
 
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-pager.bx-default-pager a {
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-pager.bx-default-pager a {
 	background: #666;
 	text-indent: -9999px;
 	display: block;
@@ -169,14 +169,14 @@
 	outline: 0;
 }
 
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-pager.bx-default-pager a:hover,
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-pager.bx-default-pager a.active {
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-pager.bx-default-pager a:hover,
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-pager.bx-default-pager a.active {
 	background: #000;
 }
 
 /* direction controls (next / prev) */
 
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-prev {
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-prev {
 	left: -39px;
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAUCAYAAABbLMdoAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASFJREFUeNpi/P//PwMh8Jw/NQpItbMQoTAVSPUBsT8DyGRc+BlfSiEQfwBicxCfBY+JdUAqF4jtJT/OvggSY8GiiBFIdQFxJBDbAhXegMmxoClkBlJTgNgViO2ACu8hy7OgKVwExPpA7ABU+ATdVhaoQjYgtQaIpYHYEajwNTZ/sAAVcgHpTUDMCcROQIUfcXmaCYjPQGlXfAphikFu/clABAApNgFidiDeAnQSP17FQKs/A2kfIP4KxLuAGoTwmcwA1PANSAUD8QMgPgjUIIZTMVTDLyAFSl2ngfgYUIMMTsVQDX+BVDIQbwPi40ANKsjyjLjSM1BhK1QjKEgvY5iMZks1kJoAxPuAGs3xmoxkQyYolwBxACOR2SoGSDUBBBgAf9V6L8Saa5IAAAAASUVORK5CYII=);
 	background-repeat: no-repeat;
@@ -185,7 +185,7 @@
 	border: 1px transparent solid;
 }
 
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-next {
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-next {
 	right: -39px;
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAUCAYAAABbLMdoAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNpieCqSeg+IYxiIAExAnATEU4AaMonRwABUaA7Er4G4Ap86RiQNukBqNxDPlX4zuxqvYqgGFSC1H4jXA3E+UNN/nIqhGmSA1AEgPgTEqUANf3EqhmoQA1J7gfgaEMcCNfzCqRiqQQhIbQfiV0AcDtTwjZFAKPFD3Q8C/kz4FANN+wikfID4JxCfYWIgDrAD8V8mIpwBCvt/QGzChEehKJDaB8RvgdgL5EEmHAploJFzA4gDYUHHhEWhEjRSDgNxHHKkMKEp1IDGHCi4spAVopuoD015dcQk0Q9AXEhIoRMQfwbiVGIS/kMgjiImZgACDAD4n2H4vyTYXQAAAABJRU5ErkJggg==);
 	background-repeat: no-repeat;
@@ -194,15 +194,15 @@
 	border: 1px transparent solid;
 }
 
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-prev:hover {
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-prev:hover {
 	border: 1px #e60e64 solid;
 }
 
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-next:hover {
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-next:hover {
 	border: 1px #e60e64 solid;
 }
 
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-controls-direction a {
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-controls-direction a {
 	position: absolute;
 	top: 50%;
 	margin-top: -18px;
@@ -213,7 +213,7 @@
 	z-index: 9000;
 }
 
-#vacancy .fifth_slide .jobs_in_directions .bx-wrapper .bx-controls-direction a.disabled {
+#section-5 .fifth_slide .jobs_in_directions .bx-wrapper .bx-controls-direction a.disabled {
 	display: none;
 }
 /* bxslider styles:end */
@@ -221,7 +221,7 @@
 /* jobs in the directions:end */
 
 /* one vacancy:begin */
-#vacancy .fifth_slide .one_vacancy {
+#section-5 .fifth_slide .one_vacancy {
 	display: block;
 	position: relative;
 	text-align: left;
@@ -233,23 +233,23 @@
 	margin: -1px 0 0 -1px;
 }
 
-#vacancy .fifth_slide .one_vacancy:first-child,
-#vacancy .fifth_slide .one_vacancy + .one_vacancy {
+#section-5 .fifth_slide .one_vacancy:first-child,
+#section-5 .fifth_slide .one_vacancy + .one_vacancy {
 	border-top: 0;
 }
 
-#vacancy .fifth_slide .columns .col:last-child {
+#section-5 .fifth_slide .columns .col:last-child {
 	border-right: 1px #f5e0cd solid;
 }
 
-#vacancy .fifth_slide .one_vacancy span:nth-child(1) {
+#section-5 .fifth_slide .one_vacancy span:nth-child(1) {
 	font: 15px/24px 'oksana_text_narrowbold', sans-serif;
 	color: #442111;
 	display: block;
 	margin: 0 0 12px;
 }
 
-#vacancy .fifth_slide .one_vacancy span:nth-child(2) {
+#section-5 .fifth_slide .one_vacancy span:nth-child(2) {
 	font: 20px/24px 'oksana_text_narrowdemibold', sans-serif;
 	color: #e60e64;
 	display: block;
@@ -262,14 +262,14 @@
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAABCAIAAACt5TK4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABVJREFUeNpifC6d9f/zLwZqA4AAAwBuDQRasMa/2gAAAABJRU5ErkJggg==);
 }
 
-#vacancy .fifth_slide .one_vacancy span:nth-child(3) {
+#section-5 .fifth_slide .one_vacancy span:nth-child(3) {
 	font: 13px/24px 'oksana_text_narrowbold_italic', sans-serif;
 	color: #442111;
 	display: block;
 	margin: 0 0 10px;
 }
 
-#vacancy .fifth_slide .one_vacancy a {
+#section-5 .fifth_slide .one_vacancy a {
 	font: 13px/26px 'oksana_text_narrowbold_italic', sans-serif;
 	color: #e60e64;
 	display: inline-block;
@@ -279,12 +279,12 @@
 /* one vacancy:end */
 
 /* send resume button */
-#vacancy .fifth_slide .send_resume_btn{
+#section-5 .fifth_slide .send_resume_btn{
 	margin: 38px 0 40px;
 	display: inline-block;
 	cursor: pointer;
 }
-#vacancy .fifth_slide .send_resume_btn span:first-child{
+#section-5 .fifth_slide .send_resume_btn span:first-child{
 	margin: 0 auto;
 	display: block;
 	width: 66px; height: 66px;
@@ -294,22 +294,22 @@
 	transition: border 0.1s ease;
 }
 
-#vacancy .fifth_slide .send_resume_btn:hover span:first-child{
+#section-5 .fifth_slide .send_resume_btn:hover span:first-child{
 	border: 3px #fff solid;
 }
 
-#vacancy .fifth_slide .send_resume_btn span:first-child i{
+#section-5 .fifth_slide .send_resume_btn span:first-child i{
 	display: block;
 	background: url(../images/company/slide_5/letter_icon.png) 0 -66px no-repeat;
 	width: 66px; height: 66px;
 	transition: all 0.3s ease;
 }
 
-#vacancy .fifth_slide .send_resume_btn:hover span:first-child i{
+#section-5 .fifth_slide .send_resume_btn:hover span:first-child i{
 	background: url(../images/company/slide_5/letter_icon.png) 0 0 no-repeat;
 }
 
-#vacancy .fifth_slide .send_resume_btn span:last-child{
+#section-5y .fifth_slide .send_resume_btn span:last-child{
 	display: block;
 	color: #e60e64;
 	font: 16px 'oksana_text_narrowbold', sans-serif;
