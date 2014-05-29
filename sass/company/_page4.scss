@@ -29,6 +29,12 @@
 	margin: 0 0 11px;
 }
 
+#partners .fourth_slide  .headermark {
+	&:before {
+		content: "\e503";
+	}
+}
+
 /* text */
 #partners .fourth_slide p {
 	color: #442111;

@@ -894,6 +894,10 @@ html.ipad #company .first_slide video {
   margin: 0 0 12px;
 }
 
+#company .first_slide .headermark:before {
+  content: "\e503";
+}
+
 /* text */
 #company .first_slide p {
   color: #fff;
@@ -1380,6 +1384,10 @@ html.ipad #company .first_slide video {
   margin: 0 0 11px;
 }
 
+#geography .second_slide .headermark:before {
+  content: "\e503";
+}
+
 /* text */
 #geography .second_slide p {
   color: #fff;
@@ -1437,6 +1445,10 @@ html.ipad #viewtour .third_slide video {
   background-color: transparent;
   padding: 0 0 56px;
   margin: 0 0 12px;
+}
+
+#viewtour .third_slide .headermark:before {
+  content: "\e503";
 }
 
 /* text */
@@ -1779,6 +1791,10 @@ html.ipad #viewtour .third_slide .play_button {
   margin: 0 0 11px;
 }
 
+#partners .fourth_slide .headermark:before {
+  content: "\e503";
+}
+
 /* text */
 #partners .fourth_slide p {
   color: #442111;
@@ -1997,6 +2013,10 @@ html.ipad #partners .fourth_slide .columns .col a:hover > div {
   background-repeat: no-repeat;
   background-color: transparent;
   padding: 0 0 56px;
+}
+
+#vacancy .fifth_slide .headermark:before {
+  content: "\e503";
 }
 
 /* jobs in the directions:begin */
@@ -2318,6 +2338,10 @@ html.ipad #partners .fourth_slide .columns .col a:hover > div {
   background-color: transparent;
   padding: 0 0 56px;
   margin: .67em 0;
+}
+
+#news .sixth_slide > div .headermark:before {
+  content: "\e503";
 }
 
 /* all news button:begin */

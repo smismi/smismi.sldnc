@@ -27,6 +27,11 @@
 	padding: 0 0 56px;
 	margin: .67em 0;
 }
+#news .sixth_slide > div  .headermark {
+	&:before {
+		content: "\e503";
+	}
+}
 
 /* all news button:begin */
 #news .sixth_slide > div > h1 + a {

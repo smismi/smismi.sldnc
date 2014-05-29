@@ -28,6 +28,13 @@
 	padding: 0 0 56px;
 }
 
+#vacancy .fifth_slide  .headermark {
+	&:before {
+		content: "\e503";
+	}
+}
+
+
 /* jobs in the directions:begin */
 #vacancy .fifth_slide .jobs_in_directions{
 	height: 165px;
