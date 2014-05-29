@@ -321,10 +321,6 @@ section.catalog {
   position: relative;
 }
 
-.catalog .wrapper {
-  border: 2px dotted purple;
-}
-
 .fixed {
   position: fixed;
   z-index: 12;
@@ -1026,10 +1022,6 @@ html.ipad #company .first_slide video {
 
 /* hover:end */
 /* one point:end */
-#geography .second_slide .map > div {
-  display: none;
-}
-
 /* postition points:begin */
 #geography .second_slide .map > div:nth-child(1) {
   left: 153px;
@@ -1226,22 +1218,24 @@ html.ipad #company .first_slide video {
   left: 452px;
   top: 451px;
   display: block;
-  border: 3px solid green;
 }
 
 #geography .second_slide .map > div:nth-child(34) {
   left: 484px;
   top: 448px;
+  display: block;
 }
 
 #geography .second_slide .map > div:nth-child(35) {
   left: 455px;
   top: 476px;
+  display: block;
 }
 
 #geography .second_slide .map > div:nth-child(36) {
   left: 545px;
   top: 449px;
+  display: block;
 }
 
 #geography .second_slide .map > div:nth-child(37) {
@@ -1312,16 +1306,56 @@ html.ipad #company .first_slide video {
 }
 
 #geography .second_slide .map > div:nth-child(50) {
+  left: 329px;
+  top: 414px;
+}
+
+#geography .second_slide .map > div:nth-child(51) {
+  left: 384px;
+  top: 486px;
+}
+
+#geography .second_slide .map > div:nth-child(52) {
+  left: 319px;
+  top: 444px;
+}
+
+#geography .second_slide .map > div:nth-child(53) {
+  left: 309px;
+  top: 474px;
+}
+
+#geography .second_slide .map > div:nth-child(54) {
+  left: 319px;
+  top: 504px;
+}
+
+#geography .second_slide .map > div:nth-child(55) {
+  left: 409px;
+  top: 524px;
+}
+
+#geography .second_slide .map > div:nth-child(56) {
+  left: 329px;
+  top: 574px;
+}
+
+#geography .second_slide .map > div:nth-child(57) {
+  left: 259px;
+  top: 564px;
+}
+
+#geography .second_slide .map > div:nth-child(58) {
   left: 316px;
   top: 603px;
 }
 
-#geography .second_slide .map > div:nth-child(51) {
+#geography .second_slide .map > div:nth-child(59) {
   left: 260px;
   top: 621px;
 }
 
-#geography .second_slide .map > div:nth-child(52) {
+#geography .second_slide .map > div:nth-child(60) {
   left: 637px;
   top: 592px;
 }
@@ -2528,7 +2562,6 @@ html.ipad #partners .fourth_slide .columns .col a:hover > div {
 
 .company_page {
   height: 100%;
-  border: 2px dotted purple;
 }
 
 /*
@@ -2700,9 +2733,6 @@ have a fixed width and height (but it's not required).
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1100px) {
-  .page5 .wrapper .section-5-header {
-    border: 45px dotted purple;
-  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 64px;
   }
@@ -2757,9 +2787,6 @@ have a fixed width and height (but it's not required).
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  .page5 .wrapper .section-5-header {
-    border: 45px dotted purple;
-  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 54px;
   }
@@ -2814,9 +2841,6 @@ have a fixed width and height (but it's not required).
   }
 }
 @media screen and (min-width: 750px) and (max-width: 800px) {
-  .page5 .wrapper .section-5-header {
-    border: 45px dotted purple;
-  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 54px;
   }
@@ -2871,9 +2895,6 @@ have a fixed width and height (but it's not required).
   }
 }
 @media screen and (min-height: 0px) and (max-height: 650px) {
-  .page5 .wrapper .section-5-header {
-    border: 25px dotted purple;
-  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 44px;
   }
@@ -2924,9 +2945,6 @@ have a fixed width and height (but it's not required).
   }
 }
 @media screen and (min-height: 650px) and (max-height: 750px) {
-  .page5 .wrapper .section-5-header {
-    border: 45px dotted purple;
-  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 54px;
   }
@@ -2977,9 +2995,6 @@ have a fixed width and height (but it's not required).
   }
 }
 @media screen and (min-height: 750px) and (max-height: 850px) {
-  .page5 .wrapper .section-5-header {
-    border: 45px dotted purple;
-  }
   .page5 .wrapper .section-5-header h1 {
     font-size: 64px;
   }
@@ -3346,11 +3361,9 @@ have a fixed width and height (but it's not required).
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) {
   #content-wrapper {
-    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
-    border: 3px solid yellow;
     height: auto;
   }
 
@@ -3364,7 +3377,6 @@ have a fixed width and height (but it's not required).
   }
 
   .page {
-    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -3710,7 +3722,6 @@ have a fixed width and height (but it's not required).
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
-    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -3735,9 +3746,6 @@ have a fixed width and height (but it's not required).
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr {
-    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
@@ -3776,11 +3784,9 @@ have a fixed width and height (but it's not required).
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) {
   #content-wrapper {
-    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
-    border: 3px solid yellow;
     height: auto;
   }
 
@@ -3794,7 +3800,6 @@ have a fixed width and height (but it's not required).
   }
 
   .page {
-    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -4140,7 +4145,6 @@ have a fixed width and height (but it's not required).
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
-    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -4165,9 +4169,6 @@ have a fixed width and height (but it's not required).
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr {
-    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
@@ -4206,11 +4207,9 @@ have a fixed width and height (but it's not required).
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) {
   #content-wrapper {
-    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
-    border: 3px solid yellow;
     height: auto;
   }
 
@@ -4224,7 +4223,6 @@ have a fixed width and height (but it's not required).
   }
 
   .page {
-    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -4570,7 +4568,6 @@ have a fixed width and height (but it's not required).
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
-    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -4595,9 +4592,6 @@ have a fixed width and height (but it's not required).
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr {
-    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
@@ -4636,11 +4630,9 @@ have a fixed width and height (but it's not required).
 }
 @media screen and (max-width: 750px) {
   #content-wrapper {
-    border: 3px solid blue;
     height: auto;
   }
   #content-wrapper #wrapper {
-    border: 3px solid yellow;
     height: auto;
   }
 
@@ -4654,7 +4646,6 @@ have a fixed width and height (but it's not required).
   }
 
   .page {
-    border: 3px solid red;
     height: auto;
   }
   .page .wrapper {
@@ -5000,7 +4991,6 @@ have a fixed width and height (but it's not required).
     margin: 0 auto;
     width: 240px;
     vertical-align: top;
-    border: 1px solid red;
   }
   .page5 .wrapper .page_item figcaption {
     width: 240px;
@@ -5025,9 +5015,6 @@ have a fixed width and height (but it's not required).
   .page5 .wrapper .page_item figcaption .description h3 {
     display: none;
     font-size: 10px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr {
-    border: 2px dotted purple;
   }
   .page5 .wrapper .page_item figcaption:hover abbr .icon {
     font-size: 160px;
