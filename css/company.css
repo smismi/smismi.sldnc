@@ -1838,7 +1838,70 @@ html.ipad #viewtour .third_slide .play_button {
   margin: -1px 0 0 -1px;
 }
 #partners .fourth_slide .columns .col a:before {
-  content: "\e505";
+  color: #414042;
+  font-size: 40px;
+}
+#partners .fourth_slide .columns .col a:nth-child(1):before {
+  content: "\e51c";
+  line-height: 298px;
+}
+#partners .fourth_slide .columns .col a:nth-child(2):before {
+  content: "\e51b";
+  line-height: 298px;
+}
+#partners .fourth_slide .columns .col a:nth-child(3):before {
+  content: "\e51a";
+  line-height: 298px;
+}
+#partners .fourth_slide .columns .col a:nth-child(4):before {
+  content: "\e519";
+  line-height: 298px;
+}
+#partners .fourth_slide .columns .col a:nth-child(5):before {
+  content: "\e518";
+  line-height: 298px;
+}
+#partners .fourth_slide .columns .col a:nth-child(6):before {
+  content: "\e517";
+  line-height: 298px;
+}
+#partners .fourth_slide .columns .col a:nth-child(7):before {
+  content: "\e516";
+  line-height: 298px;
+  font-size: 60px;
+}
+#partners .fourth_slide .columns .col a:nth-child(8):before {
+  content: "\e515";
+  line-height: 298px;
+}
+#partners .fourth_slide .columns .col a:nth-child(9):before {
+  content: "\e514";
+  line-height: 298px;
+  font-size: 85px;
+}
+#partners .fourth_slide .columns .col a:nth-child(10):before {
+  content: "\e513";
+  line-height: 298px;
+}
+#partners .fourth_slide .columns .col a:nth-child(11):before {
+  content: "\e512";
+  line-height: 298px;
+  font-size: 60px;
+}
+#partners .fourth_slide .columns .col a:nth-child(12):before {
+  content: "\e511";
+  line-height: 298px;
+}
+#partners .fourth_slide .columns .col a:nth-child(13):before {
+  content: "\e510";
+  line-height: 298px;
+}
+#partners .fourth_slide .columns .col a:nth-child(14):before {
+  content: "\e50f";
+  line-height: 298px;
+}
+#partners .fourth_slide .columns .col a:nth-child(15):before {
+  content: "\e50e";
   line-height: 298px;
 }
 
