@@ -33,7 +33,7 @@ html.ipad #section-1 .first_slide video {
 }
 
 /* text wrapper */
-#section-1 .first_slide div {
+#section-1 .first_slide > div {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -46,16 +46,13 @@ html.ipad #section-1 .first_slide video {
 #section-1 .first_slide h1 {
 	font: 68px/0.94em 'oksana_text_narrowbold', sans-serif;
 	color: #fff;
-	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALMAAAAbCAYAAAA3W75wAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABFRJREFUeNrsm3lIVFEUxt9kKuWSLVLaQgsttBhie4FBFi3aSjttlBVF9U/LP/VXtENKFFFKioRQEVFSURIRFe0SUobSRmZOJZkzbdoyfYf3DTwsWmYcn+U58OPOzL1vkPM+jt89747D4/EYGr6Fw+H44bMXkUsSMGSDUOAE02NdmS//9Dv1fvgeTTQFdR65oC/oDvqDmZqS+ommmoI6j+tgOwgCwZpjFfO/HB7YiixajmkYwn62CHMRGGqwtlpTVke2Tz2a/54ZwpQXG0ACxdsRfALvQbilcOQDEXhLcB/EgiKQAlF71DOrZ24IsRZsplBvgrZgACgFERR5a9Eq6AKiwC0gVXkC2K0pVJvRUEIEeYj57ATWgWHgGKuziDiPFTuX14SyUt+jqDW0MtsbsBhJGAaBMlAF5rObkcVqnQi2gs9gCqgAR8BUMBcUy/X4nvGaTa3Mdkci85gCStjFiAM9QSToxcr9BXwASbQad2lFRoGnYDo4o+nUymxntAPz6I3fgnTgps04AHaAQlbr4bQjIuAb9NpiPV5L5eZGUkPFbIvFkK7EGFbnnhyfgXHsWMwCIWAl6Ay2gDmgOZgEJoP2XC/rVmlW1WbYFctYWQvpkZ20EfLgpMYwnwDmsbtxGcSDU4bZknvEYrIXfATjKfI9mlYfxVzeIvUNq8j/GpUxVRmtAvTdYh0crLKZYCPFLa220SAG9AArQDKrc1tu/NI4l07b0Qc8DlQSGsN9bhrAG90YogNHFzdzYjXe016UcE5sxFjOS3Sjx+4NbrOrIeJ/Di4E6g9tDPdZbYZ/8cAwW27B3AgW0TNLr/kKhSzzbbgZHMyuRjU3fwmWDaTYjgxNqW4A7YqThvn4Wh5ZR9E6iDhL6acvgmhw3jB70ZWG+QBFuh79QAFIjXVljsD4DWONptT30LMZ/iTP4ZCOhmz8VtOPit1wQZTfftMFWc0qLf8Z12C9E58tEs8MO3BJM6s2w7aAGKWv7IYgpSqnYSxjNR4CsjH/yiLkNFZo2QzKpuwEPlvGbocIWsWsNqP+g33mYstHy8E+CnU9eAIWWtbHcwM4Axym5SgHSyH4hxhbaFZVzHbFSNGo5b1s+jYZ5mNs+a+3wDDPYngjmR56J8S73zDPcUgv2s35cE2pitmuaMkuhDekb+xgRXbz9XHL/C4RLIScQ3siG8FzIm7OuzWlKma7IgKCvGp5H8/NYFfDbMHJcc+JFm8tB/bvwG7EWa6Rjof3xFyYplTF3FBCrMM2wzzy+Q7MBmdrrZF2XKlF4Me4UTRYyTW0m2FLVKDKzoAgj1KYBRSwxLVfdD8qa30UrjZDxWx3nDbMX2If/Ytroi3dDTk2OhS8ZGckWFPqe+hDE3+SZz40WYyXQai2B3+3nueV8/lWOh7Sl5aDSVKpxXunxlRlODWzKmZbxEyRSt9Yfk0ibbpmFKpsAENqXfIVDDTMn1fJugquy/FaFb0fvsd3AQYAeeEqMfbakbgAAAAASUVORK5CYII=');
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	background-color: transparent;
-	padding: 0 0 56px;
-	margin: 0 0 12px;
+	margin: .3em 0;
 }
 #section-1 .first_slide .headermark {
 	&:before {
-		content: "\e503";
+		content: "\e600";
+		color: #fff;
+		font-size: 47px;
 	}
 }
 
