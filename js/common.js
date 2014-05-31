@@ -1039,8 +1039,14 @@ var SL = {
 					locked: false
 				}
 			},
-			afterLoad   : function() {
+			openEffect  : 'none',
+			closeEffect : 'none',
+			nextEffect : 'none',
+			prevEffect : 'none',
 
+			beforeLoad   : function() {
+
+				var _content = this.content;
 				var descr = this.element.data('descr');
 
 				var _v = vacancies[descr];
@@ -1052,10 +1058,30 @@ var SL = {
 
 				$("h1", this.content).html(_v.type);
 				$("h2", this.content).html(_v.position);
-				$("h3", this.content).html(_v.salary);
-				$("h4", this.content).html(_v.conditions[1]);
-				$("h5", this.content).html(_v.requirments[1]);
-				$("h5", this.content).html(_v.responsibility[1]);
+
+
+
+				$("#sal > ul", this.content).html($("<li>").append(_v.salary));
+
+
+				$.each(_v.conditions, function( index, value ) {
+					$("#con > ul", _content).html("").append(
+						$("<li>").append(value)
+					);
+				})
+
+				$.each(_v.requirments, function( index, value ) {
+					$("#req > ul", _content).html("").append(
+						$("<li>").append(value)
+					);
+				})
+
+				$.each(_v.responsibility, function( index, value ) {
+					$("#res > ul", _content).html("").append(
+						$("<li>").append(value)
+					);
+				})
+
 
 
 			}

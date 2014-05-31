@@ -313,3 +313,26 @@
 	font: 16px 'oksana_text_narrowbold', sans-serif;
 }
 /* fifth slide:end */
+
+
+.req_list {
+	@include pie-clearfix();
+}
+
+.vac_block {
+
+	width: 50%;
+	float: left;
+
+	ul {
+		font-family: 'oksana_text_narrowHvIt';
+		color: #442111;
+
+		li {
+			&:before {
+
+				content: "-";
+			}
+		}
+	}
+}

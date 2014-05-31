@@ -2304,6 +2304,27 @@ html.ipad #section-4 .fourth_slide .columns .col a:hover > div {
 }
 
 /* fifth slide:end */
+.req_list {
+  *zoom: 1;
+}
+.req_list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.vac_block {
+  width: 50%;
+  float: left;
+}
+.vac_block ul {
+  font-family: 'oksana_text_narrowHvIt';
+  color: #442111;
+}
+.vac_block ul li:before {
+  content: "-";
+}
+
 /* sixth slide:begin */
 #section-6 {
   height: auto;
