@@ -1056,28 +1056,32 @@ var SL = {
 					return;
 				}
 
+
+
 				$("h1", this.content).html(_v.type);
 				$("h2", this.content).html(_v.position);
-
+				$("#con > ul", _content).html("");
+				$("#req > ul", _content).html("");
+				$("#res > ul", _content).html("");
 
 
 				$("#sal > ul", this.content).html($("<li>").append(_v.salary));
 
 
 				$.each(_v.conditions, function( index, value ) {
-					$("#con > ul", _content).html("").append(
+					$("#con > ul", _content).append(
 						$("<li>").append(value)
 					);
 				})
 
 				$.each(_v.requirments, function( index, value ) {
-					$("#req > ul", _content).html("").append(
+					$("#req > ul", _content).append(
 						$("<li>").append(value)
 					);
 				})
 
 				$.each(_v.responsibility, function( index, value ) {
-					$("#res > ul", _content).html("").append(
+					$("#res > ul", _content).append(
 						$("<li>").append(value)
 					);
 				})

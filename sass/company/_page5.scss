@@ -317,22 +317,57 @@
 
 .req_list {
 	@include pie-clearfix();
+	margin: 40px;
 }
 
 .vac_block {
 
-	width: 50%;
-	float: left;
 
-	ul {
-		font-family: 'oksana_text_narrowHvIt';
+
+	h1 {
+		font-size: 19px;
 		color: #442111;
+		margin: 40px 40px 0px 40px;
 
-		li {
-			&:before {
+	}
+	h2 {
+		font-size: 35px;
+		color: #e60e64;
+		margin: 20px 40px 0px 40px;
 
-				content: "-";
+	}
+	.vac_block_item {
+
+		width: 50%;
+		float: left;
+
+		ul {
+			font-family: 'oksana_text_narrowdemibold';
+			font-style: italic;
+			color: #442111;
+			margin-top: 12px;
+			margin-bottom: 32px;
+
+			li {
+				line-height: 23px;
+				padding-right: 20px;
+				&:before {
+
+					content: "-";
+				}
 			}
+
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			width: 35px;
+			height: 1px;
+			background: $cherry;
+			margin-bottom: 20px;
 		}
 	}
+
+
 }
