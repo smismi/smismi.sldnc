@@ -1453,11 +1453,13 @@
 			// Create navigation arrows
 			if (current.arrows && F.group.length > 1) {
 				if (current.loop || current.index > 0) {
-					$(current.tpl.prev).appendTo(F.outer).bind('click.fb', F.prev);
+					$(".fancybox-prev").remove();
+					$(current.tpl.prev).appendTo("body").bind('click.fb', F.prev);
 				}
 
 				if (current.loop || current.index < F.group.length - 1) {
-					$(current.tpl.next).appendTo(F.outer).bind('click.fb', F.next);
+					$(".fancybox-next").remove();
+					$(current.tpl.next).appendTo("body").bind('click.fb', F.next);
 				}
 			}
 
