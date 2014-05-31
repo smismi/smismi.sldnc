@@ -55,6 +55,8 @@ var SL = {
 			SL.initHeaderMenu();
 			SL.initPager();
 			SL.initCatalogPager();
+			SL.initParallax6();
+			SL.videoControl();
 
 
 
@@ -986,6 +988,40 @@ var SL = {
 				SL.setPager(6);
 			});
 
+
+
+	},
+	videoControl: function() {
+
+			// stop/play video:begin
+			// stop:begin
+			$('#section-3').on('click','.stop_button', function(e) {
+
+				e.preventDefault();
+
+				var video = $('#section-3 video');
+
+				$(video)[0].pause();
+
+				$(this).fadeOut('slow', function() {
+					$('#section-3 .play_button').fadeIn('slow', function() {
+						$(this).on('click', function(a) {
+
+							a.preventDefault();
+
+							$(video)[0].play();
+
+							$(this).fadeOut('slow', function() {
+								$('#section-3 .stop_button').fadeIn('slow');
+							});
+
+						});
+					});
+				});
+
+			});
+			// stop:end
+			// stop/play video:end
 
 
 	},
