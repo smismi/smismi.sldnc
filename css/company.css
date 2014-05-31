@@ -1429,6 +1429,14 @@ html.ipad #section-3 .third_slide video {
   position: relative;
 }
 
+#egg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -175px;
+}
+
 /* title */
 #section-3 .third_slide h1 {
   font: 68px/0.94em 'oksana_text_narrowbold', sans-serif;
@@ -1741,11 +1749,11 @@ html.ipad #section-3 .third_slide .play_button {
   transition-delay: 0.6s;
 }
 
-#cwkevmp {
+#visualtour {
   border: 13px solid red;
   width: 1000px;
 }
-#cwkevmp ul li {
+#visualtour ul li {
   width: 1000px;
 }
 

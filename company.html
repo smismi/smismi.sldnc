@@ -1039,23 +1039,23 @@
 					<!-- video:end -->
 
 					<!-- text wrapper -->
-					<div>
+					<div id="egg">
 
 						<!-- title -->
 						<h1>Добро пожаловать<br>к нам на производство!</h1>
 
 						<!-- text -->
-						<p>, странах ближнего<br> и дальнего зарубежья.</p>
+						<p>Сегодня продукция компании реализуется практически во всех регионах России, странах ближнего<br> и дальнего зарубежья.</p>
 
+						<!-- visual tour button-->
+						<div class="visual_tour">
+							<!-- text -->
+							<span>Визуальный тур</span>
+							<!-- bg -->
+							<span></span>
+						</div>
 					</div>
 
-					<!-- visual tour button-->
-					<div class="visual_tour">
-						<!-- text -->
-						<span>Визуальный тур</span>
-						<!-- bg -->
-						<span></span>
-					</div>
 
 					<!-- stop button:begin -->
 					<div class="stop_button controls_video">
@@ -1113,7 +1113,7 @@
 				<!-- third slide:end -->
 
 
-				<div id="cwkevmp"  class="jcarousel">
+				<div id="visualtour"  class="jcarousel">
 
 
 					<ul>
@@ -1753,11 +1753,11 @@
 				SL.init.company();
 
 
-				$('#cwkevmp').jcarousel({
+				$('#visualtour').jcarousel({
 					// Configuration goes here
 				});
 
-				$('#cwkevmp .jcarousel-control-prev')
+				$('#visualtour .jcarousel-control-prev')
 						.on('jcarouselcontrol:active', function() {
 							$(this).removeClass('inactive');
 						})
@@ -1768,7 +1768,7 @@
 							target: '-=1'
 						});
 
-				$('#cwkevmp .jcarousel-control-next')
+				$('#visualtour .jcarousel-control-next')
 						.on('jcarouselcontrol:active', function() {
 							$(this).removeClass('inactive');
 						})
@@ -1779,7 +1779,7 @@
 							target: '+=1'
 						});
 
-				$('#cwkevmp .jcarousel-pagination')
+				$('#visualtour .jcarousel-pagination')
 						.on('jcarouselpagination:active', 'a', function() {
 							$(this).addClass('active');
 						})
