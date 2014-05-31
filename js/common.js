@@ -57,6 +57,7 @@ var SL = {
 			SL.initCatalogPager();
 			SL.initParallax6();
 			SL.videoControl();
+			SL.popupInit();
 
 
 
@@ -1022,6 +1023,45 @@ var SL = {
 			});
 			// stop:end
 			// stop/play video:end
+
+
+	},
+	popupInit: function() {
+		var vacancies;
+
+		$.getJSON( "js/vacancy.json", function( data ) {
+			vacancies = data;
+		});
+
+		$(".fancybox").fancybox({
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			},
+			afterLoad   : function() {
+
+				var descr = this.element.data('descr');
+
+				var _v = vacancies[descr];
+
+				if (!_v)  {
+					$("h1", this.content).html("Ошибка данных");
+					return;
+				}
+
+				$("h1", this.content).html(_v.type);
+				$("h2", this.content).html(_v.position);
+				$("h3", this.content).html(_v.salary);
+				$("h4", this.content).html(_v.conditions[1]);
+				$("h5", this.content).html(_v.requirments[1]);
+				$("h5", this.content).html(_v.responsibility[1]);
+
+
+			}
+		});
+
+
 
 
 	},
