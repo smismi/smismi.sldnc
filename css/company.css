@@ -2362,13 +2362,14 @@ html.ipad #section-4 .fourth_slide .columns .col a:hover > div {
 
 /* one vacancy:end */
 /* send resume button */
-#section-5 .fifth_slide .send_resume_btn {
-  margin: 38px 0 40px;
-  display: inline-block;
+.send_resume_btn {
+  margin: 38px auto 40px auto;
+  display: block;
   cursor: pointer;
+  width: 130px;
 }
 
-#section-5 .fifth_slide .send_resume_btn span:first-child {
+.send_resume_btn span:first-child {
   margin: 0 auto;
   display: block;
   width: 66px;
@@ -2376,29 +2377,28 @@ html.ipad #section-4 .fourth_slide .columns .col a:hover > div {
   padding: 6px;
   border: 3px transparent solid;
   border-radius: 40px;
-  transition: border 0.1s ease;
 }
 
-#section-5 .fifth_slide .send_resume_btn:hover span:first-child {
-  border: 3px #fff solid;
-}
-
-#section-5 .fifth_slide .send_resume_btn span:first-child i {
+.send_resume_btn span:first-child i {
   display: block;
-  background: url(../images/company/slide_5/letter_icon.png) 0 -66px no-repeat;
+  background: url(../img/letter_icon.png) 0 -66px no-repeat;
   width: 66px;
   height: 66px;
   transition: all 0.3s ease;
 }
 
-#section-5 .fifth_slide .send_resume_btn:hover span:first-child i {
-  background: url(../images/company/slide_5/letter_icon.png) 0 0 no-repeat;
-}
-
-#section-5y .fifth_slide .send_resume_btn span:last-child {
+.send_resume_btn span:last-child {
   display: block;
   color: #e60e64;
   font: 16px 'oksana_text_narrowbold', sans-serif;
+}
+
+.send_resume_btn:hover span:first-child {
+  border: 3px #fff solid;
+}
+
+.send_resume_btn:hover span:first-child i {
+  background: url(../img/letter_icon.png) 0 0 no-repeat;
 }
 
 /* fifth slide:end */
@@ -2479,6 +2479,10 @@ html.ipad #section-4 .fourth_slide .columns .col a:hover > div {
   content: "\e602";
   color: #e70c66;
   font-size: 47px;
+}
+
+#section-6 .sixth_slide .catalog_enter {
+  margin: 34px 0;
 }
 
 /* all news button:begin */
