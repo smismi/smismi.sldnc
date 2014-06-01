@@ -2043,6 +2043,11 @@ section.catalog {
     margin-left: -600px;
     left: 50%;
   }
+  #section-1.company_page {
+    width: auto;
+    margin-left: 0;
+    left: 0;
+  }
 }
 @media screen and (min-width: 1200px) and (max-width: 2500px) {
   .page1 .section-1-bg-25 {

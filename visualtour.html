@@ -113,63 +113,53 @@
 				});
 			});
 		};
-	function initTimer() {
-
-	//
-//		var el = $("#vwev");
-//		var timerId = setInterval(setNewWidth, 1);
-//
-//
-//
-//
-//		var i = 0;
-//		function setNewWidth(){
-//
-//			el.css({width: 3 * i});
-//
-//			i++;
-//
-//		}
-
-
-
-
-
-	}
 
 
 	$(document).ready(function ($) {
 
 
-//		$("#visualtour li").css({"width": $(window).width(), "height": $(window).height()})
-
-
-
-
-
-
-//		$('#visualtour').jcarousel({
-//			// Configuration goes here
-//
-//			resizeTimer: 400
-//
-//		});
-
 		animateBlock =  {
 
 			el: $("#vwev"),
-			animate: function(index) {
+			animateDot: function(number) {
 
-				this.el.animate({width: (index + 1) * 125}, 2000, "linear");
+				$(".tour_control_item", this.el).eq(number).addClass("active");
 
 
 			},
 			set: function(index) {
 
 
+			},
+			shrinkBar: function (number) {
+
+
+
+				var intervalWidth = 1000 / 8;
+				var startWidth = intervalWidth * number;
+				this.el.stop().animate({
+					width: startWidth + "px"
+				}, 200);
+
+
+
+			},
+			expandBar: function (number) {
+
+
+				var intervalWidth = 1000 / 8;
+				var startWidth = intervalWidth * number;
+				this.el.stop().animate({
+					width: (startWidth + intervalWidth) + "px"
+				}, (36000 / 8), 'linear',
+					function() {
+						console.log("!!")
+					}
+				);
+
+
 
 			}
-
 		}
 
 
@@ -181,27 +171,6 @@
 
 
 					var  _index = 0;
-
-
-//					console.log(_index);
-//					animateBlock.animate(_index);
-
-
-
-
-
-	//					var _i = 0;
-	//					(function swoop(el, i) {
-	//
-	//						el.css({width:10 * i})
-	//
-	//						i++;
-	//
-	//						setTimeout(function(){
-	//							swoop(el, i);
-	//						}, 500);
-	//
-	//					})($('#vwev'), _i);
 
 				})
 				.jcarousel({
@@ -216,20 +185,6 @@
 
 
 
-
-//					console.log(1)
-//					var _i = 0;
-//					(function swoop(el, i) {
-//
-//						el.css({width:10 * i})
-//
-//						i++;
-//
-//						setTimeout(function(){
-//							swoop(el, i);
-//						}, 500);
-//
-//					})($('#vwev'), _i);
 
 
 				});
@@ -276,24 +231,13 @@
 					$(this).addClass('active');
 
 
-//
-//					var _i = $('#vwev .tour_control_item').index($(this))
-//
-//
-//					if (_i !== -1) {
-//
-//
-//						animateBlock.animate(_i);
-//					}
-
 				})
 				.on('jcarouselpagination:inactive', 'div', function() {
 					$(this).removeClass('active');
 				})
 				.jcarouselPagination({
 						item: function(page) {
-//							return '<div class="tour_control_item"><a href="#' + page + '">' + page + '</a></div>';
-							return '<div class="tour_control_item"><em/></div>';
+ 							return '<div class="tour_control_item"><em/></div>';
 						},
 						event:  'click',
 						method: 'scroll'
@@ -317,8 +261,7 @@
 				})
 				.jcarouselPagination({
 						item: function(page) {
-//							return '<div class="tour_control_item"><a href="#' + page + '">' + page + '</a></div>';
-							return '<div class="tour_control_item"><em/></div>';
+ 							return '<div class="tour_control_item"><em/></div>';
 						},
 						event:  'click',
 						method: 'scroll'

@@ -118,6 +118,12 @@
 		width: 1200px;
 		margin-left: -600px;
 		left: 50%;
+
+		&.company_page {
+			width: auto;
+			margin-left: 0;
+			left: 0;
+		}
 	}
 }
 
