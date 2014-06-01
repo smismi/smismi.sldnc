@@ -221,17 +221,35 @@
 /* one vacancy:begin */
 #section-5 .fifth_slide .col {
 	border-top: 1px solid #f5e0cd;
+	text-align: left;
 }
 #section-5 .fifth_slide .one_vacancy {
-	display: block;
-	position: relative;
-	text-align: left;
-	padding: 48px 57px;
-	float: left;
-	border: 1px #f5e0cd solid;
 	width: 184px;
-	height: 214px;
+	vertical-align: top;
+	display: inline-block;
+	padding: 48px 57px;
+	padding-bottom: 80px;
+	border: 1px solid #f5e0cd;
+	border-bottom: none;
 	margin: -1px 0 0 -1px;
+}
+#section-5 .fifth_slide .one_vacancy_more {
+	width: 298px;
+	vertical-align: bottom;
+	margin-left: -300px;
+	font: 13px/26px 'oksana_text_narrowbold_italic', sans-serif;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #f5e0cd;
+	padding: 12px 0 42px 0;
+	border-top: 0;
+
+
+	a {
+		color: #e60e64;
+		text-decoration: none;
+	}
+
 }
 
 #section-5 .fifth_slide .one_vacancy:first-child,
