@@ -58,6 +58,7 @@ var SL = {
 			SL.initParallax6();
 			SL.videoControl();
 			SL.popupInit();
+			SL.visualtourInit();
 
 
 
@@ -1095,6 +1096,78 @@ var SL = {
 
 
 	},
+	visualtourInit: function() {
+
+
+
+
+		$("#visualtour, #visualtour li, #visualtour li > img").css({"width": $(window).width(), "height": $(window).height()})
+
+
+
+
+
+
+
+		$("#visualtour_link").fancybox({
+			padding: 0,
+			margin  : 0,
+			width     : 120,
+			height    : 130,
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			},
+			openEffect  : 'none',
+			closeEffect : 'none',
+			nextEffect : 'none',
+			prevEffect : 'none',
+
+			beforeLoad   : function() {
+
+				$('#visualtour').jcarousel({
+					// Configuration goes here
+
+				});
+				$('#visualtour .jcarousel-control-prev')
+					.on('jcarouselcontrol:active', function() {
+						$(this).removeClass('inactive');
+					})
+					.on('jcarouselcontrol:inactive', function() {
+						$(this).addClass('inactive');
+					})
+					.jcarouselControl({
+						target: '-=1'
+					});
+
+				$('#visualtour .jcarousel-control-next')
+					.on('jcarouselcontrol:active', function() {
+						$(this).removeClass('inactive');
+					})
+					.on('jcarouselcontrol:inactive', function() {
+						$(this).addClass('inactive');
+					})
+					.jcarouselControl({
+						target: '+=1'
+					});
+
+				$('#visualtour .jcarousel-pagination')
+					.on('jcarouselpagination:active', 'a', function() {
+						$(this).addClass('active');
+					})
+					.on('jcarouselpagination:inactive', 'a', function() {
+						$(this).removeClass('active');
+					})
+					.jcarouselPagination();
+
+			}
+		});
+
+
+
+
+	},
 	initScrollTop: function() {
 
 		SL.scrollTop.on("click", function(){
@@ -1334,6 +1407,8 @@ var SL = {
 					return transitions[t];
 				}
 			}
+
+
 		},
 
 		isPh : function() {

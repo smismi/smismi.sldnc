@@ -335,14 +335,116 @@ html.ipad #section-3 .third_slide .play_button{
 }
 
 #visualtour {
-	border: 13px solid red;
-	width: 1000px;
+	height: 100%;
 	ul {
+		height: 100%;
 		li {
-			width: 1000px
+			display: block;
+			max-width: 100%;
+			height: 100% !important;
 		}
 	}
 }
 /* play video button:end */
 
 /* third slide:end */
+
+/* third slide:controls*/
+
+$width: 1000;
+$count: 8;
+
+.tour_control_wrapper {
+	width: $width + px;
+	margin: 40px auto 0 auto;
+	position: relative;
+	z-index: 330;
+	overflow: hidden;
+
+}
+.tour_control {
+	margin-top: 30px;
+	width: $width + px;
+	@include pie-clearfix();
+
+	.tour_control_item {
+		float: left;
+		border-top: 1px solid #fff;
+		width: $width / $count + px;
+		text-align: left;
+		em {
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			position: relative;
+			top: -7px;
+			background: #fff;
+			@include border-radius (6px);
+			cursor: pointer;
+		}
+
+
+		&.active {
+
+
+		}
+
+		&:last-child {
+			width: 0;
+		}
+	}
+}
+.jcarousel-pagination2 {
+	width: 400px;
+	height: 20px;
+	overflow: hidden;
+
+}
+#vwev {
+	width: 490px;
+	overflow: hidden;
+	position: relative;
+	top: -47px;
+
+
+
+	.tour_control {
+
+		.tour_control_item {
+
+			border-top: 1px solid $cherry;
+
+			em {
+				background: $cherry;
+
+			}
+			&.active, &:hover {
+				em {
+					width: 21px;
+					height: 21px;
+					top: -12px;
+					background: $carmine;
+					@include border-radius (14px);
+					border: 1px solid $cherry;
+
+					&:after {
+
+						content: "";
+						position: relative;
+						width: 10px;
+						height: 10px;
+						background: #fff;
+						@include border-radius (11px);
+						display: block;
+						top: 5px;
+						left: 5px;
+
+					}
+
+
+				}
+			}
+		}
+	}
+}
+

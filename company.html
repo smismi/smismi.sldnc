@@ -1066,7 +1066,7 @@
 						<!-- visual tour button-->
 						<div class="visual_tour">
 							<!-- text -->
-							<span>Визуальный тур</span>
+							<a href="#visualtour" id="visualtour_link">Визуальный тур</a>
 							<!-- bg -->
 							<span></span>
 						</div>
@@ -1129,10 +1129,10 @@
 				<!-- third slide:end -->
 
 
-				<div id="visualtour"  class="jcarousel">
+				<div id="visualtour"  class="jcarousel" style="display: none">
 
 
-					<ul>
+					<ul style="overflow: hidden">
 						<li class="active"><img src="img/visualtour/01.jpg" alt=""/></li>
 						<li><img src="img/visualtour/02.jpg" alt=""/></li>
 						<li><img src="img/visualtour/03.jpg" alt=""/></li>
@@ -1143,11 +1143,12 @@
 						<li><img src="img/visualtour/08.jpg" alt=""/></li>
 					</ul>
 
+					<div id="controls" style="margin-top: -300px; background: #f00; position: relative; z-index: 330">
+						<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+						<a href="#" class="jcarousel-control-next">&rsaquo;</a>
 
-					<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-					<a href="#" class="jcarousel-control-next">&rsaquo;</a>
-
-					<p class="jcarousel-pagination">
+						<p class="jcarousel-pagination">
+					</div>
 
 				</div>
 
@@ -1827,45 +1828,6 @@
 
 
 				SL.init.company();
-
-
-				$('#visualtour').jcarousel({
-					// Configuration goes here
-				});
-
-				$('#visualtour .jcarousel-control-prev')
-						.on('jcarouselcontrol:active', function() {
-							$(this).removeClass('inactive');
-						})
-						.on('jcarouselcontrol:inactive', function() {
-							$(this).addClass('inactive');
-						})
-						.jcarouselControl({
-							target: '-=1'
-						});
-
-				$('#visualtour .jcarousel-control-next')
-						.on('jcarouselcontrol:active', function() {
-							$(this).removeClass('inactive');
-						})
-						.on('jcarouselcontrol:inactive', function() {
-							$(this).addClass('inactive');
-						})
-						.jcarouselControl({
-							target: '+=1'
-						});
-
-				$('#visualtour .jcarousel-pagination')
-						.on('jcarouselpagination:active', 'a', function() {
-							$(this).addClass('active');
-						})
-						.on('jcarouselpagination:inactive', 'a', function() {
-							$(this).removeClass('active');
-						})
-						.jcarouselPagination();
-
-
-
 
 				$('#vacancy_carousel').jcarousel({
 					// Configuration goes here

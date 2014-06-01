@@ -1409,6 +1409,13 @@
 				.off('jcarousel:animateend', this.onAnimateEnd);
 
 			return this;
+		},
+		annimateTimeline: function() {
+
+
+
+
+			return this;
 		}
 	});
 }(jQuery));
