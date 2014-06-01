@@ -59,6 +59,7 @@ var SL = {
 			SL.videoControl();
 			SL.popupInit();
 			SL.visualtourInit();
+			SL.initScrollTop();
 
 
 
