@@ -148,7 +148,7 @@
 
 
 				var intervalWidth = 1000 / 8;
-				var startWidth = intervalWidth * number;
+				var startWidth = intervalWidth * (number + 1);
 				this.el.stop().animate({
 					width: (startWidth + intervalWidth) + "px"
 				}, (36000 / 8), 'linear',
@@ -156,6 +156,14 @@
 						console.log("!!")
 					}
 				);
+
+
+
+			},
+			stopBar: function () {
+
+
+				this.el.stop();
 
 
 
@@ -170,7 +178,9 @@
 					element.jcarousel('items').css('width', width + 'px');
 
 
-					var  _index = 0;
+
+					animateBlock.shrinkBar(0);
+
 
 				})
 				.jcarousel({
@@ -217,6 +227,8 @@
 
 					$(this).html("start");
 					$('.jcarousel').jcarouselAutoscroll('stop');
+					animateBlock.stopBar();
+
 
 				}, function() {
 					$(this).html("stop");
@@ -227,8 +239,20 @@
 			);
 
 		$('#visualtour .jcarousel-pagination')
-				.on('jcarouselpagination:active', 'div', function() {
-					$(this).addClass('active');
+				.on('jcarouselpagination:active', 'div', function(a, b, c, d) {
+					$(this).addClass('active')
+
+
+
+					var _i = $('#vwev .tour_control_item').index($(this))
+
+					if(_i != -1) {
+
+						animateBlock.expandBar(_i);
+
+
+					}
+
 
 
 				})

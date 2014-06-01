@@ -367,6 +367,7 @@ $count: 8;
 .tour_control {
 	margin-top: 30px;
 	width: $width + px;
+	padding: 0 16px;
 	@include pie-clearfix();
 
 	.tour_control_item {
@@ -387,12 +388,65 @@ $count: 8;
 			transition: all 0.1s ease;
 
 
+			&:after {
+
+				content: "";
+				position: absolute;
+				width: 9px;
+				height: 9px;
+				@include border-radius (11px);
+				display: block;
+				top: 1px;
+				left: 1px;
+				transition: all 0.1s ease;
+
+				border: 0px solid rgba(255,0,38,0)
+
+			}
+
+
 
 		}
 
 
-		&.active {
+		&.active, &:hover {
+			em {
 
+
+
+
+				width: 29px;
+				height: 29px;
+				@include border-radius (15px);
+				top: -15px;
+				left: -15px;
+				background: $cherry;
+
+				&:after {
+
+					content: "";
+					width: 11px;
+					height: 11px;
+					position: absolute;
+					top: 1px;
+					left: 1px;
+					background: $cherry;
+					@include border-radius (16px);
+					display: block;
+					border: 8px solid rgba(114,0,38,1)
+
+				}
+
+
+
+			}
+		}
+
+		&:first-child {
+
+			em {
+				background: $cherry;
+			}
 
 		}
 
@@ -408,10 +462,14 @@ $count: 8;
 
 }
 #vwev {
-	width: 1000px;
+	width: 0;
 	position: relative;
 	top: -31px;
+	//top: 0;
 	height: 72px;
+	overflow: hidden;
+
+
 
 
 	.tour_control {
@@ -420,57 +478,10 @@ $count: 8;
 
 			border-top: 1px solid $cherry;
 
-			em {
-				background: $cherry;
 
-
-				&:after {
-
-					content: "";
-					position: absolute;
-					width: 9px;
-					height: 9px;
-					@include border-radius (11px);
-					display: block;
-					top: 1px;
-					left: 1px;
-					transition: all 0.1s ease;
-
-					border: 0px solid rgba(255,0,38,0)
-
-				}
-
-
-
-				&:hover, &.active {
-
-
-					width: 29px;
-					height: 29px;
-					@include border-radius (15px);
-					top: -15px;
-					left: -15px;
-
-					&:after {
-
-						content: "";
-						width: 11px;
-						height: 11px;
-						position: absolute;
-						top: 1px;
-						left: 1px;
-						background: #fff;
-						@include border-radius (16px);
-						display: block;
-						border: 8px solid rgba(114,0,38,1)
-
-					}
-
-
-
-				}
-
-			}
+			 em {
+				 background: $cherry;
+			 }
 
 
 		}

@@ -1780,6 +1780,7 @@ html.ipad #section-3 .third_slide .play_button {
 .tour_control {
   margin-top: 30px;
   width: 1000px;
+  padding: 0 16px;
   *zoom: 1;
 }
 .tour_control:after {
@@ -1809,28 +1810,7 @@ html.ipad #section-3 .third_slide .play_button {
   cursor: pointer;
   transition: all 0.1s ease;
 }
-.tour_control .tour_control_item:last-child {
-  width: 0;
-}
-
-.jcarousel-pagination2 {
-  width: 400px;
-  height: 20px;
-}
-
-#vwev {
-  width: 1000px;
-  position: relative;
-  top: -31px;
-  height: 72px;
-}
-#vwev .tour_control .tour_control_item {
-  border-top: 1px solid #e70c66;
-}
-#vwev .tour_control .tour_control_item em {
-  background: #e70c66;
-}
-#vwev .tour_control .tour_control_item em:after {
+.tour_control .tour_control_item em:after {
   content: "";
   position: absolute;
   width: 9px;
@@ -1846,7 +1826,7 @@ html.ipad #section-3 .third_slide .play_button {
   transition: all 0.1s ease;
   border: 0px solid rgba(255, 0, 38, 0);
 }
-#vwev .tour_control .tour_control_item em:hover, #vwev .tour_control .tour_control_item em.active {
+.tour_control .tour_control_item.active em, .tour_control .tour_control_item:hover em {
   width: 29px;
   height: 29px;
   -webkit-border-radius: 15px;
@@ -1856,15 +1836,16 @@ html.ipad #section-3 .third_slide .play_button {
   border-radius: 15px;
   top: -15px;
   left: -15px;
+  background: #e70c66;
 }
-#vwev .tour_control .tour_control_item em:hover:after, #vwev .tour_control .tour_control_item em.active:after {
+.tour_control .tour_control_item.active em:after, .tour_control .tour_control_item:hover em:after {
   content: "";
   width: 11px;
   height: 11px;
   position: absolute;
   top: 1px;
   left: 1px;
-  background: #fff;
+  background: #e70c66;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
@@ -1872,6 +1853,31 @@ html.ipad #section-3 .third_slide .play_button {
   border-radius: 16px;
   display: block;
   border: 8px solid #720026;
+}
+.tour_control .tour_control_item:first-child em {
+  background: #e70c66;
+}
+.tour_control .tour_control_item:last-child {
+  width: 0;
+}
+
+.jcarousel-pagination2 {
+  width: 400px;
+  height: 20px;
+}
+
+#vwev {
+  width: 0;
+  position: relative;
+  top: -31px;
+  height: 72px;
+  overflow: hidden;
+}
+#vwev .tour_control .tour_control_item {
+  border-top: 1px solid #e70c66;
+}
+#vwev .tour_control .tour_control_item em {
+  background: #e70c66;
 }
 
 /* fourth slide:begin */
