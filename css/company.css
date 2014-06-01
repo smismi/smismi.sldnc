@@ -1827,6 +1827,7 @@ html.ipad #section-3 .third_slide .play_button {
   width: 21px;
   height: 21px;
   top: -12px;
+  left: -6px;
   background: #870037;
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
