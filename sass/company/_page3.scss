@@ -76,10 +76,10 @@ html.ipad #section-3 .third_slide video{
 	background: #e60e64;
 	position: relative;
 	cursor: pointer;
-	margin: 0 auto;
+	margin: 32px auto;
 }
 /* text */
-#section-3 .third_slide .visual_tour span:nth-child(1){
+#section-3 .third_slide .visual_tour a:nth-child(1){
 	display: block;
 	width: 212px;
 	height: 52px;
@@ -91,16 +91,17 @@ html.ipad #section-3 .third_slide video{
 	top: 0;
 	z-index: 2;
 	transition: all 0.5s ease;
+	text-decoration: none;
 }
-#section-3 .third_slide .visual_tour:hover span:nth-child(1){
+#section-3 .third_slide .visual_tour:hover a:nth-child(1){
 	width: 159px;
 }
-html.ipad #section-3 .third_slide .visual_tour:hover span:nth-child(1){
+html.ipad #section-3 .third_slide .visual_tour:hover a:nth-child(1){
 	width: 212px;
 }
 
 /* bg */
-#section-3 .third_slide .visual_tour span:nth-child(2){
+#section-3 .third_slide .visual_tour span{
 	display: block;
 	width: 52px;
 	height: 52px;
@@ -112,7 +113,6 @@ html.ipad #section-3 .third_slide .visual_tour:hover span:nth-child(1){
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAYCAYAAAAh8HdUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNqU1EsOgCAMBFCYA+ja++mpvJ+uPUH9JJBI+pl2ZUyeTIFaj2mV8tRy7bWQhfZwzpukUQZijMVAaP1EsMfLwF9PLMT4goHQvhRBWLk9CG+XLFhF4vOk49HXiFnljYwscFeygIk8oKIIhPNkTTOyoKMM+G5E+7GwIJyn9OR6dQswAB5OVX9Ha4cpAAAAAElFTkSuQmCC');
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-color: transparent;
 }
 /* visual tour button:end */
 
@@ -356,10 +356,12 @@ $count: 8;
 
 .tour_control_wrapper {
 	width: $width + px;
-	margin: 40px auto 0 auto;
+	margin: 0 auto;
 	position: relative;
 	z-index: 330;
-	overflow: hidden;
+	padding: 20px 0;
+	@include pie-clearfix();
+
 
 }
 .tour_control {
@@ -371,7 +373,7 @@ $count: 8;
 		float: left;
 		border-top: 1px solid #fff;
 		width: $width / $count + px;
-		text-align: left;
+		text-align: center;
 		em {
 			display: inline-block;
 			width: 12px;
@@ -389,22 +391,18 @@ $count: 8;
 
 		}
 
-		&:last-child {
-			width: 0;
-		}
 	}
 }
 .jcarousel-pagination2 {
 	width: 400px;
 	height: 20px;
-	overflow: hidden;
 
 }
 #vwev {
 	width: 490px;
-	overflow: hidden;
 	position: relative;
 	top: -47px;
+	overflow: hidden;
 
 
 
@@ -423,7 +421,6 @@ $count: 8;
 					width: 21px;
 					height: 21px;
 					top: -12px;
-					left: -6px;
 					background: $carmine;
 					@include border-radius (14px);
 					border: 1px solid $cherry;

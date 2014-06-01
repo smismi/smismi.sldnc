@@ -72,8 +72,8 @@
 						<li style="background-image: url(img/visualtour/08.jpg); background-size: cover;"></li>
 					</ul>
 
-						<em class="jcarousel-control-start" style="position: fixed; top: 400px;">evavalksnv;aksnv;alns;l</em>
 					<div id="controls" style="margin-top: 	-123px; height: 123px; position: relative; z-index: 330; background: #720030">
+						<em class="jcarousel-control-start" style="position: absolute; top: 40px; left: 0">pause</em>
 
 						<div class="tour_control_wrapper">
 							<div class="tour_control jcarousel-pagination"></div>
@@ -139,7 +139,6 @@
 
 
 	$(document).ready(function ($) {
-
 
 
 //		$("#visualtour li").css({"width": $(window).width(), "height": $(window).height()})
@@ -261,9 +260,11 @@
 				.toggleClick(
 				function() {
 
+					$(this).html("start");
 					$('.jcarousel').jcarouselAutoscroll('stop');
 
 				}, function() {
+					$(this).html("stop");
 
 					$('.jcarousel').jcarouselAutoscroll('start');
 				}
@@ -323,11 +324,6 @@
 						method: 'scroll'
 
 				});
-
-
-
-
-
 
 
 
