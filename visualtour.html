@@ -138,13 +138,16 @@
 				var intervalWidth = 1000 / 8;
 				var startWidth = intervalWidth * number;
 				this.el.stop().animate({
-					width: startWidth + "px"
+					width: startWidth + 10 + "px"
 				}, 200);
 
 
 
 			},
 			expandBar: function (number) {
+
+				console.log(number)
+
 
 
 				var intervalWidth = 1000 / 8;
@@ -153,7 +156,6 @@
 					width: (startWidth + intervalWidth) + "px"
 				}, (36000 / 8), 'linear',
 					function() {
-						console.log("!!")
 					}
 				);
 
@@ -179,7 +181,7 @@
 
 
 
-					animateBlock.shrinkBar(0);
+//					animateBlock.shrinkBar(0);
 
 
 				})
@@ -243,16 +245,17 @@
 					$(this).addClass('active')
 
 
-
+//
 					var _i = $('#vwev .tour_control_item').index($(this))
+//
+//					if(_i != -1) {
+//
+//						animateBlock.expandBar(_i);
+//
+//
+//					}
 
-					if(_i != -1) {
-
-						animateBlock.expandBar(_i);
-
-
-					}
-
+					animateBlock.shrinkBar(_i);
 
 
 				})
@@ -271,14 +274,14 @@
 		$('#visualtour .jcarousel-pagination2')
 				.on('jcarouselpagination:active', 'li', function() {
 					$(this).addClass('active');
-
-					var _i = $('#vwev .tour_control_item').index($(this))
-
-
-					if (_i !== -1) {
-
-						animateBlock.animate(_i);
-					}
+//
+//					var _i = $('#vwev .tour_control_item').index($(this))
+//
+//
+//					if (_i !== -1) {
+//
+//						animateBlock.animate(_i);
+//					}
 				})
 				.on('jcarouselpagination:inactive', 'li', function() {
 					$(this).removeClass('active');
