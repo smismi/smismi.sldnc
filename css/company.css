@@ -1796,11 +1796,11 @@ html.ipad #section-3 .third_slide .play_button {
 }
 .tour_control .tour_control_item em {
   display: inline-block;
-  width: 11px;
-  height: 11px;
+  width: 9px;
+  height: 9px;
   position: absolute;
-  top: -6px;
-  left: -6px;
+  top: -5px;
+  left: -5px;
   background: #fff;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -1878,6 +1878,34 @@ html.ipad #section-3 .third_slide .play_button {
 }
 #vwev .tour_control .tour_control_item em {
   background: #e70c66;
+}
+
+#qwfqwfg {
+  position: absolute !important;
+  top: 31px;
+  left: -60px;
+  cursor: pointer;
+  padding: 12px;
+}
+#qwfqwfg em {
+  display: none;
+}
+#qwfqwfg em:nth-child(1) {
+  width: 9px;
+  height: 15px;
+  border: 3px solid white;
+  border-bottom: 0;
+  border-top: 0;
+}
+#qwfqwfg em:nth-child(2) {
+  width: 0px;
+  height: 0px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 16px solid white;
+}
+#qwfqwfg em.active {
+  display: block;
 }
 
 /* fourth slide:begin */

@@ -73,9 +73,13 @@
 					</ul>
 
 					<div id="controls" style="margin-top: 	-123px; height: 123px; position: relative; z-index: 330; background: #720030">
-						<em id="qwfqwfg" class="jcarousel-control-start" style="position: absolute; top: 40px; left: 0">pause</em>
 
 						<div class="tour_control_wrapper">
+
+							<div id="qwfqwfg" class="jcarousel-control-start">
+								<em class="active"></em>
+								<em></em>
+							</div>
 							<div class="tour_control jcarousel-pagination"></div>
 
 							<div id="vwev">
@@ -99,20 +103,20 @@
 	</div>
 </div>
 <script>
-		$.fn.toggleClick = function(){
-			var methods = arguments, // store the passed arguments for future reference
-					count = methods.length; // cache the number of methods
+	$.fn.toggleClick = function(){
+		var methods = arguments, // store the passed arguments for future reference
+				count = methods.length; // cache the number of methods
 
-			//use return this to maintain jQuery chainability
-			return this.each(function(i, item){
-				// for each element you bind to
-				var index = 0; // create a local counter for that element
-				$(item).click(function(){ // bind a click handler to that element
-					return methods[index++ % count].apply(this,arguments); // that when called will apply the 'index'th method to that element
-					// the index % count means that we constrain our iterator between 0 and (count-1)
-				});
+		//use return this to maintain jQuery chainability
+		return this.each(function(i, item){
+			// for each element you bind to
+			var index = 0; // create a local counter for that element
+			$(item).click(function(){ // bind a click handler to that element
+				return methods[index++ % count].apply(this,arguments); // that when called will apply the 'index'th method to that element
+				// the index % count means that we constrain our iterator between 0 and (count-1)
 			});
-		};
+		});
+	};
 
 
 	$(document).ready(function ($) {
@@ -121,23 +125,6 @@
 
 
 		var tween;
-
-
-
-		var animateBlock =  {
-
-			el: $("#vwev"),
-			shrinkBar: function (number) {
-
-
-
-
-
-			}
-
-		}
-
-
 
 		$('#visualtour')
 				.on('jcarousel:create jcarousel:reload', function() {
@@ -189,24 +176,22 @@
 					target: '+=1'
 				});
 
-		$('#visualtour .jcarousel-control-start')
-				.toggleClick(
-				function() {
+		$('#visualtour .jcarousel-control-start').toggleClick(
+				function () {
 
-					$(this).html("start");
+					$("em", this).removeClass("active").eq(1).addClass("active");
 					$('.jcarousel').jcarouselAutoscroll('stop');
-//					animateBlock.stopBar();
 
 					tween.pause()
 
-				}, function() {
-					$(this).html("stop");
+				}, function () {
+					$("em", this).removeClass("active").eq(0).addClass("active");
 					$('.jcarousel').jcarouselAutoscroll('start');
 
 					tween.play()
 				}
 
-			);
+		);
 
 		$('#visualtour .jcarousel-pagination')
 				.on('jcarouselpagination:active', 'div', function() {
