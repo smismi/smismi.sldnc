@@ -73,7 +73,7 @@
 					</ul>
 
 					<div id="controls" style="margin-top: 	-123px; height: 123px; position: relative; z-index: 330; background: #720030">
-						<em class="jcarousel-control-start" style="position: absolute; top: 40px; left: 0">pause</em>
+						<em id="qwfqwfg" class="jcarousel-control-start" style="position: absolute; top: 40px; left: 0">pause</em>
 
 						<div class="tour_control_wrapper">
 							<div class="tour_control jcarousel-pagination"></div>
@@ -118,59 +118,25 @@
 	$(document).ready(function ($) {
 
 
-		animateBlock =  {
+
+
+		var tween;
+
+
+
+		var animateBlock =  {
 
 			el: $("#vwev"),
-			animateDot: function(number) {
-
-				$(".tour_control_item", this.el).eq(number).addClass("active");
-
-
-			},
-			set: function(index) {
-
-
-			},
 			shrinkBar: function (number) {
 
 
 
-				var intervalWidth = 1000 / 8;
-				var startWidth = intervalWidth * number;
-				this.el.stop().animate({
-					width: startWidth + 10 + "px"
-				}, 200);
-
-
-
-			},
-			expandBar: function (number) {
-
-				console.log(number)
-
-
-
-				var intervalWidth = 1000 / 8;
-				var startWidth = intervalWidth * (number + 1);
-				this.el.stop().animate({
-					width: (startWidth + intervalWidth) + "px"
-				}, (36000 / 8), 'linear',
-					function() {
-					}
-				);
-
-
-
-			},
-			stopBar: function () {
-
-
-				this.el.stop();
-
 
 
 			}
+
 		}
+
 
 
 		$('#visualtour')
@@ -191,7 +157,7 @@
 				.jcarouselAutoscroll({
 					interval: 2000,
 					target: '+=1',
-					autostart: true
+					autostart: false
 				})
 				.on('jcarousel:animateend', function(event, carousel, target, animate) {
 
@@ -229,33 +195,61 @@
 
 					$(this).html("start");
 					$('.jcarousel').jcarouselAutoscroll('stop');
-					animateBlock.stopBar();
+//					animateBlock.stopBar();
 
+					tween.pause()
 
 				}, function() {
 					$(this).html("stop");
-
 					$('.jcarousel').jcarouselAutoscroll('start');
+
+					tween.play()
 				}
 
 			);
 
 		$('#visualtour .jcarousel-pagination')
-				.on('jcarouselpagination:active', 'div', function(a, b, c, d) {
+				.on('jcarouselpagination:active', 'div', function() {
+
 					$(this).addClass('active')
 
 
+					var n = $('#vwev .tour_control_item').index($(this))
 //
-					var _i = $('#vwev .tour_control_item').index($(this))
-//
-//					if(_i != -1) {
-//
-//						animateBlock.expandBar(_i);
-//
-//
-//					}
+					if (n != -1) {
 
-					animateBlock.shrinkBar(_i);
+
+						TweenMax.to("#vwev", .3,
+								{
+									width: 125 * n + 0 + 10, onComplete: function () {
+
+									tween = TweenMax.fromTo("#vwev", 4,
+											{
+												width: 125 * n + 0 + 10
+											},
+											{
+												width: 125 * n + 125 + 10,
+												ease: Linear.easeNone,
+												repeat: 0,
+												repeatDelay: 0,
+
+												onComplete: function () {
+
+													$('.jcarousel').jcarousel('scroll', n + 1);
+
+												},
+												onRepeat: function () {
+
+													$('.jcarousel').jcarousel('scroll', i);
+
+													i++;
+
+												}
+											});
+								}});
+
+
+					}
 
 
 				})
