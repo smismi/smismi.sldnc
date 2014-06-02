@@ -62,14 +62,14 @@
 				<div id="visualtour"  class="jcarousel">
 
 					<ul  style="overflow: hidden">
-						<li style="background-image: url(img/visualtour/01.jpg); background-size: cover;"></li>
-						<li style="background-image: url(img/visualtour/02.jpg); background-size: cover;"></li>
-						<li style="background-image: url(img/visualtour/03.jpg); background-size: cover;"></li>
-						<li style="background-image: url(img/visualtour/04.jpg); background-size: cover;"></li>
-						<li style="background-image: url(img/visualtour/05.jpg); background-size: cover;"></li>
-						<li style="background-image: url(img/visualtour/06.jpg); background-size: cover;"></li>
-						<li style="background-image: url(img/visualtour/07.jpg); background-size: cover;"></li>
-						<li style="background-image: url(img/visualtour/08.jpg); background-size: cover;"></li>
+						<li style="background-image: url(img/visualtour/01.jpg); background-size: cover;" data-descr="1"></li>
+						<li style="background-image: url(img/visualtour/02.jpg); background-size: cover;" data-descr="2"></li>
+						<li style="background-image: url(img/visualtour/03.jpg); background-size: cover;" data-descr="3"></li>
+						<li style="background-image: url(img/visualtour/04.jpg); background-size: cover;" data-descr="4"></li>
+						<li style="background-image: url(img/visualtour/05.jpg); background-size: cover;" data-descr="5"></li>
+						<li style="background-image: url(img/visualtour/06.jpg); background-size: cover;" data-descr="6"></li>
+						<li style="background-image: url(img/visualtour/07.jpg); background-size: cover;" data-descr="7"></li>
+						<li style="background-image: url(img/visualtour/08.jpg); background-size: cover;" data-descr="8"></li>
 					</ul>
 
 					<div id="controls" style="margin-top: 	-123px; height: 123px; position: relative; z-index: 330; background: #720030">
@@ -133,10 +133,6 @@
 					element.jcarousel('items').css('width', width + 'px');
 
 
-
-//					animateBlock.shrinkBar(0);
-
-
 				})
 				.jcarousel({
 					// Your configurations options
@@ -180,13 +176,13 @@
 				function () {
 
 					$("em", this).removeClass("active").eq(1).addClass("active");
-					$('.jcarousel').jcarouselAutoscroll('stop');
+//					$('.jcarousel').jcarouselAutoscroll('stop');
 
 					tween.pause()
 
 				}, function () {
 					$("em", this).removeClass("active").eq(0).addClass("active");
-					$('.jcarousel').jcarouselAutoscroll('start');
+//					$('.jcarousel').jcarouselAutoscroll('start');
 
 					tween.play()
 				}
@@ -201,6 +197,7 @@
 
 					var n = $('#vwev .tour_control_item').index($(this))
 //
+
 					if (n != -1) {
 
 
@@ -208,29 +205,30 @@
 								{
 									width: 125 * n + 0 + 10, onComplete: function () {
 
-									tween = TweenMax.fromTo("#vwev", 4,
-											{
-												width: 125 * n + 0 + 10
-											},
-											{
-												width: 125 * n + 125 + 10,
-												ease: Linear.easeNone,
-												repeat: 0,
-												repeatDelay: 0,
-
-												onComplete: function () {
-
-													$('.jcarousel').jcarousel('scroll', n + 1);
-
-												},
-												onRepeat: function () {
-
-													$('.jcarousel').jcarousel('scroll', i);
-
-													i++;
-
-												}
-											});
+									return;
+//									tween = TweenMax.fromTo("#vwev", 4,
+//											{
+//												width: 125 * n + 0 + 10
+//											},
+//											{
+//												width: 125 * n + 125 + 10,
+//												ease: Linear.easeNone,
+//												repeat: 0,
+//												repeatDelay: 0,
+//
+//												onComplete: function () {
+//
+//													$('.jcarousel').jcarousel('scroll', n + 1);
+//
+//												},
+//												onRepeat: function () {
+//
+//													$('.jcarousel').jcarousel('scroll', i);
+//
+//													i++;
+//
+//												}
+//											});
 								}});
 
 
@@ -243,37 +241,37 @@
 				})
 				.jcarouselPagination({
 						item: function(page) {
- 							return '<div class="tour_control_item"><em/></div>';
+ 							return '<div class="tour_control_item"><em/><abbr/></div>';
 						},
 						event:  'click',
 						method: 'scroll'
 
 				});
 
-		$('#visualtour .jcarousel-pagination2')
-				.on('jcarouselpagination:active', 'li', function() {
-					$(this).addClass('active');
+//		$('#visualtour .jcarousel-pagination2')
+//				.on('jcarouselpagination:active', 'li', function() {
+//					$(this).addClass('active');
+////
+////					var _i = $('#vwev .tour_control_item').index($(this))
+////
+////
+////					if (_i !== -1) {
+////
+////						animateBlock.animate(_i);
+////					}
+//				})
+//				.on('jcarouselpagination:inactive', 'li', function() {
+//					$(this).removeClass('active');
+//				})
+//				.jcarouselPagination({
+//						item: function(page) {
+// 							return '<div class="tour_control_item"><em/></div>';
+//						},
+//						event:  'click',
+//						method: 'scroll'
 //
-//					var _i = $('#vwev .tour_control_item').index($(this))
+//				});
 //
-//
-//					if (_i !== -1) {
-//
-//						animateBlock.animate(_i);
-//					}
-				})
-				.on('jcarouselpagination:inactive', 'li', function() {
-					$(this).removeClass('active');
-				})
-				.jcarouselPagination({
-						item: function(page) {
- 							return '<div class="tour_control_item"><em/></div>';
-						},
-						event:  'click',
-						method: 'scroll'
-
-				});
-
 
 
 	});

@@ -1879,6 +1879,11 @@ html.ipad #section-3 .third_slide .play_button {
 #vwev .tour_control .tour_control_item em {
   background: #e70c66;
 }
+#vwev .tour_control .tour_control_item abbr {
+  border: 14px solid red;
+  position: absolute;
+  top: -13px;
+}
 
 #qwfqwfg {
   position: absolute !important;
