@@ -35,7 +35,7 @@ html.ipad #section-3 .third_slide video{
 
 /* text wrapper */
 #section-3 .third_slide div{
-	position: relative;
+	//position: relative;
 }
 
 #egg{
@@ -122,6 +122,10 @@ html.ipad #section-3 .third_slide .visual_tour:hover a:nth-child(1){
 	position: absolute;
 	left: 2%; bottom: 2%;
 	cursor: pointer;
+
+	div {
+		position: relative;
+	}
 }
 html.ipad #section-3 .third_slide .stop_button{
 	display: none;
@@ -359,15 +363,19 @@ $count: 8;
 	margin: 0 auto;
 	position: relative;
 	z-index: 330;
-	padding: 20px 0;
+	//padding: 20px 0;
 	@include pie-clearfix();
+	height: 120px;
 
 
 }
 .tour_control {
-	margin-top: 30px;
+	//margin-top: 30px;
 	width: $width + px;
 	padding: 0 16px;
+	position: absolute;
+	top: 50%;
+
 	@include pie-clearfix();
 
 	.tour_control_item {
@@ -375,6 +383,7 @@ $count: 8;
 		border-top: 1px solid #fff;
 		width: $width / $count + px;
 		text-align: left;
+		position: relative;
 		em {
 			display: inline-block;
 			width: 9px;
@@ -461,18 +470,149 @@ $count: 8;
 	height: 20px;
 
 }
+
+#controls {
+	position: absolute;
+	z-index: 330;
+	background: #720030;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	.jcarousel-control-prev, .jcarousel-control-next {
+
+
+		position: fixed;
+		top: 50%;
+		width: 52px;
+		height: 52px;
+		background: rgba(255,255,255,.9);
+		@include transition (all .3s ease-in);
+		cursor: pointer;
+
+
+		>div {
+			line-height: 52px;
+			position: absolute;
+ 			top: 0;
+			bottom: 0;
+			padding: 0 12px;
+			white-space: nowrap;
+			background: rgba(0,0,0,0.05);
+			color: $white;
+			transition: all 0.1s ease;
+		}
+
+
+
+
+	}
+
+
+	.jcarousel-control-prev  {
+		&.inactive {
+
+
+			left: -52px;
+		}
+
+		span {
+			display: block;
+			width: 52px;
+			height: 52px;
+			transition: background 0.1s ease;
+			background-color: #fff;
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAYCAYAAAAh8HdUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNqU1EsOgCAMBFCYA+ja++mpvJ+uPUH9JJBI+pl2ZUyeTIFaj2mV8tRy7bWQhfZwzpukUQZijMVAaP1EsMfLwF9PLMT4goHQvhRBWLk9CG+XLFhF4vOk49HXiFnljYwscFeygIk8oKIIhPNkTTOyoKMM+G5E+7GwIJyn9OR6dQswAB5OVX9Ha4cpAAAAAElFTkSuQmCC');
+			background-position: center center;
+			background-repeat: no-repeat;
+			z-index: 333;
+			position: relative;
+		}
+		>div {
+			left: -300px;
+		}
+		&:hover, &.active {
+			span {
+				display: block;
+				width: 52px;
+				height: 52px;
+ 				transition: background 0.1s ease;
+			}
+		}
+		&:hover {
+			>div {
+				background: $cherry;
+				left: 52px;
+			}
+		}
+
+
+	}
+	.jcarousel-control-next {
+		&.inactive {
+			right: -52px;
+
+		}
+
+		span {
+			display: block;
+			width: 52px;
+			height: 52px;
+			transition: background 0.1s ease;
+			background-color: #fff;
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAYCAYAAAAh8HdUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNqU1EsOgCAMBFCYA+ja++mpvJ+uPUH9JJBI+pl2ZUyeTIFaj2mV8tRy7bWQhfZwzpukUQZijMVAaP1EsMfLwF9PLMT4goHQvhRBWLk9CG+XLFhF4vOk49HXiFnljYwscFeygIk8oKIIhPNkTTOyoKMM+G5E+7GwIJyn9OR6dQswAB5OVX9Ha4cpAAAAAElFTkSuQmCC');
+			background-position: center center;
+			background-repeat: no-repeat;
+			z-index: 333;
+			position: relative;
+		}
+		>div {
+			right: -300px;
+		}
+		&:hover, &.active {
+			span {
+				display: block;
+				width: 52px;
+				height: 52px;
+				transition: background 0.1s ease;
+			}
+		}
+		&:hover {
+			>div {
+				background: $cherry;
+				right: 52px;
+			}
+		}
+	}
+	.jcarousel-control-prev {
+
+		left: 0;
+
+
+	}
+	.jcarousel-control-next {
+
+		right: 0;
+
+
+	}
+}
+
 #vwev {
 	width: 0;
+	//width: 588px;
 	position: relative;
-	top: -31px;
-	//top: 0;
-	height: 72px;
+	//top: -31px;
+	height: 100%;
+	top: 0;
 	overflow: hidden;
 
 
 
 
 	.tour_control {
+		top: 50%;
+		position: absolute;
 
 		.tour_control_item {
 
@@ -497,10 +637,11 @@ $count: 8;
 
 #qwfqwfg {
 	position: absolute !important;
-	top: 31px;
-	left: -60px;
+	top: 50%;
+	left: 0;
 	cursor: pointer;
 	padding: 12px;
+	margin: -20px 0 0 -50px;
 
 	em {
 		display: none;
@@ -532,3 +673,48 @@ $count: 8;
 
 }
 
+#descriptions {
+	position: absolute;
+	z-index: 330;
+	background: rgba(114, 0, 48, .9);
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+
+	.descriptions_wrapper {
+
+		height: 300px;
+		overflow: hidden;
+		display: none;
+		padding: 0 250px;
+
+
+		h1 {
+			font: 45px/0.94em 'oksana_text_narrowbold', sans-serif;
+			color: #fff;
+			margin: .3em 0;
+
+			&:after {
+				content: "";
+				width: 60px;
+				margin: 12px auto;
+				height:1px;
+				background: $cherry;
+				display: block;
+			}
+		}
+
+		h2 {
+			font: 14px/0.94em 'oksana_text_narrowbold', sans-serif;
+			color: #fff;
+			margin: .3em 0;
+		}
+
+		&.active {
+			display: block;
+		}
+
+
+	}
+}
