@@ -338,6 +338,19 @@ html.ipad #section-3 .third_slide .play_button{
 	transition-delay: 0.6s;
 }
 
+
+
+#visualtour_wrapper {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: fixed;
+	left: 100%;
+	//left: 0%;
+	top: 0;
+	z-index: 999;
+	transition: all 0.1s ease;
+}
 #visualtour {
 	height: 100%;
 	ul {
@@ -598,7 +611,7 @@ $count: 8;
 	}
 }
 
-#vwev {
+#control_paginator {
 	width: 0;
 	//width: 588px;
 	position: relative;
@@ -635,7 +648,7 @@ $count: 8;
 
 
 
-#qwfqwfg {
+#control_start {
 	position: absolute !important;
 	top: 50%;
 	left: 0;

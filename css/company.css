@@ -1747,6 +1747,17 @@ html.ipad #section-3 .third_slide .play_button {
   transition-delay: 0.6s;
 }
 
+#visualtour_wrapper {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: fixed;
+  left: 100%;
+  top: 0;
+  z-index: 999;
+  transition: all 0.1s ease;
+}
+
 #visualtour {
   height: 100%;
 }
@@ -1961,30 +1972,30 @@ html.ipad #section-3 .third_slide .play_button {
   right: 0;
 }
 
-#vwev {
+#control_paginator {
   width: 0;
   position: relative;
   height: 100%;
   top: 0;
   overflow: hidden;
 }
-#vwev .tour_control {
+#control_paginator .tour_control {
   top: 50%;
   position: absolute;
 }
-#vwev .tour_control .tour_control_item {
+#control_paginator .tour_control .tour_control_item {
   border-top: 1px solid #e70c66;
 }
-#vwev .tour_control .tour_control_item em {
+#control_paginator .tour_control .tour_control_item em {
   background: #e70c66;
 }
-#vwev .tour_control .tour_control_item abbr {
+#control_paginator .tour_control .tour_control_item abbr {
   border: 14px solid red;
   position: absolute;
   top: -130px;
 }
 
-#qwfqwfg {
+#control_start {
   position: absolute !important;
   top: 50%;
   left: 0;
@@ -1992,24 +2003,24 @@ html.ipad #section-3 .third_slide .play_button {
   padding: 12px;
   margin: -20px 0 0 -50px;
 }
-#qwfqwfg em {
+#control_start em {
   display: none;
 }
-#qwfqwfg em:nth-child(1) {
+#control_start em:nth-child(1) {
   width: 9px;
   height: 15px;
   border: 3px solid white;
   border-bottom: 0;
   border-top: 0;
 }
-#qwfqwfg em:nth-child(2) {
+#control_start em:nth-child(2) {
   width: 0px;
   height: 0px;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
   border-left: 16px solid white;
 }
-#qwfqwfg em.active {
+#control_start em.active {
   display: block;
 }
 

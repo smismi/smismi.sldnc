@@ -46,16 +46,8 @@
 	<script type="text/javascript" src="img/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 </head>
 <body>
-<div id="content-wrapper">
-	<div id="wrapper">
 
-
-		<div class="scrollContent">
-
-			<section id="section-3" class="company_page">
-
-				<!-- third slide:begin -->
-				<div class="third_slide">
+				<div id="visualtour_wrapper">
 
 
 					<div id="visualtour" class="jcarousel">
@@ -84,11 +76,11 @@
 
 
 						<div id="jcarousel-control-prev" class="jcarousel-control-prev inactive">
-							<div>1242536</div>
+							<div></div>
 							<span></span>
 						</div>
 						<div id="jcarousel-control-next" class="jcarousel-control-next active">
-							<div>8765432</div>
+							<div></div>
 							<span></span>
 						</div>
 
@@ -96,13 +88,13 @@
 
 						<div class="tour_control_wrapper">
 
-							<div id="qwfqwfg" class="jcarousel-control-start">
+							<div id="control_start" class="jcarousel-control-start">
 								<em class="active"></em>
 								<em></em>
 							</div>
 							<div class="tour_control jcarousel-pagination"></div>
 
-							<div id="vwev">
+							<div id="control_paginator">
 								<div class="tour_control jcarousel-pagination"></div>
 							</div>
 						</div>
@@ -112,10 +104,7 @@
 				</div>
 
 
-			</section>
-		</div>
-	</div>
-</div>
+
 <script>
 	$.fn.toggleClick = function(){
 		var methods = arguments, // store the passed arguments for future reference
@@ -166,7 +155,10 @@
 
 		$('.jcarousel-control-prev')
 				.on('jcarouselcontrol:active', function() {
+
 					$(this).removeClass('inactive');
+					$("div", this).html();
+					$("div", this).html("1111");
 				})
 				.on('jcarouselcontrol:inactive', function() {
 					$(this).addClass('inactive');
@@ -177,10 +169,17 @@
 
 		$('.jcarousel-control-next')
 				.on('jcarouselcontrol:active', function() {
+
+
+
 					$(this).removeClass('inactive');
+					$("div", this).html();
+					$("div", this).html("222");
+
 				})
 				.on('jcarouselcontrol:inactive', function() {
 					$(this).addClass('inactive');
+
 				})
 				.jcarouselControl({
 					target: '+=1'
@@ -210,17 +209,17 @@
 //					return;
 
 
-					var n = $('#vwev .tour_control_item').index($(this))
+					var n = $('#control_paginator .tour_control_item').index($(this))
 //
 
 					if (n != -1) {
 
 
-						TweenMax.to("#vwev", .3,
+						TweenMax.to("#control_paginator", .3,
 								{
 									width: 125 * n + 0 + 10, onComplete: function () {
 
-									tween = TweenMax.fromTo("#vwev", 4,
+									tween = TweenMax.fromTo("#control_paginator", 4,
 											{
 												width: 125 * n + 0 + 10
 											},
@@ -266,7 +265,7 @@
 		$('#descriptions')
 				.on('jcarouselpagination:active', 'div', function() {
 
-					$(this).addClass('active')
+					$(this).addClass('active');
 
 
 
@@ -285,7 +284,7 @@
 //				.on('jcarouselpagination:active', 'li', function() {
 //					$(this).addClass('active');
 ////
-////					var _i = $('#vwev .tour_control_item').index($(this))
+////					var _i = $('#control_paginator .tour_control_item').index($(this))
 ////
 ////
 ////					if (_i !== -1) {

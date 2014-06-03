@@ -58,8 +58,8 @@ var SL = {
 			SL.initParallax6();
 			SL.videoControl();
 			SL.popupInit();
-			SL.visualtourInit();
 			SL.initScrollTop();
+			SL.prepareVisualTour();
 
 
 
@@ -1097,73 +1097,237 @@ var SL = {
 
 
 	},
+	prepareVisualTour: function() {
+
+
+		$("#visualtour_link").on("click", function(){
+			SL.visualtourInit();
+			$("#visualtour_wrapper").css("left", "0%");
+		})
+
+
+	},
 	visualtourInit: function() {
 
 
 
+		var tween;
 
-		$("#visualtour, #visualtour li, #visualtour li > img").css({"width": $(window).width(), "height": $(window).height()})
+		$('#visualtour')
+			.on('jcarousel:create jcarousel:reload', function() {
+				var element = $(this),
+					width = element.innerWidth();
+				element.jcarousel('items').css('width', width + 'px');
+
+
+			})
+			.jcarousel({
+				// Your configurations options
+			})
+			.jcarouselAutoscroll({
+				interval: 2000,
+				target: '+=1',
+				autostart: false
+			})
+			.on('jcarousel:animateend', function(event, carousel, target, animate) {
 
 
 
 
 
+			});
+
+		$('.jcarousel-control-prev')
+			.on('jcarouselcontrol:active', function() {
+
+				$(this).removeClass('inactive');
+				$("div", this).html();
+				$("div", this).html("1111");
+			})
+			.on('jcarouselcontrol:inactive', function() {
+				$(this).addClass('inactive');
+			})
+			.jcarouselControl({
+				target: '-=1'
+			});
+
+		$('.jcarousel-control-next')
+			.on('jcarouselcontrol:active', function() {
 
 
-		$("#visualtour_link").fancybox({
-			padding: 0,
-			margin  : 0,
-			width     : 120,
-			height    : 130,
-			helpers: {
-				overlay: {
-					locked: false
-				}
-			},
-			openEffect  : 'none',
-			closeEffect : 'none',
-			nextEffect : 'none',
-			prevEffect : 'none',
 
-			beforeLoad   : function() {
+				$(this).removeClass('inactive');
+				$("div", this).html();
+				$("div", this).html("222");
 
-				$('#visualtour').jcarousel({
-					// Configuration goes here
+			})
+			.on('jcarouselcontrol:inactive', function() {
+				$(this).addClass('inactive');
 
-				});
-				$('#visualtour .jcarousel-control-prev')
-					.on('jcarouselcontrol:active', function() {
-						$(this).removeClass('inactive');
-					})
-					.on('jcarouselcontrol:inactive', function() {
-						$(this).addClass('inactive');
-					})
-					.jcarouselControl({
-						target: '-=1'
-					});
+			})
+			.jcarouselControl({
+				target: '+=1'
+			});
 
-				$('#visualtour .jcarousel-control-next')
-					.on('jcarouselcontrol:active', function() {
-						$(this).removeClass('inactive');
-					})
-					.on('jcarouselcontrol:inactive', function() {
-						$(this).addClass('inactive');
-					})
-					.jcarouselControl({
-						target: '+=1'
-					});
+		$('#controls .jcarousel-control-start').toggleClick(
+			function () {
 
-				$('#visualtour .jcarousel-pagination')
-					.on('jcarouselpagination:active', 'a', function() {
-						$(this).addClass('active');
-					})
-					.on('jcarouselpagination:inactive', 'a', function() {
-						$(this).removeClass('active');
-					})
-					.jcarouselPagination();
+				$("em", this).removeClass("active").eq(1).addClass("active");
+//					$('.jcarousel').jcarouselAutoscroll('stop');
 
+				tween.pause()
+
+			}, function () {
+				$("em", this).removeClass("active").eq(0).addClass("active");
+//					$('.jcarousel').jcarouselAutoscroll('start');
+
+				tween.play()
 			}
-		});
+
+		);
+
+		$('#controls .jcarousel-pagination')
+			.on('jcarouselpagination:active', 'div', function() {
+
+				$(this).addClass('active')
+//					return;
+
+
+				var n = $('#control_paginator .tour_control_item').index($(this))
+//
+
+				if (n != -1) {
+
+
+					TweenMax.to("#control_paginator", .3,
+						{
+							width: 125 * n + 0 + 10, onComplete: function () {
+
+							tween = TweenMax.fromTo("#control_paginator", 4,
+								{
+									width: 125 * n + 0 + 10
+								},
+								{
+									width: 125 * n + 125 + 10,
+									ease: Linear.easeNone,
+									repeat: 0,
+									repeatDelay: 0,
+
+									onComplete: function () {
+
+										$('.jcarousel').jcarousel('scroll', n + 1);
+
+									},
+									onRepeat: function () {
+
+										$('.jcarousel').jcarousel('scroll', i);
+
+										i++;
+
+									}
+								});
+						}});
+
+
+				}
+
+
+			})
+			.on('jcarouselpagination:inactive', 'div', function() {
+				$(this).removeClass('active');
+			})
+			.jcarouselPagination({
+				item: function(page, carouselItems) {
+					return '<div class="tour_control_item"><em/><abbr/></div>';
+				},
+				event:  'click',
+				method: 'scroll'
+
+			});
+
+
+		$('#descriptions')
+			.on('jcarouselpagination:active', 'div', function() {
+
+				$(this).addClass('active');
+
+
+
+			})
+			.on('jcarouselpagination:inactive', 'div', function() {
+				$(this).removeClass('active');
+			})
+			.jcarouselPagination({
+				item: function(page, carouselItems) {
+					return '<div class="descriptions_wrapper"><h1>' + carouselItems.data("title") + '</h1><h2>' + carouselItems.data("descr") + '</h2></div>';
+				}
+
+			});
+
+
+//
+		$("#visualtour, #visualtour li, #visualtour li > img").css({"width": $(window).width(), "height": $(window).height()})
+//
+//
+//
+//
+//
+//
+//
+//		$("#visualtour_link").fancybox({
+//			padding: 0,
+//			margin  : 0,
+//			width     : 120,
+//			height    : 130,
+//			helpers: {
+//				overlay: {
+//					locked: false
+//				}
+//			},
+//			openEffect  : 'none',
+//			closeEffect : 'none',
+//			nextEffect : 'none',
+//			prevEffect : 'none',
+//
+//			beforeLoad   : function() {
+//
+//				$('#visualtour').jcarousel({
+//					// Configuration goes here
+//
+//				});
+//				$('#visualtour .jcarousel-control-prev')
+//					.on('jcarouselcontrol:active', function() {
+//						$(this).removeClass('inactive');
+//					})
+//					.on('jcarouselcontrol:inactive', function() {
+//						$(this).addClass('inactive');
+//					})
+//					.jcarouselControl({
+//						target: '-=1'
+//					});
+//
+//				$('#visualtour .jcarousel-control-next')
+//					.on('jcarouselcontrol:active', function() {
+//						$(this).removeClass('inactive');
+//					})
+//					.on('jcarouselcontrol:inactive', function() {
+//						$(this).addClass('inactive');
+//					})
+//					.jcarouselControl({
+//						target: '+=1'
+//					});
+//
+//				$('#visualtour .jcarousel-pagination')
+//					.on('jcarouselpagination:active', 'a', function() {
+//						$(this).addClass('active');
+//					})
+//					.on('jcarouselpagination:inactive', 'a', function() {
+//						$(this).removeClass('active');
+//					})
+//					.jcarouselPagination();
+//
+//			}
+//		});
 
 
 
@@ -1424,7 +1588,20 @@ var SL = {
 	}
 
 }
+$.fn.toggleClick = function(){
+	var methods = arguments, // store the passed arguments for future reference
+		count = methods.length; // cache the number of methods
 
+	//use return this to maintain jQuery chainability
+	return this.each(function(i, item){
+		// for each element you bind to
+		var index = 0; // create a local counter for that element
+		$(item).click(function(){ // bind a click handler to that element
+			return methods[index++ % count].apply(this,arguments); // that when called will apply the 'index'th method to that element
+			// the index % count means that we constrain our iterator between 0 and (count-1)
+		});
+	});
+};
 
 
 
