@@ -350,6 +350,169 @@ html.ipad #section-3 .third_slide .play_button{
 	top: 0;
 	z-index: 999;
 	transition: all 0.1s ease;
+
+
+	.jcarousel-control-prev, .jcarousel-control-next, .jcarousel-control-close {
+
+
+		position: absolute;
+		top: 50%;
+		width: 52px;
+		height: 52px;
+		background: rgba(255,255,255,.9);
+		@include transition (all .3s ease-in);
+		cursor: pointer;
+
+
+		>div {
+			line-height: 52px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			padding: 0 12px;
+			white-space: nowrap;
+			background: rgba(0,0,0,0.05);
+			color: $white;
+			transition: all 0.1s ease;
+		}
+
+
+
+
+	}
+
+
+
+	.jcarousel-control-close  {
+
+		top: 0;
+		right: 0;
+		background-color: $carmine;
+		span {
+			display: block;
+			width: 52px;
+			height: 52px;
+			transition: background 1s ease;
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDRTlFODEzMUUxODQxMUUzQTBGRjg2QTQxNTI4MTRBRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDRTlFODEzMkUxODQxMUUzQTBGRjg2QTQxNTI4MTRBRiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkNFOUU4MTJGRTE4NDExRTNBMEZGODZBNDE1MjgxNEFGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkNFOUU4MTMwRTE4NDExRTNBMEZGODZBNDE1MjgxNEFGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+gE7QvQAAAWZJREFUeNqs1cErRFEUx/FrNDM1GxSxMAtlyU7syLCS/0DJkpKdlOykZCllKQsr2ZAG+QdmIQvJxlAzLKSYITs831Pn1fR6977xZm59mnn33PNrZrr3jvE8r4QZmCaQnJK8yaGKhQYD5/Ehef7ECN6wEjNwGRXNMbWFQbxg45+B63jVfhMMFf0oYwctEWFS38aT9hlbqOjFPfbRagmU+T1dlw3WbZ+iCzc4QipQk+dDrXeH9bu+XjsKOENG5+Q1r/Mdtt6EsY8KckjhHFnkkcYk3m2NrlAZX5hCFUV8YlpfTdxQGb/40bX8YOY7qiEqNIMT9KAPnTjV+VihbbhAEuMoY0J7LrUePhxb6grHSIdsKZm/1nV1bSnZ/Lc4QNKx+aV+p+udoXLcith1nCZfQtc9uo7pgJ7jrTrOfe3538Rz2IUypDfNWsyrb1X7h/3QUb0Llxq8pBc1Z0weHjDXpL+TWcn7E2AAX3fuQxkzbCsAAAAASUVORK5CYII=');
+			background-position: center center;
+			background-repeat: no-repeat;
+			z-index: 333;
+			position: relative;
+		}
+		>div {
+			right: -300px;
+		}
+		&:hover, &.active {
+			span {
+				display: block;
+				width: 52px;
+				height: 52px;
+				transition: background 0.1s ease;
+				-webkit-animation:spin .6s linear;
+				-moz-animation:spin .6s linear;
+				animation:spin .6s linear;
+			}
+		}
+		&:hover {
+			>div {
+				background: $cherry;
+				right: 52px;
+			}
+		}
+
+
+	}
+	.jcarousel-control-prev  {
+		opacity: 1;
+
+		&.inactive {
+
+
+			left: -52px;
+			opacity: 0;
+		}
+
+		span {
+			display: block;
+			width: 52px;
+			height: 52px;
+			transition: background 0.1s ease;
+			background-color: #fff;
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAYCAYAAAAh8HdUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0NDFDOTA4QUUyNUQxMUUzQTBGRjg2QTQxNTI4MTRBRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0NDFDOTA4QkUyNUQxMUUzQTBGRjg2QTQxNTI4MTRBRiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkNFOUU4MTMzRTE4NDExRTNBMEZGODZBNDE1MjgxNEFGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkNFOUU4MTM0RTE4NDExRTNBMEZGODZBNDE1MjgxNEFGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+pb3sKAAAAHJJREFUeNqc1MENgCAMhWFwAD27n07lfnp2ghpJNIpQH3/PfCkpfUQzC2ptw5wORxVdQEZPIKEcjPsSXVQCbqcaqCIPFNEf+CAFvJAKbtQCElr7qQmc1QVQ7Hp4EHjk+HHxGuGFxdHAIcRxxx9LDg8BBgCVq5PxTz5XPgAAAABJRU5ErkJggg==');
+			background-position: center center;
+			background-repeat: no-repeat;
+			z-index: 333;
+			position: relative;
+		}
+		>div {
+			left: -300px;
+		}
+		&:hover, &.active {
+			span {
+				display: block;
+				width: 52px;
+				height: 52px;
+				transition: background 0.1s ease;
+			}
+		}
+		&:hover {
+			>div {
+				background: $cherry;
+				left: 52px;
+			}
+		}
+
+
+	}
+	.jcarousel-control-next {
+		&.inactive {
+			right: -52px;
+
+		}
+
+		span {
+			display: block;
+			width: 52px;
+			height: 52px;
+			transition: background 0.1s ease;
+			background-color: #fff;
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAYCAYAAAAh8HdUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNqU1EsOgCAMBFCYA+ja++mpvJ+uPUH9JJBI+pl2ZUyeTIFaj2mV8tRy7bWQhfZwzpukUQZijMVAaP1EsMfLwF9PLMT4goHQvhRBWLk9CG+XLFhF4vOk49HXiFnljYwscFeygIk8oKIIhPNkTTOyoKMM+G5E+7GwIJyn9OR6dQswAB5OVX9Ha4cpAAAAAElFTkSuQmCC');
+			background-position: center center;
+			background-repeat: no-repeat;
+			z-index: 333;
+			position: relative;
+		}
+		>div {
+			right: -300px;
+		}
+		&:hover, &.active {
+			span {
+				display: block;
+				width: 52px;
+				height: 52px;
+				transition: background 0.1s ease;
+			}
+		}
+		&:hover {
+			>div {
+				background: $cherry;
+				right: 52px;
+			}
+		}
+	}
+	.jcarousel-control-prev {
+
+		left: 0;
+
+
+	}
+	.jcarousel-control-next {
+
+		right: 0;
+
+
+	}
+
 }
 #visualtour {
 	height: 100%;
@@ -492,123 +655,7 @@ $count: 8;
 	left: 0;
 	right: 0;
 
-	.jcarousel-control-prev, .jcarousel-control-next {
 
-
-		position: fixed;
-		top: 50%;
-		width: 52px;
-		height: 52px;
-		background: rgba(255,255,255,.9);
-		@include transition (all .3s ease-in);
-		cursor: pointer;
-
-
-		>div {
-			line-height: 52px;
-			position: absolute;
- 			top: 0;
-			bottom: 0;
-			padding: 0 12px;
-			white-space: nowrap;
-			background: rgba(0,0,0,0.05);
-			color: $white;
-			transition: all 0.1s ease;
-		}
-
-
-
-
-	}
-
-
-	.jcarousel-control-prev  {
-		&.inactive {
-
-
-			left: -52px;
-		}
-
-		span {
-			display: block;
-			width: 52px;
-			height: 52px;
-			transition: background 0.1s ease;
-			background-color: #fff;
-			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAYCAYAAAAh8HdUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNqU1EsOgCAMBFCYA+ja++mpvJ+uPUH9JJBI+pl2ZUyeTIFaj2mV8tRy7bWQhfZwzpukUQZijMVAaP1EsMfLwF9PLMT4goHQvhRBWLk9CG+XLFhF4vOk49HXiFnljYwscFeygIk8oKIIhPNkTTOyoKMM+G5E+7GwIJyn9OR6dQswAB5OVX9Ha4cpAAAAAElFTkSuQmCC');
-			background-position: center center;
-			background-repeat: no-repeat;
-			z-index: 333;
-			position: relative;
-		}
-		>div {
-			left: -300px;
-		}
-		&:hover, &.active {
-			span {
-				display: block;
-				width: 52px;
-				height: 52px;
- 				transition: background 0.1s ease;
-			}
-		}
-		&:hover {
-			>div {
-				background: $cherry;
-				left: 52px;
-			}
-		}
-
-
-	}
-	.jcarousel-control-next {
-		&.inactive {
-			right: -52px;
-
-		}
-
-		span {
-			display: block;
-			width: 52px;
-			height: 52px;
-			transition: background 0.1s ease;
-			background-color: #fff;
-			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAYCAYAAAAh8HdUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNqU1EsOgCAMBFCYA+ja++mpvJ+uPUH9JJBI+pl2ZUyeTIFaj2mV8tRy7bWQhfZwzpukUQZijMVAaP1EsMfLwF9PLMT4goHQvhRBWLk9CG+XLFhF4vOk49HXiFnljYwscFeygIk8oKIIhPNkTTOyoKMM+G5E+7GwIJyn9OR6dQswAB5OVX9Ha4cpAAAAAElFTkSuQmCC');
-			background-position: center center;
-			background-repeat: no-repeat;
-			z-index: 333;
-			position: relative;
-		}
-		>div {
-			right: -300px;
-		}
-		&:hover, &.active {
-			span {
-				display: block;
-				width: 52px;
-				height: 52px;
-				transition: background 0.1s ease;
-			}
-		}
-		&:hover {
-			>div {
-				background: $cherry;
-				right: 52px;
-			}
-		}
-	}
-	.jcarousel-control-prev {
-
-		left: 0;
-
-
-	}
-	.jcarousel-control-next {
-
-		right: 0;
-
-
-	}
 }
 
 #control_paginator {
