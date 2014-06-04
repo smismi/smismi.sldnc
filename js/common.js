@@ -1270,7 +1270,7 @@ var SL = {
 						})
 						.jcarouselPagination({
 							item: function(page, carouselItems) {
-								return '<div class="tour_control_item"><em/><abbr/></div>';
+								return '<div class="tour_control_item"><em/><abbr style="background-image: url(' + carouselItems.data('imgurl') + ')"/></div>';
 							},
 							event:  'click',
 							method: 'scroll'

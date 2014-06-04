@@ -1929,6 +1929,7 @@ html.ipad #section-3 .third_slide .play_button {
   position: relative;
 }
 .tour_control .tour_control_item em {
+  cursor: pointer;
   display: inline-block;
   width: 9px;
   height: 9px;
@@ -1960,7 +1961,18 @@ html.ipad #section-3 .third_slide .play_button {
   transition: all 0.1s ease;
   border: 0px solid rgba(255, 0, 38, 0);
 }
-.tour_control .tour_control_item.active em, .tour_control .tour_control_item:hover em {
+.tour_control .tour_control_item abbr {
+  cursor: pointer;
+  width: 0px;
+  height: 0px;
+  border-radius: 30px;
+  top: 0px;
+  left: 0px;
+  display: block;
+  position: relative;
+  transition: all 0.1s ease;
+}
+.tour_control .tour_control_item.active em {
   width: 29px;
   height: 29px;
   -webkit-border-radius: 15px;
@@ -1972,7 +1984,7 @@ html.ipad #section-3 .third_slide .play_button {
   left: -15px;
   background: #e70c66;
 }
-.tour_control .tour_control_item.active em:after, .tour_control .tour_control_item:hover em:after {
+.tour_control .tour_control_item.active em:after {
   content: "";
   width: 11px;
   height: 11px;
@@ -1987,6 +1999,16 @@ html.ipad #section-3 .third_slide .play_button {
   border-radius: 16px;
   display: block;
   border: 8px solid #720026;
+}
+.tour_control .tour_control_item:hover abbr {
+  width: 57px;
+  height: 57px;
+  border-radius: 30px;
+  top: -30px;
+  left: -30px;
+  display: block;
+  position: relative;
+  z-index: 999;
 }
 .tour_control .tour_control_item:first-child em {
   background: #e70c66;
@@ -2025,11 +2047,6 @@ html.ipad #section-3 .third_slide .play_button {
 }
 #control_paginator .tour_control .tour_control_item em {
   background: #e70c66;
-}
-#control_paginator .tour_control .tour_control_item abbr {
-  border: 14px solid red;
-  position: absolute;
-  top: -130px;
 }
 
 #control_start {
