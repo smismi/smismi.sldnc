@@ -1753,7 +1753,7 @@ html.ipad #section-3 .third_slide .play_button {
   height: 100%;
   text-align: center;
   position: fixed;
-  left: 100%;
+  left: 0%;
   top: 0;
   z-index: 999;
   transition: all 0.1s ease;
@@ -1896,12 +1896,13 @@ html.ipad #section-3 .third_slide .play_button {
 /* third slide:end */
 /* third slide:controls*/
 .tour_control_wrapper {
-  width: 1000px;
+  width: 994px;
   margin: 0 auto;
   position: relative;
   z-index: 330;
   *zoom: 1;
-  height: 120px;
+  height: 50px;
+  transition: all 0.1s ease;
 }
 .tour_control_wrapper:after {
   content: "";
@@ -1910,8 +1911,8 @@ html.ipad #section-3 .third_slide .play_button {
 }
 
 .tour_control {
-  width: 1000px;
-  padding: 0 16px;
+  width: 994px;
+  padding: 0 50px;
   position: absolute;
   top: 50%;
   *zoom: 1;
@@ -1924,7 +1925,7 @@ html.ipad #section-3 .third_slide .play_button {
 .tour_control .tour_control_item {
   float: left;
   border-top: 1px solid #fff;
-  width: 125px;
+  width: 142px;
   text-align: left;
   position: relative;
 }
@@ -2015,11 +2016,6 @@ html.ipad #section-3 .third_slide .play_button {
 }
 .tour_control .tour_control_item:last-child {
   width: 0;
-}
-
-.jcarousel-pagination2 {
-  width: 400px;
-  height: 20px;
 }
 
 #controls {

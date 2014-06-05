@@ -1132,6 +1132,11 @@ var SL = {
 
 		$("#visualtour_wrapper").show();
 
+
+
+
+
+
 		TweenMax.fromTo("#visualtour_wrapper", .3,
 			{
 				left: "100%"
@@ -1225,22 +1230,23 @@ var SL = {
 //					return;
 
 
-							var n = $('#control_paginator .tour_control_item').index($(this))
-//
+							var n = $('#control_paginator .tour_control_item').index($(this));
+
+							$('#controls .jcarousel-control-start em').removeClass("active").eq(0).addClass("active").addClass("active");
 
 							if (n != -1) {
 
 
 								TweenMax.to("#control_paginator", .3,
 									{
-										width: 125 * n + 0 + 10, onComplete: function () {
+										width: 142 * n + 0 + 50, onComplete: function () {
 
 										tween = TweenMax.fromTo("#control_paginator", 4,
 											{
-												width: 125 * n + 0 + 10
+												width: 142 * n + 0 + 50
 											},
 											{
-												width: 125 * n + 125 + 10,
+												width: 142 * n + 142 + 50,
 												ease: Linear.easeNone,
 												repeat: 0,
 												repeatDelay: 0,

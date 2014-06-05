@@ -346,8 +346,8 @@ html.ipad #section-3 .third_slide .play_button{
 	height: 100%;
 	text-align: center;
 	position: fixed;
-	left: 100%;
-	//left: 0%;
+	//left: 100%;
+	left: 0%;
 	top: 0;
 	z-index: 999;
 	transition: all 0.1s ease;
@@ -532,8 +532,8 @@ html.ipad #section-3 .third_slide .play_button{
 
 /* third slide:controls*/
 
-$width: 1000;
-$count: 8;
+$width: 994;
+$count: 7;
 
 .tour_control_wrapper {
 	width: $width + px;
@@ -542,14 +542,15 @@ $count: 8;
 	z-index: 330;
 	//padding: 20px 0;
 	@include pie-clearfix();
-	height: 120px;
-
+	height: 50px;
+	//height: 460px;
+	transition: all 0.1s ease;
 
 }
 .tour_control {
 	//margin-top: 30px;
 	width: $width + px;
-	padding: 0 16px;
+	padding: 0 50px;
 	position: absolute;
 	top: 50%;
 
@@ -670,11 +671,7 @@ $count: 8;
 
 	}
 }
-.jcarousel-pagination2 {
-	width: 400px;
-	height: 20px;
 
-}
 
 #controls {
 	position: absolute;
@@ -685,15 +682,22 @@ $count: 8;
 	right: 0;
 
 
+	//&:hover {
+	//
+	//	.tour_control_wrapper {
+	//		height: 120px;
+	//	}
+	//}
+
 }
 
 #control_paginator {
 	width: 0;
 	//width: 588px;
 	position: relative;
-	//top: -31px;
 	height: 100%;
 	top: 0;
+	//top: 101px;
 	overflow: hidden;
 
 
