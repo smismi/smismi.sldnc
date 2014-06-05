@@ -346,11 +346,11 @@ html.ipad #section-3 .third_slide .play_button{
 	height: 100%;
 	text-align: center;
 	position: fixed;
-	//left: 100%;
-	left: 0%;
+	left: 100%;
+	//left: 0%;
 	top: 0;
 	z-index: 999;
-	transition: all 0.1s ease;
+	transition: all .6s linear;
 
 
 	.jcarousel-control-prev, .jcarousel-control-next, .jcarousel-control-close {
@@ -532,8 +532,8 @@ html.ipad #section-3 .third_slide .play_button{
 
 /* third slide:controls*/
 
-$width: 994;
-$count: 7;
+$width: 994 + 142;
+$count: 8;
 
 .tour_control_wrapper {
 	width: $width + px;
@@ -543,6 +543,7 @@ $count: 7;
 	//padding: 20px 0;
 	@include pie-clearfix();
 	height: 50px;
+	height: 100px;
 	//height: 460px;
 	transition: all 0.1s ease;
 
@@ -784,12 +785,12 @@ $count: 7;
 		h1 {
 			font: 45px/0.94em 'oksana_text_narrowbold', sans-serif;
 			color: #fff;
-			margin: .3em 0;
+			margin: 30px 0;
 
 			&:after {
 				content: "";
 				width: 60px;
-				margin: 12px auto;
+				margin: 25px auto;
 				height:1px;
 				background: $cherry;
 				display: block;
@@ -797,7 +798,7 @@ $count: 7;
 		}
 
 		h2 {
-			font: 14px/0.94em 'oksana_text_narrowbold', sans-serif;
+			font: 14px/1.4 'oksana_text_narrowbold', sans-serif;
 			color: #fff;
 			margin: .3em 0;
 		}

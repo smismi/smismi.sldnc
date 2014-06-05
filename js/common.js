@@ -1099,7 +1099,33 @@ var SL = {
 	},
 	prepareVisualTour: function() {
 
-		$("#visualtour_wrapper").hide();
+//		$("#visualtour_wrapper").hide();
+		$("#visualtour_wrapper").css({left: "100%"});
+
+
+		$('#visualtour')
+			.on('jcarousel:create jcarousel:reload', function() {
+				var element = $(this),
+					width = element.innerWidth();
+				element.jcarousel('items').css('width', width + 'px');
+
+
+			})
+			.jcarousel({
+				// Your configurations options
+			})
+			.jcarouselAutoscroll({
+				interval: 2000,
+				target: '+=1',
+				autostart: false
+			})
+			.on('jcarousel:animateend', function(event, carousel, target, animate) {
+
+
+
+
+
+			});
 
 		$("#visualtour_link").on("click", function(){
 			SL.visualtourInit();
@@ -1108,71 +1134,23 @@ var SL = {
 		$("#jcarousel-control-close").on("click", function(){
 
 
-
-			TweenMax.fromTo("#visualtour_wrapper", .3,
-				{
-					left: "0%"
-				},
-				{
-					left: "100%",
-					ease: Linear.easeNone,
-
-					onComplete: function () {
-
-						$("#visualtour_wrapper").hide();
-
-					}
-				});
+			$("#visualtour_wrapper").css({left: "100%"});
+			SL.tween.pause();
 
 		})
 
 
 	},
 	visualtourInit: function() {
-
-		$("#visualtour_wrapper").show();
-
-
-
-
-
-
-		TweenMax.fromTo("#visualtour_wrapper", .3,
-			{
-				left: "100%"
-			},
-			{
-				left: "0%",
-				ease: Linear.easeNone,
-
-				onComplete: function () {
-
-
-					var tween;
-
-					$('#visualtour')
-						.on('jcarousel:create jcarousel:reload', function() {
-							var element = $(this),
-								width = element.innerWidth();
-							element.jcarousel('items').css('width', width + 'px');
-
-
-						})
-						.jcarousel({
-							// Your configurations options
-						})
-						.jcarouselAutoscroll({
-							interval: 2000,
-							target: '+=1',
-							autostart: false
-						})
-						.on('jcarousel:animateend', function(event, carousel, target, animate) {
+//
+//		$("#visualtour_wrapper").show();
+		$("#visualtour_wrapper").css({left: "0%"});
 
 
 
 
 
-						});
+
 
 					$('.jcarousel-control-prev')
 						.on('jcarouselcontrol:active', function() {
@@ -1212,13 +1190,13 @@ var SL = {
 							$("em", this).removeClass("active").eq(1).addClass("active");
 //					$('.jcarousel').jcarouselAutoscroll('stop');
 
-							tween.pause()
+							SL.tween.pause()
 
 						}, function () {
 							$("em", this).removeClass("active").eq(0).addClass("active");
 //					$('.jcarousel').jcarouselAutoscroll('start');
 
-							tween.play()
+							SL.tween.play()
 						}
 
 					);
@@ -1241,7 +1219,7 @@ var SL = {
 									{
 										width: 142 * n + 0 + 50, onComplete: function () {
 
-										tween = TweenMax.fromTo("#control_paginator", 4,
+										SL.tween = TweenMax.fromTo("#control_paginator", 4,
 											{
 												width: 142 * n + 0 + 50
 											},
@@ -1307,10 +1285,6 @@ var SL = {
 
 
 
-
-
-				}
-			});
 
 
 
