@@ -543,10 +543,23 @@ $count: 7;
 	//padding: 20px 0;
 	@include pie-clearfix();
 	height: 50px;
-	height: 100px;
-	height: 55px;
+	//height: 100px;
+	//height: 355px;
 	//height: 460px;
 	transition: all 0.1s ease;
+
+	//&:hover {
+	//	height: 122px;
+	//
+	//}
+}
+#colormark {
+	background: $cherry;
+	width: 0;
+	height: 1px;
+	position: absolute;
+	z-index: 3;
+
 
 }
 .tour_control {
@@ -576,7 +589,7 @@ $count: 7;
 			@include border-radius (6px);
 			cursor: pointer;
 			transition: all 0.1s ease;
-
+			z-index: 4;
 
 			&:after {
 
@@ -596,6 +609,26 @@ $count: 7;
 
 
 
+
+		}
+
+		b {
+
+			position: absolute;
+			display: none;
+			top: -51px;
+			left: -150px;
+			text-align: center;
+			width: 300px;
+			font-size: 12px;
+			color: $cherry;
+
+		}
+		i {
+			border: 1px dotted pink;
+			position: absolute;
+			top: -12px;
+			width: 50%;
 
 		}
 
@@ -657,6 +690,11 @@ $count: 7;
 				z-index: 999;
 			}
 
+
+			b {
+				display: block;
+			}
+
 		}
 
 		&:first-child {
@@ -665,10 +703,19 @@ $count: 7;
 				background: $cherry;
 			}
 
+
 		}
 
 		&:last-child {
 			width: 0;
+		}
+
+		&.prevs {
+			em {
+
+				background: $cherry;
+
+			}
 		}
 
 	}
@@ -699,7 +746,7 @@ $count: 7;
 	position: relative;
 	height: 100%;
 	top: 0;
-	//top: 101px;
+	top: 101px;
 	overflow: hidden;
 
 
@@ -714,6 +761,10 @@ $count: 7;
 			border-top: 1px solid $cherry;
 
 			em {
+				background: $cherry;
+			}
+
+			b {
 				background: $cherry;
 			}
 
@@ -770,7 +821,7 @@ $count: 7;
 	position: absolute;
 	z-index: 330;
 	background: rgba(114, 0, 48, .9);
-	bottom: 0;
+	bottom: 100%;
 	left: 0;
 	right: 0;
 

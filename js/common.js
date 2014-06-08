@@ -1106,15 +1106,25 @@ var SL = {
 
 
 		$('#visualtour')
-			.on('jcarousel:create jcarousel:reload', function() {
+			.on('jcarousel:create', function() {
 				var element = $(this),
 					width = element.innerWidth();
 				element.jcarousel('items').css('width', width + 'px');
 
 
+
+			})
+			.on('jcarousel:reload', function() {
+				var element = $(this),
+					width = element.innerWidth();
+				element.jcarousel('items').css('width', width + 'px');
+
+				$('.jcarousel-pagination').jcarouselPagination('reload');
+
 			})
 			.jcarousel({
 				// Your configurations options
+
 			})
 			.jcarouselAutoscroll({
 				interval: 2000,
@@ -1155,12 +1165,8 @@ var SL = {
 			var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
 			$('html').addClass('noscroll').css('top',-scrollTop);
 		}
-		$("#visualtour_wrapper").css({left: "0%"});
 
-
-
-
-
+			$("#visualtour_wrapper").css({left: "0%"});
 
 
 					$('.jcarousel-control-prev')
@@ -1174,7 +1180,8 @@ var SL = {
 							$(this).addClass('inactive');
 						})
 						.jcarouselControl({
-							target: '-=1'
+							target: '-=1',
+							wrap: 'circular'
 						});
 
 					$('.jcarousel-control-next')
@@ -1213,43 +1220,38 @@ var SL = {
 					);
 
 					$('#controls .jcarousel-pagination')
+
 						.on('jcarouselpagination:active', 'div', function() {
 
-							$(this).addClass('active')
-//					return;
+							var _this = this;
+							var last = false;
+							$(this).addClass('active');
+							$(this).nextAll().removeClass("prevs");
+							$(this).prevAll().addClass("prevs");
+
+							var n = $('.tour_control_item').index($(this));
 
 
-							var n = $('#control_paginator .tour_control_item').index($(this));
-
-							$('#controls .jcarousel-control-start em').removeClass("active").eq(0).addClass("active").addClass("active");
+//							$('#controls .jcarousel-control-start em').removeClass("active").eq(0).addClass("active");
 
 							if (n != -1) {
 
+								if($(_this).is(":last-child")) last = true;
 
-								TweenMax.to("#control_paginator", .3,
+								TweenMax.to($("#colormark"), .3,
 									{
-										width: 142 * n + 0 + 50, onComplete: function () {
-
-										SL.tween = TweenMax.fromTo("#control_paginator", 16,
+										width: 142 * n + 0, onComplete: function () {
+//										if (SL.tween) SL.tween.killAll();
+										SL.tween = TweenMax.fromTo($("#colormark"), 16,
 											{
-												width: 142 * n + 0 + 50
+												width: 142 * n + 0
 											},
 											{
-												width: 142 * n + 142 + 50,
+												width: 142 * n + (last ? 0 : 142),
 												ease: Linear.easeNone,
-												repeat: 0,
-												repeatDelay: 0,
-
 												onComplete: function () {
 
-													$('.jcarousel').jcarousel('scroll', n + 1);
-
-												},
-												onRepeat: function () {
-
-													$('.jcarousel').jcarousel('scroll', i);
-
-													i++;
+													$('.jcarousel').jcarousel('scroll', last ? 0 : (n + 1));
 
 												}
 											});
@@ -1263,14 +1265,21 @@ var SL = {
 						.on('jcarouselpagination:inactive', 'div', function() {
 							$(this).removeClass('active');
 						})
+						.on('jcarouselpagination:createend', function(event, carousel) {
+							$(this).prepend('<h1 id="colormark"></h1>');
+						})
+						.on('jcarouselpagination:reloadend', function() {
+							$(this).prepend('<h1 id="colormark"></h1>');
+ 						})
 						.jcarouselPagination({
 							item: function(page, carouselItems) {
-								return '<div class="tour_control_item"><em/><abbr style="background-image: url(' + carouselItems.data('imgurl') + ')"/></div>';
+								return '<div class="tour_control_item"><em/><b>' + carouselItems.data('title') + '</b><abbr style="background-image: url(' + carouselItems.data('imgurl') + ')"/></div>';
 							},
 							event:  'click',
 							method: 'scroll'
 
 						});
+
 
 
 					$('#descriptions')
