@@ -350,7 +350,7 @@ html.ipad #section-3 .third_slide .play_button{
 	//left: 0%;
 	top: 0;
 	z-index: 999;
-	transition: all .6s linear;
+	transition: all 1s cubic-bezier(.45,.29,.62,.99);
 
 
 	.jcarousel-control-prev, .jcarousel-control-next, .jcarousel-control-close {

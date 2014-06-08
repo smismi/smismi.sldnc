@@ -1762,7 +1762,7 @@ html.ipad #section-3 .third_slide .play_button {
   left: 100%;
   top: 0;
   z-index: 999;
-  transition: all .6s linear;
+  transition: all 1s cubic-bezier(0.45, 0.29, 0.62, 0.99);
 }
 #visualtour_wrapper .jcarousel-control-prev, #visualtour_wrapper .jcarousel-control-next, #visualtour_wrapper .jcarousel-control-close {
   position: absolute;
