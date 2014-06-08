@@ -41,7 +41,9 @@
 
 /* columns:begin */
 .columns {
-	width: 1200px;
+	width: 100%;
+	max-width: 1200px;
+	min-width: 600px;
 	position: relative;
 	margin: 0 auto;
 	padding: 0 !important;
