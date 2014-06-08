@@ -1219,7 +1219,7 @@ var SL = {
 									{
 										width: 142 * n + 0 + 50, onComplete: function () {
 
-										SL.tween = TweenMax.fromTo("#control_paginator", 4,
+										SL.tween = TweenMax.fromTo("#control_paginator", 16,
 											{
 												width: 142 * n + 0 + 50
 											},
@@ -1281,7 +1281,7 @@ var SL = {
 						});
 
 
-					$("#visualtour, #visualtour li, #visualtour li > img").css({"width": $(window).width(), "height": $(window).height()})
+//					$("#visualtour, #visualtour li, #visualtour li > img").css({"width": $(window).width(), "height": $(window).height()})
 
 
 

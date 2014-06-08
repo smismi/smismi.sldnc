@@ -532,8 +532,8 @@ html.ipad #section-3 .third_slide .play_button{
 
 /* third slide:controls*/
 
-$width: 994 + 142;
-$count: 8;
+$width: 994;
+$count: 7;
 
 .tour_control_wrapper {
 	width: $width + px;
@@ -544,6 +544,7 @@ $count: 8;
 	@include pie-clearfix();
 	height: 50px;
 	height: 100px;
+	height: 55px;
 	//height: 460px;
 	transition: all 0.1s ease;
 
@@ -632,7 +633,7 @@ $count: 8;
 					position: absolute;
 					top: 1px;
 					left: 1px;
-					background: $cherry;
+					background: #fff;
 					@include border-radius (16px);
 					display: block;
 					border: 8px solid rgba(114,0,38,1)
@@ -776,10 +777,10 @@ $count: 8;
 
 	.descriptions_wrapper {
 
-		height: 300px;
+		//height: 300px;
 		overflow: hidden;
 		display: none;
-		padding: 0 250px;
+		padding: 0 250px 70px 250px ;
 
 
 		h1 {

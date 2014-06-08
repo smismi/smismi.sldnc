@@ -1896,13 +1896,14 @@ html.ipad #section-3 .third_slide .play_button {
 /* third slide:end */
 /* third slide:controls*/
 .tour_control_wrapper {
-  width: 1136px;
+  width: 994px;
   margin: 0 auto;
   position: relative;
   z-index: 330;
   *zoom: 1;
   height: 50px;
   height: 100px;
+  height: 55px;
   transition: all 0.1s ease;
 }
 .tour_control_wrapper:after {
@@ -1912,7 +1913,7 @@ html.ipad #section-3 .third_slide .play_button {
 }
 
 .tour_control {
-  width: 1136px;
+  width: 994px;
   padding: 0 50px;
   position: absolute;
   top: 50%;
@@ -1993,7 +1994,7 @@ html.ipad #section-3 .third_slide .play_button {
   position: absolute;
   top: 1px;
   left: 1px;
-  background: #e70c66;
+  background: #fff;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
@@ -2084,10 +2085,9 @@ html.ipad #section-3 .third_slide .play_button {
   right: 0;
 }
 #descriptions .descriptions_wrapper {
-  height: 300px;
   overflow: hidden;
   display: none;
-  padding: 0 250px;
+  padding: 0 250px 70px 250px;
 }
 #descriptions .descriptions_wrapper h1 {
   font: 45px/0.94em 'oksana_text_narrowbold', sans-serif;
