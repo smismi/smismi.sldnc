@@ -124,6 +124,12 @@ html.touch .touchonly {
   color: #e70c66;
 }
 
+html.noscroll {
+  position: fixed;
+  overflow-y: hidden;
+  width: 100%;
+}
+
 #cup {
   position: absolute;
   bottom: 15px;

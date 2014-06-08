@@ -77,3 +77,9 @@ html.touch .touchonly {
 	margin: 12px auto;
 	color: $cherry;
 }
+
+html.noscroll {
+	position: fixed;
+	overflow-y: hidden;
+	width: 100%;
+}

@@ -1103,6 +1103,8 @@ var SL = {
 		$("#visualtour_wrapper").css({left: "100%"});
 
 
+
+
 		$('#visualtour')
 			.on('jcarousel:create jcarousel:reload', function() {
 				var element = $(this),
@@ -1135,7 +1137,12 @@ var SL = {
 
 
 			$("#visualtour_wrapper").css({left: "100%"});
-			SL.tween.pause();
+
+			var scrollTop = parseInt($('html').css('top'));
+			$('html').removeClass('noscroll');
+			$('html,body').scrollTop(-scrollTop);
+
+ 			SL.tween.pause();
 
 		})
 
@@ -1144,6 +1151,10 @@ var SL = {
 	visualtourInit: function() {
 //
 //		$("#visualtour_wrapper").show();
+		if ($(document).height() > $(window).height()) {
+			var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+			$('html').addClass('noscroll').css('top',-scrollTop);
+		}
 		$("#visualtour_wrapper").css({left: "0%"});
 
 
