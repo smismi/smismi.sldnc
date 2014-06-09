@@ -1099,8 +1099,7 @@ var SL = {
 	},
 	prepareVisualTour: function() {
 
-//		$("#visualtour_wrapper").hide();
-		$("#visualtour_wrapper").css({left: "100%"});
+//		$("#visualtour_wrapper").css({left: "100%"});
 
 
 
@@ -1141,6 +1140,7 @@ var SL = {
 
 		$("#visualtour_link").on("click", function(){
 			SL.visualtourInit();
+			return false;
 		})
 
 		$("#jcarousel-control-close").on("click", function(){
@@ -1154,13 +1154,25 @@ var SL = {
 
  			SL.tween.pause();
 
+			return false;
+
+
 		})
 
 
 	},
 	visualtourInit: function() {
-//
-//		$("#visualtour_wrapper").show();
+
+
+		SL.visualTweenMax = TweenMax.to("#colormark", 1,
+			{
+				width: 142,
+				startAt:{width: 0},
+				onComplete: function(){
+
+				}
+			});
+
 		if ($(document).height() > $(window).height()) {
 			var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
 			$('html').addClass('noscroll').css('top',-scrollTop);
@@ -1219,61 +1231,63 @@ var SL = {
 
 					);
 
+
 					$('#controls .jcarousel-pagination')
+
 
 						.on('jcarouselpagination:active', 'div', function() {
 
 							var _this = this;
 							var last = false;
+
+							if($(_this).is(":last-child")) last = true;
+
+
 							$(this).addClass('active');
-							$(this).nextAll().removeClass("prevs");
-							$(this).prevAll().addClass("prevs");
-
-							var n = $('.tour_control_item').index($(this));
+							$(this).nextAll().removeClass("prevs").find("i").css({width: 0});
+							$(this).prevAll().addClass("prevs").find("i").css({width: 142});
 
 
-//							$('#controls .jcarousel-control-start em').removeClass("active").eq(0).addClass("active");
-
-							if (n != -1) {
-
-								if($(_this).is(":last-child")) last = true;
-
-								TweenMax.to($("#colormark"), .3,
-									{
-										width: 142 * n + 0, onComplete: function () {
-//										if (SL.tween) SL.tween.killAll();
-										SL.tween = TweenMax.fromTo($("#colormark"), 16,
-											{
-												width: 142 * n + 0
-											},
-											{
-												width: 142 * n + (last ? 0 : 142),
-												ease: Linear.easeNone,
-												onComplete: function () {
-
-													$('.jcarousel').jcarousel('scroll', last ? 0 : (n + 1));
-
-												}
-											});
-									}});
 
 
-							}
+							var tick = $("i", _this);
+
+							TweenMax.killTweensOf(".tour_control_item i");
+
+							SL.tween = TweenMax.fromTo(tick, 5,
+								{
+									width: 0
+								},
+								{
+									width: (last ? 0 : 135) ,
+									ease: "linear",
+									onComplete: function () {
+
+										$('.jcarousel').jcarousel('scroll', last ? 0 : '+=1');
+
+									}
+								});
+
+
 
 
 						})
 						.on('jcarouselpagination:inactive', 'div', function() {
 							$(this).removeClass('active');
-						})
+ 						})
 						.on('jcarouselpagination:createend', function(event, carousel) {
-							$(this).prepend('<h1 id="colormark"></h1>');
+
+
+
 						})
 						.on('jcarouselpagination:reloadend', function() {
-							$(this).prepend('<h1 id="colormark"></h1>');
- 						})
+							TweenMax.killTweensOf(".tour_control_item i");
+						})
 						.jcarouselPagination({
 							item: function(page, carouselItems) {
-								return '<div class="tour_control_item"><em/><b>' + carouselItems.data('title') + '</b><abbr style="background-image: url(' + carouselItems.data('imgurl') + ')"/></div>';
+
+
+								return '<div class="tour_control_item"><em/><i/><b>' + carouselItems.data('title') + '</b><abbr style="background-image: url(' + carouselItems.data('imgurl') + ')"/></div>';
 							},
 							event:  'click',
 							method: 'scroll'

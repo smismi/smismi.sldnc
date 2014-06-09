@@ -1919,14 +1919,6 @@ html.ipad #section-3 .third_slide .play_button {
   clear: both;
 }
 
-#colormark {
-  background: #e70c66;
-  width: 0;
-  height: 1px;
-  position: absolute;
-  z-index: 3;
-}
-
 .tour_control {
   width: 994px;
   padding: 0 50px;
@@ -1991,10 +1983,10 @@ html.ipad #section-3 .third_slide .play_button {
   color: #e70c66;
 }
 .tour_control .tour_control_item i {
-  border: 1px dotted pink;
+  border: 1px solid #e70c66;
   position: absolute;
-  top: -12px;
-  width: 50%;
+  top: -1px;
+  width: 0;
 }
 .tour_control .tour_control_item abbr {
   cursor: pointer;
@@ -2056,6 +2048,9 @@ html.ipad #section-3 .third_slide .play_button {
 }
 .tour_control .tour_control_item.prevs em {
   background: #e70c66;
+}
+.tour_control .tour_control_item.prevs i {
+  width: 142px;
 }
 
 #controls {
@@ -2129,7 +2124,7 @@ html.ipad #section-3 .third_slide .play_button {
 #descriptions .descriptions_wrapper {
   overflow: hidden;
   display: none;
-  padding: 0 250px 70px 250px;
+  padding: 0 250px 20px 250px;
 }
 #descriptions .descriptions_wrapper h1 {
   font: 45px/0.94em 'oksana_text_narrowbold', sans-serif;
@@ -2312,6 +2307,11 @@ html.ipad #section-3 .third_slide .play_button {
 #section-4 .fourth_slide .columns .col a:nth-child(15):before {
   content: "\e50e";
   line-height: 298px;
+}
+#section-4 .fourth_slide .columns .col a:nth-child(16):before {
+  content: "\e606";
+  line-height: 298px;
+  font-size: 60px;
 }
 
 /* hover:begin */

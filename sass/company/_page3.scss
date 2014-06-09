@@ -554,15 +554,6 @@ $count: 7;
 	//
 	//}
 }
-#colormark {
-	background: $cherry;
-	width: 0;
-	height: 1px;
-	position: absolute;
-	z-index: 3;
-
-
-}
 .tour_control {
 	//margin-top: 30px;
 	width: $width + px;
@@ -626,10 +617,10 @@ $count: 7;
 
 		}
 		i {
-			border: 1px dotted pink;
+			border: 1px solid $cherry;
 			position: absolute;
-			top: -12px;
-			width: 50%;
+			top: -1px;
+			width:0;
 
 		}
 
@@ -716,6 +707,11 @@ $count: 7;
 
 				background: $cherry;
 
+
+			}
+
+			i {
+				width: 142px;
 			}
 		}
 
@@ -832,7 +828,7 @@ $count: 7;
 		//height: 300px;
 		overflow: hidden;
 		display: none;
-		padding: 0 250px 70px 250px ;
+		padding: 0 250px 20px 250px ;
 
 
 		h1 {

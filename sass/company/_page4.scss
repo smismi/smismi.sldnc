@@ -199,6 +199,14 @@
 			line-height: 298px;
 		}
 	}
+	&:nth-child(16) {
+		&:before {
+			content: "\e606";
+			line-height: 298px;
+			font-size: 60px;
+
+		}
+	}
 }
 //
 //#section-4 .fourth_slide .columns .col a + a {
