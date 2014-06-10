@@ -854,16 +854,6 @@ section.catalog {
   overflow: hidden;
 }
 
-html.ipad #section-1 .first_slide {
-  padding: 118px 0 55px;
-  background: url(../images/company/slide_1/nature-animals-forest.jpg) no-repeat center center fixed;
-  -ms-background-size: cover;
-  -opera-background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-}
-
 /* video */
 #section-1 .first_slide video {
   position: absolute;
@@ -873,10 +863,6 @@ html.ipad #section-1 .first_slide {
   min-height: 100%;
   width: auto;
   height: auto;
-}
-
-html.ipad #section-1 .first_slide video {
-  display: none;
 }
 
 /* text wrapper */
@@ -3152,456 +3138,6 @@ have a fixed width and height (but it's not required).
   float: left;
 }
 
-@media screen and (max-width: 1200px) {
-  #section-1 {
-    width: 1200px;
-    margin-left: -600px;
-    left: 50%;
-  }
-  #section-1.company_page {
-    width: auto;
-    margin-left: 0;
-    left: 0;
-  }
-}
-@media screen and (min-width: 1200px) and (max-width: 2500px) {
-  .page1 .section-1-bg-25 {
-    font-size: 78px;
-  }
-  .page1 .section-1-bg-25 h3 {
-    font-size: 27px;
-    padding-top: 25px;
-    margin-top: 25px;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .page1 .section-1-bg-25 {
-    font-size: 78px;
-  }
-  .page1 .section-1-bg-25 h3 {
-    font-size: 27px;
-    padding-top: 25px;
-    margin-top: 25px;
-  }
-}
-@media screen and (min-width: 750px) and (max-width: 1000px) {
-  .page1 .section-1-bg-25 {
-    font-size: 78px;
-  }
-  .page1 .section-1-bg-25 h3 {
-    font-size: 27px;
-    padding-top: 25px;
-    margin-top: 25px;
-  }
-}
-@media screen and (min-height: 0px) and (max-height: 500px) {
-  .page1 .section-1-bg-25 {
-    font-size: 38px;
-  }
-  .page1 .section-1-bg-25 h3 {
-    font-size: 14px;
-    padding-top: 12px;
-    margin-top: 12px;
-  }
-}
-@media screen and (min-height: 500px) and (max-height: 650px) {
-  .page1 .section-1-bg-25 {
-    font-size: 48px;
-  }
-  .page1 .section-1-bg-25 h3 {
-    font-size: 17px;
-    padding-top: 15px;
-    margin-top: 15px;
-  }
-}
-@media screen and (min-height: 650px) and (max-height: 750px) {
-  .page1 .section-1-bg-25 {
-    font-size: 58px;
-  }
-  .page1 .section-1-bg-25 h3 {
-    font-size: 22px;
-    padding-top: 20px;
-    margin-top: 20px;
-  }
-}
-@media screen and (min-height: 750px) and (max-height: 850px) {
-  .page1 .section-1-bg-25 {
-    font-size: 78px;
-  }
-  .page1 .section-1-bg-25 h3 {
-    font-size: 27px;
-    padding-top: 25px;
-    margin-top: 25px;
-  }
-}
-@media screen and (min-height: 850px) and (max-height: 1250px) {
-  .page1 .section-1-bg-25 {
-    font-size: 100px;
-  }
-  .page1 .section-1-bg-25 h3 {
-    font-size: 37px;
-    padding-top: 35px;
-    margin-top: 35px;
-  }
-}
-@media screen and (min-width: 750px) and (max-width: 1000px) {
-  .page2 .wrapper .page_item .page_item_ic {
-    margin-top: -100px;
-  }
-  .page2 .wrapper .page_item .icon.icon1 {
-    font-size: 50px;
-  }
-  .page2 .wrapper .page_item .icon.icon2 {
-    font-size: 110px;
-  }
-  .page2 .wrapper .page_item .icon.icon3 {
-    font-size: 100px;
-  }
-  .page2 .wrapper .page_item h2 {
-    font-size: 20px;
-    line-height: 22px;
-    margin: 110px 40px 50px 40px;
-  }
-  .page2 .wrapper .page_item h3 {
-    font-size: 13px;
-    line-height: 17.6px;
-  }
-}
-@media screen and (min-height: 0px) and (max-height: 600px) {
-  .page2 .wrapper .page_item .page_item_ic {
-    margin-top: -100px;
-  }
-  .page2 .wrapper .page_item .icon.icon1 {
-    font-size: 50px;
-  }
-  .page2 .wrapper .page_item .icon.icon2 {
-    font-size: 110px;
-  }
-  .page2 .wrapper .page_item .icon.icon3 {
-    font-size: 100px;
-  }
-  .page2 .wrapper .page_item h2 {
-    font-size: 20px;
-    line-height: 22px;
-    margin: 110px 40px 50px 40px;
-  }
-  .page2 .wrapper .page_item h3 {
-    font-size: 13px;
-    line-height: 17.6px;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1100px) {
-  .page5 .wrapper .section-5-header h1 {
-    font-size: 64px;
-  }
-  .page5 .wrapper .page_item {
-    width: 300px;
-  }
-  .page5 .wrapper .page_item figcaption {
-    width: 300px;
-    line-height: 250px;
-  }
-  .page5 .wrapper .page_item figcaption .icon {
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    line-height: 0;
-    display: block;
-    padding: 80px 0;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon1 {
-    font-size: 83px;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon2 {
-    font-size: 80px;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon3 {
-    font-size: 137px;
-  }
-  .page5 .wrapper .page_item figcaption em {
-    top: -62px;
-  }
-  .page5 .wrapper .page_item figcaption em img {
-    width: 70px;
-  }
-  .page5 .wrapper .page_item figcaption i img {
-    width: 280px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr .icon {
-    font-size: 83px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr .icon.icon3 {
-    font-size: 137px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr em {
-    opacity: 1;
-    top: -32px;
-  }
-  .page5 .wrapper .page_item figcaption .description h2 {
-    font-size: 45px;
-  }
-  .page5 .wrapper .page_item figcaption .description h3 {
-    font-size: 15px;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  .page5 .wrapper .section-5-header h1 {
-    font-size: 54px;
-  }
-  .page5 .wrapper .page_item {
-    width: 260px;
-  }
-  .page5 .wrapper .page_item figcaption {
-    width: 260px;
-    line-height: 250px;
-  }
-  .page5 .wrapper .page_item figcaption .icon {
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    line-height: 0;
-    display: block;
-    padding: 80px 0;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon1 {
-    font-size: 83px;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon2 {
-    font-size: 80px;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon3 {
-    font-size: 137px;
-  }
-  .page5 .wrapper .page_item figcaption em {
-    top: -62px;
-  }
-  .page5 .wrapper .page_item figcaption em img {
-    width: 70px;
-  }
-  .page5 .wrapper .page_item figcaption i img {
-    width: 280px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr .icon {
-    font-size: 83px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr .icon.icon3 {
-    font-size: 137px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr em {
-    opacity: 1;
-    top: -32px;
-  }
-  .page5 .wrapper .page_item figcaption .description h2 {
-    font-size: 40px;
-  }
-  .page5 .wrapper .page_item figcaption .description h3 {
-    font-size: 14px;
-  }
-}
-@media screen and (min-width: 750px) and (max-width: 800px) {
-  .page5 .wrapper .section-5-header h1 {
-    font-size: 54px;
-  }
-  .page5 .wrapper .page_item {
-    width: 240px;
-  }
-  .page5 .wrapper .page_item figcaption {
-    width: 240px;
-    line-height: 250px;
-  }
-  .page5 .wrapper .page_item figcaption .icon {
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    line-height: 0;
-    display: block;
-    padding: 80px 0;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon1 {
-    font-size: 83px;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon2 {
-    font-size: 80px;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon3 {
-    font-size: 137px;
-  }
-  .page5 .wrapper .page_item figcaption em {
-    top: -62px;
-  }
-  .page5 .wrapper .page_item figcaption em img {
-    width: 70px;
-  }
-  .page5 .wrapper .page_item figcaption i img {
-    width: 280px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr .icon {
-    font-size: 83px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr .icon.icon3 {
-    font-size: 137px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr em {
-    opacity: 1;
-    top: -32px;
-  }
-  .page5 .wrapper .page_item figcaption .description h2 {
-    font-size: 40px;
-  }
-  .page5 .wrapper .page_item figcaption .description h3 {
-    font-size: 14px;
-  }
-}
-@media screen and (min-height: 0px) and (max-height: 650px) {
-  .page5 .wrapper .section-5-header h1 {
-    font-size: 44px;
-  }
-  .page5 .wrapper .page_item figcaption {
-    line-height: 200px;
-  }
-  .page5 .wrapper .page_item figcaption .icon {
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    line-height: 0;
-    display: block;
-    padding: 40px 0;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon1 {
-    font-size: 53px;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon2 {
-    font-size: 50px;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon3 {
-    font-size: 77px;
-  }
-  .page5 .wrapper .page_item figcaption em {
-    top: -82px;
-  }
-  .page5 .wrapper .page_item figcaption em img {
-    width: 40px;
-  }
-  .page5 .wrapper .page_item figcaption i img {
-    width: 180px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr .icon {
-    font-size: 53px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr .icon.icon3 {
-    font-size: 77px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr em {
-    opacity: 1;
-    top: -52px;
-  }
-  .page5 .wrapper .page_item figcaption .description h2 {
-    font-size: 35px;
-  }
-  .page5 .wrapper .page_item figcaption .description h3 {
-    font-size: 13px;
-  }
-}
-@media screen and (min-height: 650px) and (max-height: 750px) {
-  .page5 .wrapper .section-5-header h1 {
-    font-size: 54px;
-  }
-  .page5 .wrapper .page_item figcaption {
-    line-height: 250px;
-  }
-  .page5 .wrapper .page_item figcaption .icon {
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    line-height: 0;
-    display: block;
-    padding: 60px 0;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon1 {
-    font-size: 63px;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon2 {
-    font-size: 60px;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon3 {
-    font-size: 87px;
-  }
-  .page5 .wrapper .page_item figcaption em {
-    top: -82px;
-  }
-  .page5 .wrapper .page_item figcaption em img {
-    width: 50px;
-  }
-  .page5 .wrapper .page_item figcaption i img {
-    width: 220px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr .icon {
-    font-size: 63px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr .icon.icon3 {
-    font-size: 87px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr em {
-    opacity: 1;
-    top: -52px;
-  }
-  .page5 .wrapper .page_item figcaption .description h2 {
-    font-size: 40px;
-  }
-  .page5 .wrapper .page_item figcaption .description h3 {
-    font-size: 14px;
-  }
-}
-@media screen and (min-height: 750px) and (max-height: 850px) {
-  .page5 .wrapper .section-5-header h1 {
-    font-size: 64px;
-  }
-  .page5 .wrapper .page_item figcaption {
-    line-height: 250px;
-  }
-  .page5 .wrapper .page_item figcaption .icon {
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    line-height: 0;
-    display: block;
-    padding: 80px 0;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon1 {
-    font-size: 73px;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon2 {
-    font-size: 70px;
-  }
-  .page5 .wrapper .page_item figcaption .icon.icon3 {
-    font-size: 127px;
-  }
-  .page5 .wrapper .page_item figcaption em {
-    top: -62px;
-  }
-  .page5 .wrapper .page_item figcaption em img {
-    width: 60px;
-  }
-  .page5 .wrapper .page_item figcaption i img {
-    width: 280px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr .icon {
-    font-size: 73px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr .icon.icon3 {
-    font-size: 127px;
-  }
-  .page5 .wrapper .page_item figcaption:hover abbr em {
-    opacity: 1;
-    top: -32px;
-  }
-  .page5 .wrapper .page_item figcaption .description h2 {
-    font-size: 40px;
-  }
-  .page5 .wrapper .page_item figcaption .description h3 {
-    font-size: 14px;
-  }
-}
 @media screen and (max-width: 895px) {
   .header_nav {
     width: 100%;
@@ -3921,8 +3457,14 @@ have a fixed width and height (but it's not required).
   #content-wrapper {
     height: auto;
   }
+  #content-wrapper.company {
+    height: 100%;
+  }
   #content-wrapper #wrapper {
     height: auto;
+  }
+  #content-wrapper #wrapper.company {
+    height: 100%;
   }
 
   #scroll_me {
@@ -4344,8 +3886,14 @@ have a fixed width and height (but it's not required).
   #content-wrapper {
     height: auto;
   }
+  #content-wrapper.company {
+    height: 100%;
+  }
   #content-wrapper #wrapper {
     height: auto;
+  }
+  #content-wrapper #wrapper.company {
+    height: 100%;
   }
 
   #scroll_me {
@@ -4767,8 +4315,14 @@ have a fixed width and height (but it's not required).
   #content-wrapper {
     height: auto;
   }
+  #content-wrapper.company {
+    height: 100%;
+  }
   #content-wrapper #wrapper {
     height: auto;
+  }
+  #content-wrapper #wrapper.company {
+    height: 100%;
   }
 
   #scroll_me {
@@ -5190,8 +4744,14 @@ have a fixed width and height (but it's not required).
   #content-wrapper {
     height: auto;
   }
+  #content-wrapper.company {
+    height: 100%;
+  }
   #content-wrapper #wrapper {
     height: auto;
+  }
+  #content-wrapper #wrapper.company {
+    height: 100%;
   }
 
   #scroll_me {
@@ -5631,211 +5191,48 @@ have a fixed width and height (but it's not required).
     display: none;
   }
 }
-@keyframes animationFrames {
-  0% {
-    left: 0px;
-    top: 0px;
-    opacity: 1;
-    transform: rotate(0deg) scaleX(1) scaleY(1);
+@media screen and (max-width: 1200px) {
+  /* columns:begin */
+  #content-wrapper {
+    height: 100%;
   }
 
-  20% {
-    left: 8px;
-    top: -1px;
-    transform: rotate(2deg);
+  #wrapper {
+    height: 100%;
   }
 
-  40% {
-    left: -15px;
-    top: -1px;
-    transform: rotate(-2deg);
+  .columns {
+    width: 600px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 !important;
   }
 
-  60% {
-    left: 10px;
-    transform: rotate(2deg);
+  .company_page {
+    min-width: 600px;
   }
 
-  80% {
-    left: -6px;
-    transform: rotate(-1deg);
+  #section-1 {
+    background: url(../img/company/slide1_ipad_bg.jpg) no-repeat center center;
+    -ms-background-size: cover;
+    -opera-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  #section-1 video {
+    display: none;
   }
 
-  100% {
-    left: 3px;
-    top: 2px;
-    opacity: 1;
-    transform: rotate(2deg) scaleX(1) scaleY(1);
+  #section-3 {
+    background: url(../img/company/slide3_ipad_bg.jpg) no-repeat center center;
+    -ms-background-size: cover;
+    -opera-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
   }
-}
-
-@-moz-keyframes animationFrames {
-  0% {
-    left: 0px;
-    top: 0px;
-    opacity: 1;
-    -moz-transform: rotate(0deg) scaleX(1) scaleY(1);
-  }
-
-  20% {
-    left: 8px;
-    top: -1px;
-    -moz-transform: rotate(2deg);
-  }
-
-  40% {
-    left: -15px;
-    top: -1px;
-    -moz-transform: rotate(-2deg);
-  }
-
-  60% {
-    left: 10px;
-    -moz-transform: rotate(2deg);
-  }
-
-  80% {
-    left: -6px;
-    -moz-transform: rotate(-1deg);
-  }
-
-  100% {
-    left: 3px;
-    top: 2px;
-    opacity: 1;
-    -moz-transform: rotate(2deg) scaleX(1) scaleY(1);
-  }
-}
-
-@-webkit-keyframes animationFrames {
-  0% {
-    left: 0px;
-    top: 0px;
-    opacity: 1;
-    -webkit-transform: rotate(0deg) scaleX(1) scaleY(1);
-  }
-
-  20% {
-    left: 8px;
-    top: -1px;
-    -webkit-transform: rotate(2deg);
-  }
-
-  40% {
-    left: -15px;
-    top: -1px;
-    -webkit-transform: rotate(-2deg);
-  }
-
-  60% {
-    left: 10px;
-    -webkit-transform: rotate(2deg);
-  }
-
-  80% {
-    left: -6px;
-    -webkit-transform: rotate(-1deg);
-  }
-
-  100% {
-    left: 3px;
-    top: 2px;
-    opacity: 1;
-    -webkit-transform: rotate(2deg) scaleX(1) scaleY(1);
-  }
-}
-
-@-o-keyframes animationFrames {
-  0% {
-    left: 0px;
-    top: 0px;
-    opacity: 1;
-    -o-transform: rotate(0deg) scaleX(1) scaleY(1);
-  }
-
-  20% {
-    left: 8px;
-    top: -1px;
-    -o-transform: rotate(2deg);
-  }
-
-  40% {
-    left: -15px;
-    top: -1px;
-    -o-transform: rotate(-2deg);
-  }
-
-  60% {
-    left: 10px;
-    -o-transform: rotate(2deg);
-  }
-
-  80% {
-    left: -6px;
-    -o-transform: rotate(-1deg);
-  }
-
-  100% {
-    left: 3px;
-    top: 2px;
-    opacity: 1;
-    -o-transform: rotate(2deg) scaleX(1) scaleY(1);
-  }
-}
-
-@-ms-keyframes animationFrames {
-  0% {
-    left: 0px;
-    top: 0px;
-    opacity: 1;
-    -ms-transform: rotate(0deg) scaleX(1) scaleY(1);
-  }
-
-  20% {
-    left: 8px;
-    top: -1px;
-    -ms-transform: rotate(2deg);
-  }
-
-  40% {
-    left: -15px;
-    top: -1px;
-    -ms-transform: rotate(-2deg);
-  }
-
-  60% {
-    left: 10px;
-    -ms-transform: rotate(2deg);
-  }
-
-  80% {
-    left: -6px;
-    -ms-transform: rotate(-1deg);
-  }
-
-  100% {
-    left: 3px;
-    top: 2px;
-    opacity: 1;
-    -ms-transform: rotate(2deg) scaleX(1) scaleY(1);
-  }
-}
-
-@-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(180deg);
-  }
-}
-
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(180deg);
-  }
-}
-
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+  #section-3 video {
+    display: none;
   }
 }

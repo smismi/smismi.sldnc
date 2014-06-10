@@ -6,16 +6,16 @@
 	position: relative;
 	overflow: hidden;
 }
-
-html.ipad #section-1 .first_slide {
-	padding: 118px 0 55px;
-	background: url(../images/company/slide_1/nature-animals-forest.jpg) no-repeat center center fixed;
-	-ms-background-size: cover;
-	-opera-background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-}
+//
+//html.ipad #section-1 .first_slide {
+//	padding: 118px 0 55px;
+//	background: url(../images/company/slide_1/nature-animals-forest.jpg) no-repeat center center fixed;
+//	-ms-background-size: cover;
+//	-opera-background-size: cover;
+//	-webkit-background-size: cover;
+//	-moz-background-size: cover;
+//	background-size: cover;
+//}
 
 /* video */
 #section-1 .first_slide video {
@@ -28,9 +28,9 @@ html.ipad #section-1 .first_slide {
 	height: auto;
 }
 
-html.ipad #section-1 .first_slide video {
-	display: none;
-}
+//html.ipad #section-1 .first_slide video {
+//	display: none;
+//}
 
 /* text wrapper */
 #section-1 .first_slide > div {
