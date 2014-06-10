@@ -1103,13 +1103,11 @@ var SL = {
 
 
 
-
 		$('#visualtour')
 			.on('jcarousel:create', function() {
 				var element = $(this),
 					width = element.innerWidth();
 				element.jcarousel('items').css('width', width + 'px');
-
 
 
 			})
@@ -1118,7 +1116,7 @@ var SL = {
 					width = element.innerWidth();
 				element.jcarousel('items').css('width', width + 'px');
 
-				$('.jcarousel-pagination').jcarouselPagination('reload');
+				$('#controls .jcarousel-pagination').jcarouselPagination('reload');
 
 			})
 			.jcarousel({
@@ -1137,6 +1135,7 @@ var SL = {
 
 
 			});
+
 
 		$("#visualtour_link").on("click", function(){
 			SL.visualtourInit();
@@ -1164,15 +1163,6 @@ var SL = {
 	visualtourInit: function() {
 
 
-		SL.visualTweenMax = TweenMax.to("#colormark", 1,
-			{
-				width: 142,
-				startAt:{width: 0},
-				onComplete: function(){
-
-				}
-			});
-
 		if ($(document).height() > $(window).height()) {
 			var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
 			$('html').addClass('noscroll').css('top',-scrollTop);
@@ -1181,147 +1171,133 @@ var SL = {
 			$("#visualtour_wrapper").css({left: "0%"});
 
 
-					$('.jcarousel-control-prev')
-						.on('jcarouselcontrol:active', function() {
+		$('.jcarousel-control-prev')
+			.on('jcarouselcontrol:active', function () {
 
-							$(this).removeClass('inactive');
-							$("div", this).html();
-							$("div", this).html("1111");
-						})
-						.on('jcarouselcontrol:inactive', function() {
-							$(this).addClass('inactive');
-						})
-						.jcarouselControl({
-							target: '-=1',
-							wrap: 'circular'
-						});
+				$(this).removeClass('inactive');
+				$("div", this).html();
+				$("div", this).html("1111");
+			})
+			.on('jcarouselcontrol:inactive', function () {
+				$(this).addClass('inactive');
+			})
+			.jcarouselControl({
+				target: '-=1',
+				wrap: 'circular'
+			});
 
-					$('.jcarousel-control-next')
-						.on('jcarouselcontrol:active', function() {
+		$('.jcarousel-control-next')
+			.on('jcarouselcontrol:active', function () {
 
 
+				$(this).removeClass('inactive');
+				$("div", this).html();
+				$("div", this).html("222");
 
-							$(this).removeClass('inactive');
-							$("div", this).html();
-							$("div", this).html("222");
+			})
+			.on('jcarouselcontrol:inactive', function () {
+				$(this).addClass('inactive');
 
-						})
-						.on('jcarouselcontrol:inactive', function() {
-							$(this).addClass('inactive');
+			})
+			.jcarouselControl({
+				target: '+=1'
+			});
 
-						})
-						.jcarouselControl({
-							target: '+=1'
-						});
+		$('#controls .jcarousel-control-start').toggleClick(
+			function () {
 
-					$('#controls .jcarousel-control-start').toggleClick(
-						function () {
-
-							$("em", this).removeClass("active").eq(1).addClass("active");
+				$("em", this).removeClass("active").eq(1).addClass("active");
 //					$('.jcarousel').jcarouselAutoscroll('stop');
 
-							SL.tween.pause()
+				SL.tween.pause()
 
-						}, function () {
-							$("em", this).removeClass("active").eq(0).addClass("active");
+			}, function () {
+				$("em", this).removeClass("active").eq(0).addClass("active");
 //					$('.jcarousel').jcarouselAutoscroll('start');
 
-							SL.tween.play()
+				SL.tween.play()
+			}
+
+		);
+
+
+		$('#controls .jcarousel-pagination')
+
+
+			.on('jcarouselpagination:active', 'div', function () {
+
+				var _this = this;
+				var last = false;
+
+				if ($(_this).is(":last-child")) last = true;
+
+
+				$(this).addClass('active');
+				$(this).nextAll().removeClass("prevs").find("i").css({width: 0});
+				$(this).prevAll().addClass("prevs").find("i").css({width: 142});
+
+
+				var tick = $("i", _this);
+
+				TweenMax.killTweensOf(".tour_control_item i");
+
+				SL.tween = TweenMax.fromTo(tick, 5,
+					{
+						width: 0
+					},
+					{
+						width: (last ? 0 : 135),
+						ease: "linear",
+						onComplete: function () {
+
+							$('.jcarousel').jcarousel('scroll', last ? 0 : '+=1');
+
 						}
-
-					);
-
-
-					$('#controls .jcarousel-pagination')
+					});
 
 
-						.on('jcarouselpagination:active', 'div', function() {
-
-							var _this = this;
-							var last = false;
-
-							if($(_this).is(":last-child")) last = true;
-
-
-							$(this).addClass('active');
-							$(this).nextAll().removeClass("prevs").find("i").css({width: 0});
-							$(this).prevAll().addClass("prevs").find("i").css({width: 142});
+			})
+			.on('jcarouselpagination:inactive', 'div', function () {
+				$(this).removeClass('active');
+			})
+			.on('jcarouselpagination:createend', function (event, carousel) {
 
 
+			})
+			.on('jcarouselpagination:reloadend', function () {
+				TweenMax.killTweensOf(".tour_control_item i");
+			})
+			.jcarouselPagination({
+				item: function (page, carouselItems) {
 
 
-							var tick = $("i", _this);
+					return '<div class="tour_control_item"><em/><i/><b>' + carouselItems.data('title') + '</b><abbr style="background-image: url(' + carouselItems.data('imgurl') + ')"/></div>';
+				},
+				event: 'click',
+				method: 'scroll'
 
-							TweenMax.killTweensOf(".tour_control_item i");
-
-							SL.tween = TweenMax.fromTo(tick, 5,
-								{
-									width: 0
-								},
-								{
-									width: (last ? 0 : 135) ,
-									ease: "linear",
-									onComplete: function () {
-
-										$('.jcarousel').jcarousel('scroll', last ? 0 : '+=1');
-
-									}
-								});
+			});
 
 
+		$('#descriptions')
+			.on('jcarouselpagination:active', 'div', function () {
+
+				$(this).addClass('active');
 
 
-						})
-						.on('jcarouselpagination:inactive', 'div', function() {
-							$(this).removeClass('active');
- 						})
-						.on('jcarouselpagination:createend', function(event, carousel) {
+			})
+			.on('jcarouselpagination:inactive', 'div', function () {
+				$(this).removeClass('active');
+			})
+			.jcarouselPagination({
+				item: function (page, carouselItems) {
+					return '<div class="descriptions_wrapper"><h1>' + carouselItems.data("title") + '</h1><h2>' + carouselItems.data("descr") + '</h2></div>';
+				}
 
-
-
-						})
-						.on('jcarouselpagination:reloadend', function() {
-							TweenMax.killTweensOf(".tour_control_item i");
-						})
-						.jcarouselPagination({
-							item: function(page, carouselItems) {
-
-
-								return '<div class="tour_control_item"><em/><i/><b>' + carouselItems.data('title') + '</b><abbr style="background-image: url(' + carouselItems.data('imgurl') + ')"/></div>';
-							},
-							event:  'click',
-							method: 'scroll'
-
-						});
-
-
-
-					$('#descriptions')
-						.on('jcarouselpagination:active', 'div', function() {
-
-							$(this).addClass('active');
-
-
-
-						})
-						.on('jcarouselpagination:inactive', 'div', function() {
-							$(this).removeClass('active');
-						})
-						.jcarouselPagination({
-							item: function(page, carouselItems) {
-								return '<div class="descriptions_wrapper"><h1>' + carouselItems.data("title") + '</h1><h2>' + carouselItems.data("descr") + '</h2></div>';
-							}
-
-						});
+			});
 
 
 //					$("#visualtour, #visualtour li, #visualtour li > img").css({"width": $(window).width(), "height": $(window).height()})
-
-
-
-
-
-
 
 
 	},
