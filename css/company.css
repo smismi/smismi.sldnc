@@ -2110,7 +2110,9 @@ html.ipad #section-3 .third_slide .play_button {
 #descriptions .descriptions_wrapper {
   overflow: hidden;
   display: none;
+  max-width: 700px;
   padding: 0 250px 20px 250px;
+  margin: 0 auto;
 }
 #descriptions .descriptions_wrapper h1 {
   font: 45px/0.94em 'oksana_text_narrowbold', sans-serif;
