@@ -1090,7 +1090,49 @@ var SL = {
 
 
 
+			},
+			afterShow: function(){
+
+				var org_h = this.origHeight;
+				var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+
+
+				console.log(org_h);
+
+ 				$(window).on("scroll", function(e){
+
+
+
+				    if (org_h >  $(window).height() - 60) {
+
+
+						if ($(window).scrollTop() < scrollTop - 60) {
+
+							$(window).scrollTop(scrollTop - 60);
+
+						}
+						if ($(window).scrollTop() > scrollTop + org_h - $(window).height() + 100) {
+
+							$(window).scrollTop(scrollTop + org_h - $(window).height() + 100);
+
+						}
+
+				    } else {
+
+					    $(window).scrollTop(scrollTop);
+
+				    }
+
+
+
+				})
+
+
+			},
+			beforeClose: function(){
+				$(window).off("scroll")
 			}
+
 		});
 
 

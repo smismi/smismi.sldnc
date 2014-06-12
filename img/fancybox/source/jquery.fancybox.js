@@ -70,15 +70,15 @@
 
 			autoResize  : true,
 			autoCenter  : !isTouch,
-			fitToView   : true,
+			fitToView   : false,
 			aspectRatio : false,
 			topRatio    : 0.5,
 			leftRatio   : 0.5,
 
-			scrolling : 'auto', // 'auto', 'yes' or 'no'
+			scrolling : 'no', // 'auto', 'yes' or 'no'
 			wrapCSS   : '',
 
-			arrows     : true,
+			arrows     : false,
 			closeBtn   : true,
 			closeClick : false,
 			nextClick  : false,

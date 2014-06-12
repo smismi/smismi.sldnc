@@ -2660,7 +2660,7 @@ html.ipad #section-4 .fourth_slide .columns .col a:hover > div {
 }
 
 #section-5 .fifth_slide .one_vacancy span:nth-child(3) {
-  font: 13px/24px bold 'oksana_text_narrowLtIt', sans-serif;
+  font: 14px/1.4 bold 'oksana_text_narrowlight', sans-serif;
   color: #442111;
   display: block;
   margin: 0 0 10px;
@@ -2736,7 +2736,7 @@ html.ipad #section-4 .fourth_slide .columns .col a:hover > div {
   color: #e60e64;
   margin: 20px 40px 0px 40px;
 }
-.vac_block .vac_block_item {
+.vac_block .vac_block_item_col {
   width: 50%;
   float: left;
 }
@@ -2752,7 +2752,7 @@ html.ipad #section-4 .fourth_slide .columns .col a:hover > div {
   padding-right: 20px;
 }
 .vac_block .vac_block_item ul li:before {
-  content: "-";
+  content: "- ";
 }
 .vac_block .vac_block_item:before {
   content: "";
@@ -5269,5 +5269,213 @@ have a fixed width and height (but it's not required).
     -ms-transform: scale(0.4) translate(-620px, 0);
     -o-transform: scale(0.4) translate(-620px, 0);
     transform: scale(0.4) translate(-620px, 0);
+  }
+}
+@keyframes animationFrames {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  20% {
+    left: 8px;
+    top: -1px;
+    transform: rotate(2deg);
+  }
+
+  40% {
+    left: -15px;
+    top: -1px;
+    transform: rotate(-2deg);
+  }
+
+  60% {
+    left: 10px;
+    transform: rotate(2deg);
+  }
+
+  80% {
+    left: -6px;
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    left: 3px;
+    top: 2px;
+    opacity: 1;
+    transform: rotate(2deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-moz-keyframes animationFrames {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -moz-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  20% {
+    left: 8px;
+    top: -1px;
+    -moz-transform: rotate(2deg);
+  }
+
+  40% {
+    left: -15px;
+    top: -1px;
+    -moz-transform: rotate(-2deg);
+  }
+
+  60% {
+    left: 10px;
+    -moz-transform: rotate(2deg);
+  }
+
+  80% {
+    left: -6px;
+    -moz-transform: rotate(-1deg);
+  }
+
+  100% {
+    left: 3px;
+    top: 2px;
+    opacity: 1;
+    -moz-transform: rotate(2deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  20% {
+    left: 8px;
+    top: -1px;
+    -webkit-transform: rotate(2deg);
+  }
+
+  40% {
+    left: -15px;
+    top: -1px;
+    -webkit-transform: rotate(-2deg);
+  }
+
+  60% {
+    left: 10px;
+    -webkit-transform: rotate(2deg);
+  }
+
+  80% {
+    left: -6px;
+    -webkit-transform: rotate(-1deg);
+  }
+
+  100% {
+    left: 3px;
+    top: 2px;
+    opacity: 1;
+    -webkit-transform: rotate(2deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -o-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  20% {
+    left: 8px;
+    top: -1px;
+    -o-transform: rotate(2deg);
+  }
+
+  40% {
+    left: -15px;
+    top: -1px;
+    -o-transform: rotate(-2deg);
+  }
+
+  60% {
+    left: 10px;
+    -o-transform: rotate(2deg);
+  }
+
+  80% {
+    left: -6px;
+    -o-transform: rotate(-1deg);
+  }
+
+  100% {
+    left: 3px;
+    top: 2px;
+    opacity: 1;
+    -o-transform: rotate(2deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -ms-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  20% {
+    left: 8px;
+    top: -1px;
+    -ms-transform: rotate(2deg);
+  }
+
+  40% {
+    left: -15px;
+    top: -1px;
+    -ms-transform: rotate(-2deg);
+  }
+
+  60% {
+    left: 10px;
+    -ms-transform: rotate(2deg);
+  }
+
+  80% {
+    left: -6px;
+    -ms-transform: rotate(-1deg);
+  }
+
+  100% {
+    left: 3px;
+    top: 2px;
+    opacity: 1;
+    -ms-transform: rotate(2deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 }

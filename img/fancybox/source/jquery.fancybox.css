@@ -99,12 +99,26 @@
 
 .fancybox-close {
 	position: absolute;
-	top: 0px;
-	right: 0px;
-	width: 36px;
-	height: 36px;
+	top: 15px;
+	right: 15px;
 	cursor: pointer;
 	z-index: 8040;
+
+	width: 52px;
+	height: 52px;
+	transition: background 1s ease;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEOEVDNzcxNkU5MzgxMUUzQUMyMDhFNUZGMzM3MjJDMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEOEVDNzcxN0U5MzgxMUUzQUMyMDhFNUZGMzM3MjJDMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjBBQjZBOTA5RTkwODExRTNBQzIwOEU1RkYzMzcyMkMxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjBBQjZBOTBBRTkwODExRTNBQzIwOEU1RkYzMzcyMkMxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Q2+RHQAAAoJJREFUeNqkVU1rE1EUffdlOjOhXypakX7Ypk0bI4kgSIxdCl10JerWhVJEBNf+ChduBEUFNwqKunHjQhGkYmnB9ANsamOsgtpQrdTazEwm73peadHGJG3s28zcc885M++8yQ2NGXv9DDs3frK6KLa5Gkle6yb7vEyzczlK9oUdFLi3HUPo72of7WfkWV1JsbMYl/bNjPCav7M/WKvhLjKe9JA5mFLOkCvUbUOD+mZc5X/EZfABgOEc+/1bNdxDxsv9ZB5LqfxpT/Ajjcn1pgZgPNBKZmIf1U383auwJHipdjKTWrduKEqFBcHPJlU+2UJGBOQZQGYFQ7ON6tLgRSdUvl/rNjytlO0LHp1STryJAq3YVhZQQwmlAXimmYw28A6DP/LPFsq9RlHw9FvlRIJEzd1kZUmI3RrX1xBq4DvRj4I3VTaXSoEpwXNp5YZgFAhLK2MISvRIaxaCwIzywuhnK4Zd7SRYiFyG3VCB2UnI+tc+s4u6F4Zfqp7gZp8MjH3WL75W4t7ZTFPVVGeITD/YRI0j6tdRk6ge9dx6xjWbSkHtOksYSGTbqU95RrldqKlXWu91vybTgKBIn7SmkWUeGXZiywtrUSzMstvhMa9EpJXWvC2Z4pSPHJB2aplVLsteCEZLJZRl4B2YavPgjWt+VdM6QccPSnsYQyXzib0+QCsVduihHwZvFvxXWlfW1BR0IiaDT79y4c1nLsRWx0H15Wse+GNaB/3JDaaWoDOYUA8/svdinv2E+PMJbbYU+Mk59p7rCWcJeXY1wqCQl2LSvvqO3ceLXDz1PwP6G/sD+EHcPyTtW5PKaaRRo6WA4O8scXFou38nTSSvd5F17rcAAwAbByL4OdRqBgAAAABJRU5ErkJggg==	");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+ 
+
+.fancybox-close:hover {
+	transition: background 0.1s ease;
+	-webkit-animation: spin .6s linear;
+	-moz-animation: spin .6s linear;
+	animation: spin .6s linear;
 }
 
 .fancybox-nav {
@@ -264,7 +278,7 @@
 	   only screen and (min--moz-device-pixel-ratio: 1.5),
 	   only screen and (min-device-pixel-ratio: 1.5){
 
-	#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+	#fancybox-loading, .fancybox-prev span, .fancybox-next span {
 		background-image: url('fancybox_sprite@2x.png');
 		background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
 	}
