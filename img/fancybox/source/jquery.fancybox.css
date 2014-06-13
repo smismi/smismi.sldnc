@@ -36,6 +36,8 @@
 
 .fancybox-opened {
 	z-index: 8030;
+	margin-bottom: 20px;
+
 }
 
 /*.fancybox-opened .fancybox-skin {*/
@@ -112,7 +114,7 @@
 	background-repeat: no-repeat;
 }
 
- 
+
 
 .fancybox-close:hover {
 	transition: background 0.1s ease;

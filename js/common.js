@@ -1099,32 +1099,6 @@ var SL = {
 			},
 			afterShow: function(){
 
-				SL.org_h = this.origHeight;
-				var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
-
-//				if (SL.org_h >  $(window).height() - 60) {
-
-
- 				    $(window).on("scroll", function(e){
-
-
-
-
-
-						if ($(window).scrollTop() < scrollTop - 60) {
-
-							$(window).scrollTop(scrollTop - 60);
-
-						}
-						if ($(window).scrollTop() > scrollTop + SL.org_h - $(window).height() + 100) {
-
-							$(window).scrollTop(scrollTop + SL.org_h - $(window).height() + 100);
-
-						}
-
-
-
-			        })
 
 
 				if ($(document).height() > $(window).height()) {
