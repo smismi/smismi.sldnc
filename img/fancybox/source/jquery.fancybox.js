@@ -69,7 +69,7 @@
 			autoWidth  : false,
 
 			autoResize  : true,
-			autoCenter  : !isTouch,
+			autoCenter  : false,
 			fitToView   : false,
 			aspectRatio : false,
 			topRatio    : 0.5,
@@ -78,7 +78,7 @@
 			scrolling : 'no', // 'auto', 'yes' or 'no'
 			wrapCSS   : '',
 
-			arrows     : false,
+			arrows     : true,
 			closeBtn   : true,
 			closeClick : false,
 			nextClick  : false,
@@ -148,7 +148,7 @@
 
 			// Properties for each animation type
 			// Opening fancyBox
-			openEffect  : 'fade', // 'elastic', 'fade' or 'none'
+			openEffect  : 'elastic', // 'elastic', 'fade' or 'none'
 			openSpeed   : 250,
 			openEasing  : 'swing',
 			openOpacity : true,
@@ -882,7 +882,7 @@
 			}
 
 			// Build the neccessary markup
-			coming.wrap = $(coming.tpl.wrap).addClass('fancybox-' + (isTouch ? 'mobile' : 'desktop') + ' fancybox-type-' + type + ' fancybox-tmp ' + coming.wrapCSS).appendTo( coming.parent || 'body' );
+			coming.wrap = $(coming.tpl.wrap).addClass('fancybox-' + (isTouch ? 'mobile' : 'desktop') + ' fancybox-type-' + type + ' fancybox-tmp ' + coming.wrapCSS).appendTo( "#popupplace" );
 
 			$.extend(coming, {
 				skin  : $('.fancybox-skin',  coming.wrap),
@@ -1454,12 +1454,12 @@
 			if (current.arrows && F.group.length > 1) {
 				if (current.loop || current.index > 0) {
 					$(".fancybox-prev").remove();
-					$(current.tpl.prev).appendTo("body").bind('click.fb', F.prev);
+					$(current.tpl.prev).appendTo("#popupplace").bind('click.fb', F.prev);
 				}
 
 				if (current.loop || current.index < F.group.length - 1) {
 					$(".fancybox-next").remove();
-					$(current.tpl.next).appendTo("body").bind('click.fb', F.next);
+					$(current.tpl.next).appendTo("#popupplace").bind('click.fb', F.next);
 				}
 			}
 

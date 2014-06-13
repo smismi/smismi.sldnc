@@ -130,6 +130,17 @@ html.noscroll {
   width: 100%;
 }
 
+#popupplace {
+  display: none;
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 44444;
+}
+
 #cup {
   position: absolute;
   bottom: 15px;
@@ -850,12 +861,16 @@ section.catalog {
   margin-top: 0px;
 }
 
+body {
+  background: #fff;
+}
+
 .catalog .wrapper {
   padding-top: 60px;
   background: #ffd3ab url(../img/catalog/catalog-page1.jpg) repeat 50% 100%;
 }
 .catalog .item_list_wrapper {
-  max-width: 1202px;
+  max-width: 1204px;
   margin: 0 auto;
   text-align: center;
 }
@@ -867,6 +882,7 @@ section.catalog {
 }
 .catalog .item_list_wrapper .item_list {
   display: inline-block;
+  text-align: left;
 }
 .catalog .item_list_wrapper .item_list .item_list_item {
   position: relative;
@@ -893,12 +909,12 @@ section.catalog {
   height: 78px;
   line-height: 78px;
   font-size: 14px;
+  text-align: center;
 }
 .catalog .item_list_wrapper .item_list .item_list_item .item_name {
   background: rgba(246, 246, 246, 0.8);
   position: absolute;
   bottom: 0;
-  border: 1px solid red;
   left: 0;
   right: 0;
   padding: 27px;
@@ -914,7 +930,6 @@ section.catalog {
   background: rgba(228, 14, 99, 0.7);
   position: absolute;
   bottom: 0;
-  border: 1px solid red;
   left: 0;
   right: 0;
   padding: 27px;
@@ -923,6 +938,43 @@ section.catalog {
 }
 .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name .item_class {
   color: #fff;
+}
+
+.prod_block h1 {
+  font-size: 19px;
+  color: #442111;
+  margin: 40px 40px 0px 40px;
+}
+.prod_block h2 {
+  font-size: 35px;
+  color: #e60e64;
+  margin: 20px 40px 0px 40px;
+}
+.prod_block .prod_block_item_col {
+  width: 50%;
+  float: left;
+}
+.prod_block .prod_block_item ul {
+  font-family: 'oksana_text_narrowdemibold';
+  font-style: italic;
+  color: #442111;
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+.prod_block .prod_block_item ul li {
+  line-height: 23px;
+  padding-right: 20px;
+}
+.prod_block .prod_block_item ul li:before {
+  content: "- ";
+}
+.prod_block .prod_block_item:before {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 1px;
+  background: #e70c66;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1200px) {

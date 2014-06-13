@@ -37,6 +37,7 @@ var SL = {
 			SL.initHeaderMenu();
 			SL.initPager();
 			SL.initScrollTop();
+			SL.popupCatalogInit();
 
 
 
@@ -1028,6 +1029,9 @@ var SL = {
 
 
 	},
+
+
+
 	popupInit: function() {
 		var vacancies;
 
@@ -1047,6 +1051,8 @@ var SL = {
 			prevEffect : 'none',
 
 			beforeLoad   : function() {
+
+				$("#popupplace").show();
 
 				var _content = this.content;
 				var descr = this.element.data('descr');
@@ -1121,32 +1127,97 @@ var SL = {
 			        })
 
 
-//				} else {
-
-//
-//					SL.scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
-//					$('html').addClass('noscroll').css('top',-SL.scrollTop);
-
-//			    }
+				if ($(document).height() > $(window).height()) {
+					var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+					$('html').addClass('noscroll').css('top',-scrollTop);
+				}
 
 
 
 			},
 			beforeClose: function(){
 
-//				if (SL.org_h >  $(window).height() - 60) {
+				$("#popupplace").hide();
 
-					$(window).off("scroll");
-
-//				}
-//				else {
-//					var scrollTop = parseInt($('html').css('top'));
-//					$('html').removeClass('noscroll');
-//					$('html,body').scrollTop(-scrollTop);
-
-//				}
+				var scrollTop = parseInt($('html').css('top'));
+				$('html').removeClass('noscroll');
+				$('html,body').scrollTop(-scrollTop);
 
 
+			}
+
+		});
+
+
+
+
+	},
+	popupCatalogInit: function() {
+
+
+
+		var prods;
+
+		$.getJSON( "js/catalog.json", function( data ) {
+			prods = data;
+		});
+
+		$(".fancybox").fancybox({
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			},
+			openEffect  : 'none',
+			closeEffect : 'none',
+			nextEffect : 'none',
+			prevEffect : 'none',
+
+			beforeLoad   : function() {
+
+				$("#popupplace").show();
+
+
+				var _content = this.content;
+				var descr = this.element.data('descr');
+
+				var _p = prods[descr];
+
+				if (!_p)  {
+					$("h1", this.content).html("Ошибка данных");
+					return;
+				}
+
+
+				$("#prod_img", this.content).attr({"src": _p.img});
+				$("h1", this.content).html(_p.type);
+				$("h2", this.content).html(_p.name);
+				$("h3", this.content).html(_p.description);
+				$("h4", this.content).html(_p.weight);
+				$("h5", this.content).html(_p.quantity);
+				$("h6", this.content).html(_p.bestBefore);
+
+
+
+			},
+			afterShow: function(){
+
+				if ($(document).height() > $(window).height()) {
+					var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+					$('html').addClass('noscroll').css('top',-scrollTop);
+				}
+
+
+			},
+			beforeClose: function(){
+
+
+
+				$("#popupplace").hide();
+
+				var scrollTop = parseInt($('html').css('top'));
+				$('html').removeClass('noscroll');
+				$('html,body').scrollTop(-scrollTop);
 			}
 
 		});
