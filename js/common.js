@@ -1096,7 +1096,7 @@ var SL = {
 				SL.org_h = this.origHeight;
 				var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
 
-				if (SL.org_h >  $(window).height() - 60) {
+//				if (SL.org_h >  $(window).height() - 60) {
 
 
  				    $(window).on("scroll", function(e){
@@ -1121,30 +1121,30 @@ var SL = {
 			        })
 
 
-				} else {
+//				} else {
 
+//
+//					SL.scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+//					$('html').addClass('noscroll').css('top',-SL.scrollTop);
 
-					SL.scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
-					$('html').addClass('noscroll').css('top',-SL.scrollTop);
-
-			    }
+//			    }
 
 
 
 			},
 			beforeClose: function(){
 
-				if (SL.org_h >  $(window).height() - 60) {
+//				if (SL.org_h >  $(window).height() - 60) {
 
 					$(window).off("scroll");
 
-				}
-				else {
-					var scrollTop = parseInt($('html').css('top'));
-					$('html').removeClass('noscroll');
-					$('html,body').scrollTop(-scrollTop);
+//				}
+//				else {
+//					var scrollTop = parseInt($('html').css('top'));
+//					$('html').removeClass('noscroll');
+//					$('html,body').scrollTop(-scrollTop);
 
-				}
+//				}
 
 
 			}
