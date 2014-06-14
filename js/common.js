@@ -59,6 +59,7 @@ var SL = {
 			SL.initParallax6();
 			SL.videoControl();
 			SL.popupInit();
+			SL.newsPopupInit();
 			SL.initScrollTop();
 			SL.prepareVisualTour();
 
@@ -1039,7 +1040,7 @@ var SL = {
 			vacancies = data;
 		});
 
-		$(".fancybox").fancybox({
+		$(".fifth_slide .fancybox").fancybox({
 			helpers: {
 				overlay: {
 					locked: false
@@ -1057,42 +1058,115 @@ var SL = {
 				var _content = this.content;
 				var descr = this.element.data('descr');
 
-				var _v = vacancies[descr];
+				var _n = vacancies[descr];
 
-				if (!_v)  {
+				if (!_n)  {
 					$("h1", this.content).html("Ошибка данных");
 					return;
 				}
 
 
 
-				$("h1", this.content).html(_v.type);
-				$("h2", this.content).html(_v.position);
+				$("h1", this.content).html(_n.type);
+				$("h2", this.content).html(_n.position);
 				$("#con > ul", _content).html("");
 				$("#req > ul", _content).html("");
 				$("#res > ul", _content).html("");
 
 
-				$("#sal > ul", this.content).html($("<li>").append(_v.salary));
+				$("#sal > ul", this.content).html($("<li>").append(_n.salary));
 
 
-				$.each(_v.conditions, function( index, value ) {
+				$.each(_n.conditions, function( index, value ) {
 					$("#con > ul", _content).append(
 						$("<li>").append(value)
 					);
 				})
 
-				$.each(_v.requirments, function( index, value ) {
+				$.each(_n.requirments, function( index, value ) {
 					$("#req > ul", _content).append(
 						$("<li>").append(value)
 					);
 				})
 
-				$.each(_v.responsibility, function( index, value ) {
+				$.each(_n.responsibility, function( index, value ) {
 					$("#res > ul", _content).append(
 						$("<li>").append(value)
 					);
 				})
+
+
+
+			},
+			afterShow: function(){
+
+
+
+				if ($(document).height() > $(window).height()) {
+					var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+					$('html').addClass('noscroll').css('top',-scrollTop);
+				}
+
+
+
+			},
+			beforeClose: function(){
+
+				$("#popupplace").hide();
+
+				var scrollTop = parseInt($('html').css('top'));
+				$('html').removeClass('noscroll');
+				$('html,body').scrollTop(-scrollTop);
+
+
+			}
+
+		});
+
+
+
+
+	},
+	newsPopupInit: function() {
+
+		return;
+		$.getJSON( "js/news.json", function( data ) {
+			news = data;
+		});
+
+		$(".sixth_slide .fancybox").fancybox({
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			},
+			openEffect  : 'none',
+			closeEffect : 'none',
+			nextEffect : 'none',
+			prevEffect : 'none',
+
+			beforeLoad   : function() {
+
+				$("#popupplace").show();
+
+				var _content = this.content;
+				var descr = this.element.data('descr');
+
+				var _n = news[descr];
+
+				if (!_n)  {
+					$("h1", this.content).html("Ошибка данных");
+					return;
+				}
+
+
+
+				$("h1", this.content).html(_n.title);
+				$("h2", this.content).html(_n.text);
+				$("h3", this.content).html(_n.date);
+				$("h4", this.content).html(_n.type);
+
+
 
 
 
@@ -1432,21 +1506,21 @@ var SL = {
 
 		$(".close_menu", SL.mainmenu).on('touchstart click', function(){
 
-			if (SL.header.hasClass("menu_visible")) {
+			if (SL.header.hasClass("menu_nisible")) {
 
 
 
 
-				if ($(".item_link", SL.mobilemenu).hasClass("submenu_visible")) {
+				if ($(".item_link", SL.mobilemenu).hasClass("submenu_nisible")) {
 
-					var _sub =  $(".item_link.submenu_visible", SL.mobilemenu).data("target");
+					var _sub =  $(".item_link.submenu_nisible", SL.mobilemenu).data("target");
 
 
-					$(".item_link", SL.mobilemenu).removeClass("submenu_visible");
+					$(".item_link", SL.mobilemenu).removeClass("submenu_nisible");
 
 					$(".subnav-" + _sub, SL.mobilemenu).slideUp(function(){
 
-						SL.header.removeClass("menu_visible");
+						SL.header.removeClass("menu_nisible");
 
 						SL.mobilemenu.css({"right": "-100%"});
 
@@ -1455,7 +1529,7 @@ var SL = {
 				} else {
 
 
-					SL.header.removeClass("menu_visible");
+					SL.header.removeClass("menu_nisible");
 
 					SL.mobilemenu.css({"right": "-100%"});
 
@@ -1466,7 +1540,7 @@ var SL = {
 
 			} else {
 
-				SL.header.addClass("menu_visible");
+				SL.header.addClass("menu_nisible");
 
 				SL.mobilemenu.css({"right": "0%"});
 
@@ -1484,21 +1558,21 @@ var SL = {
 		});
 		$(".item_menu", SL.mainmenu).on('touchstart click', function(){
 
-			if (SL.header.hasClass("menu_visible")) {
+			if (SL.header.hasClass("menu_nisible")) {
 
 
 
 
-				if ($(".item_link", SL.mobilemenu).hasClass("submenu_visible")) {
+				if ($(".item_link", SL.mobilemenu).hasClass("submenu_nisible")) {
 
-					var _sub =  $(".item_link.submenu_visible", SL.mobilemenu).data("target");
+					var _sub =  $(".item_link.submenu_nisible", SL.mobilemenu).data("target");
 
 
-					$(".item_link", SL.mobilemenu).removeClass("submenu_visible");
+					$(".item_link", SL.mobilemenu).removeClass("submenu_nisible");
 
 					$(".subnav-" + _sub, SL.mobilemenu).slideUp(function(){
 
-						SL.header.removeClass("menu_visible");
+						SL.header.removeClass("menu_nisible");
 
 						SL.mobilemenu.css({"left": "-100%"});
 
@@ -1507,7 +1581,7 @@ var SL = {
 				} else {
 
 
-					SL.header.removeClass("menu_visible");
+					SL.header.removeClass("menu_nisible");
 
 					SL.mobilemenu.css({"right": "-100%"});
 
@@ -1518,7 +1592,7 @@ var SL = {
 
 			} else {
 
-				SL.header.addClass("menu_visible");
+				SL.header.addClass("menu_nisible");
 
 				SL.mobilemenu.css({"right": "0%"});
 
@@ -1539,16 +1613,16 @@ var SL = {
 
 			var _sub =  $(this).data("target");
 
-			if ($(this).hasClass("submenu_visible")) {
+			if ($(this).hasClass("submenu_nisible")) {
 
-				$(this).removeClass("submenu_visible");
+				$(this).removeClass("submenu_nisible");
 
 				$(".subnav-" + _sub, SL.mobilemenu).slideUp();
 
 			} else {
 
 
-				$(this).addClass("submenu_visible");
+				$(this).addClass("submenu_nisible");
 
 				$(".subnav-" + _sub, SL.mobilemenu).slideDown();
 
@@ -1568,9 +1642,9 @@ var SL = {
 
 					if (!_sub) return;
 
-					if ($(this).hasClass("submenu_visible")) {
+					if ($(this).hasClass("submenu_nisible")) {
 
-						$(this).removeClass("submenu_visible");
+						$(this).removeClass("submenu_nisible");
 
 						$(".subnav-" + _sub).css({"max-height": 0});
 
@@ -1578,7 +1652,7 @@ var SL = {
 					} else {
 
 
-						$(this).addClass("submenu_visible");
+						$(this).addClass("submenu_nisible");
 
 						$(".subnav-" + _sub).css({"max-height": 1200});
 
@@ -1594,7 +1668,7 @@ var SL = {
 				var _sub =  $(this).data("target");
 				if (!_sub) return;
 
-				$(this).removeClass("submenu_visible");
+				$(this).removeClass("submenu_nisible");
 
 				$(".subnav-" + _sub).css({"max-height": 0});
 
@@ -1683,5 +1757,40 @@ $.fn.toggleClick = function(){
 };
 
 
+// Simple JavaScript Templating
+// John Resig - http://ejohn.org/ - MIT Licensed
+(function(){
+	var cache = {};
+
+	this.tmpl = function tmpl(str, data){
+		// Figure out if we're getting a template, or if we need to
+		// load the template - and be sure to cache the result.
+		var fn = !/\W/.test(str) ?
+			cache[str] = cache[str] ||
+				tmpl(document.getElementById(str).innerHTML) :
+
+			// Generate a reusable function that will serve as a template
+			// generator (and which will be cached).
+			new Function("obj",
+				"var p=[],print=function(){p.push.apply(p,arguments);};" +
+
+					// Introduce the data as local variables using with(){}
+					"with(obj){p.push('" +
+
+					// Convert the template into pure JavaScript
+					str
+						.replace(/[\r\t\n]/g, " ")
+						.split("<%").join("\t")
+						.replace(/((^|%>)[^\t]*)'/g, "$1\r")
+						.replace(/\t=(.*?)%>/g, "',$1,'")
+						.split("\t").join("');")
+						.split("%>").join("p.push('")
+						.split("\r").join("\\'")
+					+ "');}return p.join('');");
+
+		// Provide some basic currying to the user
+		return data ? fn( data ) : fn;
+	};
+})();
 
 

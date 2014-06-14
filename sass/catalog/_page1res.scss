@@ -1,0 +1,26 @@
+@include max-screen(1200px) {
+	/* columns:begin */
+
+
+	#content-wrapper {
+		height: 100%;
+	}
+
+	#wrapper {
+		height: 100%;
+	}
+
+
+	.item_list {
+		width: 602px;
+		position: relative;
+		margin: 0 auto;
+		padding: 0 !important;
+	}
+	.item_list {
+		min-width: 600px;
+	}
+
+
+
+}
