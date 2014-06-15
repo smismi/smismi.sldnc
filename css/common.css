@@ -1806,25 +1806,25 @@ section.catalog {
   font-size: 54px;
 }
 .cup-spinner.spining {
-  -webkit-animation-name: spin;
+  -webkit-animation-name: spin3;
   -webkit-animation-duration: 600ms;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -moz-animation-name: spin;
+  -moz-animation-name: spin3;
   -moz-animation-duration: 600ms;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -ms-animation-name: spin;
+  -ms-animation-name: spin3;
   -ms-animation-duration: 600ms;
   -ms-animation-iteration-count: infinite;
   -ms-animation-timing-function: linear;
-  animation-name: spin;
+  animation-name: spin3;
   animation-duration: 600ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-@-ms-keyframes spin {
+@-ms-keyframes spin3 {
   from {
     -ms-transform: rotate(0deg);
   }
@@ -1834,7 +1834,7 @@ section.catalog {
   }
 }
 
-@-moz-keyframes spin {
+@-moz-keyframes spin3 {
   from {
     -moz-transform: rotate(0deg);
   }
@@ -1844,7 +1844,7 @@ section.catalog {
   }
 }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes spin3 {
   from {
     -webkit-transform: rotate(0deg);
   }
@@ -1854,7 +1854,7 @@ section.catalog {
   }
 }
 
-@keyframes spin {
+@keyframes spin3 {
   from {
     transform: rotate(0deg);
   }
