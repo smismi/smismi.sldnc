@@ -1204,10 +1204,26 @@ var SL = {
 
 
 
+
 		var prods;
+		var types = ["konfets", "zefir"]
+		var prods = {};
 
 		$.getJSON( "js/catalog.json", function( data ) {
-			prods = data;
+
+
+			for ( var i = 0; i < types.length; i++ ) {
+//				prods.push(data[types[i]]);
+
+
+				for ( var j = 0; j < data[types[i]].length; j++ ) {
+
+
+					prods["item_id_" + data[types[i]][j].item_id] = data[types[i]][j]
+				}
+			}
+
+
 		});
 
 		$(".fancybox").fancybox({
@@ -1227,9 +1243,10 @@ var SL = {
 
 
 				var _content = this.content;
-				var descr = this.element.data('descr');
+				var item_id = this.element.data('id');
 
-				var _p = prods[descr];
+
+				var _p = prods["item_id_" + item_id];
 
 				if (!_p)  {
 					$("h1", this.content).html("Ошибка данных");
@@ -1237,13 +1254,13 @@ var SL = {
 				}
 
 
-				$("#prod_img", this.content).attr({"src": _p.img});
+				$("#prod_img", this.content).attr({"src": "img/catalog/items/big/" + _p.img + ".png"});
 				$("h1", this.content).html(_p.type);
 				$("h2", this.content).html(_p.name);
 				$("h3", this.content).html(_p.description);
-				$("h4", this.content).html(_p.weight);
-				$("h5", this.content).html(_p.quantity);
-				$("h6", this.content).html(_p.bestBefore);
+				$(".weight", this.content).html("<em class='fonted icon'></em>" + _p.weight);
+				$(".boxing", this.content).html("<em class='fonted icon'></em>" + _p.boxing);
+				$(".beforeend", this.content).html("<em class='fonted icon'></em>" + _p.bestBefore);
 
 
 

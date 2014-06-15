@@ -121,6 +121,14 @@
 	-webkit-animation: spin .6s linear;
 	-moz-animation: spin .6s linear;
 	animation: spin .6s linear;
+
+	display: block;
+	width: 52px;
+	height: 52px;
+	transition: all 0.1s ease;
+	-webkit-animation:spin .6s linear;
+	-moz-animation:spin .6s linear;
+	animation:spin .6s linear;
 }
 
 .fancybox-nav {

@@ -11,20 +11,34 @@ body {
 
 	.wrapper {
 
- 		padding-top: 60px;
+ 		padding: 121px 0;
 		text-align: center;
 		background:#ffd3ab url(../img/catalog/catalog-page1.jpg) repeat 50% 100%;
 
 		.header_title {
-			font: 68px/0.94em 'oksana_text_narrowbold', sans-serif;
+			font: 68px/1 'oksana_text_narrowbold', sans-serif;
 			color: #fff;
-			margin: .3em 0;
+			margin: 45px 0;
+			position: relative;
+
+
+			&:after {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 57px;
+				height: 0px;
+				top: 101px;
+				left: 50%;
+				margin-left: -28px;
+				border-top: 1px solid #fff;
+			}
 
 		}
 
 		.header_description {
 			color: #fff;
-			font: 33px/1.70em 'oksana_text_narrowdemibold', sans-serif;
+			font: 37px/1.70em 'oksana_text_narrowdemibold', sans-serif;
 			margin: 0;
 			padding: 0 65px;
 		}
@@ -124,6 +138,7 @@ body {
 					padding: 27px;
 					text-align: left;
 					text-decoration: none;
+					font-size: 20px;
 
 					.item_class {
 						display: block;
@@ -132,6 +147,8 @@ body {
 						//top: 26px;
 						//left: 26px;
 						transition: all 0.8s ease;
+						line-height: 1.8;
+						font-size: 14px;
 
 					}
 
@@ -224,24 +241,105 @@ body {
 
 .prod_block {
 
+	font: 13px/1.4em 'oksana_text_narrowbold', sans-serif;
 
+	text-align: center;
 
 	h1 {
 		font-size: 19px;
 		color: #442111;
 		margin: 40px 40px 0px 40px;
+		text-align: left;
+
 
 	}
 	h2 {
 		font-size: 35px;
 		color: #e60e64;
 		margin: 20px 40px 0px 40px;
+		text-align: left;
+
 
 	}
-	.prod_block_item_col {
 
-		width: 50%;
-		float: left;
+	h3 {
+		color: #442111;
+		margin: 20px 40px 0px 40px;
+		text-align: left;
+		font-size: 16px;
+		font-family: oksana_text_narrowdemibold;
+		font-style: normal;
+
+		&:before {
+			content: "";
+			display: block;
+			width: 35px;
+			height: 1px;
+			background: $cherry;
+			margin-top: 40px;
+			margin-bottom: 30px;
+		}
+	}
+
+	.descr {
+		text-align: left;
+		margin: 10px 40px 30px 40px;
+		font-size: 16px;
+		font-family: oksana_text_narrowdemibold;
+		font-style: normal;
+
+		em {
+			display: inline-block;
+			width:56px;
+			padding-top: 4px;
+			margin-top: 3px;
+
+			&:before {
+				line-height: 1.6;
+			}
+
+		}
+
+		.weight {
+
+			em {
+
+				&:before {
+					content: "\e608";
+					font-size: 20px;
+					color: $cherry;
+				}
+			}
+
+		}
+
+
+		.boxing {
+			em {
+				&:before {
+					content: "\e607";
+					font-size: 15px;
+					color: $cherry;
+
+
+				}
+
+			}
+
+		}
+
+
+		.beforeend {
+			em {
+				&:before {
+					content: "\e609";
+					font-size: 16px;
+					color: $cherry;
+
+				}
+			}
+			color: $cherry;
+		}
 
 	}
 	.prod_block_item {
@@ -272,6 +370,12 @@ body {
 			background: $cherry;
 			margin-bottom: 20px;
 		}
+	}
+	.prod_img {
+		height: 400px;
+		position: relative;
+		margin: 0 auto;
+
 	}
 
 

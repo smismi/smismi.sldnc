@@ -867,18 +867,30 @@ body {
 }
 
 .catalog .wrapper {
-  padding-top: 60px;
+  padding: 121px 0;
   text-align: center;
   background: #ffd3ab url(../img/catalog/catalog-page1.jpg) repeat 50% 100%;
 }
 .catalog .wrapper .header_title {
-  font: 68px/0.94em 'oksana_text_narrowbold', sans-serif;
+  font: 68px/1 'oksana_text_narrowbold', sans-serif;
   color: #fff;
-  margin: .3em 0;
+  margin: 45px 0;
+  position: relative;
+}
+.catalog .wrapper .header_title:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 57px;
+  height: 0px;
+  top: 101px;
+  left: 50%;
+  margin-left: -28px;
+  border-top: 1px solid #fff;
 }
 .catalog .wrapper .header_description {
   color: #fff;
-  font: 33px/1.70em 'oksana_text_narrowdemibold', sans-serif;
+  font: 37px/1.70em 'oksana_text_narrowdemibold', sans-serif;
   margin: 0;
   padding: 0 65px;
 }
@@ -945,11 +957,14 @@ body {
   padding: 27px;
   text-align: left;
   text-decoration: none;
+  font-size: 20px;
 }
 .catalog .item_list_wrapper .item_list .item_list_item .item_name .item_class {
   display: block;
   color: rgba(228, 14, 99, 0.7);
   transition: all 0.8s ease;
+  line-height: 1.8;
+  font-size: 14px;
 }
 .catalog .item_list_wrapper .item_list .item_list_item .item_name .item_name_wrap {
   display: table-cell;
@@ -999,19 +1014,72 @@ body {
   font-size: 27px;
 }
 
+.prod_block {
+  font: 13px/1.4em 'oksana_text_narrowbold', sans-serif;
+  text-align: center;
+}
 .prod_block h1 {
   font-size: 19px;
   color: #442111;
   margin: 40px 40px 0px 40px;
+  text-align: left;
 }
 .prod_block h2 {
   font-size: 35px;
   color: #e60e64;
   margin: 20px 40px 0px 40px;
+  text-align: left;
 }
-.prod_block .prod_block_item_col {
-  width: 50%;
-  float: left;
+.prod_block h3 {
+  color: #442111;
+  margin: 20px 40px 0px 40px;
+  text-align: left;
+  font-size: 16px;
+  font-family: oksana_text_narrowdemibold;
+  font-style: normal;
+}
+.prod_block h3:before {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 1px;
+  background: #e70c66;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.prod_block .descr {
+  text-align: left;
+  margin: 10px 40px 30px 40px;
+  font-size: 16px;
+  font-family: oksana_text_narrowdemibold;
+  font-style: normal;
+}
+.prod_block .descr em {
+  display: inline-block;
+  width: 56px;
+  padding-top: 4px;
+  margin-top: 3px;
+}
+.prod_block .descr em:before {
+  line-height: 1.6;
+}
+.prod_block .descr .weight em:before {
+  content: "\e608";
+  font-size: 20px;
+  color: #e70c66;
+}
+.prod_block .descr .boxing em:before {
+  content: "\e607";
+  font-size: 15px;
+  color: #e70c66;
+}
+.prod_block .descr .beforeend {
+  color: #e70c66;
+}
+.prod_block .descr .beforeend em:before {
+  content: "\e609";
+  font-size: 16px;
+  color: #e70c66;
 }
 .prod_block .prod_block_item ul {
   font-family: 'oksana_text_narrowdemibold';
@@ -1034,6 +1102,11 @@ body {
   height: 1px;
   background: #e70c66;
   margin-bottom: 20px;
+}
+.prod_block .prod_img {
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 895px) {
@@ -3108,5 +3181,213 @@ body {
 
   .item_list {
     min-width: 600px;
+  }
+}
+@keyframes animationFrames {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  20% {
+    left: 8px;
+    top: -1px;
+    transform: rotate(2deg);
+  }
+
+  40% {
+    left: -15px;
+    top: -1px;
+    transform: rotate(-2deg);
+  }
+
+  60% {
+    left: 10px;
+    transform: rotate(2deg);
+  }
+
+  80% {
+    left: -6px;
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    left: 3px;
+    top: 2px;
+    opacity: 1;
+    transform: rotate(2deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-moz-keyframes animationFrames {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -moz-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  20% {
+    left: 8px;
+    top: -1px;
+    -moz-transform: rotate(2deg);
+  }
+
+  40% {
+    left: -15px;
+    top: -1px;
+    -moz-transform: rotate(-2deg);
+  }
+
+  60% {
+    left: 10px;
+    -moz-transform: rotate(2deg);
+  }
+
+  80% {
+    left: -6px;
+    -moz-transform: rotate(-1deg);
+  }
+
+  100% {
+    left: 3px;
+    top: 2px;
+    opacity: 1;
+    -moz-transform: rotate(2deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  20% {
+    left: 8px;
+    top: -1px;
+    -webkit-transform: rotate(2deg);
+  }
+
+  40% {
+    left: -15px;
+    top: -1px;
+    -webkit-transform: rotate(-2deg);
+  }
+
+  60% {
+    left: 10px;
+    -webkit-transform: rotate(2deg);
+  }
+
+  80% {
+    left: -6px;
+    -webkit-transform: rotate(-1deg);
+  }
+
+  100% {
+    left: 3px;
+    top: 2px;
+    opacity: 1;
+    -webkit-transform: rotate(2deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -o-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  20% {
+    left: 8px;
+    top: -1px;
+    -o-transform: rotate(2deg);
+  }
+
+  40% {
+    left: -15px;
+    top: -1px;
+    -o-transform: rotate(-2deg);
+  }
+
+  60% {
+    left: 10px;
+    -o-transform: rotate(2deg);
+  }
+
+  80% {
+    left: -6px;
+    -o-transform: rotate(-1deg);
+  }
+
+  100% {
+    left: 3px;
+    top: 2px;
+    opacity: 1;
+    -o-transform: rotate(2deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -ms-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  20% {
+    left: 8px;
+    top: -1px;
+    -ms-transform: rotate(2deg);
+  }
+
+  40% {
+    left: -15px;
+    top: -1px;
+    -ms-transform: rotate(-2deg);
+  }
+
+  60% {
+    left: 10px;
+    -ms-transform: rotate(2deg);
+  }
+
+  80% {
+    left: -6px;
+    -ms-transform: rotate(-1deg);
+  }
+
+  100% {
+    left: 3px;
+    top: 2px;
+    opacity: 1;
+    -ms-transform: rotate(2deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 }
