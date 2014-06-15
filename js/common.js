@@ -1569,21 +1569,21 @@ var SL = {
 
 		$(".close_menu", SL.mainmenu).on('touchstart click', function(){
 
-			if (SL.header.hasClass("menu_nisible")) {
+			if (SL.header.hasClass("menu_visible")) {
 
 
 
 
-				if ($(".item_link", SL.mobilemenu).hasClass("submenu_nisible")) {
+				if ($(".item_link", SL.mobilemenu).hasClass("submenu_visible")) {
 
-					var _sub =  $(".item_link.submenu_nisible", SL.mobilemenu).data("target");
+					var _sub =  $(".item_link.submenu_visible", SL.mobilemenu).data("target");
 
 
-					$(".item_link", SL.mobilemenu).removeClass("submenu_nisible");
+					$(".item_link", SL.mobilemenu).removeClass("submenu_visible");
 
 					$(".subnav-" + _sub, SL.mobilemenu).slideUp(function(){
 
-						SL.header.removeClass("menu_nisible");
+						SL.header.removeClass("menu_visible");
 
 						SL.mobilemenu.css({"right": "-100%"});
 
@@ -1592,7 +1592,7 @@ var SL = {
 				} else {
 
 
-					SL.header.removeClass("menu_nisible");
+					SL.header.removeClass("menu_visible");
 
 					SL.mobilemenu.css({"right": "-100%"});
 
@@ -1603,7 +1603,7 @@ var SL = {
 
 			} else {
 
-				SL.header.addClass("menu_nisible");
+				SL.header.addClass("menu_visible");
 
 				SL.mobilemenu.css({"right": "0%"});
 
@@ -1621,21 +1621,21 @@ var SL = {
 		});
 		$(".item_menu", SL.mainmenu).on('touchstart click', function(){
 
-			if (SL.header.hasClass("menu_nisible")) {
+			if (SL.header.hasClass("menu_visible")) {
 
 
 
 
-				if ($(".item_link", SL.mobilemenu).hasClass("submenu_nisible")) {
+				if ($(".item_link", SL.mobilemenu).hasClass("submenu_visible")) {
 
-					var _sub =  $(".item_link.submenu_nisible", SL.mobilemenu).data("target");
+					var _sub =  $(".item_link.submenu_visible", SL.mobilemenu).data("target");
 
 
-					$(".item_link", SL.mobilemenu).removeClass("submenu_nisible");
+					$(".item_link", SL.mobilemenu).removeClass("submenu_visible");
 
 					$(".subnav-" + _sub, SL.mobilemenu).slideUp(function(){
 
-						SL.header.removeClass("menu_nisible");
+						SL.header.removeClass("menu_visible");
 
 						SL.mobilemenu.css({"left": "-100%"});
 
@@ -1644,7 +1644,7 @@ var SL = {
 				} else {
 
 
-					SL.header.removeClass("menu_nisible");
+					SL.header.removeClass("menu_visible");
 
 					SL.mobilemenu.css({"right": "-100%"});
 
@@ -1655,7 +1655,7 @@ var SL = {
 
 			} else {
 
-				SL.header.addClass("menu_nisible");
+				SL.header.addClass("menu_visible");
 
 				SL.mobilemenu.css({"right": "0%"});
 
@@ -1676,16 +1676,16 @@ var SL = {
 
 			var _sub =  $(this).data("target");
 
-			if ($(this).hasClass("submenu_nisible")) {
+			if ($(this).hasClass("submenu_visible")) {
 
-				$(this).removeClass("submenu_nisible");
+				$(this).removeClass("submenu_visible");
 
 				$(".subnav-" + _sub, SL.mobilemenu).slideUp();
 
 			} else {
 
 
-				$(this).addClass("submenu_nisible");
+				$(this).addClass("submenu_visible");
 
 				$(".subnav-" + _sub, SL.mobilemenu).slideDown();
 
@@ -1705,9 +1705,9 @@ var SL = {
 
 					if (!_sub) return;
 
-					if ($(this).hasClass("submenu_nisible")) {
+					if ($(this).hasClass("submenu_visible")) {
 
-						$(this).removeClass("submenu_nisible");
+						$(this).removeClass("submenu_visible");
 
 						$(".subnav-" + _sub).css({"max-height": 0});
 
@@ -1715,7 +1715,7 @@ var SL = {
 					} else {
 
 
-						$(this).addClass("submenu_nisible");
+						$(this).addClass("submenu_visible");
 
 						$(".subnav-" + _sub).css({"max-height": 1200});
 
@@ -1731,7 +1731,7 @@ var SL = {
 				var _sub =  $(this).data("target");
 				if (!_sub) return;
 
-				$(this).removeClass("submenu_nisible");
+				$(this).removeClass("submenu_visible");
 
 				$(".subnav-" + _sub).css({"max-height": 0});
 
