@@ -11,16 +11,31 @@ body {
 
 	.wrapper {
 
- 		padding: 121px 0;
+		&.sladosti {
+			background:#ffd3ab url(../img/catalog/catalog-page1.jpg) repeat 50% 100%;
+		}
+
+		&.choko {
+			background:#ffd3ab url(../img/catalog/catalog-page2.jpg) repeat 50% 100%;
+		}
+
+		&.nua {
+			background:#ffd3ab url(../img/catalog/catalog-page3.jpg) repeat 50% 100%;
+		}
+
+ 		padding: 141px 0 91px 0;
 		text-align: center;
-		background:#ffd3ab url(../img/catalog/catalog-page1.jpg) repeat 50% 100%;
 
 		.header_title {
 			font: 68px/1 'oksana_text_narrowbold', sans-serif;
 			color: #fff;
-			margin: 45px 0;
+			margin-bottom: 45px;
 			position: relative;
 
+			.tm {
+				font-size: 30px;
+				vertical-align: top;
+			}
 
 			&:after {
 				content: '';

@@ -352,6 +352,7 @@ section.catalog {
   padding: 0 0;
   font-family: oksana_text_narrowbold;
   color: #442111;
+  border: 12px solid red;
 }
 .section-big-title h1 {
   position: relative;
@@ -867,15 +868,27 @@ body {
 }
 
 .catalog .wrapper {
-  padding: 121px 0;
+  padding: 141px 0 91px 0;
   text-align: center;
+}
+.catalog .wrapper.sladosti {
   background: #ffd3ab url(../img/catalog/catalog-page1.jpg) repeat 50% 100%;
+}
+.catalog .wrapper.choko {
+  background: #ffd3ab url(../img/catalog/catalog-page2.jpg) repeat 50% 100%;
+}
+.catalog .wrapper.nua {
+  background: #ffd3ab url(../img/catalog/catalog-page3.jpg) repeat 50% 100%;
 }
 .catalog .wrapper .header_title {
   font: 68px/1 'oksana_text_narrowbold', sans-serif;
   color: #fff;
-  margin: 45px 0;
+  margin-bottom: 45px;
   position: relative;
+}
+.catalog .wrapper .header_title .tm {
+  font-size: 30px;
+  vertical-align: top;
 }
 .catalog .wrapper .header_title:after {
   content: '';
