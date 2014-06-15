@@ -970,7 +970,7 @@ body {
   display: table-cell;
   height: 52px;
   vertical-align: middle;
-  transition: all 0.8s ease;
+  transition: all 0.2s ease;
   text-decoration: none;
   color: #442111;
 }

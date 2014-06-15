@@ -3,7 +3,7 @@
 		[
 			{
 				"item_id": "1",
- 				"img" : "Zay-Zay",
+ 				"img" : "Lakti_yogurt-konfetki_klubnica_i_slivki",
 				"type" : "конфеты",
 
  				"new_mark" : "true",
@@ -85,7 +85,7 @@
 				"type" : "конфеты",
 
  				"new_mark" : "",
-				"doubled": "",
+				"doubled": "doubled",
 
 				"name" : "Milk Мама",
 				"description" : "Единственные на российском рынке мультимолочные конфеты из детской молочной смеси",
