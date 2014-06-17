@@ -1249,66 +1249,54 @@ var SL = {
 	popupCatalogInit: function() {
 
 
-
-
-		var prods;
-		var types = ["konfets", "zefir"]
-		var prods = {};
-
-		$.getJSON( "js/catalog.json", function( data ) {
-
-
-			for ( var i = 0; i < types.length; i++ ) {
-//				prods.push(data[types[i]]);
-
-
-				for ( var j = 0; j < data[types[i]].length; j++ ) {
-
-
-					prods["item_id_" + data[types[i]][j].item_id] = data[types[i]][j]
-				}
-			}
-
-
-		});
-
 		$(".fancybox").fancybox({
 			helpers: {
 				overlay: {
 					locked: false
 				}
 			},
-			openEffect  : 'none',
-			closeEffect : 'none',
-			nextEffect : 'none',
-			prevEffect : 'none',
-
+			openEffect  : 'elastic',
+			closeEffect : 'elastic',
+			nextEffect : 'elastic',
+			prevEffect : 'elastic',
+			padding : 0,
+			margin  : 0,
+			width: 800,
+			maxWidth: ($(window).height() < 800) ? '100%' : 800 ,
+			autoHeight: true,
 			beforeLoad   : function() {
 
 				$("#popupplace").show();
 
 
-				var _content = this.content;
-				var item_id = this.element.data('id');
+
+				$.extend(this, {
+					type    : 'html',
+					content : '<img src="' + this.href + '" alt="">' + '<h2> ' +
+						$(this.element).data("title")
+						+
+						'</h2><h3>' +
+						$(this.element).data("description")
+						+
+						'</h3><div class="descr"> <p class="weight"><em class="fonted icon"></em>' +
+						$(this.element).data("weight")
+						+
+						'</p><p class="boxing"><em class="fonted icon"></em>' +
+						$(this.element).data("boxing")
+						+
+						'</p><p class="beforeend"><em class="fonted icon"></em>' +
+						$(this.element).data("bestbefore")
+						+
+						'</p></div>'
+
+				});
 
 
-				var _p = prods["item_id_" + item_id];
 
-				if (!_p)  {
-					$("h1", this.content).html("Ошибка данных");
-					return;
-				}
+			},
+			afterLoad: function () {
 
-
-				$("#prod_img", this.content).attr({"src": "img/catalog/items/big/" + _p.img + ".png"});
-				$("h1", this.content).html(_p.type);
-				$("h2", this.content).html(_p.name);
-				$("h3", this.content).html(_p.description);
-				$(".weight", this.content).html("<em class='fonted icon'></em>" + _p.weight);
-				$(".boxing", this.content).html("<em class='fonted icon'></em>" + _p.boxing);
-				$(".beforeend", this.content).html("<em class='fonted icon'></em>" + _p.bestBefore);
-
-
+				this.inner.addClass("prod_block");
 
 			},
 			afterShow: function(){
@@ -1329,7 +1317,40 @@ var SL = {
 				var scrollTop = parseInt($('html').css('top'));
 				$('html').removeClass('noscroll');
 				$('html,body').scrollTop(-scrollTop);
-			}
+			},
+//
+//			onCancel     : function(){
+//
+//				console.log("onCancel")
+//			}, // If canceling
+//			beforeLoad   : function(){
+//
+//				console.log("beforeLoad")
+//			}, // Before loading
+//			afterLoad    : function(){
+//
+//				console.log("afterLoad")
+//			}, // After loading
+//			beforeShow   : function(){
+//
+//				console.log('beforeShow')
+//			}, // Before changing in current item
+//			afterShow    : function(){
+//
+//				console.log('afterShow')
+//			}, // After opening
+//			beforeChange : function(){
+//
+//				console.log('beforeChange')
+//			}, // Before changing gallery item
+//			beforeClose  : function(){
+//
+//				console.log('beforeClose')
+//			}, // Before closing
+//			afterClose   : function(){
+//
+//				console.log('afterClose')
+//			}  // After closing
 
 		});
 

@@ -210,7 +210,8 @@
 	overflow: hidden;
 	display: none;
 	z-index: 8010;
-	background: url('fancybox_overlay.png');
+	background: url('fancybox_overlay.gif');
+
 }
 
 .fancybox-overlay-fixed {
