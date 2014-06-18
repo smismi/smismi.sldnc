@@ -1,0 +1,90 @@
+@mixin company-mobile() {
+
+
+	.company_page {
+		height: 100%;
+	}
+	.company_page {
+		min-width: 100%;
+	}
+
+	.columns {
+		width: 100%;
+		max-width: 1200px;
+		min-width: 100%;
+		position: relative;
+		margin: 0 auto;
+		padding: 0 !important;
+	}
+
+	#section-4 .fourth_slide .columns .col a {
+		width: 50%;
+		border-right: 0;
+	}
+
+	#section-4 .fourth_slide .columns .col a > div {
+		width: 100%;
+	}
+
+	#section-5 .fifth_slide .one_vacancy {
+		width: auto;
+		display: block;
+
+	}
+
+	#section-5 .fifth_slide .one_vacancy_more {
+		width: auto;
+		display: block;
+		margin: -70px 0 0 0;
+	}
+
+	.columns .col_2 {
+		width: 100%;
+	}
+
+	#section-6 .sixth_slide .columns > div a div:nth-child(2) {
+		width: 50%;
+ 	}
+
+	#section-6 .sixth_slide .columns > div a.first {
+		background: url(../img/news/1.jpg) 0 0;
+		background-size: cover;
+	}
+	#section-6 .sixth_slide .columns > div a.second {
+		background: url(../img/news/2.jpg) 0 0;
+		background-size: cover;
+	}
+	#section-6 .sixth_slide .columns > div a.third {
+		background: url(../img/news/3.jpg) 0 0;
+		background-size: cover;
+	}
+
+}
+
+
+@include iphone3()  {
+
+	@include company-mobile();
+
+}
+@include iphone4()  {
+
+	@include company-mobile();
+
+}
+
+
+@include iphone5()  {
+
+	@include company-mobile();
+
+}
+
+
+@include  max-screen(750px)  {
+
+	@include company-mobile();
+
+}
+
+
