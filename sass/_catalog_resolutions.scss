@@ -2,9 +2,10 @@
 
 @import "mainmenu-fluid";
 
+@import "common-mobile";
 
-@import "mobile";
-@import "ipads";
+@import "catalog/catalog-mobile";
+//@import "ipads";
 
 
 @import "catalog/page1res";

@@ -1,0 +1,132 @@
+@mixin catalog-mobile() {
+
+	.catalog {
+
+
+		.wrapper {
+
+
+			padding: 81px 0 31px 0;
+
+			.header_title {
+				font: 32px/1 'oksana_text_narrowbold', sans-serif;
+				.tm {
+					font-size: 14px;
+				}
+
+			}
+
+			.header_description {
+			//	color: #fff;
+				font: 17px/1.70em 'oksana_text_narrowdemibold', sans-serif;
+			//	margin: 0;
+			//	padding: 0 65px;
+			}
+
+
+		}
+
+
+		.item_list_wrapper {
+
+
+
+			.block_title {
+				font: 32px/1.4 'oksana_text_narrowbold', sans-serif;
+				//color: $brown;
+				//padding: 44px 65px 0 65px;
+
+			}
+
+			.block_description {
+				//color: $brown;
+				font: 17px/1.4 'oksana_text_narrowdemibold', sans-serif;
+				//margin: 0;
+				//padding: 0 65px 64px 65px;
+			}
+
+
+
+			.item_list {
+
+				width: 100%;
+				min-width: 100%;
+
+				.item_list_item {
+
+
+					width: 49%;
+
+					&.doubled {
+						width: 99%;
+
+					}
+
+
+					.item_class {
+
+
+					}
+
+					.new_mark {
+						top: 12px;
+						left: 12px;
+						width: 48px;
+						height: 48px;
+						line-height: 48px;
+						font-size: 9px;
+
+					}
+
+					.prod_img {
+
+						//line-height: 367px;
+
+						img {
+							max-height: 100%;
+							max-width: 100%;
+
+						}
+					}
+
+				}
+
+			}
+		}
+
+
+
+	}
+
+
+
+
+}
+
+
+@include iphone3()  {
+
+	@include catalog-mobile();
+
+}
+@include iphone4()  {
+
+	@include catalog-mobile();
+
+}
+
+
+@include iphone5()  {
+
+	@include catalog-mobile();
+
+}
+
+
+@include  max-screen(750px)  {
+
+	@include catalog-mobile();
+
+}
+
+
