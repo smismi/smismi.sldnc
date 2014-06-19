@@ -10,9 +10,9 @@
 				//margin: 0 auto 12px auto;
 				//letter-spacing: 1px;
 
-				h1 {
-					font-size: $headerfont;
-				}
+				//h1 {
+					//font-size: $headerfont;
+				//}
 				@if $dev_mode {
 					border: $i + px dotted purple;
 				}
@@ -365,26 +365,26 @@
 	//@mixin page5($i, $figurewidth, $headerfont, $iconpadding, $h1,  $h2,  $h3,    $h1_hover,  $h2_hover, $h3_hover, $hName, $hDesrc, $figcaptionHeight) {
 
 @include scrn(1000px, 1100px, null, null) {
-	@include page5(45, 300px,        64px,        80px,         83px, 80px, 137px, 83px,       80px,      137px,     45px,   15px,    250px,              -62px,     -32px,   70px , 280px);
+	@include page5(45, 300px,        64px,        80px,         83px, 80px, 137px, 23px,       80px,      137px,     45px,   15px,    250px,              -62px,     -32px,   70px , 280px);
 }
 @include scrn(800px, 1000px, null, null) {
-	@include page5(45, 260px,        54px,        80px,         83px, 80px, 137px, 83px,       80px,      137px,     40px,   14px,    250px,             -62px,     -32px,    70px, 280px);
+	@include page5(45, 260px,        54px,        80px,         83px, 80px, 137px, 23px,       80px,      137px,     40px,   14px,    250px,             -62px,     -32px,    70px, 280px);
 }
 @include scrn(750px, 800px, null, null) {
-	@include page5(45, 240px,        54px,        80px,         83px, 80px, 137px, 83px,       80px,      137px,     40px,   14px,    250px,             -62px,     -32px,    70px, 280px);
+	@include page5(45, 240px,        54px,        80px,         83px, 80px, 137px, 23px,       80px,      137px,     40px,   14px,    250px,             -62px,     -32px,    70px, 280px);
 }
 
 
-
-@include scrn(null, null, 0px, 650px) {
-	@include page5(25, null, 		 44px, 		  40px,         53px, 50px, 77px,  53px,       50px,      77px,      35px,   13px,    200px,             -82px,     -52px,    40px, 180px);
-}
-
-@include scrn(null, null, 650px, 750px) {
-	@include page5(45, null,        54px,        60px,         63px, 60px, 87px, 63px,       60px,      87px,     40px,   14px,    250px,             -82px,     -52px,    50px, 220px);
-}
-@include scrn(null, null, 750px, 850px) {
-	@include page5(45, null,        64px,        80px,         73px, 70px, 127px, 73px,       70px,      127px,     40px,   14px,    250px,             -62px,     -32px,    60px, 280px);
-}
-
+//
+//@include scrn(null, null, 0px, 650px) {
+//	@include page5(25, null, 		 44px, 		  40px,         53px, 50px, 77px,  53px,       50px,      77px,      35px,   13px,    200px,             -82px,     -52px,    40px, 180px);
+//}
+//
+//@include scrn(null, null, 650px, 750px) {
+//	@include page5(45, null,        54px,        60px,         63px, 60px, 87px, 63px,       60px,      87px,     40px,   14px,    250px,             -82px,     -52px,    50px, 220px);
+//}
+//@include scrn(null, null, 750px, 850px) {
+//	@include page5(45, null,        64px,        80px,         73px, 70px, 127px, 73px,       70px,      127px,     40px,   14px,    250px,             -62px,     -32px,    60px, 280px);
+//}
+//
 

@@ -344,16 +344,13 @@ section.catalog {
 }
 
 .section-big-title {
-  position: absolute;
-  top: 50%;
   width: 100%;
-  margin: -140px auto 0 auto;
   text-align: center;
   padding: 0 0;
   font-family: oksana_text_narrowbold;
-  color: #442111;
 }
 .section-big-title h1 {
+  color: #352fff !important;
   position: relative;
   font-size: 74px;
   line-height: 1.1;
@@ -365,10 +362,12 @@ section.catalog {
   line-height: 1.625;
   max-width: 460px;
   margin: 0 auto;
+  color: #ff33ad !important;
 }
 .section-big-title h3 {
   position: relative;
   padding: 42px 0;
+  color: #7cff2c !important;
 }
 .section-big-title.section-5-header {
   position: static;
@@ -886,12 +885,6 @@ section.catalog {
 }
 
 /* title */
-#section-1 .first_slide h1 {
-  font: 68px/0.94em 'oksana_text_narrowbold', sans-serif;
-  color: #fff;
-  margin: .3em 0;
-}
-
 #section-1 .first_slide .headermark:before {
   content: "\e600";
   font-size: 47px;
@@ -1366,31 +1359,10 @@ section.catalog {
 
 /* postition points:end */
 /* map:end */
-/* text wrapper */
-#section-2 .second_slide > div {
-  position: relative;
-  padding-top: 55px;
-}
-
-/* title */
-#section-2 .second_slide h1 {
-  font: 68px/0.94em 'oksana_text_narrowbold', sans-serif;
-  color: #fff;
-  margin: .3em 0;
-}
-
 #section-2 .second_slide .headermark:before {
   content: "\e604";
   color: #fff;
   font-size: 47px;
-}
-
-/* text */
-#section-2 .second_slide p {
-  color: #fff;
-  font: 18px/1.70em 'oksana_text_narrowdemibold', sans-serif;
-  margin-bottom: 10px;
-  padding: 0 65px;
 }
 
 /* second slide:end */
@@ -1435,13 +1407,6 @@ html.ipad #section-3 .third_slide video {
   right: 0;
   top: 50%;
   margin-top: -175px;
-}
-
-/* title */
-#section-3 .third_slide h1 {
-  font: 68px/0.94em 'oksana_text_narrowbold', sans-serif;
-  color: #fff;
-  margin: .3em 0;
 }
 
 #section-3 .third_slide .headermark:before {
@@ -2160,19 +2125,6 @@ html.ipad #section-3 .third_slide .play_button {
   background: #fff;
 }
 
-/* text wrapper */
-#section-4 .fourth_slide > div {
-  position: relative;
-  padding: 128px 0 25px;
-}
-
-/* title */
-#section-4 .fourth_slide h1 {
-  font: 68px/0.94em 'oksana_text_narrowbold', sans-serif;
-  color: #442111;
-  margin: .3em 0;
-}
-
 #section-4 .fourth_slide .headermark:before {
   content: "\e601";
   color: #e70c66;
@@ -2388,24 +2340,6 @@ html.ipad #section-4 .fourth_slide .columns .col a:hover > div {
   text-align: center;
   position: relative;
   background: #fff4d5;
-}
-
-/* text wrapper */
-#section-5 .fifth_slide > div:first-child {
-  position: relative;
-  padding: 75px 0 11px;
-}
-#section-5 .fifth_slide > div:first-child p {
-  color: #442111;
-  font: 18px/1.70em 'oksana_text_narrowdemibold', sans-serif;
-  padding: 0 120px 20px 120px;
-}
-
-/* title */
-#section-5 .fifth_slide h1 {
-  font: 68px/0.94em 'oksana_text_narrowbold', sans-serif;
-  color: #442111;
-  margin: .3em 0;
 }
 
 #section-5 .fifth_slide .headermark:before {
@@ -2793,18 +2727,6 @@ html.ipad #section-4 .fourth_slide .columns .col a:hover > div {
 }
 
 /* text wrapper */
-#section-6 .sixth_slide > div:first-child {
-  position: relative;
-  padding: 75px 0 11px;
-}
-
-/* title */
-#section-6 .sixth_slide > div h1 {
-  font: 68px/0.94em 'oksana_text_narrowbold', sans-serif;
-  color: #442111;
-  margin: .3em 0;
-}
-
 #section-6 .sixth_slide > div .headermark:before {
   content: "\e602";
   color: #e70c66;
@@ -3516,39 +3438,6 @@ have a fixed width and height (but it's not required).
     display: none;
   }
 }
-@media screen and (max-width: 1100px) {
-  /* columns:begin */
-  /* map:begin */
-  #section-2 .second_slide .map {
-    -webkit-transform: scale(0.9) translate(-50px, 0);
-    -moz-transform: scale(0.9) translate(-50px, 0);
-    -ms-transform: scale(0.9) translate(-50px, 0);
-    -o-transform: scale(0.9) translate(-50px, 0);
-    transform: scale(0.9) translate(-50px, 0);
-  }
-}
-@media screen and (max-width: 1000px) {
-  /* columns:begin */
-  /* map:begin */
-  #section-2 .second_slide .map {
-    -webkit-transform: scale(0.6) translate(-320px, 0);
-    -moz-transform: scale(0.6) translate(-320px, 0);
-    -ms-transform: scale(0.6) translate(-320px, 0);
-    -o-transform: scale(0.6) translate(-320px, 0);
-    transform: scale(0.6) translate(-320px, 0);
-  }
-}
-@media screen and (max-width: 700px) {
-  /* columns:begin */
-  /* map:begin */
-  #section-2 .second_slide .map {
-    -webkit-transform: scale(0.4) translate(-620px, 0);
-    -moz-transform: scale(0.4) translate(-620px, 0);
-    -ms-transform: scale(0.4) translate(-620px, 0);
-    -o-transform: scale(0.4) translate(-620px, 0);
-    transform: scale(0.4) translate(-620px, 0);
-  }
-}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) {
   .header:before {
     display: none;
@@ -3730,6 +3619,13 @@ have a fixed width and height (but it's not required).
 
   .pager {
     display: none;
+  }
+
+  .section-big-title h1 {
+    font-size: 36px;
+  }
+  .section-big-title h2 {
+    padding: 0 50px;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (min--moz-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (min-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (min-resolution: 192dpi), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (min-resolution: 2dppx) {
@@ -3920,6 +3816,13 @@ have a fixed width and height (but it's not required).
   .pager {
     display: none;
   }
+
+  .section-big-title h1 {
+    font-size: 36px;
+  }
+  .section-big-title h2 {
+    padding: 0 50px;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (min--moz-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (min-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (min-resolution: 192dpi), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (min-resolution: 2dppx) {
   /* Retina-specific stuff here */
@@ -4109,6 +4012,13 @@ have a fixed width and height (but it's not required).
   .pager {
     display: none;
   }
+
+  .section-big-title h1 {
+    font-size: 36px;
+  }
+  .section-big-title h2 {
+    padding: 0 50px;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (min--moz-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (min-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (min-resolution: 192dpi), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (min-resolution: 2dppx) {
   /* Retina-specific stuff here */
@@ -4297,6 +4207,13 @@ have a fixed width and height (but it's not required).
 
   .pager {
     display: none;
+  }
+
+  .section-big-title h1 {
+    font-size: 36px;
+  }
+  .section-big-title h2 {
+    padding: 0 50px;
   }
 }
 @media only screen and (max-width: 750px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 750px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 750px) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (max-width: 750px) and (min-device-pixel-ratio: 2), only screen and (max-width: 750px) and (min-resolution: 192dpi), only screen and (max-width: 750px) and (min-resolution: 2dppx) {

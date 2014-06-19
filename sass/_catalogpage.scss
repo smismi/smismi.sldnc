@@ -10,6 +10,8 @@ body {
 
 
 	.wrapper {
+		position: relative;
+
 
 		&.sladosti {
 			background:#ffd3ab url(../img/catalog/catalog-page1.jpg) repeat 50% 100%;
@@ -26,37 +28,41 @@ body {
  		padding: 141px 0 91px 0;
 		text-align: center;
 
-		.header_title {
-			font: 68px/1 'oksana_text_narrowbold', sans-serif;
-			color: #fff;
-			margin-bottom: 45px;
+		.section-big-title {
 			position: relative;
+			margin: 0 auto;
 
-			.tm {
-				font-size: 30px;
-				vertical-align: top;
+			h1 {
+				color: #fff;
+				.tm {
+					font-size: 30px;
+					vertical-align: top;
+				}
+
 			}
 
-			&:after {
-				content: '';
-				position: absolute;
-				display: block;
-				width: 57px;
-				height: 0px;
-				bottom: -29px;
-				left: 50%;
-				margin-left: -28px;
-				border-top: 1px solid #fff;
+			.header_description {
+				color: #fff;
+				font: 37px/1.70em 'oksana_text_narrowdemibold', sans-serif;
+				margin: 20px 0 0 0 ;
+				padding: 0 65px;
+
+
+				&:before {
+					content: '';
+					position: absolute;
+					display: block;
+					width: 57px;
+					height: 0px;
+					top: -9px;
+					left: 50%;
+					margin-left: -28px;
+					border-top: 1px solid #fff;
+				}
+
 			}
-
 		}
 
-		.header_description {
-			color: #fff;
-			font: 37px/1.70em 'oksana_text_narrowdemibold', sans-serif;
-			margin: 0;
-			padding: 0 65px;
-		}
 
 
 	}

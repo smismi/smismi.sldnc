@@ -5,7 +5,7 @@ var SL = {
 	pager: null,
 	globals: {
 		cupDelay: 1000,
-		lite: false
+		lite: true
 
 
 	},

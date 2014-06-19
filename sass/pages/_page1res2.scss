@@ -114,48 +114,48 @@
 }
 
 @include max-screen(1200px) {
-	#section-1 {
-		width: 1200px;
-		margin-left: -600px;
-		left: 50%;
-
-		&.company_page {
-			width: auto;
-			margin-left: 0;
-			left: 0;
-		}
-	}
+	//#section-1 {
+	//	width: 1200px;
+	//	margin-left: -600px;
+	//	left: 50%;
+	//
+	//	&.company_page {
+	//		width: auto;
+	//		margin-left: 0;
+	//		left: 0;
+	//	}
+	//}
 }
-
-@include scrn(1200px, 2500px, null, null) {
-	@include page1(45, 300px,        78px,        27px,         25px);
-}
-@include scrn(1000px, 1200px, null, null) {
-	@include page1(25, 260px,        78px,        27px,         25px);
-}
-@include scrn(750px, 1000px, null, null) {
-	@include page1(5, 240px,        78px,        27px,         25px);
-}
-
-
-
-@include scrn(null, null, 0px, 500px) {
-	@include page1(20, null, 		 38px, 		  14px,         12px);
-}
-
-@include scrn(null, null, 500px, 650px) {
-	@include page1(25, null, 		 48px, 		  17px,         15px);
-}
-
-@include scrn(null, null, 650px, 750px) {
-	@include page1(45, null,        58px,        22px,         20px);
-}
-
-@include scrn(null, null, 750px, 850px) {
-	@include page1(65, null,        78px,        27px,         25px);
-}
-@include scrn(null, null, 850px, 1250px) {
-	@include page1(95, null,        100px,        37px,         35px);
-}
+//
+//@include scrn(1200px, 2500px, null, null) {
+//	@include page1(45, 300px,        78px,        27px,         25px);
+//}
+//@include scrn(1000px, 1200px, null, null) {
+//	@include page1(25, 260px,        78px,        27px,         25px);
+//}
+//@include scrn(750px, 1000px, null, null) {
+//	@include page1(5, 240px,        78px,        27px,         25px);
+//}
+//
+//
+//
+//@include scrn(null, null, 0px, 500px) {
+//	@include page1(20, null, 		 38px, 		  14px,         12px);
+//}
+//
+//@include scrn(null, null, 500px, 650px) {
+//	@include page1(25, null, 		 48px, 		  17px,         15px);
+//}
+//
+//@include scrn(null, null, 650px, 750px) {
+//	@include page1(45, null,        58px,        22px,         20px);
+//}
+//
+//@include scrn(null, null, 750px, 850px) {
+//	@include page1(65, null,        78px,        27px,         25px);
+//}
+//@include scrn(null, null, 850px, 1250px) {
+//	@include page1(95, null,        100px,        37px,         35px);
+//}
 
 

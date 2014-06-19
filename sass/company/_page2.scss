@@ -484,18 +484,6 @@
 /* postition points:end */
 /* map:end */
 
-/* text wrapper */
-#section-2 .second_slide > div {
-	position: relative;
-	padding-top: 55px;
-}
-
-/* title */
-#section-2 .second_slide h1 {
-	font: 68px/0.94em 'oksana_text_narrowbold', sans-serif;
-	color: #fff;
-	margin: .3em 0;
-}
 #section-2 .second_slide .headermark {
 	&:before {
 		content: "\e604";
@@ -504,13 +492,5 @@
 	}
 }
 
-/* text */
-#section-2 .second_slide p {
-	color: #fff;
-	font: 18px/1.70em 'oksana_text_narrowdemibold', sans-serif;
-	margin-bottom: 10px;
-	padding: 0 65px;
-
-}
 
 /* second slide:end */
