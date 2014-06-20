@@ -9,13 +9,7 @@
 			border: 3px solid blue;
 		}
 
-		height: auto;
-
-		&.company {
-
-			height: 100%;
-
-		}
+		height: 100%;
 
 
 
@@ -24,7 +18,7 @@
 				border: 3px solid yellow;
 			}
 
-			height: auto;
+			height: 100%;
 
 			&.company {
 
@@ -54,10 +48,13 @@
 		}
 
 		height: auto;
+		min-height: 100%;
 
 		.wrapper {
 			position: relative;
-			height: 680px;
+
+			height: auto;
+			min-height: 100%;
 			width: 100%;
 
 
@@ -80,6 +77,14 @@
 			}
 			.section-1-bg-25 {
 				opacity: 1;
+				font-size: 48px;
+
+
+				h3 {
+					font-size: 17px;
+					padding-top: 15px;
+					margin-top: 15px;
+				}
 			}
 			.header {
 				top: 0;
@@ -94,47 +99,91 @@
 
 	.page1 {
 
+		height: 100%;
+		min-height: 525px;
 
 		.wrapper {
+
+			$mulipl: 0.67;
+
+			background-size: cover;
 
 			background: #ffd3ab url(../img/bg/bg1merged.jpg) repeat 50% 88%;
 
 
+
+			.section-1-bg-11 {
+				position: absolute;
+				right: 20%;
+				bottom: 185px;
+				width: 552 * $mulipl + px;
+				height: 485 * $mulipl + px;
+				margin-right: -134.6px;
+			}
+
 			.section-1-bg-12 {
-				bottom: -35px;
-				margin-left: -262px;
-				background-size: 450px;
-				width: 450px;
-
+				position: absolute;
+				bottom: 103px;
+				left: 25%;
+				width: 776 * $mulipl + px;
+				height: 256 * $mulipl + px;
+				margin-left: -339px;
 			}
+
 			.section-1-bg-4 {
-				display: block;
-				background-size:380px;
+
+
+
+				position: absolute;
+				bottom: 81px;
+				left: 50%;
+				margin-left: -291 * $mulipl + px;
+				width: 581 * $mulipl + px;
+				height: 330 * $mulipl + px;
+
 
 			}
 
-			.section-1-bg-2 {
-				opacity: 1;
-				left: 10%;
-			}
-
-			.section-1-bg-3 {
-				right: 0;
-				opacity: 1;
-				background-size: 292px;
-				margin-right: 185px;
-				bottom: 35px;
-			}
 			.section-1-bg-25 {
-				opacity: 1;
-				margin-top: -140px;
+				margin: -163px auto;
 			}
 
+				//sliding images
+			.section-1-bg-2 {
+				//position: absolute;
+				bottom: 82px;
+				//left: 10%;
+				width: 367 * $mulipl + px;
+				height: 181 * $mulipl + px;
+				margin-left: 135px;
+			}
+			.section-1-bg-3 {
+				//position: absolute;
+				bottom: 83px;
+				//right: 10%;
+				width: 409 * $mulipl + px;
+				height: 285 * $mulipl + px;
+				//opacity: 1;
+				margin-right: 70px;
+
+			}
 
 		}
 	}
 
+	.page2 {
+
+		min-height: 0;
+
+		.wrapper {
+
+
+		}
+
+	}
 	.page3 {
+
+		height: 100%;
 
 		.wrapper {
 
@@ -171,6 +220,8 @@
 		}
 	}
 	.page4 {
+
+		height: 100%;
 
 		.wrapper {
 
@@ -270,6 +321,24 @@
 @include  max-screen(750px)  {
 
 	@include main-mobile();
+
+}
+
+
+
+
+@include  ipad()  {
+	.page1 {
+
+
+		.wrapper {
+
+			background-size: cover;
+
+		}
+
+	}
+
 
 }
 

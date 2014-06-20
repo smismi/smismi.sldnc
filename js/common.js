@@ -5,7 +5,7 @@ var SL = {
 	pager: null,
 	globals: {
 		cupDelay: 1000,
-		lite: true
+		lite: false
 
 
 	},
@@ -221,7 +221,8 @@ var SL = {
 
 			SL.initInterActive5();
 
-			$(".wrapper", "#section-1").css("height", $(window).height());
+
+//			$(".wrapper", "#section-1").css("height", $(window).height());
 
 			return;
 

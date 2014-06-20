@@ -375,16 +375,16 @@
 }
 
 
-//
-//@include scrn(null, null, 0px, 650px) {
-//	@include page5(25, null, 		 44px, 		  40px,         53px, 50px, 77px,  53px,       50px,      77px,      35px,   13px,    200px,             -82px,     -52px,    40px, 180px);
-//}
-//
-//@include scrn(null, null, 650px, 750px) {
-//	@include page5(45, null,        54px,        60px,         63px, 60px, 87px, 63px,       60px,      87px,     40px,   14px,    250px,             -82px,     -52px,    50px, 220px);
-//}
-//@include scrn(null, null, 750px, 850px) {
-//	@include page5(45, null,        64px,        80px,         73px, 70px, 127px, 73px,       70px,      127px,     40px,   14px,    250px,             -62px,     -32px,    60px, 280px);
-//}
-//
+
+@include scrn(null, null, 0px, 650px) {
+	@include page5(25, null, 		 44px, 		  40px,         53px, 50px, 77px,  53px,       50px,      77px,      35px,   13px,    200px,             -82px,     -52px,    40px, 180px);
+}
+
+@include scrn(null, null, 650px, 750px) {
+	@include page5(45, null,        54px,        60px,         63px, 60px, 87px, 63px,       60px,      87px,     40px,   14px,    250px,             -82px,     -52px,    50px, 220px);
+}
+@include scrn(null, null, 750px, 850px) {
+	@include page5(45, null,        64px,        80px,         73px, 70px, 127px, 73px,       70px,      127px,     40px,   14px,    250px,             -62px,     -32px,    60px, 280px);
+}
+
 

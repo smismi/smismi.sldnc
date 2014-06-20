@@ -436,7 +436,7 @@ section.catalog {
   }
 }
 .etc {
-  display: none;
+  display: none !important;
 }
 
 .test {
