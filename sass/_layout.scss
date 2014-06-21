@@ -95,65 +95,6 @@ section.catalog {
 
 
 
-.section-big-title {
-
-
-	//common
-	text-align: center;
-	width: 100%;
-
-	//main
-
-
-	//position: absolute;
-	//top: 50%;
-	//margin: -140px auto 0 auto;
-	//color: $brown;
-
-	//
-	//width: 100%;
-	//text-align: center;
-	//padding: 0 0;
-	//font-family: oksana_text_narrowbold;
-	//max-width: 800px;
-
-
-	h1 {
-		color: #352fff !important;
-
-
-		position: relative;
-		font-size:74px;
-		line-height: 1.1;
-	}
-
-	h2 {
-		position: relative;
-		font-family: oksana_text_narrowdemibold;
-		font-size:16px; ;
-		margin: 0 auto;
-
-		color: #ff33ad !important;
-
-	}
-	h3 {
-		position: relative;
-		padding: 42px 0;
-
-		color: #7cff2c !important;
-
-	}
-
-	//
-	//&.section-5-header {
-	//	position: static;
-	//	margin-top: 0;
-	//	color: #fff;
-	//}
-
-
-}
-
 .catalog_flag {
 
 	padding: 6px 7px 8px;
@@ -236,3 +177,6 @@ section.catalog {
 {
 	display: none !important;
 }
+
+
+@import "fonts";
