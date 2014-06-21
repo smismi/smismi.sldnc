@@ -1318,7 +1318,7 @@ var SL = {
 				var scrollTop = parseInt($('html').css('top'));
 				$('html').removeClass('noscroll');
 				$('html,body').scrollTop(-scrollTop);
-			},
+			}
 //
 //			onCancel     : function(){
 //
@@ -1384,11 +1384,6 @@ var SL = {
 			.jcarousel({
 				// Your configurations options
 
-			})
-			.jcarouselAutoscroll({
-				interval: 2000,
-				target: '+=1',
-				autostart: false
 			})
 			.on('jcarousel:animateend', function(event, carousel, target, animate) {
 
@@ -1537,7 +1532,7 @@ var SL = {
 		$("#jcarousel-control-close").on("click", function(){
 
 
-			$("#visualtour_wrapper").css({left: "100%"});
+			$("#visualtour_wrapper").css({left: "120%"});
 			SL.tween.pause();
 
 			var scrollTop = parseInt($('html').css('top'));
@@ -1561,7 +1556,7 @@ var SL = {
 			$('html').addClass('noscroll').css('top',-scrollTop);
 		}
 
-			$("#visualtour_wrapper").css({left: "0%"});
+		$("#visualtour_wrapper").css({left: "0%"});
 
 
 

@@ -1382,11 +1382,11 @@ section.catalog {
   min-width: 750px;
   margin-top: -49px;
 }
-#footer_page .columns {
+#footer_page .footer_columns {
   margin: 0 auto;
   max-width: 1200px;
 }
-#footer_page .columns .col_3 {
+#footer_page .footer_columns .col_3 {
   color: #787875;
   font: 13px/49px 'oksana_text_narrowdemibold', sans-serif;
   margin: 0;
@@ -1394,26 +1394,26 @@ section.catalog {
   float: left;
   width: 33.3%;
 }
-#footer_page .columns .col_3:nth-child(1) {
+#footer_page .footer_columns .col_3:nth-child(1) {
   text-align: left;
   width: 45%;
 }
-#footer_page .columns .col_3:nth-child(1) span {
+#footer_page .footer_columns .col_3:nth-child(1) span {
   margin-left: 24px;
 }
-#footer_page .columns .col_3:nth-child(2) {
+#footer_page .footer_columns .col_3:nth-child(2) {
   color: #787875;
   text-align: left;
   height: 49px;
   overflow: hidden;
   width: 30%;
 }
-#footer_page .columns .col_3:nth-child(2) div {
+#footer_page .footer_columns .col_3:nth-child(2) div {
   padding: 10px 0 0 0;
   position: relative;
   overflow: hidden;
 }
-#footer_page .columns .col_3:nth-child(2) a {
+#footer_page .footer_columns .col_3:nth-child(2) a {
   border: 1px #a29e9e solid;
   border-radius: 12px;
   margin: 0 18px 0 0;
@@ -1421,40 +1421,40 @@ section.catalog {
   height: 24px;
   display: inline-block;
 }
-#footer_page .columns .col_3:nth-child(2) a:nth-child(1) {
+#footer_page .footer_columns .col_3:nth-child(2) a:nth-child(1) {
   background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAYAAAALiLqjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAO1JREFUeNpi/P//PwMtAeOoBaMWoIDKyjJDIDULiE2A+Fd7exc7IT0sJDpoEtTwu0D8mBgNpFogC6Wtga5/SYwGJnLClVjDSYoDYPgXAKk6IBYE4kIg/gS0aB41g6gfjf0QiOdRM4gCgfg1EjuNFsn0AZCSBwYNI7F6mBhoDEYtGC1NRy0YtWDUgiFhAQPIAhKwIRCf/g8BP4nRQ6oFh6GG3wHi/cToITWIwFUmEEsA8UtaxAHMAkZaxEEBEL+DBhGInUTtIEJXCGoXKVDTBwFA/ArqAxDbjZaRzEirjDZqwcBbMFofjFqACQACDAB8xbmBF2y89gAAAABJRU5ErkJggg==") center 0 no-repeat;
   transition: background 0.5s ease;
 }
-#footer_page .columns .col_3:nth-child(2) a:nth-child(1):hover {
+#footer_page .footer_columns .col_3:nth-child(2) a:nth-child(1):hover {
   background: #a8a5a5 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAYAAAALiLqjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAO1JREFUeNpi/P//PwMtAeOoBaMWoIDKyjJDIDULiE2A+Fd7exc7IT0sJDpoEtTwu0D8mBgNpFogC6Wtga5/SYwGJnLClVjDSYoDYPgXAKk6IBYE4kIg/gS0aB41g6gfjf0QiOdRM4gCgfg1EjuNFsn0AZCSBwYNI7F6mBhoDEYtGC1NRy0YtWDUgiFhAQPIAhKwIRCf/g8BP4nRQ6oFh6GG3wHi/cToITWIwFUmEEsA8UtaxAHMAkZaxEEBEL+DBhGInUTtIEJXCGoXKVDTBwFA/ArqAxDbjZaRzEirjDZqwcBbMFofjFqACQACDAB8xbmBF2y89gAAAABJRU5ErkJggg==") center -24px no-repeat;
 }
-#footer_page .columns .col_3:nth-child(2) a:nth-child(2) {
+#footer_page .footer_columns .col_3:nth-child(2) a:nth-child(2) {
   background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAYAAAALiLqjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ bWFnZVJlYWR5ccllPAAAAP9JREFUeNpi/P//PwMtARMDjcGoBQNvAQuxCisry5iB1DYg/t7e3hVA Cx/8A2I3WgYRNzlBxEhMRgMGTz2QcgdiSyC+CcQrQOLAoGqgVhyADPoDZasDcT2SOFWCCBSpq6Ds U1B+INWCCBpMwkDqDRBvpFUq+kjrjPaP1hYwQ2kpqidTaBywAqlfUO4hIP4NjAsXqvkAaNhvINUB jWg7IFalqg9G64NRC0YtGLVgkFgAKq53AvEGWlY4g69dRKwFoGbKLihbA9pcaSBGI7H1wX9ouwi9 HcU44O0iBpAPiMTC/yFgAwl6RttF1G1VYLSLgNiFmj4YbReNWjBAFgAEGAAa/ZXowJ+J1QAAAABJ RU5ErkJggg==") center 0 no-repeat;
   transition: background 0.5s ease;
 }
-#footer_page .columns .col_3:nth-child(2) a:nth-child(2):hover {
+#footer_page .footer_columns .col_3:nth-child(2) a:nth-child(2):hover {
   background: #a8a5a5 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAYAAAALiLqjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ bWFnZVJlYWR5ccllPAAAAP9JREFUeNpi/P//PwMtARMDjcGoBQNvAQuxCisry5iB1DYg/t7e3hVA Cx/8A2I3WgYRNzlBxEhMRgMGTz2QcgdiSyC+CcQrQOLAoGqgVhyADPoDZasDcT2SOFWCCBSpq6Ds U1B+INWCCBpMwkDqDRBvpFUq+kjrjPaP1hYwQ2kpqidTaBywAqlfUO4hIP4NjAsXqvkAaNhvINUB jWg7IFalqg9G64NRC0YtGLVgkFgAKq53AvEGWlY4g69dRKwFoGbKLihbA9pcaSBGI7H1wX9ouwi9 HcU44O0iBpAPiMTC/yFgAwl6RttF1G1VYLSLgNiFmj4YbReNWjBAFgAEGAAa/ZXowJ+J1QAAAABJ RU5ErkJggg==") center -24px no-repeat;
 }
-#footer_page .columns .col_3:nth-child(2) a:nth-child(3) {
+#footer_page .footer_columns .col_3:nth-child(2) a:nth-child(3) {
   background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAYAAAALiLqjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAaJJREFUeNrslr9LQlEUxzW1MRJsi2poqIZAqJZwqJaiwKWxoailIWgK/APqQVA0JYG1tUdQkzjkEJE4FEbQWhQo4hzZ63PhEGHyvPJuQ3AvfDj3Hbjn+84991fQdd3AX7agFbAC3y2V2spgluETjh1nd92YAMFzmKkG9yUi874FCB7HFOEBJiEM1zAIw4g8eo3v0MhyQGyRYDWo0C+Jr7/V4LCGQF7sEtkUsCFIiu/GVA0SmKsG9zjZFEzUoA/TBXWYAFf+vBOqiLz4rcEp3IMjU6oC78MdpE3UYBt2ZN6TP/xqeg5MbrQsZqadPaBbgwjmCFagIqsoKtOzgVDdbw2SElwVcwRG4Q3UUTFnT1MrYAWswH8QCCgBTTLwAe+Q1h2nGzzn/m4XpgTiErAE3RCDJ/ENtRrf1rsIanLpaL+LdIocg7L0N+VG25PvqIj6LnKiSQ3GdMbqZOD5LpKr1FcGefnjM1iFNVlBqp2bWEWzUGwyRbcwbWofKLLt7gFdgQicSOAyVKV/CCETAosS8Bl6oBdexbdgYhXZ+8AKeLcvAQYAjsFfJD+e7XYAAAAASUVORK5CYII=") center 0 no-repeat;
   transition: background 0.5s ease;
 }
-#footer_page .columns .col_3:nth-child(2) a:nth-child(3):hover {
+#footer_page .footer_columns .col_3:nth-child(2) a:nth-child(3):hover {
   background: #a8a5a5 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAYAAAALiLqjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAaJJREFUeNrslr9LQlEUxzW1MRJsi2poqIZAqJZwqJaiwKWxoailIWgK/APqQVA0JYG1tUdQkzjkEJE4FEbQWhQo4hzZ63PhEGHyvPJuQ3AvfDj3Hbjn+84991fQdd3AX7agFbAC3y2V2spgluETjh1nd92YAMFzmKkG9yUi874FCB7HFOEBJiEM1zAIw4g8eo3v0MhyQGyRYDWo0C+Jr7/V4LCGQF7sEtkUsCFIiu/GVA0SmKsG9zjZFEzUoA/TBXWYAFf+vBOqiLz4rcEp3IMjU6oC78MdpE3UYBt2ZN6TP/xqeg5MbrQsZqadPaBbgwjmCFagIqsoKtOzgVDdbw2SElwVcwRG4Q3UUTFnT1MrYAWswH8QCCgBTTLwAe+Q1h2nGzzn/m4XpgTiErAE3RCDJ/ENtRrf1rsIanLpaL+LdIocg7L0N+VG25PvqIj6LnKiSQ3GdMbqZOD5LpKr1FcGefnjM1iFNVlBqp2bWEWzUGwyRbcwbWofKLLt7gFdgQicSOAyVKV/CCETAosS8Bl6oBdexbdgYhXZ+8AKeLcvAQYAjsFfJD+e7XYAAAAASUVORK5CYII=") center -24px no-repeat;
 }
-#footer_page .columns .col_3:nth-child(2) a:nth-child(3):last-child {
+#footer_page .footer_columns .col_3:nth-child(2) a:nth-child(3):last-child {
   margin-right: 0;
 }
-#footer_page .columns .col_3:nth-child(3) {
+#footer_page .footer_columns .col_3:nth-child(3) {
   text-align: right;
   width: 25%;
 }
-#footer_page .columns .col_3:nth-child(3) a {
+#footer_page .footer_columns .col_3:nth-child(3) a {
   color: #787875;
   margin-right: 24px;
   text-decoration: none;
 }
-#footer_page .columns .col_3:nth-child(3) a b {
+#footer_page .footer_columns .col_3:nth-child(3) a b {
   font: bold 14px/49px 'pf_agora_sans_probold', sans-serif;
   text-decoration: none;
   color: #787875;
