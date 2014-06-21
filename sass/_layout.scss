@@ -98,6 +98,9 @@ section.catalog {
 .section-big-title {
 
 
+	//common
+	text-align: center;
+	width: 100%;
 
 	//main
 
@@ -107,11 +110,11 @@ section.catalog {
 	//margin: -140px auto 0 auto;
 	//color: $brown;
 
-
-	width: 100%;
-	text-align: center;
-	padding: 0 0;
-	font-family: oksana_text_narrowbold;
+	//
+	//width: 100%;
+	//text-align: center;
+	//padding: 0 0;
+	//font-family: oksana_text_narrowbold;
 	//max-width: 800px;
 
 
@@ -127,9 +130,7 @@ section.catalog {
 	h2 {
 		position: relative;
 		font-family: oksana_text_narrowdemibold;
-		font-size:16px;
-		line-height: 1.625;
-		max-width: 460px;
+		font-size:16px; ;
 		margin: 0 auto;
 
 		color: #ff33ad !important;
@@ -143,20 +144,12 @@ section.catalog {
 
 	}
 
-	//@include screen(320px, 1000px) {
-	//	top: 50%;
-	//	margin: -200px auto 0 auto;
-	//	h1 {
-	//		font-size:40px;
-	//	}
 	//
+	//&.section-5-header {
+	//	position: static;
+	//	margin-top: 0;
+	//	color: #fff;
 	//}
-
-	&.section-5-header {
-		position: static;
-		margin-top: 0;
-		color: #fff;
-	}
 
 
 }

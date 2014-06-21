@@ -1087,17 +1087,109 @@ var SL = {
 			vacancies = data;
 		});
 
+//		$(".fifth_slide .fancybox").fancybox({
+//			helpers: {
+//				overlay: {
+//					locked: false
+//				}
+//			},
+//			openEffect  : 'elastic',
+//			closeEffect : 'elastic',
+//			nextEffect : 'elastic',
+//			prevEffect : 'elastic',
+//			padding : 0,
+//			margin  : 0,
+//			width: 800,
+//			maxWidth: ($(window).height() < 800) ? '100%' : 800 ,
+//			autoHeight: true,
+//
+//			beforeLoad   : function() {
+//
+//				$("#popupplace").show();
+//
+//				var _content = this.content;
+//				var descr = this.element.data('descr');
+//
+//				var _n = vacancies[descr];
+//
+//				if (!_n)  {
+//					$("h1", this.content).html("Ошибка данных");
+//					return;
+//				}
+//
+//
+//
+//				$("h1", this.content).html(_n.type);
+//				$("h2", this.content).html(_n.position);
+//				$("#con > ul", _content).html("");
+//				$("#req > ul", _content).html("");
+//				$("#res > ul", _content).html("");
+//
+//
+//				$("#sal > ul", this.content).html($("<li>").append(_n.salary));
+//
+//
+//				$.each(_n.conditions, function( index, value ) {
+//					$("#con > ul", _content).append(
+//						$("<li>").append(value)
+//					);
+//				})
+//
+//				$.each(_n.requirments, function( index, value ) {
+//					$("#req > ul", _content).append(
+//						$("<li>").append(value)
+//					);
+//				})
+//
+//				$.each(_n.responsibility, function( index, value ) {
+//					$("#res > ul", _content).append(
+//						$("<li>").append(value)
+//					);
+//				})
+//
+//
+//
+//			},
+//			afterShow: function(){
+//
+//
+//
+//				if ($(document).height() > $(window).height()) {
+//					var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+//					$('html').addClass('noscroll').css('top',-scrollTop);
+//				}
+//
+//
+//
+//			},
+//			beforeClose: function(){
+//
+//				$("#popupplace").hide();
+//
+//				var scrollTop = parseInt($('html').css('top'));
+//				$('html').removeClass('noscroll');
+//				$('html,body').scrollTop(-scrollTop);
+//
+//
+//			}
+//
+//		});
+
 		$(".fifth_slide .fancybox").fancybox({
 			helpers: {
 				overlay: {
 					locked: false
 				}
 			},
-			openEffect  : 'none',
-			closeEffect : 'none',
-			nextEffect : 'none',
-			prevEffect : 'none',
-
+			openEffect  : 'elastic',
+			closeEffect : 'elastic',
+			nextEffect : 'elastic',
+			prevEffect : 'elastic',
+			padding : 0,
+			margin  : 0,
+			width: 800,
+			maxWidth: ($(window).width() < 800) ? '100%' : 800 ,
+			autoHeight: true,
 			beforeLoad   : function() {
 
 				$("#popupplace").show();
@@ -1112,42 +1204,124 @@ var SL = {
 					return;
 				}
 
-
-
-				$("h1", this.content).html(_n.type);
-				$("h2", this.content).html(_n.position);
-				$("#con > ul", _content).html("");
-				$("#req > ul", _content).html("");
-				$("#res > ul", _content).html("");
-
-
-				$("#sal > ul", this.content).html($("<li>").append(_n.salary));
-
+				var _con = $();
 
 				$.each(_n.conditions, function( index, value ) {
-					$("#con > ul", _content).append(
-						$("<li>").append(value)
-					);
+
+					_con = _con.add('<li>' + value + '</li>');
+
 				})
+
+				var _req = $();
 
 				$.each(_n.requirments, function( index, value ) {
-					$("#req > ul", _content).append(
-						$("<li>").append(value)
-					);
+
+					_req = _req.add('<li>' + value + '</li>');
+
 				})
 
+				var _res = $();
+
 				$.each(_n.responsibility, function( index, value ) {
-					$("#res > ul", _content).append(
-						$("<li>").append(value)
-					);
+
+					_res = _res.add('<li>' + value + '</li>');
+
 				})
+
+
+//
+//				$.each(_n.requirments, function( index, value ) {
+//					$("#req > ul", _content).append(
+//						$("<li>").append(value)
+//					);
+//				})
+//
+//				$.each(_n.responsibility, function( index, value ) {
+//					$("#res > ul", _content).append(
+//						$("<li>").append(value)
+//					);
+//				})
+
+
+				$.extend(this, {
+					type    : 'html',
+					content :
+
+//						'<h2> ' +
+//						$(this.element).data("title")
+//						+
+//						'</h2><h3>' +
+//						$(this.element).data("description")
+//						+
+//						'</h3><div class="descr"> <p class="weight"><em class="fonted icon"></em>' +
+//						$(this.element).data("weight")
+//						+
+//						'</p><p class="boxing"><em class="fonted icon"></em>' +
+//						$(this.element).data("boxing")
+//						+
+//						'</p><p class="beforeend"><em class="fonted icon"></em>' +
+//						$(this.element).data("bestbefore")
+//						+
+//						'</p></div>'
+
+
+
+						'<h1>' + _n.type +
+							'</h1>' +
+						'<h2>' + _n.position +
+							'</h2>' +
+						'<div class="req_list">' +
+							'<div class="vac_block_item_col">' +
+								'<div class="vac_block_item" id="sal">Зарплата:' +
+
+									'<ul><li>' + _n.salary +
+									'</li></ul>' +
+								'</div>' +
+
+
+								'<div class="vac_block_item" id="req">Требования (желательные):' +
+
+									'<ul>' + _con.html() +
+									'</ul>' +
+								'</div>' +
+
+							'</div>' +
+							'<div class="vac_block_item_col">' +
+
+								'<div class="vac_block_item" id="con">Условия:' +
+
+									'<ul>' + _req.html() +
+									'</ul>' +
+								'</div>' +
+
+								'<div class="vac_block_item" id="res">Обязанности:' +
+
+									'<ul>' + _res.html() +
+									'</ul>' +
+								'</div>' +
+
+
+							'</div>' +
+						'</div>' +
+ 						'<div class="send_resume_btn">' +
+
+ 							'<span><i></i></span>' +
+
+ 							'<span>отправить резюме</span>' +
+
+						'</div>'
+
+				});
 
 
 
 			},
+			afterLoad: function () {
+
+				this.inner.addClass("vac_block");
+
+			},
 			afterShow: function(){
-
-
 
 				if ($(document).height() > $(window).height()) {
 					var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
@@ -1155,22 +1329,18 @@ var SL = {
 				}
 
 
-
 			},
 			beforeClose: function(){
+
+
 
 				$("#popupplace").hide();
 
 				var scrollTop = parseInt($('html').css('top'));
 				$('html').removeClass('noscroll');
 				$('html,body').scrollTop(-scrollTop);
-
-
 			}
-
 		});
-
-
 
 
 	},
@@ -1263,7 +1433,7 @@ var SL = {
 			padding : 0,
 			margin  : 0,
 			width: 800,
-			maxWidth: ($(window).height() < 800) ? '100%' : 800 ,
+			maxWidth: ($(window).width() < 800) ? '100%' : 800 ,
 			autoHeight: true,
 			beforeLoad   : function() {
 
@@ -1319,40 +1489,6 @@ var SL = {
 				$('html').removeClass('noscroll');
 				$('html,body').scrollTop(-scrollTop);
 			}
-//
-//			onCancel     : function(){
-//
-//				console.log("onCancel")
-//			}, // If canceling
-//			beforeLoad   : function(){
-//
-//				console.log("beforeLoad")
-//			}, // Before loading
-//			afterLoad    : function(){
-//
-//				console.log("afterLoad")
-//			}, // After loading
-//			beforeShow   : function(){
-//
-//				console.log('beforeShow')
-//			}, // Before changing in current item
-//			afterShow    : function(){
-//
-//				console.log('afterShow')
-//			}, // After opening
-//			beforeChange : function(){
-//
-//				console.log('beforeChange')
-//			}, // Before changing gallery item
-//			beforeClose  : function(){
-//
-//				console.log('beforeClose')
-//			}, // Before closing
-//			afterClose   : function(){
-//
-//				console.log('afterClose')
-//			}  // After closing
-
 		});
 
 
