@@ -271,8 +271,8 @@
 }
 
 #section-5 .fifth_slide .one_vacancy span:nth-child(2) {
-	font: 20px/24px 'oksana_text_narrowdemibold', sans-serif;
-	color: #e60e64;
+	font: 21px/24px 'oksana_text_narrowdemibold', sans-serif;
+	color: $cherry;
 	display: block;
 	width: 150px;
 	margin: 0 0 14px;
@@ -284,11 +284,13 @@
 }
 
 #section-5 .fifth_slide .one_vacancy span:nth-child(3) {
-	font: 14px/1.4 bold 'oksana_text_narrowlight', sans-serif;
+
+	font-family: 'oksana_text_narrowdemibold';
+	font-size: 15px;
+	line-height: 1.5;
 	color: #442111;
 	display: block;
 	margin: 0 0 10px;
-	font-weight: bold;
 }
 
 #section-5 .fifth_slide .one_vacancy a {
@@ -376,9 +378,11 @@
 	}
 	.vac_block_item {
 
+		color: $brown;
 		ul {
 			font-family: 'oksana_text_narrowdemibold';
-			font-style: italic;
+			font-size: 15px;
+			//font-style: italic;
 			color: #442111;
 			margin-top: 12px;
 			margin-bottom: 32px;

@@ -1204,27 +1204,28 @@ var SL = {
 					return;
 				}
 
-				var _con = $();
+				var _con = $("<div/>");
 
 				$.each(_n.conditions, function( index, value ) {
 
-					_con = _con.add('<li>' + value + '</li>');
+
+					_con = _con.append('<li>' + value + '</li>');
 
 				})
 
-				var _req = $();
+				var _req = $("<div/>");
 
 				$.each(_n.requirments, function( index, value ) {
 
-					_req = _req.add('<li>' + value + '</li>');
+					_req = _req.append('<li>' + value + '</li>');
 
 				})
 
-				var _res = $();
+				var _res = $("<div/>");
 
 				$.each(_n.responsibility, function( index, value ) {
 
-					_res = _res.add('<li>' + value + '</li>');
+					_res = _res.append('<li>' + value + '</li>');
 
 				})
 
