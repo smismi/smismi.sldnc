@@ -558,7 +558,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 14.4px;
+    font-size: 16px;
     line-height: 1.6;
     margin: 0 auto;
     color: #ff33ad;
@@ -585,7 +585,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   body.index .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 14.4px;
+    font-size: 16px;
     line-height: 1.6;
     margin: 0 auto;
     color: #442111;
@@ -614,7 +614,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.company .section-big-title h2 {
     color: #fff;
-    font-size: 15.3px;
+    font-size: 17px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -675,7 +675,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
-    font-size: 15.3px;
+    font-size: 17px;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 800px), screen and (min-height: 300px) and (max-height: 500px) {
@@ -694,7 +694,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 12px;
+    font-size: 14.4px;
     line-height: 1.6;
     margin: 0 auto;
     color: #ff33ad;
@@ -721,7 +721,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   body.index .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 12px;
+    font-size: 14.4px;
     line-height: 1.6;
     margin: 0 auto;
     color: #442111;
@@ -750,7 +750,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.company .section-big-title h2 {
     color: #fff;
-    font-size: 12.75px;
+    font-size: 15.3px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -811,7 +811,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
-    font-size: 12.75px;
+    font-size: 15.3px;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 750px) {
@@ -830,7 +830,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #ff33ad;
@@ -857,7 +857,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   body.index .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #442111;
@@ -886,7 +886,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.company .section-big-title h2 {
     color: #fff;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -947,7 +947,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) {
@@ -966,7 +966,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #ff33ad;
@@ -993,7 +993,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   body.index .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #442111;
@@ -1022,7 +1022,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.company .section-big-title h2 {
     color: #fff;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -1083,7 +1083,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) {
@@ -1102,7 +1102,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #ff33ad;
@@ -1129,7 +1129,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   body.index .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #442111;
@@ -1158,7 +1158,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.company .section-big-title h2 {
     color: #fff;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -1219,7 +1219,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) {
@@ -1238,7 +1238,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #ff33ad;
@@ -1265,7 +1265,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   body.index .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #442111;
@@ -1294,7 +1294,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.company .section-big-title h2 {
     color: #fff;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -1355,7 +1355,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -1374,7 +1374,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #ff33ad;
@@ -1401,7 +1401,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   body.index .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #442111;
@@ -1430,7 +1430,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.company .section-big-title h2 {
     color: #fff;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -1491,7 +1491,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
 }
 .test {
@@ -4168,6 +4168,10 @@ html.ipad #section-4 .fourth_slide .columns .col a:hover > div {
   height: 100%;
 }
 
+.etc {
+  display: none;
+}
+
 /*
 This is the visible area of you carousel.
 Set a width here to define how much items are visible.
@@ -4353,7 +4357,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 14.4px;
+    font-size: 16px;
     line-height: 1.6;
     margin: 0 auto;
     color: #ff33ad;
@@ -4380,7 +4384,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   body.index .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 14.4px;
+    font-size: 16px;
     line-height: 1.6;
     margin: 0 auto;
     color: #442111;
@@ -4409,7 +4413,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.company .section-big-title h2 {
     color: #fff;
-    font-size: 15.3px;
+    font-size: 17px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -4470,7 +4474,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
-    font-size: 15.3px;
+    font-size: 17px;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 800px), screen and (min-height: 300px) and (max-height: 500px) {
@@ -4489,7 +4493,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 12px;
+    font-size: 14.4px;
     line-height: 1.6;
     margin: 0 auto;
     color: #ff33ad;
@@ -4516,7 +4520,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   body.index .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 12px;
+    font-size: 14.4px;
     line-height: 1.6;
     margin: 0 auto;
     color: #442111;
@@ -4545,7 +4549,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.company .section-big-title h2 {
     color: #fff;
-    font-size: 12.75px;
+    font-size: 15.3px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -4606,7 +4610,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
-    font-size: 12.75px;
+    font-size: 15.3px;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 750px) {
@@ -4625,7 +4629,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #ff33ad;
@@ -4652,7 +4656,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   body.index .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #442111;
@@ -4681,7 +4685,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.company .section-big-title h2 {
     color: #fff;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -4742,7 +4746,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) {
@@ -4761,7 +4765,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #ff33ad;
@@ -4788,7 +4792,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   body.index .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #442111;
@@ -4817,7 +4821,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.company .section-big-title h2 {
     color: #fff;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -4878,7 +4882,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) {
@@ -4897,7 +4901,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #ff33ad;
@@ -4924,7 +4928,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   body.index .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #442111;
@@ -4953,7 +4957,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.company .section-big-title h2 {
     color: #fff;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -5014,7 +5018,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) {
@@ -5033,7 +5037,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #ff33ad;
@@ -5060,7 +5064,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   body.index .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #442111;
@@ -5089,7 +5093,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.company .section-big-title h2 {
     color: #fff;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -5150,7 +5154,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -5169,7 +5173,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #ff33ad;
@@ -5196,7 +5200,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   body.index .section-big-title h2 {
     position: relative;
     font-family: oksana_text_narrowdemibold;
-    font-size: 8.8px;
+    font-size: 12.8px;
     line-height: 1.6;
     margin: 0 auto;
     color: #442111;
@@ -5225,7 +5229,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.company .section-big-title h2 {
     color: #fff;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -5286,7 +5290,7 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   }
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
-    font-size: 9.35px;
+    font-size: 13.6px;
   }
 }
 @media screen and (max-width: 895px) {

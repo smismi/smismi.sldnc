@@ -1,4 +1,4 @@
-@mixin fonts($mu) {
+@mixin fonts($mu, $mu2) {
 
 	.section-big-title {
 
@@ -24,7 +24,7 @@
 		h2 {
 			position: relative;
 			font-family: oksana_text_narrowdemibold;
-			font-size:16 * $mu + px;
+			font-size:16 * $mu2 + px;
 			line-height: 1.6;
 			margin: 0 auto;
 
@@ -74,7 +74,7 @@
 			h2 {
 				position: relative;
 				font-family: oksana_text_narrowdemibold;
-				font-size:16 * $mu + px;
+				font-size:16 * $mu2 + px;
 				line-height: 1.6;
 				margin: 0 auto;
 
@@ -159,7 +159,7 @@
 
 			h2 {
 				color: #fff;
-				font-size: 17 * $mu + px;
+				font-size: 17 * $mu2 + px;
 
 			}
 
@@ -291,7 +291,7 @@
 				}
 				h2 {
 					color: $brown;
-					font-size: 17 * $mu + px;
+					font-size: 17 * $mu2 + px;
 
 				}
 			}
@@ -302,7 +302,7 @@
 }
 
 
-@include fonts(1);
+@include fonts(1, 1);
 
 
 
@@ -310,7 +310,7 @@
 
 @include scrn(800px, 1000px, 500px, 700px) {
 
-	@include fonts(.9);
+	@include fonts(.9, 1);
 
 }
 
@@ -319,7 +319,7 @@
 
 @include scrn(750px, 800px, 300px, 500px) {
 
-	@include fonts(.75);
+	@include fonts(.75, .9);
 
 }
 
@@ -327,7 +327,7 @@
 
 @include scrn(0px, 750px, null, null) {
 
-	@include fonts(.55);
+	@include fonts(.55, .8);
 
 }
 
@@ -337,26 +337,26 @@
 
 @include iphone3()  {
 
-	@include fonts(.55);
+	@include fonts(.55, .8);
 
 }
 @include iphone4()  {
 
-	@include fonts(.55);
+	@include fonts(.55, .8);
 
 }
 
 
 @include iphone5()  {
 
-	@include fonts(.55);
+	@include fonts(.55, .8);
 
 }
 
 
 @include  max-screen(750px)  {
 
-	@include fonts(.55);
+	@include fonts(.55, .8);
 
 
 

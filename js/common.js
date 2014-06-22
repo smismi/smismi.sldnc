@@ -1525,6 +1525,7 @@ var SL = {
 	prepareVisualTour: function() {
 
 //		$("#visualtour_wrapper").css({left: "100%"});
+		SL.tweenStatus = false;
 
 
 
@@ -1535,26 +1536,21 @@ var SL = {
 				element.jcarousel('items').css('width', width + 'px');
 
 
+
+
 			})
 			.on('jcarousel:reload', function() {
 				var element = $(this),
 					width = element.innerWidth();
 				element.jcarousel('items').css('width', width + 'px');
 
-				$('#controls .jcarousel-pagination').jcarouselPagination('reload');
+//				$('#controls .jcarousel-pagination').jcarouselPagination('reload');
 
 			})
 			.jcarousel({
 				// Your configurations options
 
-			})
-			.on('jcarousel:animateend', function(event, carousel, target, animate) {
-
-
-
-
-
-			});
+			}) ;
 
 
 		$('.jcarousel-control-prev')
@@ -1588,58 +1584,83 @@ var SL = {
 			.jcarouselControl({
 				target: '+=1'
 			});
+		$('#control_start').addClass("played");
+		$('#control_start').on('click', function(){
 
-		$('#controls .jcarousel-control-start').toggleClick(
-			function () {
+			if($(this).hasClass("played")) {
 
-				$("em", this).removeClass("active").eq(1).addClass("active");
-//					$('.jcarousel').jcarouselAutoscroll('stop');
 
-				SL.tween.pause()
+				SL.stopAll();
 
-			}, function () {
-				$("em", this).removeClass("active").eq(0).addClass("active");
-//					$('.jcarousel').jcarouselAutoscroll('start');
 
-				SL.tween.play()
+
+			} else {
+
+				SL.startAll();
+
+
 			}
-
-		);
+		});
 
 
 		$('#controls .jcarousel-pagination')
 
-
-			.on('jcarouselpagination:active', 'div', function () {
-
-				var _this = this;
-				var last = false;
-
-				if ($(_this).is(":last-child")) last = true;
+			.on('jcarouselpagination:active', 'div', function (index) {
 
 
+				SL.ticks = [];
+
+				$(".tour_control .tour_control_item i").each(function(index, el) {
+					SL.ticks.push(el);
+
+				});
+
+
+                var index = $(this).index();
+
+
+//				var _this = this;
+//				var last = false;
+
+//				if ($(_this).is(":last-child")) last = true;
+//
+//
 				$(this).addClass('active');
 				$(this).nextAll().removeClass("prevs").find("i").css({width: 0});
 				$(this).prevAll().addClass("prevs").find("i").css({width: 142});
 
 
-				var tick = $("i", _this);
+//
+//				if( index === 7) {
+//					$(".tour_control .tour_control_item").eq(0).addClass('active');
+//					$(".tour_control .tour_control_item i").removeClass("prevs").find("i").css({width: 0});
+//
+//					SL.runTick(0, SL.ticks[0]);
+//
+//
+//					return;
+//
+//				}
 
-				TweenMax.killTweensOf(".tour_control_item i");
+				SL.runTick(index, SL.ticks[index]);
 
-				SL.tween = TweenMax.fromTo(tick, 5,
-					{
-						width: 0
-					},
-					{
-						width: (last ? 0 : 135),
-						ease: "linear",
-						onComplete: function () {
-
-							$('.jcarousel').jcarousel('scroll', last ? 0 : '+=1');
-
-						}
-					});
+//				var tick = $("i", _this);
+//
+//				TweenMax.killTweensOf(".tour_control_item i");
+//
+//				SL.tween = TweenMax.fromTo(tick, 5,
+//					{
+//						width: 0
+//					},
+//					{
+//						width: (last ? 0 : 135),
+//						ease: "linear",
+//						onComplete: function () {
+//
+//							$('.jcarousel').jcarousel('scroll', last ? 0 : '+=1');
+//
+//						}
+//					});
 
 
 
@@ -1647,14 +1668,34 @@ var SL = {
 			})
 			.on('jcarouselpagination:inactive', 'div', function () {
 				$(this).removeClass('active');
+
+
+//				console.log("inactive");
+
 			})
-			.on('jcarouselpagination:createend', function (event, carousel) {
+			.on('jcarouselpagination:create', function (event, carousel) {
+
+
+//				console.log("create");
 
 
 			})
 			.on('jcarouselpagination:reloadend', function () {
-				TweenMax.killTweensOf(".tour_control_item i");
-			})
+
+//				SL.tween.pause();
+//
+				TweenMax.killTweensOf( $(".tour_control .tour_control_item i") );
+
+//                console.log("reloadend");
+ 			})
+			.on('jcarouselpagination:reload', function () {
+
+
+//                console.log("reload");
+
+
+
+ 			})
 			.jcarouselPagination({
 				item: function (page, carouselItems) {
 
@@ -1685,10 +1726,17 @@ var SL = {
 			});
 
 
-		SL.tween.pause();
+//		SL.tween.pause();
 
 		$("#visualtour_link").on("click", function(){
+
+
+
 			SL.visualtourInit();
+
+
+
+
 			return false;
 		})
 
@@ -1696,13 +1744,14 @@ var SL = {
 
 
 			$("#visualtour_wrapper").css({left: "120%"});
-			SL.tween.pause();
+
+
+			SL.stopAll();
 
 			var scrollTop = parseInt($('html').css('top'));
 			$('html').removeClass('noscroll');
 			$('html,body').scrollTop(-scrollTop);
 
- 			SL.tween.pause();
 
 			return false;
 
@@ -1710,8 +1759,87 @@ var SL = {
 		})
 
 
+
+
+	},
+	stopAll: function() {
+
+
+		$('#control_start').removeClass("played");
+		$("#control_start em").removeClass("active").eq(1).addClass("active")
+
+
+		SL.tweenStatus = false;
+		SL.tween.pause();
+
+
+
+	},
+	startAll: function() {
+
+		SL.tween.play();
+		SL.tweenStatus = true;
+		$('#control_start').addClass("played");
+
+		$("#control_start em").removeClass("active").eq(0).addClass("active")
+
+
+
+
+	},
+	runAnimation: function() {
+
+
+
+
+
+
+
+
+		SL.runTick(0, SL.ticks[0]);
+
+
+	},
+
+	runTick: function(index, tick) {
+
+//				var tick = $("i", _this);
+//
+
+
+		if(!SL.tweenStatus) return;
+
+		var last = false;
+
+		if (index > 6) last = true;
+
+		var _index = index;
+
+		TweenMax.killTweensOf( $(".tour_control .tour_control_item i") );
+
+		SL.tween = TweenMax.fromTo(tick, 5,
+			{
+				width: 0
+			},
+			{
+				width: last ? 0 : 135,
+				ease: "linear",
+				onComplete: function () {
+
+
+
+					_index = last ? 0 : index + 1;
+
+ 					$('.jcarousel').jcarousel('scroll', last ? 0 : '+=1');
+//					SL.runTick(_index, SL.ticks[_index])
+				}
+			});
+
+
+
 	},
 	visualtourInit: function() {
+		SL.tweenStatus = true;
 
 
 		if ($(document).height() > $(window).height()) {
@@ -1725,7 +1853,10 @@ var SL = {
 
 
 //					$("#visualtour, #visualtour li, #visualtour li > img").css({"width": $(window).width(), "height": $(window).height()})
-		SL.tween.play();
+//		SL.startAll();
+
+		SL.runTick(0, SL.ticks[0]);
+
 
 
 	},
