@@ -1347,10 +1347,12 @@ var SL = {
 	},
 	newsPopupInit: function() {
 
-		return;
+		var news;
+
 		$.getJSON( "js/news.json", function( data ) {
 			news = data;
 		});
+
 
 		$(".sixth_slide .fancybox").fancybox({
 			helpers: {
@@ -1358,16 +1360,20 @@ var SL = {
 					locked: false
 				}
 			},
-			openEffect  : 'none',
-			closeEffect : 'none',
-			nextEffect : 'none',
-			prevEffect : 'none',
-
+			openEffect  : 'elastic',
+			closeEffect : 'elastic',
+			nextEffect : 'elastic',
+			prevEffect : 'elastic',
+			padding : 60,
+			margin  : 0,
+			width: 570,
+			maxWidth: ($(window).width() < 570) ? '100%' : 570 ,
+			autoHeight: true,
 			beforeLoad   : function() {
+
 
 				$("#popupplace").show();
 
-				var _content = this.content;
 				var descr = this.element.data('descr');
 
 				var _n = news[descr];
@@ -1377,21 +1383,43 @@ var SL = {
 					return;
 				}
 
+				var _line = $('<div/>');
+
+				$.each(_n.lines, function( index, value ) {
 
 
-				$("h1", this.content).html(_n.title);
-				$("h2", this.content).html(_n.text);
-				$("h3", this.content).html(_n.date);
-				$("h4", this.content).html(_n.type);
+					_line = _line.append('<p class="t_text">' + value + '</p>');
+
+				})
 
 
 
+
+				$.extend(this, {
+					type    : 'html',
+					content : '<img src="' + this.href + '" alt="">' + '<h4 class="t_date"> ' +
+						_n.date
+						+
+						'</h4><h3 class="t_title">' +
+						_n.title
+						+
+						'</h3>' +
+						_line.html()
+
+						+
+
+						'<div class="soc_buttons"><div><a href="#" title=""></a><a href="#" title=""></a><a href="#" title=""></a></div></div>'
+
+				});
 
 
 			},
+			afterLoad: function () {
+
+				this.inner.addClass("news_block");
+
+			},
 			afterShow: function(){
-
-
 
 				if ($(document).height() > $(window).height()) {
 					var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
@@ -1399,19 +1427,17 @@ var SL = {
 				}
 
 
-
 			},
 			beforeClose: function(){
+
+
 
 				$("#popupplace").hide();
 
 				var scrollTop = parseInt($('html').css('top'));
 				$('html').removeClass('noscroll');
 				$('html,body').scrollTop(-scrollTop);
-
-
 			}
-
 		});
 
 
