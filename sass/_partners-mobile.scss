@@ -1,0 +1,77 @@
+@mixin partners-mobile() {
+
+	.partners {
+
+
+
+		.item_list_wrapper {
+
+
+
+
+			.item_list {
+
+				width: 100%;
+				min-width: 100%;
+
+				.item_list_item {
+
+
+					width: 50%;
+					//margin-left: -1px;
+					//margin-right: -1px;
+
+
+
+					&:nth-child(2n+1) {
+						//margin-right: -1px;
+						border-left: 0;
+						border-right: 0;
+					}
+					//&:nth-child(2n+1) {
+					//	margin-right: -1px;
+					//}
+
+
+
+				}
+
+			}
+		}
+
+
+
+	}
+
+
+
+
+}
+
+
+@include iphone3()  {
+
+	@include partners-mobile();
+
+}
+@include iphone4()  {
+
+	@include partners-mobile();
+
+}
+
+
+@include iphone5()  {
+
+	@include partners-mobile();
+
+}
+
+
+@include  max-screen(750px)  {
+
+	@include partners-mobile();
+
+}
+
+

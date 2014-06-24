@@ -72,6 +72,28 @@ var SL = {
 
 
 		},
+		partners: function() {
+			SL.init.cache();
+
+			SL.initScrollMagik();
+
+
+			SL.initHeaderMenu();
+			SL.initPager();
+			SL.initCompanyPager();
+			SL.initParallax6();
+ 			SL.popupInit();
+//			SL.newsPopupInit();
+			SL.initScrollTop();
+			SL.partnersFeedback();
+
+
+
+
+
+
+
+		},
 
 
 		cache: function(){
@@ -1521,6 +1543,48 @@ var SL = {
 
 
 
+	},
+	partnersFeedback: function() {
+
+
+		$("#partners_feedback_slide").on("click", function(){
+
+
+
+//			SL.visualtourInit();
+
+
+			if ($(document).height() > $(window).height()) {
+				var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+//				var scrollTop = 0;
+				$('html').addClass('noscroll').css('top',-scrollTop);
+				$('.header').css('top',0);
+			}
+
+			$("#partners_wrapper").css({left: "0%"});
+
+
+			return false;
+		})
+
+		$("#partners_feedback_back").on("click", function(){
+
+
+			$("#partners_wrapper").css({left: "120%"});
+
+
+
+			var scrollTop = parseInt($('html').css('top'));
+			$('html').removeClass('noscroll');
+			$('html,body').scrollTop(-scrollTop);
+			$('.header').css('top','auto');
+
+
+
+			return false;
+
+
+		})
 	},
 	prepareVisualTour: function() {
 
