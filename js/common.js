@@ -1584,7 +1584,105 @@ var SL = {
 			return false;
 
 
-		})
+		});
+
+
+
+
+
+
+		$(".partners_page .fancybox").fancybox({
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			},
+			openEffect  : 'elastic',
+			closeEffect : 'elastic',
+			nextEffect : 'elastic',
+			prevEffect : 'elastic',
+			padding : 0,
+			margin  : 0,
+			width: 800,
+			maxWidth: ($(window).height() < 800) ? '100%' : 800 ,
+			autoHeight: true,
+
+			beforeLoad   : function() {
+
+				$("#popupplace").show();
+
+//				var _content = this.content;
+//				var descr = this.element.data('descr');
+//
+//				var _n = vacancies[descr];
+//
+//				if (!_n)  {
+//					$("h1", this.content).html("Ошибка данных");
+//					return;
+//				}
+//
+//
+//
+//				$("h1", this.content).html(_n.type);
+//				$("h2", this.content).html(_n.position);
+//				$("#con > ul", _content).html("");
+//				$("#req > ul", _content).html("");
+//				$("#res > ul", _content).html("");
+//
+//
+//				$("#sal > ul", this.content).html($("<li>").append(_n.salary));
+//
+//
+//				$.each(_n.conditions, function( index, value ) {
+//					$("#con > ul", _content).append(
+//						$("<li>").append(value)
+//					);
+//				})
+//
+//				$.each(_n.requirments, function( index, value ) {
+//					$("#req > ul", _content).append(
+//						$("<li>").append(value)
+//					);
+//				})
+//
+//				$.each(_n.responsibility, function( index, value ) {
+//					$("#res > ul", _content).append(
+//						$("<li>").append(value)
+//					);
+//				})
+
+
+
+			},
+			afterShow: function(){
+
+
+
+				if ($(document).height() > $(window).height()) {
+					var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+					$('html').addClass('noscroll').css('top',-scrollTop);
+				}
+
+
+
+			},
+			beforeClose: function(){
+
+				$("#popupplace").hide();
+
+				var scrollTop = parseInt($('html').css('top'));
+				$('html').removeClass('noscroll');
+				$('html,body').scrollTop(-scrollTop);
+
+
+			}
+
+		});
+
+
+
+
+
 	},
 	prepareVisualTour: function() {
 

@@ -732,58 +732,12 @@
 
 
 		SL.init.catalog();
-//
-//		var item_tmpl = tmpl("item_tmpl");
-//
-//
-//		$.getJSON( "js/catalog.json", function( data ) {
-//
-//
-//			konfets = data.konfets;
-//
-//			html = "";
-//
-//			for ( var i = 0; i < konfets.length; i++ ) {
-//				html += item_tmpl( konfets[i] );
-//			}
-//
-//
-//			$("#item_list_konfets").append(html);
-//
-//			zefir = data.zefir;
-//
-//			html = "";
-//
-//			for ( var i = 0; i < zefir.length; i++ ) {
-//				html += item_tmpl( zefir[i] );
-//			}
-//
-//
-//			$("#item_list_zefir").append(html);
-//
-//
-//		});
 
 
 
 	});
 
 </script>
-<script type="text/html" id="item_tmpl"><li class='item_list_item <%= (doubled == 'doubled' ? " doubled" : "")%>'>
-
-	<%= (new_mark == 'true' ? "<div class='new_mark'>новинка</div>" : "")%>
-
-	<a href="#product_box" rel="catalog" data-id="<%=item_id%>" class="prod_img fancybox">
-		<img src="img/catalog/items/small/<%=img%>.png" alt="" class=""/>
-	</a>
-	<a href="#product_box" rel="catalog"  data-id="<%=item_id%>" class="item_name fancybox">
-		<div class="item_name_wrap">
-			<span class="item_class"><%=type%></span>
-			«<%=name%>»
-		</div>
-		<em class="fonted icon"></em>
-	</a>
-</li></script>
 
 
 </body>
