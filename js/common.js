@@ -1603,8 +1603,8 @@ var SL = {
 			prevEffect : 'elastic',
 			padding : 0,
 			margin  : 0,
-			width: 800,
-			maxWidth: ($(window).height() < 800) ? '100%' : 800 ,
+			width: 591,
+			maxWidth: ($(window).width() < 800) ? '100%' : 591 ,
 			autoHeight: true,
 
 			beforeLoad   : function() {

@@ -424,6 +424,51 @@
 
 	}
 
+
+	#formpartners {
+
+		.section-big-title {
+
+			padding: 0px 0 0px 0;
+
+			h1 {
+				text-align: left;
+				color: $cherry;
+				font-size: 30 * $mu + px;
+				padding: 0px 0 12px 0;
+
+
+			}
+			h2 {
+				color: $brown;
+				font-family: oksana_text_narrowbold;
+				font-size: 15 * $mu2 + px;
+				padding: 0px 0 50px 0;
+				text-align: left;
+
+			}
+			h3 {
+				color: $cherry;
+				font-family: oksana_text_narrowbold;
+				font-size: 18 * $mu2 + px;
+				padding: 0px 0 33px 0;
+				text-align: left;
+				position: relative;
+				&:before {
+					content: '';
+					position: absolute;
+					display: block;
+					width: 30px;
+					height: 0px;
+					left: 0;
+					margin-left: 0;
+					border-top: 1px solid $cherry;
+					top: -24px;
+				}
+			}
+		}
+	}
+
 }
 
 

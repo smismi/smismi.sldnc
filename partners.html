@@ -192,6 +192,9 @@
 
 
 
+
+
+
 				<div class="item_list_wrapper">
 					<!-- text wrapper -->
 					<div class="section-big-title">
@@ -469,32 +472,7 @@
 			</div>
 
 
-			<div id="formpartners" style="display: none">
 
-				<form action="">
-
-
-					<input type="text"/>
-					<input type="text"/>
-					<input type="text"/>
-					<input type="text"/>
-
-                    <select name="FWGWQE" id="">
-                        <option>1231</option>
-                        <option>1231</option>
-                        <option>1231</option>
-                        <option>1231</option>
-                        <option>1231</option>
-                        <option>1231</option>
-                    </select>
-					<input type="checkbox" name=""/>
-					<input type="checkbox" name=""/>
-
-
-
-				</form>
-
-			</div>
 		</section>
 		<section id="section-3" class="partners_page">
 
@@ -528,6 +506,109 @@
 
 					Стать дистрибьютором
 				</div>
+			</div>
+
+
+
+			<div id="formpartners" style="display: none">
+
+				<div class="section-big-title">
+					<h1>Хотите быть нашим поставщиком?</h1>
+
+					<h2>Выберите сырье, которое хотели бы поставлять нашей компании,
+						и опишите свое предложение.</h2>
+
+					<h3>Выберите сырьё которое поставляете:</h3>
+				</div>
+
+				<form action="">
+					<div class="input_row input_row_padded">
+
+
+						<div class="input_block_unpadded">
+
+							<input id="scr" type="radio" value="1" name="scr" checked="checked">
+							<label for="scr" class="input-helper input-helper--radio">Ваше сырье</label>
+						</div>
+						<div class="input_row_item wide">
+
+							<select name="FWGWQE" id="sdsv">
+								<option>1231</option>
+								<option>1231</option>
+								<option>1231</option>
+								<option>1231</option>
+								<option>1231</option>
+								<option>1231</option>
+							</select>
+
+						</div>
+
+					</div>
+					<div class="input_row input_row_padded">
+
+						<div class="input_block_unpadded">
+							<input id="scr2" type="radio" value="myValue 1" name="scr">
+							<label for="scr2" class="input-helper input-helper--radio">Другое сырье</label>
+
+
+						</div>
+						<div class="input_row_item wide">
+
+							<div class="wrapper">
+								<input type="text"/>
+							</div>
+						</div>
+
+
+					</div>
+					<div class="input_row">
+
+						<div class="input_row_item">
+							<label for="" class="label_above">Название Вашей компании:</label>
+							<div class="wrapper efqweg">
+								<input type="text" name="company"/>
+							</div>
+						</div>
+						<div class="input_row_item">
+							<label for="" class="label_above">Как вас зовут?:</label>
+							<div class="wrapper">
+								<input type="text" name="company"/>
+							</div>
+						</div>
+					</div>
+					<div class="input_row">
+
+						<div class="input_row_item">
+							<label for="" class="label_above">Ваш e-mail:</label>
+							<div class="wrapper efqweg">
+								<input type="text" name="company"/>
+							</div>
+						</div>
+						<div class="input_row_item">
+							<label for="" class="label_above">Телефон:</label>
+							<div class="wrapper">
+								<input type="text" name="company"/>
+							</div>
+						</div>
+					</div>
+					<div class="input_row">
+
+						<div class="input_row_item wide">
+							<label for="prd" class="label_above">Ваше предложение:</label>
+
+							<div class="wrapper">
+								<textarea name="prd" id="prd" cols="30" rows="10"></textarea>
+							</div>
+						</div>
+						<div class="input_row_item wide submit">
+
+							<input type="submit" value="Отправить" class="submit_button"/>
+						</div>
+					</div>
+
+
+				</form>
+
 			</div>
 		</section>
 		<footer id="footer_page">
@@ -568,7 +649,7 @@
 		SL.init.partners();
 
 
-        $("select").chosen({width: '400px', disable_search: true, no_results_text: "Oops, nothing found!"});
+        $("select").chosen({width: '100%', disable_search: true, no_results_text: "Oops, nothing found!"});
 
 
     });

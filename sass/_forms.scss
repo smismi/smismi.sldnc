@@ -1,0 +1,168 @@
+#formpartners {
+
+	@include pie-clearfix();
+	padding: 40px;
+}
+
+
+.input-helper {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 5px;
+	font-size: 15px;
+	cursor: pointer;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+	}
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+	}
+}
+
+.input-helper--radio {
+	padding-left: 35px;
+	margin-right: 35px;
+	line-height: 25px;
+	&:before {
+
+		top: 3px;
+		left: 0;
+		width: 21px;
+		height: 21px;
+		background: #fff;
+		border: 1px solid  #e60e64;
+		border-radius: 11px;
+
+	}
+	&:after {
+		top: 10px;
+		left: 7px;
+		width: 9px;
+		height: 9px;
+		border-radius: 5px;
+
+	}
+}
+
+.input-helper--checkbox {
+	padding-left: 20px;
+
+	&:before {
+		top: 2px;
+		left: 0;
+		width: 13px;
+		height: 13px;
+		border: 1px solid #222;
+	}
+}
+
+input[type="radio"] {
+	display: none;
+
+	&:checked + label:after {
+
+		background: #e60e64;
+	}
+}
+input[type="checkbox"] {
+	display: none;
+
+	&:checked + label:after {
+		background: #e60e64;
+	}
+}
+
+input[type="text"] {
+ 	border: 1px solid #e60e64;
+	outline: 0;
+	width: 100%;
+ 	line-height: 37px;
+
+
+}
+textarea {
+ 	border: 1px solid #e60e64;
+	outline: 0;
+	width: 100%;
+
+
+}
+input[type="text"] , textarea {
+	font: 17px/1.4 oksana_text_narrowdemibold, sans-serif;
+	padding: 6px 15px ;
+	color: $brown;
+}
+
+
+.input_row {
+
+	div.wrapper {
+
+		width:auto;
+		margin-right: 32px;
+		&.efqweg {
+			margin-right: 52px;
+
+		}
+	}
+	@include pie-clearfix();
+
+	&.input_row_padded {
+		padding-left: 167px;
+		margin-bottom: 23px;
+
+
+		.input_block_unpadded {
+			margin-left: -167px;
+			width: 167px;
+			float: left;
+			font-family: oksana_text_narrowdemibold;
+			margin-top: 7px;
+
+
+
+		}
+	}
+
+}
+.input_row_item {
+	float: left;
+	width: 50%;
+	&.wide {
+		width: 100%;
+	}
+	&.submit {
+		text-align: center;
+	}
+}
+
+.label_above {
+	display: block;
+	font-family: oksana_text_narrowdemibold;
+	font-size: 15px;
+	padding: 16px 0 12px 0 ;
+}
+
+.left_check {
+	width: 50px;
+}
+
+.submit_button {
+	margin-top: 18px;
+	background: $cherry;
+	padding: 0 33px;
+	line-height: 48px;
+	border: 0;
+	color: #fff;
+	font-size: 15px;
+	font-family: oksana_text_narrowdemibold;
+	font-weight: normal;
+
+
+
+}
