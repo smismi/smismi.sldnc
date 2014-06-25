@@ -20,12 +20,14 @@
 	<script type="text/javascript" src="js/jquery.scrollto.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+	<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
 
 	<script type="text/javascript" src="js/common.js"></script>
 
 
 	<link rel="stylesheet" href="css/fontface.css" type="text/css"/>
 	<link rel="stylesheet" href="css/partners.css" type="text/css"/>
+	<link rel="stylesheet" href="css/chosen.css" type="text/css"/>
 
 
 	<!-- Add fancyBox -->
@@ -36,6 +38,7 @@
 	<!-- Optionally add helpers - button, thumbnail and/or media -->
 	<link rel="stylesheet" href="img/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
 	<script type="text/javascript" src="img/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="img/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 	<script type="text/javascript" src="img/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
 	<link rel="stylesheet" href="img/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
@@ -475,6 +478,15 @@
 					<input type="text"/>
 					<input type="text"/>
 					<input type="text"/>
+
+                    <select name="FWGWQE" id="">
+                        <option>1231</option>
+                        <option>1231</option>
+                        <option>1231</option>
+                        <option>1231</option>
+                        <option>1231</option>
+                        <option>1231</option>
+                    </select>
 					<input type="checkbox" name=""/>
 					<input type="checkbox" name=""/>
 
@@ -556,7 +568,10 @@
 		SL.init.partners();
 
 
-	});
+        $("select").chosen({width: '400px', disable_search: true, no_results_text: "Oops, nothing found!"});
+
+
+    });
 
 </script>
 
