@@ -135,7 +135,6 @@ body {
 		text-align: center;
 		position: fixed;
 		left: 120%;
-		border:1px solid #f00;
 		overflow: auto;
 		//left: 0%;
 		top: 0;
@@ -146,7 +145,50 @@ body {
 
 
 
-	}
+		.item_list_item {
+			position: relative;
+			//border-bottom: 1px solid red;
+			border-right: 1px solid #f5e0cd;
+			//border: 1px solid #e2e2e2;
+			text-align: center;
+
+			vertical-align: bottom;
+
+			margin: 0 15%;
+			padding: 40px 0;
+			border-bottom: 1px solid #f5e0cd;
+
+
+			h5 {
+				font: 20px/1.4 oksana_text_narrowdemibold, sans-serif;
+
+				color: $cherry;
+
+
+			}
+
+			h6 {
+				font: 14px/1.6 oksana_text_narrowdemibold, sans-serif;
+				font-style: italic;
+
+				&:before {
+					content: "";
+					display: block;
+					width: 35px;
+					height: 1px;
+					background: $cherry;
+					margin: 16px auto;
+				}
+
+
+			}
+		}
+
+
+
+
+
+}
 
 	#partners_feedback {
 
@@ -218,4 +260,11 @@ body {
 		padding-left: 30px;
 	}
 
+
+
+	#partners_feedback {
+
+		padding: 120px 30px 40px;
+
+	}
 }
