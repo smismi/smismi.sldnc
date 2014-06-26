@@ -614,24 +614,37 @@ body.partners .item_list_wrapper .section-big-title h2 {
   color: #442111;
   font-size: 17px;
 }
-
-#formpartners .section-big-title {
+body.partners #partners_wrapper .item_list_item {
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
+  margin: 0 15%;
+  padding: 40px 0;
+  border-bottom: 1px solid #f5e0cd;
+}
+body.partners #partners_wrapper .item_list_item h5 {
+  font-size: 20px;
+}
+body.partners #partners_wrapper .item_list_item h6 {
+  font-size: 14px;
+}
+body.partners #formpartners .section-big-title {
   padding: 0px 0 0px 0;
 }
-#formpartners .section-big-title h1 {
+body.partners #formpartners .section-big-title h1 {
   text-align: left;
   color: #e70c66;
   font-size: 30px;
   padding: 0px 0 12px 0;
 }
-#formpartners .section-big-title h2 {
+body.partners #formpartners .section-big-title h2 {
   color: #442111;
   font-family: oksana_text_narrowbold;
   font-size: 15px;
   padding: 0px 0 50px 0;
   text-align: left;
 }
-#formpartners .section-big-title h3 {
+body.partners #formpartners .section-big-title h3 {
   color: #e70c66;
   font-family: oksana_text_narrowbold;
   font-size: 18px;
@@ -639,7 +652,7 @@ body.partners .item_list_wrapper .section-big-title h2 {
   text-align: left;
   position: relative;
 }
-#formpartners .section-big-title h3:before {
+body.partners #formpartners .section-big-title h3:before {
   content: '';
   position: absolute;
   display: block;
@@ -844,24 +857,37 @@ body.partners .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 15.3px;
   }
-
-  #formpartners .section-big-title {
+  body.partners #partners_wrapper .item_list_item {
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 15%;
+    padding: 40px 0;
+    border-bottom: 1px solid #f5e0cd;
+  }
+  body.partners #partners_wrapper .item_list_item h5 {
+    font-size: 18px;
+  }
+  body.partners #partners_wrapper .item_list_item h6 {
+    font-size: 12.6px;
+  }
+  body.partners #formpartners .section-big-title {
     padding: 0px 0 0px 0;
   }
-  #formpartners .section-big-title h1 {
+  body.partners #formpartners .section-big-title h1 {
     text-align: left;
     color: #e70c66;
     font-size: 22.5px;
     padding: 0px 0 12px 0;
   }
-  #formpartners .section-big-title h2 {
+  body.partners #formpartners .section-big-title h2 {
     color: #442111;
     font-family: oksana_text_narrowbold;
     font-size: 13.5px;
     padding: 0px 0 50px 0;
     text-align: left;
   }
-  #formpartners .section-big-title h3 {
+  body.partners #formpartners .section-big-title h3 {
     color: #e70c66;
     font-family: oksana_text_narrowbold;
     font-size: 16.2px;
@@ -869,7 +895,7 @@ body.partners .item_list_wrapper .section-big-title h2 {
     text-align: left;
     position: relative;
   }
-  #formpartners .section-big-title h3:before {
+  body.partners #formpartners .section-big-title h3:before {
     content: '';
     position: absolute;
     display: block;
@@ -1074,24 +1100,37 @@ body.partners .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 13.6px;
   }
-
-  #formpartners .section-big-title {
+  body.partners #partners_wrapper .item_list_item {
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 15%;
+    padding: 40px 0;
+    border-bottom: 1px solid #f5e0cd;
+  }
+  body.partners #partners_wrapper .item_list_item h5 {
+    font-size: 16px;
+  }
+  body.partners #partners_wrapper .item_list_item h6 {
+    font-size: 11.2px;
+  }
+  body.partners #formpartners .section-big-title {
     padding: 0px 0 0px 0;
   }
-  #formpartners .section-big-title h1 {
+  body.partners #formpartners .section-big-title h1 {
     text-align: left;
     color: #e70c66;
     font-size: 16.5px;
     padding: 0px 0 12px 0;
   }
-  #formpartners .section-big-title h2 {
+  body.partners #formpartners .section-big-title h2 {
     color: #442111;
     font-family: oksana_text_narrowbold;
     font-size: 12px;
     padding: 0px 0 50px 0;
     text-align: left;
   }
-  #formpartners .section-big-title h3 {
+  body.partners #formpartners .section-big-title h3 {
     color: #e70c66;
     font-family: oksana_text_narrowbold;
     font-size: 14.4px;
@@ -1099,7 +1138,7 @@ body.partners .item_list_wrapper .section-big-title h2 {
     text-align: left;
     position: relative;
   }
-  #formpartners .section-big-title h3:before {
+  body.partners #formpartners .section-big-title h3:before {
     content: '';
     position: absolute;
     display: block;
@@ -1304,24 +1343,37 @@ body.partners .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 13.6px;
   }
-
-  #formpartners .section-big-title {
+  body.partners #partners_wrapper .item_list_item {
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 15%;
+    padding: 40px 0;
+    border-bottom: 1px solid #f5e0cd;
+  }
+  body.partners #partners_wrapper .item_list_item h5 {
+    font-size: 16px;
+  }
+  body.partners #partners_wrapper .item_list_item h6 {
+    font-size: 11.2px;
+  }
+  body.partners #formpartners .section-big-title {
     padding: 0px 0 0px 0;
   }
-  #formpartners .section-big-title h1 {
+  body.partners #formpartners .section-big-title h1 {
     text-align: left;
     color: #e70c66;
     font-size: 16.5px;
     padding: 0px 0 12px 0;
   }
-  #formpartners .section-big-title h2 {
+  body.partners #formpartners .section-big-title h2 {
     color: #442111;
     font-family: oksana_text_narrowbold;
     font-size: 12px;
     padding: 0px 0 50px 0;
     text-align: left;
   }
-  #formpartners .section-big-title h3 {
+  body.partners #formpartners .section-big-title h3 {
     color: #e70c66;
     font-family: oksana_text_narrowbold;
     font-size: 14.4px;
@@ -1329,7 +1381,7 @@ body.partners .item_list_wrapper .section-big-title h2 {
     text-align: left;
     position: relative;
   }
-  #formpartners .section-big-title h3:before {
+  body.partners #formpartners .section-big-title h3:before {
     content: '';
     position: absolute;
     display: block;
@@ -1534,24 +1586,37 @@ body.partners .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 13.6px;
   }
-
-  #formpartners .section-big-title {
+  body.partners #partners_wrapper .item_list_item {
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 15%;
+    padding: 40px 0;
+    border-bottom: 1px solid #f5e0cd;
+  }
+  body.partners #partners_wrapper .item_list_item h5 {
+    font-size: 16px;
+  }
+  body.partners #partners_wrapper .item_list_item h6 {
+    font-size: 11.2px;
+  }
+  body.partners #formpartners .section-big-title {
     padding: 0px 0 0px 0;
   }
-  #formpartners .section-big-title h1 {
+  body.partners #formpartners .section-big-title h1 {
     text-align: left;
     color: #e70c66;
     font-size: 16.5px;
     padding: 0px 0 12px 0;
   }
-  #formpartners .section-big-title h2 {
+  body.partners #formpartners .section-big-title h2 {
     color: #442111;
     font-family: oksana_text_narrowbold;
     font-size: 12px;
     padding: 0px 0 50px 0;
     text-align: left;
   }
-  #formpartners .section-big-title h3 {
+  body.partners #formpartners .section-big-title h3 {
     color: #e70c66;
     font-family: oksana_text_narrowbold;
     font-size: 14.4px;
@@ -1559,7 +1624,7 @@ body.partners .item_list_wrapper .section-big-title h2 {
     text-align: left;
     position: relative;
   }
-  #formpartners .section-big-title h3:before {
+  body.partners #formpartners .section-big-title h3:before {
     content: '';
     position: absolute;
     display: block;
@@ -1764,24 +1829,37 @@ body.partners .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 13.6px;
   }
-
-  #formpartners .section-big-title {
+  body.partners #partners_wrapper .item_list_item {
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 15%;
+    padding: 40px 0;
+    border-bottom: 1px solid #f5e0cd;
+  }
+  body.partners #partners_wrapper .item_list_item h5 {
+    font-size: 16px;
+  }
+  body.partners #partners_wrapper .item_list_item h6 {
+    font-size: 11.2px;
+  }
+  body.partners #formpartners .section-big-title {
     padding: 0px 0 0px 0;
   }
-  #formpartners .section-big-title h1 {
+  body.partners #formpartners .section-big-title h1 {
     text-align: left;
     color: #e70c66;
     font-size: 16.5px;
     padding: 0px 0 12px 0;
   }
-  #formpartners .section-big-title h2 {
+  body.partners #formpartners .section-big-title h2 {
     color: #442111;
     font-family: oksana_text_narrowbold;
     font-size: 12px;
     padding: 0px 0 50px 0;
     text-align: left;
   }
-  #formpartners .section-big-title h3 {
+  body.partners #formpartners .section-big-title h3 {
     color: #e70c66;
     font-family: oksana_text_narrowbold;
     font-size: 14.4px;
@@ -1789,7 +1867,7 @@ body.partners .item_list_wrapper .section-big-title h2 {
     text-align: left;
     position: relative;
   }
-  #formpartners .section-big-title h3:before {
+  body.partners #formpartners .section-big-title h3:before {
     content: '';
     position: absolute;
     display: block;
@@ -1994,24 +2072,37 @@ body.partners .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 13.6px;
   }
-
-  #formpartners .section-big-title {
+  body.partners #partners_wrapper .item_list_item {
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 15%;
+    padding: 40px 0;
+    border-bottom: 1px solid #f5e0cd;
+  }
+  body.partners #partners_wrapper .item_list_item h5 {
+    font-size: 16px;
+  }
+  body.partners #partners_wrapper .item_list_item h6 {
+    font-size: 11.2px;
+  }
+  body.partners #formpartners .section-big-title {
     padding: 0px 0 0px 0;
   }
-  #formpartners .section-big-title h1 {
+  body.partners #formpartners .section-big-title h1 {
     text-align: left;
     color: #e70c66;
     font-size: 16.5px;
     padding: 0px 0 12px 0;
   }
-  #formpartners .section-big-title h2 {
+  body.partners #formpartners .section-big-title h2 {
     color: #442111;
     font-family: oksana_text_narrowbold;
     font-size: 12px;
     padding: 0px 0 50px 0;
     text-align: left;
   }
-  #formpartners .section-big-title h3 {
+  body.partners #formpartners .section-big-title h3 {
     color: #e70c66;
     font-family: oksana_text_narrowbold;
     font-size: 14.4px;
@@ -2019,7 +2110,7 @@ body.partners .item_list_wrapper .section-big-title h2 {
     text-align: left;
     position: relative;
   }
-  #formpartners .section-big-title h3:before {
+  body.partners #formpartners .section-big-title h3:before {
     content: '';
     position: absolute;
     display: block;
@@ -4935,24 +5026,37 @@ body.partners .item_list_wrapper .section-big-title h2 {
   color: #442111;
   font-size: 17px;
 }
-
-#formpartners .section-big-title {
+body.partners #partners_wrapper .item_list_item {
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
+  margin: 0 15%;
+  padding: 40px 0;
+  border-bottom: 1px solid #f5e0cd;
+}
+body.partners #partners_wrapper .item_list_item h5 {
+  font-size: 20px;
+}
+body.partners #partners_wrapper .item_list_item h6 {
+  font-size: 14px;
+}
+body.partners #formpartners .section-big-title {
   padding: 0px 0 0px 0;
 }
-#formpartners .section-big-title h1 {
+body.partners #formpartners .section-big-title h1 {
   text-align: left;
   color: #e70c66;
   font-size: 30px;
   padding: 0px 0 12px 0;
 }
-#formpartners .section-big-title h2 {
+body.partners #formpartners .section-big-title h2 {
   color: #442111;
   font-family: oksana_text_narrowbold;
   font-size: 15px;
   padding: 0px 0 50px 0;
   text-align: left;
 }
-#formpartners .section-big-title h3 {
+body.partners #formpartners .section-big-title h3 {
   color: #e70c66;
   font-family: oksana_text_narrowbold;
   font-size: 18px;
@@ -4960,7 +5064,7 @@ body.partners .item_list_wrapper .section-big-title h2 {
   text-align: left;
   position: relative;
 }
-#formpartners .section-big-title h3:before {
+body.partners #formpartners .section-big-title h3:before {
   content: '';
   position: absolute;
   display: block;
@@ -5165,24 +5269,37 @@ body.partners .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 15.3px;
   }
-
-  #formpartners .section-big-title {
+  body.partners #partners_wrapper .item_list_item {
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 15%;
+    padding: 40px 0;
+    border-bottom: 1px solid #f5e0cd;
+  }
+  body.partners #partners_wrapper .item_list_item h5 {
+    font-size: 18px;
+  }
+  body.partners #partners_wrapper .item_list_item h6 {
+    font-size: 12.6px;
+  }
+  body.partners #formpartners .section-big-title {
     padding: 0px 0 0px 0;
   }
-  #formpartners .section-big-title h1 {
+  body.partners #formpartners .section-big-title h1 {
     text-align: left;
     color: #e70c66;
     font-size: 22.5px;
     padding: 0px 0 12px 0;
   }
-  #formpartners .section-big-title h2 {
+  body.partners #formpartners .section-big-title h2 {
     color: #442111;
     font-family: oksana_text_narrowbold;
     font-size: 13.5px;
     padding: 0px 0 50px 0;
     text-align: left;
   }
-  #formpartners .section-big-title h3 {
+  body.partners #formpartners .section-big-title h3 {
     color: #e70c66;
     font-family: oksana_text_narrowbold;
     font-size: 16.2px;
@@ -5190,7 +5307,7 @@ body.partners .item_list_wrapper .section-big-title h2 {
     text-align: left;
     position: relative;
   }
-  #formpartners .section-big-title h3:before {
+  body.partners #formpartners .section-big-title h3:before {
     content: '';
     position: absolute;
     display: block;
@@ -5395,24 +5512,37 @@ body.partners .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 13.6px;
   }
-
-  #formpartners .section-big-title {
+  body.partners #partners_wrapper .item_list_item {
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 15%;
+    padding: 40px 0;
+    border-bottom: 1px solid #f5e0cd;
+  }
+  body.partners #partners_wrapper .item_list_item h5 {
+    font-size: 16px;
+  }
+  body.partners #partners_wrapper .item_list_item h6 {
+    font-size: 11.2px;
+  }
+  body.partners #formpartners .section-big-title {
     padding: 0px 0 0px 0;
   }
-  #formpartners .section-big-title h1 {
+  body.partners #formpartners .section-big-title h1 {
     text-align: left;
     color: #e70c66;
     font-size: 16.5px;
     padding: 0px 0 12px 0;
   }
-  #formpartners .section-big-title h2 {
+  body.partners #formpartners .section-big-title h2 {
     color: #442111;
     font-family: oksana_text_narrowbold;
     font-size: 12px;
     padding: 0px 0 50px 0;
     text-align: left;
   }
-  #formpartners .section-big-title h3 {
+  body.partners #formpartners .section-big-title h3 {
     color: #e70c66;
     font-family: oksana_text_narrowbold;
     font-size: 14.4px;
@@ -5420,7 +5550,7 @@ body.partners .item_list_wrapper .section-big-title h2 {
     text-align: left;
     position: relative;
   }
-  #formpartners .section-big-title h3:before {
+  body.partners #formpartners .section-big-title h3:before {
     content: '';
     position: absolute;
     display: block;
@@ -5625,24 +5755,37 @@ body.partners .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 13.6px;
   }
-
-  #formpartners .section-big-title {
+  body.partners #partners_wrapper .item_list_item {
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 15%;
+    padding: 40px 0;
+    border-bottom: 1px solid #f5e0cd;
+  }
+  body.partners #partners_wrapper .item_list_item h5 {
+    font-size: 16px;
+  }
+  body.partners #partners_wrapper .item_list_item h6 {
+    font-size: 11.2px;
+  }
+  body.partners #formpartners .section-big-title {
     padding: 0px 0 0px 0;
   }
-  #formpartners .section-big-title h1 {
+  body.partners #formpartners .section-big-title h1 {
     text-align: left;
     color: #e70c66;
     font-size: 16.5px;
     padding: 0px 0 12px 0;
   }
-  #formpartners .section-big-title h2 {
+  body.partners #formpartners .section-big-title h2 {
     color: #442111;
     font-family: oksana_text_narrowbold;
     font-size: 12px;
     padding: 0px 0 50px 0;
     text-align: left;
   }
-  #formpartners .section-big-title h3 {
+  body.partners #formpartners .section-big-title h3 {
     color: #e70c66;
     font-family: oksana_text_narrowbold;
     font-size: 14.4px;
@@ -5650,7 +5793,7 @@ body.partners .item_list_wrapper .section-big-title h2 {
     text-align: left;
     position: relative;
   }
-  #formpartners .section-big-title h3:before {
+  body.partners #formpartners .section-big-title h3:before {
     content: '';
     position: absolute;
     display: block;
@@ -5855,24 +5998,37 @@ body.partners .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 13.6px;
   }
-
-  #formpartners .section-big-title {
+  body.partners #partners_wrapper .item_list_item {
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 15%;
+    padding: 40px 0;
+    border-bottom: 1px solid #f5e0cd;
+  }
+  body.partners #partners_wrapper .item_list_item h5 {
+    font-size: 16px;
+  }
+  body.partners #partners_wrapper .item_list_item h6 {
+    font-size: 11.2px;
+  }
+  body.partners #formpartners .section-big-title {
     padding: 0px 0 0px 0;
   }
-  #formpartners .section-big-title h1 {
+  body.partners #formpartners .section-big-title h1 {
     text-align: left;
     color: #e70c66;
     font-size: 16.5px;
     padding: 0px 0 12px 0;
   }
-  #formpartners .section-big-title h2 {
+  body.partners #formpartners .section-big-title h2 {
     color: #442111;
     font-family: oksana_text_narrowbold;
     font-size: 12px;
     padding: 0px 0 50px 0;
     text-align: left;
   }
-  #formpartners .section-big-title h3 {
+  body.partners #formpartners .section-big-title h3 {
     color: #e70c66;
     font-family: oksana_text_narrowbold;
     font-size: 14.4px;
@@ -5880,7 +6036,7 @@ body.partners .item_list_wrapper .section-big-title h2 {
     text-align: left;
     position: relative;
   }
-  #formpartners .section-big-title h3:before {
+  body.partners #formpartners .section-big-title h3:before {
     content: '';
     position: absolute;
     display: block;
@@ -6085,24 +6241,37 @@ body.partners .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 13.6px;
   }
-
-  #formpartners .section-big-title {
+  body.partners #partners_wrapper .item_list_item {
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 15%;
+    padding: 40px 0;
+    border-bottom: 1px solid #f5e0cd;
+  }
+  body.partners #partners_wrapper .item_list_item h5 {
+    font-size: 16px;
+  }
+  body.partners #partners_wrapper .item_list_item h6 {
+    font-size: 11.2px;
+  }
+  body.partners #formpartners .section-big-title {
     padding: 0px 0 0px 0;
   }
-  #formpartners .section-big-title h1 {
+  body.partners #formpartners .section-big-title h1 {
     text-align: left;
     color: #e70c66;
     font-size: 16.5px;
     padding: 0px 0 12px 0;
   }
-  #formpartners .section-big-title h2 {
+  body.partners #formpartners .section-big-title h2 {
     color: #442111;
     font-family: oksana_text_narrowbold;
     font-size: 12px;
     padding: 0px 0 50px 0;
     text-align: left;
   }
-  #formpartners .section-big-title h3 {
+  body.partners #formpartners .section-big-title h3 {
     color: #e70c66;
     font-family: oksana_text_narrowbold;
     font-size: 14.4px;
@@ -6110,7 +6279,7 @@ body.partners .item_list_wrapper .section-big-title h2 {
     text-align: left;
     position: relative;
   }
-  #formpartners .section-big-title h3:before {
+  body.partners #formpartners .section-big-title h3:before {
     content: '';
     position: absolute;
     display: block;
@@ -6315,24 +6484,37 @@ body.partners .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 13.6px;
   }
-
-  #formpartners .section-big-title {
+  body.partners #partners_wrapper .item_list_item {
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 15%;
+    padding: 40px 0;
+    border-bottom: 1px solid #f5e0cd;
+  }
+  body.partners #partners_wrapper .item_list_item h5 {
+    font-size: 16px;
+  }
+  body.partners #partners_wrapper .item_list_item h6 {
+    font-size: 11.2px;
+  }
+  body.partners #formpartners .section-big-title {
     padding: 0px 0 0px 0;
   }
-  #formpartners .section-big-title h1 {
+  body.partners #formpartners .section-big-title h1 {
     text-align: left;
     color: #e70c66;
     font-size: 16.5px;
     padding: 0px 0 12px 0;
   }
-  #formpartners .section-big-title h2 {
+  body.partners #formpartners .section-big-title h2 {
     color: #442111;
     font-family: oksana_text_narrowbold;
     font-size: 12px;
     padding: 0px 0 50px 0;
     text-align: left;
   }
-  #formpartners .section-big-title h3 {
+  body.partners #formpartners .section-big-title h3 {
     color: #e70c66;
     font-family: oksana_text_narrowbold;
     font-size: 14.4px;
@@ -6340,7 +6522,7 @@ body.partners .item_list_wrapper .section-big-title h2 {
     text-align: left;
     position: relative;
   }
-  #formpartners .section-big-title h3:before {
+  body.partners #formpartners .section-big-title h3:before {
     content: '';
     position: absolute;
     display: block;

@@ -1753,7 +1753,7 @@
 				});
 			}
 
-			this.overlay.css( opts.css ).show();
+			this.overlay.animate( opts.css, 250 ).show();
 		},
 
 		close : function() {

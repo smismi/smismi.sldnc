@@ -432,51 +432,84 @@
 			}
 		}
 
-	}
 
 
-	#formpartners {
-
-		.section-big-title {
-
-			padding: 0px 0 0px 0;
-
-			h1 {
-				text-align: left;
-				color: $cherry;
-				font-size: 30 * $mu + px;
-				padding: 0px 0 12px 0;
+		#partners_wrapper {
 
 
-			}
-			h2 {
-				color: $brown;
-				font-family: oksana_text_narrowbold;
-				font-size: 15 * $mu2 + px;
-				padding: 0px 0 50px 0;
-				text-align: left;
 
-			}
-			h3 {
-				color: $cherry;
-				font-family: oksana_text_narrowbold;
-				font-size: 18 * $mu2 + px;
-				padding: 0px 0 33px 0;
-				text-align: left;
+			.item_list_item {
 				position: relative;
-				&:before {
-					content: '';
-					position: absolute;
-					display: block;
-					width: 30px;
-					height: 0px;
-					left: 0;
-					margin-left: 0;
-					border-top: 1px solid $cherry;
-					top: -24px;
+				//border-bottom: 1px solid red;
+				//border-right: 1px solid #f5e0cd;
+				//border: 1px solid #e2e2e2;
+				text-align: center;
+
+				vertical-align: bottom;
+
+				margin: 0 15%;
+				padding: 40px 0;
+				border-bottom: 1px solid #f5e0cd;
+
+
+				h5 {
+					font-size: 20 * $mu2 + px;
+
+				}
+
+				h6 {
+					font-size: 14 * $mu2 + px;
+
+
 				}
 			}
 		}
+
+		#formpartners {
+
+			.section-big-title {
+
+				padding: 0px 0 0px 0;
+
+				h1 {
+					text-align: left;
+					color: $cherry;
+					font-size: 30 * $mu + px;
+					padding: 0px 0 12px 0;
+
+
+				}
+				h2 {
+					color: $brown;
+					font-family: oksana_text_narrowbold;
+					font-size: 15 * $mu2 + px;
+					padding: 0px 0 50px 0;
+					text-align: left;
+
+				}
+				h3 {
+					color: $cherry;
+					font-family: oksana_text_narrowbold;
+					font-size: 18 * $mu2 + px;
+					padding: 0px 0 33px 0;
+					text-align: left;
+					position: relative;
+					&:before {
+						content: '';
+						position: absolute;
+						display: block;
+						width: 30px;
+						height: 0px;
+						left: 0;
+						margin-left: 0;
+						border-top: 1px solid $cherry;
+						top: -24px;
+					}
+				}
+			}
+		}
+
+
 	}
 
 }

@@ -1200,21 +1200,46 @@ var SL = {
 		$(".fifth_slide .fancybox").fancybox({
 			helpers: {
 				overlay: {
-					locked: false
+					locked: false,
+					showEarly  : true,
+					css: {
+						opacity:1
+					}
 				}
 			},
-			openEffect  : 'elastic',
-			closeEffect : 'elastic',
+			openEffect  : 'fade',
+			closeEffect : 'fade',
 			nextEffect : 'elastic',
 			prevEffect : 'elastic',
-			padding : 0,
-			margin  : 0,
 			width: 800,
 			maxWidth: ($(window).width() < 800) ? '100%' : 800 ,
 			autoHeight: true,
-			beforeLoad   : function() {
 
-				$("#popupplace").show();
+			afterShow: function(){
+
+				if ($(document).height() > $(window).height()) {
+					var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+					$('html').addClass('noscroll').css('top',-scrollTop);
+				}
+
+
+				$("#popupplace").fadeIn(250);
+
+
+			},
+			beforeClose: function(){
+
+
+				var scrollTop = parseInt($('html').css('top'));
+				$('html').removeClass('noscroll');
+				$('html,body').scrollTop(-scrollTop);
+
+
+			},
+			afterClose   : function(){
+				$("#popupplace").fadeOut(250);
+			},
+			beforeLoad   : function() {
 
 				var _content = this.content;
 				var descr = this.element.data('descr');
@@ -1343,25 +1368,6 @@ var SL = {
 
 				this.inner.addClass("vac_block");
 
-			},
-			afterShow: function(){
-
-				if ($(document).height() > $(window).height()) {
-					var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
-					$('html').addClass('noscroll').css('top',-scrollTop);
-				}
-
-
-			},
-			beforeClose: function(){
-
-
-
-				$("#popupplace").hide();
-
-				var scrollTop = parseInt($('html').css('top'));
-				$('html').removeClass('noscroll');
-				$('html,body').scrollTop(-scrollTop);
 			}
 		});
 
@@ -1379,11 +1385,15 @@ var SL = {
 		$(".sixth_slide .fancybox").fancybox({
 			helpers: {
 				overlay: {
-					locked: false
+					locked: false,
+					showEarly  : true,
+					css: {
+						opacity:1
+					}
 				}
 			},
-			openEffect  : 'elastic',
-			closeEffect : 'elastic',
+			openEffect  : 'fade',
+			closeEffect : 'fade',
 			nextEffect : 'elastic',
 			prevEffect : 'elastic',
 			padding : 60,
@@ -1391,10 +1401,34 @@ var SL = {
 			width: 570,
 			maxWidth: ($(window).width() < 570) ? '100%' : 570 ,
 			autoHeight: true,
+			afterShow: function(){
+
+				if ($(document).height() > $(window).height()) {
+					var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+					$('html').addClass('noscroll').css('top',-scrollTop);
+				}
+
+
+				$("#popupplace").fadeIn(250);
+
+
+			},
+			beforeClose: function(){
+
+
+				var scrollTop = parseInt($('html').css('top'));
+				$('html').removeClass('noscroll');
+				$('html,body').scrollTop(-scrollTop);
+
+
+			},
+			afterClose   : function(){
+				$("#popupplace").fadeOut(250);
+			},
+
+
 			beforeLoad   : function() {
 
-
-				$("#popupplace").show();
 
 				var descr = this.element.data('descr');
 
@@ -1440,25 +1474,6 @@ var SL = {
 
 				this.inner.addClass("news_block");
 
-			},
-			afterShow: function(){
-
-				if ($(document).height() > $(window).height()) {
-					var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
-					$('html').addClass('noscroll').css('top',-scrollTop);
-				}
-
-
-			},
-			beforeClose: function(){
-
-
-
-				$("#popupplace").hide();
-
-				var scrollTop = parseInt($('html').css('top'));
-				$('html').removeClass('noscroll');
-				$('html,body').scrollTop(-scrollTop);
 			}
 		});
 
@@ -1472,11 +1487,15 @@ var SL = {
 		$(".fancybox").fancybox({
 			helpers: {
 				overlay: {
-					locked: false
+					locked: false,
+					showEarly  : true,
+					css: {
+						opacity:1
+					}
 				}
 			},
-			openEffect  : 'elastic',
-			closeEffect : 'elastic',
+			openEffect  : 'fade',
+			closeEffect : 'fade',
 			nextEffect : 'elastic',
 			prevEffect : 'elastic',
 			padding : 0,
@@ -1484,9 +1503,33 @@ var SL = {
 			width: 800,
 			maxWidth: ($(window).width() < 800) ? '100%' : 800 ,
 			autoHeight: true,
-			beforeLoad   : function() {
+			afterShow: function(){
 
-				$("#popupplace").show();
+				if ($(document).height() > $(window).height()) {
+					var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+					$('html').addClass('noscroll').css('top',-scrollTop);
+				}
+
+
+				$("#popupplace").fadeIn(250);
+
+
+			},
+			beforeClose: function(){
+
+
+				var scrollTop = parseInt($('html').css('top'));
+				$('html').removeClass('noscroll');
+				$('html,body').scrollTop(-scrollTop);
+
+
+			},
+			afterClose   : function(){
+				$("#popupplace").fadeOut(250);
+			},
+
+
+			beforeLoad   : function() {
 
 
 
@@ -1518,25 +1561,6 @@ var SL = {
 
 				this.inner.addClass("prod_block");
 
-			},
-			afterShow: function(){
-
-				if ($(document).height() > $(window).height()) {
-					var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
-					$('html').addClass('noscroll').css('top',-scrollTop);
-				}
-
-
-			},
-			beforeClose: function(){
-
-
-
-				$("#popupplace").hide();
-
-				var scrollTop = parseInt($('html').css('top'));
-				$('html').removeClass('noscroll');
-				$('html,body').scrollTop(-scrollTop);
 			}
 		});
 
@@ -1594,11 +1618,15 @@ var SL = {
 		$(".partners_page .fancybox").fancybox({
 			helpers: {
 				overlay: {
-					locked: false
+					locked: false,
+					showEarly  : true,
+					css: {
+						opacity:1
+					}
 				}
 			},
-			openEffect  : 'elastic',
-			closeEffect : 'elastic',
+			openEffect  : 'fade',
+			closeEffect : 'fade',
 			nextEffect : 'elastic',
 			prevEffect : 'elastic',
 			padding : 0,
@@ -1607,56 +1635,7 @@ var SL = {
 			maxWidth: ($(window).width() < 800) ? '100%' : 591 ,
 			autoHeight: true,
 
-			beforeLoad   : function() {
-
-				$("#popupplace").show();
-
-//				var _content = this.content;
-//				var descr = this.element.data('descr');
-//
-//				var _n = vacancies[descr];
-//
-//				if (!_n)  {
-//					$("h1", this.content).html("Ошибка данных");
-//					return;
-//				}
-//
-//
-//
-//				$("h1", this.content).html(_n.type);
-//				$("h2", this.content).html(_n.position);
-//				$("#con > ul", _content).html("");
-//				$("#req > ul", _content).html("");
-//				$("#res > ul", _content).html("");
-//
-//
-//				$("#sal > ul", this.content).html($("<li>").append(_n.salary));
-//
-//
-//				$.each(_n.conditions, function( index, value ) {
-//					$("#con > ul", _content).append(
-//						$("<li>").append(value)
-//					);
-//				})
-//
-//				$.each(_n.requirments, function( index, value ) {
-//					$("#req > ul", _content).append(
-//						$("<li>").append(value)
-//					);
-//				})
-//
-//				$.each(_n.responsibility, function( index, value ) {
-//					$("#res > ul", _content).append(
-//						$("<li>").append(value)
-//					);
-//				})
-
-
-
-			},
 			afterShow: function(){
-
-
 
 				if ($(document).height() > $(window).height()) {
 					var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
@@ -1664,18 +1643,22 @@ var SL = {
 				}
 
 
+				$("#popupplace").fadeIn(250);
+
 
 			},
 			beforeClose: function(){
 
-				$("#popupplace").hide();
 
 				var scrollTop = parseInt($('html').css('top'));
 				$('html').removeClass('noscroll');
 				$('html,body').scrollTop(-scrollTop);
 
 
-			}
+			},
+ 			afterClose   : function(){
+			    $("#popupplace").fadeOut(250);
+		    }
 
 		});
 
