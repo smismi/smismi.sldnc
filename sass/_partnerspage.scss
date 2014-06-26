@@ -9,22 +9,55 @@ body {
 .partners {
 
 
+
+
 	.first_slide {
 
 
-		padding: 121px 0 ;
+		padding: 60px 0;
 		background: #fff4d5;
+
+		.headermark {
+			&:before {
+				content: "\e504";
+				font-size: 20px;
+			}
+		}
+
+
 	}
 	.second_slide {
+		padding: 80px 0;
 
 
 		background: #fff;
+
+		.headermark {
+			&:before {
+				content: "\e504";
+				font-size: 20px;
+			}
+		}
+
 	}
 	.third_slide {
+		padding: 80px 0;
 
 
 		background: #fff4d5;
+
+		.headermark {
+			&:before {
+				content: "\e504";
+				font-size: 20px;
+			}
+		}
+
 	}
+
+
+
+
 
 
 	.item_list_wrapper {
@@ -36,27 +69,6 @@ body {
 
 
 
-		.block_title {
-			font: 50px/1.4 'oksana_text_narrowbold', sans-serif;
-			color: $brown;
-			padding: 44px 65px 0 65px;
-
-		}
-
-		.block_description {
-			color: $brown;
-			font: 17px/1.4 'oksana_text_narrowdemibold', sans-serif;
-			margin: 0;
-			padding: 0 65px 64px 65px;
-		}
-
-
-		.headermark {
-			&:before {
-				content: "\e504";
-				font-size: 20px;
-			}
-		}
 
 
 		.item_list {
@@ -70,18 +82,47 @@ body {
 			.item_list_item {
 				position: relative;
 				//border-bottom: 1px solid red;
-				//border-right: 1px solid red;
-				border: 1px solid #e2e2e2;
-				text-align: center;
+				border-right: 1px solid #f5e0cd;
+				//border: 1px solid #e2e2e2;
+				text-align: left;
 
 				width: 300px;
 				display: inline-block;
-				height: 292px;
+				height: 165px;
 				vertical-align: bottom;
 
 				margin-left: -1px;
 				margin-top: -1px;
 
+
+
+					h5 {
+						font: 20px/1.4 oksana_text_narrowdemibold, sans-serif;
+						padding-right: 30px;
+						padding-left: 54px;
+						color: $cherry;
+
+
+					}
+
+					h6 {
+						padding-right: 30px;
+						padding-left: 54px;
+						font: 14px/1.6 oksana_text_narrowdemibold, sans-serif;
+						font-style: italic;
+
+						&:before {
+							content: "";
+							display: block;
+							width: 35px;
+							height: 1px;
+							background: $cherry;
+							margin-top: 16px;
+							margin-bottom: 16px;
+						}
+
+
+					}
 				}
 			}
 
@@ -118,5 +159,63 @@ body {
 
 	}
 
+
+
+	/* feedback_slide  button:begin */
+	.feedback_slide{
+		width: 212px; height: 52px;
+		background: #e60e64;
+		position: relative;
+		cursor: pointer;
+		margin: 32px auto;
+	}
+	/* text */
+	.feedback_slide a:nth-child(1){
+		display: block;
+		width: 212px;
+		height: 52px;
+		font: 16px/52px 'oksana_text_narrowdemibold', sans-serif;
+		color: #fff;
+		background: #e60e64;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 2;
+		transition: all 0.5s ease;
+		text-decoration: none;
+	}
+	.feedback_slide:hover a:nth-child(1){
+		width: 159px;
+	}
+	html.ipad .feedback_slide:hover a:nth-child(1){
+		width: 212px;
+	}
+
+	/* bg */
+	.feedback_slide span{
+		display: block;
+		width: 52px;
+		height: 52px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 1;
+		background-color: #fff;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAYCAYAAAAh8HdUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNqU1EsOgCAMBFCYA+ja++mpvJ+uPUH9JJBI+pl2ZUyeTIFaj2mV8tRy7bWQhfZwzpukUQZijMVAaP1EsMfLwF9PLMT4goHQvhRBWLk9CG+XLFhF4vOk49HXiFnljYwscFeygIk8oKIIhPNkTTOyoKMM+G5E+7GwIJyn9OR6dQswAB5OVX9Ha4cpAAAAAElFTkSuQmCC');
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	/* visual tour button:end */
+
+
+	.subscribe_link {
+		color: $cherry;
+		font: 16px/1.4 'oksana_text_narrowbold', sans-serif;
+		text-decoration: none;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAANCAYAAACkTj4ZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVpJREFUeNqkkz0sQ1EUx+97eQYRFYKU0YCVGDr4qKVEsIhEpIMEQ7tZGGqzCKNEhyaNxIZJIhKJsDbCIGKyWCrRgRp8hvqd5DR5nrZpeckv5+be8//fc17OtdK+uYwxptH873twXCZp2IFsBQYBCEG9oxvn0AVhmGrJJo5Lqe/q5hsIWzAk1YiRrWdX6izfEYlLYBUx6SVcwhjE4UD280ZGq+iBC1iFXUS1LgMbllmeQg1MookSP38YqdktoQ+SMAEpxJ3gl0phBc6gm9w9t9bxlk7CK2EWcYq4ocIXaIJ1iJHz4dXZBf7BMKyxTEA/POrRCAaLxAXOwyWNSBgn7MM0VCGUqjqgjfWhpknL2+RGCramJtK3DGgQ4bu2+uy5fBROYBPNr4pa1eQJBhDfFJshzuSiQbgWM2iXfYsnkiN+wZsO2X2ZU+2DGRnGfGsibIZqiPzxrWW+BRgArLhtNO8HDeYAAAAASUVORK5CYII=');
+		background-position: 0 4px;
+		background-repeat: no-repeat;
+		padding-left: 30px;
+	}
 
 }

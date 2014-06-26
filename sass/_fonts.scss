@@ -313,26 +313,36 @@
 			//margin: 0 auto;
 			//
 			h1 {
+				font-size: 68 * $mu + px;
 				color: $brown;
 				.tm {
 					font-size: 30 * $mu + px;
 					vertical-align: top;
 				}
 
+				padding-right: 22%;
+				padding-left: 22%;
+
 			}
 
 			h2 {
 				color: $brown;
+				padding-right: 30%;
+				padding-left: 30%;
+				padding: 17px 22% 15px 22%;
+				line-height: 1.9;
 			}
 
 
 			h3 {
-				font-size: 23px;
+				font-size: 23 * $mu2 + px;
+				padding: 42px 22% 34px 22%;
 				color: $cherry;
 			}
 
 			h4 {
-				font-size: 22px;
+				font-size: 22 * $mu2 + px;
+				padding: 0px 0;
 				color: $cherry;
 				font-family: oksana_text_narrowdemibold;
 			}
@@ -407,11 +417,11 @@
 
 			.section-big-title {
 
-				padding: 47px 0 60px 0;
+				padding: 47px 0 20px 0;
 
 				h1 {
 					color: $brown;
-					font-size: 50 * $mu + px;
+					font-size: 68 * $mu + px;
 
 				}
 				h2 {
@@ -476,13 +486,13 @@
 
 
 
-
-
-@include scrn(800px, 1000px, 500px, 700px) {
-
-	@include fonts(.9, 1);
-
-}
+//
+//
+//@include scrn(800px, 1000px, 500px, 700px) {
+//
+//	@include fonts(.9, 1);
+//
+//}
 
 
 
