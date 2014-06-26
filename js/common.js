@@ -1547,6 +1547,9 @@ var SL = {
 						'</p><p class="boxing"><em class="fonted icon"></em>' +
 						$(this.element).data("boxing")
 						+
+						'</p><p class="boxing2"><em class="fonted icon"></em>' +
+						$(this.element).data("boxing2")
+						+
 						'</p><p class="beforeend"><em class="fonted icon"></em>' +
 						$(this.element).data("bestbefore")
 						+

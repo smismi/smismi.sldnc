@@ -141,21 +141,56 @@ html.noscroll {
   z-index: 44444;
 }
 
+/* feedback_slide  button:begin */
 .action_button {
-  margin-top: 18px;
-  background: #e70c66;
-  padding: 0 33px;
-  line-height: 48px;
-  border: 0;
-  color: #fff;
-  font-size: 15px;
-  font-family: oksana_text_narrowdemibold;
-  font-weight: normal;
+  width: 232px;
+  height: 52px;
+  background: #e60e64;
+  position: relative;
   cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
+  margin: 32px auto;
 }
 
+/* text */
+.action_button a:nth-child(1) {
+  display: block;
+  width: 232px;
+  height: 52px;
+  font: 16px/52px 'oksana_text_narrowdemibold', sans-serif;
+  color: #fff;
+  background: #e60e64;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.action_button:hover a:nth-child(1) {
+  width: 179px;
+}
+
+html.ipad .feedback_slide:hover a:nth-child(1) {
+  width: 212px;
+}
+
+/* bg */
+.action_button span {
+  display: block;
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAYCAYAAAAh8HdUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNqU1EsOgCAMBFCYA+ja++mpvJ+uPUH9JJBI+pl2ZUyeTIFaj2mV8tRy7bWQhfZwzpukUQZijMVAaP1EsMfLwF9PLMT4goHQvhRBWLk9CG+XLFhF4vOk49HXiFnljYwscFeygIk8oKIIhPNkTTOyoKMM+G5E+7GwIJyn9OR6dQswAB5OVX9Ha4cpAAAAAElFTkSuQmCC");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* visual tour button:end */
 #cup {
   position: absolute;
   bottom: 15px;
@@ -2686,9 +2721,6 @@ body {
   font: 13px/1.4em 'oksana_text_narrowbold', sans-serif;
   text-align: center;
 }
-.prod_block img {
-  width: 100%;
-}
 .prod_block h1 {
   font-size: 19px;
   color: #442111;
@@ -2740,8 +2772,13 @@ body {
   color: #e70c66;
 }
 .prod_block .descr .boxing em:before {
-  content: "\e607";
-  font-size: 15px;
+  content: "\e60c";
+  font-size: 21px;
+  color: #e70c66;
+}
+.prod_block .descr .boxing2 em:before {
+  content: "\e60b";
+  font-size: 16px;
   color: #e70c66;
 }
 .prod_block .descr .beforeend {

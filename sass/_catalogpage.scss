@@ -233,10 +233,6 @@ body {
 
 	text-align: center;
 
-	img {
-		width: 100%;
-	}
-
 	h1 {
 		font-size: 19px;
 		color: #442111;
@@ -309,8 +305,21 @@ body {
 		.boxing {
 			em {
 				&:before {
-					content: "\e607";
-					font-size: 15px;
+					content: "\e60c";
+					font-size: 21px;
+					color: $cherry;
+
+
+				}
+
+			}
+
+		}
+		.boxing2 {
+			em {
+				&:before {
+					content: "\e60b";
+					font-size: 16px;
 					color: $cherry;
 
 
