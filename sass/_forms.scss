@@ -96,6 +96,13 @@ input[type="text"] , textarea {
 	font: 17px/1.4 oksana_text_narrowdemibold, sans-serif;
 	padding: 6px 15px ;
 	color: $brown;
+
+
+
+
+	&:disabled {
+		opacity: .5 !important
+	}
 }
 
 

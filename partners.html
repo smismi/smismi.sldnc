@@ -532,7 +532,7 @@
 						</div>
 						<div class="input_row_item wide">
 
-							<select name="FWGWQE" id="sdsv">
+							<select name="FWGWQE" id="scr_s">
 								<option>1231</option>
 								<option>1231</option>
 								<option>1231</option>
@@ -555,7 +555,7 @@
 						<div class="input_row_item wide">
 
 							<div class="wrapper">
-								<input type="text"/>
+								<input type="text" id="scr_s2" disabled/>
 							</div>
 						</div>
 
@@ -651,6 +651,28 @@
 
         $("select").chosen({width: '100%', disable_search: true, no_results_text: "Oops, nothing found!"});
 
+
+
+				$( "#scr,  #scr2" ).on( "change", function() {
+
+
+					if ($("#scr").prop( "checked")) {
+
+						$("#scr_s2").prop( "disabled", true );
+						$("#scr_s").prop( "disabled", false );
+						$('#scr_s').trigger("chosen:updated");
+
+					}
+
+					if ($("#scr2").prop( "checked")) {
+
+						$("#scr_s").prop( "disabled", true );
+						$("#scr_s2").prop( "disabled", false );
+						$('#scr_s').trigger("chosen:updated");
+
+					}
+
+				})
 
     });
 
