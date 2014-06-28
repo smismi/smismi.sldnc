@@ -3442,6 +3442,23 @@ body.partners #formpartners .section-big-title h3:before {
   cursor: pointer;
 }
 
+#partners_feedback_back {
+  position: fixed;
+  left: -100px;
+  top: 30%;
+  width: 53px;
+  height: 51px;
+  background-color: rgba(0, 0, 0, 0.05);
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAUCAYAAABbLMdoAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANJJREFUeNpi/P//PwM+8Jw/lQVI7QFiG0Z8ioEKeYHUSiD2BOKfOBUDFQoBqWVA7A4VmoBVMVAhN5DaAbIaKtQGxDUYioEKmYHUcSA2hQp1SX6cXQ5ioCgGKuQCUkeA2BAq1AlUWAGThysGKhQGUpuA2Aoq1w1UWIZsK1gxUKEUkL0aSWEjUGEDul8Yn/GliALpXUBsABUrAyrsxhZCoAA/AcRKhBSCABMDCQCk2AKIL8CCCej+UlyKSfMgyUFHcqSQHN0kJySSkyjJiR9btgIIMABDsXu5zn4jHgAAAABJRU5ErkJggg==");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
 .section-big-title {
   text-align: center;
   width: 100%;

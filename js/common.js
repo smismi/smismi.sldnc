@@ -1589,22 +1589,55 @@ var SL = {
 			}
 
 			$("#partners_wrapper").css({left: "0%"});
+			$("#partners_wrapper").one('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd',
+				function() {
 
+
+					if( !SL.partnersFeedbackSlide ) {
+
+						$("#partners_feedback_back").css({left: "0"});
+
+						SL.partnersFeedbackSlide = true;
+
+						console.log(SL.partnersFeedbackSlide, "open");
+
+
+					}
+
+
+				});
 
 			return false;
 		})
 
 		$("#partners_feedback_back").on("click", function(){
 
+			$("#partners_feedback_back").css({left: -100});
+
 
 			$("#partners_wrapper").css({left: "120%"});
-
 
 
 			var scrollTop = parseInt($('html').css('top'));
 			$('html').removeClass('noscroll');
 			$('html,body').scrollTop(-scrollTop);
 			$('.header').css('top','auto');
+
+
+			$("#partners_wrapper").one('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd',
+				function() {
+
+					SL.partnersFeedbackSlide = false;
+
+
+				});
+
+
+			console.log(SL.partnersFeedbackSlide, "close");
+
+
+
+
 
 
 

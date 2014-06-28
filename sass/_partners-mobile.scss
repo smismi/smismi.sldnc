@@ -40,7 +40,50 @@
 		}
 
 
+		.feedback_slide_form {
+			text-align: left;
+			background: #fff;
 
+
+			form {
+				width: auto;
+				margin: 0 20px 30px;
+			}
+
+		}
+
+
+
+		.list_item_needs {
+
+			display: inline-block;
+
+			text-align: center;
+			margin-top: 30px;
+
+
+
+			.item_list_item {
+				width: 100%;
+				padding-left: 0;
+
+				&:before {
+					left: 15px;
+				}
+
+				h5 {
+					padding-right: 20px;
+					padding-left: 55px;
+
+
+				}
+
+				h6 {
+					padding-right: 20px;
+					padding-left: 55px;
+				}
+			}
+		}
 	}
 
 

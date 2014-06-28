@@ -163,4 +163,15 @@ input[type="text"] , textarea {
 	border: 0;
 	color: #fff;
 	font-size: 15px;
+	font-family: oksana_text_narrowdemibold;
+	border: 1px solid $cherry;
+
+	@include transition( all .5s ease-out);
+
+	&:hover {
+		color: $cherry;
+		background: #fff;
+		border: 1px solid $cherry;
+
+	}
 }
