@@ -1578,9 +1578,6 @@ var SL = {
 
 
 
-//			SL.visualtourInit();
-
-
 			if ($(document).height() > $(window).height()) {
 				var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
 //				var scrollTop = 0;
@@ -1599,7 +1596,7 @@ var SL = {
 
 						SL.partnersFeedbackSlide = true;
 
-						console.log(SL.partnersFeedbackSlide, "open");
+//						console.log(SL.partnersFeedbackSlide, "open");
 
 
 					}
@@ -1633,7 +1630,7 @@ var SL = {
 				});
 
 
-			console.log(SL.partnersFeedbackSlide, "close");
+//			console.log(SL.partnersFeedbackSlide, "close");
 
 
 
@@ -1704,6 +1701,8 @@ var SL = {
 
 	},
 	prepareVisualTour: function() {
+
+
 
 //		$("#visualtour_wrapper").css({left: "100%"});
 		SL.tweenStatus = false;
@@ -2033,8 +2032,14 @@ var SL = {
 
 
 
-//					$("#visualtour, #visualtour li, #visualtour li > img").css({"width": $(window).width(), "height": $(window).height()})
-//		SL.startAll();
+
+		if (SL.func.isPh()) {
+
+
+
+			return;
+
+		}
 
 		SL.runTick(0, SL.ticks[0]);
 
