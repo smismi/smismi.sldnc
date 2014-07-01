@@ -1,0 +1,28 @@
+
+@import "newsblock";
+@import "footer";
+
+/* FOOTER PAGE:begin */
+#footer_page{
+	margin-top: 0px;
+}
+
+.company_page {
+	height: 100%;
+
+	@if $dev_mode {
+		border: 2px dotted purple;
+	}
+}
+
+
+
+//#section-1,
+//#section-2,
+//#section-3,
+//#section-4,
+//#section-5,
+//#section-6,
+.etc {
+	display: none;
+}

@@ -72,6 +72,29 @@ var SL = {
 
 
 		},
+		news: function() {
+			SL.init.cache();
+
+
+			SL.initScrollMagik();
+
+			SL.initHeaderMenu();
+			SL.initPager();
+//			SL.initCompanyPager();
+			SL.initParallax6();
+//			SL.videoControl();
+//			SL.popupInit();
+			SL.newsPopupInit();
+			SL.initScrollTop();
+//			SL.prepareVisualTour();
+
+
+
+
+
+
+
+		},
 		partners: function() {
 			SL.init.cache();
 

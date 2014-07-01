@@ -592,6 +592,20 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   font-size: 17px;
 }
 
+body.news .section-big-title {
+  padding: 100px 0 60px 0;
+}
+body.news .section-big-title h1 {
+  font-size: 68px;
+  color: #442111;
+  padding-right: 12%;
+  padding-left: 12%;
+}
+body.news .section-big-title h1 .tm {
+  font-size: 30px;
+  vertical-align: top;
+}
+
 body.partners .section-big-title h1 {
   font-size: 68px;
   color: #442111;
@@ -834,6 +848,20 @@ body.partners #formpartners .section-big-title h3:before {
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 15.3px;
+  }
+
+  body.news .section-big-title {
+    padding: 100px 0 45px 0;
+  }
+  body.news .section-big-title h1 {
+    font-size: 51px;
+    color: #442111;
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+  body.news .section-big-title h1 .tm {
+    font-size: 22.5px;
+    vertical-align: top;
   }
 
   body.partners .section-big-title h1 {
@@ -1080,6 +1108,20 @@ body.partners #formpartners .section-big-title h3:before {
     font-size: 13.6px;
   }
 
+  body.news .section-big-title {
+    padding: 100px 0 33px 0;
+  }
+  body.news .section-big-title h1 {
+    font-size: 37.4px;
+    color: #442111;
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+  body.news .section-big-title h1 .tm {
+    font-size: 16.5px;
+    vertical-align: top;
+  }
+
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
@@ -1322,6 +1364,20 @@ body.partners #formpartners .section-big-title h3:before {
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 13.6px;
+  }
+
+  body.news .section-big-title {
+    padding: 100px 0 33px 0;
+  }
+  body.news .section-big-title h1 {
+    font-size: 37.4px;
+    color: #442111;
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+  body.news .section-big-title h1 .tm {
+    font-size: 16.5px;
+    vertical-align: top;
   }
 
   body.partners .section-big-title h1 {
@@ -1568,6 +1624,20 @@ body.partners #formpartners .section-big-title h3:before {
     font-size: 13.6px;
   }
 
+  body.news .section-big-title {
+    padding: 100px 0 33px 0;
+  }
+  body.news .section-big-title h1 {
+    font-size: 37.4px;
+    color: #442111;
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+  body.news .section-big-title h1 .tm {
+    font-size: 16.5px;
+    vertical-align: top;
+  }
+
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
@@ -1812,6 +1882,20 @@ body.partners #formpartners .section-big-title h3:before {
     font-size: 13.6px;
   }
 
+  body.news .section-big-title {
+    padding: 100px 0 33px 0;
+  }
+  body.news .section-big-title h1 {
+    font-size: 37.4px;
+    color: #442111;
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+  body.news .section-big-title h1 .tm {
+    font-size: 16.5px;
+    vertical-align: top;
+  }
+
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
@@ -2054,6 +2138,20 @@ body.partners #formpartners .section-big-title h3:before {
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 13.6px;
+  }
+
+  body.news .section-big-title {
+    padding: 100px 0 33px 0;
+  }
+  body.news .section-big-title h1 {
+    font-size: 37.4px;
+    color: #442111;
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+  body.news .section-big-title h1 .tm {
+    font-size: 16.5px;
+    vertical-align: top;
   }
 
   body.partners .section-big-title h1 {
@@ -3602,6 +3700,20 @@ body.catalog .item_list_wrapper .section-big-title h2 {
   font-size: 17px;
 }
 
+body.news .section-big-title {
+  padding: 100px 0 60px 0;
+}
+body.news .section-big-title h1 {
+  font-size: 68px;
+  color: #442111;
+  padding-right: 12%;
+  padding-left: 12%;
+}
+body.news .section-big-title h1 .tm {
+  font-size: 30px;
+  vertical-align: top;
+}
+
 body.partners .section-big-title h1 {
   font-size: 68px;
   color: #442111;
@@ -3844,6 +3956,20 @@ body.partners #formpartners .section-big-title h3:before {
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 15.3px;
+  }
+
+  body.news .section-big-title {
+    padding: 100px 0 45px 0;
+  }
+  body.news .section-big-title h1 {
+    font-size: 51px;
+    color: #442111;
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+  body.news .section-big-title h1 .tm {
+    font-size: 22.5px;
+    vertical-align: top;
   }
 
   body.partners .section-big-title h1 {
@@ -4090,6 +4216,20 @@ body.partners #formpartners .section-big-title h3:before {
     font-size: 13.6px;
   }
 
+  body.news .section-big-title {
+    padding: 100px 0 33px 0;
+  }
+  body.news .section-big-title h1 {
+    font-size: 37.4px;
+    color: #442111;
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+  body.news .section-big-title h1 .tm {
+    font-size: 16.5px;
+    vertical-align: top;
+  }
+
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
@@ -4332,6 +4472,20 @@ body.partners #formpartners .section-big-title h3:before {
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 13.6px;
+  }
+
+  body.news .section-big-title {
+    padding: 100px 0 33px 0;
+  }
+  body.news .section-big-title h1 {
+    font-size: 37.4px;
+    color: #442111;
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+  body.news .section-big-title h1 .tm {
+    font-size: 16.5px;
+    vertical-align: top;
   }
 
   body.partners .section-big-title h1 {
@@ -4578,6 +4732,20 @@ body.partners #formpartners .section-big-title h3:before {
     font-size: 13.6px;
   }
 
+  body.news .section-big-title {
+    padding: 100px 0 33px 0;
+  }
+  body.news .section-big-title h1 {
+    font-size: 37.4px;
+    color: #442111;
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+  body.news .section-big-title h1 .tm {
+    font-size: 16.5px;
+    vertical-align: top;
+  }
+
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
@@ -4822,6 +4990,20 @@ body.partners #formpartners .section-big-title h3:before {
     font-size: 13.6px;
   }
 
+  body.news .section-big-title {
+    padding: 100px 0 33px 0;
+  }
+  body.news .section-big-title h1 {
+    font-size: 37.4px;
+    color: #442111;
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+  body.news .section-big-title h1 .tm {
+    font-size: 16.5px;
+    vertical-align: top;
+  }
+
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
@@ -5064,6 +5246,20 @@ body.partners #formpartners .section-big-title h3:before {
   body.catalog .item_list_wrapper .section-big-title h2 {
     color: #442111;
     font-size: 13.6px;
+  }
+
+  body.news .section-big-title {
+    padding: 100px 0 33px 0;
+  }
+  body.news .section-big-title h1 {
+    font-size: 37.4px;
+    color: #442111;
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+  body.news .section-big-title h1 .tm {
+    font-size: 16.5px;
+    vertical-align: top;
   }
 
   body.partners .section-big-title h1 {

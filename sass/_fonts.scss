@@ -302,6 +302,35 @@
 
 
 
+	//news_page
+
+
+
+	body.news {
+
+		.section-big-title {
+
+			padding: 100px 0 60 * $mu + px 0;
+
+
+			h1 {
+
+				font-size: 68 * $mu + px;
+				color: $brown;
+				.tm {
+					font-size: 30 * $mu + px;
+					vertical-align: top;
+				}
+
+				padding-right: 12%;
+				padding-left: 12%;
+
+			}
+		}
+
+
+	}
+
 	//partners
 
 
