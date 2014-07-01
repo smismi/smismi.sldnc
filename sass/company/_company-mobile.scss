@@ -46,6 +46,9 @@
 		width: 100%;
 	}
 
+	#section-6 .sixth_slide .columns > div a div {
+		height: auto !important;
+ 	}
 	#section-6 .sixth_slide .columns > div a div:nth-child(2) {
 		width: 50%;
  	}
@@ -109,11 +112,11 @@
 		//	}
 		//}
 		//
-		//&:nth-child(5) {
-		//	&:before {
-		//
-		//	}
-		//}
+		&:nth-child(5) {
+			&:before {
+				font-size: 32px;
+			}
+		}
 		//&:nth-child(6) {
 		//	&:before {
 		//

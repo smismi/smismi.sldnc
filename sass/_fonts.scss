@@ -320,8 +320,8 @@
 					vertical-align: top;
 				}
 
-				padding-right: 22%;
-				padding-left: 22%;
+				padding-right: 12%;
+				padding-left: 12%;
 
 			}
 
@@ -329,14 +329,15 @@
 				color: $brown;
 				padding-right: 30%;
 				padding-left: 30%;
-				padding: 17px 22% 15px 22%;
+				padding: 17px 12% 15px 12%;
 				line-height: 1.9;
 			}
 
 
 			h3 {
 				font-size: 23 * $mu2 + px;
-				padding: 42px 22% 34px 22%;
+				line-height: 1.6;
+				padding: 42px 12% 34px 12%;
 				color: $cherry;
 			}
 

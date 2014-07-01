@@ -595,8 +595,8 @@ body.catalog .item_list_wrapper .section-big-title h2 {
 body.partners .section-big-title h1 {
   font-size: 68px;
   color: #442111;
-  padding-right: 22%;
-  padding-left: 22%;
+  padding-right: 12%;
+  padding-left: 12%;
 }
 body.partners .section-big-title h1 .tm {
   font-size: 30px;
@@ -606,12 +606,13 @@ body.partners .section-big-title h2 {
   color: #442111;
   padding-right: 30%;
   padding-left: 30%;
-  padding: 17px 22% 15px 22%;
+  padding: 17px 12% 15px 12%;
   line-height: 1.9;
 }
 body.partners .section-big-title h3 {
   font-size: 23px;
-  padding: 42px 22% 34px 22%;
+  line-height: 1.6;
+  padding: 42px 12% 34px 12%;
   color: #e70c66;
 }
 body.partners .section-big-title h4 {
@@ -838,8 +839,8 @@ body.partners #formpartners .section-big-title h3:before {
   body.partners .section-big-title h1 {
     font-size: 51px;
     color: #442111;
-    padding-right: 22%;
-    padding-left: 22%;
+    padding-right: 12%;
+    padding-left: 12%;
   }
   body.partners .section-big-title h1 .tm {
     font-size: 22.5px;
@@ -849,12 +850,13 @@ body.partners #formpartners .section-big-title h3:before {
     color: #442111;
     padding-right: 30%;
     padding-left: 30%;
-    padding: 17px 22% 15px 22%;
+    padding: 17px 12% 15px 12%;
     line-height: 1.9;
   }
   body.partners .section-big-title h3 {
     font-size: 20.7px;
-    padding: 42px 22% 34px 22%;
+    line-height: 1.6;
+    padding: 42px 12% 34px 12%;
     color: #e70c66;
   }
   body.partners .section-big-title h4 {
@@ -1081,8 +1083,8 @@ body.partners #formpartners .section-big-title h3:before {
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
-    padding-right: 22%;
-    padding-left: 22%;
+    padding-right: 12%;
+    padding-left: 12%;
   }
   body.partners .section-big-title h1 .tm {
     font-size: 16.5px;
@@ -1092,12 +1094,13 @@ body.partners #formpartners .section-big-title h3:before {
     color: #442111;
     padding-right: 30%;
     padding-left: 30%;
-    padding: 17px 22% 15px 22%;
+    padding: 17px 12% 15px 12%;
     line-height: 1.9;
   }
   body.partners .section-big-title h3 {
     font-size: 18.4px;
-    padding: 42px 22% 34px 22%;
+    line-height: 1.6;
+    padding: 42px 12% 34px 12%;
     color: #e70c66;
   }
   body.partners .section-big-title h4 {
@@ -1324,8 +1327,8 @@ body.partners #formpartners .section-big-title h3:before {
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
-    padding-right: 22%;
-    padding-left: 22%;
+    padding-right: 12%;
+    padding-left: 12%;
   }
   body.partners .section-big-title h1 .tm {
     font-size: 16.5px;
@@ -1335,12 +1338,13 @@ body.partners #formpartners .section-big-title h3:before {
     color: #442111;
     padding-right: 30%;
     padding-left: 30%;
-    padding: 17px 22% 15px 22%;
+    padding: 17px 12% 15px 12%;
     line-height: 1.9;
   }
   body.partners .section-big-title h3 {
     font-size: 18.4px;
-    padding: 42px 22% 34px 22%;
+    line-height: 1.6;
+    padding: 42px 12% 34px 12%;
     color: #e70c66;
   }
   body.partners .section-big-title h4 {
@@ -1567,8 +1571,8 @@ body.partners #formpartners .section-big-title h3:before {
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
-    padding-right: 22%;
-    padding-left: 22%;
+    padding-right: 12%;
+    padding-left: 12%;
   }
   body.partners .section-big-title h1 .tm {
     font-size: 16.5px;
@@ -1578,12 +1582,13 @@ body.partners #formpartners .section-big-title h3:before {
     color: #442111;
     padding-right: 30%;
     padding-left: 30%;
-    padding: 17px 22% 15px 22%;
+    padding: 17px 12% 15px 12%;
     line-height: 1.9;
   }
   body.partners .section-big-title h3 {
     font-size: 18.4px;
-    padding: 42px 22% 34px 22%;
+    line-height: 1.6;
+    padding: 42px 12% 34px 12%;
     color: #e70c66;
   }
   body.partners .section-big-title h4 {
@@ -1810,8 +1815,8 @@ body.partners #formpartners .section-big-title h3:before {
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
-    padding-right: 22%;
-    padding-left: 22%;
+    padding-right: 12%;
+    padding-left: 12%;
   }
   body.partners .section-big-title h1 .tm {
     font-size: 16.5px;
@@ -1821,12 +1826,13 @@ body.partners #formpartners .section-big-title h3:before {
     color: #442111;
     padding-right: 30%;
     padding-left: 30%;
-    padding: 17px 22% 15px 22%;
+    padding: 17px 12% 15px 12%;
     line-height: 1.9;
   }
   body.partners .section-big-title h3 {
     font-size: 18.4px;
-    padding: 42px 22% 34px 22%;
+    line-height: 1.6;
+    padding: 42px 12% 34px 12%;
     color: #e70c66;
   }
   body.partners .section-big-title h4 {
@@ -2053,8 +2059,8 @@ body.partners #formpartners .section-big-title h3:before {
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
-    padding-right: 22%;
-    padding-left: 22%;
+    padding-right: 12%;
+    padding-left: 12%;
   }
   body.partners .section-big-title h1 .tm {
     font-size: 16.5px;
@@ -2064,12 +2070,13 @@ body.partners #formpartners .section-big-title h3:before {
     color: #442111;
     padding-right: 30%;
     padding-left: 30%;
-    padding: 17px 22% 15px 22%;
+    padding: 17px 12% 15px 12%;
     line-height: 1.9;
   }
   body.partners .section-big-title h3 {
     font-size: 18.4px;
-    padding: 42px 22% 34px 22%;
+    line-height: 1.6;
+    padding: 42px 12% 34px 12%;
     color: #e70c66;
   }
   body.partners .section-big-title h4 {
@@ -2436,6 +2443,7 @@ body.partners #formpartners .section-big-title h3:before {
 
 #partners_feedback_back {
   position: fixed;
+  z-index: 2;
   left: -100px;
   top: 30%;
   width: 53px;
@@ -5024,8 +5032,8 @@ body.catalog .item_list_wrapper .section-big-title h2 {
 body.partners .section-big-title h1 {
   font-size: 68px;
   color: #442111;
-  padding-right: 22%;
-  padding-left: 22%;
+  padding-right: 12%;
+  padding-left: 12%;
 }
 body.partners .section-big-title h1 .tm {
   font-size: 30px;
@@ -5035,12 +5043,13 @@ body.partners .section-big-title h2 {
   color: #442111;
   padding-right: 30%;
   padding-left: 30%;
-  padding: 17px 22% 15px 22%;
+  padding: 17px 12% 15px 12%;
   line-height: 1.9;
 }
 body.partners .section-big-title h3 {
   font-size: 23px;
-  padding: 42px 22% 34px 22%;
+  line-height: 1.6;
+  padding: 42px 12% 34px 12%;
   color: #e70c66;
 }
 body.partners .section-big-title h4 {
@@ -5267,8 +5276,8 @@ body.partners #formpartners .section-big-title h3:before {
   body.partners .section-big-title h1 {
     font-size: 51px;
     color: #442111;
-    padding-right: 22%;
-    padding-left: 22%;
+    padding-right: 12%;
+    padding-left: 12%;
   }
   body.partners .section-big-title h1 .tm {
     font-size: 22.5px;
@@ -5278,12 +5287,13 @@ body.partners #formpartners .section-big-title h3:before {
     color: #442111;
     padding-right: 30%;
     padding-left: 30%;
-    padding: 17px 22% 15px 22%;
+    padding: 17px 12% 15px 12%;
     line-height: 1.9;
   }
   body.partners .section-big-title h3 {
     font-size: 20.7px;
-    padding: 42px 22% 34px 22%;
+    line-height: 1.6;
+    padding: 42px 12% 34px 12%;
     color: #e70c66;
   }
   body.partners .section-big-title h4 {
@@ -5510,8 +5520,8 @@ body.partners #formpartners .section-big-title h3:before {
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
-    padding-right: 22%;
-    padding-left: 22%;
+    padding-right: 12%;
+    padding-left: 12%;
   }
   body.partners .section-big-title h1 .tm {
     font-size: 16.5px;
@@ -5521,12 +5531,13 @@ body.partners #formpartners .section-big-title h3:before {
     color: #442111;
     padding-right: 30%;
     padding-left: 30%;
-    padding: 17px 22% 15px 22%;
+    padding: 17px 12% 15px 12%;
     line-height: 1.9;
   }
   body.partners .section-big-title h3 {
     font-size: 18.4px;
-    padding: 42px 22% 34px 22%;
+    line-height: 1.6;
+    padding: 42px 12% 34px 12%;
     color: #e70c66;
   }
   body.partners .section-big-title h4 {
@@ -5753,8 +5764,8 @@ body.partners #formpartners .section-big-title h3:before {
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
-    padding-right: 22%;
-    padding-left: 22%;
+    padding-right: 12%;
+    padding-left: 12%;
   }
   body.partners .section-big-title h1 .tm {
     font-size: 16.5px;
@@ -5764,12 +5775,13 @@ body.partners #formpartners .section-big-title h3:before {
     color: #442111;
     padding-right: 30%;
     padding-left: 30%;
-    padding: 17px 22% 15px 22%;
+    padding: 17px 12% 15px 12%;
     line-height: 1.9;
   }
   body.partners .section-big-title h3 {
     font-size: 18.4px;
-    padding: 42px 22% 34px 22%;
+    line-height: 1.6;
+    padding: 42px 12% 34px 12%;
     color: #e70c66;
   }
   body.partners .section-big-title h4 {
@@ -5996,8 +6008,8 @@ body.partners #formpartners .section-big-title h3:before {
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
-    padding-right: 22%;
-    padding-left: 22%;
+    padding-right: 12%;
+    padding-left: 12%;
   }
   body.partners .section-big-title h1 .tm {
     font-size: 16.5px;
@@ -6007,12 +6019,13 @@ body.partners #formpartners .section-big-title h3:before {
     color: #442111;
     padding-right: 30%;
     padding-left: 30%;
-    padding: 17px 22% 15px 22%;
+    padding: 17px 12% 15px 12%;
     line-height: 1.9;
   }
   body.partners .section-big-title h3 {
     font-size: 18.4px;
-    padding: 42px 22% 34px 22%;
+    line-height: 1.6;
+    padding: 42px 12% 34px 12%;
     color: #e70c66;
   }
   body.partners .section-big-title h4 {
@@ -6239,8 +6252,8 @@ body.partners #formpartners .section-big-title h3:before {
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
-    padding-right: 22%;
-    padding-left: 22%;
+    padding-right: 12%;
+    padding-left: 12%;
   }
   body.partners .section-big-title h1 .tm {
     font-size: 16.5px;
@@ -6250,12 +6263,13 @@ body.partners #formpartners .section-big-title h3:before {
     color: #442111;
     padding-right: 30%;
     padding-left: 30%;
-    padding: 17px 22% 15px 22%;
+    padding: 17px 12% 15px 12%;
     line-height: 1.9;
   }
   body.partners .section-big-title h3 {
     font-size: 18.4px;
-    padding: 42px 22% 34px 22%;
+    line-height: 1.6;
+    padding: 42px 12% 34px 12%;
     color: #e70c66;
   }
   body.partners .section-big-title h4 {
@@ -6482,8 +6496,8 @@ body.partners #formpartners .section-big-title h3:before {
   body.partners .section-big-title h1 {
     font-size: 37.4px;
     color: #442111;
-    padding-right: 22%;
-    padding-left: 22%;
+    padding-right: 12%;
+    padding-left: 12%;
   }
   body.partners .section-big-title h1 .tm {
     font-size: 16.5px;
@@ -6493,12 +6507,13 @@ body.partners #formpartners .section-big-title h3:before {
     color: #442111;
     padding-right: 30%;
     padding-left: 30%;
-    padding: 17px 22% 15px 22%;
+    padding: 17px 12% 15px 12%;
     line-height: 1.9;
   }
   body.partners .section-big-title h3 {
     font-size: 18.4px;
-    padding: 42px 22% 34px 22%;
+    line-height: 1.6;
+    padding: 42px 12% 34px 12%;
     color: #e70c66;
   }
   body.partners .section-big-title h4 {
@@ -7748,6 +7763,10 @@ body.partners #formpartners .section-big-title h3:before {
     width: 100%;
   }
 
+  #section-6 .sixth_slide .columns > div a div {
+    height: auto !important;
+  }
+
   #section-6 .sixth_slide .columns > div a div:nth-child(2) {
     width: 50%;
   }
@@ -7776,6 +7795,9 @@ body.partners #formpartners .section-big-title h3:before {
   }
 
   /* one logotype:begin */
+  #section-4 .fourth_slide .columns .col a:nth-child(5):before {
+    font-size: 32px;
+  }
   #section-4 .fourth_slide .columns .col a:nth-child(8):before {
     font-size: 30px;
   }
@@ -7869,6 +7891,10 @@ body.partners #formpartners .section-big-title h3:before {
     width: 100%;
   }
 
+  #section-6 .sixth_slide .columns > div a div {
+    height: auto !important;
+  }
+
   #section-6 .sixth_slide .columns > div a div:nth-child(2) {
     width: 50%;
   }
@@ -7897,6 +7923,9 @@ body.partners #formpartners .section-big-title h3:before {
   }
 
   /* one logotype:begin */
+  #section-4 .fourth_slide .columns .col a:nth-child(5):before {
+    font-size: 32px;
+  }
   #section-4 .fourth_slide .columns .col a:nth-child(8):before {
     font-size: 30px;
   }
@@ -7990,6 +8019,10 @@ body.partners #formpartners .section-big-title h3:before {
     width: 100%;
   }
 
+  #section-6 .sixth_slide .columns > div a div {
+    height: auto !important;
+  }
+
   #section-6 .sixth_slide .columns > div a div:nth-child(2) {
     width: 50%;
   }
@@ -8018,6 +8051,9 @@ body.partners #formpartners .section-big-title h3:before {
   }
 
   /* one logotype:begin */
+  #section-4 .fourth_slide .columns .col a:nth-child(5):before {
+    font-size: 32px;
+  }
   #section-4 .fourth_slide .columns .col a:nth-child(8):before {
     font-size: 30px;
   }
@@ -8111,6 +8147,10 @@ body.partners #formpartners .section-big-title h3:before {
     width: 100%;
   }
 
+  #section-6 .sixth_slide .columns > div a div {
+    height: auto !important;
+  }
+
   #section-6 .sixth_slide .columns > div a div:nth-child(2) {
     width: 50%;
   }
@@ -8139,6 +8179,9 @@ body.partners #formpartners .section-big-title h3:before {
   }
 
   /* one logotype:begin */
+  #section-4 .fourth_slide .columns .col a:nth-child(5):before {
+    font-size: 32px;
+  }
   #section-4 .fourth_slide .columns .col a:nth-child(8):before {
     font-size: 30px;
   }
