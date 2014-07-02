@@ -1,0 +1,96 @@
+@mixin news-mobile() {
+
+
+	.columns {
+		width: 100%;
+		max-width: 1200px;
+		min-width: 100%;
+		position: relative;
+		margin: 0 auto;
+		padding: 0 !important;
+	}
+
+	.news_item {
+		width: 100%;
+
+		&.double {
+			width: 100%;
+
+		}
+
+		a {
+			height: auto;
+			background-size: cover;
+
+			div {
+				width: 50% !important;
+
+
+				div {
+					display: none;
+				}
+			}
+
+		}
+
+
+		&:nth-child(2n){
+
+
+			a {
+				background-position: top left;
+			}
+			div {
+				&:nth-child(2) {
+					float: right;
+				}
+			}
+
+
+		}
+
+		&:nth-child(2n+1) {
+			a {
+				background-position: top right;
+			}
+			div {
+				&:nth-child(2) {
+					float: left;
+				}
+			}
+
+		}
+	}
+
+
+
+
+}
+
+
+@include iphone3()  {
+
+	@include news-mobile();
+
+}
+@include iphone4()  {
+
+	@include news-mobile();
+
+}
+
+
+@include iphone5()  {
+
+	@include news-mobile();
+
+}
+
+
+@include  max-screen(750px)  {
+
+	@include news-mobile();
+
+}
+
+

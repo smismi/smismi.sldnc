@@ -1,0 +1,62 @@
+@include max-screen(1200px) {
+	/* columns:begin */
+
+
+	#content-wrapper {
+		height: 100%;
+	}
+
+	#wrapper {
+		height: 100%;
+	}
+
+
+	.columns {
+		width: 600px;
+		position: relative;
+		margin: 0 auto;
+		padding: 0 !important;
+	}
+	.company_page {
+		min-width: 600px;
+	}
+
+
+
+	.news_item {
+
+
+
+
+		&:nth-child(2n){
+
+			a {
+				background-position: top left;
+			}
+
+			div {
+				&:nth-child(2) {
+					float: right;
+				}
+			}
+
+
+		}
+
+		&:nth-child(2n+1) {
+
+			a {
+				background-position: top right;
+			}
+			div {
+				&:nth-child(2) {
+					float: left;
+				}
+			}
+
+		}
+	}
+
+
+}
+
