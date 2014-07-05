@@ -1,0 +1,83 @@
+
+
+@import "mainmenu-fluid";
+
+
+
+
+
+@import "common-mobile";
+
+@mixin contacts-mobile() {
+
+	#content-wrapper.company {
+		height: auto;
+	}
+
+
+
+	.map_wrapper {
+
+		position: relative;
+		height: auto;
+		left:auto;
+		right: auto;
+		bottom: auto;
+		top: auto;
+		background: #fff;
+		padding-bottom: 120px;
+
+		#map_canvas{
+
+
+			position: relative;
+
+			width: 90%;
+			margin: 0 auto;
+			height: 500px;
+
+
+		}
+
+		.description {
+
+			position: relative;
+			height: auto;
+			left: auto;
+
+		}
+	}
+
+
+
+}
+
+
+@include iphone3()  {
+
+	@include contacts-mobile();
+
+}
+@include iphone4()  {
+
+	@include contacts-mobile();
+
+}
+
+
+@include iphone5()  {
+
+	@include contacts-mobile();
+
+}
+
+
+@include  max-screen(750px)  {
+
+	@include contacts-mobile();
+
+}
+
+
+
+

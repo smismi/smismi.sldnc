@@ -72,6 +72,30 @@ var SL = {
 
 
 		},
+		contacts: function() {
+			SL.init.cache();
+
+
+//			SL.initScrollMagik();
+
+			SL.initHeaderMenu();
+//			SL.mapInit();
+//			SL.initPager();
+//			SL.initCompanyPager();
+//			SL.initParallax6();
+//			SL.videoControl();
+			SL.partnersFeedback();
+//			SL.newsPopupInit();
+//			SL.initScrollTop();
+//			SL.prepareVisualTour();
+
+
+
+
+
+
+
+		},
 		news: function() {
 			SL.init.cache();
 
@@ -1671,7 +1695,7 @@ var SL = {
 
 
 
-		$(".partners_page .fancybox").fancybox({
+		$(".partners_page .fancybox, .map_page .fancybox").fancybox({
 			helpers: {
 				overlay: {
 					locked: false,
@@ -2287,6 +2311,23 @@ var SL = {
 			$(window).off("mousewheel");
 
 		}
+	},
+	mapInit:  function () {
+
+//		var map;
+//
+//		function initialize() {
+//			var mapOptions = {
+//				zoom: 8,
+//				center: new google.maps.LatLng(-34.397, 150.644)
+//			};
+//			map = new google.maps.Map(document.getElementById('map-canvas'),
+//				mapOptions);
+//		}
+//
+//		google.maps.event.addDomListener(window, 'load', initialize);
+
+
 	},
 
 
