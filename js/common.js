@@ -2234,7 +2234,8 @@ var SL = {
 				$(".subnav-" + _sub, SL.mobilemenu).slideDown();
 
 			}
-			return false;
+
+			if (_sub) return false;
 		});
 
 
