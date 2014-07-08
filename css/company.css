@@ -4811,6 +4811,7 @@ html.ipad #section-4 .fourth_slide .columns .col a:hover > div {
   color: #442111;
   margin: 16px 0px 0px 0px;
   font-style: italic;
+  line-height: 1.7;
 }
 .news_block .soc_buttons {
   color: #787875;

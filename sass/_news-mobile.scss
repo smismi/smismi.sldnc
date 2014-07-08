@@ -22,13 +22,13 @@
 			height: auto;
 			background-size: cover;
 
-			div {
+			div:nth-child(2) {
 				width: 50% !important;
 
-
-				div {
-					display: none;
-				}
+				//
+				//div {
+				//	display: none;
+				//}
 			}
 
 		}

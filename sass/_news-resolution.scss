@@ -35,8 +35,30 @@
 			}
 
 			div {
+
+
+
 				&:nth-child(2) {
 					float: right;
+
+
+					div {
+
+						width: 0;
+						height: 0;
+						border-top: 14px solid transparent;
+						border-right: 14px solid white;
+						border-bottom: 14px solid transparent;
+						position: absolute;
+						left: -14px;
+						top: 50%;
+						margin-top: -7px;
+						transition: border 0.3s ease-out;
+						border-left: 0;
+						right:auto;
+
+
+					}
 				}
 			}
 
@@ -51,6 +73,24 @@
 			div {
 				&:nth-child(2) {
 					float: left;
+
+
+
+					div {
+
+						width: 0;
+						height: 0;
+						border-top: 14px solid transparent;
+						border-left: 14px solid white;
+						border-bottom: 14px solid transparent;
+						position: absolute;
+						right: -14px;
+						top: 50%;
+						margin-top: -7px;
+						transition: border 0.3s ease-out;
+						border-right: 0;
+						left: auto;
+					}
 				}
 			}
 

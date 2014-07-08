@@ -76,6 +76,21 @@
 	float: left;
 
 
+	div:nth-child(1) {
+		width: 100%;
+		background: rgba(255, 244, 213, 0.5);
+		z-index: 1;
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		display: block;
+		transition: opacity 0.3s ease-out;
+		opacity: 0;
+		overflow: hidden;
+
+	}
 
 
 
@@ -86,8 +101,25 @@
 			background-position: top left;
 		}
 		div {
+
+
 			&:nth-child(2) {
 				float: right;
+				position: relative;
+
+
+				div {
+					width: 0;
+					height: 0;
+					border-top: 14px solid transparent;
+					border-right: 14px solid white;
+					border-bottom: 14px solid transparent;
+					position: absolute;
+					left: -14px;
+					top: 50%;
+					margin-top: -7px;
+					transition: border 0.3s ease-out;
+				}
 			}
 		}
 
@@ -101,6 +133,22 @@
 		div {
 			&:nth-child(2) {
 				float: left;
+				position: relative;
+
+
+				div {
+					width: 0;
+					height: 0;
+					border-top: 14px solid transparent;
+					border-left: 14px solid white;
+					border-bottom: 14px solid transparent;
+					position: absolute;
+					right: -14px;
+					top: 50%;
+					margin-top: -7px;
+					transition: border 0.3s ease-out;
+				}
+
 			}
 		}
 
@@ -111,6 +159,22 @@
 			&:nth-child(2) {
 				position: absolute;
 				bottom: 0;
+
+				div {
+					width: 0;
+					height: 0;
+					border-top: 14px solid transparent;
+					border-left: 14px solid white;
+					border-bottom: 14px solid transparent;
+					position: absolute;
+					right: -14px;
+					top: 50%;
+					margin-top: -7px;
+					transition: border 0.3s ease-out;
+					left: auto;
+					border-right: 0;
+				}
+
 			}
 		}
 
@@ -123,6 +187,22 @@
 		div {
 			&:nth-child(2) {
 				float: right;
+
+				div {
+					width: 0;
+					height: 0;
+					border-top: 14px solid transparent;
+					border-right: 14px solid white;
+					border-bottom: 14px solid transparent;
+					position: absolute;
+					left: -14px;
+					top: 50%;
+					margin-top: -7px;
+					transition: border 0.3s ease-out;
+					right: auto;
+					border-left: 0;
+				}
+
 			}
 		}
 
@@ -244,17 +324,17 @@
 
 
 			&:nth-child(1) {
-				width: 100%;
-				background: rgba(255, 244, 213, 0.5);
-				z-index: 1;
-				//position: absolute;
-				//left: 0;
-				//top: 0;
-				display: block;
-				transition: opacity 0.3s ease-out;
-				opacity: 0;
-				height: 0;
-				overflow: hidden;
+				//width: 100%;
+				//background: rgba(255, 244, 213, 0.5);
+				//z-index: 1;
+				////position: absolute;
+				////left: 0;
+				////top: 0;
+				//display: block;
+				//transition: opacity 0.3s ease-out;
+				//opacity: 1;
+				//height: 0;
+				//overflow: hidden;
 			}
 			&:nth-child(2) {
 
@@ -310,6 +390,9 @@
 			div {
 
 
+				&:nth-child(1) {
+					opacity: 1;
+				}
 				&:nth-child(2) {
 
 					background: #e60e64;
@@ -394,6 +477,7 @@
 		color: #442111;
 		margin: 16px 0px 0px 0px;
 		font-style: italic;
+		line-height: 1.7;
 
 	}
 

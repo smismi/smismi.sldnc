@@ -17,11 +17,7 @@ var SL = {
 			SL.init.cache();
 
 
-			SL.cropViewport()
-				.preloadImage(SL.unCropViewport);
-
-			SL.initHeaderMenu();
-
+			SL.cropViewport();
 
 
 
@@ -181,7 +177,22 @@ var SL = {
 
 		SL.pagePreloader = $("<div class='cup-spinner fonted'></div>").appendTo(SL.overlay);
 
-//		SL.preventScroll.prevent();
+		if ($(document).height() > $(window).height()) {
+			var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+			$('html').addClass('noscroll').css('top',0);
+		}
+
+
+		SL.preloadImage();
+
+//		if ($(document).height() > $(window).height()) {
+//			var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+//			$('html').addClass('noscroll').css('top',-scrollTop);
+//		}
+//
+//		var scrollTop = parseInt($('html').css('top'));
+//		$('html').removeClass('noscroll');
+//		$('html,body').scrollTop(-scrollTop);
 
 
         if(true) {
@@ -215,8 +226,10 @@ var SL = {
 				$(window).load(function() {
 					$(document).off('imgloaded');
 
-					if(callback) setTimeout(callback, SL.globals.cupDelay)
+//					if(callback) setTimeout(callback, SL.globals.cupDelay)
 
+
+					SL.unCropViewport()
 
 				})
 
@@ -268,7 +281,7 @@ var SL = {
 			);
 		};
 
-		$(window).scrollTop(0);
+//		$(window).scrollTop(0);
 
 	},
 	runCupAnimation: function() {
@@ -353,6 +366,8 @@ var SL = {
 
 
 
+
+
 		SL.runCupAnimation();
 
 
@@ -400,6 +415,11 @@ var SL = {
 					SL.initParallax4();
 					SL.initParallax5();
 					SL.initParallax6();
+
+
+					var scrollTop = parseInt($('html').css('top'));
+					$('html').removeClass('noscroll');
+					$('html,body').scrollTop(-scrollTop);
 
 			});
 
