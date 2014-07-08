@@ -1,6 +1,7 @@
 .header {
 	background: $carmine;
-
+	z-index: 20
+;
 	&:before {
 		content: " ";
 		position: absolute;

@@ -2268,6 +2268,7 @@ body.partners #formpartners .section-big-title h3:before {
 
 .header {
   background: #840036;
+  z-index: 20;
 }
 .header:before {
   content: " ";
@@ -2787,7 +2788,7 @@ body {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   top: 0;
-  z-index: 10;
+  z-index: 13;
   transition: all 1s cubic-bezier(0.45, 0.29, 0.62, 0.99);
 }
 .partners #partners_wrapper .item_list_item {

@@ -3280,6 +3280,7 @@ body.partners #formpartners .section-big-title h3:before {
 
 .header {
   background: #840036;
+  z-index: 20;
 }
 .header:before {
   content: " ";
