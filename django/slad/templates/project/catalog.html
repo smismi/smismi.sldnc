@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+
+<head>
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="initial-scale=.8,user-scalable=no,maximum-scale=.8,width=device-width"/>
+
+	<title>СЛАДУНИЦА</title>
+
+	<script type="text/javascript" src="{{ STATIC_URL }}project/js/modernizr.custom.13938-min.js"></script>
+
+
+
+	<script type="text/javascript" src="{{ STATIC_URL }}project/js/_dependent/greensock/TweenMax.min.js"></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}project/js/jquery.2.0.js"></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}project/js/jquery.scrollmagic.js"></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}project/js/jquery.scrollto.js"></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}project/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}project/js/jquery.jcarousel.js"></script>
+
+	<script type="text/javascript" src="{{ STATIC_URL }}project/js/common.js"></script>
+
+
+	<link rel="stylesheet" href="{{ STATIC_URL }}project/css/fontface.css" type="text/css"/>
+	<link rel="stylesheet" href="{{ STATIC_URL }}project/css/catalog.css" type="text/css"/>
+
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="{{ STATIC_URL }}project/img/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="{{ STATIC_URL }}project/img/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+
+
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="{{ STATIC_URL }}project/img/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="{{ STATIC_URL }}project/img/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}project/img/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<link rel="stylesheet" href="{{ STATIC_URL }}project/img/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="{{ STATIC_URL }}project/img/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body class="catalog">
+<div id="content-wrapper">
+<div id="wrapper">
+	<nav class="header fixed">
+		<ul class="header_nav" id="header">
+
+			<li class="header_nav_item item_menu"><a class="header_nav_item_link fonted item_menu" href="#"></a></li>
+
+			<li class="header_nav_item item_link"><a class="header_nav_item_link" href="#1">Компания</a></li>
+			<li class="header_nav_item item_link" data-target="catalog"><a class="header_nav_item_link" href="#2">
+				Каталог</a>
+
+
+				<div class="header_nav-subnav subnav-catalog">
+					<ul class="header_nav-subnav_blocks">
+                        {% for category in categories %}
+                            <li class="header_nav-subnav_block subnav_block-{{ category.id }}">
+                                <h1><a href="/catalog/{{ category.id }}">{{ category.name }}</a></h1>
+                                <ul class="subnav_block_list">
+                                    {% for subcategory in subcategories %}
+                                        {% if subcategory.category == category %}
+                                            <li class="subnav_block-item"><a href="/catalog/{{ category.id }}/{{ subcategory.id }}#section-{{ subcategory.ordering }}">{{ subcategory.name }}</a></li>
+                                        {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        {% endfor %}
+						<li class="header_nav-subnav_block subnav_block-4">
+							<h1><a href="#">Специальные предложения</a></h1>
+						</li>
+					</ul>
+				</div>
+
+			</li>
+			<li class="header_nav_item item_link"><a class="header_nav_item_link" href="#3">Партнерам</a></li>
+			<li class="header_nav_item item_logo"><a class="header_nav_item_link fonted logo" href="#3"></a>
+			</li>
+			<li class="header_nav_item item_link"><a class="header_nav_item_link" href="#4">Новости</a></li>
+			<li class="header_nav_item item_link"><a class="header_nav_item_link" href="#5">Контакты</a></li>
+			<li class="header_nav_item item_soc">
+				<div class="header_nav_item_link">
+					<a href="#" title="Facebook"></a>
+					<a href="#" title="Twitter"></a>
+				</div>
+			</li>
+
+			<li class="header_nav_item close_menu"><a class="header_nav_item_link fonted close_menu" href="#"></a></li>
+
+
+		</ul>
+		<ul class="header_nav" id="mobilemenu">
+
+			<li class="header_nav_item_m item_link"><a class="header_nav_item_link" href="#1">Компания</a></li>
+			<li class="header_nav_item_m item_link" data-target="catalog"><a class="header_nav_item_link" href="#2">Каталог</a>
+			</li>
+			<li class="header_nav_item_m subnav_list">
+				<ul class="header_nav-subnav subnav-catalog">
+					<li class="subnav_item"><a href="#">Конфеты и шоколад Сладуница™</a></li>
+					<li class="subnav_item"><a href="#">Сладости Сладуница™</a></li>
+					<li class="subnav_item"><a href="#">NUA™</a></li>
+					<li class="subnav_item"><a href="#">Специальные предложения</a></li>
+				</ul>
+			</li>
+			<li class="header_nav_item_m item_link"><a class="header_nav_item_link" href="#3">Партнеры</a></li>
+			<li class="header_nav_item_m item_link"><a class="header_nav_item_link" href="#4">Новости</a></li>
+			<li class="header_nav_item_m item_link"><a class="header_nav_item_link" href="#5">Контакты</a></li>
+
+		</ul>
+
+
+	</nav>
+	<nav class="pager fixed">
+
+		<div id="pager_nav" id="nav">
+			<ul class="inner_wrapper">
+                {% for subcategory in product_subcategories %}
+                    <li class="active" data-target="{{ subcategory.ordering }}">
+					    <span>{{ forloop.counter }}</span>
+					    <div>{{ subcategory.name }}</div>
+				    </li>
+                {% endfor %}
+			</ul>
+			<div id="back_to_top"></div>
+		</div>
+	</nav>
+
+
+	<div class="scrollContent">
+		<section id="catalog" class="catalog catalog1">
+
+			<div class="wrapper {{ current_category.wrapper_class }}">
+				<div class="section-big-title">
+					<h1>{{ current_category.name }}<span class="tm">™</span></h1>
+					<h2 class="header_description">Каталог</h2>
+				</div>
+			</div>
+
+            {% for subcategory in product_subcategories %}
+                {% if subcategory.category == current_category %}
+                    <div class="item_list_wrapper" id="section-{{ subcategory.ordering }}">
+                        <div class="section-big-title">
+                            <h1>{{ subcategory.name }}</h1>
+                            <div class="fonted icon headermark"></div>
+                            {% if subcategory.description %}<h2>{{ subcategory.description }}</h2>{% endif %}
+                        </div>
+                        <ul class="item_list" id="item_list_konfets">
+                            {% for product in products %}
+                                {% if product.product.subcategory == subcategory %}
+                                    <li class="item_list_item{% if product.product.doubled %} doubled{% endif %}">
+                                        {% if product.product.novelty %}<div class="new_mark">новинка</div>{% endif %}
+                                        <a href="{{ MEDIA_URL }}{{ product.product.big_img }}"
+                                              rel="catalog"
+                                              class="fancybox"
+                                              data-id="{{ product.product.id }}"
+                                              data-title="{{ product.product.name }}"
+                                              data-description="{{ product.product.description }}"
+                                              data-weight="Вес: {% for property in product.properties %}{% if not forloop.first %} / {% endif %}{{ property.weight_packing }} кг{% endfor %}"
+                                              data-boxing="Количество в коробке: {% for property in product.properties %}{% if not forloop.first %} / {% endif %}{{ property.amount }}{% endfor %}"
+                                              data-bestbefore = "Срок годности — {{ product.product.expiration }} дней">
+
+                                            <span class="prod_img">
+                                                <img
+                                                    src="{{ MEDIA_URL }}{{ product.product.small_img }}" alt=""
+                                                    class="">
+                                            </span>
+                                            <span rel="catalog" class="item_name"><div class="item_name_wrap">
+                                                    <span class="item_class">{{ product.product.subcategory.name }}</span>
+                                                    {{ product.product.name }}
+                                                </div>
+                                                <em class="fonted icon"></em>
+                                            </span>
+                                        </a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+            {% endfor %}
+		</section>
+		<footer id="footer_page">
+
+			<div class="footer_columns">
+
+				<div class="col_3"><span>© Шоколадно-кондитерская фабрика «Сладуница»</span></div>
+
+				<div class="col_3">
+
+					<div>
+						<a href="#" title=""></a>
+
+						<a href="#" title=""></a>
+
+						<a href="#" title=""></a>
+					</div>
+
+				</div>
+
+				<div class="col_3"><a href="http://red-is.ru" target="_blank"
+									  title="Redis &mdash; создание сайта"><b>Redis</b> &mdash; создание сайта</a></div>
+			</div>
+
+		</footer>
+
+	</div>
+</div>
+</div>
+
+<div id="popupplace"></div>
+<script>
+
+
+	$(document).ready(function ($) {
+
+
+		SL.init.catalog();
+//
+//		var item_tmpl = tmpl("item_tmpl");
+//
+//
+//		$.getJSON( "js/catalog.json", function( data ) {
+//
+//
+//			konfets = data.konfets;
+//
+//			html = "";
+//
+//			for ( var i = 0; i < konfets.length; i++ ) {
+//				html += item_tmpl( konfets[i] );
+//			}
+//
+//
+//			$("#item_list_konfets").append(html);
+//
+//			zefir = data.zefir;
+//
+//			html = "";
+//
+//			for ( var i = 0; i < zefir.length; i++ ) {
+//				html += item_tmpl( zefir[i] );
+//			}
+//
+//
+//			$("#item_list_zefir").append(html);
+//
+//
+//		});
+
+
+
+	});
+
+</script>
+<script type="text/html" id="item_tmpl"><li class='item_list_item <%= (doubled == 'doubled' ? " doubled" : "")%>'>
+
+	<%= (new_mark == 'true' ? "<div class='new_mark'>новинка</div>" : "")%>
+
+	<a href="#product_box" rel="catalog" data-id="<%=item_id%>" class="prod_img fancybox">
+		<img src="{{ STATIC_URL }}project/img/catalog/items/small/<%=img%>.png" alt="" class=""/>
+	</a>
+	<a href="#product_box" rel="catalog"  data-id="<%=item_id%>" class="item_name fancybox">
+		<div class="item_name_wrap">
+			<span class="item_class"><%=type%></span>
+			«<%=name%>»
+		</div>
+		<em class="fonted icon"></em>
+	</a>
+</li></script>
+
+
+</body>
+</html>
