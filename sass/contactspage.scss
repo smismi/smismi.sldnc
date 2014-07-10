@@ -1,17 +1,90 @@
 #wrapper .scrollContent {
-	height: 100%;
-	min-height: 700px;
 }
 
+.item_list_wrapper {
+
+	max-width: 1204px;
+	margin: 0 auto;
+	text-align: center;
+
+	.item_list {
+		display: inline-block;
+
+		text-align: left;
+
+		a {
+			color: $cherry;
+		}
+
+		.item_list_item {
+			position: relative;
+			//border-bottom: 1px solid red;
+			border-right: 1px solid #f5e0cd;
+			//border: 1px solid #e2e2e2;
+			text-align: left;
+
+			width: 300px;
+			display: inline-block;
+			height: 165px;
+			margin-bottom: 30px;
+			vertical-align: bottom;
+
+			margin-left: -1px;
+			margin-top: -1px;
+
+			h5 {
+				font: 20px/1.4 oksana_text_narrowdemibold, sans-serif;
+				padding-right: 30px;
+				padding-left: 54px;
+				color: $cherry;
+
+			}
+
+			h6 {
+				padding-right: 30px;
+				padding-left: 54px;
+				font: 14px/1.6 oksana_text_narrowdemibold, sans-serif;
+				//font-style: italic;
+
+				&:before {
+					content: "";
+					display: block;
+					width: 35px;
+					height: 1px;
+					background: $cherry;
+					margin-top: 16px;
+					margin-bottom: 16px;
+				}
+
+
+				&.no_h {
+					font-style: italic;
+
+					&:before {
+						display: none;
+					}
+				}
+
+			}
+
+			&:nth-child(4n) {
+				border-right: none;
+			}
+		}
+	}
+
+}
+
+
 .map_page{
-	height: 100%;
+	//height: 100%;
 	background: #fff4d5;
 
 
 	.headermark {
 		&:before {
-			content: "\e503";
-			font-size: 34px;
+			content: "\e60f";
+			font-size: 24px;
 		}
 	}
 
@@ -29,14 +102,9 @@
 
 #map_canvas {
 	border: 1px solid #e0e0e0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 50%;
-	background: #fff;
-	//width: 400px;
-	//height: 500px;
-		bottom: 0;
+	position: relative;
+	width: auto;
+	height: 500px;
 }
 .description {
 	position: absolute;
@@ -101,6 +169,33 @@ body.news #formpartners .section-big-title h1 {
 	padding: 0px 0 12px 0;
 }
 body.news #formpartners .section-big-title h3 {
+	color: #e70c66;
+	font-family: oksana_text_narrowbold;
+	font-size: 18px;
+	padding: 0px 0 33px 0;
+	text-align: left;
+	position: relative;
+}
+body.news #form_success {
+
+	min-width: 460px;
+
+}
+body.news #form_success .section-big-title {
+	padding: 20px 0 10px 0;
+}
+body.news #form_success .section-big-title h1 {
+	text-align: center;
+}
+body.news #form_success .section-big-title 	.headermark {
+
+	margin: 0 auto 22px auto;
+	&:before {
+		content: "\e60f";
+		font-size: 24px;
+	}
+}
+body.news #form_success .section-big-title h3 {
 	color: #e70c66;
 	font-family: oksana_text_narrowbold;
 	font-size: 18px;

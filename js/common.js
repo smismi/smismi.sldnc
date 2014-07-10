@@ -1758,6 +1758,8 @@ var SL = {
 			},
  			afterClose   : function(){
 			    $("#popupplace").fadeOut(250);
+			    $("#form_wrapper").show();
+			    $("#form_success").hide();
 		    }
 
 		});
