@@ -1,6 +1,10 @@
 /*
 	Containers
 */
+.index #content-wrapper {
+	display: none;
+}
+
 #content-wrapper, #wrapper {
 	height:100%;
 	//min-height: 400px;

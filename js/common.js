@@ -408,7 +408,7 @@ var SL = {
 		if(SL.func.isPh())  {
 
 
-
+			$(".index #content-wrapper").show();
 			var scrollTop = parseInt($('html').css('top'));
 			$('html').removeClass('noscroll');
 			$('html,body').scrollTop(-scrollTop);
@@ -420,6 +420,7 @@ var SL = {
 		}
 
 
+		$(".index #content-wrapper").show();
 		$(".section-1-bg-4").show();
 
 		SL.cup.remove();
@@ -2297,7 +2298,7 @@ var SL = {
 
 
 
-		$(".header_nav_item").on({"mouseenter click": function(e){
+		$(".header_nav_item").on({"touchstart click": function(e){
 
 
 				if ($(e.target).hasClass("header_nav_item_link") ) {

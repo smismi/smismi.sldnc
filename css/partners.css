@@ -328,6 +328,10 @@ html.ipad .feedback_slide:hover a:nth-child(1) {
 /*
 	Containers
 */
+.index #content-wrapper {
+  display: none;
+}
+
 #content-wrapper, #wrapper {
   height: 100%;
   -webkit-transition: all 1s ease-out;
@@ -527,8 +531,8 @@ body.company .section-big-title h1 {
   font-size: 68px;
 }
 body.company .section-big-title h2 {
-  font-size: 17px;
   color: #fff;
+  font-size: 17px;
 }
 body.company .fourth_slide .section-big-title h1 {
   color: #442111;
@@ -789,8 +793,8 @@ body.partners #formpartners .section-big-title h3:before {
     font-size: 51px;
   }
   body.company .section-big-title h2 {
-    font-size: 15.3px;
     color: #fff;
+    font-size: 15.3px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -1051,8 +1055,8 @@ body.partners #formpartners .section-big-title h3:before {
     font-size: 37.4px;
   }
   body.company .section-big-title h2 {
-    font-size: 13.6px;
     color: #fff;
+    font-size: 13.6px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -1313,8 +1317,8 @@ body.partners #formpartners .section-big-title h3:before {
     font-size: 37.4px;
   }
   body.company .section-big-title h2 {
-    font-size: 13.6px;
     color: #fff;
+    font-size: 13.6px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -1575,8 +1579,8 @@ body.partners #formpartners .section-big-title h3:before {
     font-size: 37.4px;
   }
   body.company .section-big-title h2 {
-    font-size: 13.6px;
     color: #fff;
+    font-size: 13.6px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -1837,8 +1841,8 @@ body.partners #formpartners .section-big-title h3:before {
     font-size: 37.4px;
   }
   body.company .section-big-title h2 {
-    font-size: 13.6px;
     color: #fff;
+    font-size: 13.6px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
@@ -2099,8 +2103,8 @@ body.partners #formpartners .section-big-title h3:before {
     font-size: 37.4px;
   }
   body.company .section-big-title h2 {
-    font-size: 13.6px;
     color: #fff;
+    font-size: 13.6px;
   }
   body.company .fourth_slide .section-big-title h1 {
     color: #442111;
