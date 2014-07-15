@@ -1,3 +1,18 @@
+@mixin company-ipad() {
+
+	.controls_video {
+		display: none;
+	}
+
+
+
+	#section-4 .fourth_slide .columns .col a:hover > div {
+		display: none;
+	}
+
+
+
+}
 @mixin company-mobile() {
 
 
@@ -252,9 +267,56 @@
 }
 
 
+@include ipad()  {
+
+	//@include company-mobile();
+
+
+	#section-1 {
+
+
+		background: url(../img/company/slide1_ipad_bg.jpg) no-repeat center center;
+		-ms-background-size: cover;
+		-opera-background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+
+		video {
+			display: none;
+		}
+		#controls_video {
+			display: none;
+		}
+	}
+	#section-3 {
+
+
+		background: url(../img/company/slide3_ipad_bg.jpg) no-repeat center center;
+		-ms-background-size: cover;
+		-opera-background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+
+		video {
+			display: none;
+		}
+	}
+
+}
+
+
 @include  max-screen(750px)  {
 
 	@include company-mobile();
+
+}
+
+
+@include  ipad()  {
+
+	@include company-ipad();
 
 }
 

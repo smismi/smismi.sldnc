@@ -4153,11 +4153,6 @@ html.ipad #section-3 .third_slide .play_button {
   margin-top: -298px;
 }
 
-html.ipad #section-4 .fourth_slide .columns .col a:hover > div {
-  bottom: -298px;
-  z-index: 0;
-}
-
 #section-4 .fourth_slide .columns .col a div div h2 {
   font: 20px 'oksana_text_narrowbold', sans-serif;
   margin: 0 0 7px;
@@ -6522,6 +6517,34 @@ have a fixed width and height (but it's not required).
     display: block;
   }
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #section-1 {
+    background: url(../img/company/slide1_ipad_bg.jpg) no-repeat center center;
+    -ms-background-size: cover;
+    -opera-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  #section-1 video {
+    display: none;
+  }
+  #section-1 #controls_video {
+    display: none;
+  }
+
+  #section-3 {
+    background: url(../img/company/slide3_ipad_bg.jpg) no-repeat center center;
+    -ms-background-size: cover;
+    -opera-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  #section-3 video {
+    display: none;
+  }
+}
 @media screen and (max-width: 750px) {
   .company_page {
     height: 100%;
@@ -6648,6 +6671,15 @@ have a fixed width and height (but it's not required).
   }
   #descriptions .descriptions_wrapper.active {
     display: block;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .controls_video {
+    display: none;
+  }
+
+  #section-4 .fourth_slide .columns .col a:hover > div {
+    display: none;
   }
 }
 @keyframes animationFrames {

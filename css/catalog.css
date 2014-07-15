@@ -4078,6 +4078,43 @@ body {
     max-height: 100%;
     max-width: 100%;
   }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name {
+    background: rgba(246, 246, 246, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 27px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name .item_class {
+    display: block;
+    color: rgba(228, 14, 99, 0.7);
+    transition: all 0.8s ease;
+    line-height: 1.8;
+    font-size: 14px;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name .item_name_wrap {
+    display: table-cell;
+    height: 52px;
+    vertical-align: middle;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: #442111;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name em {
+    position: absolute;
+    bottom: 14px;
+    right: 10px;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name em:after {
+    content: "\e60a";
+    color: rgba(246, 246, 246, 0);
+    transition: all 0.8s ease;
+    font-size: 27px;
+  }
   .catalog .prod_block img {
     max-height: 100%;
     max-width: 100%;
@@ -4120,6 +4157,43 @@ body {
   .catalog .item_list_wrapper .item_list .item_list_item .prod_img img {
     max-height: 100%;
     max-width: 100%;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name {
+    background: rgba(246, 246, 246, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 27px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name .item_class {
+    display: block;
+    color: rgba(228, 14, 99, 0.7);
+    transition: all 0.8s ease;
+    line-height: 1.8;
+    font-size: 14px;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name .item_name_wrap {
+    display: table-cell;
+    height: 52px;
+    vertical-align: middle;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: #442111;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name em {
+    position: absolute;
+    bottom: 14px;
+    right: 10px;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name em:after {
+    content: "\e60a";
+    color: rgba(246, 246, 246, 0);
+    transition: all 0.8s ease;
+    font-size: 27px;
   }
   .catalog .prod_block img {
     max-height: 100%;
@@ -4164,9 +4238,85 @@ body {
     max-height: 100%;
     max-width: 100%;
   }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name {
+    background: rgba(246, 246, 246, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 27px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name .item_class {
+    display: block;
+    color: rgba(228, 14, 99, 0.7);
+    transition: all 0.8s ease;
+    line-height: 1.8;
+    font-size: 14px;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name .item_name_wrap {
+    display: table-cell;
+    height: 52px;
+    vertical-align: middle;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: #442111;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name em {
+    position: absolute;
+    bottom: 14px;
+    right: 10px;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name em:after {
+    content: "\e60a";
+    color: rgba(246, 246, 246, 0);
+    transition: all 0.8s ease;
+    font-size: 27px;
+  }
   .catalog .prod_block img {
     max-height: 100%;
     max-width: 100%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name {
+    background: rgba(246, 246, 246, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 27px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name .item_class {
+    display: block;
+    color: rgba(228, 14, 99, 0.7);
+    transition: all 0.8s ease;
+    line-height: 1.8;
+    font-size: 14px;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name .item_name_wrap {
+    display: table-cell;
+    height: 52px;
+    vertical-align: middle;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: #442111;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name em {
+    position: absolute;
+    bottom: 14px;
+    right: 10px;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name em:after {
+    content: "\e60a";
+    color: rgba(246, 246, 246, 0);
+    transition: all 0.8s ease;
+    font-size: 27px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -4206,6 +4356,43 @@ body {
   .catalog .item_list_wrapper .item_list .item_list_item .prod_img img {
     max-height: 100%;
     max-width: 100%;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name {
+    background: rgba(246, 246, 246, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 27px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name .item_class {
+    display: block;
+    color: rgba(228, 14, 99, 0.7);
+    transition: all 0.8s ease;
+    line-height: 1.8;
+    font-size: 14px;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name .item_name_wrap {
+    display: table-cell;
+    height: 52px;
+    vertical-align: middle;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: #442111;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name em {
+    position: absolute;
+    bottom: 14px;
+    right: 10px;
+  }
+  .catalog .item_list_wrapper .item_list .item_list_item:hover .item_name em:after {
+    content: "\e60a";
+    color: rgba(246, 246, 246, 0);
+    transition: all 0.8s ease;
+    font-size: 27px;
   }
   .catalog .prod_block img {
     max-height: 100%;

@@ -89,6 +89,65 @@
 						}
 					}
 
+					&:hover {
+
+						.item_name {
+							background: rgba(246,246,246, .8);
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							right: 0;
+							padding: 27px;
+							text-align: left;
+							text-decoration: none;
+							font-size: 20px;
+
+							.item_class {
+								display: block;
+								color: rgba(228,14,99, .7);
+								//position: absolute;
+								//top: 26px;
+								//left: 26px;
+								transition: all 0.8s ease;
+								line-height: 1.8;
+								font-size: 14px;
+
+							}
+
+
+							.item_name_wrap {
+								display: table-cell;
+								height: 106 - 27 - 27 + px;
+								vertical-align: middle;
+								transition: all 0.2s ease;
+								text-decoration: none;
+								color: $brown;
+
+							}
+
+
+							em {
+
+								position: absolute;
+								bottom: 14px;
+								right: 10px;
+
+
+								&:after {
+									content: "\e60a";
+									color:rgba(246,246,246, 0);
+									transition: all 0.8s ease;
+									font-size: 27px;
+
+
+
+								}
+							}
+						}
+
+					}
+
+
 				}
 
 			}
@@ -109,6 +168,8 @@
 		}
 
 
+
+
 	}
 
 
@@ -116,6 +177,98 @@
 
 }
 
+
+@mixin catalog-ipad() {
+
+	.catalog {
+
+
+
+		.item_list_wrapper {
+
+
+
+			.item_list {
+
+
+				.item_list_item {
+
+
+					&:hover {
+
+						.item_name {
+							background: rgba(246,246,246, .8);
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							right: 0;
+							padding: 27px;
+							text-align: left;
+							text-decoration: none;
+							font-size: 20px;
+
+							.item_class {
+								display: block;
+								color: rgba(228,14,99, .7);
+								//position: absolute;
+								//top: 26px;
+								//left: 26px;
+								transition: all 0.8s ease;
+								line-height: 1.8;
+								font-size: 14px;
+
+							}
+
+
+							.item_name_wrap {
+								display: table-cell;
+								height: 106 - 27 - 27 + px;
+								vertical-align: middle;
+								transition: all 0.2s ease;
+								text-decoration: none;
+								color: $brown;
+
+							}
+
+
+							em {
+
+								position: absolute;
+								bottom: 14px;
+								right: 10px;
+
+
+								&:after {
+									content: "\e60a";
+									color:rgba(246,246,246, 0);
+									transition: all 0.8s ease;
+									font-size: 27px;
+
+
+
+								}
+							}
+						}
+
+					}
+
+
+
+				}
+
+			}
+		}
+
+
+
+
+
+	}
+
+
+
+
+}
 
 @include iphone3()  {
 
@@ -132,6 +285,13 @@
 @include iphone5()  {
 
 	@include catalog-mobile();
+
+}
+
+
+@include ipad()  {
+
+	@include catalog-ipad();
 
 }
 

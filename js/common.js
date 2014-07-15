@@ -169,7 +169,14 @@ var SL = {
 
 		}
 
-		SL.hide1pageBock();
+
+
+//		if (!SL.func.isPad()) {
+
+			SL.hide1pageBock();
+
+//		}
+
 
 		SL.contentWrapper =  $('#content-wrapper');
 
@@ -303,6 +310,7 @@ var SL = {
 
 			SL.initInterActive5();
 
+			SL.runScene1();
 
 //			$(".wrapper", "#section-1").css("height", $(window).height());
 
@@ -312,6 +320,25 @@ var SL = {
 		}
 
 
+		if (SL.func.isPad()) {
+
+
+			SL.cup = $("<div id='cup'></div>").addClass("cup_00").appendTo($("#section-1 .wrapper"));
+
+			SL.overlay.animate({opacity: 0}, 200, function(){
+				SL.pagePreloader.fadeOut(100, function(){
+					$(this).remove();
+				}).remove();
+				$(this).remove();
+
+			});
+
+
+			SL.runScene1();
+
+			return;
+
+		}
 
 		SL.cup = $("<div id='cup'></div>").addClass("cup_00").appendTo($("#section-1 .wrapper"));
 
@@ -382,6 +409,13 @@ var SL = {
 
 
 
+			var scrollTop = parseInt($('html').css('top'));
+			$('html').removeClass('noscroll');
+			$('html,body').scrollTop(-scrollTop);
+
+			SL.initHeaderMenu();
+
+
 			return;
 		}
 
@@ -406,6 +440,7 @@ var SL = {
 
 					SL.initPager();
 					SL.initScrollTop();
+					SL.initHeaderMenu();
 //					SL.preventScroll.unprevent();
 
 
@@ -2129,7 +2164,6 @@ var SL = {
 	},
 	initHeaderMenu: function() {
 
-
 //		SL.mobilemenu.css({height: $(window).height() - 60, overflow: "auto", backgroundColor: "#f00"});
 
 
@@ -2186,6 +2220,7 @@ var SL = {
 
 		});
 		$(".item_menu", SL.mainmenu).on('touchstart click', function(){
+
 
 			if (SL.header.hasClass("menu_visible")) {
 
@@ -2379,8 +2414,13 @@ var SL = {
 		isPh : function() {
 
 			if ($(window).width() < 750) return true;
-
 			return false;
+
+		},
+
+		isPad : function() {
+
+			return ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
 
 		}
 
