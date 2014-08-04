@@ -328,10 +328,6 @@ html.ipad .feedback_slide:hover a:nth-child(1) {
 /*
 	Containers
 */
-.index #content-wrapper {
-  display: none;
-}
-
 #content-wrapper, #wrapper {
   height: 100%;
   -webkit-transition: all 1s ease-out;

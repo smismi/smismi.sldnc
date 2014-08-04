@@ -339,6 +339,7 @@ var SL = {
 			return;
 
 		}
+		$(".index #content-wrapper").show();
 
 		SL.cup = $("<div id='cup'></div>").addClass("cup_00").appendTo($("#section-1 .wrapper"));
 
@@ -510,10 +511,15 @@ var SL = {
 
 			var tween = new TimelineMax ()
 				.add([
-					TweenMax.fromTo("#section-1 .wrapper",1, {y: -500}, {y: 500, ease: Linear.easeNone}),
+					TweenMax.fromTo("#section-1 .wrapper",1, {top: "-50%"}, {top: "50%", ease: Linear.easeNone}),
+
 //					TweenMax.fromTo("#section-1 .section-1-bg-11",1, {y: 40}, {y: -40, ease: Linear.easeNone}),
 //					TweenMax.fromTo("#section-1 .section-1-bg-12",1, {y: 60}, {y: -60, ease: Linear.easeNone}),
-					TweenMax.fromTo("#section-1 .section-1-bg-25",1, {y: -130}, {y: 130, ease: Linear.easeNone}),
+//					TweenMax.fromTo("#section-1 .section-1-bg-25",1, {y: -660}, {y: 660, ease: Linear.easeNone}),
+
+
+					TweenMax.fromTo("#section-1 .section-1-bg-25", 1, {top: "0%"}, {top: "160%", ease: Linear.easeNone}),
+
 //					TweenMax.fromTo("#section-1 .section-1-bg-2",1, {y: 140}, {y: -140, ease: Linear.easeNone}),
 //					TweenMax.fromTo("#section-1 .section-1-bg-3",1, {y: 140}, {y: -140, ease: Linear.easeNone}),
 //					TweenMax.fromTo("#section-1 .section-1-bg-4",1, {y: 100}, {y: -100, ease: Linear.easeNone})

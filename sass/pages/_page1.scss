@@ -96,12 +96,12 @@
 
 			&:before {
 				content: '';
-				position: absolute;
+		position: absolute;
 				display: block;
 				width: 57px;
 				height: 0px;
 				top: 0;
-				left: 50%;
+		left: 50%;
 				margin-left: -28px;
 				border-top: 1px solid $cherry;
 			}
